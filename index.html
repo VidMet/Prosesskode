@@ -11,22 +11,22 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
 
     :root {
-      /* OPPDATERT: Nøytral og "native" BIM/CAD fargepalett */
-      --bg:        #1e1e1e;      /* Hovedbakgrunn */
-      --surface:   #2d2d2d;      /* Paneler og menyer */
-      --surface2:  #383838;      /* Hover-effekter */
-      --border:    #444444;      /* Linjer og skiller */
-      --ink:       #f0f0f0;      /* Standard tekst */
-      --muted:     #a0a0a0;      /* Dempet tekst/ikoner */
+      /* OPPDATERT: Lys fargepalett */
+      --bg:        #f3f4f6;      /* Lys grå hovedbakgrunn */
+      --surface:   #ffffff;      /* Hvite paneler og menyer */
+      --surface2:  #e5e7eb;      /* Hover-effekter (lys grå) */
+      --border:    #d1d5db;      /* Myke grå skillelinjer */
+      --ink:       #111827;      /* Svart/mørkegrå tekst */
+      --muted:     #6b7280;      /* Dempet tekst (mellomgrå) */
       
-      --green:     #6A9955;      /* Dusere, profesjonell grønn */
-      --green-dim: #253320;
-      --yellow:    #DCDCAA;
-      --red:       #F14C4C;
-      --red-dim:   #4a1c1c;
+      --green:     #166534;      /* Mørkere, lesbar grønn */
+      --green-dim: #dcfce7;
+      --yellow:    #854d0e;
+      --red:       #b91c1c;
+      --red-dim:   #fee2e2;
       
-      --blue:      #4fc1ff;      /* Ren, lys CAD-blå for god kontrast */
-      --blue-dim:  #1a3344;
+      --blue:      #1d4ed8;      /* Mørkere og tydeligere blåfarge */
+      --blue-dim:  #dbeafe;
       
       --mono:      'JetBrains Mono', monospace;
       --sans:      'Syne', sans-serif;
@@ -56,7 +56,8 @@
     .btn:disabled { opacity: .4; cursor: not-allowed; }
     .btn:not(:disabled):hover { opacity: .85; }
     .btn:not(:disabled):active { transform: scale(.97); }
-    .btn-primary { background: var(--blue); color: #000; }
+    /* Oppdatert knapp: Mørk blå med hvit skrift */
+    .btn-primary { background: var(--blue); color: #ffffff; }
     
     #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
     
@@ -68,50 +69,49 @@
     #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid var(--border); flex-shrink: 0; }
     #statusBar.ok    { background: var(--green-dim); color: var(--green); }
     #statusBar.error { background: var(--red-dim);   color: var(--red); }
-    #statusBar.warn  { background: #3a2d05; color: var(--yellow); }
+    #statusBar.warn  { background: #fef08a; color: var(--yellow); }
 
     main { flex: 1 1 auto; overflow-y: auto; padding: 16px; height: 0; }
 
     /* --- STILER FOR HOVEDPROSESS (NIVÅ 1) --- */
     .hoved-panel { margin-bottom: 16px; }
-    /* Tonet ned skrifttype og integrert nye fargevariabler */
     .hoved-header { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
     .hoved-header:hover { background: var(--surface2); }
-    .hoved-tittel { font-weight: 600; font-size: 14px; color: var(--ink); }
+    .hoved-tittel { font-weight: 700; font-size: 14px; color: var(--ink); }
     .hoved-info { font-family: var(--mono); font-size: 11px; color: var(--muted); }
     .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid var(--border); margin-left: 8px; flex-direction: column; }
 
     /* --- STILER FOR PROSESSKODE (NIVÅ 2) --- */
-    .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+    .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
     .prosess-panel:last-child { margin-bottom: 0; }
     .prosess-header { padding: 10px 14px; background: var(--surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; user-select: none; }
     .prosess-header:hover { background: var(--surface2); }
     .prosess-tittel { font-weight: 600; font-size: 13px; color: var(--blue); }
     .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
     
-    .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); flex-direction: column; }
+    .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--surface); flex-direction: column; }
     
-    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid var(--border); background: var(--bg); flex-shrink: 0; max-height: 180px; overflow-y: auto; }
+    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid var(--border); background: var(--surface); flex-shrink: 0; max-height: 180px; overflow-y: auto; }
     .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--surface2); padding-left: 10px; }
     .tekst-blokk:last-child { margin-bottom: 0; }
     .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
     .tekst-blokk p:last-child { margin-bottom: 0; }
     .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
     
-    .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; }
+    .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; background: var(--bg); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
     .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
     
     /* MODELLER OG OBJEKTER (NIVÅ 3 og 4) */
     .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid var(--border); }
     .modell-gruppe { display: flex; flex-direction: column; }
-    .modell-overskrift { background: var(--bg); padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
-    .modell-overskrift:hover { background: var(--surface); color: var(--ink); }
-    .modell-overskrift-mengde { color: var(--blue); }
+    .modell-overskrift { background: var(--surface); padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
+    .modell-overskrift:hover { background: var(--surface2); color: var(--ink); }
+    .modell-overskrift-mengde { color: var(--blue); font-weight: 600; }
     
     .modell-objekter { display: none; flex-direction: column; }
-    .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--bg); }
-    .objekt-rad:hover { background: var(--surface2); }
-    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--surface2); }
+    .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--surface); }
+    .objekt-rad:hover { background: var(--bg); }
+    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--border); }
     .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
     .obj-mengde-feil { font-family: var(--mono); font-size: 11px; color: var(--red); font-weight: 700; }
 
@@ -119,8 +119,8 @@
     
     ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
-    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
-    ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+    ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--ink); }
 
     @keyframes fadeUp {
       from { opacity:0; transform:translateY(6px); }
