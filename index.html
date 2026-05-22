@@ -34,14 +34,11 @@
         const $ = id => document.getElementById(id);
         const setStatus = msg => $('status').innerText = msg;
 
-        // 1. KOBLE TIL API SIKKERT
+        // 1. KOBLE TIL API
         async function connect(){
             try {
                 API = await window.TrimbleConnectWorkspace.connect(window.parent);
-                
-                // Etter vi er koblet til, forsøker vi å hente JSON-filen
                 await lastJSONFil();
-
                 $('scanBtn').disabled = false;
                 $('scanBtn').innerText = "Skann modell for mengder";
             } catch(e) { 
@@ -54,26 +51,20 @@
         async function lastJSONFil() {
             setStatus('⏳ Laster inn Prosesskode.json...');
             try {
-                // Her antar vi at filen ligger i samme mappe/server som utvidelsen
-                // Legger til en nocache-parameter (timestamp) for å sikre at vi alltid har ferskeste versjon
                 const url = 'Prosesskode.json?nocache=' + new Date().getTime(); 
                 const response = await fetch(url);
-                
-                if (!response.ok) {
-                    throw new Error(`Nettverksfeil: ${response.status} ${response.statusText}`);
-                }
+                if (!response.ok) throw new Error(`Nettverksfeil: ${response.status}`);
                 
                 svvHandbok = await response.json();
                 setStatus('✅ Tilkoblet og Prosesskoder lastet inn.');
             } catch (error) {
                 console.error("Feil ved lasting av JSON:", error);
-                setStatus('⚠️ Kunne ikke laste Prosesskode.json. Skanning vil vise "Ukjent prosess".');
-                // Vi oppretter en tom fallback slik at koden ikke krasjer senere
+                setStatus('⚠️ Kunne ikke laste Prosesskode.json. Viser "Ukjent prosesskode".');
                 svvHandbok = { prosesskoder: {} };
             }
         }
 
-        // 3. SKANN LOGIKKEN
+        // 3. SKANN LOGIKKEN MED OPPDATERT HENTING AV NAVN OG MENGDE
         $('scanBtn').addEventListener('click', async () => {
             if (!API) return;
             $('scanBtn').disabled = true;
@@ -109,11 +100,30 @@
                             );
                             
                             const prosesskode = flatProps["Prosesskode"];
-                            const mengde = parseFloat(flatProps["NetVolume"]) || 0; 
+                            
+                            // --- ENDRING: Finn beste tilgjengelige navn ---
+                            let objektNavn = flatProps["Objekttype"]; // Prøver Objekttype først
+                            if (!objektNavn || objektNavn.trim() === "") {
+                                // Fallback til standard objektnavn hvis Objekttype er tom
+                                objektNavn = (obj.name && obj.name.trim() !== "") ? obj.name : "Ukjent objekt";
+                            }
+
+                            // --- ENDRING: Finn beste tilgjengelige mengde ---
+                            // Prøver "Mengde" først, deretter andre vanlige mengde-egenskaper som backup
+                            let mengdeVerdi = flatProps["Mengde"] || 
+                                              flatProps["Volume"] || 
+                                              flatProps["NetVolume"] || 
+                                              flatProps["Area"] || 
+                                              flatProps["NetArea"] || 
+                                              flatProps["Length"] || 
+                                              "0";
+                                              
+                            // Sikrer at komma byttes ut med punktum før vi konverterer til tall (hvis norsk format)
+                            mengdeVerdi = mengdeVerdi.toString().replace(',', '.');
+                            const mengde = parseFloat(mengdeVerdi) || 0; 
                             
                             if (prosesskode && prosesskode.trim() !== "") {
                                 if (!prosessRegister[prosesskode]) {
-                                    // Sjekk om koden finnes i JSON-filen
                                     const handbokData = (svvHandbok && svvHandbok.prosesskoder) 
                                         ? svvHandbok.prosesskoder[prosesskode] 
                                         : null;
@@ -133,7 +143,7 @@
                                     objectRuntimeIds: [obj.id || obj.objectRuntimeId]
                                 });
                                 prosessRegister[prosesskode].objekter.push({ 
-                                    navn: obj.name || 'Ukjent', 
+                                    navn: objektNavn, 
                                     mengde: mengde 
                                 });
                             }
@@ -152,7 +162,7 @@
             }
         });
 
-        // 4. TEGN OPP RESULTATET (Uendret fra forrige versjon)
+        // 4. TEGN OPP RESULTATET
         function tegnOppUI(register) {
             const container = $('resultat');
             const koder = Object.keys(register).sort();
