@@ -68,6 +68,26 @@
             "x": "Mengder fra linjen måles som prosjektert fast volum (målt i skjæring). Mengder fra sidetak måles i utført fast volum (målt i skjæring). Enhet: m3"
           }
           },
+    "26.1": { 
+          "tittel": "Sprengt stein fra skjæring til fylling i linjen",
+          "enhet": "m3",
+          "hovedprosess": "2",
+          "url": "https://viewers.vegnorm.vegvesen.no/product/860051/nb#_2_id-fccd7da0-ff1f-4cf5-d08a-ca42a469c9e4",
+          "tekst": {
+            "a": "Omfatter opplasting, transport, tipping, utlegging og komprimering av steinmasser fra skjæring og eventuelle forskjæringer, inkl. masser fra rensk av skjæringssider ned til planumsnivå i linjen, til fylling i linjen. Omfatter også bearbeiding av massen til aktuell bruk, som sortering, pigging, mv. i den grad dette er nødvendig.",
+            "b": ["Største steinstørrelse (målt som største steinlengde) i steinmassen skal ikke overstige 2/3 av lagtykkelsen og maks. 1,0 m. Teleklumper, snø eller is skal ikke forekomme i slike mengder at det dannes snø-/islag eller store teleklumper.", 
+                  "I øvre 1,0 m av steinfyllingen skal det nyttes godt drenerende masser.", 
+                  "For øvrig gjelder de krav til materialer som er angitt under prosess 25.1."],
+            "c": ["Fyllingsskråningene skal være som angitt i planene.",
+                  "For fyllingshøyder større enn 2 m skal steinmassene tippes inn på det lag som er under utlegging og skyves ut med planeringsutstyr. Massene legges ut lagvis fra bunnen med lagtykkelse 1-2 m opp til nivå 0,5 til 1,0 m under planum og hvert lag komprimeres. Øverste lag, med tykkelse 0,5-1,0 m, legges så ut og komprimeres.",
+                  "For fyllingshøyder mindre enn 2 m kan steinfyllinger legges ut fra endetipp opp til planum og komprimeres.",
+                  "Steinmassene komprimeres med vibrerende vals med statisk linjelast minimum 45 kN/m (ca. 10 tonn pr. trommel) som gjør 10 overfarter. For lagtykkelse inntil 2 m benyttes vibrerende vals med statisk linjelast minimum 30 kN/m (ca. 5 tonn pr. trommel) som gjør 5 overfarter.",
+                  "I tverrskrånende terreng med helning brattere enn 1:3 og fyllinger hvor det stilles strenge krav til setninger (f.eks. fyllinger under fundament og fyllinger inntil bruer), legges steinfyllinger ut lagvis og komprimeres. Dersom steinfyllinger legges ut på frossen mark må det ventes setninger når jorden tiner.  På slike fyllinger skal ikke overbygningen legges ut før jorden under fyllingen er tint opp og setningene avsluttet. For øvrig gjelder krav til komprimering av fyllinger, som angitt i fig. 25.1."],
+            "d": "I skråninger er tillatt avvik fra teoretisk profil +/- 0,15 m, hvis den ellers er uten skjemmende svanker eller kuler. For planum (også breddetoleranse) se prosess 51.",
+            "e": "Kontroll av at foreskrevne minimumskrav til kvalitet er oppfylt, utføres ved inspeksjon, måling, feltforsøk og analyse av uttatte prøver. I figur 25.2 er det satt opp en oversikt over det minimum av kontrollarbeid som utføres ved stabil drift etter at arbeidet er kommet godt i gang. Under oppstarting, for mindre arbeider, under vanskelige forhold, ved større variasjoner i materialkvalitet og der kvalitetskravene ikke er oppfylt, økes omfanget av kontrollen.",
+            "x": "Mengden måles som prosjektert fast volum (målt i skjæring). Enhet: m3"
+          }
+          },
 
     "3": { 
           "tittel": "Tunneler",
