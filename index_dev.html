@@ -46,7 +46,6 @@
     }
 
     .header-title { flex: 1; min-width: 200px; }
-    /* Oppdatert tittel med versjonsnummer */
     .header-title h1 { font-size: 16px; font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 8px; }
     .header-title h1 .version { font-family: var(--mono); font-size: 11px; font-weight: normal; color: var(--muted); background: var(--bg); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); }
     .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 2px; }
@@ -83,10 +82,7 @@
     .hoved-info { font-family: var(--mono); font-size: 11px; color: var(--muted); }
     .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid var(--border); margin-left: 8px; flex-direction: column; }
     
-    /* Egen stil for manglende prosesskode-panelet */
-    .hoved-panel.mangler .hoved-header { background: #fff1f2; border-color: #fecdd3; }
-    .hoved-panel.mangler .hoved-header:hover { background: #ffe4e6; }
-    .hoved-panel.mangler .hoved-tittel { color: var(--red); }
+    /* OPPDATERT: Fjernet den røde teksten/bakgrunnen for manglende prosesskoder */
 
     .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
     .prosess-panel:last-child { margin-bottom: 0; }
@@ -175,7 +171,6 @@ let svvHandbok = null;
 let globalProsessRegister = {};
 let globalModelsMap = {};
 
-// Hovedprosesser med lagt til "X" for objekter uten kode
 const hovedprosessNavn = {
   "1": "Forberedende tiltak og generelle kostnader",
   "2": "Sprengning og masseflytting",
@@ -258,7 +253,7 @@ async function lastJSONFil(versjon) {
 
 function oppdaterRegisterMedNyHandbok() {
     for (let kode in globalProsessRegister) {
-        if (kode === "MANGLER") continue; // Hopper over feilsøkings-koden
+        if (kode === "MANGLER") continue; 
         
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
         globalProsessRegister[kode].tittel = handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
@@ -383,18 +378,34 @@ $('scanBtn').addEventListener('click', async () => {
         
         propsArr.forEach(obj => {
           const flatProps = {};
+          
+          // OPPDATERT: Robust innlesing av properties for å unngå overskriving med blanke verdier
           (obj.properties || []).forEach(pset => 
-            (pset.properties || []).forEach(p => flatProps[p.name] = p.value)
+            (pset.properties || []).forEach(p => {
+              const hasValidValue = flatProps[p.name] !== undefined && flatProps[p.name] !== null && String(flatProps[p.name]).trim() !== "";
+              const newValueIsValid = p.value !== undefined && p.value !== null && String(p.value).trim() !== "";
+              
+              if (!hasValidValue && newValueIsValid) {
+                  flatProps[p.name] = p.value;
+              } else if (!hasValidValue && !newValueIsValid) {
+                  flatProps[p.name] = p.value;
+              }
+            })
           );
           
-          // --- IDENTIFISERER OBJEKTER MED/UTEN KODE ---
-          const prosesskodeRaw = flatProps["Prosesskode"];
-          const hasProsesskode = (prosesskodeRaw && prosesskodeRaw.trim() !== "");
-          const prosesskode = hasProsesskode ? prosesskodeRaw.trim() : "MANGLER";
+          // Støtter små og store bokstaver i property-navnet, konverterer sikkert til string
+          const prosesskodeRaw = flatProps["Prosesskode"] ?? flatProps["prosesskode"] ?? flatProps["ProsessKode"];
+          let hasProsesskode = false;
+          let prosesskode = "MANGLER";
+          
+          if (prosesskodeRaw !== undefined && prosesskodeRaw !== null && String(prosesskodeRaw).trim() !== "") {
+              hasProsesskode = true;
+              prosesskode = String(prosesskodeRaw).trim();
+          }
           
           let objektNavn = flatProps["Objekttype"];
-          if (!objektNavn || objektNavn.trim() === "") {
-            objektNavn = (obj.name && obj.name.trim() !== "") ? obj.name : "Ukjent objekt";
+          if (!objektNavn || String(objektNavn).trim() === "") {
+            objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
           }
 
           const handbokData = hasProsesskode && svvHandbok && svvHandbok.prosesskoder ? svvHandbok.prosesskoder[prosesskode] : null;
@@ -404,13 +415,13 @@ $('scanBtn').addEventListener('click', async () => {
           if (hasProsesskode) {
               enhet = handbokData && handbokData.enhet ? handbokData.enhet.toLowerCase() : "?";
           } else {
-              enhet = "stk"; // Fallback for objekter uten kode for å kunne telle dem opp
+              enhet = "stk";
           }
 
-          let rawMengde = flatProps["Mengde"];
+          let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"];
           let manglerMengde = false;
           
-          if (rawMengde === undefined || rawMengde === null || rawMengde.toString().trim() === "") {
+          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
               if (enhet === "m3" || enhet === "m³") {
                   rawMengde = flatProps["Volume"] ?? flatProps["NetVolume"];
               } else if (enhet === "m2" || enhet === "m²") {
@@ -421,14 +432,14 @@ $('scanBtn').addEventListener('click', async () => {
                   rawMengde = 1; 
               }
 
-              if (rawMengde === undefined || rawMengde === null || rawMengde.toString().trim() === "") {
+              if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
                   manglerMengde = true;
               }
           }
 
           let mengde = 0;
           if (!manglerMengde) {
-              let mengdeVerdi = rawMengde.toString().replace(',', '.');
+              let mengdeVerdi = String(rawMengde).replace(',', '.');
               mengde = parseFloat(mengdeVerdi) || 0; 
           }
 
@@ -463,7 +474,6 @@ $('scanBtn').addEventListener('click', async () => {
               modelNavn: modelName,
               runtimeId: runtimeId 
           });
-          
         });
       }
     }
@@ -554,12 +564,10 @@ function tegnOppUI(register, filterMid) {
       
       const hpDiv = document.createElement('div');
       hpDiv.className = 'hoved-panel';
-      if (hpKode === "X") hpDiv.classList.add('mangler'); // Setter rød advarselsfarge på dette panelet
       
       const hpHeader = document.createElement('div');
       hpHeader.className = 'hoved-header';
       
-      // Hvis det er kategori X, skjuler vi selve bokstaven i overskriften
       const visningsOverskrift = hpKode === "X" ? `▶ ${tittelNavn}` : `▶ ${hpKode} - ${tittelNavn}`;
       
       hpHeader.innerHTML = `
@@ -701,7 +709,6 @@ function tegnOppUI(register, filterMid) {
                   } catch(err) {}
               };
               
-              // Sikkerhetsventil: Tegner opp maks 1000 feil-objekter i UI per fil for å ikke krasje nettleseren
               const maxVisning = 1000;
               const visObjekter = gruppeData.objekter.slice(0, maxVisning);
               
