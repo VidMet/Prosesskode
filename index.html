@@ -32,41 +32,30 @@
         }
 
         document.getElementById('scanBtn').addEventListener('click', async () => {
-            document.getElementById('resultat').innerText = "Skanner egenskaper (dette kan ta litt tid)...";
+            const resultatDiv = document.getElementById('resultat');
+            resultatDiv.innerText = "Skanner egenskaper (dette kan ta litt tid)...";
             
-            // 1. Hent alle objekter (eller et utvalg)
-            // Merk: Tilpass API-kallet etter din nøyaktige Workspace API-versjon.
-            const objects = await currentAPI.viewer.getObjects(); 
-            
-            let prosessRegister = {};
+            try {
+                // Henter listen med alle objekter
+                const objects = await currentAPI.viewer.getObjects(); 
+                
+                // MERK: Her må du bytte ut med det faktiske endepunktet for å lese egenskapene.
+                // Hvis API-et tillater det, hent alle properties i én operasjon for å spare tid.
+                
+                // Fiktivt eksempel på batch-henting (må tilpasses API-et):
+                // const allProperties = await currentAPI.viewer.getPropertySets(objects.map(o => o.id));
 
-            // 2. Loop gjennom objekter og hent egenskaper
-            for (let obj of objects) {
-                // Hent egenskapene for objektet (pseudo-kall, krever ofte batching i praksis)
-                const props = await currentAPI.viewer.getObjectProperties(obj.id); 
-                
-                // Finn prosesskode og mengde
-                let prosesskode = finnEgenskap(props, "Prosesskode"); // Tilpass søkestreng
-                let mengde = finnEgenskap(props, "NetVolume"); // Bytt ut med riktig mengde-egenskap
-                
-                if (prosesskode) {
-                    if (!prosessRegister[prosesskode]) {
-                        prosessRegister[prosesskode] = {
-                            beskrivelse: svvHandbok[prosesskode] || "Ukjent prosesskode",
-                            totalMengde: 0,
-                            objektIds: [],
-                            objekter: []
-                        };
-                    }
-                    
-                    let parsedMengde = parseFloat(mengde) || 0;
-                    prosessRegister[prosesskode].totalMengde += parsedMengde;
-                    prosessRegister[prosesskode].objektIds.push(obj.id);
-                    prosessRegister[prosesskode].objekter.push({ id: obj.id, mengde: parsedMengde });
-                }
+                let prosessRegister = {};
+
+                // Bygge opp registeret...
+                // ... (logikken for å koble prosesskode, mengde og objekt-ID fortsetter her) ...
+
+                tegnOppUI(prosessRegister);
+
+            } catch (error) {
+                console.error("Kritisk feil under skanning:", error);
+                resultatDiv.innerText = `Skanning feilet: ${error.message}. Sjekk Console (F12) for detaljer.`;
             }
-
-            tegnOppUI(prosessRegister);
         });
 
         function tegnOppUI(register) {
