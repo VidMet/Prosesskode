@@ -1,0 +1,2000 @@
+{
+  "metadata": {
+    "versjon": "R761 Database",
+    "kapittel": "3"
+  },
+  "prosesskoder": {
+    "3": {
+      "tittel": "Tunneler",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31": {
+      "tittel": "SONDÉRBORING, KJERNEBORING OG INJEKSJON",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.1": {
+      "tittel": "Sondérboring med slaghammerboring",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.11": {
+      "tittel": "Sondérboring med slaghammerboring ved stuff",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.12": {
+      "tittel": "Sondérboring med slaghammerboring bak stuff",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.13": {
+      "tittel": "Gjenstøping av sondérhull",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.2": {
+      "tittel": "Sondérboring med kjerneboring",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.21": {
+      "tittel": "Rigg for kjerneboring",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.22": {
+      "tittel": "Kjerneboring",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.221": {
+      "tittel": "Kjerneboring, hullengde 0,00 - 25,00 m",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.222": {
+      "tittel": "Kjerneboring, hullengde 25,01 - 50,00 m",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.223": {
+      "tittel": "Kjerneboring, hullengde 50,01 - 100,00 m",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.224": {
+      "tittel": "Kjerneboring, hullengde 100,01 - 200,00 m",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.23": {
+      "tittel": "Gjenstøping av kjerneborhull",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.24": {
+      "tittel": "Ventetid ved stuff ved kjerneboring",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.3": {
+      "tittel": "Avviksmåling i borehull",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.31": {
+      "tittel": "Opprigging/nedrigging",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.32": {
+      "tittel": "Avviksmåling i borehull ved stuff",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.33": {
+      "tittel": "Ventetid ved stuff ved avviksmåling",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.4": {
+      "tittel": "Vanntapsmåling",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.5": {
+      "tittel": "Boring og spyling av injeksjons- og kontrollhull",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.51": {
+      "tittel": "Injeksjons- og kontrollhull ved sporadisk injeksjon",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.52": {
+      "tittel": "Injeksjons- og kontrollhull ved systematisk injeksjon",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.6": {
+      "tittel": "Injeksjon",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.61": {
+      "tittel": "Opp- og nedrigging for injeksjon",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.62": {
+      "tittel": "Pakkerplassering",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.63": {
+      "tittel": "Injeksjonsmiddel",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.631": {
+      "tittel": "Standard injeksjonssement (40)",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.632": {
+      "tittel": "Fin injeksjonssement (25)",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.633": {
+      "tittel": "Mikrosement 1 (20)",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.634": {
+      "tittel": "Mikrosement 2 (13)",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.635": {
+      "tittel": "Ultrafin sement (10)",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.636": {
+      "tittel": "Andre injeksjonsmidler som angitt",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.637": {
+      "tittel": "Styrt herding med alkalifri akselerator",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.64": {
+      "tittel": "Injeksjonsarbeid",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.65": {
+      "tittel": "Pålagt herdetid",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.7": {
+      "tittel": "Kontaktinjeksjon",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.71": {
+      "tittel": "Kontaktinjeksjon gjennom slange",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.711": {
+      "tittel": "Injeksjonsslange for kontaktinjeksjon med injeksjonsmiddel",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.712": {
+      "tittel": "Injeksjonsmiddel for kontaktinjeksjon gjennom slange",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.713": {
+      "tittel": "Injeksjonsarbeid ved kontaktinjeksjon gjennom slange",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.72": {
+      "tittel": "Kontaktinjeksjon i borehull",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.721": {
+      "tittel": "Boring av hull for kontaktinjeksjon",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.722": {
+      "tittel": "Injeksjonsmiddel for kontaktinjeksjon i borehull",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "31.723": {
+      "tittel": "Injeksjonsarbeid ved kontaktinjeksjon i borehull",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32": {
+      "tittel": "SPRENGNING AV TUNNEL",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.1": {
+      "tittel": "Sprengning av tunnel",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.11": {
+      "tittel": "Tunnelløp",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.111": {
+      "tittel": "Fullt tverrsnitt – normal salvelengde",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.112": {
+      "tittel": "Fullt tverrsnitt – halv salvelengde",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.113": {
+      "tittel": "Delt tverrsnitt – normal salvelengde",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.114": {
+      "tittel": "Delt tverrsnitt – halv salvelengde",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.12": {
+      "tittel": "Tiltak ved sprengning med alternativ kontur, hullavstand/forsetning = 0,5 m / 0,7 m",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.13": {
+      "tittel": "Bergrom for tekniske anlegg, tverrforbindelser, pumpesump, etc.",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.14": {
+      "tittel": "Grøfter og kumutvidelser",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.141": {
+      "tittel": "Grøfter, langsgående",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.142": {
+      "tittel": "Kumutvidelser",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.143": {
+      "tittel": "Tverrgrøfter",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.15": {
+      "tittel": "Sjakter",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.2": {
+      "tittel": "Opplasting i tunnel, transport og utlegging",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.21": {
+      "tittel": "Steinmasser fra stuff til tunnelmunning",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.22": {
+      "tittel": "Steinmasser fra tunnelmunning",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.221": {
+      "tittel": "Steinmasser fra tunnelmunning til fylling i linjen",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.222": {
+      "tittel": "Steinmasser fra tunnelmunning til fyllplass",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.223": {
+      "tittel": "Steinmasser fra tunnelmunning til motfylling",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.224": {
+      "tittel": "Steinmasser fra tunnelmunning til lager for senere bearbeiding",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.225": {
+      "tittel": "Steinmasser fra tunnelmunning til støyvoll, ledevoll, oppfylling mot bergskjæring, mv.",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.3": {
+      "tittel": "Provisorisk belysning",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.31": {
+      "tittel": "Provisorisk belysning ved tunneldriving",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.32": {
+      "tittel": "Provisorisk belysning ved tunneloppgradering",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.321": {
+      "tittel": "Etablering av provisorisk belysning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.322": {
+      "tittel": "Drift av provisorisk belysning",
+      "enhet": "dag",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.323": {
+      "tittel": "Nedtaking av provisorisk belysning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.4": {
+      "tittel": "Drift av provisoriske anlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.5": {
+      "tittel": "Fullprofilboring og opprømmingsboring",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "32.6": {
+      "tittel": "Uskadeliggjøring av forsager fra bergsprengningsarbeid i tidligere entreprise",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33": {
+      "tittel": "STABILITETSSIKRING",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.1": {
+      "tittel": "Rensk",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.11": {
+      "tittel": "Manuell driftsrensk",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.12": {
+      "tittel": "Sluttvask",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.13": {
+      "tittel": "Rensk under teoretisk sprengingsprofil i sålen",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.131": {
+      "tittel": "Grov rensk under teoretisk sprengingsprofil i sålen 0,20 m3 overmasse",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.132": {
+      "tittel": "Fin rensk under teoretisk sprengingsprofil i sålen 0,05 m3 overmasse",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.14": {
+      "tittel": "Tilbakefylling til teoretisk sprengingsprofil i sålen",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.15": {
+      "tittel": "Masseutskifting under teoretisk sprengningsprofil i sålen",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.16": {
+      "tittel": "Gjenstøping av gryter",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.17": {
+      "tittel": "Rensk ved mulig forsager fra bergsprengningsarbeid i tidligere entreprise",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.2": {
+      "tittel": "Sikringsbolter",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.21": {
+      "tittel": "Fullt innstøpte sikringsbolter 20 mm i tunnel og ved tunnelpåhugg",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.211": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 2,4 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.212": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 3,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.213": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 4,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.214": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 5,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.215": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 6,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.22": {
+      "tittel": "Fullt innstøpte sikringsbolter 25 mm i tunnel og ved tunnelpåhugg",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.221": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 5,0 m, Ø 25 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.222": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 6,0 m, Ø 25 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.23": {
+      "tittel": "Fullt innstøpte sikringsbolter 32 mm i tunnel og ved tunnelpåhugg",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.231": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 6,0 m, Ø 32 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.232": {
+      "tittel": "Fullt innstøpte sikringsbolter, lengde 8,0 m, Ø 32 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.24": {
+      "tittel": "Endeforankrede sikringsbolter i tunnel og ved tunnelpåhugg",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.241": {
+      "tittel": "Sikringsbolter, endeforankrede, lengde 2,4 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.242": {
+      "tittel": "Sikringsbolter, endeforankrede, lengde 3,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.243": {
+      "tittel": "Sikringsbolter, endeforankrede, lengde 4,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.244": {
+      "tittel": "Sikringsbolter, endeforankrede, lengde 5,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.245": {
+      "tittel": "Sikringsbolter, endeforankrede, lengde 6,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.25": {
+      "tittel": "Kombinasjonsbolter i tunnel og ved tunnelpåhugg",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.251": {
+      "tittel": "Kombinasjonsbolter, lengde 2,4 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.252": {
+      "tittel": "Kombinasjonsbolter, lengde 3,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.253": {
+      "tittel": "Kombinasjonsbolter, lengde 4,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.254": {
+      "tittel": "Kombinasjonsbolter, lengde 5,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.26": {
+      "tittel": "Sikringsbolter med pakker",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.261": {
+      "tittel": "Sikringsbolter med pakker, lengde 3,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.262": {
+      "tittel": "Sikringsbolter med pakker, lengde 4,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.263": {
+      "tittel": "Sikringsbolter med pakker, lengde 5,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.264": {
+      "tittel": "Sikringsbolter med pakker, lengde 6,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.27": {
+      "tittel": "Sikringsbolter ved bergtrykksproblemer",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.271": {
+      "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 2,4 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.272": {
+      "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 3,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.273": {
+      "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 4,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.274": {
+      "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 5,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.28": {
+      "tittel": "Etterjustering av endeforankrede bolter ved bergtrykksproblemer",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.3": {
+      "tittel": "Sikring med bergbånd",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.31": {
+      "tittel": "Bånd",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.311": {
+      "tittel": "Bånd ved stuff",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.312": {
+      "tittel": "Bånd bak stuff",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.32": {
+      "tittel": "Festebolter for bånd",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.321": {
+      "tittel": "Fullt innstøpte festebolter, lengde 3,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.322": {
+      "tittel": "Fullt innstøpte festebolter, lengde 4,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.323": {
+      "tittel": "Fullt innstøpte festebolter, lengde 5,0 m, Ø 20 mm",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.4": {
+      "tittel": "Sikring med sprøytebetong",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.41": {
+      "tittel": "Sprøytebetong uten tilsetting av fiber",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.411": {
+      "tittel": "Sprøytebetong uten tilsetting av fiber, B35 M45",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.412": {
+      "tittel": "Sprøytebetong uten tilsetting av fiber, B35 M40",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.42": {
+      "tittel": "Sprøytebetong med tilsetting av fiber M45",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.421": {
+      "tittel": "Sprøytebetong med tilsetting av fiber, B35 M45 E500",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.422": {
+      "tittel": "Sprøytebetong med tilsetting av fiber, B35 M45 E700",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.423": {
+      "tittel": "Sprøytebetong med tilsetting av fiber, B35 M45 E1000",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.43": {
+      "tittel": "Sprøytebetong med tilsetting av fiber M40",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.431": {
+      "tittel": "Sprøytebetong med tilsetting av fiber, B35 M40 E500",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.432": {
+      "tittel": "Sprøytebetong med tilsetting av fiber, B35 M40 E700",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.433": {
+      "tittel": "Sprøytebetong med tilsetting av fiber, B35 M40 E1000",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.44": {
+      "tittel": "Prøving av energiabsorpsjon for fiberarmert sprøytebetong",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.45": {
+      "tittel": "Sikringsbuer av sprøytebetong",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.451": {
+      "tittel": "Armering av sikringsbuer av sprøytebetong",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.452": {
+      "tittel": "Øvrige kostnader ved utførelse av sikringsbuer av sprøytebetong",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.5": {
+      "tittel": "Sikringsstøp",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.51": {
+      "tittel": "Skjold for sikringsstøp",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.52": {
+      "tittel": "Opp- og nedrigging for sikringsstøp",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.53": {
+      "tittel": "Betongutstøping",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.531": {
+      "tittel": "Betongutstøping av vegger og heng ved stuff",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.532": {
+      "tittel": "Betongutstøping av vegger og heng bak stuff",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.533": {
+      "tittel": "Betongutstøping av tunnelsåle bak stuff",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.534": {
+      "tittel": "Fundamentstøp",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.535": {
+      "tittel": "Sikringsstøp i grøft",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.54": {
+      "tittel": "Betong for fundamentstøp, grøft sikringsstøp og ekstra i vegger og heng",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.541": {
+      "tittel": "Ekstra betong for sikringsstøp ved stuff, for utfall",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.542": {
+      "tittel": "Ekstra betong for sikringsstøp bak stuff, for utfall",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.543": {
+      "tittel": "Betong for fundamentstøp",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.544": {
+      "tittel": "Betong for sikringsstøp i grøft",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.55": {
+      "tittel": "Vanntetting og drenering",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.56": {
+      "tittel": "Armering",
+      "enhet": "kg",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.57": {
+      "tittel": "Tilpasning mellom betongutstøping og berg bak stuff",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.6": {
+      "tittel": "Registrering og kartlegging av bergmassekvalitet",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.61": {
+      "tittel": "Byggherren utfører registrering og kartlegging",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.62": {
+      "tittel": "Entreprenøren utfører registrering og kartlegging",
+      "enhet": "time",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "33.63": {
+      "tittel": "Laboratorieprøving av sleppemateriale",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34": {
+      "tittel": "VANN- OG FROSTSIKRING",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.2": {
+      "tittel": "Kontaktstøpt betonghvelv m/membran",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.21": {
+      "tittel": "Bergavjevning med sprøytebetong",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.22": {
+      "tittel": "Avjevning av såle",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.23": {
+      "tittel": "Tetningsmembran",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.24": {
+      "tittel": "Betongutstøping",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.3": {
+      "tittel": "Hvelv av sprøytebetong",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.31": {
+      "tittel": "Isolert vanntett hvelv av sprøytebetong",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.32": {
+      "tittel": "Uisolert hvelv av sprøytebetong",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.33": {
+      "tittel": "Fuger, endeavslutninger, brannseksjonering, luker, mv.",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.331": {
+      "tittel": "Endeavslutning",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.332": {
+      "tittel": "Dilatasjonsfuger og fuging",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.333": {
+      "tittel": "Brannseksjonering",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.4": {
+      "tittel": "Betonghvelv",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.41": {
+      "tittel": "Hvelv av betongelementer",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.411": {
+      "tittel": "Levering av betongelementer",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.412": {
+      "tittel": "Montering av betongelementer",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.42": {
+      "tittel": "Hvelv av lettbetongelementer",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.421": {
+      "tittel": "Levering av lettbetongelementer",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.422": {
+      "tittel": "Montering av lettbetongelementer",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "34.43": {
+      "tittel": "Armering av betonghvelv",
+      "enhet": "tonn",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35": {
+      "tittel": "PORTALER, OVERBYGG, PUMPESTASJON, M.M.",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.1": {
+      "tittel": "Portaler og skredoverbygg",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.11": {
+      "tittel": "Grunnarbeider",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.111": {
+      "tittel": "Sprengning for fundamenter",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.112": {
+      "tittel": "Graving",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.113": {
+      "tittel": "Rensk og avretting",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.1131": {
+      "tittel": "Rensk av sprengt bergoverflate",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.1132": {
+      "tittel": "Avretting og rensk til uberørt grunn",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.114": {
+      "tittel": "Bolter",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.12": {
+      "tittel": "Tetningsmembran",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.13": {
+      "tittel": "Betongarbeider",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.131": {
+      "tittel": "Forskaling",
+      "enhet": "m2",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.132": {
+      "tittel": "Armering",
+      "enhet": "tonn",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.133": {
+      "tittel": "Betong",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.14": {
+      "tittel": "Utlegging av løsmasser",
+      "enhet": "m3",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.3": {
+      "tittel": "Pumpestasjon",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.4": {
+      "tittel": "Kuldeporter",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.5": {
+      "tittel": "Tekniske bygninger, nødutganger og kiosk for nødstasjon",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.51": {
+      "tittel": "Tekniske bygninger",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.52": {
+      "tittel": "Nødutganger",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.53": {
+      "tittel": "Kiosk for nødstasjon",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "35.54": {
+      "tittel": "Nøkkelsafe for brannvesen",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36": {
+      "tittel": "BELYSNING, VENTILASJON OG SIKKERHETS-UTRUSTNING",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.1": {
+      "tittel": "Fellesanlegg for installasjonene",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.11": {
+      "tittel": "Fordelinger",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.111": {
+      "tittel": "Hovedfordelinger",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.112": {
+      "tittel": "Underfordelinger",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.113": {
+      "tittel": "Termografering",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.12": {
+      "tittel": "Kabelstiger",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.121": {
+      "tittel": "Kabelstige 200mm",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.122": {
+      "tittel": "Kabelstige 400mm",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.123": {
+      "tittel": "Kabelstige 600mm",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.124": {
+      "tittel": "Kabelstige med annen bredde",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.13": {
+      "tittel": "Festebolter",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.131": {
+      "tittel": "Festebolter for kabelstiger i vegger og heng",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.132": {
+      "tittel": "Festebolter for ventilatorer/opphengsrammer",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.133": {
+      "tittel": "Festebolter for skilt, nødstasjoner (skap) og diverse annet utstyr",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.14": {
+      "tittel": "Antennemast",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.15": {
+      "tittel": "Jordingssystem",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.151": {
+      "tittel": "Gjennomgående jordingsleder",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.152": {
+      "tittel": "Tilkobling av utjevningsforbindelser til jordingsleder",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.153": {
+      "tittel": "Jordelektrode",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.154": {
+      "tittel": "Jordingspunkt",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.155": {
+      "tittel": "Hovedjordskinne",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.156": {
+      "tittel": "Jordskinne for utjevningsforbindelser",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.157": {
+      "tittel": "Ringjord for antennemast",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.16": {
+      "tittel": "Tekniske bygg, installasjon og innredning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.161": {
+      "tittel": "Branntetting i tekniske bygg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.162": {
+      "tittel": "Datagulv / installasjonsgulv",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.163": {
+      "tittel": "Merking av dører",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.164": {
+      "tittel": "Kontorrekvisita",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.165": {
+      "tittel": "Kjøleanlegg / varmepumpe",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.166": {
+      "tittel": "Luftavfukter",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.167": {
+      "tittel": "Elektrisk installasjon i tekniske bygg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.168": {
+      "tittel": "Øvrige arbeider i tekniske rom",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.2": {
+      "tittel": "Belysning",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.21": {
+      "tittel": "Kabelfremføring mellom fordelinger og belysningsanlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.22": {
+      "tittel": "Luminansmåler",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.221": {
+      "tittel": "Kabel mellom lokalt styresystem og luminansmåler",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.222": {
+      "tittel": "Luminansmåler",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.23": {
+      "tittel": "Armaturer",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.3": {
+      "tittel": "Ventilasjon",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.31": {
+      "tittel": "Kabelfremføring mellom fordelinger og ventilatorer",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.32": {
+      "tittel": "Impulsventilatorer",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.33": {
+      "tittel": "Sjaktventilatorer",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.34": {
+      "tittel": "Overvåking av tunnelluften",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.341": {
+      "tittel": "Kabler for målere for overvåkingsutstyr og vibrasjonsmålere",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.342": {
+      "tittel": "Målere for overvåkning",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.3421": {
+      "tittel": "NO-gassmålere",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.3422": {
+      "tittel": "NO2-gassmålere",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.3423": {
+      "tittel": "Støv- og siktmålere",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.3424": {
+      "tittel": "Vindmåler",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.4": {
+      "tittel": "Sikkerhetsutrustning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.41": {
+      "tittel": "Brannsikring",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.411": {
+      "tittel": "Brannslokningsapparater og nødstasjoner",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.412": {
+      "tittel": "Kabler for brannsikringsutstyr",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.413": {
+      "tittel": "Brannvarslingsanlegg for tekniske rom",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.42": {
+      "tittel": "Nød/rømning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.421": {
+      "tittel": "Evakueringsbelysning",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.422": {
+      "tittel": "Nødtelefon",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.423": {
+      "tittel": "Nødstrømsanlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.424": {
+      "tittel": "Kabler for utstyr Nød/rømning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.425": {
+      "tittel": "Utstyr for overføring av signaler",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.43": {
+      "tittel": "Kringkasting og radiokommunikasjon",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.431": {
+      "tittel": "Radioteknisk utstyr",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.432": {
+      "tittel": "Strålekabel",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.434": {
+      "tittel": "Koaksialkabler",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.5": {
+      "tittel": "Trafikkregulering/overvåking",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.51": {
+      "tittel": "Rødt stoppsignal og bommer",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.511": {
+      "tittel": "Rødt stoppblinksignal",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.512": {
+      "tittel": "Kombinert stoppblinksignal og arbeidsvarsling",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.513": {
+      "tittel": "Bommer",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.52": {
+      "tittel": "Skilt og nødutgangsskilt",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.521": {
+      "tittel": "Skilt 601 Radio m/gul vekselblink",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.522": {
+      "tittel": "Skilt 605 og 606",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.523": {
+      "tittel": "Skilt 555-600.21",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.524": {
+      "tittel": "Skilt 570.1 Nødutgang",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.525": {
+      "tittel": "Skilt 570.2 og 916 Avstandsmarkering",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.526": {
+      "tittel": "Fare-, påbuds-, fartsgrense- og opplysningsskilt",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.527": {
+      "tittel": "Vegvisningsskilt",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.528": {
+      "tittel": "Nødutgangskilt",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.53": {
+      "tittel": "Video-overvåking",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.531": {
+      "tittel": "Videokameraer",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.532": {
+      "tittel": "Skap for kamerakontroll og dataoverføring",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.533": {
+      "tittel": "Fiberkabler for videokamera",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.534": {
+      "tittel": "Signal-/nettverkskabel",
+      "enhet": "m",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.54": {
+      "tittel": "Kjørefeltsignal",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.55": {
+      "tittel": "Trafikktelling, køvarsling, tilfartskontroll og hendelsesdetektering",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.56": {
+      "tittel": "Høydebegrensning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.57": {
+      "tittel": "Kabler for trafikkinstallasjoner",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.571": {
+      "tittel": "Kabler for rødt stoppsignal og bommer",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.572": {
+      "tittel": "Kabler for skilt og nødutgangsskilt",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.574": {
+      "tittel": "Kabler for kjørefeltsignal",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.575": {
+      "tittel": "Kabler for trafikktelling, køvarsling, tilfartskontroll og hendelsesdetektering",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.576": {
+      "tittel": "Kabler for høydebegrensning",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.6": {
+      "tittel": "Renseanlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.61": {
+      "tittel": "Luftrenseanlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.611": {
+      "tittel": "Støvfjerningsanlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.612": {
+      "tittel": "Gassrenseanlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.62": {
+      "tittel": "Vannrenseanlegg",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7": {
+      "tittel": "Lokalt styringssystem og programmering",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.71": {
+      "tittel": "PLS og tilhørende utstyr",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.711": {
+      "tittel": "PLS",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.712": {
+      "tittel": "Distribuert I/O",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7121": {
+      "tittel": "CPU",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7122": {
+      "tittel": "Kommunikasjonsmodul",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7123": {
+      "tittel": "Analog inngang",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7124": {
+      "tittel": "Analog utgang",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7125": {
+      "tittel": "Digital inngang",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7126": {
+      "tittel": "Digital utgang",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.72": {
+      "tittel": "Programvare og programmering",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.73": {
+      "tittel": "Lokalt datanettverk",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.731": {
+      "tittel": "Designspesifikasjon av nettverket",
+      "enhet": "RS",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.732": {
+      "tittel": "Switcher",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7321": {
+      "tittel": "Lag 2 switcher",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.73211": {
+      "tittel": "DIN-monterte",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.73212": {
+      "tittel": "Rack-monterte",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7322": {
+      "tittel": "Lag 3 switcher",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.733": {
+      "tittel": "Strømforsyning",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7331": {
+      "tittel": "48V strømforsyning PoE",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7332": {
+      "tittel": "24V strømforsyning",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "36.7333": {
+      "tittel": "Andre strømforsyninger",
+      "enhet": "stk",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "37": {
+      "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    },
+    "38": {
+      "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
+      "enhet": "?",
+      "hovedprosess": "3",
+      "tekst": {}
+    }
+  }
+}

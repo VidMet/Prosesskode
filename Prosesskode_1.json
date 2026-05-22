@@ -1,0 +1,596 @@
+{
+  "metadata": {
+    "versjon": "R761 Database",
+    "kapittel": "1"
+  },
+  "prosesskoder": {
+    "1": {
+      "tittel": "Forberedende tiltak og generelle kostnader",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11": {
+      "tittel": "ARBEIDSSTIKNING, TEKNISK KONTROLL",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.1": {
+      "tittel": "Fastmerker",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.11": {
+      "tittel": "Kontroll av eksisterende fastmerker",
+      "enhet": "stk",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.12": {
+      "tittel": "Plassering av nye fastmerker",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.13": {
+      "tittel": "Etablering av fastmerker",
+      "enhet": "stk",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.2": {
+      "tittel": "Stikking og maskinstyring",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.3": {
+      "tittel": "Innmåling",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.4": {
+      "tittel": "Teknisk kontroll",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.5": {
+      "tittel": "Sluttdokumentasjon",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.51": {
+      "tittel": "Sluttdokumentasjon for nye og endrede fastmerker",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.52": {
+      "tittel": "Sluttdokumentasjon for egenskapsdata",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "11.53": {
+      "tittel": "Sluttdokumentasjon for tunnelgeometri, ferdig tunnel",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12": {
+      "tittel": "RIGG, BYGNINGER OG GENERELLE DRIFTS-OMKOSTNINGER",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.1": {
+      "tittel": "Rigg og midlertidige bygninger",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.11": {
+      "tittel": "Tilrigging",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.12": {
+      "tittel": "Drift av rigg og midlertidige bygninger",
+      "enhet": "uke",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.13": {
+      "tittel": "Nedrigging",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.2": {
+      "tittel": "Rigg for byggherren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.21": {
+      "tittel": "Tilrigging av rigg for byggherren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.22": {
+      "tittel": "Drift av rigg for byggherren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.23": {
+      "tittel": "Nedrigging av rigg for byggherren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.4": {
+      "tittel": "Vinterkostnader anlegg",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.5": {
+      "tittel": "Miljøtiltak i byggefasen",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.51": {
+      "tittel": "Vannutslipp",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.511": {
+      "tittel": "Renseanlegg",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.512": {
+      "tittel": "Håndtering av vann fra verksted, vaskerigg og anleggsdrift",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.513": {
+      "tittel": "Siltgardin/siltskjørt",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.514": {
+      "tittel": "Plastavfall fra sprøytebetong og sprengningsarbeider",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.52": {
+      "tittel": "Støy",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.521": {
+      "tittel": "Støy registrert av entreprenøren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.522": {
+      "tittel": "Støy registrert av byggherren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.53": {
+      "tittel": "Vibrasjoner",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.531": {
+      "tittel": "Vibrasjoner registrert av entreprenøren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.532": {
+      "tittel": "Vibrasjoner registrert av byggherren",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.54": {
+      "tittel": "Sikring av eksisterende vegetasjon, bekker, elver, vann, fornminner, dyr, mv.",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.541": {
+      "tittel": "Sikring av enkelttrær, trekrone og stamme",
+      "enhet": "stk",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.542": {
+      "tittel": "Sikring av rotsonen på trær",
+      "enhet": "m2",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.543": {
+      "tittel": "Sikring av plantesamfunn, sammenhengende arealer med vegetasjon",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.544": {
+      "tittel": "Sikring av bekker, elver og vann",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.545": {
+      "tittel": "Sikring av spesielle objekter, dyr eller fugl, mv.",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "12.546": {
+      "tittel": "Sikring av fornminner, kulturminner, mv.",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13": {
+      "tittel": "ANLEGGSVEGER",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13.1": {
+      "tittel": "Provisoriske anleggsveger",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13.2": {
+      "tittel": "Provisoriske bruer",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13.3": {
+      "tittel": "Provisoriske kaier",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13.4": {
+      "tittel": "Eksisterende veger",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13.5": {
+      "tittel": "Eksisterende bruer",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13.6": {
+      "tittel": "Eksisterende kaier",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "13.7": {
+      "tittel": "Midlertidig beskyttelse og etterfølgende rengjøring av planum og overbygning",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14": {
+      "tittel": "MIDLERTIDIG TRAFIKKAVVIKLING",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.1": {
+      "tittel": "Trafikkulemper",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.11": {
+      "tittel": "Trafikkulemper, unntatt bruk av langsgående sikring",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.12": {
+      "tittel": "Bruk av langsgående sikring T1, T2, T3 oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.121": {
+      "tittel": "Langsgående sikring T1 oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.122": {
+      "tittel": "Langsgående sikring T2 oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.123": {
+      "tittel": "Langsgående sikring T3 oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.13": {
+      "tittel": "Bruk av langsgående sikring T1, T2, T3 oppgjort etter tid",
+      "enhet": "MxUke",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.131": {
+      "tittel": "Langsgående sikring T1 oppgjort etter tid",
+      "enhet": "MxUke",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.132": {
+      "tittel": "Langsgående sikring T2 oppgjort etter tid",
+      "enhet": "MxUke",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.133": {
+      "tittel": "Langsgående sikring T3 oppgjort etter tid",
+      "enhet": "MxUke",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.2": {
+      "tittel": "Tiltak for kollektivtrafikk",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.3": {
+      "tittel": "Tiltak for myke trafikanter",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.4": {
+      "tittel": "Oppmerking og signaler",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.5": {
+      "tittel": "Provisorisk omlegging av eksisterende veger",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.6": {
+      "tittel": "Sikringstiltak",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.61": {
+      "tittel": "Sikringstiltak for eiendommer og landtrafikk",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.62": {
+      "tittel": "Sikringstiltak for sjøtrafikk",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.63": {
+      "tittel": "Sikringstiltak for lufttrafikk",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.64": {
+      "tittel": "Sikringsvoll ved funn av forsager fra bergsprengningsarbeid i tidligere entreprise",
+      "enhet": "m3",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "14.7": {
+      "tittel": "Til bruk for drift og vedlikehold",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15": {
+      "tittel": "RIVING OG FJERNING",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.1": {
+      "tittel": "Hus, grunnmurer, støttemurer etc",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.2": {
+      "tittel": "Bruer, brufundamenter, etc",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.3": {
+      "tittel": "Kummer, stikkrenner, kulverter og rørledninger",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.4": {
+      "tittel": "Kantstein, rekkverk, skilt, stolper, vegutstyr, portaler, m.v. med fundamenter",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.41": {
+      "tittel": "Kantstein",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.42": {
+      "tittel": "Rekkverk og stolper med fundamenter",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.43": {
+      "tittel": "Skilt, stolper og portaler med fundamenter",
+      "enhet": "stk",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.44": {
+      "tittel": "Øvrig vegutstyr med fundamenter",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "15.5": {
+      "tittel": "Gjerder og stolper med fundamenter",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16": {
+      "tittel": "FLYTTING OG OMLEGGING",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.1": {
+      "tittel": "Flytting av hus",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.2": {
+      "tittel": "Flytting og omlegging av private vann- og avløpsledninger, brønner",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.3": {
+      "tittel": "Fjerning/flytting av kabler og utstyr",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.31": {
+      "tittel": "Oppgraving/nedtaking og fjerning/flytting av kabler",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.32": {
+      "tittel": "Fjerning/flytting av master/stolper og fundamenter",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.33": {
+      "tittel": "Fjerning/flytting av kiosker/skap og fundamenter",
+      "enhet": "RS",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.4": {
+      "tittel": "Midlertidig flytting og omlegging av eksisterende bekkeløp",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.41": {
+      "tittel": "Midlertidig åpent bekkeløp",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.42": {
+      "tittel": "Midlertidig lukket bekkeløp",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.5": {
+      "tittel": "Flytting og omlegging av gjerder",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.51": {
+      "tittel": "Nedtaking og overflytting av eksisterende gjerde til ny plassering",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.52": {
+      "tittel": "Oppsetting av gammelt gjerde på berg",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.53": {
+      "tittel": "Oppsetting av gammelt gjerde i jord",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "16.54": {
+      "tittel": "Tiltransport av gammelt gjerdemateriale fra lager",
+      "enhet": "m",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "17": {
+      "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    },
+    "18": {
+      "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
+      "enhet": "?",
+      "hovedprosess": "1",
+      "tekst": {}
+    }
+  }
+}

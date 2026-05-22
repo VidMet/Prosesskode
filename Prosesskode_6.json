@@ -1,0 +1,578 @@
+{
+  "metadata": {
+    "versjon": "R761 Database",
+    "kapittel": "6"
+  },
+  "prosesskoder": {
+    "6": {
+      "tittel": "Vegdekke",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "61": {
+      "tittel": "GRUSDEKKE",
+      "enhet": "RS",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "61.1": {
+      "tittel": "Oppgrusing (legging av grusdekke)",
+      "enhet": "m3",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "62": {
+      "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63": {
+      "tittel": "RIVING, SKJÆRING, FRESING OG OPPRETTING AV FASTE DEKKER",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.1": {
+      "tittel": "Riving og skjæring av faste dekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.11": {
+      "tittel": "Riving av faste dekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.111": {
+      "tittel": "Riving av asfaltdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.112": {
+      "tittel": "Riving av betongdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.113": {
+      "tittel": "Riving av steindekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.12": {
+      "tittel": "Skjæring av faste dekker",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.121": {
+      "tittel": "Skjæring av asfaltdekke",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.122": {
+      "tittel": "Skjæring av betongdekke",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.2": {
+      "tittel": "Fresing av faste dekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.21": {
+      "tittel": "Fresing av asfaltdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.22": {
+      "tittel": "Fresing av betongdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.3": {
+      "tittel": "Oppretting av asfaltdekker",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.31": {
+      "tittel": "Oppretting med asfaltgrusbetong (Agb)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.32": {
+      "tittel": "Oppretting med asfaltbetong (Ab)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.33": {
+      "tittel": "Oppretting med mykasfalt (Ma)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "63.34": {
+      "tittel": "Oppretting med asfaltert grus (Ag)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64": {
+      "tittel": "OVERFLATEBEHANDLING",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.1": {
+      "tittel": "Overflatebehandling av faste dekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.11": {
+      "tittel": "Enkel overflatebehandling med pukk (Eo)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.12": {
+      "tittel": "Dobbel overflatebehandling med pukk (Do)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.13": {
+      "tittel": "Avstrøing",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.2": {
+      "tittel": "Overflatebehandling som selvstendig dekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.21": {
+      "tittel": "Enkel overflatebehandling med grus (Eog)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.22": {
+      "tittel": "Dobbel overflatebehandling med grus (Dog)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.23": {
+      "tittel": "Enkel overflatebehandling med pukk (Eo)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.24": {
+      "tittel": "Dobbel overflatebehandling med pukk (Do)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "64.25": {
+      "tittel": "Avstrøing",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65": {
+      "tittel": "ASFALTDEKKER",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.1": {
+      "tittel": "Asfaltdekker bindlag",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.11": {
+      "tittel": "Asfaltdekker bindlag oppgjort i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.111": {
+      "tittel": "Bindlag av asfaltgrusbetong (Agb) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.112": {
+      "tittel": "Bindlag av asfaltbetong (Ab) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.113": {
+      "tittel": "Bindlag av mykasfalt (Ma) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.117": {
+      "tittel": "Bindlag av øvrige massetyper i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.12": {
+      "tittel": "Asfaltdekker bindlag oppgjort i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.121": {
+      "tittel": "Bindlag av asfaltgrusbetong (Agb) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.122": {
+      "tittel": "Bindlag av asfaltbetong (Ab) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.123": {
+      "tittel": "Bindlag av mykasfalt (Ma) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.127": {
+      "tittel": "Bindlag av øvrige massetyper i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.2": {
+      "tittel": "Asfaltdekker slitelag",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.21": {
+      "tittel": "Asfaltdekker slitelag oppgjort i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.211": {
+      "tittel": "Slitelag av asfaltgrusbetong (Agb) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.212": {
+      "tittel": "Slitelag av asfaltbetong (Ab) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.213": {
+      "tittel": "Slitelag av mykasfalt (Ma) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.214": {
+      "tittel": "Slitelag av skjelettasfalt (Ska) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.215": {
+      "tittel": "Slitelag av støpeasfalt (Sta) i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.217": {
+      "tittel": "Slitelag av øvrige massetyper i areal",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.22": {
+      "tittel": "Asfaltdekker slitelag oppgjort i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.221": {
+      "tittel": "Slitelag av asfaltgrusbetong (Agb) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.222": {
+      "tittel": "Slitelag av asfaltbetong (Ab) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.223": {
+      "tittel": "Slitelag av mykasfalt (Ma) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.224": {
+      "tittel": "Slitelag av skjelettasfalt (Ska) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.225": {
+      "tittel": "Slitelag av støpeasfalt (Sta) i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.227": {
+      "tittel": "Slitelag av øvrige massetyper i tonn",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.3": {
+      "tittel": "Armering av asfaltdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "65.4": {
+      "tittel": "Klebing av asfaltdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66": {
+      "tittel": "BETONGDEKKER OG DEKKER AV BELEGNINGS-STEIN OG HELLER",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.1": {
+      "tittel": "Betongdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.11": {
+      "tittel": "Uarmerte betongdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.12": {
+      "tittel": "Armerte betongdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.2": {
+      "tittel": "Fugearbeider",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.21": {
+      "tittel": "Langsgående vinkelendringsfuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.22": {
+      "tittel": "Tversgående ekspansjonsfuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.23": {
+      "tittel": "Tversgående kontraksjonsfuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.24": {
+      "tittel": "Tversgående vinkelendringsfuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.3": {
+      "tittel": "Valsebetong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.4": {
+      "tittel": "Vegdekker av belegningsstein, gatestein og heller",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.41": {
+      "tittel": "Belegningsstein av betong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.42": {
+      "tittel": "Heller av betong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.43": {
+      "tittel": "Gatestein",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "66.44": {
+      "tittel": "Plater av naturstein",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67": {
+      "tittel": "BELEGNINGER UTENFOR KJØREBANEN",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.1": {
+      "tittel": "Belegning på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.11": {
+      "tittel": "Belegning av grus eller steinmaterialer på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.12": {
+      "tittel": "Belegning av asfalt på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.13": {
+      "tittel": "Belegning av knust asfalt Ak på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.2": {
+      "tittel": "Belegning på opphøyde arealer",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.21": {
+      "tittel": "Asfaltdekke på fortau/gangbane/trafikkøy",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.22": {
+      "tittel": "Steindekker på fortau/gangbane/trafikkøy",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.221": {
+      "tittel": "Belegningsstein av betong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.222": {
+      "tittel": "Heller av betong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.223": {
+      "tittel": "Gatestein",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.224": {
+      "tittel": "Plater av naturstein",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.23": {
+      "tittel": "Betongdekke på fortau/gangbane/trafikkøya",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.27": {
+      "tittel": "Oppfyllingsmasser på trafikkøy",
+      "enhet": "m3",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.3": {
+      "tittel": "Skulder i tunnel",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.31": {
+      "tittel": "Betong på skulder i tunnel",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.32": {
+      "tittel": "Asfalt på skulder i tunnel",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.4": {
+      "tittel": "Varmekabelanlegg",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    },
+    "67.5": {
+      "tittel": "Ledelinjer i gategrunn",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "tekst": {}
+    }
+  }
+}

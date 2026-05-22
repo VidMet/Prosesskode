@@ -1,0 +1,1322 @@
+{
+  "metadata": {
+    "versjon": "R761 Database",
+    "kapittel": "4"
+  },
+  "prosesskoder": {
+    "4": {
+      "tittel": "Grøfter, kummer og rør",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41": {
+      "tittel": "ÅPNE GRØFTER",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.1": {
+      "tittel": "Åpne grøfter i løsmasse",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.11": {
+      "tittel": "Åpne grøfter i løsmasse Graving, opplasting, transport og utlegging oppgjort etter volum",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.12": {
+      "tittel": "Åpne grøfter i løsmasse oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.2": {
+      "tittel": "Åpne grøfter i kombinert løsmasse/berg (løsmassetykk. ≥0,3m)",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.21": {
+      "tittel": "Graving, opplasting, transport og utlegging",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.22": {
+      "tittel": "Sprengning, opplasting, transport og utlegging",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.3": {
+      "tittel": "Åpne grøfter i berg (løsmassetykkelse < 0,3m)",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.31": {
+      "tittel": "Åpne grøfter i berg oppgjort etter volum",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.32": {
+      "tittel": "Åpne grøfter i berg oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.4": {
+      "tittel": "Åpne grøfter i sprengt stein",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.41": {
+      "tittel": "Åpne grøfter i sprengt stein oppgjort etter volum",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.42": {
+      "tittel": "Åpne grøfter i sprengt stein oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.5": {
+      "tittel": "Åpne grøfter i myr",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.51": {
+      "tittel": "Åpne grøfter i myr oppgjort etter volum",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "41.52": {
+      "tittel": "Åpne grøfter i myr oppgjort etter lengde",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42": {
+      "tittel": "LUKKEDE RØRGRØFTER",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.1": {
+      "tittel": "Rørgrøft i løsmasse",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.11": {
+      "tittel": "Graving",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.13": {
+      "tittel": "Fiberduk",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.14": {
+      "tittel": "Fundament og omfylling for rør",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.15": {
+      "tittel": "Gjenfylling over ledningssonen med stedlige masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.16": {
+      "tittel": "Gjenfylling over ledningssonen med tilførte masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.17": {
+      "tittel": "Fjerning av overskuddsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.2": {
+      "tittel": "Rørgrøft i kombinert løsmasse/berg (løsmassetykkelse ≥ 0,3 m)",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.21": {
+      "tittel": "Graving",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.22": {
+      "tittel": "Sprengning og oppgraving",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.23": {
+      "tittel": "Fiberduk",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.24": {
+      "tittel": "Fundament og omfylling for rør",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.25": {
+      "tittel": "Gjenfylling over ledningssonen med stedlige masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.26": {
+      "tittel": "Gjenfylling over ledningssonen med tilførte masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.27": {
+      "tittel": "Fjerning av overskuddsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.3": {
+      "tittel": "Rørgrøft i berg (løsmassetykkelse < 0,3 m) og tunnel",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.31": {
+      "tittel": "Avdekking",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.32": {
+      "tittel": "Sprengning og oppgraving",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.33": {
+      "tittel": "Fiberduk",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.34": {
+      "tittel": "Fundament og omfylling for rør",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.35": {
+      "tittel": "Gjenfylling over ledningssonen med stedlige masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.36": {
+      "tittel": "Gjenfylling over ledningssonen med tilførte masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.37": {
+      "tittel": "Fjerning av overskuddsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.4": {
+      "tittel": "Rørgrøft i sprengt stein",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.41": {
+      "tittel": "Graving",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.43": {
+      "tittel": "Fiberduk",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.44": {
+      "tittel": "Fundament og omfylling for rør",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.45": {
+      "tittel": "Gjenfylling over ledningssonen med stedlige masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.46": {
+      "tittel": "Gjenfylling over ledningssonen med tilførte masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.47": {
+      "tittel": "Fjerning av overskuddsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.5": {
+      "tittel": "Avstivede grøfter",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.51": {
+      "tittel": "Graving mellom spunt uten avstivning",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.52": {
+      "tittel": "Graving mellom spunt med avstivning",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.53": {
+      "tittel": "Fiberduk",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.54": {
+      "tittel": "Fundament og omfylling for rør",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.55": {
+      "tittel": "Gjenfylling mellom spunt over ledningssonen med stedlige masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.56": {
+      "tittel": "Gjenfylling mellom spunt over ledningssonen med tilførte masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.57": {
+      "tittel": "Fjerning av overskuddsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.58": {
+      "tittel": "Sikring",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.6": {
+      "tittel": "Utvidelse for kummer",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.61": {
+      "tittel": "Utvidelse for kummer i løsmasse",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.62": {
+      "tittel": "Utvidelse for kummer i berg/løsmasse (løsmassetykkelse ≥ 0,3 m)",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.63": {
+      "tittel": "Utvidelse for kummer i berg (løsmassetykkelse < 0,3 m)",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.64": {
+      "tittel": "Utvidelse for kummer i sprengt stein",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.65": {
+      "tittel": "Utvidelse for kummer i tunnel",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.7": {
+      "tittel": "Pressing av rør",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.71": {
+      "tittel": "Rigging",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.72": {
+      "tittel": "Spunt inkl. avstivning",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.73": {
+      "tittel": "Graving av pressgroper",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.74": {
+      "tittel": "Fundamentering",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "42.75": {
+      "tittel": "Pressing/boring",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43": {
+      "tittel": "RØRLEDNINGER",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.1": {
+      "tittel": "Drensledning",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.11": {
+      "tittel": "Diameter ≤ 120 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.12": {
+      "tittel": "Diameter > 120 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.13": {
+      "tittel": "Drensmatter",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.2": {
+      "tittel": "Overvannsledning",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.21": {
+      "tittel": "Diameter 150 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.22": {
+      "tittel": "Diameter 200 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.23": {
+      "tittel": "Diameter 250 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.24": {
+      "tittel": "Diameter 300 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.25": {
+      "tittel": "Diameter 400 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.26": {
+      "tittel": "Diameter 500 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.27": {
+      "tittel": "Diameter 600 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.28": {
+      "tittel": "Diameter >600 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.3": {
+      "tittel": "Spillvannsledning (avløp)",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.31": {
+      "tittel": "Diameter 150 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.32": {
+      "tittel": "Diameter 200 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.33": {
+      "tittel": "Diameter 250 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.34": {
+      "tittel": "Diameter 300 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.35": {
+      "tittel": "Diameter 400 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.36": {
+      "tittel": "Diameter 500 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.37": {
+      "tittel": "Diameter 600 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.38": {
+      "tittel": "Diameter >600 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.4": {
+      "tittel": "Vannledning",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.41": {
+      "tittel": "Innvendig diameter < 64 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.42": {
+      "tittel": "Innvendig diameter 64 - 200 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.43": {
+      "tittel": "Innvendig diameter 201 - 400 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.44": {
+      "tittel": "Innvendig diameter > 400 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.45": {
+      "tittel": "Isolasjon",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "43.48": {
+      "tittel": "Forankring av ledning",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44": {
+      "tittel": "KABLER OG LEDNINGER",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.1": {
+      "tittel": "Kabelgrøfter",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.11": {
+      "tittel": "Graving/sprengning av grøfter",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.111": {
+      "tittel": "Grøfter i jord",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.112": {
+      "tittel": "Grøfter i kombinert jord/berg",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.113": {
+      "tittel": "Grøfter i berg",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.114": {
+      "tittel": "Grøfter i sprengt stein",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.12": {
+      "tittel": "Fundament, sidefylling/omfylling og beskyttelseslag",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.13": {
+      "tittel": "Gjenfylling over ledningssonen",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.131": {
+      "tittel": "Gjenfylling over ledningssonen med stedlige masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.132": {
+      "tittel": "Gjenfylling over ledningssonen med tilførte masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.14": {
+      "tittel": "Fjerning av overskuddsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.2": {
+      "tittel": "Kabler",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.21": {
+      "tittel": "Høyspenningskabler",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.22": {
+      "tittel": "Lavspenningskabler",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.23": {
+      "tittel": "Ekomkabler",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.24": {
+      "tittel": "Kabeldekkbord",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.25": {
+      "tittel": "Jordingssystem",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.251": {
+      "tittel": "Jordingsleder 25 mm2",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.252": {
+      "tittel": "Jordingsleder 50mm2",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.253": {
+      "tittel": "Isolert jordingsleder 25 mm2 gul/grønn",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.254": {
+      "tittel": "Jordelektrode",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.3": {
+      "tittel": "Trekkerørsanlegg",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.31": {
+      "tittel": "Trekkerør",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.32": {
+      "tittel": "Kabelmarkering med lyttetråd",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.4": {
+      "tittel": "Kabelkanaler, innstøpte trekkerør og trekkekummer",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.41": {
+      "tittel": "Kabelkanaler, plasstøpte",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.42": {
+      "tittel": "Kabelkanaler, prefabrikkerte",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.43": {
+      "tittel": "Rørkryss, plasstøpte",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.44": {
+      "tittel": "Rørkryss, prefabrikerte",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.45": {
+      "tittel": "Trekkekummer, plasstøpte",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.46": {
+      "tittel": "Trekkekummer, prefabrikkerte",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.461": {
+      "tittel": "Trekkekum type TK2-900. L 1420, B 700, H 900",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.462": {
+      "tittel": "Trekkekum type TK3-900. L 2100, B 700, H 900",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.463": {
+      "tittel": "Trekkekum type S TK2. L 1420, B 900, H 900",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.464": {
+      "tittel": "Trekkekum type S TK3. L 2100, B 900, H 900",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.465": {
+      "tittel": "Trekkekum type TK1 tunnel. L 808, B 380, H 500",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.466": {
+      "tittel": "Trekkekum type TK2 tunnel. L 1063, B 380, H 500",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.47": {
+      "tittel": "Trekkekummer, plast/kompositt",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.471": {
+      "tittel": "Trekkekum. L 1530, B 610, H 900",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.472": {
+      "tittel": "Trekkekum. L 915, B 610, H 900",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.473": {
+      "tittel": "Trekkekum. L 1530, B 910, H 900",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.475": {
+      "tittel": "Trekkekum Tunnel. L 505, B 340, H 445",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.5": {
+      "tittel": "Pressing av rør",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.51": {
+      "tittel": "Rigging",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.52": {
+      "tittel": "Spunt inkl. avstiving",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.53": {
+      "tittel": "Graving av groper",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.54": {
+      "tittel": "Fundamentering",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "44.55": {
+      "tittel": "Pressing/boring",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45": {
+      "tittel": "STIKKRENNER/KULVERTER INKL. INN- OG UTLØPSKONSTRUKSJONER",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.1": {
+      "tittel": "Graving, sprengning mm.",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.11": {
+      "tittel": "Graving",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.12": {
+      "tittel": "Sprengning og oppgraving",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.13": {
+      "tittel": "Fiberduk",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.14": {
+      "tittel": "Fundament og omfylling for rør",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.15": {
+      "tittel": "Gjenfylling, stedlige masser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.16": {
+      "tittel": "Frostsikring",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.17": {
+      "tittel": "Fjerning av overskuddsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.18": {
+      "tittel": "Plastring",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.2": {
+      "tittel": "Stikkrenner/kulverter, rør",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.21": {
+      "tittel": "Innvendig diameter 300 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.22": {
+      "tittel": "Innvendig diameter 400 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.23": {
+      "tittel": "Innvendig diameter 500 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.24": {
+      "tittel": "Innvendig diameter 600 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.25": {
+      "tittel": "Innvendig diameter 800 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.26": {
+      "tittel": "Innvendig diameter 1000 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.27": {
+      "tittel": "Innvendig diameter 1200 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.28": {
+      "tittel": "Innvendig diameter 1400 mm",
+      "enhet": "m",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.3": {
+      "tittel": "Kulvert av spesialelement",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.4": {
+      "tittel": "Plasstøpt betongkulvert",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.41": {
+      "tittel": "Forskaling",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.42": {
+      "tittel": "Armering",
+      "enhet": "tonn",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.43": {
+      "tittel": "Betong",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.44": {
+      "tittel": "Frostsikring og fuktisolasjon",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "45.5": {
+      "tittel": "Inn- og utløpskonstruksjoner",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46": {
+      "tittel": "KUMMER (LEVERING, MONTERING)",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.1": {
+      "tittel": "Sandfangskummer",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.11": {
+      "tittel": "Kum",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.12": {
+      "tittel": "Utrustning",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.2": {
+      "tittel": "Hjelpesluk",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.3": {
+      "tittel": "Inspeksjonskummer",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.31": {
+      "tittel": "Kum",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.32": {
+      "tittel": "Utrustning",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.4": {
+      "tittel": "Spillvannskummer",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.41": {
+      "tittel": "Kum",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.42": {
+      "tittel": "Utrustning",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.5": {
+      "tittel": "Vannkummer",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.51": {
+      "tittel": "Kum",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.52": {
+      "tittel": "Utrustning",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.6": {
+      "tittel": "Kombinerte kummer",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.61": {
+      "tittel": "Kum",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.62": {
+      "tittel": "Utrustning",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.7": {
+      "tittel": "Spesialkummer",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.71": {
+      "tittel": "Prefabrikert spesialkum",
+      "enhet": "stk",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.72": {
+      "tittel": "Plasstøpt spesialkum",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.721": {
+      "tittel": "Forskaling",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.722": {
+      "tittel": "Armering",
+      "enhet": "tonn",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.723": {
+      "tittel": "Betong",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "46.724": {
+      "tittel": "Utrustning",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47": {
+      "tittel": "FORSTERKNING AV GRØFTER OG ELVE- OG BEKKEREGULERINGER",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.1": {
+      "tittel": "Stempling og avstiving",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.2": {
+      "tittel": "Spunting",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.21": {
+      "tittel": "Spunting tre",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.22": {
+      "tittel": "Spunting stål",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.3": {
+      "tittel": "Bunnforsterkning",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.4": {
+      "tittel": "Avlastning grøftesider",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.5": {
+      "tittel": "Fangdammer og provisoriske omlegginger",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.6": {
+      "tittel": "Opprensking/omlegging av elver og bekker",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.61": {
+      "tittel": "Opprensking av eksisterende løp",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.62": {
+      "tittel": "Nytt elve-/bekkeløp",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.621": {
+      "tittel": "Nytt løp i løsmasser",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.622": {
+      "tittel": "Nytt løp i berg",
+      "enhet": "m3",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.63": {
+      "tittel": "Gjenfylling av gammelt løp",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.7": {
+      "tittel": "Erosjonsforebyggende tiltak, terskler og rensetiltak",
+      "enhet": "?",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.71": {
+      "tittel": "Steinplastring med masser fra utenfor anlegget",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.72": {
+      "tittel": "Steinplastring med masser fra anlegget",
+      "enhet": "m2",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.73": {
+      "tittel": "Andre erosjonsforebyggende tiltak enn plastring",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.74": {
+      "tittel": "Terskler",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.75": {
+      "tittel": "Permanente sedimentasjonsbassenger, infiltrasjonsgrøfter, membran, mv.",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    },
+    "47.76": {
+      "tittel": "Andre permanente rensetiltak",
+      "enhet": "RS",
+      "hovedprosess": "4",
+      "tekst": {}
+    }
+  }
+}
