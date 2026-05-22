@@ -11,21 +11,20 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
 
     :root {
-      /* OPPDATERT: Lys fargepalett */
-      --bg:        #f3f4f6;      /* Lys grå hovedbakgrunn */
-      --surface:   #ffffff;      /* Hvite paneler og menyer */
-      --surface2:  #e5e7eb;      /* Hover-effekter (lys grå) */
-      --border:    #d1d5db;      /* Myke grå skillelinjer */
-      --ink:       #111827;      /* Svart/mørkegrå tekst */
-      --muted:     #6b7280;      /* Dempet tekst (mellomgrå) */
+      --bg:        #f3f4f6;      
+      --surface:   #ffffff;      
+      --surface2:  #e5e7eb;      
+      --border:    #d1d5db;      
+      --ink:       #111827;      
+      --muted:     #6b7280;      
       
-      --green:     #166534;      /* Mørkere, lesbar grønn */
+      --green:     #166534;      
       --green-dim: #dcfce7;
       --yellow:    #854d0e;
       --red:       #b91c1c;
       --red-dim:   #fee2e2;
       
-      --blue:      #1d4ed8;      /* Mørkere og tydeligere blåfarge */
+      --blue:      #1d4ed8;      
       --blue-dim:  #dbeafe;
       
       --mono:      'JetBrains Mono', monospace;
@@ -56,8 +55,10 @@
     .btn:disabled { opacity: .4; cursor: not-allowed; }
     .btn:not(:disabled):hover { opacity: .85; }
     .btn:not(:disabled):active { transform: scale(.97); }
-    /* Oppdatert knapp: Mørk blå med hvit skrift */
+    
     .btn-primary { background: var(--blue); color: #ffffff; }
+    .btn-secondary { background: var(--surface2); color: var(--ink); border: 1px solid var(--border); margin-left: 4px; }
+    .btn-secondary:not(:disabled):hover { background: var(--border); }
     
     #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
     
@@ -77,7 +78,7 @@
     .hoved-panel { margin-bottom: 16px; }
     .hoved-header { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
     .hoved-header:hover { background: var(--surface2); }
-    .hoved-tittel { font-weight: 700; font-size: 14px; color: var(--ink); }
+    .hoved-tittel { font-weight: 600; font-size: 14px; color: var(--ink); }
     .hoved-info { font-family: var(--mono); font-size: 11px; color: var(--muted); }
     .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid var(--border); margin-left: 8px; flex-direction: column; }
 
@@ -138,6 +139,7 @@
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
   <button class="btn btn-primary" id="scanBtn" disabled>▶ Skann Modell</button>
+  <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter til Excel</button>
 </header>
 
 <div id="filterBar">
@@ -169,6 +171,7 @@ let svvHandbok = null;
 let globalProsessRegister = {};
 let globalModelsMap = {};
 
+// OPPDATERT MED DINE SPESIFIKKE NAVN
 const hovedprosessNavn = {
   "1": "Forberedende tiltak og generelle kostnader",
   "2": "Sprengning og masseflytting",
@@ -272,12 +275,52 @@ $('modelFilter').addEventListener('change', (e) => {
     tegnOppUI(globalProsessRegister, e.target.value);
 });
 
+$('exportBtn').addEventListener('click', () => {
+  if (Object.keys(globalProsessRegister).length === 0) return;
+  
+  setStatus('⏳ Genererer Excel-rapport...');
+  
+  let csvInnhold = "\uFEFF"; 
+  csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Modell;Objekttype;Mengde\r\n";
+  
+  const koder = Object.keys(globalProsessRegister).sort();
+  koder.forEach(kode => {
+      const data = globalProsessRegister[kode];
+      const hpNavn = hovedprosessNavn[data.hovedprosess] || "Ukjent hovedprosess";
+      
+      data.objekter.forEach(obj => {
+          const tittelRenset = (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
+          const modellRenset = (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
+          const navnRenset = (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
+          const mengdeFormatert = obj.mengde.toString().replace('.', ',');
+          
+          csvInnhold += `${data.hovedprosess} - ${hpNavn};${kode};${tittelRenset};${data.enhet};${modellRenset};${navnRenset};${mengdeFormatert}\r\n`;
+      });
+  });
+  
+  const blob = new Blob([csvInnhold], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const lenke = document.createElement("a");
+  
+  const datoStreng = new Date().toISOString().slice(0,10);
+  lenke.setAttribute("href", url);
+  lenke.setAttribute("download", `Mengdeuttak_R761_${datoStreng}.csv`);
+  lenke.style.visibility = 'hidden';
+  
+  document.body.appendChild(lenke);
+  lenke.click();
+  document.body.removeChild(lenke);
+  
+  setStatus('✅ Filen ble eksportert. Sjekk nedlastingsmappen din!', 'ok');
+});
+
 $('scanBtn').addEventListener('click', async () => {
   if (!API) return;
   
   $('scanBtn').disabled = true;
   $('modelFilter').disabled = true;
   $('versionFilter').disabled = true;
+  $('exportBtn').disabled = true; 
   $('mainContent').innerHTML = '';
   globalProsessRegister = {};
   globalModelsMap = {};
@@ -390,6 +433,7 @@ $('scanBtn').addEventListener('click', async () => {
     $('scanBtn').disabled = false;
     $('modelFilter').disabled = false;
     $('versionFilter').disabled = false;
+    $('exportBtn').disabled = false; 
 
   } catch (error) {
     setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
