@@ -53,7 +53,6 @@
     .btn:not(:disabled):active { transform: scale(.97); }
     .btn-primary { background: var(--blue); color: #000; }
     
-    /* Nedtrekksmeny-bar for modeller */
     #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
     #filterBar label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
     #modelFilter { font-family: var(--mono); font-size: 12px; background: var(--surface2); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
@@ -75,29 +74,33 @@
     
     .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); flex-direction: column; }
     
-    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid #1c2128; background: #0d1117; flex-shrink: 0; }
+    /* Endret beskrivelsestekst: Gjort rullbar (scrollable) med fast makshøyde */
+    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid #1c2128; background: #0d1117; flex-shrink: 0; max-height: 180px; overflow-y: auto; }
+    
     .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: #c9d1d9; border-left: 3px solid var(--surface2); padding-left: 10px; }
     .tekst-blokk:last-child { margin-bottom: 0; }
-    
     .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
     .tekst-blokk p:last-child { margin-bottom: 0; }
-    
     .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
     
     .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; }
     .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
     
-    .objekt-liste { overflow-y: auto; max-height: 250px; border-top: 1px solid #1c2128; }
+    .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid #1c2128; }
     
-    /* Ny stil for gruppering på modellnivå i listen */
-    .modell-overskrift { background: #12161d; padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid #1c2128; cursor: pointer; position: sticky; top: 0; }
+    /* Gruppering for lukkbare modeller */
+    .modell-gruppe { display: flex; flex-direction: column; }
+    .modell-overskrift { background: #12161d; padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid #1c2128; cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
     .modell-overskrift:hover { background: #1c2128; color: var(--ink); }
     .modell-overskrift-mengde { color: var(--blue); }
+    
+    /* Objektene er skjult som standard */
+    .modell-objekter { display: none; flex-direction: column; }
 
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--bg); }
     .objekt-rad:hover { background: var(--surface2); }
     
-    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 8px; border-left: 2px solid var(--surface2); }
+    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--surface2); }
     .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
 
     .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
@@ -142,7 +145,6 @@
 let API = null;
 let svvHandbok = null;
 
-// Globale variabler for å lagre skannedata slik at vi kan filtrere uten å skanne på nytt
 let globalProsessRegister = {};
 let globalModelsMap = {};
 
@@ -184,7 +186,6 @@ async function lastJSONFil() {
   }
 }
 
-// Lytter på dropdown-menyen for å oppdatere UI når bruker bytter modell
 $('modelFilter').addEventListener('change', (e) => {
     tegnOppUI(globalProsessRegister, e.target.value);
 });
@@ -192,7 +193,6 @@ $('modelFilter').addEventListener('change', (e) => {
 $('scanBtn').addEventListener('click', async () => {
   if (!API) return;
   
-  // Nullstill før ny skann
   $('scanBtn').disabled = true;
   $('modelFilter').disabled = true;
   $('mainContent').innerHTML = '';
@@ -200,7 +200,21 @@ $('scanBtn').addEventListener('click', async () => {
   globalModelsMap = {};
   
   try {
-    setStatus('⏳ Henter modeller fra vieweren...');
+    setStatus('⏳ Henter filnavn og modeller fra vieweren...');
+    
+    // NYTT: Henter faktiske filnavn fra prosjektet for å bruke .ifc-navnene
+    const nameMap = new Map();
+    try {
+      const prjModels = await API.models?.getModels();
+      if (prjModels) {
+          const list = Array.isArray(prjModels) ? prjModels : (prjModels.models || prjModels.items || []);
+          list.forEach(m => {
+            const fn = [m.name, m.fileName, m.filename].find(v => v && /\.ifc/i.test(v)) || m.name;
+            if (m.id || m.modelId) nameMap.set(m.id || m.modelId, fn);
+          });
+      }
+    } catch(e) {}
+
     const models = await API.viewer.getObjects();
     
     if (!models || models.length === 0) {
@@ -214,10 +228,11 @@ $('scanBtn').addEventListener('click', async () => {
 
     for (const model of models) {
       const mid = model.modelId || model.modelid;
-      // Finn modellnavn, fallback til "Modell ID" hvis tomt
-      const modelName = model.name && model.name.trim() !== "" ? model.name : `Modell (${mid.substring(0,6)}...)`;
       
-      // Lagre modellen i oversikten vår for dropdown-menyen
+      // Slår opp det faktiske filnavnet, med fallback til viewernavn
+      let modelName = nameMap.get(mid) || model.name;
+      if (!modelName || modelName.trim() === "") modelName = `Modell (${mid.substring(0,6)}...)`;
+      
       globalModelsMap[mid] = modelName;
 
       const objectIds = (model.objects || []).map(o => o.id || o.objectRuntimeId).filter(id => id != null);
@@ -255,7 +270,7 @@ $('scanBtn').addEventListener('click', async () => {
                 enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
                 url: handbokData && handbokData.url ? handbokData.url : null,
                 tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
-                objekter: [] // Nå lagrer vi kun objektene, og kalkulerer summene i tegnOppUI()
+                objekter: [] 
               };
             }
             
@@ -272,10 +287,7 @@ $('scanBtn').addEventListener('click', async () => {
       }
     }
 
-    // Oppdater nedtrekksmenyen
     oppdaterDropdownMeny();
-    
-    // Tegn grensesnittet for første gang (ALL modeller valgt)
     tegnOppUI(globalProsessRegister, 'ALL');
     
     setStatus(`✅ Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
@@ -300,13 +312,12 @@ function oppdaterDropdownMeny() {
     }
 }
 
-// Funksjonen tar nå inn et filter for modelId
 function tegnOppUI(register, filterMid) {
   const container = $('mainContent');
-  container.innerHTML = ''; // Tømmer containeren før gjenopptegning
+  container.innerHTML = ''; 
   
   const koder = Object.keys(register).sort();
-  let visteProsesser = 0; // For å sjekke om utvalget er helt tomt
+  let visteProsesser = 0; 
   
   const wrapper = document.createElement('div');
   wrapper.className = 'anim';
@@ -314,18 +325,13 @@ function tegnOppUI(register, filterMid) {
   koder.forEach(kode => {
     const data = register[kode];
     
-    // Filtrer objektene basert på dropdown-valget
     const filtrerteObjekter = data.objekter.filter(obj => filterMid === 'ALL' || obj.modelId === filterMid);
-    
-    // Hopp over denne prosesskoden hvis den ikke finnes i valgt modell
     if (filtrerteObjekter.length === 0) return;
     
     visteProsesser++;
     
-    // Regn ut summene på direkten basert på de filtrerte objektene
     const totalMengde = filtrerteObjekter.reduce((sum, obj) => sum + obj.mengde, 0);
     
-    // Samle alle unike objekt-IDs for hovedmarkering
     const masterMarkeringMap = {};
     filtrerteObjekter.forEach(obj => {
         if (!masterMarkeringMap[obj.modelId]) masterMarkeringMap[obj.modelId] = [];
@@ -366,7 +372,7 @@ function tegnOppUI(register, filterMid) {
     kropp.className = 'panel-kropp';
     kropp.style.display = 'none';
 
-    // 1. BESKRIVELSESTEKST
+    // 1. BESKRIVELSESTEKST (Nå med scroll)
     if (data.tekst) {
       const tekstDiv = document.createElement('div');
       tekstDiv.className = 'prosess-beskrivelse';
@@ -390,19 +396,18 @@ function tegnOppUI(register, filterMid) {
       if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
     }
     
-    // 2. DELMENGDER-SEKSJON (Gruppert etter modell)
+    // 2. DELMENGDER-SEKSJON
     const delmengderSeksjon = document.createElement('div');
     delmengderSeksjon.className = 'delmengder-seksjon';
     
     const delmengderTittel = document.createElement('div');
     delmengderTittel.className = 'delmengder-tittel';
-    delmengderTittel.innerText = 'Delmengder';
+    delmengderTittel.innerText = 'Delmengder per modell';
     delmengderSeksjon.appendChild(delmengderTittel);
 
     const liste = document.createElement('div');
     liste.className = 'objekt-liste';
     
-    // Grupper objektene etter modellnavn
     const modellGrupper = {};
     filtrerteObjekter.forEach(obj => {
         if (!modellGrupper[obj.modelNavn]) {
@@ -418,16 +423,26 @@ function tegnOppUI(register, filterMid) {
         modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
     });
 
-    // Tegn opp gruppene
     for (const [navn, gruppeData] of Object.entries(modellGrupper)) {
-        // Modell-header
+        const gruppeDiv = document.createElement('div');
+        gruppeDiv.className = 'modell-gruppe';
+
         const modHeader = document.createElement('div');
         modHeader.className = 'modell-overskrift';
-        modHeader.innerHTML = `<span title="${navn}">📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
+        // Pil lagt inn for å vise at den kan åpnes (lukket som standard)
+        modHeader.innerHTML = `<span title="${navn}">▶ 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
         
-        // Klikk på modellen markerer alle objektene for denne koden I DENNE MODELLEN
+        const objekterContainer = document.createElement('div');
+        objekterContainer.className = 'modell-objekter'; // Skjult via CSS som standard
+        
+        // Klikk på modellmappen utvider listen OG markerer objektene i 3D
         modHeader.onclick = async (e) => {
             e.stopPropagation();
+            
+            const isClosed = objekterContainer.style.display === 'none' || objekterContainer.style.display === '';
+            objekterContainer.style.display = isClosed ? 'flex' : 'none';
+            modHeader.innerHTML = `<span title="${navn}">${isClosed ? '▼' : '▶'} 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
+            
             try {
                 if (API.viewer.setSelection) {
                     await API.viewer.setSelection({ modelObjectIds: [{ modelId: gruppeData.modelId, objectRuntimeIds: gruppeData.markeringIds }] }, 'set');
@@ -435,9 +450,6 @@ function tegnOppUI(register, filterMid) {
             } catch(err) {}
         };
         
-        liste.appendChild(modHeader);
-
-        // Objektene i modellen
         gruppeData.objekter.forEach(obj => {
             const rad = document.createElement('div');
             rad.className = 'objekt-rad';
@@ -451,8 +463,12 @@ function tegnOppUI(register, filterMid) {
                     }
                 } catch(err) {}
             };
-            liste.appendChild(rad);
+            objekterContainer.appendChild(rad);
         });
+
+        gruppeDiv.appendChild(modHeader);
+        gruppeDiv.appendChild(objekterContainer);
+        liste.appendChild(gruppeDiv);
     }
 
     delmengderSeksjon.appendChild(liste);
