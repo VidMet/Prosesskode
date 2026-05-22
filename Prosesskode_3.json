@@ -8,6 +8,7 @@
       "tittel": "Tunneler",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle arbeider foran og nær stuff som har til formål å undersøke hvilke bergforhold tunnelen kan ventes å komme inn i eller som har til formål å tette, stabilisere eller drenere berget. Omfatter også heft, det vil si tomgang på maskiner og mannskap, og alle øvrige utgifter som følge av at sondérboring, kjerneboring og injeksjon utføres ved stuff.",
@@ -1095,6 +1096,7 @@
       "tittel": "SONDÉRBORING, KJERNEBORING OG INJEKSJON",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle arbeider foran og nær stuff som har til formål å undersøke hvilke bergforhold tunnelen kan ventes å komme inn i eller som har til formål å tette, stabilisere eller drenere berget. Omfatter også heft, det vil si tomgang på maskiner og mannskap, og alle øvrige utgifter som følge av at sondérboring, kjerneboring og injeksjon utføres ved stuff.",
@@ -1286,6 +1288,7 @@
       "tittel": "Sondérboring med slaghammerboring",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter sondérboring for å skaffe til veie opplysninger om bergkvalitet og vannlekkasjeforhold, inkludert heft ved stuff, observasjoner, gjenstøping med mørtel/sement, lekkasjemåling og føring av protokoll på borplassen og rapportering.",
@@ -1313,17 +1316,20 @@
     "31.11": {
       "tittel": "Sondérboring med slaghammerboring ved stuff",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.12": {
       "tittel": "Sondérboring med slaghammerboring bak stuff",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.13": {
       "tittel": "Gjenstøping av sondérhull",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenstøping av sondérhull med mørtel/sement med samme type utstyr som ved boltegysing, inkludert heft ved stuff. Ev. injeksjon er beskrevet i prosess 31.6 Injeksjon.",
         "x": "Mengden måles som medgått masse uten vanntilsetning. Enhet: kg"
@@ -1333,6 +1339,7 @@
       "tittel": "Sondérboring med kjerneboring",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter kjerneboring ved stuff for å skaffe til veie opplysninger om bergkvalitet og vannlekkasjeforhold, og inkluderer tilrigging, boring, måling av lekkasjevann ut av hullene, ivaretakelse av kjerner ev. gjenstøping av hull og heft ved stuff, samt observasjoner og føring av protokoll. Ev. avviksmåling av borehullene, er beskrevet i prosess 31.3.",
@@ -1377,6 +1384,7 @@
       "tittel": "Rigg for kjerneboring",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter transport av spesialrigg for kjerneboring til og fra anlegget.",
         "x": "Mengden måles som antall ganger tiltransport til anlegget. Enhet: stk"
@@ -1386,6 +1394,7 @@
       "tittel": "Kjerneboring",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring inkludert observasjoner og føring av protokoll, måling av lekkasjevann ut av hullene og ivaretakelse av kjerner.",
         "x": "Mengden måles som utført boret lengde. Hele hullengden avregnes etter samme prosess. Enhet: m"
@@ -1394,27 +1403,32 @@
     "31.221": {
       "tittel": "Kjerneboring, hullengde 0,00 - 25,00 m",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.222": {
       "tittel": "Kjerneboring, hullengde 25,01 - 50,00 m",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.223": {
       "tittel": "Kjerneboring, hullengde 50,01 - 100,00 m",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.224": {
       "tittel": "Kjerneboring, hullengde 100,01 - 200,00 m",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.23": {
       "tittel": "Gjenstøping av kjerneborhull",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenstøping av kjerneborhull med mørtel eller sement. Ev. injeksjon er beskrevet i prosess 31.6 Injeksjon.",
         "x": "Mengden måles som medgått masse uten vanntilsetning. Enhet: kg"
@@ -1424,6 +1438,7 @@
       "tittel": "Ventetid ved stuff ved kjerneboring",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter ventetid som følge av grunnundersøkelser som medfører stans i produksjonen ved stuff når undersøkelsene utføres av andre enn stuffmannskapet.",
         "x": "Ventetid regnes som den tiden det går fra undersøkelsene starter til produksjonen ved stuff kan gjenopptas. Det regnes ikke med tid utover den aktuelle skiftordningen. Enhet: time"
@@ -1433,6 +1448,7 @@
       "tittel": "Avviksmåling i borehull",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter opp- og nedrigging, måling og registrering av ansett, retningsavvik ved ansett og avvik ved bunn av borehull, inkludert oppstilling ved de enkelte borehull, rapportering og ventetid ved stuff når undersøkelsene utføres av andre enn stuffmannskapet.",
@@ -1451,6 +1467,7 @@
       "tittel": "Opprigging/nedrigging",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført antall ganger tiltransport til anlegget, der én gangs opprigging omfatter opprigging og etterfølgende nedrigging. Enhet: stk"
       }
@@ -1459,6 +1476,7 @@
       "tittel": "Avviksmåling i borehull ved stuff",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført antall digitalt rapporterte hull hvor avviksmåling er utført. Enhet: stk"
       }
@@ -1467,6 +1485,7 @@
       "tittel": "Ventetid ved stuff ved avviksmåling",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter ventetid som følge av avviksmålinger som medfører stans i produksjonen ved stuff når undersøkelsene utføres av andre enn stuffmannskapet.",
         "x": "Mengden måles som medgått ventetid avrundet til nærmeste 1/4 time. Ventetid regnes som den tiden det går fra målingene starter til produksjonen ved stuff kan gjenopptas. Det regnes ikke med tid utover den aktuelle skiftordningen. Enhet: time"
@@ -1476,6 +1495,7 @@
       "tittel": "Vanntapsmåling",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter måling og registrering av vanntap inkludert spyling, pakkerplassering og rapportering.",
         "c": [
@@ -1490,6 +1510,7 @@
       "tittel": "Boring og spyling av injeksjons- og kontrollhull",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring av injeksjons- og kontrollhull, spyling av borehull etter boring for klargjøring til injeksjon, heft ved stuff, føring av protokoll og rapportering.",
         "c": [
@@ -1516,17 +1537,20 @@
     "31.51": {
       "tittel": "Injeksjons- og kontrollhull ved sporadisk injeksjon",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.52": {
       "tittel": "Injeksjons- og kontrollhull ved systematisk injeksjon",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.6": {
       "tittel": "Injeksjon",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter injeksjon for å tette eller stabilisere berg foran stuff, valg av egnet injeksjonsmiddel og injeksjonsvariable i henhold til den spesielle beskrivelsen. Normal grense for når injeksjon skal utføres angis i den spesielle beskrivelsen.",
@@ -1597,6 +1621,7 @@
       "tittel": "Opp- og nedrigging for injeksjon",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter opp- og nedrigging av nødvendig utstyr for injeksjon inkludert alle kostnader for heft og 60 minutter herdetid før boring av kontrollhull eller salveboring.",
         "x": "Avregnes etter antall ganger opprigging ved stuff (per injeksjonsomgang). Enhet: stk"
@@ -1606,6 +1631,7 @@
       "tittel": "Pakkerplassering",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av pakkere og plassering av pakkere i borehull.",
         "x": "Mengden måles som utført antall pakkerplasseringer. Enhet: stk"
@@ -1615,6 +1641,7 @@
       "tittel": "Injeksjonsmiddel",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering av injeksjonsmidler, inkludert tilsetningsstoffer og eventuelle tilsetningsmaterialer.",
@@ -1629,37 +1656,44 @@
     "31.631": {
       "tittel": "Standard injeksjonssement (40)",
       "enhet": "kg",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.632": {
       "tittel": "Fin injeksjonssement (25)",
       "enhet": "kg",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.633": {
       "tittel": "Mikrosement 1 (20)",
       "enhet": "kg",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.634": {
       "tittel": "Mikrosement 2 (13)",
       "enhet": "kg",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.635": {
       "tittel": "Ultrafin sement (10)",
       "enhet": "kg",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.636": {
       "tittel": "Andre injeksjonsmidler som angitt",
       "enhet": "kg",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "31.637": {
       "tittel": "Styrt herding med alkalifri akselerator",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Prosessen skal bare benyttes etter avtale med byggherren.",
         "x": "Mengden måles som medgått masse akselerator. Enhet: kg"
@@ -1669,6 +1703,7 @@
       "tittel": "Injeksjonsarbeid",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter tidsavhengig arbeid med injeksjon. Heft og herdetid er beskrevet i prosess 31.61.",
         "x": "Mengden måles som effektiv injeksjonstid, regnet som den tiden det går fra pumping starter til pumping avsluttes, avrundet til nærmeste hele kvarter. Hvis injeksjonen utføres med redusert kapasitet i forhold til gitte krav, skal mengden reduseres tilsvarende. Avbrudd som skyldes reparasjoner, venting på sement, e.l. skal trekkes ut av regnskapet. Enhet: time"
@@ -1678,6 +1713,7 @@
       "tittel": "Pålagt herdetid",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter ventetid ved stuff som følge av herding utover 60 minutter når dette er pålagt av byggherren",
         "x": "Mengden måles som medgått tid avrundet til nærmeste 1/4 time. Herdetid regnes fra tidspunkt ved slutten av 60 minutters herdeperiode til tidspunkt som avtalt med byggherren. Det regnes ikke med tid utover den aktuelle skiftordningen. Enhet: time"
@@ -1687,6 +1723,7 @@
       "tittel": "Kontaktinjeksjon",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter kontaktinjeksjon i overgangen mellom betong og berg ved bruk av injeksjonsslanger eller boring av korte hull gjennom betong og inn i berg",
@@ -1710,6 +1747,7 @@
       "tittel": "Kontaktinjeksjon gjennom slange",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter kontaktinjeksjon i overgangen mellom betong og berg ved bruk av injeksjonsslanger.",
         "x": [
@@ -1723,6 +1761,7 @@
       "tittel": "Injeksjonsslange for kontaktinjeksjon med injeksjonsmiddel",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som lengde injeksjonsslange eksklusiv materslanger. Enhet: m"
       }
@@ -1731,6 +1770,7 @@
       "tittel": "Injeksjonsmiddel for kontaktinjeksjon gjennom slange",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som medgått masse injeksjonsmiddel uten tilsetning av vann. Enhet: kg"
       }
@@ -1739,6 +1779,7 @@
       "tittel": "Injeksjonsarbeid ved kontaktinjeksjon gjennom slange",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som medgått tid. Enhet: time"
       }
@@ -1747,6 +1788,7 @@
       "tittel": "Kontaktinjeksjon i borehull",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter kontaktinjeksjon i overgang mellom betong og berg ved boring av korte hull gjennom betong og inn i berg.",
@@ -1763,6 +1805,7 @@
       "tittel": "Boring av hull for kontaktinjeksjon",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring av hull for kontaktinjeksjon",
         "x": "Mengden måles som lengde av prosjektert borehull. Enhet: m"
@@ -1772,6 +1815,7 @@
       "tittel": "Injeksjonsmiddel for kontaktinjeksjon i borehull",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som medgått masse injeksjonsmiddel uten tilsetning av vann. Enhet: kg"
       }
@@ -1780,6 +1824,7 @@
       "tittel": "Injeksjonsarbeid ved kontaktinjeksjon i borehull",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som medgått tid for injeksjon. Enhet: time"
       }
@@ -1788,6 +1833,7 @@
       "tittel": "SPRENGNING AV TUNNEL",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter sprengning av tunnelløp med nisjer, bergrom, grøfter, kumutvidelser og sjakter, inkludert boring, lading, sprengning og driftsrensk med maskin.",
@@ -1899,6 +1945,7 @@
       "tittel": "Sprengning av tunnel",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter sprengning av tunnelløp med nisjer, bergrom, grøfter, kumutvidelser og sjakter, inkludert boring, lading, sprengning og driftsrensk med maskin. Omfatter også etablering, drift og fjerning av provisoriske installasjoner for vann inn og ut, kraft til borrigg, trykkluft, ventilasjon, redningsutstyr og alt som ellers er nødvendig for driften, unntatt belysning. Omfatter også tiltak for skånsom sprengning av kontur, og tiltak for å ivareta ev. grenser for vibrasjoner eller andre hensyn.",
@@ -1927,6 +1974,7 @@
       "tittel": "Tunnelløp",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Gjelder tunnelløp med nisjer. Ev. tiltak ved sprengning med alternativ kontur er beskrevet i prosess 32.12.",
         "x": [
@@ -1940,27 +1988,32 @@
     "32.111": {
       "tittel": "Fullt tverrsnitt – normal salvelengde",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "32.112": {
       "tittel": "Fullt tverrsnitt – halv salvelengde",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "32.113": {
       "tittel": "Delt tverrsnitt – normal salvelengde",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "32.114": {
       "tittel": "Delt tverrsnitt – halv salvelengde",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "32.12": {
       "tittel": "Tiltak ved sprengning med alternativ kontur, hullavstand/forsetning = 0,5 m / 0,7 m",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter tillegg til prosess 32.11 for sprengning med c/c hullavstand 0,5 m og forsetning 0,7 m.",
         "c": "Effekt av ladning i konturhull skal ikke overstige 2,2 GW/m.",
@@ -1970,12 +2023,14 @@
     "32.13": {
       "tittel": "Bergrom for tekniske anlegg, tverrforbindelser, pumpesump, etc.",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "32.14": {
       "tittel": "Grøfter og kumutvidelser",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": [
           "Mengden måles som prosjektert lengde gjennomgående grøft. Enhet: m",
@@ -1988,6 +2043,7 @@
       "tittel": "Grøfter, langsgående",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert lengde gjennomgående grøft. Enhet: m"
       }
@@ -1996,6 +2052,7 @@
       "tittel": "Kumutvidelser",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall kumutvidelser. Enhet: stk"
       }
@@ -2004,6 +2061,7 @@
       "tittel": "Tverrgrøfter",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert lengde gjennomgående grøft. Enhet: m"
       }
@@ -2011,12 +2069,14 @@
     "32.15": {
       "tittel": "Sjakter",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "32.2": {
       "tittel": "Opplasting i tunnel, transport og utlegging",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter opplasting, transport, tipping og utlegging av steinmasser fra sprengning av tunnelløp med nisjer, bergrom for tekniske anlegg, tverrforbindelser, pumpesump, etc., grøfter, kumutvidelser og sjakter samt borkaks fra boring av hull, overberg/utfall og rensk i tunnel. Omfatter også ev. komprimering, ev. bearbeiding av massen for aktuell bruk samt ev. leverings- og behandlingsgebyrer.",
@@ -2056,6 +2116,7 @@
       "tittel": "Steinmasser fra stuff til tunnelmunning",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting i tunnel og transport regnet til tunnelmunning, av steinmasser fra sprengning av tunnelløp med nisjer, bergrom, grøfter, kumutvidelser og sjakter, samt fra overberg/utfall og rensk i tunnel."
       }
@@ -2064,6 +2125,7 @@
       "tittel": "Steinmasser fra tunnelmunning",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Gjelder steinmasser medtatt under prosess 32.21. Omfatter transport regnet fra tunnelmunning til angitt sted, inkludert tipping og ev. utlegging. Omfatter også ev. bearbeiding av massen til aktuell bruk, ev. komprimering samt ev. leverings- og behandlingsgebyrer.",
@@ -2080,6 +2142,7 @@
       "tittel": "Steinmasser fra tunnelmunning til fylling i linjen",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter transport regnet fra tunnelmunning til fylling i linjen, inkludert tipping, utlegging og komprimering. Omfatter også bearbeiding av massen til aktuell bruk, som sortering, pigging, mv. i den grad dette er nødvendig."
       }
@@ -2088,6 +2151,7 @@
       "tittel": "Steinmasser fra tunnelmunning til fyllplass",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter transport regnet fra tunnelmunning til angitt eller valgt fyllplass, inkludert tipping og utlegging. Omfatter også leverings- og behandlingsgebyrer der dette er aktuelt."
       }
@@ -2096,6 +2160,7 @@
       "tittel": "Steinmasser fra tunnelmunning til motfylling",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter transport regnet fra tunnelmunning til motfylling, inkludert tipping og utlegging."
       }
@@ -2104,6 +2169,7 @@
       "tittel": "Steinmasser fra tunnelmunning til lager for senere bearbeiding",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Gjelder steinmasser som senere skal gjennomgå bearbeiding som knusing, sikting, utsortering til mur, mv. Omfatter transport regnet fra tunnelmunning til lager, inkludert tipping og utlegging."
       }
@@ -2112,6 +2178,7 @@
       "tittel": "Steinmasser fra tunnelmunning til støyvoll, ledevoll, oppfylling mot bergskjæring, mv.",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter transport regnet fra tunnelmunning til støyvoll, ledevoll, oppfylling mot bergskjæring, mv, inkludert tipping og utlegging. Omfatter også bearbeiding av massen til aktuell bruk, som sortering, pigging, mv. i den grad dette er nødvendig.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -2121,6 +2188,7 @@
       "tittel": "Provisorisk belysning",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og arbeider med provisorisk belysning i forbindelse med tunneldriving eller tunneloppgradering.",
         "b": [
@@ -2147,6 +2215,7 @@
       "tittel": "Provisorisk belysning ved tunneldriving",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -2155,6 +2224,7 @@
       "tittel": "Provisorisk belysning ved tunneloppgradering",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": [
           "Kostnad angis som rund sum. Enhet: RS",
@@ -2168,6 +2238,7 @@
       "tittel": "Etablering av provisorisk belysning",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -2176,6 +2247,7 @@
       "tittel": "Drift av provisorisk belysning",
       "enhet": "dag",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som antall dager fra belysningsanlegget settes i drift til nedtaking. Enhet: dag"
       }
@@ -2184,6 +2256,7 @@
       "tittel": "Nedtaking av provisorisk belysning",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -2192,6 +2265,7 @@
       "tittel": "Drift av provisoriske anlegg",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter drift av anlegg for vannhåndtering og ventilasjon fra gjennomslag og fram til permanente installasjoner settes i drift. Drift av provisorisk belysning er beskrevet i prosess 32.3.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -2201,6 +2275,7 @@
       "tittel": "Fullprofilboring og opprømmingsboring",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle arbeider med driving av tunnel eller sjakt med tunnelbormaskin eller raise-bormaskin.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -2210,6 +2285,7 @@
       "tittel": "Uskadeliggjøring av forsager fra bergsprengningsarbeid i tidligere entreprise",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter uskadeliggjøring av gjenstående sprengstoff med eller uten tennere fra bergsprengningsarbeider utført i tidligere entreprise på stedet.",
         "c": [
@@ -2223,6 +2299,7 @@
       "tittel": "STABILITETSSIKRING",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter all stabilitetssikring som må utføres utover driftsrensk med maskin for å kunne drive og levere ferdig tunnel med tilfredsstillende sikkerhet. Omfatter også heft (tomgang på maskiner og mannskap og alle øvrige utgifter som følge av at arbeider utføres ved stuff). Omfatter også registrering og kartlegging av bergmassens kvalitet for å bestemme totalt sikringsbehov.",
@@ -2431,6 +2508,7 @@
       "tittel": "Rensk",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter all manuell driftsrensk utover driftsrensk med maskin beskrevet i prosess 32. I tillegg til rensk av utsprengt bergflate kontrolleres og etterrenskes bakenforliggende salvestrekninger som en del av manuell driftsrensk.",
@@ -2481,6 +2559,7 @@
       "tittel": "Manuell driftsrensk",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter all manuell driftsrensk utover driftsrensk med maskin beskrevet i prosess 32. I tillegg til rensk av utsprengt bergflate kontrolleres og etterrenskes bakenforliggende salvestrekninger som en del av manuell driftsrensk.",
@@ -2498,6 +2577,7 @@
       "tittel": "Sluttvask",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter avsluttende vasking av vegger og heng i tunnel. Utstrekning bestemmes i samråd med byggherren. Behov for ev. sluttrensk etter gjennomført sluttvask bestemmes i samråd med byggherren, se prosess 33.11.",
         "c": "Sluttvask skal utføres med egnet utstyr som gir tilstrekkelig trykk og vannmengde til å gi en ren overflate hvor ev. sprekker er synlige.",
@@ -2508,6 +2588,7 @@
       "tittel": "Rensk under teoretisk sprengingsprofil i sålen",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter nødvendig rensk og oppgraving av massen under teoretisk sprengningsprofil i sålen inkludert massen i gryter. Omfatter også fjerning av massen.",
         "c": [
@@ -2522,17 +2603,20 @@
     "33.131": {
       "tittel": "Grov rensk under teoretisk sprengingsprofil i sålen 0,20 m3 overmasse",
       "enhet": "m2",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.132": {
       "tittel": "Fin rensk under teoretisk sprengingsprofil i sålen 0,05 m3 overmasse",
       "enhet": "m2",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.14": {
       "tittel": "Tilbakefylling til teoretisk sprengingsprofil i sålen",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med tilbakefylling opp til teoretisk sprengningsprofil i tunnel. Komprimering og etablering av planum etter tilbakefylling er beskrevet i prosess 51.4.",
         "b": "Materiale skal være pukk/kult med nedre siktstørrelse ikke mindre enn 11 mm og LA-verdi maksimum 40.",
@@ -2547,6 +2631,7 @@
       "tittel": "Masseutskifting under teoretisk sprengningsprofil i sålen",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgravinger under teoretisk sprengningsprofil i sålen i partier med svake bergarter, fjerning av utgravd masse, levering av ny masse, igjenfylling og komprimering.",
@@ -2564,6 +2649,7 @@
       "tittel": "Gjenstøping av gryter",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenstøping av gryter som ikke lar seg drenere på annen måte. Prosessen kommer kun til anvendelse etter avtale med byggherren.",
         "b": "Materiale for tilbakefylling skal være magerbetong.",
@@ -2574,6 +2660,7 @@
       "tittel": "Rensk ved mulig forsager fra bergsprengningsarbeid i tidligere entreprise",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter spesielle tiltak utover det som framgår av prosess 33.11 og 33.13 for å ivareta sikkerhet ved rensk i områder der det er en mulighet for å påtreffe sprengstoff med eller uten tennere fra bergsprengningsarbeider utført i tidligere entreprise på stedet.",
         "c": [
@@ -2587,6 +2674,7 @@
       "tittel": "Sikringsbolter",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med alle sikringsbolter i tunnel og forbolting i forbindelse med etablering av påhugg, samt kontroll, rapportering og etterstramming. Dette inkluderer levering av bolter med tilbehør, gysemasse og lim, oppmerking, boring av boltehull, gysing av boltehull, innsetting, oppspenning og ettergysing.",
@@ -2636,122 +2724,146 @@
     "33.21": {
       "tittel": "Fullt innstøpte sikringsbolter 20 mm i tunnel og ved tunnelpåhugg",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.211": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 2,4 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.212": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 3,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.213": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 4,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.214": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 5,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.215": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 6,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.22": {
       "tittel": "Fullt innstøpte sikringsbolter 25 mm i tunnel og ved tunnelpåhugg",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.221": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 5,0 m, Ø 25 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.222": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 6,0 m, Ø 25 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.23": {
       "tittel": "Fullt innstøpte sikringsbolter 32 mm i tunnel og ved tunnelpåhugg",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.231": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 6,0 m, Ø 32 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.232": {
       "tittel": "Fullt innstøpte sikringsbolter, lengde 8,0 m, Ø 32 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.24": {
       "tittel": "Endeforankrede sikringsbolter i tunnel og ved tunnelpåhugg",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.241": {
       "tittel": "Sikringsbolter, endeforankrede, lengde 2,4 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.242": {
       "tittel": "Sikringsbolter, endeforankrede, lengde 3,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.243": {
       "tittel": "Sikringsbolter, endeforankrede, lengde 4,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.244": {
       "tittel": "Sikringsbolter, endeforankrede, lengde 5,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.245": {
       "tittel": "Sikringsbolter, endeforankrede, lengde 6,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.25": {
       "tittel": "Kombinasjonsbolter i tunnel og ved tunnelpåhugg",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.251": {
       "tittel": "Kombinasjonsbolter, lengde 2,4 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.252": {
       "tittel": "Kombinasjonsbolter, lengde 3,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.253": {
       "tittel": "Kombinasjonsbolter, lengde 4,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.254": {
       "tittel": "Kombinasjonsbolter, lengde 5,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.26": {
       "tittel": "Sikringsbolter med pakker",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Prosessen kommer kun til anvendelse etter avtale med byggherren.",
         "b": "Bolten skal ha en pakker nær gjengepartiet som kan strammes opp og gyses/injiseres under trykk med boltemørtel eller injeksjonssement."
@@ -2760,27 +2872,32 @@
     "33.261": {
       "tittel": "Sikringsbolter med pakker, lengde 3,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.262": {
       "tittel": "Sikringsbolter med pakker, lengde 4,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.263": {
       "tittel": "Sikringsbolter med pakker, lengde 5,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.264": {
       "tittel": "Sikringsbolter med pakker, lengde 6,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.27": {
       "tittel": "Sikringsbolter ved bergtrykksproblemer",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Gjelder bolter som inngår i den permanente sikringen ved bergtrykksproblemer."
       }
@@ -2788,27 +2905,32 @@
     "33.271": {
       "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 2,4 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.272": {
       "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 3,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.273": {
       "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 4,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.274": {
       "tittel": "Sikringsbolter, endeforankrede (polyester), lengde 5,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.28": {
       "tittel": "Etterjustering av endeforankrede bolter ved bergtrykksproblemer",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Skal avtales spesielt med byggherren. Omfatter etterjustering av bolter som inngår i den permanente sikringen ved bergtrykksproblemer.",
         "c": "Etterjusteringen skal foregå i så stor avstand fra salven at boltene ikke løsner.",
@@ -2819,6 +2941,7 @@
       "tittel": "Sikring med bergbånd",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og montering av nye festebolter med alt nødvendig utstyr, og levering og montering av bånd med alt nødvendig utstyr og tilbehør i nye festebolter eller på forhånd innsatte bolter beskrevet under prosess 33.2.",
@@ -2840,6 +2963,7 @@
       "tittel": "Bånd",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av bånd med alt nødvendig utstyr og tilbehør i nye eller på forhånd innsatte bolter beskrevet under prosess 33.2.",
         "x": "Mengden måles som utført lengde bånd. Enhet: m"
@@ -2848,17 +2972,20 @@
     "33.311": {
       "tittel": "Bånd ved stuff",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.312": {
       "tittel": "Bånd bak stuff",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.32": {
       "tittel": "Festebolter for bånd",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med montering av festebolter med alt nødvendig utstyr.",
         "x": "Mengden måles som utført antall festebolter. Enhet: stk"
@@ -2867,22 +2994,26 @@
     "33.321": {
       "tittel": "Fullt innstøpte festebolter, lengde 3,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.322": {
       "tittel": "Fullt innstøpte festebolter, lengde 4,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.323": {
       "tittel": "Fullt innstøpte festebolter, lengde 5,0 m, Ø 20 mm",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.4": {
       "tittel": "Sikring med sprøytebetong",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter komplett utførelse av sprøytebetong i tunnel inklusiv nødvendige forarbeider og etterarbeider, herunder blant annet:",
@@ -2951,62 +3082,74 @@
     "33.41": {
       "tittel": "Sprøytebetong uten tilsetting av fiber",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.411": {
       "tittel": "Sprøytebetong uten tilsetting av fiber, B35 M45",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.412": {
       "tittel": "Sprøytebetong uten tilsetting av fiber, B35 M40",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.42": {
       "tittel": "Sprøytebetong med tilsetting av fiber M45",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.421": {
       "tittel": "Sprøytebetong med tilsetting av fiber, B35 M45 E500",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.422": {
       "tittel": "Sprøytebetong med tilsetting av fiber, B35 M45 E700",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.423": {
       "tittel": "Sprøytebetong med tilsetting av fiber, B35 M45 E1000",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.43": {
       "tittel": "Sprøytebetong med tilsetting av fiber M40",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.431": {
       "tittel": "Sprøytebetong med tilsetting av fiber, B35 M40 E500",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.432": {
       "tittel": "Sprøytebetong med tilsetting av fiber, B35 M40 E700",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.433": {
       "tittel": "Sprøytebetong med tilsetting av fiber, B35 M40 E1000",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.44": {
       "tittel": "Prøving av energiabsorpsjon for fiberarmert sprøytebetong",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter framstilling av prøveplater med kontroll av fiberinnhold/fiberfordeling i det betonglasset prøveplatene sprøytes fra, laboratorieprøving av energiabsorpsjon og rapportering av prøvingsresultater.",
         "b": "Prøvingsresultatet skal tilfredsstille spesifisert energiabsorpsjonsklasse, minimum 500 Joule for E500, minimum 700 Joule for E700 og minimum 1000 Joule for E1000.",
@@ -3020,6 +3163,7 @@
       "tittel": "Sikringsbuer av sprøytebetong",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle kostnader ved utførelse av sprøytebetongbuer utover kostnadene til:",
@@ -3058,6 +3202,7 @@
       "tittel": "Armering av sikringsbuer av sprøytebetong",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av armering inklusiv alle hjelpemidler for monteringen.",
         "b": "Kamstål Ø20 mm stålklasse B500NC iht. NS 3576-3. Armeringen skal være forhåndsbøyd i armeringsverksted til riktig radius.",
@@ -3069,6 +3214,7 @@
       "tittel": "Øvrige kostnader ved utførelse av sikringsbuer av sprøytebetong",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle øvrige kostnader knyttet til utførelse av sikringsbuer av sprøytebetong, og som ikke er dekket av prosessene:",
@@ -3084,6 +3230,7 @@
       "tittel": "Sikringsstøp",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter sikring av tunnel med betongutstøping ved og bak stuff ved særlig ustabile partier, soner med svelleleire, liten overdekning eller ved andre forhold der byggherren anser støp nødvendig.",
@@ -3137,6 +3284,7 @@
       "tittel": "Skjold for sikringsstøp",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter skjold som skal være tilgjengelig på arbeidsstedet i driveperioden og inntil omfang av permanent sikring er avklart.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -3146,6 +3294,7 @@
       "tittel": "Opp- og nedrigging for sikringsstøp",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter opp- og nedrigging for sikringsstøp, herunder skjold",
         "x": "Mengden måles som utførte ganger opp- og nedrigging. Opp- og nedrigging regnes som en gang per utført støp/flytt. Enhet: stk"
@@ -3155,6 +3304,7 @@
       "tittel": "Betongutstøping",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter sikringsstøp av heng og vegger, inkludert nødvendig rensk, endesteng, samt forbruk av betong tilsvarende et betonghvelv med gjennomsnittlig tykkelse 0,40 m, beregnet som volum lik arealet av hvelvforskalingen multiplisert med 0,40 m. Minstetykkelsen skal være 0,30 m. Det betales ikke for betongforbruk utover dette med mindre det skyldes geologisk betinget utfall påvist i samråd med byggherren, og da beskrevet i prosess 33.54.",
@@ -3177,17 +3327,20 @@
     "33.531": {
       "tittel": "Betongutstøping av vegger og heng ved stuff",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.532": {
       "tittel": "Betongutstøping av vegger og heng bak stuff",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.533": {
       "tittel": "Betongutstøping av tunnelsåle bak stuff",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter betong og arbeider for utstøping av tunnelsålen som forsterkning av såle eller som avstivning av betongutstøping. Ev. utgraving/masseutskifting er beskrevet i prosess 33.13 og 33.14. Ev. armering er beskrevet i prosess 33.56.",
         "x": "Mengden måles som utført volum. Enhet: m3"
@@ -3197,6 +3350,7 @@
       "tittel": "Fundamentstøp",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle arbeider med støping av veggfundament inkl. utsparinger for kummer og rør. Betong og armering er beskrevet i prosessene 33.54 og 33.56.",
         "c": "Byggherren bestemmer nødvendige betongdimensjoner og fundamenterings-nivå på stedet.",
@@ -3207,6 +3361,7 @@
       "tittel": "Sikringsstøp i grøft",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle arbeider med sikringsstøp av grøfteprofilet under sikringsstøp av vegg inkl. utsparinger og innstøping av kummer og rør. Betong og armering er beskrevet i prosessene 33.54 og 33.56. Byggherren bestemmer nødvendige betongdimensjoner på stedet.",
         "x": "Mengden måles som utført lengde utstøpt grøft. Enhet: m"
@@ -3216,6 +3371,7 @@
       "tittel": "Betong for fundamentstøp, grøft sikringsstøp og ekstra i vegger og heng",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter betong til sikringsstøp i vegger og heng utover det volum som inngår i prosess 33.53. Kommer til anvendelse ved geologisk betinget utfall påvist i samråd med byggherren, og byggherren skal varsles før utstøping foretas. Omfatter også ekstra forskaling av endesteng.",
@@ -3227,27 +3383,32 @@
     "33.541": {
       "tittel": "Ekstra betong for sikringsstøp ved stuff, for utfall",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.542": {
       "tittel": "Ekstra betong for sikringsstøp bak stuff, for utfall",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.543": {
       "tittel": "Betong for fundamentstøp",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.544": {
       "tittel": "Betong for sikringsstøp i grøft",
       "enhet": "m3",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "33.55": {
       "tittel": "Vanntetting og drenering",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av vanntetting og drenering på berg/sprøytebetong før utstøping av betonghvelv.",
         "b": "Membran skal tilfredsstille kravene til type II i henhold til vegnormal N500 Vegtunneler. For drenering og beskyttelse av membran mot berg skal det benyttes fiberduk min. 1200 g/m2.",
@@ -3259,6 +3420,7 @@
       "tittel": "Armering",
       "enhet": "kg",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av armering i alle typer betongutstøping der profilstørrelse eller bergforhold gjør det nødvendig å forsterke konstruksjonen.",
         "b": "Det skal benyttes stålkvalitet B500NC. Diameter Ø 16 – 25 mm, som angitt i den spesielle beskrivelsen.",
@@ -3269,6 +3431,7 @@
       "tittel": "Tilpasning mellom betongutstøping og berg bak stuff",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og utførelse av skrå tilpasning mellom betongutstøping og berg for å ivareta krav til trafikksikkerhet.",
         "c": "Hvis ikke annet er angitt i den spesielle beskrivelsen skal tilpasning utføres ved at det lages en skrå utjevning (1:10) mellom utstøpt parti og bergveggen. Utjevningen føres opp til 1,0 m over nivå for kjørebane.",
@@ -3279,6 +3442,7 @@
       "tittel": "Registrering og kartlegging av bergmassekvalitet",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter registrering og kartlegging av bergmassens kvalitet som grunnlag for å bestemme det totale sikringsbehov, og alle kostnader med nødvendig heft/stillstand for de øvrige arbeider med tunnelbyggingen som kartleggingsarbeidet forårsaker. Omfatter også prøvetaking og laboratorieprøving av sleppemateriale.",
@@ -3309,6 +3473,7 @@
       "tittel": "Byggherren utfører registrering og kartlegging",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle kostnader med nødvendig heft/stillstand for de øvrige arbeider med tunnelbyggingen som kartleggingsarbeidet forårsaker. Entreprenøren skal i tillegg stille egnet arbeidsplattform med fører til disposisjon.",
         "c": "Byggherren skal varsles i god tid om når kartleggingen kan starte. Ved kartleggingsarbeidet skal entreprenørens bas eller formann være tilgjengelig for å kunne bidra med opplysninger om berget basert på erfaringer fra salveboringen.",
@@ -3319,6 +3484,7 @@
       "tittel": "Entreprenøren utfører registrering og kartlegging",
       "enhet": "time",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter registrering og kartlegging av bergmassens kvalitet som grunnlag for å bestemme det totale sikringsbehov, og alle kostnader med heft/stillstand for de øvrige arbeider med tunnelbyggingen som kartleggingsarbeidet forårsaker. Omfatter også prøvetaking av sleppemateriale, laboratorieprøving er beskrevet i prosess 33.63.",
         "c": [
@@ -3337,6 +3503,7 @@
       "tittel": "Laboratorieprøving av sleppemateriale",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter laboratorieprøving av sleppemateriale, inkl. pakking og frakt til laboratorium som er i stand til å utføre spesialprøving for svelling, etc. Prøvingen skal omfatte gradering med slemmeanalyse. Spesialprøving som svelling etc., avtales med byggherren og godtgjøres etter regning. Prøveuttak er beskrevet i prosess 33.62.",
         "x": "Mengden måles som utført antall prøver. Enhet: stk"
@@ -3346,6 +3513,7 @@
       "tittel": "VANN- OG FROSTSIKRING",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider med vann- og frostsikring av heng og vegger i tunnel.",
@@ -3453,6 +3621,7 @@
       "tittel": "Kontaktstøpt betonghvelv m/membran",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider i forbindelse med utstøping med betong, inklusive nødvendig bergavjevning med sprøytebetong, beskyttelsesduk og membran med festedetaljer, fugebånd etc.",
@@ -3481,6 +3650,7 @@
       "tittel": "Bergavjevning med sprøytebetong",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter avjevning av bergoverflaten eller tidligere sprøytet flate med sprøytebetong for å tilfredsstille krav til jevnhet av underlag for membran.",
         "x": "Mengden måles som utført sprøytet volum med fradrag for volum som skyldes feilsprengning. Enhet: m3"
@@ -3490,6 +3660,7 @@
       "tittel": "Avjevning av såle",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter avjevning av sålen som angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som prosjektert areal regnet etter teoretisk sprengningsprofil. Enhet: m2"
@@ -3499,6 +3670,7 @@
       "tittel": "Tetningsmembran",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av beskyttelsesduk, tetningsmembran med festedetaljer, fugebånd etc.",
         "x": "Mengden måles som prosjektert areal regnet etter teoretisk sprengningsprofil. Enhet: m2"
@@ -3508,6 +3680,7 @@
       "tittel": "Betongutstøping",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og alle arbeider for etablering av betonghvelv med bunnplate støpt mot tetningsmembran.",
         "x": "Mengden måles som prosjektert volum. Enhet: m3"
@@ -3517,6 +3690,7 @@
       "tittel": "Hvelv av sprøytebetong",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider for etablering av komplett hvelv av armert sprøytebetong med membran eller vanntett / vanntettet isolasjon samt festebolter, opphengsdetaljer, brannseksjonering, dilatasjonsfuger og endeavslutninger, samt fjerning av prelltap.",
@@ -3561,6 +3735,7 @@
       "tittel": "Isolert vanntett hvelv av sprøytebetong",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og alle arbeider for etablering av hvelv av armert sprøytebetong og vanntett / vanntettet isolasjonsmateriale, inklusiv festebolter og opphengsdetaljer.",
         "x": "Mengden måles som prosjektert areal av hvelv regnet etter teoretisk sprengningsprofil. Enhet: m2"
@@ -3570,6 +3745,7 @@
       "tittel": "Uisolert hvelv av sprøytebetong",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og alle arbeider for etablering av komplett hvelv av armert sprøytebetong med membran inklusiv festebolter og opphengsdetaljer.",
         "b": "Membran skal tilfredsstille krav og spesifikasjoner til armert membran, minst tilsvarende type III, gitt i vegnormal N500 Vegtunneler.",
@@ -3582,6 +3758,7 @@
       "tittel": "Fuger, endeavslutninger, brannseksjonering, luker, mv.",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og alle arbeider for etablering av endeavslutninger, fuger, brannseksjonering, luker, mv.",
         "x": "Mengden måles som prosjektert lengde regnet etter teoretisk sprengningsprofil. Enhet: m"
@@ -3590,22 +3767,26 @@
     "34.331": {
       "tittel": "Endeavslutning",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "34.332": {
       "tittel": "Dilatasjonsfuger og fuging",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "34.333": {
       "tittel": "Brannseksjonering",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "34.4": {
       "tittel": "Betonghvelv",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og montasje av hvelv av betongelementer eller av lettbetongelementer, inklusive nødvendig isolasjon. Omfatter også veggelementer brukt i kombinasjon med andre løsninger. Dimensjoneringsforutsetninger, krav til dokumentasjon og prosjektavhengige forhold skal være som angitt i den spesielle beskrivelsen.",
@@ -3667,6 +3848,7 @@
       "tittel": "Hvelv av betongelementer",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider for etablering av komplett betonghvelv eller veggelementer med nødvendig isolasjon, membran, fundamenter inklusiv bakstøp mot berg, bolter, festemidler, fugemateriale mv., inklusiv nødvendig prosjektering og utarbeidelse av tilhørende dokumentasjon. Armering i henhold til godkjente beregninger og tegninger godtgjøres i tillegg, og er beskrevet i prosess 34.43.",
@@ -3701,6 +3883,7 @@
       "tittel": "Levering av betongelementer",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av betonghvelv eller veggelementer."
       }
@@ -3709,6 +3892,7 @@
       "tittel": "Montering av betongelementer",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle arbeider for etablering av komplett betonghvelv eller veggelementer med nødvendig isolasjon, membran, fundamenter inklusiv bakstøp mot berg, bolter, festemidler, fugemateriale m.v., inklusiv nødvendig prosjektering og utarbeidelse av tilhørende dokumentasjon. Armering i henhold til godkjente beregninger og tegninger godtgjøres i tillegg og er beskrevet i prosess 34.43.",
@@ -3720,6 +3904,7 @@
       "tittel": "Hvelv av lettbetongelementer",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider for etablering av komplett hvelv eller veggelementer av lettbetong, membran, fundamenter inklusiv bakstøp mot berg, bolter, festemidler, fugemateriale mv., inkl. nødvendig prosjektering og utarbeidelse av tilhørende dokumentasjon. Armering i henhold til godkjente beregninger og tegninger godtgjøres i tillegg og er beskrevet i prosess 34.43.",
@@ -3753,6 +3938,7 @@
       "tittel": "Levering av lettbetongelementer",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av hvelv eller veggelementer."
       }
@@ -3761,6 +3947,7 @@
       "tittel": "Montering av lettbetongelementer",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle arbeider for etablering av komplett hvelv eller veggelementer av lettbetong, membran, fundamenter inklusiv bakstøp mot berg, bolter, festemidler, fugemateriale mv., inkl. nødvendig prosjektering og utarbeidelse av tilhørende dokumentasjon. Armering i henhold til godkjente beregninger og tegninger godtgjøres i tillegg og er beskrevet i prosess 34.43.",
@@ -3772,6 +3959,7 @@
       "tittel": "Armering av betonghvelv",
       "enhet": "tonn",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og armering av hvelv av betong- eller lettbetongelementer.",
         "b": "Sveiste armeringsnett skal være i samsvar med NS 3576-4 Armeringsnett. Nettdimensjon og eventuelle krav til stålklasse som angitt i den spesielle beskrivelsen.",
@@ -3782,6 +3970,7 @@
       "tittel": "PORTALER, OVERBYGG, PUMPESTASJON, M.M.",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med utførelse av konstruksjoner som tunnelportaler, snø- og skredoverbygg i tilknytning til portalområdene, pumpestasjon, kuldeporter, bygninger etc.. Sprengning og masseflytting i forbindelse med forskjæringer er beskrevet under hovedprosess 2.",
@@ -3857,6 +4046,7 @@
       "tittel": "Portaler og skredoverbygg",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og utførelse av portaler ved tunnelpåhugg inn til avslutning eller fuge i tunnel og skredoverbygg.",
@@ -3913,6 +4103,7 @@
       "tittel": "Grunnarbeider",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle nødvendige grunnarbeider for fundamentering av portaler og skredoverbygg og omfatter sprengning, graving, rensk, opplasting og transport av massene til fyllplass, inklusiv utlegging og eventuelle bolter.",
@@ -3949,6 +4140,7 @@
       "tittel": "Sprengning for fundamenter",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter eventuell sprengning utover det profil som inngår i driving av forskjæring og tunnel, inkludert rensk for sprengning.",
         "c": "Eventuelle særlige krav til boring og lading skal være som angitt i den spesielle beskrivelsen.",
@@ -3959,6 +4151,7 @@
       "tittel": "Graving",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, opplasting, transport til angitt fyllplass av løsmasser og steinmasser fra angitt planum i forskjæring og ned til fundamenteringsdybde, inklusiv utlegging.",
         "x": "Mengden måles som prosjektert fast volum under angitt planum og regnes til en linje 0,5 m utenfor fundament. Enhet: m3"
@@ -3968,6 +4161,7 @@
       "tittel": "Rensk og avretting",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter rensk av fundamentflater inklusive fjerning av renskemasser og ev. avretting.",
@@ -3990,6 +4184,7 @@
       "tittel": "Rensk av sprengt bergoverflate",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter finrensk av sprengt bergoverflate og fjerning av renskemasser.",
         "c": "Berget renskes for alt løst materiale ved hjelp av f.eks. luft- og/eller vannspyling.",
@@ -4000,6 +4195,7 @@
       "tittel": "Avretting og rensk til uberørt grunn",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter rensk til uberørt, fast grunn etter utgraving for fundamenter, fjerning av renskemasser samt levering, utlegging, avretting og komprimering av avrettingslag.",
         "c": "Rensken utføres uten omrøring av massene slik at fundamentet kan støpes mot avrettet grunn med fasthet tilsvarende de naturlige massene.",
@@ -4011,6 +4207,7 @@
       "tittel": "Bolter",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av alle bolter for portal og skredoverbygg.",
         "b": [
@@ -4025,6 +4222,7 @@
       "tittel": "Tetningsmembran",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av tetningsmembran inklusiv fiberduk for beskyttelse. Omfatter også ev. bearbeiding av underlaget før legging av membran, tilslutning av membran mot sidekanter, fuger etc., samt beskyttelse mot skader i byggetiden.",
         "b": "Det skal benyttes membran type I iht. vegnormal N500 Vegtunneler. For beskyttelse av membranen skal det benyttes fiberduk 1200 g/m².",
@@ -4037,6 +4235,7 @@
       "tittel": "Betongarbeider",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av materialer og utførelse av betongarbeidene for portaler og skredoverbygg inklusive kontaktstøpt del. Omfatter også fundamenter.",
         "b": "Det kan som for forskaling benyttes justerte bord eller stålform. Til armering skal benyttes stålkvalitet B500NC. Det skal anvendes normalvektsbetong i henhold til prosess 84.41, 84.45 og 84.46. Betong skal tilsettes 2 kg/m3 monofilament polypropylenfiber med tykkelse ca. 18 mikrometer og lengde ca. 6 mm. Fibrene skal ved produksjon være overflatebehandlet for bedre dispergering og redusert vannbehov.",
@@ -4053,6 +4252,7 @@
       "tittel": "Forskaling",
       "enhet": "m2",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som netto prosjektert berøringsflate mot betong. Enhet: m2"
       }
@@ -4061,6 +4261,7 @@
       "tittel": "Armering",
       "enhet": "tonn",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som netto mengder etter bøyelister på grunnlag av nominelle vekter etter Norsk Standard. Enhet: tonn"
       }
@@ -4069,6 +4270,7 @@
       "tittel": "Betong",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert volum. Enhet: m3"
       }
@@ -4077,6 +4279,7 @@
       "tittel": "Utlegging av løsmasser",
       "enhet": "m3",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, utlegging og komprimering av løsmasser rundt portal og skredoverbygg.",
         "b": "Krav til materialer som angitt i den spesielle beskrivelsen",
@@ -4088,6 +4291,7 @@
       "tittel": "Pumpestasjon",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle bygningsmessige arbeider inklusive levering av materialer ved utførelse av komplett pumpestasjon i forbindelse med lensing av vann i tunnel. Inkludert i prosessen er også levering og legging av ledninger som ikke er medtatt under hovedprosess 4.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -4097,6 +4301,7 @@
       "tittel": "Kuldeporter",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og utførelse av komplette kuldeporter i tunneler. Omfatter også fremføring av elektrisk kraft til manøvrering av portene og levering og montering av varselskilter, eventuelt også signalanlegg. Dimensjonerende krefter er angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -4106,6 +4311,7 @@
       "tittel": "Tekniske bygninger, nødutganger og kiosk for nødstasjon",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer, montering og alle bygningsmessige arbeider med tekniske bygninger, nødutganger, kiosk for nødstasjoner og nøkkelsafe for brannvesen.",
@@ -4132,6 +4338,7 @@
       "tittel": "Tekniske bygninger",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og bygningstekniske arbeider for etablering av teknisk bygning.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -4141,6 +4348,7 @@
       "tittel": "Nødutganger",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og bygningstekniske arbeider for etablering nødutgang.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -4150,6 +4358,7 @@
       "tittel": "Kiosk for nødstasjon",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og bygningstekniske arbeider av en støv- og vanntett kiosk som nødstasjon i tunnelen, se vegnormal N500 Vegtunneler. Omfatter også levering av dør og karm med innmontert induktiv giver, skiltfolier og merking, samt festepunkt og skjulte trekkerør for montering av telefon, varme og belysning.",
@@ -4162,6 +4371,7 @@
       "tittel": "Nøkkelsafe for brannvesen",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av nøkkelsafe i nødkiosk/nødskap utenfor tunnelen. Omfatter også levering av arbeidsnøkkel til nøkkelsafe. Omfatter også etablering av forbindelse fra plint i automatikkfelt til nøkkelsafen og tilkobling i begge ender.",
         "x": "Mengde måles som prosjektert antall. Enhet: stk"
@@ -4171,6 +4381,7 @@
       "tittel": "BELYSNING, VENTILASJON OG SIKKERHETS-UTRUSTNING",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer og arbeider med belysnings- og ventilasjonsanlegg, sikkerhetsutrustning og miljøtiltak. Omfatter også styring, fundamentering, mekanisk og elektrisk infrastruktur samt framføring og tilknytning til ekom og elektrisitet, inkludert idriftsetting. Omfatter også koordineringer mot nettselskap og meldinger for tilknytning.",
@@ -4659,6 +4870,7 @@
       "tittel": "Fellesanlegg for installasjonene",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering, tilkopling, rengjøring og idriftsetting av fordelinger inklusiv utstyr og innredning, som gulvstativ, mv.. Omfatter også levering, montering og tilkobling av kabler til utstyr og kabler i og mellom hovedfordelinger og underfordelinger og mellom fordelinger i tekniske rom. Omfatter også testing, merking og dokumentasjon, instruksjon og driftsinstruks på norsk. Omfatter også etablering av branntettinger. Omfatter også materialer og arbeider med utstyr for lys, varme, signal, varsling, kommunikasjon og deteksjon. Omfatter også termofotografering av tavler.",
@@ -4795,6 +5007,7 @@
       "tittel": "Fordelinger",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering, tilkopling, rengjøring og idriftsetting av fordelinger inklusiv utstyr og innredning, som gulvstativ, mv.. Omfatter også levering, montering og tilkobling av kabler til utstyr og kabler i og mellom hovedfordelinger og underfordelinger og mellom fordelinger i tekniske rom. Omfatter også testing, merking og dokumentasjon, instruksjon og driftsinstruks på norsk. Omfatter også etablering av branntettinger. Omfatter også materialer og arbeider med utstyr for lys, varme, signal, varsling, kommunikasjon og deteksjon. Omfatter også termofotografering av tavler.",
         "b": "Fordelinger skal være i henhold til NEK 600 El og ekom i vegtrafikksystem. Fordelinger i teknisk rom skal ha fargekode RAL7042.",
@@ -4810,22 +5023,26 @@
     "36.111": {
       "tittel": "Hovedfordelinger",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.112": {
       "tittel": "Underfordelinger",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.113": {
       "tittel": "Termografering",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.12": {
       "tittel": "Kabelstiger",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av kabelstigesystem.",
         "b": [
@@ -4846,27 +5063,32 @@
     "36.121": {
       "tittel": "Kabelstige 200mm",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.122": {
       "tittel": "Kabelstige 400mm",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.123": {
       "tittel": "Kabelstige 600mm",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.124": {
       "tittel": "Kabelstige med annen bredde",
       "enhet": "m",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.13": {
       "tittel": "Festebolter",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og kontroll av festebolter og annet utstyr i vegger og heng samt levering og innstøping av innstøpningshylser i tunnelportalene, om nødvendig inklusiv boring av hull.",
         "b": [
@@ -4900,22 +5122,26 @@
     "36.131": {
       "tittel": "Festebolter for kabelstiger i vegger og heng",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.132": {
       "tittel": "Festebolter for ventilatorer/opphengsrammer",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.133": {
       "tittel": "Festebolter for skilt, nødstasjoner (skap) og diverse annet utstyr",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.14": {
       "tittel": "Antennemast",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av komplett antennemast inkludert jord/fjellfundament med tilhørende sikringsbolter til berg.",
         "b": [
@@ -4931,6 +5157,7 @@
       "tittel": "Jordingssystem",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkopling av jordingssystem.",
@@ -4977,6 +5204,7 @@
       "tittel": "Gjennomgående jordingsleder",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter etablering av gjennomgående jordingsleder.",
         "x": "Mengden måles som prosjektert lengde. Enhet: m"
@@ -4986,6 +5214,7 @@
       "tittel": "Tilkobling av utjevningsforbindelser til jordingsleder",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter tilkobling av utjevningsforbindelser.",
         "x": "Mengden måles som prosjektert antall utjevningsforbindelser. Enhet stk"
@@ -4995,6 +5224,7 @@
       "tittel": "Jordelektrode",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter etablering av jordelektrode for antennemast, tekniske bygg og pumpestasjoner. Omfatter også tilkobling av gjennomgående jordingsleder til jordelektrode, og utjevning fra jordelektrode til hovedjordskinne i bygg, annen ledende del, antennemast, lynvernanlegg og oppstikk til elektrisk utstyr.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -5004,6 +5234,7 @@
       "tittel": "Jordingspunkt",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter etablering av jordingspunkt.",
         "x": "Mengde måles som prosjektert antall. Enhet: stk"
@@ -5013,6 +5244,7 @@
       "tittel": "Hovedjordskinne",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av hovedjordskinne i lavspentrom i tekniske bygg. Omfatter også merking av jordeledere som termineres og oversiktsskjema.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -5022,6 +5254,7 @@
       "tittel": "Jordskinne for utjevningsforbindelser",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av jordskinne i øvrige rom i tekniske bygg. Omfatter også merking av jordeledere som termineres.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -5031,6 +5264,7 @@
       "tittel": "Ringjord for antennemast",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider for etablering av ringjordsystem for antennemast.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -5040,6 +5274,7 @@
       "tittel": "Tekniske bygg, installasjon og innredning",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter arbeider og materialer for branntetting av innstøpte trekkerør inn i tekniske bygg, branntetting av utsparing i vegg mellom de ulike tekniske rommene, bergrom og branntetting i nisjevegg. Omfatter også etablering av modulsystem for gjennomføring i vegg mellom høgspentrom og lavspentrom.",
@@ -5099,6 +5334,7 @@
       "tittel": "Branntetting i tekniske bygg",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter arbeider og materialer for branntetting av innstøpte trekkerør inn i tekniske bygg, branntetting av utsparing i vegg mellom de ulike tekniske rommene, bergrom og branntetting i nisjevegg. Omfatter også etablering av modulsystem for gjennomføring i vegg mellom høgspentrom og lavspentrom.",
         "b": "Branntetting skal tilfredsstille krav EI60 (A60). Varig tettemasse. Betong kan benyttes for tetting rundt trekkerør, men ikke inne i selve rørene.",
@@ -5109,6 +5345,7 @@
       "tittel": "Datagulv / installasjonsgulv",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter leveringer og arbeider for etablering av datagulv i tekniske rom, inkludert levering av verktøy for å ta opp platene med.",
         "b": [
@@ -5132,6 +5369,7 @@
       "tittel": "Merking av dører",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av merkeskilt for merking av dører i tekniske bygg og nisjevegg samt utgangsskilt og merking av internt batterirom.",
         "b": [
@@ -5148,6 +5386,7 @@
       "tittel": "Kontorrekvisita",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Prosessen omfatter levering og montering av kontorpult, hylle for FDV-dokumentasjon, kontorstol med hjul og en klappstol i tekniske bygg.",
         "c": "Plasseres i nødstrømsrommet i hvert teknisk bygg.",
@@ -5158,6 +5397,7 @@
       "tittel": "Kjøleanlegg / varmepumpe",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter arbeider og materialer for montering, kabling og tilkobling for regulering av temperatur i tekniske bygg.",
         "c": "Valg av løsning for å holde jevn temperatur skal dokumenteres for byggherre før bestilling av utstyr.",
@@ -5168,6 +5408,7 @@
       "tittel": "Luftavfukter",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og idriftsetting av kondens- eller rotoravfukter med innebygget hygrostat og styring.",
@@ -5187,6 +5428,7 @@
       "tittel": "Elektrisk installasjon i tekniske bygg",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkobling av elektrisk installasjon i teknisk bygg for tilkobling av fast lysinstallasjon, og øvrig installasjon som kraftuttak m.v. Prosessen omfatter også kursopplegg og brytere for belysningen, og stikkontakter i hvert rom. Omfatter også levering og montering av varmeovner og kursopplegg til disse.",
         "b": [
@@ -5201,6 +5443,7 @@
       "tittel": "Øvrige arbeider i tekniske rom",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter øvrig levering, montering og tilkobling av installasjoner i tavlerom og batterirom som ikke er inkludert i andre prosesser jf. planene og den spesielle beskrivelsen.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -5210,6 +5453,7 @@
       "tittel": "Belysning",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering, tilkopling , idriftsetting og kontrollmåling av belysningsanlegg.",
@@ -5249,6 +5493,7 @@
       "tittel": "Kabelfremføring mellom fordelinger og belysningsanlegg",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering, tilkobling og idriftsetting av kabler mellom fordelinger og belysningsanlegg.",
         "x": "Mengden måles som prosjektert lengde spesifisert for hver kabeltype iht. hjelpeskjema i kap. D2. Enhetspris for hver kabeltype angis separat i hjelpeskjema i kap. D.2 og samlet pris føres til sum i prosessen. Ved motstrid mellom summer gjelder samlet pris ført opp i prosessen foran hjelpeskjema i kap. D2 og ev. forskjell blir fordelt forholdsmessig på alle kabeltyper i hjelpeskjema. Angivelse av enhet RS er kun administrativ, mengdene skal være regulerbare iht. kontraktens regler. Regler for mengderegulering gjelder den samlede mengden på prosessen. Enhet: RS"
@@ -5258,6 +5503,7 @@
       "tittel": "Luminansmåler",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkopling av luminansmåler inklusive festeutstyr og kabler for automatisk regulering av nivået på belysningen. Nødvendige programmeringsarbeider er beskrevet i prosess 36.7.",
@@ -5284,6 +5530,7 @@
       "tittel": "Kabel mellom lokalt styresystem og luminansmåler",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av kabler mellom lokalt styresystem og måler",
         "x": "Mengden måles som prosjektert lengde spesifisert for hver kabeltype iht. hjelpeskjema i kap. D2. Enhetspris for hver kabeltype angis separat i hjelpeskjema i kap. D.2 og samlet pris føres til sum i prosessen. Ved motstrid mellom summer gjelder samlet pris ført opp i prosessen foran hjelpeskjema i kap. D2 og ev. forskjell blir fordelt forholdsmessig på alle kabeltyper i hjelpeskjema. Angivelse av enhet RS er kun administrativ, mengdene skal være regulerbare iht. kontraktens regler. Regler for mengderegulering gjelder den samlede mengden på prosessen. Enhet: RS"
@@ -5293,6 +5540,7 @@
       "tittel": "Luminansmåler",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkobling av luminansmåler, og nødvendig festeutstyr.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -5302,6 +5550,7 @@
       "tittel": "Armaturer",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av armaturer, lyskilder og festeutstyr inklusiv nødvendige braketter og merking av armaturer, samt utarbeidelse av lysberegninger og belysningsplaner.",
         "b": [
@@ -5322,6 +5571,7 @@
       "tittel": "Ventilasjon",
       "enhet": "?",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering, tilkopling og merking av ventilasjonsanlegg inkludert sikkerhetsbryter på eller ved hver enkelt ventilator samt levering og montering av kabler mellom hovedtavle/fordelingstavle og ventilatorer. Omfatter også levering, montering, tilkobling og merking av analog vibrasjonsmåler som skal være tilknyttet tunnelenes overvåkingsanlegg. Omfatter også levering, montering og tilkopling av utstyr for overvåking av forurensingsnivået i trafikkrommet. Omfatter også utprøving, idriftsettelse, dokumentasjon og drifts/vedlikeholdsinstruks på norsk. Bergbolter er beskrevet i prosess 36.1.",
@@ -5379,6 +5629,7 @@
       "tittel": "Kabelfremføring mellom fordelinger og ventilatorer",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og merking av sikkerhetsbrytere samt levering og montering av kabler og tilkobling mellom hovedtavle/fordelingstavle og ventilatorer.",
         "x": "Mengden måles som prosjektert lengde spesifisert for hver kabeltype iht. hjelpeskjema i kap. D2. Enhetspris for hver kabeltype angis separat i hjelpeskjema i kap. D.2 og samlet pris føres til sum i prosessen. Ved motstrid mellom summer gjelder samlet pris ført opp i prosessen foran hjelpeskjema i kap. D2 og ev. forskjell blir fordelt forholdsmessig på alle kabeltyper i hjelpeskjema. Angivelse av enhet RS er kun administrativ, mengdene skal være regulerbare iht. kontraktens regler. Regler for mengderegulering gjelder den samlede mengden på prosessen. Enhet: RS"
@@ -5388,6 +5639,7 @@
       "tittel": "Impulsventilatorer",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av impulsventilatorer, rammer, festeutstyr etc.. Omfatter også levering, montering, tilkobling og merking av analog vibrasjonsmåler som skal være tilknyttet tunnelenes overvåkingsanlegg. Kabler for vibrasjonsmålere er beskrevet i prosess 36.341. Festebolter til berg er beskrevet i prosess 36.1.",
         "x": "Mengde skal måles som prosjektert antall. Enhet: stk"
@@ -5397,6 +5649,7 @@
       "tittel": "Sjaktventilatorer",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkobling av sjaktventilatorer, frekvensomformere, servicebrytere, kabler samt nødvendige spjeld og annet mekanisk utstyr. Omfatter også levering, montering, tilkobling og merking av analog vibrasjonsmåler som skal være tilknyttet tunnelenes overvåkingsanlegg. Kabler for vibrasjonsmålere er beskrevet i prosess 36.341.Festebolter til berg er beskrevet i prosess 36.1.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -5406,6 +5659,7 @@
       "tittel": "Overvåking av tunnelluften",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkopling av utstyr for overvåking av forurensingsnivået i trafikkrommet, samt kabler mellom utstyr og styreapparat etc.",
@@ -5447,6 +5701,7 @@
       "tittel": "Kabler for målere for overvåkingsutstyr og vibrasjonsmålere",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering/trekking av kabler mellom målere og lokalt styresystem.",
         "x": "Mengden måles som prosjektert lengde spesifisert for hver kabeltype iht. hjelpeskjema i kap. D2. Enhetspris for hver kabeltype angis separat i hjelpeskjema i kap. D.2 og samlet pris føres til sum i prosessen. Ved motstrid mellom summer gjelder samlet pris ført opp i prosessen foran hjelpeskjema i kap. D2 og ev. forskjell blir fordelt forholdsmessig på alle kabeltyper i hjelpeskjema. Angivelse av enhet RS er kun administrativ, mengdene skal være regulerbare iht. kontraktens regler. Regler for mengderegulering gjelder den samlede mengden på prosessen. Enhet: RS"
@@ -5456,6 +5711,7 @@
       "tittel": "Målere for overvåkning",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkobling av overvåkningsutstyr for gasser, vind, støv, sikt, mv. Vibrasjonsmålere er beskrevet i prosess 36.32 og 36.33.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -5464,27 +5720,32 @@
     "36.3421": {
       "tittel": "NO-gassmålere",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.3422": {
       "tittel": "NO2-gassmålere",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.3423": {
       "tittel": "Støv- og siktmålere",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.3424": {
       "tittel": "Vindmåler",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.4": {
       "tittel": "Sikkerhetsutrustning",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkopling av sikkerhetsutrustning, nødutstyr, serviceinstallasjoner og utstyr for overføring av signal til bemannet sentral.",
@@ -5620,6 +5881,7 @@
       "tittel": "Brannsikring",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkopling av utstyr for varsling av branntilløp i tekniske rom og varsling og bekjempelse av branntilløp i tunnel inkludert kabler for overføring av alarmsignal.",
@@ -5646,6 +5908,7 @@
       "tittel": "Brannslokningsapparater og nødstasjoner",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av brannslokningsapparater inklusive alle skilt, nødstasjon skap (IP 65) med meldekontakt for brannslukningsapparatene, og skapdør. Omfatter også levering, montering og tilkobling av utrustning og tavler i nødstasjon kiosk. Kabler fra meldekontakter er beskrevet i prosess 36.413. Omfatter også all merking på og i nødstasjon.",
         "b": [
@@ -5663,6 +5926,7 @@
       "tittel": "Kabler for brannsikringsutstyr",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og trekking av kabler mellom brannskap og grensesnitt styresystem.",
         "x": "Mengden måles som prosjektert lengde spesifisert for hver kabeltype iht. hjelpeskjema i kap. D2 uten tillegg forskjøting etc.. Enhetspris for hver kabeltype angis separat i hjelpeskjema i kap. D.2 og samlet pris føres til sum i prosessen. Ved motstrid mellom summer gjelder samlet pris ført opp i prosessen foran hjelpeskjema i kap. D2 og ev. forskjell blir fordelt forholdsmessig på alle kabeltyper i hjelpeskjema. Angivelse av enhet RS er kun administrativ, mengdene skal være regulerbare iht. kontraktens regler. Regler for mengderegulering gjelder den samlede mengden på prosessen. Enhet: RS"
@@ -5672,6 +5936,7 @@
       "tittel": "Brannvarslingsanlegg for tekniske rom",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og installasjon av brannvarslingsanlegg for tekniske rom.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -5681,6 +5946,7 @@
       "tittel": "Nød/rømning",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkopling av evakueringsbelysning, nødtelefoner og nødstrøm, samt av kabler og utstyr for overføring av signaler.",
@@ -5715,6 +5981,7 @@
       "tittel": "Evakueringsbelysning",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering, tilkopling og idriftsetting av evakueringsbelysning for tunnel, inkludert alt nødvendig utstyr.",
         "b": "Belysning skal være iht. vegnormal N500 Vegtunneler. Kabler skal tilfredsstille kravene til kabelklasse 3 i henhold til NEK 600 El og ekom i vegtrafikksystem.",
@@ -5725,6 +5992,7 @@
       "tittel": "Nødtelefon",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av nødtelefoner og nødtelefonsentraler inkludert programmering. Levering og montering av kiosker er beskrevet i prosess 35.5 og skap i 36.411. Skilt er beskrevet i disse prosessene.",
         "b": [
@@ -5741,6 +6009,7 @@
       "tittel": "Nødstrømsanlegg",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering, tilkopling og idriftsetting av nødstrømsanlegg.",
         "b": "Type nødstrømsanlegg skal være UPS med batteri eller iht. den spesielle beskrivelsen. Det vises til NEK 600 El og ekom i vegtrafikksystem. UPS skal være av typen «on line» med nødvendige inn- og utgående brytere, batteribrytere, likeretter, vekselretter og buypass bryter i eget skap. Batterier skal ha minimum levetid iht. Eurobat classification «very long life» eller tilsvarende levetid etter annet klassifiseringsorgan.",
@@ -5752,6 +6021,7 @@
       "tittel": "Kabler for utstyr Nød/rømning",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av kabler for nød/rømningsutstyr",
         "b": "Kabler skal tilfredsstille kravene til kabelklasse 3 i NEK 600 El og ekom i vegtrafikksystem.",
@@ -5762,6 +6032,7 @@
       "tittel": "Utstyr for overføring av signaler",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og idriftsetting av utstyr for overføring av signaler fra tunnel til overvåket sentral.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -5771,6 +6042,7 @@
       "tittel": "Kringkasting og radiokommunikasjon",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og idriftsetting av godkjent radioutstyr for kringkasting med innbrytning i vegtunnel inklusive antenner.",
@@ -5870,6 +6142,7 @@
       "tittel": "Radioteknisk utstyr",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og idriftsetting av radioteknisk utstyr for kringkastingsanlegg med innbrytning i tunnel.",
         "b": [
@@ -5939,6 +6212,7 @@
       "tittel": "Strålekabel",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og terminering av strålekabel, samt kontrollmåling og utarbeidelse av målerapport.",
         "b": [
@@ -5963,6 +6237,7 @@
       "tittel": "Koaksialkabler",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og terminering av koaksial matekabler.",
         "b": [
@@ -5981,6 +6256,7 @@
       "tittel": "Trafikkregulering/overvåking",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkobling av alt utstyr i forbindelse med regulering og over-våking av trafikken. Kabling for prosessene 36.51, 36.52, 36.54, 36.55 og 36.56 er beskrevet i prosess 36.57.",
@@ -6027,6 +6303,7 @@
       "tittel": "Rødt stoppsignal og bommer",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering og tilkopling av stoppblinksignal, variable skilt og bommer samt induktiv sløyfe i vegbanen der dette er aktuelt. Kabler er beskrevet i prosess 36.57.",
@@ -6043,17 +6320,20 @@
     "36.511": {
       "tittel": "Rødt stoppblinksignal",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.512": {
       "tittel": "Kombinert stoppblinksignal og arbeidsvarsling",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.513": {
       "tittel": "Bommer",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "For automatiske bommer skal levering og montering av koplingsavsnitt og tilhørende kabler være inkludert. Omfatter også levering og montering av induktiv sløyfe i vegbanen inklusiv tilhørende kabelframføring. Tilknytning til det lokale styresystemet er beskrevet i prosess 36.7.",
         "b": "Bommene skal være utstyrt med varsellamper og refleks iht. den spesielle beskrivelsen."
@@ -6063,6 +6343,7 @@
       "tittel": "Skilt og nødutgangsskilt",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av innvendig belyst skilt. Kabler er beskrevet i prosess 36.57",
         "c": "Utførelse iht. vegnormal N500 Vegtunneler og IEC 60598-2-22.",
@@ -6072,47 +6353,56 @@
     "36.521": {
       "tittel": "Skilt 601 Radio m/gul vekselblink",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.522": {
       "tittel": "Skilt 605 og 606",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.523": {
       "tittel": "Skilt 555-600.21",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.524": {
       "tittel": "Skilt 570.1 Nødutgang",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.525": {
       "tittel": "Skilt 570.2 og 916 Avstandsmarkering",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.526": {
       "tittel": "Fare-, påbuds-, fartsgrense- og opplysningsskilt",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.527": {
       "tittel": "Vegvisningsskilt",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.528": {
       "tittel": "Nødutgangskilt",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.53": {
       "tittel": "Video-overvåking",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter komplett anlegg for video-overvåking som angitt i planene.",
@@ -6135,6 +6425,7 @@
       "tittel": "Videokameraer",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av kamera, inkl. braketter og festeutstyr etc., sentrale og distribuerte evaluering- og overføringsenheter, monitorer, videoutstyr, forsterker etc. Programmeringsarbeider for kamera er beskrevet i prosess 36.7. Kabler er beskrevet i prosess 36.534.",
         "x": "Kostnad angis som prosjektert antall kameraer. Enhet: stk"
@@ -6144,6 +6435,7 @@
       "tittel": "Skap for kamerakontroll og dataoverføring",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av egne skap for tilførsel, signal- /nettverkskabel og utstyrsenheter til kameraene.",
         "x": "Mengden måles som antall skap. Enhet: stk"
@@ -6153,6 +6445,7 @@
       "tittel": "Fiberkabler for videokamera",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av fiberkabler, inklusiv fiberpatch mellom fiberpanel og sentral/distribuert evaluering-/overføringsenhet.",
         "c": "Fiberkabel trekkes fra fiberpanel ved matrise og frem til ITV-skapene.",
@@ -6163,6 +6456,7 @@
       "tittel": "Signal-/nettverkskabel",
       "enhet": "m",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av kabler til videokamera.",
         "x": "Mengden måles som prosjektert lengde kabel. Enhet: m."
@@ -6172,6 +6466,7 @@
       "tittel": "Kjørefeltsignal",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av kjørefeltsignaler inkl. styreskap og kabler mellom signalenheter og styreskap. Øvrige kabler er beskrevet i prosess 36.57.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -6181,6 +6476,7 @@
       "tittel": "Trafikktelling, køvarsling, tilfartskontroll og hendelsesdetektering",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av alt utstyr for trafikktelling, køvarsling, tilfartskontroll og hendelsesdetektering. Programmeringsarbeider er beskrevet i prosess 36.7. Kabler er beskrevet i prosess 36.57.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -6190,6 +6486,7 @@
       "tittel": "Høydebegrensning",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av alt nødvendig utstyr for begrensning eller varsling av for høye kjøretøyer, inkludert både mekanisk og optisk utstyr. Kabler er beskrevet i prosess 36.57.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -6199,6 +6496,7 @@
       "tittel": "Kabler for trafikkinstallasjoner",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av kabler for utstyr til trafikkinstallasjoner.",
         "b": "Kabler skal tilfredsstille krav i vegnormal NEK 600 El og ekom i vegtrafikksystem. Kabelklasse skal være som angitt i planene. For bommer skal det føres separate kurser fra fordelingstavle (prioriterte kurser) til bomstyreskap.",
@@ -6208,32 +6506,38 @@
     "36.571": {
       "tittel": "Kabler for rødt stoppsignal og bommer",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.572": {
       "tittel": "Kabler for skilt og nødutgangsskilt",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.574": {
       "tittel": "Kabler for kjørefeltsignal",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.575": {
       "tittel": "Kabler for trafikktelling, køvarsling, tilfartskontroll og hendelsesdetektering",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.576": {
       "tittel": "Kabler for høydebegrensning",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.6": {
       "tittel": "Renseanlegg",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering, tilkopling, utprøving og idriftsetting av alt utstyr for luftrenseanlegg og vannrenseanlegg.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -6242,27 +6546,32 @@
     "36.61": {
       "tittel": "Luftrenseanlegg",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.611": {
       "tittel": "Støvfjerningsanlegg",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.612": {
       "tittel": "Gassrenseanlegg",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.62": {
       "tittel": "Vannrenseanlegg",
       "enhet": "RS",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7": {
       "tittel": "Lokalt styringssystem og programmering",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering, tilkobling og idriftsettelse av lokalt styresystem med tilhørende utstyr, kabelarbeider og programmering og lisenskostnader.",
@@ -6397,6 +6706,7 @@
       "tittel": "PLS og tilhørende utstyr",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering, tilkobling og idriftsettelse av utstyr iht. den spesielle beskrivelsen, inklusiv tilhørende utstyr og kabler.",
@@ -6432,6 +6742,7 @@
       "tittel": "PLS",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering, konfigurering og idriftsetting av programmerbare Logiske Styringer (PLS), inkludert prosessorenhet (CPU), bakplan og kommunikasjonsmoduler.",
         "b": [
@@ -6448,6 +6759,7 @@
       "tittel": "Distribuert I/O",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering, konfigurering og idriftsetting av distribuert I/O inkludert tilhørende CPU, bakplan, kommunikasjonsmoduler og I/O-moduler.",
         "b": [
@@ -6466,37 +6778,44 @@
     "36.7121": {
       "tittel": "CPU",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7122": {
       "tittel": "Kommunikasjonsmodul",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7123": {
       "tittel": "Analog inngang",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7124": {
       "tittel": "Analog utgang",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7125": {
       "tittel": "Digital inngang",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7126": {
       "tittel": "Digital utgang",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.72": {
       "tittel": "Programvare og programmering",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av programvare, programmering, konfigurering og idriftsetting av anlegget. Omfatter også utarbeiding av objekt- og I/O-lister.",
         "b": [
@@ -6517,6 +6836,7 @@
       "tittel": "Lokalt datanettverk",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering, konfigurering og idriftsetting av alt utstyr nødvendig for det lokale datanettverket i anlegget inkludert lokal kommunikasjon med PLS'er, distribuerte moduler, VoIP telefoner, kamera og grensesnitt mot ekstern kommunikasjon. Omfatter utarbeidelse av en designspesifikasjon av nettverket.",
@@ -6602,6 +6922,7 @@
       "tittel": "Designspesifikasjon av nettverket",
       "enhet": "RS",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Omfatter utarbeidelse av en designspesifikasjon av nettverket.",
         "c": "Designspesifikasjonen skal være kommentert av byggherre før innkjøp av nettverksutstyr.",
@@ -6612,6 +6933,7 @@
       "tittel": "Switcher",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, montering, konfigurering og idriftsetting av switcher for lokalt datanettverk.",
@@ -6686,6 +7008,7 @@
       "tittel": "Lag 2 switcher",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Gjelder switcher tilkoblet undernett (subnet eller bygningsstamnett NEK 701 4.3 til 4.5) i teknisk bygg og i styreskap.",
         "b": [
@@ -6698,17 +7021,20 @@
     "36.73211": {
       "tittel": "DIN-monterte",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.73212": {
       "tittel": "Rack-monterte",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7322": {
       "tittel": "Lag 3 switcher",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Gjelder switcher tilkoblet overordnet nett (stamnett eller områdestamnett NEK 701 4.3 til 4.5) i styresentraler i tekniske bygg.",
         "b": [
@@ -6725,6 +7051,7 @@
       "tittel": "Strømforsyning",
       "enhet": "stk",
       "hovedprosess": "3",
+      "url": "",
       "tekst": {
         "a": "Gjelder strømforsyning til switcher i styreskap og teknisk bygg klar for montasje på DIN-skinne.",
         "b": "EMS: IEC 61000-4-2/4-3/4-4/4-5/4-6/. Skal tilfredsstille krav til sikkerhet iht. IEC/EN 60950-1.",
@@ -6738,27 +7065,32 @@
     "36.7331": {
       "tittel": "48V strømforsyning PoE",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7332": {
       "tittel": "24V strømforsyning",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "36.7333": {
       "tittel": "Andre strømforsyninger",
       "enhet": "stk",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "37": {
       "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
       "enhet": "?",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     },
     "38": {
       "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
       "enhet": "?",
-      "hovedprosess": "3"
+      "hovedprosess": "3",
+      "url": ""
     }
   }
 }

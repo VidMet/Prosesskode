@@ -8,6 +8,7 @@
       "tittel": "Grøfter, kummer og rør",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter avdekking, graving, sprengning, avretting av bunn og sider, rensk, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
@@ -513,6 +514,7 @@
       "tittel": "ÅPNE GRØFTER",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter avdekking, graving, sprengning, avretting av bunn og sider, rensk, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
@@ -555,6 +557,7 @@
       "tittel": "Åpne grøfter i løsmasse",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Åpne grøfter i løsmasse kan ha oppgjør etter prosess 41.11 eller 41.12, ikke etter begge prosesser for samme arbeid. Byggherren bestemmer før oppstart hvilke arbeider som skal ha oppgjør etter hhv. volum under prosess 41.11 eller lengde under prosess 41.12.",
@@ -571,6 +574,7 @@
       "tittel": "Åpne grøfter i løsmasse Graving, opplasting, transport og utlegging oppgjort etter volum",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengde måles som prosjektert fast volum. Enhet: m3"
@@ -580,6 +584,7 @@
       "tittel": "Åpne grøfter i løsmasse oppgjort etter lengde",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert lengde grøft med tverrsnitt som angitt. Enhet: m"
@@ -589,6 +594,7 @@
       "tittel": "Åpne grøfter i kombinert løsmasse/berg (løsmassetykk. ≥0,3m)",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
@@ -604,6 +610,7 @@
       "tittel": "Graving, opplasting, transport og utlegging",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -613,6 +620,7 @@
       "tittel": "Sprengning, opplasting, transport og utlegging",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter sprengning, avretting av bunn og sider, rensk etter behov, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -622,6 +630,7 @@
       "tittel": "Åpne grøfter i berg (løsmassetykkelse < 0,3m)",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Åpne grøfter i berg (løsmassetykkelse < 0,3m) kan ha oppgjør etter prosess 41.31 eller 41.32, ikke etter begge prosesser for samme arbeid. Byggherren bestemmer før oppstart hvilke arbeider som skal ha oppgjør etter hhv. volum under prosess 41.31 eller lengde under prosess 41.32.",
@@ -638,6 +647,7 @@
       "tittel": "Åpne grøfter i berg oppgjort etter volum",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter avdekking, graving, sprengning, avretting av bunn og sider, rensk etter behov, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -647,6 +657,7 @@
       "tittel": "Åpne grøfter i berg oppgjort etter lengde",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter avdekking, graving, sprengning, avretting av bunn og sider, rensk etter behov, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert lengde grøft med tverrsnitt som angitt. Enhet: m"
@@ -656,6 +667,7 @@
       "tittel": "Åpne grøfter i sprengt stein",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Åpne grøfter i sprengt stein kan ha oppgjør etter prosess 41.41 eller 41.42, ikke etter begge prosesser for samme arbeid. Byggherren bestemmer før oppstart hvilke arbeider som skal ha oppgjør etter hhv. volum under prosess 41.41 eller lengde under prosess 41.42.",
@@ -672,6 +684,7 @@
       "tittel": "Åpne grøfter i sprengt stein oppgjort etter volum",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -681,6 +694,7 @@
       "tittel": "Åpne grøfter i sprengt stein oppgjort etter lengde",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Gjelder de grøfter det er angitt i den spesielle beskrivelsen at skal ha oppgjør etter lengde. Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert lengde grøft med tverrsnitt som angitt. Enhet: m"
@@ -690,6 +704,7 @@
       "tittel": "Åpne grøfter i myr",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Åpne grøfter i myr kan ha oppgjør etter prosess 41.51 eller 41.52, ikke etter begge prosesser for samme arbeid. Byggherren bestemmer før oppstart hvilke arbeider som skal ha oppgjør etter hhv. volum under prosess 41.51 eller lengde under prosess 41.52.",
@@ -706,6 +721,7 @@
       "tittel": "Åpne grøfter i myr oppgjort etter volum",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -715,6 +731,7 @@
       "tittel": "Åpne grøfter i myr oppgjort etter lengde",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert lengde grøft med tverrsnitt som angitt. Enhet: m"
@@ -724,6 +741,7 @@
       "tittel": "LUKKEDE RØRGRØFTER",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter graving, sprengning, avretting av bunn og sider samt nødvendig rensk av rørgrøfter. Omfatter også nødvendig stempling og avstivning. Omfatter også opplasting, transport og utlegging til mellomlager eller til tipp-plass. Omfatter også levering og legging av fiberduk langs grøftebunn/-sider. Omfatter også opplasting, transport, utlegging og komprimering av masser for fundament, omfylling og gjenfylling samt komprimering av masser over ledningssonen. Omfatter også levering av massene i de tilfeller hvor det innen anleggsområdet ikke finnes stedlige masser, inklusiv behandlede rivemasser, som tilfredsstiller materialkravene. I enhetsprisene skal også nødvendig sikring av byggegropene være inkludert. Omfatter også pressing av rør. Omfatter også materialer og arbeid med utvidelse av grøfteprofilet for kummer. Sprengning og fjerning av steinmasser i grøfteprofil i tunnel og kumutvidelser i tunnel er beskrevet i hovedprosess 3.",
@@ -884,6 +902,7 @@
       "tittel": "Rørgrøft i løsmasse",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Utvidelse for kummer er beskrevet i prosess 42.6.",
@@ -909,6 +928,7 @@
       "tittel": "Graving",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, nødvendig stempling/avstiving, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum, målt gjennomgående. Enhet: m3"
@@ -918,6 +938,7 @@
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av fiberduk mellom grøftebunn/-sider og gjenfyllingsmaterialet.",
         "x": "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
@@ -927,6 +948,7 @@
       "tittel": "Fundament og omfylling for rør",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av fundament og omfyllingsmasser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -936,6 +958,7 @@
       "tittel": "Gjenfylling over ledningssonen med stedlige masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenfylling og komprimering over ledningssonen med stedlige masser fra anlegget.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -945,6 +968,7 @@
       "tittel": "Gjenfylling over ledningssonen med tilførte masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Prosessen kommer bare til anvendelse dersom det ikke finnes tilfredsstillende masser innen anlegget. Omfatter levering, gjenfylling og komprimering over ledningssonen med tilførte masser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -954,6 +978,7 @@
       "tittel": "Fjerning av overskuddsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport og utlegging av overskuddsmasser til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -963,6 +988,7 @@
       "tittel": "Rørgrøft i kombinert løsmasse/berg (løsmassetykkelse ≥ 0,3 m)",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Utvidelse for kummer er beskrevet i prosess 42.6.",
@@ -990,6 +1016,7 @@
       "tittel": "Graving",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, nødvendig stempling/avstiving, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum, målt gjennomgående. Enhet: m3"
@@ -999,6 +1026,7 @@
       "tittel": "Sprengning og oppgraving",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter sprengning, oppgraving, nødvendig stempling/avstiving, rensk etter behov, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -1008,6 +1036,7 @@
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av fiberduk mellom grøftebunn/sider og gjenfyllingsmaterialet.",
         "x": "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
@@ -1017,6 +1046,7 @@
       "tittel": "Fundament og omfylling for rør",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av fundament og omfyllingsmasser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1026,6 +1056,7 @@
       "tittel": "Gjenfylling over ledningssonen med stedlige masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenfylling og komprimering over ledningssonen med stedlige masser fra anlegget.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1035,6 +1066,7 @@
       "tittel": "Gjenfylling over ledningssonen med tilførte masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Prosessen kommer bare til anvendelse dersom det ikke finnes tilfredsstillende masser innen anlegget. Omfatter levering, gjenfylling og komprimering over ledningssonen med tilførte masser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1044,6 +1076,7 @@
       "tittel": "Fjerning av overskuddsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport og utlegging av overskuddsmasser til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -1053,6 +1086,7 @@
       "tittel": "Rørgrøft i berg (løsmassetykkelse < 0,3 m) og tunnel",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Utvidelse for kummer er beskrevet i prosess 42.6.",
@@ -1081,6 +1115,7 @@
       "tittel": "Avdekking",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter avdekking av bergoverflaten, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -1090,6 +1125,7 @@
       "tittel": "Sprengning og oppgraving",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter sprengning, oppgraving, nødvendig stempling/avstiving, rensk etter behov, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
@@ -1102,6 +1138,7 @@
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av fiberduk mellom grøftebunn/sider og gjenfyllingsmaterialet.",
         "x": "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
@@ -1111,6 +1148,7 @@
       "tittel": "Fundament og omfylling for rør",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av fundament og omfyllingsmasser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1120,6 +1158,7 @@
       "tittel": "Gjenfylling over ledningssonen med stedlige masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenfylling og komprimering over ledningssonen med stedlige masser fra anlegget.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1129,6 +1168,7 @@
       "tittel": "Gjenfylling over ledningssonen med tilførte masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Prosessen kommer bare til anvendelse dersom det ikke finnes tilfredsstillende masser innen anlegget. Omfatter levering, gjenfylling og komprimering over ledningssonen med tilførte masser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1138,6 +1178,7 @@
       "tittel": "Fjerning av overskuddsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport og utlegging av overskuddsmasser til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -1147,6 +1188,7 @@
       "tittel": "Rørgrøft i sprengt stein",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Utvidelse for kummer er beskrevet i prosess 42.6.",
@@ -1172,6 +1214,7 @@
       "tittel": "Graving",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, nødvendig stempling/avstiving, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum, målt gjennomgående. Enhet: m3"
@@ -1181,6 +1224,7 @@
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av fiberduk mellom grøftebunn/sider og gjenfyllingsmaterialet.",
         "x": "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
@@ -1190,6 +1234,7 @@
       "tittel": "Fundament og omfylling for rør",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av fundament og omfyllingsmasser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1199,6 +1244,7 @@
       "tittel": "Gjenfylling over ledningssonen med stedlige masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenfylling og komprimering over ledningssonen med stedlige masser fra anlegget.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1208,6 +1254,7 @@
       "tittel": "Gjenfylling over ledningssonen med tilførte masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Prosessen kommer bare til anvendelse dersom det ikke finnes tilfredsstillende masser innen anlegget. Omfatter levering, gjenfylling og komprimering over ledningssonen med tilførte masser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1217,6 +1264,7 @@
       "tittel": "Fjerning av overskuddsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport og utlegging av overskuddsmasser til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -1226,6 +1274,7 @@
       "tittel": "Avstivede grøfter",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Utvidelse for kummer er beskrevet i prosess 42.6.",
@@ -1255,6 +1304,7 @@
       "tittel": "Graving mellom spunt uten avstivning",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum, målt gjennomgående. Enhet: m3"
@@ -1264,6 +1314,7 @@
       "tittel": "Graving mellom spunt med avstivning",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum, målt gjennomgående. Enhet: m3"
@@ -1273,6 +1324,7 @@
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av fiberduk mellom grøftebunn/sider og gjenfyllingsmaterialet.",
         "x": "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
@@ -1282,6 +1334,7 @@
       "tittel": "Fundament og omfylling for rør",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av fundament og omfyllingsmasser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1291,6 +1344,7 @@
       "tittel": "Gjenfylling mellom spunt over ledningssonen med stedlige masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenfylling og komprimering over ledningssonen med stedlige masser fra anlegget.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1300,6 +1354,7 @@
       "tittel": "Gjenfylling mellom spunt over ledningssonen med tilførte masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Prosessen kommer bare til anvendelse dersom det ikke finnes tilfredsstillende masser innen anlegget. Omfatter levering, gjenfylling og komprimering over ledningssonen med tilførte masser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1309,6 +1364,7 @@
       "tittel": "Fjerning av overskuddsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport og utlegging av overskuddsmasser til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -1318,6 +1374,7 @@
       "tittel": "Sikring",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av materialer og alle arbeider i forbindelse med sikring av byggegrop.",
         "x": "Kostnad angis rund sum. Enhet: RS"
@@ -1327,6 +1384,7 @@
       "tittel": "Utvidelse for kummer",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med utvidelse av grøfteprofilet for kummer.",
@@ -1338,27 +1396,32 @@
     "42.61": {
       "tittel": "Utvidelse for kummer i løsmasse",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "42.62": {
       "tittel": "Utvidelse for kummer i berg/løsmasse (løsmassetykkelse ≥ 0,3 m)",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "42.63": {
       "tittel": "Utvidelse for kummer i berg (løsmassetykkelse < 0,3 m)",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "42.64": {
       "tittel": "Utvidelse for kummer i sprengt stein",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "42.65": {
       "tittel": "Utvidelse for kummer i tunnel",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med gjenfylling og komprimering. Sprengning og fjerning av steinmasser for utvidelse for kummer i tunnel er beskrevet under hovedprosess 3."
       }
@@ -1367,6 +1430,7 @@
       "tittel": "Pressing av rør",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle materialer og arbeider for å etablere ferdig presset rør.",
@@ -1390,6 +1454,7 @@
       "tittel": "Rigging",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle kostnader i forbindelse med tilrigging og nedrigging av utstyr.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -1399,6 +1464,7 @@
       "tittel": "Spunt inkl. avstivning",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle materialer og arbeider med spunt.",
         "x": "Mengden måles som prosjektert areal målt i vertikalprojeksjon. Enhet: m2"
@@ -1408,6 +1474,7 @@
       "tittel": "Graving av pressgroper",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, nødvendig stempling, avstivning og sikring av gropen, opplasting, transport og utlegging til mellomlager eller fyllplass. Omfatter også levering og arbeider med gjenfylling, komprimering og retablering slik at området framstår som før utgraving.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -1417,6 +1484,7 @@
       "tittel": "Fundamentering",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle materialer og arbeider i forbindelse med fundamentering.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -1426,6 +1494,7 @@
       "tittel": "Pressing/boring",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av foringsrør og alle arbeider i forbindelse med pressing/boring.",
         "x": "Mengden måles som prosjektert lengde. Enhet: m"
@@ -1435,6 +1504,7 @@
       "tittel": "RØRLEDNINGER",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av rør, rørdeler og legging av rør til drensledninger, overvannsledninger, spillvannsledninger (avløp) og vannledninger med forankringer som angitt i planene. Omfatter også levering og legging av drensmatter med alt nødvendig tilbehør. Alle arbeider og leveranser i forbindelse med graving, fundament, eventuelle filtermasser, omfylling og gjenfylling er beskrevet under prosess 42. Levering og utførelse av kummer er beskrevet i prosess 46. Alle leveranser og arbeider i forbindelse med stikkrenner/kulverter er beskrevet under prosess 45.",
         "b": [
@@ -1478,6 +1548,7 @@
       "tittel": "Drensledning",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
       }
@@ -1485,17 +1556,20 @@
     "43.11": {
       "tittel": "Diameter ≤ 120 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.12": {
       "tittel": "Diameter > 120 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.13": {
       "tittel": "Drensmatter",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
       }
@@ -1503,97 +1577,116 @@
     "43.2": {
       "tittel": "Overvannsledning",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.21": {
       "tittel": "Diameter 150 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.22": {
       "tittel": "Diameter 200 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.23": {
       "tittel": "Diameter 250 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.24": {
       "tittel": "Diameter 300 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.25": {
       "tittel": "Diameter 400 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.26": {
       "tittel": "Diameter 500 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.27": {
       "tittel": "Diameter 600 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.28": {
       "tittel": "Diameter >600 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.3": {
       "tittel": "Spillvannsledning (avløp)",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.31": {
       "tittel": "Diameter 150 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.32": {
       "tittel": "Diameter 200 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.33": {
       "tittel": "Diameter 250 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.34": {
       "tittel": "Diameter 300 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.35": {
       "tittel": "Diameter 400 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.36": {
       "tittel": "Diameter 500 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.37": {
       "tittel": "Diameter 600 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.38": {
       "tittel": "Diameter >600 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.4": {
       "tittel": "Vannledning",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall forankringer. Enhet: stk"
       }
@@ -1601,32 +1694,38 @@
     "43.41": {
       "tittel": "Innvendig diameter < 64 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.42": {
       "tittel": "Innvendig diameter 64 - 200 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.43": {
       "tittel": "Innvendig diameter 201 - 400 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.44": {
       "tittel": "Innvendig diameter > 400 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.45": {
       "tittel": "Isolasjon",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "43.48": {
       "tittel": "Forankring av ledning",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall forankringer. Enhet: stk"
       }
@@ -1635,6 +1734,7 @@
       "tittel": "KABLER OG LEDNINGER",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle materialer og arbeider med kabelanlegg.",
@@ -1736,6 +1836,7 @@
       "tittel": "Kabelgrøfter",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter etablering av grøfter for kabler, trekkerør, rørkryss og kabelkanaler, inkludert sprengning, graving, nødvendig stempling/avstiving, rensk etter behov, avretting av bunn og sider. Omfatter også fundament, fiberduk, sidefylling, beskyttelseslag, komprimering og gjenfylling. Omfatter også opplasting borttransport, tipping og utlegging av overskuddsmasser. Kabeldekkbord og jordingssystem er beskrevet i prosess 44.2. Kabelmarkering er beskrevet i prosess 44.3.",
@@ -1771,6 +1872,7 @@
       "tittel": "Graving/sprengning av grøfter",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter sprengning, graving, nødvendig stempling/avstiving, rensk etter behov, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Grøftesidene regnes som vertikale, og omkostninger forbundet med eventuelle overmasser innkalkuleres i enhetsprisen. Enhet: m3"
@@ -1779,27 +1881,32 @@
     "44.111": {
       "tittel": "Grøfter i jord",
       "enhet": "m3",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.112": {
       "tittel": "Grøfter i kombinert jord/berg",
       "enhet": "m3",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.113": {
       "tittel": "Grøfter i berg",
       "enhet": "m3",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.114": {
       "tittel": "Grøfter i sprengt stein",
       "enhet": "m3",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.12": {
       "tittel": "Fundament, sidefylling/omfylling og beskyttelseslag",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av masser for fundament/omfylling/ beskyttelseslag samt fiberduk.",
         "x": "Mengden måles som prosjektert volum med loddrette sider uten fratrekk for kabler og trekkerør. Enhet: m3"
@@ -1809,6 +1916,7 @@
       "tittel": "Gjenfylling over ledningssonen",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter gjenfylling og komprimering over ledningssonen med stedlige masser fra anlegget.",
@@ -1821,6 +1929,7 @@
       "tittel": "Gjenfylling over ledningssonen med stedlige masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenfylling og komprimering over ledningssonen med stedlige masser fra anlegget."
       }
@@ -1829,6 +1938,7 @@
       "tittel": "Gjenfylling over ledningssonen med tilførte masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Prosessen kommer bare til anvendelse dersom det ikke finnes tilstrekkelige egnede masser innen anlegget. Omfatter levering, gjenfylling og komprimering over ledningssonen med tilførte masser."
       }
@@ -1837,6 +1947,7 @@
       "tittel": "Fjerning av overskuddsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport og utlegging av overskuddsmasser til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum (målt i skjæring) med loddrette sider. Enhet: m3"
@@ -1846,6 +1957,7 @@
       "tittel": "Kabler",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, legging/trekking og tilkobling av kabler med endehetter, kabelskritt, jordingssystem og kabeldekkbord.",
@@ -1887,12 +1999,14 @@
     "44.21": {
       "tittel": "Høyspenningskabler",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.22": {
       "tittel": "Lavspenningskabler",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, legging/trekking og tilkobling av kabler, med skjøting, merking, strekkavlastning, endehetter og kabelskritt.",
         "b": "Type kabel, så som tverrsnitt, kabelklasse (1/2/3), isolasjonstype (PVC/PEX), mv., med tilhørende prosjekterte lengder av de enkelte typer, skal være iht. hjelpeskjema i kap. D2.",
@@ -1910,6 +2024,7 @@
       "tittel": "Ekomkabler",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, legging/trekking og tilkobling av kabler, med skjøting, merking, strekkavlastning, endehetter og kabelskritt.",
         "b": "Type kabel, så som tverrsnitt, kabelklasse (1/2/3), isolasjonstype (PVC/PEX), mv., med tilhørende prosjekterte lengder av de enkelte typer, skal være iht. hjelpeskjema i kap. D2.",
@@ -1924,6 +2039,7 @@
       "tittel": "Kabeldekkbord",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av kabeldekkbord.",
         "b": "Kabeldekkbord skal være av plast, produsert og testet i henhold til NS 2971.",
@@ -1935,6 +2051,7 @@
       "tittel": "Jordingssystem",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, montering og tilkopling av jordingssystem",
         "b": "Jordingsledere skal være i Cu-materiale, flertrådet og produsert i henhold til IEC 60228. Jordingsledere med isolasjon skal være produsert i henhold til NEK EN 50525 av typen tilpasset formålet eller som angitt i den spesielle beskrivelsen.",
@@ -1951,6 +2068,7 @@
       "tittel": "Jordingsleder 25 mm2",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengde måles som prosjektert lengde. Enhet: m"
       }
@@ -1959,6 +2077,7 @@
       "tittel": "Jordingsleder 50mm2",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengde måles som prosjektert lengde. Enhet: m"
       }
@@ -1967,6 +2086,7 @@
       "tittel": "Isolert jordingsleder 25 mm2 gul/grønn",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengde måles som prosjektert lengde. Enhet: m"
       }
@@ -1975,6 +2095,7 @@
       "tittel": "Jordelektrode",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengde måles som prosjektert antall jordelektroder. Enhet stk"
       }
@@ -1983,6 +2104,7 @@
       "tittel": "Trekkerørsanlegg",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og montering av trekkerørsanlegg med trekketråd, muffer, skjøter, bend, festemateriell og kabelmarkering med lyttetråd og merking og utførelse iht. krav i vegnormal N200 Vegbygging. Rør med diameter mindre eller lik 40 mm behøver ikke utstyres med trekketråd. Fundament, sidefylling og beskyttelseslag mv. er beskrevet i prosess 44.1. For støpte rørkryss mv. se prosess 44.4.",
@@ -2012,6 +2134,7 @@
       "tittel": "Trekkerør",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av trekkerør med trekketråd, muffer, skjøter, bend og festemateriell. Rør med diameter mindre eller lik 40 mm behøver ikke utstyres med trekketråd.",
         "b": "Type rør, så som diameter og fargekode med tilhørende prosjekterte lengder av de enkelte typer, skal være iht. hjelpeskjema i kap. D2.",
@@ -2022,6 +2145,7 @@
       "tittel": "Kabelmarkering med lyttetråd",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering kabelmarkering.",
         "b": "Markeringsbånd skal være av plast, produsert og testet i henhold til NEK EN 50520.",
@@ -2033,6 +2157,7 @@
       "tittel": "Kabelkanaler, innstøpte trekkerør og trekkekummer",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og utførelse av kabelkanaler med lokk, innstøping av trekkerør og trekkekummer. Omfatter også materialer og arbeider med armert såle og prefabrikkerte elementer. For levering og montering av trekkerør se prosess 44.3.",
@@ -2056,6 +2181,7 @@
       "tittel": "Kabelkanaler, plasstøpte",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert lengde. Enhet: m"
       }
@@ -2064,6 +2190,7 @@
       "tittel": "Kabelkanaler, prefabrikkerte",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert lengde. Enhet: m"
       }
@@ -2072,6 +2199,7 @@
       "tittel": "Rørkryss, plasstøpte",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter etablering av plasstøpte rørkryss, inkl. forskaling, armering og betong. For levering og montering av trekkerør se prosess 44.3.",
         "x": "Mengden måles som prosjektert volum betong uten fratrekk for kabler og rør. Enhet: m3"
@@ -2081,6 +2209,7 @@
       "tittel": "Rørkryss, prefabrikerte",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert lengde, målt gjennomgående gjennom trekkekummene. Enhet: m"
       }
@@ -2089,6 +2218,7 @@
       "tittel": "Trekkekummer, plasstøpte",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
       }
@@ -2096,42 +2226,50 @@
     "44.46": {
       "tittel": "Trekkekummer, prefabrikkerte",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.461": {
       "tittel": "Trekkekum type TK2-900. L 1420, B 700, H 900",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.462": {
       "tittel": "Trekkekum type TK3-900. L 2100, B 700, H 900",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.463": {
       "tittel": "Trekkekum type S TK2. L 1420, B 900, H 900",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.464": {
       "tittel": "Trekkekum type S TK3. L 2100, B 900, H 900",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.465": {
       "tittel": "Trekkekum type TK1 tunnel. L 808, B 380, H 500",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.466": {
       "tittel": "Trekkekum type TK2 tunnel. L 1063, B 380, H 500",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.47": {
       "tittel": "Trekkekummer, plast/kompositt",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
       }
@@ -2139,27 +2277,32 @@
     "44.471": {
       "tittel": "Trekkekum. L 1530, B 610, H 900",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.472": {
       "tittel": "Trekkekum. L 915, B 610, H 900",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.473": {
       "tittel": "Trekkekum. L 1530, B 910, H 900",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.475": {
       "tittel": "Trekkekum Tunnel. L 505, B 340, H 445",
       "enhet": "stk",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "44.5": {
       "tittel": "Pressing av rør",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle materialer og arbeider for å etablere ferdig presset rør.",
@@ -2183,6 +2326,7 @@
       "tittel": "Rigging",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter kostnader i forbindelse med tilrigging og nedrigging av utstyr.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -2192,6 +2336,7 @@
       "tittel": "Spunt inkl. avstiving",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og arbeider med spunt.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -2201,6 +2346,7 @@
       "tittel": "Graving av groper",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, nødvendig stempling, avstivning og sikring av gropen, opplasting, transport og utlegging til mellomlager eller fyllplass. Omfatter også levering og arbeider med gjenfylling, komprimering og retablering slik at området framstår som før utgraving.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -2210,6 +2356,7 @@
       "tittel": "Fundamentering",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og arbeider i forbindelse med fundamentering.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -2219,6 +2366,7 @@
       "tittel": "Pressing/boring",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av foringsrør og arbeider i forbindelse med pressing/boring.",
         "x": "Mengden måles som prosjektert lengde. Enhet: m"
@@ -2228,6 +2376,7 @@
       "tittel": "STIKKRENNER/KULVERTER INKL. INN- OG UTLØPSKONSTRUKSJONER",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter graving, sprengning, avretting av bunn og sider, eventuell rensk, nødvendig stempling og avstiving, eventuell opplasting og transport inkludert utlegging, til mellomlager, fyllplass eller til tipplass langs traseen. Omfatter også frostsikring der dette er aktuelt, samt levering og legging av fiberduk langs grøftebunn/sider, levering, utlegging og komprimering av fundament og omfyllingsmasser, levering og legging av rør og gjenfylling og komprimering av masser over ledningssonen samt levering og utførelse av inn- og utløpskonstruksjoner. I enhetsprisene skal også nødvendig sikring av byggegropene være inkludert.",
@@ -2360,6 +2509,7 @@
       "tittel": "Graving, sprengning mm.",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter graving, sprengning, avretting av bunn og sider, eventuell rensk, nødvendig stempling og avstivning, eventuell opplasting,transport og utlegging til mellomlager eller tipp-plass, frostsikring der dette er aktuelt, levering og legging av fiberduk langs grøftebunn/sider, levering utlegging og komprimering av fundament og omfyllingsmasser og gjenfylling og komprimering av masser over ledningssonen. I enhetsprisene skal også nødvendig sikring av byggegropene være inkludert. Levering og legging av rør er beskrevet i prosess 45.2.",
@@ -2443,6 +2593,7 @@
       "tittel": "Graving",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, nødvendig stempling/avstiving, avretting av bunn og sider, opplasting, transport og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum, målt gjennomgående. Enhet: m3"
@@ -2452,6 +2603,7 @@
       "tittel": "Sprengning og oppgraving",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter sprengning, rensk etter behov, oppgraving, nødvendig stempling/avstiving, avretting av bunn og sider og utlegging til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -2461,6 +2613,7 @@
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av fiberduk mellom grøftebunn/sider og gjenfyllingsmaterialet.",
         "c": "Overlapping skal være minst 0,5 m.",
@@ -2471,6 +2624,7 @@
       "tittel": "Fundament og omfylling for rør",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av fundament og omfyllingsmasser.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -2480,6 +2634,7 @@
       "tittel": "Gjenfylling, stedlige masser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter gjenfylling og komprimering over ledningssonen. Det benyttes stedlige masser fra anlegget.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -2489,6 +2644,7 @@
       "tittel": "Frostsikring",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av materialer og arbeid med frostsikring som vist i planene.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -2498,6 +2654,7 @@
       "tittel": "Fjerning av overskuddsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport og utlegging av overskuddsmasser til mellomlager eller tipp-plass.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -2507,6 +2664,7 @@
       "tittel": "Plastring",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og utførelse av plastring ved inn og utløp. Der masser til plastring tas fra skjæring i linja eller angitt sidetak, er uttak og tilkjøring av plastringsmaterialet beskrevet i andre prosesser.",
         "c": "Krav til utførelse og kvalitet som angitt i planene.",
@@ -2517,6 +2675,7 @@
       "tittel": "Stikkrenner/kulverter, rør",
       "enhet": "m",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av rør, rørdeler og legging av rør. Alle arbeider og leveranser i forbindelse med graving, fundament, omfylling og gjenfylling er beskrevet under prosess 45.1.",
         "b": [
@@ -2553,47 +2712,56 @@
     "45.21": {
       "tittel": "Innvendig diameter 300 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.22": {
       "tittel": "Innvendig diameter 400 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.23": {
       "tittel": "Innvendig diameter 500 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.24": {
       "tittel": "Innvendig diameter 600 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.25": {
       "tittel": "Innvendig diameter 800 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.26": {
       "tittel": "Innvendig diameter 1000 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.27": {
       "tittel": "Innvendig diameter 1200 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.28": {
       "tittel": "Innvendig diameter 1400 mm",
       "enhet": "m",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "45.3": {
       "tittel": "Kulvert av spesialelement",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider for etablering av kulvert av spesialelementer.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -2603,6 +2771,7 @@
       "tittel": "Plasstøpt betongkulvert",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider for etablering av betongkulvert som vist i planene.",
@@ -2639,6 +2808,7 @@
       "tittel": "Forskaling",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter oppsetting og riving av forskaling med nødvendig avstivning, stillas, avsteng, utsparinger, avfasinger etc.",
         "b": "Som prosess 84.2 b).",
@@ -2650,6 +2820,7 @@
       "tittel": "Armering",
       "enhet": "tonn",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, kapping, bøying og montering av armering inkl. armeringsstoler, avstandsholdere etc.",
         "b": "Som prosess 84.3 b).",
@@ -2662,6 +2833,7 @@
       "tittel": "Betong",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og utstøping av betong, inkl. flikk, brettskuring og etterarbeider.",
         "b": "Det skal anvendes normalvektsbetong i henhold til prosess 84.41, 84.45 og 84.46. Forøvrig som prosess 84.4.",
@@ -2675,6 +2847,7 @@
       "tittel": "Frostsikring og fuktisolasjon",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og utførelse av frostsikring og fuktisolasjon.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -2684,6 +2857,7 @@
       "tittel": "Inn- og utløpskonstruksjoner",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og utførelse av inn- og utløpskonstruksjoner.",
         "b": "Krav til materialer som angitt i planene og den spesielle beskrivelsen.",
@@ -2695,6 +2869,7 @@
       "tittel": "KUMMER (LEVERING, MONTERING)",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og utførelse av kummer med utrustning og frostisolering som vist i planene.",
@@ -2755,6 +2930,7 @@
       "tittel": "Sandfangskummer",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": [
           "Mengden måles som prosjektert antall kummer. Enhet: stk",
@@ -2767,6 +2943,7 @@
       "tittel": "Kum",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall kummer. Enhet: stk"
       }
@@ -2775,6 +2952,7 @@
       "tittel": "Utrustning",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS."
       }
@@ -2783,6 +2961,7 @@
       "tittel": "Hjelpesluk",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall hjelpesluk. Enhet: stk"
       }
@@ -2791,6 +2970,7 @@
       "tittel": "Inspeksjonskummer",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": [
           "Mengden måles som prosjektert antall kummer. Enhet: stk",
@@ -2803,6 +2983,7 @@
       "tittel": "Kum",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall kummer. Enhet: stk"
       }
@@ -2811,6 +2992,7 @@
       "tittel": "Utrustning",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -2819,6 +3001,7 @@
       "tittel": "Spillvannskummer",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": [
           "Mengden måles som prosjektert antall kummer. Enhet: stk",
@@ -2831,6 +3014,7 @@
       "tittel": "Kum",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall kummer. Enhet: stk"
       }
@@ -2839,6 +3023,7 @@
       "tittel": "Utrustning",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS."
       }
@@ -2847,6 +3032,7 @@
       "tittel": "Vannkummer",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": [
           "Mengden måles som prosjektert antall kummer. Enhet: stk",
@@ -2859,6 +3045,7 @@
       "tittel": "Kum",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall kummer. Enhet: stk"
       }
@@ -2867,6 +3054,7 @@
       "tittel": "Utrustning",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -2875,6 +3063,7 @@
       "tittel": "Kombinerte kummer",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": [
           "Mengden måles som prosjektert antall kummer. Enhet: stk",
@@ -2887,6 +3076,7 @@
       "tittel": "Kum",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall kummer. Enhet: stk"
       }
@@ -2895,6 +3085,7 @@
       "tittel": "Utrustning",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -2903,6 +3094,7 @@
       "tittel": "Spesialkummer",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider for etablering av kum med utrustning og frostisolering som vist i planene.",
@@ -2936,6 +3128,7 @@
       "tittel": "Prefabrikert spesialkum",
       "enhet": "stk",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert antall kummer. Enhet: stk"
       }
@@ -2944,6 +3137,7 @@
       "tittel": "Plasstøpt spesialkum",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og alle arbeider for etablering av kum med utrustning og frostisolering som vist i planene.",
@@ -2976,6 +3170,7 @@
       "tittel": "Forskaling",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter oppsetting og riving av forskaling, inkl. avstivninger, ev. stillas, alle kanter, knekk, avfasinger, utsparinger etc..",
         "x": "Mengden måles som prosjektert berøringsflate mot betong, regnet fra prosjektert grave- eller sprengeprofil. Det regnes ikke fratrekk for åpninger mindre enn 0,5 m2. Der ikke annet er angitt, blir overforskaling og endesteng betalt med de samme enhetspriser som den øvrige forskalingen. Ved mindre helning enn 30 grader, betales ikke for overforskaling. Enhet: m2"
@@ -2985,6 +3180,7 @@
       "tittel": "Armering",
       "enhet": "tonn",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, kapping, bøying og montering av armering.",
         "b": "Armeringskvalitet som angitt i planene.",
@@ -2996,6 +3192,7 @@
       "tittel": "Betong",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og utstøping av betong, inkl. flikk, brettskuring, frostsikring, fuktisolasjon og etterarbeider.",
         "b": "Det skal anvendes normalvektsbetong i henhold til prosess 84.41, 84.45 og 84.46. Forøvrig som prosess 84.4 b)-e).",
@@ -3012,6 +3209,7 @@
       "tittel": "Utrustning",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og alle arbeider med utrustning og frostisolering av kum som vist i planene.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -3021,6 +3219,7 @@
       "tittel": "FORSTERKNING AV GRØFTER OG ELVE- OG BEKKEREGULERINGER",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter forsterkning av grøfter beskrevet i prosess 42 og 45, utbedring og/eller omlegging av elver og bekker utover arbeider beskrevet i prosessene 42 og 45, samt erosjonsforebyggende tiltak, terskler og sedimentasjonsbasseng.",
@@ -3090,6 +3289,7 @@
       "tittel": "Stempling og avstiving",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter stempling og avstivning av grøftevegger etter foretatt utgraving, inklusive levering av stemplings- og avstivingsmaterialer, der grøftesidene ansees tilstrekkelig stabile umiddelbart etter utgraving, men ikke under hele byggeperioden.",
@@ -3102,6 +3302,7 @@
       "tittel": "Spunting",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og ramming av spunt inkl. avstivninger/forankringer, kapping av spunten i terrenghøyde eller som angitt og opptrekking etter igjenfylling av grøften. Omfatter også tillegg i gravekostnader som følge av graving innenfor avstivet spunt.",
@@ -3120,17 +3321,20 @@
     "47.21": {
       "tittel": "Spunting tre",
       "enhet": "m2",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "47.22": {
       "tittel": "Spunting stål",
       "enhet": "m2",
-      "hovedprosess": "4"
+      "hovedprosess": "4",
+      "url": ""
     },
     "47.3": {
       "tittel": "Bunnforsterkning",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av materialer og utførelse av bunnforsterkning i grøfter etter retningslinjer og på steder som angitt, herunder f.eks. masseutskiftning.",
         "x": "Mengden måles som prosjektert areal bunnforsterkning. Enhet: m2"
@@ -3140,6 +3344,7 @@
       "tittel": "Avlastning grøftesider",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving, opplasting, transport og tipping, inkludert utlegging på angitt fyllplass / mellomlager av masser langs grøftesidene for avlastning av grøftesider. Tilbakefylling av masser er medregnet her i den utstrekning dette er angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som utført volum. Enhet: m3"
@@ -3149,6 +3354,7 @@
       "tittel": "Fangdammer og provisoriske omlegginger",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter nødvendige arbeider med provisorisk omlegging, inklusive tilbakeføring til opprinnelig løp, av bekker og elver i byggeperioden, samt eventuell fangdam. Nødvendige opplysninger for å bedømme materialer og grunnforhold skal fremgå av de geotekniske rapporter. Eventuelle restriksjoner, f.eks. med hensyn til eiendomsforhold, samt eventuelle krav til bestemt arbeidsmåte, er angitt i den spesielle beskrivelsen.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -3158,6 +3364,7 @@
       "tittel": "Opprensking/omlegging av elver og bekker",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle arbeider med opprensking av eksisterende løp og omlegging av nytt elve-/bekkeleie, inklusive gjenfylling av gammelt løp.",
@@ -3189,6 +3396,7 @@
       "tittel": "Opprensking av eksisterende løp",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving av masser i eksisterende leie i henhold til profiler og utplanering av massene langs elve-/bekkeleiet. Der prosesser skal omfatte opplasting og borttransport, eventuell utlegging i fylling, er dette angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som utført fast volum. Enhet: m3"
@@ -3198,6 +3406,7 @@
       "tittel": "Nytt elve-/bekkeløp",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter graving og sprengning av nytt elve-/bekkeleie som angitt i planene, samt plassering av grave-/sprengemassene.",
@@ -3215,6 +3424,7 @@
       "tittel": "Nytt løp i løsmasser",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter graving av jord i nytt leie, samt utplanering av massene langs det nye leie. Der prosessen skal omfatte opplasting, borttransport, utlegging og eventuell komprimering i fylling eller på fyllplass, er dette angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -3224,6 +3434,7 @@
       "tittel": "Nytt løp i berg",
       "enhet": "m3",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter sprengning, opplasting og borttransport, eventuell utlegging og komprimering i fylling, av berg fra nytt leie.",
         "x": "Mengden måles som prosjektert fast volum. Enhet: m3"
@@ -3233,6 +3444,7 @@
       "tittel": "Gjenfylling av gammelt løp",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter utlegging og komprimering av masser for gjenfylling av gammelt løp. For masser fra utenfor anlegget inngår også levering. For masser tatt fra mellomlager, inngår også opplasting og transport. Opplasting og transport fra skjæring i linjen eller angitt sidetak inngår i andre prosesser.",
         "b": "Eventuelle særlige krav til anvendte masser er angitt i den spesielle beskrivelsen.",
@@ -3244,6 +3456,7 @@
       "tittel": "Erosjonsforebyggende tiltak, terskler og rensetiltak",
       "enhet": "?",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med plastring av åpne grøfter, utløp av overvannsledninger, inn- og utløp av kulverter, etablering av terskler, plastring som erosjonsforebyggende tiltak for øvrig og ev. andre erosjonsforebyggende tiltak, samt ev. permanente sedimentasjonsbassenger, infiltrasjonsgrøfter, membran, mv. og ev. øvrige rensetiltak. Omfatter også bearbeiding av massene samt opplasting og transport fra mellomlager etter bearbeiding.",
@@ -3269,6 +3482,7 @@
       "tittel": "Steinplastring med masser fra utenfor anlegget",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med plastring av åpne grøfter, utløp av overvannsledninger, inn- og utløp av kulverter, mv. og plastring som erosjonsforebyggende tiltak for øvrig. Lagtykkelse som angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -3278,6 +3492,7 @@
       "tittel": "Steinplastring med masser fra anlegget",
       "enhet": "m2",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter plastring av åpne grøfter, utløp av overvannsledninger, inn- og utløp av kulverter, mv. og plastring som erosjonsforebyggende tiltak for øvrig. Lagtykkelse som angitt i den spesielle beskrivelsen. Omfatter også bearbeiding av massene samt opplasting og transport fra mellomlager etter bearbeiding. Uttak og transport til lager for bearbeiding av masser fra linjen, er beskrevet under hovedprosess 2 og 3.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -3287,6 +3502,7 @@
       "tittel": "Andre erosjonsforebyggende tiltak enn plastring",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med andre erosjonsforebyggende tiltak enn plastring, som angitt i den spesielle beskrivelsen.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -3296,6 +3512,7 @@
       "tittel": "Terskler",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med etablering av terskler, som angitt i den spesielle beskrivelsen.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -3305,6 +3522,7 @@
       "tittel": "Permanente sedimentasjonsbassenger, infiltrasjonsgrøfter, membran, mv.",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med etablering av permanente sedimentasjonsbassenger, infiltrasjonsgrøfter, inkl. membran, mv., som angitt i den spesielle beskrivelsen.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -3314,6 +3532,7 @@
       "tittel": "Andre permanente rensetiltak",
       "enhet": "RS",
       "hovedprosess": "4",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med etablering av andre permanente rensetiltak, som angitt i den spesielle beskrivelsen.",
         "x": "Kostnad angis som rund sum. Enhet: RS"

@@ -8,6 +8,7 @@
       "tittel": "Vegdekke",
       "enhet": "?",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer og arbeider med nylegging og vedlikehold av grusdekker.",
@@ -196,6 +197,7 @@
       "tittel": "GRUSDEKKE",
       "enhet": "RS",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer og arbeider med nylegging og vedlikehold av grusdekker.",
@@ -218,6 +220,7 @@
       "tittel": "Oppgrusing (legging av grusdekke)",
       "enhet": "m3",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, uttak, opplasting, transport, utlegging og komprimering av grusdekke.",
         "b": [
@@ -232,12 +235,14 @@
     "62": {
       "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
       "enhet": "?",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63": {
       "tittel": "RIVING, SKJÆRING, FRESING OG OPPRETTING AV FASTE DEKKER",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter arbeider og ev. materialer i forbindelse med riving, skjæring og fresing av faste dekker. Omfatter også leverings- og behandlingsgebyrer.",
@@ -276,6 +281,7 @@
       "tittel": "Riving og skjæring av faste dekker",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter riving og fjerning av faste vegdekker på områder og i tykkelser som angitt, inkludert opplasting, transport og tipping på angitt lager eller mottak. Omfatter også leverings- og behandlingsgebyrer.",
@@ -297,6 +303,7 @@
       "tittel": "Riving av faste dekker",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter riving og fjerning av faste vegdekker på områder og i tykkelser som angitt, inkludert opplasting, transport og tipping på angitt lager eller mottak. Omfatter også leverings- og behandlingsgebyrer.",
@@ -310,22 +317,26 @@
     "63.111": {
       "tittel": "Riving av asfaltdekke",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.112": {
       "tittel": "Riving av betongdekke",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.113": {
       "tittel": "Riving av steindekke",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.12": {
       "tittel": "Skjæring av faste dekker",
       "enhet": "m",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter skjæring av faste dekker. Omfatter også leverings- og behandlingsgebyrer.",
         "c": "Skjæring skal utføres med sag i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen.",
@@ -335,17 +346,20 @@
     "63.121": {
       "tittel": "Skjæring av asfaltdekke",
       "enhet": "m",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.122": {
       "tittel": "Skjæring av betongdekke",
       "enhet": "m",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.2": {
       "tittel": "Fresing av faste dekker",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter fresing av faste dekker, inkludert eventuell oppvarming av dekket. Omfatter også fjerning til angitt lager eller mottak og rengjøring av frest overflate. Omfatter også leverings- og behandlingsgebyrer.",
         "c": [
@@ -358,17 +372,20 @@
     "63.21": {
       "tittel": "Fresing av asfaltdekke",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.22": {
       "tittel": "Fresing av betongdekke",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.3": {
       "tittel": "Oppretting av asfaltdekker",
       "enhet": "tonn",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av masse som angitt. Prosjektert areal og gjennomsnittlig forbruk i kg/m2 skal være som angitt i den spesielle beskrivelsen. Klebing er medtatt i prosess 65.4.",
         "b": [
@@ -387,27 +404,32 @@
     "63.31": {
       "tittel": "Oppretting med asfaltgrusbetong (Agb)",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.32": {
       "tittel": "Oppretting med asfaltbetong (Ab)",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.33": {
       "tittel": "Oppretting med mykasfalt (Ma)",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "63.34": {
       "tittel": "Oppretting med asfaltert grus (Ag)",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64": {
       "tittel": "OVERFLATEBEHANDLING",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og utførelse av overflatebehandling. Entreprenøren bestemmer påført mengde av bindemiddel og steinmaterialer. Omfatter også rengjøring av overflaten før legging og alle nødvendige etterarbeider som feiing, etterstrøing, ettervalsing, mv.",
@@ -427,6 +449,7 @@
       "tittel": "Overflatebehandling av faste dekker",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Gjelder overflatebehandling på underlag av varm- eller kaldblandede typer asfaltdekke, Ag bærelag, eksisterende overflatebehandling, betong, mv."
       }
@@ -434,22 +457,26 @@
     "64.11": {
       "tittel": "Enkel overflatebehandling med pukk (Eo)",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64.12": {
       "tittel": "Dobbel overflatebehandling med pukk (Do)",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64.13": {
       "tittel": "Avstrøing",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64.2": {
       "tittel": "Overflatebehandling som selvstendig dekke",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Gjelder overflatebehandling på underlag av ubundet materiale som grus og pukk, på penetrert pukk samt på bærelag stabilisert med sement, skumbitumen eller bitumenemulsjon."
       }
@@ -457,32 +484,38 @@
     "64.21": {
       "tittel": "Enkel overflatebehandling med grus (Eog)",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64.22": {
       "tittel": "Dobbel overflatebehandling med grus (Dog)",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64.23": {
       "tittel": "Enkel overflatebehandling med pukk (Eo)",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64.24": {
       "tittel": "Dobbel overflatebehandling med pukk (Do)",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "64.25": {
       "tittel": "Avstrøing",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65": {
       "tittel": "ASFALTDEKKER",
       "enhet": "?",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter rengjøring av underliggende overflate etter behov, klebing før asfaltering, levering, utlegging og komprimering av asfaltdekke i angitt tykkelse, inkl. ev. armering.",
@@ -565,6 +598,7 @@
       "tittel": "Asfaltdekker bindlag",
       "enhet": "?",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Klebing er oppgjort etter prosess 65.4. Asfaltering kan ha oppgjør etter prosess 65.11 eller 65.12, ikke etter begge prosesser for samme arbeid. Byggherren bestemmer før legging hvilke arbeider som skal ha oppgjør etter hhv. areal eller tonn.",
         "x": [
@@ -577,6 +611,7 @@
       "tittel": "Asfaltdekker bindlag oppgjort i areal",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert areal av bindlag i tykkelse som angitt, målt midt i laget med skråning 1:1. Enhet: m2"
       }
@@ -584,27 +619,32 @@
     "65.111": {
       "tittel": "Bindlag av asfaltgrusbetong (Agb) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.112": {
       "tittel": "Bindlag av asfaltbetong (Ab) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.113": {
       "tittel": "Bindlag av mykasfalt (Ma) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.117": {
       "tittel": "Bindlag av øvrige massetyper i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.12": {
       "tittel": "Asfaltdekker bindlag oppgjort i tonn",
       "enhet": "tonn",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført anbrakt masse. Enhet: tonn"
       }
@@ -612,27 +652,32 @@
     "65.121": {
       "tittel": "Bindlag av asfaltgrusbetong (Agb) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.122": {
       "tittel": "Bindlag av asfaltbetong (Ab) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.123": {
       "tittel": "Bindlag av mykasfalt (Ma) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.127": {
       "tittel": "Bindlag av øvrige massetyper i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.2": {
       "tittel": "Asfaltdekker slitelag",
       "enhet": "?",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Klebing er oppgjort etter prosess 65.4. Asfaltering kan ha oppgjør etter prosess 65.21 eller 65.22, ikke etter begge prosesser for samme arbeid. Byggherren bestemmer før legging hvilke arbeider som skal ha oppgjør etter hhv. areal eller tonn.",
         "x": [
@@ -645,6 +690,7 @@
       "tittel": "Asfaltdekker slitelag oppgjort i areal",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert areal av slitelag i tykkelse som angitt, målt midt i laget med skråning 1:1. Enhet: m2"
       }
@@ -652,37 +698,44 @@
     "65.211": {
       "tittel": "Slitelag av asfaltgrusbetong (Agb) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.212": {
       "tittel": "Slitelag av asfaltbetong (Ab) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.213": {
       "tittel": "Slitelag av mykasfalt (Ma) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.214": {
       "tittel": "Slitelag av skjelettasfalt (Ska) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.215": {
       "tittel": "Slitelag av støpeasfalt (Sta) i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.217": {
       "tittel": "Slitelag av øvrige massetyper i areal",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.22": {
       "tittel": "Asfaltdekker slitelag oppgjort i tonn",
       "enhet": "tonn",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført anbrakt masse. Enhet: tonn"
       }
@@ -690,37 +743,44 @@
     "65.221": {
       "tittel": "Slitelag av asfaltgrusbetong (Agb) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.222": {
       "tittel": "Slitelag av asfaltbetong (Ab) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.223": {
       "tittel": "Slitelag av mykasfalt (Ma) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.224": {
       "tittel": "Slitelag av skjelettasfalt (Ska) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.225": {
       "tittel": "Slitelag av støpeasfalt (Sta) i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.227": {
       "tittel": "Slitelag av øvrige massetyper i tonn",
       "enhet": "tonn",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "65.3": {
       "tittel": "Armering av asfaltdekker",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med armering av asfaltdekker Materialer og arbeider til ekstra klebing på utlagt armering, utover det som er oppgjort etter prosess 65.4, skal være inkludert i enhetsprisen. Ekstra arbeider for avstrøing med asfalt på utlagt armering skal være inkludert i enhetsprisen. Medgått asfalt til avstrøingen måles under aktuell prosess for asfaltmasse.",
         "b": "Armeringstype og krav til materialer er angitt i den spesielle beskrivelsen.",
@@ -732,6 +792,7 @@
       "tittel": "Klebing av asfaltdekker",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og påføring av klebemiddel før legging av asfalt.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -741,6 +802,7 @@
       "tittel": "BETONGDEKKER OG DEKKER AV BELEGNINGS-STEIN OG HELLER",
       "enhet": "?",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, utlegging, avretting og etterbehandling av betongdekke i angitt tykkelse, med armering og glidesjikt som beskrevet i planene, ekskl. fugearbeid.",
@@ -793,6 +855,7 @@
       "tittel": "Betongdekker",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging, avretting og etterbehandling av betongdekke i angitt tykkelse, med armering og glidesjikt som beskrevet i planene, ekskl. fugearbeid.",
         "b": "Til betongdekker skal det benyttes frostbestandig betong med trykkfasthet og etter miljø- og kontrollklasse som angitt i den spesielle beskrivelsen. Det skal ved forhåndsprøving påvises at den foreskrevne trykkfasthet oppnås med tilstrekkelig margin for spredning i trykkfastheten. Det skal utføres prøvestøp med det valgte utstyr for å kunne påvise akseptabelt resultat med den valgte utstyrs- / materialkombinasjon. Steininnholdet i betongen skal være så høyt som utleggerutstyret tillater mht. komprimering og avretting. Andelen av tilslagskorn mindre enn 4 mm skal ikke overstige 42 %.",
@@ -812,17 +875,20 @@
     "66.11": {
       "tittel": "Uarmerte betongdekker",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "66.12": {
       "tittel": "Armerte betongdekker",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "66.2": {
       "tittel": "Fugearbeider",
       "enhet": "m",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med fuger i betongdekke.",
@@ -857,6 +923,7 @@
       "tittel": "Langsgående vinkelendringsfuger",
       "enhet": "m",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med langsgående fuger inklusive forankringsjern og eventuelle dybler, ferdig forseglet i henhold til planene.",
         "x": "Mengden måles som prosjektert lengde fuge. Enhet: m"
@@ -866,6 +933,7 @@
       "tittel": "Tversgående ekspansjonsfuger",
       "enhet": "m",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med tversgående ekspansjonsfuger, inklusive foreskrevne dybler.",
         "x": "Mengden måles som prosjektert lengde fuge. Enhet: m"
@@ -875,6 +943,7 @@
       "tittel": "Tversgående kontraksjonsfuger",
       "enhet": "m",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med tversgående fuger som kontraksjonsfuger, inklusive foreskrevne dybler.",
         "x": "Mengden måles som prosjektert lengde fuge. Enhet: m"
@@ -884,6 +953,7 @@
       "tittel": "Tversgående vinkelendringsfuger",
       "enhet": "m",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med tversgående vinkelendringsfuger inklusive foreskreven ekstra armering.",
         "x": "Mengden måles som prosjektert lengde fuge. Enhet: m"
@@ -893,6 +963,7 @@
       "tittel": "Valsebetong",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med legging av valsebetong i tykkelse som angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -902,6 +973,7 @@
       "tittel": "Vegdekker av belegningsstein, gatestein og heller",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med legging av belegningsstein, gatestein, heller og plater av naturstein, inkl. forarbeider, settelag og etterarbeider som fuging, ettervibrering, mv..",
         "b": "Materialer skal være som angitt i vegnormal N200 Vegbygging, kap. 4.12. Type belegning, type settelag og type fuger skal være som angitt i. den spesielle beskrivelsen.",
@@ -915,27 +987,32 @@
     "66.41": {
       "tittel": "Belegningsstein av betong",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "66.42": {
       "tittel": "Heller av betong",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "66.43": {
       "tittel": "Gatestein",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "66.44": {
       "tittel": "Plater av naturstein",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67": {
       "tittel": "BELEGNINGER UTENFOR KJØREBANEN",
       "enhet": "?",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med legging av betong, belegningsstein, gatestein, heller og plater av naturstein utenfor kjørebanen, som belegning på skuldre og fortau/gangbane, trafikkøy, mv.. Omfatter også oppfylling og øvrige forarbeider samt etterarbeider. Omfatter også ledelinjer i gategrunn, varmekabelanlegg, etc.",
@@ -978,6 +1055,7 @@
       "tittel": "Belegning på skuldre",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med belegninger på skuldre i tykkelse som angitt. Skulder i tunnel er medtatt i prosess 67.3.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -986,22 +1064,26 @@
     "67.11": {
       "tittel": "Belegning av grus eller steinmaterialer på skuldre",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.12": {
       "tittel": "Belegning av asfalt på skuldre",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.13": {
       "tittel": "Belegning av knust asfalt Ak på skuldre",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.2": {
       "tittel": "Belegning på opphøyde arealer",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med belegninger på fortau, gangbaner og trafikk-øyer inkl. sentraløy i rundkjøring, i tykkelse som angitt. Skulder i tunnel er medtatt i prosess 67.3.",
@@ -1028,6 +1110,7 @@
       "tittel": "Asfaltdekke på fortau/gangbane/trafikkøy",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med asfaltdekke på fortau, gangbaner og trafikkøyer i tykkelse som angitt.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -1037,6 +1120,7 @@
       "tittel": "Steindekker på fortau/gangbane/trafikkøy",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med legging av belegningsstein, gatestein, heller og plater av naturstein, inkl. forarbeider, settelag, og etterarbeider som fuging, ettervibrering mv.",
         "b": "Type belegning, type settelag og type fuger skal være som angitt i. den spesielle beskrivelsen. Materialer skal være som angitt i vegnormal N200 Vegbygging, kap. 4.12.",
@@ -1047,27 +1131,32 @@
     "67.221": {
       "tittel": "Belegningsstein av betong",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.222": {
       "tittel": "Heller av betong",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.223": {
       "tittel": "Gatestein",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.224": {
       "tittel": "Plater av naturstein",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.23": {
       "tittel": "Betongdekke på fortau/gangbane/trafikkøya",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med betongdekke på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring i tykkelse som angitt.",
         "b": "Betong skal være normalvektsbetong i henhold prosess 84.41, 84.45 og 84.46. For øvrig som prosess 84.4 b)-e).",
@@ -1078,6 +1167,7 @@
       "tittel": "Oppfyllingsmasser på trafikkøy",
       "enhet": "m3",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med oppfyllingsmasser på trafikkøyer inkl. sentraløy i rundkjøring.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -1087,6 +1177,7 @@
       "tittel": "Skulder i tunnel",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med skulder i tunnel.",
         "b": [
@@ -1100,17 +1191,20 @@
     "67.31": {
       "tittel": "Betong på skulder i tunnel",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.32": {
       "tittel": "Asfalt på skulder i tunnel",
       "enhet": "m2",
-      "hovedprosess": "6"
+      "hovedprosess": "6",
+      "url": ""
     },
     "67.4": {
       "tittel": "Varmekabelanlegg",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med varmekabler i fortau, gangbaner, trapper og gangfelt, tilknytning til strømnettet, etc.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -1120,6 +1214,7 @@
       "tittel": "Ledelinjer i gategrunn",
       "enhet": "m2",
       "hovedprosess": "6",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med ledelinjer i gategrunn for å etablere standardiserte følbare overflater på gangareal, inkl. merkostnader ved tilpasninger til tilstøtende overflater/belegg.",
         "x": "Mengden måles som prosjektert areal ledelinje. Enhet: m2"

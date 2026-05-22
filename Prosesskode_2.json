@@ -8,6 +8,7 @@
       "tittel": "Sprengning og masseflytting",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter etablering av permanente tiltak for sikring av eksisterende vegetasjon som angitt i den spesielle beskrivelsen. Sikring mot skade fra anleggsdriften er beskrevet under prosess 12.5.",
@@ -480,6 +481,7 @@
       "tittel": "VEGETASJON, MATJORD, BERGRENSK",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter etablering av permanente tiltak for sikring av eksisterende vegetasjon som angitt i den spesielle beskrivelsen. Sikring mot skade fra anleggsdriften er beskrevet under prosess 12.5.",
@@ -558,6 +560,7 @@
       "tittel": "Permanent sikring av eksisterende vegetasjon",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter etablering av permanente tiltak for sikring av eksisterende vegetasjon som angitt i den spesielle beskrivelsen. Sikring mot skade fra anleggsdriften er beskrevet under prosess 12.5.",
         "x": "Kostnad angis som rund sum. Enhet: RS"
@@ -567,6 +570,7 @@
       "tittel": "Vegetasjonsrydding",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle arbeider med vegetasjonsrydding, så som felling av trær til tømmer eller ved, framkjøring til tilgjengelig sted og lagring som angitt i den spesielle beskrivelsen. Omfatter også rydding og fjerning av buskas og hogstavfall samt riving og fjerning av stubber og røtter. Omfatter også ev. behandling av buskas og hogstavfall. Fjerning av vegetasjonsdekke og matjord inngår i prosess 21.3.",
@@ -599,6 +603,7 @@
       "tittel": "Felling av trær til tømmer",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter felling, kvisting, sortering og kapping av trær til tømmerstokker for levering til videre produksjon. Omfatter kun stokker på over 25 liter og med en toppdiameter på over 50 mm, og inkluderer framkjøring med skogsmaskin til tilgjengelig sted for senere avhenting.",
         "x": "Mengden måles som utført volum trevirke. Enhet: m3"
@@ -608,6 +613,7 @@
       "tittel": "Felling av trær til ved",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter felling, kvisting, kapping samt behandling av større og mindre trær til ved, frem-kjøring til tilgjengelig sted, kapping i 0,6 m lengde og lagring. I den spesielle beskrivelsen er angitt om veden skal kløyves, kappes i andre lengder, krav til stabling eller pakking, videre transport.",
         "x": "Mengden måles som utført volum trevirke. Enhet: m3"
@@ -617,6 +623,7 @@
       "tittel": "Felling og fjerning av enkelt-trær",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter felling og fjerning av enkelt-trær. I den spesielle beskrivelsen er angitt hvilke trær, adkomst, videre håndtering, transport, opplysninger om hindringer osv.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -626,6 +633,7 @@
       "tittel": "Oppgraving og midlertidig lagring av trær og busker på rot",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter oppgraving og flytting av trær og busker som skal bevares for senere planting. Mellomlagring og planting av oppbevarte trær og busker, se prosess 74.66.",
         "x": "Mengden måles som prosjektert antall. Enhet: stk"
@@ -634,17 +642,20 @@
     "21.241": {
       "tittel": "Oppgraving og midlertidig lagring av trær på rot",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "21.242": {
       "tittel": "Oppgraving og midlertidig lagring av busker på rot",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "21.25": {
       "tittel": "Rydding og fjerning av buskas og hogstavfall",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter rydding og fjerning av buskas samt hogstavfall fra felling og kapping av trær; også hogstavfall fra tidligere hogst.",
         "x": "Mengde måles som prosjektert areal. Enhet: m2"
@@ -654,6 +665,7 @@
       "tittel": "Riving og fjerning av stubber og røtter",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter riving, sortering og fjerning av stubber og røtter. Stubber og røtter skal skilles fra resten av vegetasjonsdekket og transporteres til anvist sted eller godkjent mottak.",
         "x": "Mengde måles som prosjektert areal. Enhet: m2"
@@ -663,6 +675,7 @@
       "tittel": "Behandling av buskas, hogstavfall, stubber og røtter",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter fliskutting/fresing av buskas, hogstavfall, stubber og røtter.",
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
@@ -672,6 +685,7 @@
       "tittel": "Avtaking av vegetasjonsdekke og matjord",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport og tipparbeid av vegetasjonsdekke og matjord. Landbruksfaglig definisjon av A-sjikt og B-sjikt i omtale av matjord regnes begge som matjord. Omfatter også mellomlagring eller sideforflytning i ranke. Omfatter også ev. ugressbekjempelse av matjord.",
@@ -717,6 +731,7 @@
       "tittel": "Avtaking av vegetasjonsdekke",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipparbeid, mellomlagring eller sideforflytning i ranke av vegetasjonsdekke.",
@@ -734,6 +749,7 @@
       "tittel": "Sideflytning av vegetasjonsdekke",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving med sideflytning av vegetasjonsdekke og lagring i ranke.",
         "x": "Mengden måles som prosjektert fast volum. Tykkelser mindre enn 0,2 m regnes som 0,2 m. Enhet: m3"
@@ -743,6 +759,7 @@
       "tittel": "Opplasting og transport av vegetasjonsdekke til mellomlager",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving, opplasting, transport til mellomlager og tipparbeid. Gjelder alt vegetasjonsdekke som ikke kan eller skal lagres i ranke etter prosess 21.311.",
         "x": "Mengden måles som prosjektert fast volum. Tykkelser mindre enn 0,2 m regnes som 0,2 m. Enhet: m3"
@@ -752,6 +769,7 @@
       "tittel": "Avtaking av matjord",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipparbeid, mellomlagring eller sideforflytning i ranke av matjord.",
@@ -769,6 +787,7 @@
       "tittel": "Sideflytning av matjord og lagring i ranke",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving med sideflytning av matjord og lagring i ranke.",
         "x": "Mengden måles som prosjektert fast volum. Tykkelser mindre enn 0,2 m regnes som 0,2 m, regnet hver for seg for hhv. A-sjikt og B-sjikt der dette er definert. Enhet: m3"
@@ -778,6 +797,7 @@
       "tittel": "Opplasting og transport av matjord til mellomlager",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving, opplasting, transport til angitt mellomlager og arbeid på tipp for matjord som ikke kan eller skal lagres i ranke etter prosess 21.321.",
         "x": "Mengden måles som prosjektert fast volum. Tykkelser mindre enn 0,2 m regnes som 0,2 m, regnet hver for seg for hhv. A-sjikt og B-sjikt der dette er definert. Enhet: m3"
@@ -787,6 +807,7 @@
       "tittel": "Ugressbekjempelse av matjord",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeid i forbindelse med ugressbekjempelse av matjord lagt i ranke eller mellomlager.",
         "x": "Mengden måles som grunnareal av ranke og mellomlager i horisontalprojeksjon. Enhet: m2"
@@ -796,6 +817,7 @@
       "tittel": "Rensk av bergoverflate",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter rensk og rengjøring av bergoverflaten etter at berget er avdekket. Opplasting og transport av renskede masser inkluderes i prosess 25.",
         "c": [
@@ -812,27 +834,32 @@
     "21.41": {
       "tittel": "Rensk, nøyaktighetsklasse 1",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "21.42": {
       "tittel": "Rensk, nøyaktighetsklasse 2",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "21.43": {
       "tittel": "Rensk, nøyaktighetsklasse 3",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "21.44": {
       "tittel": "Rensk, nøyaktighetsklasse 4",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "21.5": {
       "tittel": "Rensk ved mulig forsager fra bergsprengningsarbeid i tidligere entreprise",
       "enhet": "time",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter spesielle tiltak utover det som framgår under prosess 21.4 for å ivareta sikkerhet ved rensk i områder der det er en mulighet for å påtreffe sprengstoff med eller uten tennere fra bergsprengningsarbeider utført i tidligere entreprise på stedet.",
         "c": [
@@ -846,6 +873,7 @@
       "tittel": "SPRENGNING I DAGEN",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter alle arbeider med sprengning i linjen og i sidetak uten og med spesielle restriksjoner, inkludert utvidelse av profilet. Omfatter også etablering av endelig bergoverflate (kontur). Omfatter også forsvarlig driftsrensk nødvendig for å gjennomføre arbeidene på en sikker måte, og rydding av utfall etter sprengning. Omfatter også forsvarlig dekning, varsling og andre tiltak som er nødvendige for å unngå skader. Omfatter også vannlensing og vannulemper der dette er aktuelt.",
@@ -912,6 +940,7 @@
       "tittel": "Sprengning i linjen",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle arbeider med sprengning i linjen inklusiv boring, lading, sprengning, nødvendig underboring og utvidelse av profilet. Omfatter også forsvarlig dekning, varsling og andre tiltak som er nødvendige for å unngå skader. Omfatter også forsvarlig driftsrensk nødvendig for å gjennomføre arbeidene på en sikker måte og rydding av utfall etter sprengning. Omfatter også vannlensing og vannulemper der dette er aktuelt.",
         "x": "Mengden måles som prosjektert fast volum og det gis ikke tillegg for overberg, masser fra driftsrensk eller ettersprengning. Berghøyder under 1,0 m regnes som 1,0 m. Enhet: m3"
@@ -921,6 +950,7 @@
       "tittel": "Etablering av endelig bergoverflate (kontur)",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter arbeider med etablering av en jevn endelig bergoverflate (kontur).",
@@ -969,6 +999,7 @@
       "tittel": "Kontursprengning",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring inkl. nødvendig underboring, lading og sprengning av hull i ytterste hullrad (konturen) og nest ytterste hullrad (hjelperast). Omfatter også tiltak for skånsom sprengning av kontur, samt for å ivareta ev. grenser for vibrasjoner eller andre hensyn. Omfatter også separat dekning ved bruk av presplitt. All øvrig dekning er beskrevet under prosess 22.1.",
         "c": [
@@ -1003,6 +1034,7 @@
       "tittel": "Sømboring",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring og nødvendig underboring av hull i konturen som ikke lades.",
         "d": "Tillatt retningsavvik ved ansett er 2 % i forhold til prosjektert kontur målt vinkelrett på skjæringsplanet og i skjæringsplanet.",
@@ -1012,27 +1044,32 @@
     "22.221": {
       "tittel": "Hulldiameter 51 mm",
       "enhet": "m",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "22.222": {
       "tittel": "Hulldiameter 64 mm",
       "enhet": "m",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "22.223": {
       "tittel": "Hulldiameter 70 mm",
       "enhet": "m",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "22.224": {
       "tittel": "Hulldiameter 76 mm",
       "enhet": "m",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "22.23": {
       "tittel": "Vaiersaging",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring av styrehull, avviksmåling av styrehull, gjenstøping eller injeksjon av hull som ikke tilfredsstiller krav til nøyaktighet og saging av sub-vertikale flater med diamantvaiersag. Omfatter også ifylling av finsand i saget sliss for beskyttelse av sub-vertikalt sagsnitt.",
         "c": "Entreprenør skal velge det mest hensiktsmessige borutstyr og bordiameter for å kunne tilfredsstille kravene til sagenøyaktighet. Det skal unngås uønsket krumning i enten konveks eller konkav form.",
@@ -1043,6 +1080,7 @@
       "tittel": "Sprengning i sidetak",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter alle arbeider med sprengning i sidetak inklusiv boring, lading, sprengning og nødvendig underboring. Omfatter også forsvarlig dekning, varsling og andre tiltak som er nødvendige for å unngå skader. Omfatter også forsvarlig driftsrensk nødvendig for å gjennomføre arbeidene på en sikker måte og rydding av utfall etter sprengning. Omfatter også vannlensing og vannulemper der dette er aktuelt.",
         "x": "Mengden måles som prosjektert fast volum og det gis ikke tillegg for overberg, masser fra driftsrensk eller ettersprengning. Berghøyde under 1,0 m regnes som 1,0 m. Enhet: m3"
@@ -1052,6 +1090,7 @@
       "tittel": "Uskadeliggjøring av forsager fra bergsprengningsarbeid i tidligere entreprise",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter uskadeliggjøring av gjenstående sprengstoff med eller uten tennere fra bergsprengningsarbeider utført i tidligere entreprise på stedet.",
         "c": [
@@ -1065,6 +1104,7 @@
       "tittel": "RENSK OG SIKRING I DAGEN",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter rensk av skjæringer i berg, inklusiv sluttrensk, utover forsvarlig driftsrensk som er beskrevet i prosess 22. Omfatter også fjerning av nedrenskede masser der dette ikke er beskrevet i andre prosesser. Byggherren fastsetter omfang av rensk og sikring utover driftsrensk nødvendig for å gjennomføre arbeidene på en sikker måte.",
@@ -1150,6 +1190,7 @@
       "tittel": "Rensk av skjæringer i berg, fjerning av renskemasse",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter rensk av skjæringer i berg, inklusiv sluttrensk, utover forsvarlig driftsrensk som er beskrevet i prosess 22. Omfatter også fjerning av nedrenskede masser der dette ikke er beskrevet i andre prosesser. Byggherren fastsetter omfang av rensk og sikring utover driftsrensk nødvendig for å gjennomføre arbeidene på en sikker måte.",
@@ -1173,6 +1214,7 @@
       "tittel": "Spylerensk",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert areal. Enhet: m2"
       }
@@ -1181,6 +1223,7 @@
       "tittel": "Maskinrensk",
       "enhet": "time",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Avregnes etter medgått tid per enhet, avrundet til nærmeste 1/4 time. En enhet består av alt mannskap og deres utstyr. Enhet: time"
       }
@@ -1189,6 +1232,7 @@
       "tittel": "Spettrensk",
       "enhet": "time",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Avregnes etter medgått tid for renskelaget regnet som en samlet enhet inklusiv utstyr, avrundet til nærmeste 1/4 time. Enhet: time"
       }
@@ -1196,17 +1240,20 @@
     "23.131": {
       "tittel": "Spettrensk fra krog/lift",
       "enhet": "time",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.132": {
       "tittel": "Spettrensk fra tau",
       "enhet": "time",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.14": {
       "tittel": "Fjerning av nedrenskede masser",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter fjerning av nedrenskede masser under prosess 23.11, 23.12 og 23.13, som ikke er beskrevet i andre prosesser.",
         "x": "Mengden måles som utført løst volum. Enhet: m3"
@@ -1216,6 +1263,7 @@
       "tittel": "Bolter og stag",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med sikringsbolter, forbolter og stag i dagen, inkludert boring av hull, underlagsplate, halvkule, mutter, forankring eller innstøping av bolter og eventuell etterstramming, samt prøving og rapportering.",
@@ -1269,102 +1317,122 @@
     "23.21": {
       "tittel": "Fullt innstøpte bolter",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.211": {
       "tittel": "Bolter, fullt innstøpt, lengde 1,50 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.212": {
       "tittel": "Bolter, fullt innstøpt, lengde 2,40 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.213": {
       "tittel": "Bolter, fullt innstøpt, lengde 3,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.214": {
       "tittel": "Bolter, fullt innstøpt, lengde 4,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.215": {
       "tittel": "Bolter, fullt innstøpt, lengde 5,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.216": {
       "tittel": "Bolter, fullt innstøpt, lengde 6,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.22": {
       "tittel": "Kombinasjonsbolter",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.221": {
       "tittel": "Kombinasjonsbolter, lengde 1,50 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.222": {
       "tittel": "Kombinasjonsbolter, lengde 2,40 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.223": {
       "tittel": "Kombinasjonsbolter, lengde 3,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.224": {
       "tittel": "Kombinasjonsbolter, lengde 4,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.225": {
       "tittel": "Kombinasjonsbolter, lengde 5,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.23": {
       "tittel": "Endeforankrede bolter",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.231": {
       "tittel": "Bolter, endeforankrede, lengde 1,50 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.232": {
       "tittel": "Bolter, endeforankrede, lengde 2,40 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.233": {
       "tittel": "Bolter, endeforankrede, lengde 3,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.234": {
       "tittel": "Bolter, endeforankrede, lengde 4,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.235": {
       "tittel": "Bolter, endeforankrede, lengde 5,00 m, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.24": {
       "tittel": "Forbolter til topp skjæring",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "b": "Boltene skal ikke ha gjenger, underlagsplater, halvkuler og muttere."
       }
@@ -1372,42 +1440,50 @@
     "23.241": {
       "tittel": "Forbolter, lengde 3,00 m, diameter 25 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.242": {
       "tittel": "Forbolter, lengde 4,00 m, diameter 25 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.243": {
       "tittel": "Forbolter, lengde 5,00 m, diameter 32 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.244": {
       "tittel": "Forbolter, lengde 6,00 m, diameter 32 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.245": {
       "tittel": "Forbolter, lengde 8,00 m, diameter 32 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.246": {
       "tittel": "Forbolter, lengde 10,00 m, diameter 32 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.247": {
       "tittel": "Forbolter, lengde 12,00 m, diameter 32 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.25": {
       "tittel": "Stag",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "b": "Lengde, diameter og materialer som angitt i den spesielle beskrivelsen.",
         "c": "Utførelse som angitt i den spesielle beskrivelsen."
@@ -1417,6 +1493,7 @@
       "tittel": "Sikring med bånd og nett",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og montering av bånd og nett med alt nødvendig utstyr og tilbehør som plater, muttere, vaier, etc., i på forhånd innsatte bolter beskrevet under prosess 23.2 eller i kortere festebolter beskrevet under prosess 23.33.",
@@ -1445,6 +1522,7 @@
       "tittel": "Bånd",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av bånd med alt nødvendig utstyr og tilbehør.",
         "x": "Mengden måles som utført lengde bånd. Enhet: m"
@@ -1454,6 +1532,7 @@
       "tittel": "Nett",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og montering av nett med alt nødvendig utstyr og tilbehør. Omfatter også levering og montering av vaier for festing av nett oppe og nede, og ekstra materialer og arbeid som følge av montering i en gitt avstand fra bergoverflaten.",
         "x": "Mengden måles som utført areal belagt med nett. Enhet: m2"
@@ -1463,6 +1542,7 @@
       "tittel": "Festebolter for bånd og nett",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med montering av festebolter. Type, mønster og lengde/innfestingslengde anvises av byggherren.",
         "x": "Mengden måles som utført antall festebolter. Enhet: stk"
@@ -1471,22 +1551,26 @@
     "23.331": {
       "tittel": "Festebolter, lengde 0,6 - 0,8 meter, diameter 16 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.332": {
       "tittel": "Festebolter, lengde 0,8 - 1,0 meter, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.333": {
       "tittel": "Festebolter, lengde 1,5 meter, diameter 20 mm",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.4": {
       "tittel": "Sikring med sprøytebetong",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og arbeider med utsprøytet betong på berg inkludert:",
         "b": "Som for prosess 33.4 b)",
@@ -1499,17 +1583,20 @@
     "23.41": {
       "tittel": "Sprøytebetong B35 M45 uten tilsetting av fiber",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "23.42": {
       "tittel": "Sprøytebetong B35 M45 med tilsetting av fiber",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "24": {
       "tittel": "GRUNNFORSTERKNING",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter komprimering av grunnen under fylling på steder som angitt i den spesielle beskrivelsen. Komprimering av planum (traubunn) inngår i prosess 51.",
@@ -1662,6 +1749,7 @@
       "tittel": "Spesiell komprimering under fylling",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter komprimering av grunnen under fylling på steder som angitt i den spesielle beskrivelsen. Komprimering av planum (traubunn) inngår i prosess 51.",
         "c": "Krav til komprimering som angitt i den spesielle beskrivelsen.",
@@ -1673,6 +1761,7 @@
       "tittel": "Dynamisk dypkomprimering",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter dynamisk dypkomprimering av grunnen eller av utlagt fylling med fall-lodd.",
         "c": "Krav til komprimering som angitt i den spesielle beskrivelsen. Rutemønster og antall dropp pr. punkt skal være som angitt i den spesielle beskrivelsen. Rutemønsteret for droppunkter for hver overfart skal forskyves i forhold til foregående overfart som angitt i den spesielle beskrivelsen.",
@@ -1684,6 +1773,7 @@
       "tittel": "Fortrengning av bløte masser",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter fortrengning, nedsprengning / ettersprengning, inklusiv eventuell ventetid før tipp kan benyttes etter sprenging på grunn av fare for forsinket brudd. Fjerning av eventuell overhøyde etter sprengning er beskrevet i prosess 24.4.",
@@ -1707,6 +1797,7 @@
       "tittel": "Fortrengning av masser under fyllingsarbeidet",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter fortrengning av bløte masser med de endelige masser, inklusiv eventuell ventetid før tipp kan benyttes etter sprengning på grunn av fare for forsinket brudd.",
         "x": "Mengden måles som prosjektert anbrakt volum etter profil med sideskråning 1:1 under terreng. Enhet: m3"
@@ -1716,6 +1807,7 @@
       "tittel": "Nedsprengning av utlagt fylling",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer og arbeider med nedsprengning av fylling som er lagt ut flytende oppå bløte masser. Utlegging av jord- eller steinfylling medtas i prosess 25, henholdsvis 26. Fjerning av gjenværende overhøyde etter sprengningen medtas i prosess 24.4.",
@@ -1733,6 +1825,7 @@
       "tittel": "Rør for nedsprengning",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og nedsetting av rør for nedsprengning av fylling, inklusiv fjerning av uønskede rørdeler som måtte bli igjen etter sprengningen.",
         "x": "Mengden måles som antall rør. Enhet: stk"
@@ -1742,6 +1835,7 @@
       "tittel": "Sprengstoff og nedsprengning",
       "enhet": "kg",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter ladning av rør med sprengstoff og nedsprengning av fylling.",
         "x": "Mengden måles som forbrukt sprengstoff. Enhet: kg"
@@ -1751,6 +1845,7 @@
       "tittel": "Jordnagling, grunnfrysing, jetinjisering og andre metoder",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer og arbeider med jordnagling iht. planene.",
@@ -1787,6 +1882,7 @@
       "tittel": "Jordnagling",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og arbeider med jordnagling iht. planene.",
         "b": "Materialer skal være i tråd med NS-EN 14490:2010 og for øvrig som angitt i planene.",
@@ -1799,6 +1895,7 @@
       "tittel": "Grunnfrysing",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og arbeider med grunnfrysing iht. planene.",
         "b": "Materialer skal være i tråd med vegnormal N200 Vegbygging kapittel 1.10.8.3 og for øvrig som angitt i planene.",
@@ -1811,6 +1908,7 @@
       "tittel": "Jetinjisering",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter boring og innblanding av stabiliseringsmiddel ved jetinjisering iht. planene. Levering av stabiliseringsmiddel, se prosess 24.432.",
@@ -1831,6 +1929,7 @@
       "tittel": "Boring og innblanding",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring og innblanding av stabiliseringsmiddel ved jetinjisering iht. planene. Levering av stabiliseringsmiddel, se prosess 24.432.",
         "c": "Utførelse skal være i tråd med NS-EN 12716:2018 og for øvrig som angitt i planene.",
@@ -1842,6 +1941,7 @@
       "tittel": "Levering av stabiliseringsmiddel",
       "enhet": "kg",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter kun levering. Innblanding av stabiliseringsmiddel, se prosess 24.431.",
         "b": "Materialer skal være i tråd med NS-EN 12716:2018 og for øvrig som angitt i planene.",
@@ -1852,6 +1952,7 @@
       "tittel": "Tomboring",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring uten innblanding av stabiliseringsmiddel.",
         "x": "Mengden måles som utført samlet lengde tomboring hvor det ikke gjøres innblanding av stabiliseringsmiddel. Enhet: m"
@@ -1861,6 +1962,7 @@
       "tittel": "Vertikale dren",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer og arbeid med vertikale dren som angitt i planene. Horisontalt filterlag for bortleding av vann er beskrevet i prosess 27.41.",
@@ -1902,6 +2004,7 @@
       "tittel": "Sanddren",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter nedsetting av vertikale sanddren, inkludert opptaking og fjerning av jordmasser og levering og tilbakefylling med filtersand.",
         "c": "Under nedsetting av dren skal det sørges for at drensvannet sikres avløp.",
@@ -1912,6 +2015,7 @@
       "tittel": "Plastdren",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med nedsetting av vertikale, prefabrikerte plastdren.",
         "x": "Mengden måles som prosjektert lengde dren, regnet fra bunn dren til topp av horisontalt filterlag. Enhet: m"
@@ -1921,6 +2025,7 @@
       "tittel": "Sugespisser",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opprigging, installasjon, drift og nedrigging av sugespisser (”well-point”), samleledning, sugepumpe og avløp.",
         "c": "Installeres ved nedspyling, kombinert med oppbygging av filter omkring spissen. Stigerørene skal tilknyttes en samleledning med tilkoblet sugepumpe og avløp.",
@@ -1939,6 +2044,7 @@
       "tittel": "Sugespisser, opp- og nedrigging",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -1947,6 +2053,7 @@
       "tittel": "Sugespisser, installering av spisser",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som antall installerte sugespisser. Enhet: stk"
       }
@@ -1955,6 +2062,7 @@
       "tittel": "Sugespisser, montering av samleledning",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som samlet lengde. Enhet: m"
       }
@@ -1963,6 +2071,7 @@
       "tittel": "Sugespisser, leie av anlegg",
       "enhet": "dag",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som tid. Enhet: dag"
       }
@@ -1971,6 +2080,7 @@
       "tittel": "Sugespisser, drift av anlegg",
       "enhet": "dag",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som tid. Enhet: dag"
       }
@@ -1979,6 +2089,7 @@
       "tittel": "Sugespisser, avløp",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som samlet lengde. Enhet: m"
       }
@@ -1987,6 +2098,7 @@
       "tittel": "Pumpebrønner",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter etablering av brønn ved nedføring av rør ved boring, pressing, spyling eller lignende, oppbygging av filter i bunnen av røret og installasjon av senkepumpe.",
         "c": "Brønndybde, pumpekapasitet, driftssikkerhet og reserveinstallasjoner skal være som angitt i den spesielle beskrivelsen.",
@@ -2005,6 +2117,7 @@
       "tittel": "Pumpebrønner, opp- og nedrigging",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Kostnad angis som rund sum. Enhet: RS"
       }
@@ -2013,6 +2126,7 @@
       "tittel": "Pumpebrønner, oppstilling og flytting fra brønn til brønn",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som antall brønner. Enhet: stk"
       }
@@ -2021,6 +2135,7 @@
       "tittel": "Pumpebrønner, etablering av brønn",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som samlet lengde. Enhet: m"
       }
@@ -2029,6 +2144,7 @@
       "tittel": "Pumpebrønner, leie av anlegg",
       "enhet": "dag",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som tid. Enhet: dag"
       }
@@ -2037,6 +2153,7 @@
       "tittel": "Pumpebrønner, drift av anlegg",
       "enhet": "dag",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som tid. Enhet: dag"
       }
@@ -2045,6 +2162,7 @@
       "tittel": "Pumpebrønner, avløp",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som samlet lengde. Enhet: m"
       }
@@ -2053,6 +2171,7 @@
       "tittel": "Stabilisering under fylling",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter forsterkning av bæreevnen under fylling ved hjelp av peler (svevende eller til fast grunn).",
@@ -2092,6 +2211,7 @@
       "tittel": "Peling under fylling",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter forsterkning av bæreevnen under fylling ved hjelp av peler (svevende eller til fast grunn).",
         "x": "Mengden måles som utført lengde av peler. Enhet: m"
@@ -2101,6 +2221,7 @@
       "tittel": "Armering under fylling",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av armering inkludert fiberduk på samme flate.",
         "b": "Materialer skal være som angitt i vegnormal N200 Vegbygging kapittel 1.10.8.4. Materialene skal være av kvalitetsklasse iht. den spesielle beskrivelsen. Fiberduk skal tilfredsstille kravene i vegnormal N200 Vegbygging kapittel 4.4.",
@@ -2112,6 +2233,7 @@
       "tittel": "Fiberduk og bakhon",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av fiberduk og bakhon på fiberduken.",
         "b": [
@@ -2126,6 +2248,7 @@
       "tittel": "Stabilisering med kalk/sementpeler",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter dypstabilisering med kalk/sementpeler iht. planene.",
@@ -2148,6 +2271,7 @@
       "tittel": "Levering av stabiliseringsmiddel",
       "enhet": "kg",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter kun levering. Innblanding, se prosess 24.653.",
         "x": "Mengden måles som medgått stabiliseringsmiddel. Enhet: kg"
@@ -2157,6 +2281,7 @@
       "tittel": "Tomboring",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter boring uten stabilisering ned til det nivået der innblandingen skal foretas.",
         "x": "Mengden måles som samlet lengde regnet fra terrengoverflaten. Enhet: m"
@@ -2166,6 +2291,7 @@
       "tittel": "Nedboring og innblanding",
       "enhet": "m",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter nedboring og innblanding. Levering av stabiliseringsmiddel, se prosess 24.652. Forgraving, se prosess 25.",
         "x": "Mengden måles som samlet lengde regnet fra underkant av tomboring til underkant av pel. Enhet: m"
@@ -2175,6 +2301,7 @@
       "tittel": "Spesiell kontroll av peler",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter kontroll av peler med omvendt kalkpelesonde, FOPS, (F)KPS eller CPT/CPTU, inkluderer alle arbeider i forbindelse med installasjon, trekking, måling og presentasjon av data.",
         "x": "Mengden måles som antall kontrollerte peler. Enhet: stk"
@@ -2184,6 +2311,7 @@
       "tittel": "Lastfordelingstiltak",
       "enhet": "RS",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter etablering av lastfordelingstiltak for peling under fylling iht. den spesielle beskrivelsen.",
         "x": "Kostnaden angis som rund sum. Enhet RS"
@@ -2193,6 +2321,7 @@
       "tittel": "Fylling med lette masser",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter materialer og arbeider for etablering av fylling med lette masser.",
@@ -2252,6 +2381,7 @@
       "tittel": "Fylling med lettklinker eller skumglassgranulat",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, utlegging og komprimering av lettklinker (ekspandert leire) eller skumglassgranulat som lett fylling som angitt i planene. Filterlag er beskrevet i prosess 27.4. Ev. sidefylling er beskrevet i prosess 24.77.",
         "b": [
@@ -2276,17 +2406,20 @@
     "24.711": {
       "tittel": "Fylling med lettklinger (ekspandert leire)",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "24.712": {
       "tittel": "Fylling med skumglassgranulat",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "24.74": {
       "tittel": "Fylling av ekspandert polystyren (EPS)",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering og utlegging av ekspandert polystyren. Ev. sidefylling er beskrevet i prosess 24.77.",
@@ -2316,6 +2449,7 @@
       "tittel": "Blokker av ekspandert polystyren (EPS)",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og utlegging av ekspandert polystyren. Ev. sidefylling er beskrevet i prosess 24.77.",
         "b": "Materialene skal ha kvalitet som angitt i den spesielle beskrivelsen. Dimensjonerende trykkfasthet for ekspandert polystyren skal være minimum 100 kN/m2 målt ved 5 % deformasjon. EPS skal ikke inneholde bromerte flammehemmere og/eller stoffer av klorfluorkarboner, klorfluorkarboner.",
@@ -2327,6 +2461,7 @@
       "tittel": "Plastmembran over fylling av ekspandert polystyren (EPS)",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og legging av plastmembran som beskyttelse over fylling av ekspandert polystyren (EPS)",
         "x": "Mengden måles som prosjektert areal belagt med membran. Overlapp i skjøter måles ikke. Enhet: m2"
@@ -2336,6 +2471,7 @@
       "tittel": "Betongplate over fylling av ekspandert polystyren (EPS)",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med armert betongplate over fylling av ekspandert polystyren.",
         "b": "Betongplate over EPS-fylling ha tykkelse 10 cm. Betongen skal ha fasthetsklasse B35 og bestandighetsklasse MF45. Armeringen skal minimum være sveiset armeringsnett K335 (8 mm tråd i 150 x 150 mm ruter) i henhold til NS 3576-3,",
@@ -2347,6 +2483,7 @@
       "tittel": "Avrettingslag under fylling av ekspandert polystyren (EPS)",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering og arbeider med avrettingslag under fylling av ekspandert polystyren.",
         "b": "Avrettingslag under EPS-fylling skal ha tykkelse minimum 10 cm og skal bestå av sand eller pukk 0/16 mm.",
@@ -2358,6 +2495,7 @@
       "tittel": "Lastfordelingslag over fylling med lette masser",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering av materialer og bygging av lastfordelingslag.",
         "x": "Mengden måles som prosjektert areal lastfordelingslag. Enhet: m2"
@@ -2367,6 +2505,7 @@
       "tittel": "Geotekstil som separasjonslag",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter geotekstil som separasjonslag over fylling av lette masser.",
         "b": "Bruksklasse skal være som angitt i den spesielle beskrivelsen. Fiberduk skal tilfredsstille kravene i vegnormal N200 Vegbygging kap. 4.4.",
@@ -2378,6 +2517,7 @@
       "tittel": "Sidefylling mot fylling av lette masser",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og alle arbeider med etablering av sidefylling mot fylling av lette masser. Ev. plastmembran er beskrevet i prosess 24.742. Ev. geotekstil er beskrevet i prosess 24.76.",
         "b": "Materialene skal være stabile. Gradering og ev. øvrige krav skal være som angitt i den spesielle beskrivelsen.",
@@ -2389,22 +2529,26 @@
     "24.771": {
       "tittel": "Sidefylling mot fylling av lettklinker (ekspandert leire)",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "24.772": {
       "tittel": "Sidefylling mot fylling av skumglassgranulat",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "24.773": {
       "tittel": "Sidefylling mot fylling av ekspandert polystyren (EPS)",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "25": {
       "tittel": "MASSEFLYTTING AV JORD",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipping, utlegging og eventuell komprimering av jordmasser, samt ev. leverings- og behandlingsgebyrer. Avregnet volum av vegetasjonsdekke og matjord inngår i prosess 21.3. Etablering av planum, samt tilleggskostnader for ev. utkilinger, inngår i prosess 51. Tilsåing inngår i prosess 74. Ev. demolering av blokker i løsmasser er beskrevet i prosess 27.2. Ev. bekjempelse av uønskede arter er beskrevet i prosess 27.3.",
@@ -2502,6 +2646,7 @@
       "tittel": "Jordmasser i linjen",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving, opplasting, transport, tipping, utlegging og komprimering av brukbare jordmasser fra skjæring (ned til planumsnivå og til bunn av ev. utkilinger) i linjen til fylling i linjen. Avregnet volum av vegetasjonsdekke/matjord inngår i prosess 21.3",
         "b": [
@@ -2544,6 +2689,7 @@
       "tittel": "Jordmasser til motfylling/bakkeplanering",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipping og utlegging av jordmasser fra skjæring i linjen eller angitt sidetak, til motfyllinger/bakkeplanering som angitt i planene.",
@@ -2557,17 +2703,20 @@
     "25.21": {
       "tittel": "Jordmasser til motfylling",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "25.22": {
       "tittel": "Jordmasser til bakkeplanering",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "25.3": {
       "tittel": "Jordmasser til lager for senere bearbeiding",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipping og utlegging av jordmasser fra skjæring i linjen til angitt lager for senere bearbeiding som sortering, bekjempelse av uønskede arter, etc..",
@@ -2581,6 +2730,7 @@
       "tittel": "Jordmasser til støyvoll, ledevoll, steinfyllingsskråninger, mm",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipping og utlegging av jordmasser fra skjæring i linja eller fra lager til støyvoll, ledevoll, fangvoll og oppfylling mot bergskjæring m.m. som angitt i planene.",
@@ -2609,6 +2759,7 @@
       "tittel": "Jordmasser til støyvoll, ledevoll, oppfylling mot bergskjæring mv.",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipping og utlegging av jordmasser fra skjæring i linja eller fra lager til støyvoll, ledevoll, fangvoll og oppfylling mot bergskjæring m.m. som angitt i planene.",
@@ -2622,6 +2773,7 @@
       "tittel": "Jordmasser på steinfyllingsskråninger",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving, opplasting, transport, tipping og utlegging av jordmasser fra skjæring i linja eller fra lager til jordlag på steinfyllingsskråninger. Avregnet volum av vegetasjonsdekke/matjord inngår i prosess 21.3.",
         "c": "Når jordmassene skal være underlag for vegetasjonsdekke for naturlig vegetasjonsinnvandring, skal jordmassene legges ut løst med ujevn overflate og massene skal ikke komprimeres.",
@@ -2633,6 +2785,7 @@
       "tittel": "Jordmasser til tetningslag i veggrøfter, midtdeler og sideskråning",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, transport, tipping og utlegging av jordmasser fra skjæring i linja eller fra lager til tetningslag i veggrøfter, midtdeler og sideskråning.",
@@ -2647,6 +2800,7 @@
       "tittel": "Jordmasser til endelig plassering i masselager",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving, opplasting, transport, tipping og utlegging av jordmasser fra skjæring i linjen til angitt eller valgt endelig plassering i masselager. Avregnet volum av vegetasjonsdekke/matjord inngår i prosess 21.3. Omfatter også leverings- og behandlingsgebyrer der dette er aktuelt.",
         "c": "Toppen skal avplaneres med fall ut mot sidene eller mot avløp.",
@@ -2657,6 +2811,7 @@
       "tittel": "Jordmasser fra sidetak, masselager og forbelastning",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter utgraving, opplasting, eventuell levering, transport, tipping, utlegging og komprimering av jord fra angitt sidetak til fylling i linjen, utført som angitt i prosess 25.1. Avregnet volum av vegetasjonsdekke og matjord inngår i prosess 21.3.",
@@ -2694,6 +2849,7 @@
       "tittel": "Jordmasser fra sidetak til fylling i linjen",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving, opplasting, eventuell levering, transport, tipping, utlegging og komprimering av jord fra angitt sidetak til fylling i linjen, utført som angitt i prosess 25.1. Avregnet volum av vegetasjonsdekke og matjord inngår i prosess 21.3.",
         "b": "Som for prosess 25.1.",
@@ -2710,6 +2866,7 @@
       "tittel": "Jordmasser fra sidetak, målt i sidetak",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført fast volum (målt i sidetak). Enhet: m3"
       }
@@ -2718,6 +2875,7 @@
       "tittel": "Jordmasser fra sidetak, målt i fylling",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
@@ -2726,6 +2884,7 @@
       "tittel": "Jordmasser fra lager til fylling i linjen",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, tipping, utlegging og komprimering av jord fra lager, og med opprinnelse fra utenfor anlegget, til fylling i linjen utført som angitt i prosess 25.1.",
         "b": "Som for prosess 25.1.",
@@ -2742,6 +2901,7 @@
       "tittel": "Jordmasser fra lager, målt i lager",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført volum (målt i lager). Enhet: m3"
       }
@@ -2750,6 +2910,7 @@
       "tittel": "Jordmasser fra lager, målt i fylling",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
@@ -2758,6 +2919,7 @@
       "tittel": "Fjerning av forbelastning",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, tipping og utlegging av masser som er blitt tilovers fra forbelastning på bløt grunn. Omfatter også komprimering ved utlegging i fylling i linjen.",
         "c": "Den utlagte fyllingen skal etter konsolidering av undergrunnen, fjernes ned til et nivå som fastlegges i hvert enkelt tilfelle, basert på den kvaliteten man har kunnet oppnå i fyllingen. Overhøyde på sideskråninger under dette nivået skal ikke fjernes. Krav til utførelse skal være iht. prosess 26.1 der det er brukt masser av sprengstein, og iht. prosess 25.1 der det er brukt jordmasser.",
@@ -2769,6 +2931,7 @@
       "tittel": "Utskifting av myr og andre ubrukbare masser",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter utgraving, opplasting, transport, tipping og utlegging av myr og andre ubrukbare masser fra angitte steder i linjen til angitt eller valgt masselager. Omfatter også leverings- og behandlingsgebyrer der dette er aktuelt. Omfatter også tilbakefylling til opprinnelig terrengnivå utenfor vegkroppen med tilstedeværende masser. Avregnet volum av vegetasjonsdekke og matjord inngår i prosess 21.3.",
         "c": "Dersom ikke annet er angitt i planene skal det graves til fast grunn under vegkroppen ut til en bredde tilsvarende fyllingsskråning 1:1 under steinfylling og 1:1,25 under jordfylling. Der graving med sideskråning 1:1 kan medføre ukontrollerte glidninger og setninger på nærliggende terreng, skal gravingen utføres umiddelbart foran fyllingstippen.",
@@ -2779,6 +2942,7 @@
       "tittel": "MASSEFLYTTING AV SPRENGT STEIN",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter opplasting, transport, tipping, ev. utlegging og ev. komprimering av steinmasser, inkl. ev. leverings- og behandlingsgebyrer. Etablering av planum, kontroll av dypsprengning samt tilleggskostnader for ev. utkilinger i vegens lengderetning, inngår i prosess 51. Tiltak for håndtering av plastavfall fra sprengningsarbeider er beskrevet under prosess 12.51.",
@@ -2843,6 +3007,7 @@
       "tittel": "Sprengt stein fra skjæring til fylling i linjen",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, tipping, utlegging og komprimering av steinmasser fra skjæring og eventuelle forskjæringer, inkl. masser fra rensk av skjæringssider ned til planumsnivå i linjen, til fylling i linjen. Omfatter også bearbeiding av massen til aktuell bruk, som sortering, pigging, mv. i den grad dette er nødvendig.",
         "b": [
@@ -2866,6 +3031,7 @@
       "tittel": "Sprengt stein til motfylling",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, tipping og utlegging av sprengt stein fra skjæring i linjen og eventuelle forskjæringer, inkl. masser fra rensk av skjæringssider, ned til planumsnivå i linjen, eller sidetak, til motfyllinger.",
         "b": "Fyllmassene skal ikke inneholde snø eller is, og heller ikke stubber, røtter eller annet vegetasjonsmateriale.",
@@ -2877,6 +3043,7 @@
       "tittel": "Sprengt stein til lager for senere bearbeiding",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Gjelder for steinmasser som senere skal gjennomgå bearbeiding som sortering, knusing, sikting, utsortering til mur, mv. Omfatter opplasting, transport, tipping og utlegging av sprengt stein fra skjæring i linjen og eventuelle forskjæringer, inkl. masser fra rensk av skjæringssider, ned til planumsnivå i linjen, til angitt lager.",
         "x": "Mengden måles som prosjektert fast volum (målt i skjæring). Enhet: m3"
@@ -2886,6 +3053,7 @@
       "tittel": "Sprengt stein til støyvoll, ledevoll, oppfylling mot bergskjæring, erosjonssikring, mv.",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, tipping og utlegging av sprengt stein til støyvoll, fangvoll, ledevoll og oppfylling av ytre grøfteskråning i bergskjæringer, erosjonssikring ved brufundamenter, kaier, m.v. som angitt i planene. Omfatter også bearbeiding av massen til aktuell bruk, som sortering, pigging, mv. i den grad dette er nødvendig.",
         "b": "Krav til materialer er som angitt i den spesielle beskrivelsen.",
@@ -2897,6 +3065,7 @@
       "tittel": "Sprengt stein til endelig plassering i masselager",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, tipping og utlegging av sprengt stein fra skjæring i linjen og eventuelle forskjæringer, inkl. masser fra rensk av skjæringssider, ned til planumsnivå i linjen, til angitt eller valgt endelig plassering i masselager. Omfatter også leverings- og behandlingsgebyrer der dette er aktuelt.",
         "x": "Mengden måles som prosjektert fast volum (målt i skjæring). Enhet: m3"
@@ -2906,6 +3075,7 @@
       "tittel": "Sprengt stein fra sidetak til fylling i linjen",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, eventuell levering, transport, tipping, utlegging og komprimering av sprengt stein fra angitt sidetak til fylling i linjen. Omfatter også bearbeiding av massen til aktuell bruk, som sortering, pigging, mv. i den grad dette er nødvendig.",
         "b": "Som for prosess 26.1.",
@@ -2922,6 +3092,7 @@
       "tittel": "Sprengt stein fra sidetak, målt i sidetak",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført fast volum (målt i sidetak). Enhet: m3"
       }
@@ -2930,6 +3101,7 @@
       "tittel": "Sprengt stein fra sidetak, målt i fylling",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
@@ -2938,6 +3110,7 @@
       "tittel": "Sprengt stein fra lager til fylling i linjen",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter opplasting, transport, tipping, utlegging og komprimering av sprengt stein fra lager angitt av byggherren til fylling i linjen. Omfatter også bearbeiding av massen til aktuell bruk, som sortering, pigging, mv. i den grad dette er nødvendig.",
         "b": "Som for prosess 26.1.",
@@ -2954,6 +3127,7 @@
       "tittel": "Sprengt stein fra lager, målt i lager",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som utført volum (målt i lager). Enhet: m3"
       }
@@ -2962,6 +3136,7 @@
       "tittel": "Sprengt stein fra lager, målt i fylling",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
@@ -2970,6 +3145,7 @@
       "tittel": "Diverse masser",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, opplasting, transport, utlegging og komprimering av filtersand (grus) under fylling og til filterlag i fyllinger med tette masser (leire).",
@@ -2998,6 +3174,7 @@
       "tittel": "Filtersand (grus) under og i fylling",
       "enhet": "?",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": [
           "Omfatter levering, opplasting, transport, utlegging og komprimering av filtersand (grus) under fylling og til filterlag i fyllinger med tette masser (leire).",
@@ -3017,6 +3194,7 @@
       "tittel": "Filtersand (grus) under fylling",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, opplasting, transport, utlegging og komprimering av filtersand (grus) fra materialtak til terreng under fylling.",
         "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
@@ -3026,6 +3204,7 @@
       "tittel": "Filtersand (grus) i fylling",
       "enhet": "m3",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter levering, opplasting, transport, utlegging og komprimering av filtersand (grus) i fyllinger som vist på planene samt tilhørende vertikale sanddren mellom lagene.",
         "c": "Underlaget for hvert lag skal være planert med fall til siden slik at vannet renner bort. Sanden (grusen) legges ut i ett lag og komprimeres.",
@@ -3037,6 +3216,7 @@
       "tittel": "Demolering av blokker i løsmasser",
       "enhet": "stk",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter demolering av blokker i løsmasser, som ikke er resultat av entreprenørens egne sprengningsarbeider. Det forutsettes bruk av sprengning, pigging eller lignende. Prosessen gjelder blokker på min. 1,0 m3 og maks. 10,0 m3, større blokker enn 10,0 m3 regnes som fast berg etter prosess 22.1. Volumet av blokkene er inkludert i prosjektert fast volum for graving, opplasting, transport og utlegging. Ved sprengning av blokker gjelder alle sikringstiltak som for sprengning under prosess 22.",
         "x": "Mengden måles som utført antall. Enhet: stk"
@@ -3045,17 +3225,20 @@
     "27.21": {
       "tittel": "Demolering av blokker fra 1,0 til og med 5,0 m3",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.22": {
       "tittel": "Demolering av blokker fra 5,0 til og med 10,0 m3",
       "enhet": "stk",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.3": {
       "tittel": "Masser med uønskede arter",
       "enhet": "m2",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter materialer og arbeid i forbindelse med bekjemping av uønskede arter i angitt lager eller på angitte områder i linjen. Utgraving, transport og utlegging av masser er beskrevet under prosess 21 og 25.",
         "c": "Metode, materialer og plan for arbeidet skal forelegges byggherren før start.",
@@ -3065,47 +3248,56 @@
     "27.31": {
       "tittel": "Bekjemping i lager",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.311": {
       "tittel": "Ett års bekjemping i lager",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.312": {
       "tittel": "To års bekjemping i lager",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.313": {
       "tittel": "Tre års bekjemping i lager",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.32": {
       "tittel": "Bekjemping i linjen",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.321": {
       "tittel": "Ett års bekjemping i linjen",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.322": {
       "tittel": "To års bekjemping i linjen",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.323": {
       "tittel": "Tre års bekjemping i linjen",
       "enhet": "m2",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     },
     "27.4": {
       "tittel": "Leverings- og behandlingsgebyr, forurensede masser",
       "enhet": "tonn",
       "hovedprosess": "2",
+      "url": "",
       "tekst": {
         "a": "Omfatter gebyr for levering av forurensede masser og masser med uønskede arter til angitt eller valgt anlegg med konsesjon for mottak av aktuell masse. Forutsatt type masse, forurensningsgrad og type forurensning er som angitt i den spesielle beskrivelsen.",
         "x": "Mengden måles som utført levert masse i henhold til mottakssedler fra mottaksstedet. Enhet: tonn"
@@ -3114,7 +3306,8 @@
     "28.28224": {
       "tittel": "Selvkomprimerende betong tilpasset støp i vann B45",
       "enhet": "m3",
-      "hovedprosess": "2"
+      "hovedprosess": "2",
+      "url": ""
     }
   }
 }
