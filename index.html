@@ -100,6 +100,8 @@
     
     .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--surface2); }
     .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
+    /* Egen stil for feil/manglende mengde */
+    .obj-mengde-feil { font-family: var(--mono); font-size: 11px; color: var(--red); font-weight: 700; }
 
     .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
     
@@ -171,10 +173,7 @@ const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
 async function connect(){
   try {
     API = await window.TrimbleConnectWorkspace.connect(window.parent);
-    
-    // Laster inn standardversjonen (f.eks. 2025) ved oppstart
     await lastJSONFil($('versionFilter').value);
-    
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
     $('modelBadge').textContent = 'Tilkoblet';
@@ -183,7 +182,6 @@ async function connect(){
   }
 }
 
-// Tar nå inn versjons-variabelen (f.eks "2018" eller "2025")
 async function lastJSONFil(versjon) {
   setStatus(`⏳ Laster inn R761 (${versjon})...`);
   try {
@@ -226,11 +224,9 @@ async function lastJSONFil(versjon) {
   }
 }
 
-// Oppdaterer innholdet i listene hvis du bytter håndbok ETTER skanning
 function oppdaterRegisterMedNyHandbok() {
     for (let kode in globalProsessRegister) {
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
-        
         globalProsessRegister[kode].tittel = handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
         globalProsessRegister[kode].enhet = handbokData && handbokData.enhet ? handbokData.enhet : "?";
         globalProsessRegister[kode].url = handbokData && handbokData.url ? handbokData.url : null;
@@ -238,23 +234,16 @@ function oppdaterRegisterMedNyHandbok() {
     }
 }
 
-// Lytter på endring av håndbok-versjon
 $('versionFilter').addEventListener('change', async (e) => {
     $('versionFilter').disabled = true;
-    
-    // Last inn det nye regelsettet
     await lastJSONFil(e.target.value);
-    
-    // Hvis vi allerede har skannet en modell, oppdaterer vi tekstene og tegner på nytt
     if (Object.keys(globalProsessRegister).length > 0) {
         oppdaterRegisterMedNyHandbok();
         tegnOppUI(globalProsessRegister, $('modelFilter').value);
     }
-    
     $('versionFilter').disabled = false;
 });
 
-// Lytter på endring av modell-filter
 $('modelFilter').addEventListener('change', (e) => {
     tegnOppUI(globalProsessRegister, e.target.value);
 });
@@ -330,9 +319,19 @@ $('scanBtn').addEventListener('click', async () => {
             objektNavn = (obj.name && obj.name.trim() !== "") ? obj.name : "Ukjent objekt";
           }
 
-          let mengdeVerdi = flatProps["Mengde"] || flatProps["Volume"] || flatProps["NetVolume"] || flatProps["Area"] || flatProps["NetArea"] || flatProps["Length"] || "0";
-          mengdeVerdi = mengdeVerdi.toString().replace(',', '.');
-          const mengde = parseFloat(mengdeVerdi) || 0; 
+          // --- NY LOGIKK FOR Å FANGE OPP MANGLENDE MENGDER ---
+          let rawMengde = flatProps["Mengde"] ?? flatProps["Volume"] ?? flatProps["NetVolume"] ?? flatProps["Area"] ?? flatProps["NetArea"] ?? flatProps["Length"];
+          
+          let manglerMengde = false;
+          let mengde = 0;
+          
+          // Sjekk om egenskapen faktisk eksisterer og har en verdi
+          if (rawMengde === undefined || rawMengde === null || rawMengde.toString().trim() === "") {
+              manglerMengde = true;
+          } else {
+              let mengdeVerdi = rawMengde.toString().replace(',', '.');
+              mengde = parseFloat(mengdeVerdi) || 0; 
+          }
           
           if (prosesskode && prosesskode.trim() !== "") {
             if (!globalProsessRegister[prosesskode]) {
@@ -350,7 +349,8 @@ $('scanBtn').addEventListener('click', async () => {
             const runtimeId = obj.id || obj.objectRuntimeId;
             globalProsessRegister[prosesskode].objekter.push({ 
                 navn: objektNavn, 
-                mengde: mengde, 
+                mengde: mengde,
+                manglerMengde: manglerMengde, // Sender med flagget
                 modelId: mid, 
                 modelNavn: modelName,
                 runtimeId: runtimeId 
@@ -525,7 +525,13 @@ function tegnOppUI(register, filterMid) {
         gruppeData.objekter.forEach(obj => {
             const rad = document.createElement('div');
             rad.className = 'objekt-rad';
-            rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> <span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
+            
+            // --- LOGIKK FOR RØD TEKST HVIS MENGDE MANGLER ---
+            const mengdeTekst = obj.manglerMengde 
+                ? `<span class="obj-mengde-feil" title="Advarsel: Objektet mangler mengde-egenskap">0.00 ${data.enhet}</span>`
+                : `<span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
+                
+            rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> ${mengdeTekst}`;
             
             rad.onclick = async (e) => {
                 e.stopPropagation();
