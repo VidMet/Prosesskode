@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body { font-family: sans-serif; padding: 10px; }
+        .prosess-gruppe { border: 1px solid #ccc; margin-bottom: 10px; padding: 10px; border-radius: 4px; }
+        .prosess-header { font-weight: bold; cursor: pointer; color: #005A9C; }
+        .prosess-header:hover { text-decoration: underline; }
+        .objekt-liste { display: none; margin-top: 10px; font-size: 0.9em; color: #555; }
+        .objekt-item { display: flex; justify-content: space-between; border-bottom: 1px solid #eee; padding: 2px 0; }
+    </style>
+</head>
+<body>
+
+    <h3>Prosesskoder i modell</h3>
+    <button id="scanBtn">Skann modell</button>
+    <div id="resultat"></div>
+
+    <script src="https://app.connect.trimble.com/tc/static/apiv1.js"></script>
+    <script>
+        // Simulert SVV Håndbok JSON
+        const svvHandbok = {
+            "71.1": "Fjellsprengning i linjen",
+            "72.1": "Fylling av sprengstein",
+            "77.1": "Bærelag av pukk"
+        };
+
+        let currentAPI;
+
+        async function init() {
+            currentAPI = await window.TrimbleConnectWorkspace.connect(window.parent);
+        }
+
+        document.getElementById('scanBtn').addEventListener('click', async () => {
+            document.getElementById('resultat').innerText = "Skanner egenskaper (dette kan ta litt tid)...";
+            
+            // 1. Hent alle objekter (eller et utvalg)
+            // Merk: Tilpass API-kallet etter din nøyaktige Workspace API-versjon.
+            const objects = await currentAPI.viewer.getObjects(); 
+            
+            let prosessRegister = {};
+
+            // 2. Loop gjennom objekter og hent egenskaper
+            for (let obj of objects) {
+                // Hent egenskapene for objektet (pseudo-kall, krever ofte batching i praksis)
+                const props = await currentAPI.viewer.getObjectProperties(obj.id); 
+                
+                // Finn prosesskode og mengde
+                let prosesskode = finnEgenskap(props, "Prosesskode"); // Tilpass søkestreng
+                let mengde = finnEgenskap(props, "NetVolume"); // Bytt ut med riktig mengde-egenskap
+                
+                if (prosesskode) {
+                    if (!prosessRegister[prosesskode]) {
+                        prosessRegister[prosesskode] = {
+                            beskrivelse: svvHandbok[prosesskode] || "Ukjent prosesskode",
+                            totalMengde: 0,
+                            objektIds: [],
+                            objekter: []
+                        };
+                    }
+                    
+                    let parsedMengde = parseFloat(mengde) || 0;
+                    prosessRegister[prosesskode].totalMengde += parsedMengde;
+                    prosessRegister[prosesskode].objektIds.push(obj.id);
+                    prosessRegister[prosesskode].objekter.push({ id: obj.id, mengde: parsedMengde });
+                }
+            }
+
+            tegnOppUI(prosessRegister);
+        });
+
+        function tegnOppUI(register) {
+            const container = document.getElementById('resultat');
+            container.innerHTML = '';
+
+            for (let kode in register) {
+                const data = register[kode];
+                
+                const div = document.createElement('div');
+                div.className = 'prosess-gruppe';
+                
+                // Header (Klikkbar for å velge i 3D)
+                const header = document.createElement('div');
+                header.className = 'prosess-header';
+                header.innerText = `${kode} - ${data.beskrivelse} (${data.objekter.length} objekter) | Total: ${data.totalMengde.toFixed(2)}`;
+                
+                // Valg av objekter i 3D-viewer ved klikk
+                header.onclick = () => {
+                    currentAPI.viewer.setSelection(data.objektIds);
+                };
+
+                // Liste med enkeltoobjekter
+                const liste = document.createElement('div');
+                liste.className = 'objekt-liste';
+                liste.style.display = 'block'; // Kan gjøres toggle-bar
+                
+                data.objekter.forEach(obj => {
+                    const item = document.createElement('div');
+                    item.className = 'objekt-item';
+                    item.innerHTML = `<span>Objekt ID: ${obj.id}</span> <span>${obj.mengde.toFixed(2)}</span>`;
+                    liste.appendChild(item);
+                });
+
+                div.appendChild(header);
+                div.appendChild(liste);
+                container.appendChild(div);
+            }
+        }
+
+        // Hjelpefunksjon for å finne spesifikk egenskap i Trimble Connect sitt returobjekt
+        function finnEgenskap(propertiesArray, propertyName) {
+            // Logikken her avhenger av strukturen Trimble Connect returnerer
+            // Ofte er det nested under propertySets
+            return null; // Implementeres basert på faktisk datastruktur i prosjektet
+        }
+
+        init();
+    </script>
+</body>
+</html>
