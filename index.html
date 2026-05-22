@@ -74,9 +74,7 @@
     
     .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); flex-direction: column; }
     
-    /* Endret beskrivelsestekst: Gjort rullbar (scrollable) med fast makshøyde */
     .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid #1c2128; background: #0d1117; flex-shrink: 0; max-height: 180px; overflow-y: auto; }
-    
     .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: #c9d1d9; border-left: 3px solid var(--surface2); padding-left: 10px; }
     .tekst-blokk:last-child { margin-bottom: 0; }
     .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
@@ -88,13 +86,11 @@
     
     .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid #1c2128; }
     
-    /* Gruppering for lukkbare modeller */
     .modell-gruppe { display: flex; flex-direction: column; }
     .modell-overskrift { background: #12161d; padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid #1c2128; cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
     .modell-overskrift:hover { background: #1c2128; color: var(--ink); }
     .modell-overskrift-mengde { color: var(--blue); }
     
-    /* Objektene er skjult som standard */
     .modell-objekter { display: none; flex-direction: column; }
 
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--bg); }
@@ -159,8 +155,6 @@ const tekstKoder = {
 
 const $ = id => document.getElementById(id);
 const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
-
-// Hjelpefunksjon for å vaske filnavnet fritt for mapper
 const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
 
 async function connect(){
@@ -174,17 +168,50 @@ async function connect(){
   }
 }
 
+// --- OPPDATERT: SAMS MELTINGSMOTOR FOR FLERE JSON-FILER ---
 async function lastJSONFil() {
-  setStatus('⏳ Laster inn Prosesskode.json...');
+  setStatus('⏳ Laster inn prosesskode-kapitler (1-9)...');
   try {
-    const url = 'Prosesskode.json?nocache=' + new Date().getTime(); 
-    const response = await fetch(url);
-    if (!response.ok) throw new Error(`Nettverksfeil: ${response.status}`);
+    // Definerer kapitlene vi forventer (Hovedprosess 1 til 9)
+    const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+    const cacheBuster = new Date().getTime();
     
-    svvHandbok = await response.json();
-    setStatus('✅ Tilkoblet og Prosesskoder lastet inn.', 'ok');
+    // Oppretter parallelle fetch-kall for alle kapitlene
+    const promises = kapitler.map(kap => 
+      fetch(`json_filer/Prosesskode_${kap}.json?nocache=${cacheBuster}`)
+        .then(res => {
+          if (!res.ok) throw new Error(`Status ${res.status}`);
+          return res.json();
+        })
+        .catch(err => {
+          // Logger advarsel i konsollen, men lar resten av databasen laste
+          console.warn(`Hoppet over kapittel ${kap} (Filen mangler eller er tom)`);
+          return null; 
+        })
+    );
+    
+    const resultater = await Promise.all(promises);
+    
+    // Initialiserer et tomt felles register
+    svvHandbok = { prosesskoder: {} };
+    let totaltLastedeKoder = 0;
+    
+    // Smelter sammen alle de vellykkede filene inn i fellesregisteret
+    resultater.forEach(data => {
+      if (data && data.prosesskoder) {
+        Object.assign(svvHandbok.prosesskoder, data.prosesskoder);
+        totaltLastedeKoder += Object.keys(data.prosesskoder).length;
+      }
+    });
+    
+    if (totaltLastedeKoder === 0) {
+      throw new Error("Ingen JSON-filer ble funnet i 'json_filer/'. Sjekk filplasseringen.");
+    }
+    
+    setStatus(`✅ Suksess! Lastet inn ${totaltLastedeKoder} koder på tvers av kapitler.`, 'ok');
   } catch (error) {
-    setStatus('⚠️ Kunne ikke laste Prosesskode.json. Viser "Ukjent prosesskode".', 'warn');
+    console.error("Kritisk databasefeil:", error);
+    setStatus(`⚠️ Databasefeil: ${error.message}. Skanning vil vise "Ukjent prosess".`, 'warn');
     svvHandbok = { prosesskoder: {} };
   }
 }
@@ -205,7 +232,6 @@ $('scanBtn').addEventListener('click', async () => {
   try {
     setStatus('⏳ Henter filnavn og modeller fra vieweren...');
     
-    // Gjenopprettet den robuste metoden for å hente rene filnavn
     const nameMap = new Map();
     const srcs = [() => API.models && API.models.getModels(), () => API.viewer && API.viewer.getModels()];
     for (const src of srcs) {
@@ -235,7 +261,6 @@ $('scanBtn').addEventListener('click', async () => {
     for (const model of models) {
       const mid = model.modelId || model.modelid;
       
-      // Slår opp filnavn. Hvis alt feiler, bruk fallback
       let modelName = nameMap.get(mid) || model.name;
       if (!modelName || modelName.trim() === "") modelName = `Modell (${mid.substring(0,6)}...)`;
       
@@ -310,9 +335,7 @@ function oppdaterDropdownMeny() {
     const select = $('modelFilter');
     select.innerHTML = '<option value="ALL">Alle modeller i vieweren</option>';
     
-    // Sorterer modellnavnene alfabetisk før de legges i menyen
     const sorterteModeller = Object.entries(globalModelsMap).sort((a, b) => a[1].localeCompare(b[1]));
-    
     for (const [mid, name] of sorterteModeller) {
         const option = document.createElement('option');
         option.value = mid;
@@ -338,7 +361,6 @@ function tegnOppUI(register, filterMid) {
     if (filtrerteObjekter.length === 0) return;
     
     visteProsesser++;
-    
     const totalMengde = filtrerteObjekter.reduce((sum, obj) => sum + obj.mengde, 0);
     
     const masterMarkeringMap = {};
@@ -430,7 +452,6 @@ function tegnOppUI(register, filterMid) {
         modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
     });
 
-    // Sorter modellene alfabetisk inni objektlisten også
     const sorterteGrupper = Object.entries(modellGrupper).sort((a, b) => a[0].localeCompare(b[0]));
 
     for (const [navn, gruppeData] of sorterteGrupper) {
