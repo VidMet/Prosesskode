@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Prosesskoder og Mengder</title>
+  <title>Mengdeuttak R761</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -33,10 +33,9 @@
     body {
       background: var(--bg); color: var(--ink); font-family: var(--sans);
       min-height: 100vh; display: flex; flex-direction: column; overflow: hidden;
-      min-width: 380px; /* Sørger for at UI-et føles romslig som default */
+      min-width: 380px; /* Sørger for at UI-et føles romslig */
     }
 
-    /* flex-wrap tillater elementer å bryte linje ved smale vinduer */
     header {
       background: var(--surface); border-bottom: 1px solid var(--border);
       padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap; 
@@ -68,21 +67,21 @@
     .prosess-tittel { font-weight: 700; font-size: 14px; color: var(--blue); }
     .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
     
-    /* Kroppen skroller ikke lenger i seg selv */
     .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); flex-direction: column; }
     
     .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid #1c2128; background: #0d1117; flex-shrink: 0; }
     .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: #c9d1d9; border-left: 3px solid var(--surface2); padding-left: 10px; }
     .tekst-blokk:last-child { margin-bottom: 0; }
+    
+    .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
+    .tekst-blokk p:last-child { margin-bottom: 0; }
+    
     .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
     
-    /* Ny layout for "Delmengder"-seksjonen */
     .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; }
     .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
     
-    /* Nå er det kun objektlisten som er skrollbar */
     .objekt-liste { overflow-y: auto; max-height: 250px; border-top: 1px solid #1c2128; }
-    
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
     .objekt-rad:hover { background: var(--surface2); }
     
@@ -291,7 +290,7 @@ function tegnOppUI(register) {
     kropp.className = 'panel-kropp';
     kropp.style.display = 'none';
 
-    // 1. Legger inn tekst-beskrivelsen låst på toppen av panelet
+    // 1. BESKRIVELSESTEKST (Støtter både streng og lister med avsnitt)
     if (data.tekst) {
       const tekstDiv = document.createElement('div');
       tekstDiv.className = 'prosess-beskrivelse';
@@ -300,7 +299,16 @@ function tegnOppUI(register) {
         if (data.tekst[bokstav]) {
           const blokk = document.createElement('div');
           blokk.className = 'tekst-blokk';
-          blokk.innerHTML = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span> ${data.tekst[bokstav]}`;
+          
+          let innholdHtml = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span>`;
+          
+          if (Array.isArray(data.tekst[bokstav])) {
+            innholdHtml += data.tekst[bokstav].map(avsnitt => `<p>${avsnitt}</p>`).join('');
+          } else {
+            innholdHtml += `<p>${data.tekst[bokstav]}</p>`;
+          }
+          
+          blokk.innerHTML = innholdHtml;
           tekstDiv.appendChild(blokk);
         }
       });
@@ -310,7 +318,7 @@ function tegnOppUI(register) {
       }
     }
     
-    // 2. Bygger "Delmengder"-seksjonen med overskrift
+    // 2. DELMENGDER-SEKSJON
     const delmengderSeksjon = document.createElement('div');
     delmengderSeksjon.className = 'delmengder-seksjon';
     
@@ -319,7 +327,6 @@ function tegnOppUI(register) {
     delmengderTittel.innerText = 'Delmengder';
     delmengderSeksjon.appendChild(delmengderTittel);
 
-    // 3. Setter selve objektlisten inn under overskriften
     const liste = document.createElement('div');
     liste.className = 'objekt-liste';
     
