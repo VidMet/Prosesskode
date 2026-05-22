@@ -53,10 +53,12 @@
     .btn:not(:disabled):active { transform: scale(.97); }
     .btn-primary { background: var(--blue); color: #000; }
     
-    #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 10px; align-items: center; flex-shrink: 0; }
-    #filterBar label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
-    #modelFilter { font-family: var(--mono); font-size: 12px; background: var(--surface2); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
-    #modelFilter:disabled { opacity: 0.4; cursor: not-allowed; }
+    #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
+    
+    .filter-group { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 150px; }
+    .filter-group label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
+    .filter-group select { font-family: var(--mono); font-size: 12px; background: var(--surface2); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
+    .filter-group select:disabled { opacity: 0.4; cursor: not-allowed; }
 
     #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid #1a3a5c; flex-shrink: 0; }
     #statusBar.ok    { background: var(--green-dim); color: var(--green); border-color: #1a3a22; }
@@ -125,10 +127,19 @@
 </header>
 
 <div id="filterBar">
-  <label for="modelFilter">Filter:</label>
-  <select id="modelFilter" disabled>
-    <option value="ALL">Alle modeller i vieweren</option>
-  </select>
+  <div class="filter-group">
+    <label for="versionFilter">Håndbok:</label>
+    <select id="versionFilter" disabled>
+      <option value="2025">R761 (2025)</option>
+      <option value="2018">R761 (2018)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="modelFilter">Utvalg:</label>
+    <select id="modelFilter" disabled>
+      <option value="ALL">Alle modeller i vieweren</option>
+    </select>
+  </div>
 </div>
 
 <div id="statusBar">Kobler til Trimble Connect...</div>
@@ -160,30 +171,33 @@ const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
 async function connect(){
   try {
     API = await window.TrimbleConnectWorkspace.connect(window.parent);
-    await lastJSONFil();
+    
+    // Laster inn standardversjonen (f.eks. 2025) ved oppstart
+    await lastJSONFil($('versionFilter').value);
+    
     $('scanBtn').disabled = false;
+    $('versionFilter').disabled = false;
     $('modelBadge').textContent = 'Tilkoblet';
   } catch(e) { 
     setStatus('❌ Kunne ikke koble til API.', 'error'); 
   }
 }
 
-// --- OPPDATERT: SAMS MELTINGSMOTOR FOR FLERE JSON-FILER ---
-async function lastJSONFil() {
-  setStatus('⏳ Laster inn prosesskode-kapitler (1-9)...');
+// Tar nå inn versjons-variabelen (f.eks "2018" eller "2025")
+async function lastJSONFil(versjon) {
+  setStatus(`⏳ Laster inn R761 (${versjon})...`);
   try {
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
     const cacheBuster = new Date().getTime();
     
     const promises = kapitler.map(kap => 
-      // ENDRING: Fjernet "json_filer/" foran filnavnet
-      fetch(`Prosesskode_${kap}.json?nocache=${cacheBuster}`)
+      fetch(`Prosesskode_${versjon}_${kap}.json?nocache=${cacheBuster}`)
         .then(res => {
           if (!res.ok) throw new Error(`Status ${res.status}`);
           return res.json();
         })
         .catch(err => {
-          console.warn(`Hoppet over kapittel ${kap} (Filen mangler eller er tom)`);
+          console.warn(`Hoppet over kapittel ${kap} for ${versjon}`);
           return null; 
         })
     );
@@ -201,26 +215,57 @@ async function lastJSONFil() {
     });
     
     if (totaltLastedeKoder === 0) {
-      throw new Error("Ingen JSON-filer ble funnet. Sjekk at de heter Prosesskode_1.json osv.");
+      throw new Error(`Fant ingen filer for versjon ${versjon}.`);
     }
     
-    setStatus(`✅ Suksess! Lastet inn ${totaltLastedeKoder} koder på tvers av kapitler.`, 'ok');
+    setStatus(`✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
   } catch (error) {
-    console.error("Kritisk databasefeil:", error);
-    setStatus(`⚠️ Databasefeil: ${error.message}. Skanning vil vise "Ukjent prosess".`, 'warn');
+    console.error("Databasefeil:", error);
+    setStatus(`⚠️ Feil ved lasting av ${versjon}: ${error.message}`, 'warn');
     svvHandbok = { prosesskoder: {} };
   }
 }
 
+// Oppdaterer innholdet i listene hvis du bytter håndbok ETTER skanning
+function oppdaterRegisterMedNyHandbok() {
+    for (let kode in globalProsessRegister) {
+        const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
+        
+        globalProsessRegister[kode].tittel = handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
+        globalProsessRegister[kode].enhet = handbokData && handbokData.enhet ? handbokData.enhet : "?";
+        globalProsessRegister[kode].url = handbokData && handbokData.url ? handbokData.url : null;
+        globalProsessRegister[kode].tekst = handbokData && handbokData.tekst ? handbokData.tekst : null;
+    }
+}
+
+// Lytter på endring av håndbok-versjon
+$('versionFilter').addEventListener('change', async (e) => {
+    $('versionFilter').disabled = true;
+    
+    // Last inn det nye regelsettet
+    await lastJSONFil(e.target.value);
+    
+    // Hvis vi allerede har skannet en modell, oppdaterer vi tekstene og tegner på nytt
+    if (Object.keys(globalProsessRegister).length > 0) {
+        oppdaterRegisterMedNyHandbok();
+        tegnOppUI(globalProsessRegister, $('modelFilter').value);
+    }
+    
+    $('versionFilter').disabled = false;
+});
+
+// Lytter på endring av modell-filter
 $('modelFilter').addEventListener('change', (e) => {
     tegnOppUI(globalProsessRegister, e.target.value);
 });
+
 
 $('scanBtn').addEventListener('click', async () => {
   if (!API) return;
   
   $('scanBtn').disabled = true;
   $('modelFilter').disabled = true;
+  $('versionFilter').disabled = true;
   $('mainContent').innerHTML = '';
   globalProsessRegister = {};
   globalModelsMap = {};
@@ -248,6 +293,7 @@ $('scanBtn').addEventListener('click', async () => {
     if (!models || models.length === 0) {
       setStatus('⚠️ Fant ingen objekter i vieweren.', 'warn');
       $('scanBtn').disabled = false;
+      $('versionFilter').disabled = false;
       return;
     }
 
@@ -320,10 +366,12 @@ $('scanBtn').addEventListener('click', async () => {
     setStatus(`✅ Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
     $('scanBtn').disabled = false;
     $('modelFilter').disabled = false;
+    $('versionFilter').disabled = false;
 
   } catch (error) {
     setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
     $('scanBtn').disabled = false;
+    $('versionFilter').disabled = false;
   }
 });
 
