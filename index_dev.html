@@ -197,35 +197,15 @@ const $ = id => document.getElementById(id);
 const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
 const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
 
-async function connect() {
-
+async function connect(){
   try {
-
-    API = await TrimbleConnectWorkspace.connect(
-      window.parent,
-      () => {}
-    );
-
-    console.log("TC API:", API);
-
+    API = await window.TrimbleConnectWorkspace.connect(window.parent);
     await lastJSONFil($('versionFilter').value);
-
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
-
     $('modelBadge').textContent = 'Tilkoblet';
-
-    setStatus('✅ Koblet til Trimble Connect.', 'ok');
-
-  } catch(e) {
-
-    console.error(e);
-
-    setStatus(
-      `❌ Kunne ikke koble til API: ${e.message}`,
-      'error'
-    );
-
+  } catch(e) { 
+    setStatus('❌ Kunne ikke koble til API.', 'error'); 
   }
 }
 
@@ -428,71 +408,14 @@ $('scanBtn').addEventListener('click', async () => {
             objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
           }
 
-          const handbokData =
-            hasProsesskode &&
-            svvHandbok &&
-            svvHandbok.prosesskoder
-                ? svvHandbok.prosesskoder[prosesskode]
-                : null;
-
-          const hpKode =
-            hasProsesskode
-                ? (prosesskode.includes('.')
-                    ? prosesskode.split('.')[0][0]
-                    : prosesskode[0])
-                : "X";
-
-          /* =========================
-             EGENDEFINERTE KODER
-             ========================= */
-
-          const prosessNavnRaw =
-            flatProps["Prosessnavn"] ??
-            flatProps["prosessnavn"] ??
-            flatProps["ProsessNavn"];
-
-          const egendefinertProsessNavn =
-            prosessNavnRaw &&
-            String(prosessNavnRaw).trim() !== ""
-                ? `${String(prosessNavnRaw).trim()} (egendefinert)`
-                : "Ukjent prosesskode";
-
-          const enhetRaw =
-            flatProps["Enhet"] ??
-            flatProps["enhet"];
-
-          const egendefinertEnhet =
-            enhetRaw &&
-            String(enhetRaw).trim() !== ""
-                ? String(enhetRaw).trim()
-                : "?";
-
-          const erEgendefinertKode =
-            hasProsesskode &&
-            !handbokData;
-
-        /* =========================
-           ENHET
-           ========================= */
-
+          const handbokData = hasProsesskode && svvHandbok && svvHandbok.prosesskoder ? svvHandbok.prosesskoder[prosesskode] : null;
+          const hpKode = hasProsesskode ? (prosesskode.includes('.') ? prosesskode.split('.')[0][0] : prosesskode[0]) : "X";
+          
           let enhet = "?";
-
           if (hasProsesskode) {
-
-              if (handbokData && handbokData.enhet) {
-
-                enhet = handbokData.enhet.toLowerCase();
-
-              } else if (erEgendefinertKode) {
-
-                enhet = egendefinertEnhet.toLowerCase();
-
-              }
-
+              enhet = handbokData && handbokData.enhet ? handbokData.enhet.toLowerCase() : "?";
           } else {
-
               enhet = "stk";
-
           }
 
           let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"];
@@ -523,34 +446,13 @@ $('scanBtn').addEventListener('click', async () => {
           if (!globalProsessRegister[prosesskode]) {
             if (prosesskode === "MANGLER") {
                 globalProsessRegister[prosesskode] = {
-
-                  tittel:
-                      handbokData && handbokData.tittel
-                          ? handbokData.tittel
-                          : egendefinertProsessNavn,
-
-                  enhet:
-                      handbokData && handbokData.enhet
-                          ? handbokData.enhet
-                          : egendefinertEnhet,
-
-                  hovedprosess: hpKode,
-
-                  url:
-                      handbokData && handbokData.url
-                          ? handbokData.url
-                          : null,
-
-                  tekst:
-                      handbokData && handbokData.tekst
-                          ? handbokData.tekst
-                          : null,
-
-                  egendefinert: erEgendefinertKode,
-
-                  objekter: []
-
-              };
+                    tittel: "Objekter som mangler prosesskode",
+                    enhet: "stk",
+                    hovedprosess: "X",
+                    url: null,
+                    tekst: null,
+                    objekter: []
+                };
             } else {
                 globalProsessRegister[prosesskode] = {
                   tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
