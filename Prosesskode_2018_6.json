@@ -1,0 +1,1101 @@
+{
+  "metadata": {
+    "versjon": "R761 - 2018",
+    "kapittel": "6"
+  },
+  "prosesskoder": {
+    "6": {
+      "tittel": "Vegdekke",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter materialer og arbeider med nylegging og vedlikehold av grusdekker.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, uttak, opplasting, transport, utlegging og komprimering av grusdekke.",
+          "Omfatter arbeider og ev. materialer i forbindelse med riving, skjæring, fresing og oppretting av faste dekker. Omfatter også leverings- og behandlingsgebyrer.",
+          "Omfatter riving og fjerning av faste vegdekker på områder og i tykkelser som angitt, inkludert opplasting, transport og tipping på angitt lager eller mottak. Omfatter også leverings- og behandlingsgebyrer.",
+          "Alle kostnader for eventuell skjæring som entreprenøren måtte finne nødvendig innenfor området som rives, skal være inkludert i enhetsprisen. Eventuell skjæring som er prosjektert for områdets ytterkanter er medtatt i prosess 63.12.",
+          "Skjæring, fylling og vegfundament som skal fjernes dypere enn til underkant dekke er medtatt i hovedprosess 2.",
+          "Omfatter skjæring av faste dekker. Omfatter også leverings- og behandlingsgebyrer.",
+          "Omfatter fresing av faste dekker, inkludert eventuell oppvarming av dekket. Omfatter også fjerning til angitt lager eller mottak og rengjøring av frest overflate. Omfatter også leverings- og behandlingsgebyrer.",
+          "Omfatter levering, utlegging og komprimering av masse som angitt. Prosjektert areal og gjennomsnittlig forbruk i kg/m2 skal være som angitt i den spesielle beskrivelsen. Klebing er medtatt i prosess 65.4.",
+          "Omfatter levering og utførelse av overflatebehandling. Entreprenøren bestemmer påført mengde av bindemiddel og steinmaterialer. Omfatter også rengjøring av overflaten før legging og alle nødvendige etterarbeider som feiing, etterstrøing, ettervalsing, mv.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Gjelder overflatebehandling på underlag av varm- eller kaldblandede typer asfaltdekke, Ag bærelag, eksisterende overflatebehandling, betong, mv.",
+          "Gjelder overflatebehandling på underlag av ubundet materiale som grus og pukk, på penetrert pukk samt på bærelag stabilisert med sement, skumbitumen eller bitumenemulsjon.",
+          "Omfatter rengjøring av underliggende overflate etter behov, klebing før asfaltering, levering, utlegging og komprimering av asfaltdekke, inkludert eventuell armering.",
+          "Klebing er medtatt i prosess 65.4.",
+          "Klebing er medtatt i prosess 65.4.",
+          "Omfatter levering og arbeider med armering av asfaltdekker Materialer og arbeider til ekstra klebing på utlagt armering, utover det som er medtatt i prosess 65.4, skal være inkludert i enhetsprisen. Ekstra arbeider for avstrøing med asfalt på utlagt armering skal være inkludert i enhetsprisen. Medgått asfalt til avstrøingen måles under aktuell prosess for asfaltmasse.",
+          "Omfatter levering og påføring av klebemiddel før legging av asfalt.",
+          "Omfatter levering og arbeider med nye betongdekker så som utlegging, avretting og etterbehandling etc. inklusive forskaling og fugearbeider.",
+          "Omfatter også levering og arbeider med dekker av belegningsstein og heller av betong, og dekker av naturstein.",
+          "Omfatter levering, utlegging, avretting og etterbehandling av uarmert betongdekke i angitt tykkelse, inklusive forskaling og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid.",
+          "Omfatter levering, utlegging, avretting og etterbehandling av armert betongdekke i angitt tykkelse inklusive forskaling, armering og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid.",
+          "Omfatter levering og arbeider med langsgående fuger inklusive forankringsjern og eventuelle dybler, ferdig forseglet i henhold til planene.",
+          "Omfatter levering og arbeider med tversgående ekspansjonsfuger, inklusive eventuelle foreskrevne dybler.",
+          "Omfatter levering og arbeider med tversgående fuger som kontraksjonsfuger, inklusive foreskrevne dybler.",
+          "Omfatter levering og arbeider med tversgående vinkelendringsfuger inklusive foreskreven ekstra armering.",
+          "Omfatter levering og arbeider med legging av valsebetong.",
+          "Omfatter levering og arbeider med legging av belegningsstein og heller, inklusive for- og etterarbeider.",
+          "Omfatter levering og arbeider med belegninger utenfor kjørebanen, så som belegning på skuldre og fortau/gangbane, trafikkøy eventuelt med oppfyllingsmasser, dekkefornyelse, ledelinjer i gategrunn etc. inklusive varmekabelanlegg.",
+          "Omfatter levering og arbeider med belegninger på skuldre.",
+          "Omfatter levering og arbeider med belegninger på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring og skulder i tunnel.",
+          "Omfatter levering og arbeider med asfaltdekke på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring og skulder i tunnel). Dekketype og forbruk i kg pr m2 eller tykkelse i mm er angitt i den spesielle beskrivelsen.",
+          "Omfatter levering og arbeider med steindekke, betongheller etc. på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring. Omfatter også levering og arbeider med fiberduk og sandpute under steindekket.",
+          "Omfatter levering og arbeider med øvrige dekketyper på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring).",
+          "Omfatter levering og arbeider med betong på skulder i tunnel.",
+          "Omfatter levering og arbeider med oppfyllingsmasser på trafikkøyer inkl. sentraløy i rundkjøring.",
+          "Omfatter levering og arbeider med varmekabler i fortau, gangbaner, trapper og gangfelt, tilknytning til strømnettet etc.",
+          "Omfatter levering og arbeider med ledelinjer i gategrunn for å etablere standardiserte følbare overflater på gangareal, inklusiv merkostnader ved tilpasninger til tilstøtende overflater/belegg."
+        ],
+        "b": [
+          "Grusdekket skal ha en slik korngradering at materialet blir stabilt og tett. Korngradering for knust berg og knust grus skal være som angitt i håndbok N200 Vegbygging, tabell 661.2. Maksimal steinstørrelse skal ikke overstige 22 mm. Krav til materialegenskaper er angitt i håndbok N200 Vegbygging, pkt. 661.",
+          "For å oppnå god slitestyrke skal grovfraksjonen i grusdekket bestå av en hard og seig bergart slik at nedknusingen blir minst mulig. Dersom innhold av glimmer er større enn 20 % i fraksjonen 0,125-0,250 mm, skal materialets egnethet vurderes spesielt.",
+          "Krav til materialer for oppretting skal være som angitt i håndbok N200 Vegbygging.",
+          "Materialer skal være iht. håndbok N200 Vegbygging, kap. 653.3. Entreprenøren velger egnet type bindemiddel ut fra trafikkhastighet, andel tunge kjøretøyer og klimatiske forhold. Valgt bindemiddel skal være bitumenemulsjon, penetrasjonsbitumen eller polymermodifisert bitumen.",
+          "Sortering av steinmaterialer (siktstørrelser) for de enkelte lag skal være som angitt i den spesielle beskrivelsen.",
+          "Krav til materialer for de enkelte dekketyper er angitt i håndbok N200 Vegbygging, kap. 65. Dimensjonerende ÅDT for spesifisering av krav skal være som angitt i den spesielle beskrivelsen. Dimensjonerende ÅDT angitt for dette formålet er ikke nødvendigvis lik dimensjonerende ÅDT for prosjektet.",
+          "Resirkulert asfalt kan tilsettes som gjenbruk i alle normerte typer av varmblandet asfalt. Uansett tilsetningsmengde skal alle krav til den aktuelle normerte massetypen være oppfylt. Tilsetningsmengde av resirkulert asfalt over 10% og 20% for hhv. slitelag og bindlag, utløser krav om fortløpende dokumentasjon av bindemiddelets egenskaper ved laboratorieprøving. Andel av tilsatt resirkulert asfalt skal ikke overstige kravene i håndbok N200 Vegbygging, tabell 650.1.",
+          "I alle asfaltmasser skal det tilsettes vedheftningsmiddel. Ved bruk av amin som vedheftningsmiddel skal det ikke tilsettes mindre enn 0,3 %. Effekt av type og mengde vedheftningsmiddel skal dokumenteres ved laboratorieprøving sammen med bindemiddel og steinmaterialer som brukes. Krav er angitt i fig. 65.1.",
+          "Materialtype og bindemiddel skal være som angitt i den spesielle beskrivelsen. Krav til materialer for aktuell massetype er angitt i håndbok N200 Vegbygging kap. 652. Der hvor det er beskrevet bruk av polymermodifisert bindemiddel PMB, skal denne være av type 65/105-60 iht. håndbok N200 Vegbygging, pkt. 651.1.",
+          "Materialtype og bindemiddel skal være som angitt i den spesielle beskrivelsen. Krav til materialer for aktuell massetype er angitt i håndbok N200 Vegbygging kap. 652. Der hvor det er beskrevet bruk av polymermodifisert bindemiddel PMB, skal denne være av type 65/105-60 iht. håndbok N200 Vegbygging, pkt. 651.1.",
+          "Friksjonsforholdene på ferdig dekke skal være ensartet for hele dekket og alle naturlig avgrensede områder, med minimum friksjonskoeffisient som angitt i håndbok N200 Vegbygging, pkt. 650.92.",
+          "Armeringstype og krav til materialer er angitt i den spesielle beskrivelsen.",
+          "Det skal nyttes betong med trykkfasthet og etter miljø- og kontrollklasse som angitt. Betong utføres som angitt i den spesielle beskrivelsen.",
+          "Det skal ved forhåndsprøving påvises at den foreskrevne trykkfasthet oppnås med tilstrekkelig margin for spredning i trykkfastheten. Det skal utføres prøvestøp med det valgte utstyr for å kunne påvise akseptabelt resultat med den valgte utstyrs- / materialkombinasjon. Steininnholdet i betongen skal være så høyt som utleggerutstyret tillater m.h.p. komprimering og avretting. Andelen av tilslagskorn mindre enn 4 mm skal ikke overstige 42 %. Betongen skal være frostbestandig.",
+          "Som forankringsjern skal brukes 800 mm lange stenger av kamstål B500NC med diameter 10 mm.",
+          "Det skal under støping legges inn dybler av glattstål S 235 JO eller JR, diameter 25 mm, lengde 500 mm. Dyblene skal ha coating av varm bitumen 35/50 - 50/70, eller dekkes av plasthylse ca 0,3 mm, i minst halve lengden + 50 mm.",
+          "Til forankring i vinkelendringsfugene skal det brukes 800 mm lange kamstål B500NC med diameter 10 mm, c/c 300 mm.",
+          "Det skal anvendes normalvektsbetong i henhold til håndbok R762 Prosesskode 2, prosess 84.41, 84.45 og 84.46. Forøvrig som prosess 84.4 b)-e)."
+        ],
+        "c": [
+          "Grusdekket skal legges ut slik at det blir homogent og får en jevn overflate etter komprimeringen. Materialet skal være fuktig ved utleggingen for å hindre separasjon. Etter at grusen er kommet på vegen skal grusdekket vannes, klorkalsium tilføres, blandes, planeres og komprimeres til 95 % Modifisert Proctor iht. håndbok N200 Vegbygging, pkt. 662. Ved komprimering utført med utstyr og antall overfarter som angitt iht. håndbok N200 Vegbygging tabell 662.1, kan kravet til komprimering anses som oppfylt.",
+          "Riving, skjæring og fresing kan omfatte hele dekkets tykkelse eller i en angitt dybde. Ved riving og fresing av faste dekker skal det utvises særlig forsiktighet for å unngå skader på kummer, sluk og eventuelt andre installasjoner i vegbanen.",
+          "Riving skal utføres i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen. Revet dekkemateriale skal ikke blandes eller tilsøles med annen masse.",
+          "Skjæring skal utføres med sag i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen.",
+          "Fresing skal utføres i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen. Sugebil skal benyttes til rengjøring der hvor frest område skal påsettes trafikk eller etterfølges av asfaltlegging. Eventuelle krav til jevnhet og overflatetekstur av frest areal er angitt i den spesielle beskrivelsen.",
+          "Utførelsen skal være iht. håndbok N200 Vegbygging, pkt. 653.3.",
+          "Toleransene for bindemiddelinnhold i forhold til masseresept (arbeidsresept) er angitt i figur 65.2.",
+          "Ekstra klebing på armeringen skal påføres i begge retninger. Øvrige krav til utførelse er angitt i den spesielle beskrivelsen.",
+          "Hele det aktuelle arealet skal være jevnt klebet og det skal ikke klebes utenfor det daglige leggearealet. Klebing skal utføres med et forbruk tilpasset dekkets overflatestruktur slik at flekker uten klebemiddel ikke oppstår, og samtidig sikrer god heft mellom lagene. Påført mengde skal være minimum 0,10 kg/m2 restbindemiddel, ved ev. lavere behov skal dette avtales med byggherren.",
+          "Dekker av betong skal utføres som angitt i den spesielle beskrivelsen. Betongarbeidene skal utføres etter bestemmelsene i NS-EN 206-1 Betong del 1 Spesifikasjon, egenskaper og samsvar, og NS-EN 13670 Utførelse av betongkonstruksjoner.",
+          "Dekker av belegningsstein og heller av betong, samt dekker av naturstein, skal utføres som angitt i håndbok N200 Vegbygging, kap. 67.",
+          "Underlaget skal rengjøres og fuktes før betongen legges ut. Betongproduksjonen skal foregå slik at temperaturen på den ferske betongen ikke er høyere enn nødvendig.",
+          "Så snart betongen er ferdig utstøpt, skal jevnhet kontrolleres med en 3 m lang rettholt. Ujevnheter større enn 4 mm skal straks jevnes ut, ev. med ny bearbeiding med maskinene. Eventuelle former eller sideforskaling skal være tilstrekkelig stive og understøttet til at de kan bære maskinene uten å gi nedbøyning over 2 mm. Formene skal være utlagt i tilstrekkelig lengde for 2 timers kontinuerlig støp foran støpestedet. De skal ikke fjernes eller løsnes før betongen er tilstrekkelig sterk så dekkets kanter ikke skades. De skal tidligst løsnes 20 timer etter at betongen er ferdig bearbeidet, bortsett fra der det er nødvendig for saging av fuger.",
+          "Etter ferdig komprimering skal dekket kostes med en stiv kost som etterlater 2-3 mm dype riller i overflaten. Kostingen skal gjøres på slikt tidspunkt at rillene ikke flyter sammen. Snarest mulig etter kostingen skal dekket beskyttes mot uttørking ved at overflaten påsprøytes en godkjent membranherdner 0,4-0,5 l/m2 (ikke voksholdig). Membranherdneren skal være pigmentert. Etter at betongen er bundet av skal dekket holdes fuktig minst 3 dager.",
+          "Dersom værforholdene tilsier det, skal det etter støpemaskinen følge rulletak som skal beskytte det nylagte dekke mot regn og sol. Rulletakets lengde skal minst kunne dekke 2 timers kontinuerlig støp. Sprekker og riss som skyldes feil i utførelsen av arbeidene skal utbedres etter metode godkjent av byggherren.",
+          "Dekket skal ikke trafikkeres med kjøretøyer før tidligst etter oppnådd fasthet > 35 MPa. Akseltrykket skal da ikke overskride 2,5 tonn. Dekket skal ikke trafikkeres eller belastes slik at membranherdneren skades eller at dekkets bæreevne på noe punkt overskrides.",
+          "Langsgående fuger utføres alltid som vinkelendringsfuger med forankring over fugen. Ved utstøping av ett felt om gangen, påstrykes den vertikale flate bitumen eller annet hefthindrende middel før neste felt støpes inntil. Fugekantene avrundes under støpingen, 5-6 mm radius.",
+          "Forankringsjern plasseres midt i dekket med c/c 1000 mm. 400 mm av stengene støpes inn i første felt og 400 mm i andre felt. Forankringsjern skal ikke bøyes.",
+          "Når dekket støpes i full bredde skal det sages eller det vibreres et midlertidig fugeinnlegg under støping. Forankringsjern med lengde 800 mm skal legges inn som beskrevet ovenfor.",
+          "Tverrfuger skal stå vinkelrett på langsgående fuger med mindre skråfuger er spesifisert. Utlegging av dybler i tverrfugene skal utføres maskinelt med en dybelutlegger eller v.hj.a. forhåndsplasserte dybelkurver. Dyblene skal ligge parallelt med dekkets senterlinje i lengderetningen med c/c 300 mm, og normalt i dekkets midtre plan etter slitasje. Toleransen av dyblenes parallellitet i forhold til overflate og senterlinje skal være maks 4 %. Toleransen vertikalt +/- 20 mm og horisontalt +/- 30 mm.",
+          "Saging av fuger utføres som angitt i den spesielle beskrivelsen.",
+          "Tverrfuger skal stå vinkelrett på langsgående fuger. Senterlinje for forankringene skal være i dekkets midtre plan etter slitasje. Saging av fuger utføres som angitt i den spesielle beskrivelsen."
+        ],
+        "d": [
+          "Krav til geometri og jevnhet skal være iht. håndbok N200 Vegbygging pkt. 662.",
+          "Krav og toleranser for geometri og jevnhet skal være iht. håndbok N200 Vegbygging, tabell 650.2.",
+          "På det ferdige dekket skal ingen ujevnheter være over 4,0 mm målt med 3 m lang rettholt. Det skal være maks. 15 ujevnheter større enn 3,0 mm pr. 100 m feltlengde. Ved fuger skal høydeforskjellen mellom platekantene være høyst 2 mm. Avvik fra prosjektert høyde på det ferdige dekket skal være innenfor +/- 10 mm. Avvik fra prosjektert bredde skal være innenfor + 200 mm og - 0 mm. Gjennomsnitt dekketykkelse skal minst være som prosjektert. Enkeltverdier skal ikke underskride prosjektert tykkelse med mer enn 10 mm.",
+          "Toleranser skal være som for tilliggende kjørefelt."
+        ],
+        "e": [
+          "Prøving og kontroll skal være iht. håndbok N200 Vegbygging og Teknologirapport TR2505 Reseptorienterte asfaltkontrakter, Vegdirektoratet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Det skal utføres forhåndsprøvinger, driftskontroll og materialkontroll."
+        ],
+        "x": [
+          "Kostnad angis som rund sum. Enhet: RS",
+          "Mengden måles som utført løst volum. Enhet: m3",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert lengde kutt. Enhet: m",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som utført anbrakt masse. Enhet: tonn",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning 1:1. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning 1:1. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert armert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m.",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal ledelinje. Enhet: m2"
+        ]
+      }
+    },
+    "61": {
+      "tittel": "GRUSDEKKE",
+      "enhet": "RS",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter materialer og arbeider med nylegging og vedlikehold av grusdekker.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, uttak, opplasting, transport, utlegging og komprimering av grusdekke."
+        ],
+        "b": [
+          "Grusdekket skal ha en slik korngradering at materialet blir stabilt og tett. Korngradering for knust berg og knust grus skal være som angitt i håndbok N200 Vegbygging, tabell 661.2. Maksimal steinstørrelse skal ikke overstige 22 mm. Krav til materialegenskaper er angitt i håndbok N200 Vegbygging, pkt. 661.",
+          "For å oppnå god slitestyrke skal grovfraksjonen i grusdekket bestå av en hard og seig bergart slik at nedknusingen blir minst mulig. Dersom innhold av glimmer er større enn 20 % i fraksjonen 0,125-0,250 mm, skal materialets egnethet vurderes spesielt."
+        ],
+        "c": "Grusdekket skal legges ut slik at det blir homogent og får en jevn overflate etter komprimeringen. Materialet skal være fuktig ved utleggingen for å hindre separasjon. Etter at grusen er kommet på vegen skal grusdekket vannes, klorkalsium tilføres, blandes, planeres og komprimeres til 95 % Modifisert Proctor iht. håndbok N200 Vegbygging, pkt. 662. Ved komprimering utført med utstyr og antall overfarter som angitt iht. håndbok N200 Vegbygging tabell 662.1, kan kravet til komprimering anses som oppfylt.",
+        "d": "Krav til geometri og jevnhet skal være iht. håndbok N200 Vegbygging pkt. 662.",
+        "x": [
+          "Kostnad angis som rund sum. Enhet: RS",
+          "Mengden måles som utført løst volum. Enhet: m3"
+        ]
+      }
+    },
+    "61.1": {
+      "tittel": "Oppgrusing (legging av grusdekke)",
+      "enhet": "m3",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, uttak, opplasting, transport, utlegging og komprimering av grusdekke.",
+        "b": [
+          "Grusdekket skal ha en slik korngradering at materialet blir stabilt og tett. Korngradering for knust berg og knust grus skal være som angitt i håndbok N200 Vegbygging, tabell 661.2. Maksimal steinstørrelse skal ikke overstige 22 mm. Krav til materialegenskaper er angitt i håndbok N200 Vegbygging, pkt. 661.",
+          "For å oppnå god slitestyrke skal grovfraksjonen i grusdekket bestå av en hard og seig bergart slik at nedknusingen blir minst mulig. Dersom innhold av glimmer er større enn 20 % i fraksjonen 0,125-0,250 mm, skal materialets egnethet vurderes spesielt."
+        ],
+        "c": "Grusdekket skal legges ut slik at det blir homogent og får en jevn overflate etter komprimeringen. Materialet skal være fuktig ved utleggingen for å hindre separasjon. Etter at grusen er kommet på vegen skal grusdekket vannes, klorkalsium tilføres, blandes, planeres og komprimeres til 95 % Modifisert Proctor iht. håndbok N200 Vegbygging, pkt. 662. Ved komprimering utført med utstyr og antall overfarter som angitt iht. håndbok N200 Vegbygging tabell 662.1, kan kravet til komprimering anses som oppfylt.",
+        "d": "Krav til geometri og jevnhet skal være iht. håndbok N200 Vegbygging pkt. 662.",
+        "x": "Mengden måles som utført løst volum. Enhet: m3"
+      }
+    },
+    "63": {
+      "tittel": "RIVING, SKJÆRING, FRESING OG OPPRETTING AV FASTE DEKKER",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter arbeider og ev. materialer i forbindelse med riving, skjæring, fresing og oppretting av faste dekker. Omfatter også leverings- og behandlingsgebyrer.",
+          "Omfatter riving og fjerning av faste vegdekker på områder og i tykkelser som angitt, inkludert opplasting, transport og tipping på angitt lager eller mottak. Omfatter også leverings- og behandlingsgebyrer.",
+          "Alle kostnader for eventuell skjæring som entreprenøren måtte finne nødvendig innenfor området som rives, skal være inkludert i enhetsprisen. Eventuell skjæring som er prosjektert for områdets ytterkanter er medtatt i prosess 63.12.",
+          "Skjæring, fylling og vegfundament som skal fjernes dypere enn til underkant dekke er medtatt i hovedprosess 2.",
+          "Omfatter skjæring av faste dekker. Omfatter også leverings- og behandlingsgebyrer.",
+          "Omfatter fresing av faste dekker, inkludert eventuell oppvarming av dekket. Omfatter også fjerning til angitt lager eller mottak og rengjøring av frest overflate. Omfatter også leverings- og behandlingsgebyrer.",
+          "Omfatter levering, utlegging og komprimering av masse som angitt. Prosjektert areal og gjennomsnittlig forbruk i kg/m2 skal være som angitt i den spesielle beskrivelsen. Klebing er medtatt i prosess 65.4."
+        ],
+        "b": "Krav til materialer for oppretting skal være som angitt i håndbok N200 Vegbygging.",
+        "c": [
+          "Riving, skjæring og fresing kan omfatte hele dekkets tykkelse eller i en angitt dybde. Ved riving og fresing av faste dekker skal det utvises særlig forsiktighet for å unngå skader på kummer, sluk og eventuelt andre installasjoner i vegbanen.",
+          "Riving skal utføres i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen. Revet dekkemateriale skal ikke blandes eller tilsøles med annen masse.",
+          "Skjæring skal utføres med sag i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen.",
+          "Fresing skal utføres i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen. Sugebil skal benyttes til rengjøring der hvor frest område skal påsettes trafikk eller etterfølges av asfaltlegging. Eventuelle krav til jevnhet og overflatetekstur av frest areal er angitt i den spesielle beskrivelsen."
+        ],
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert lengde kutt. Enhet: m",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som utført anbrakt masse. Enhet: tonn"
+        ]
+      }
+    },
+    "63.1": {
+      "tittel": "Riving og skjæring av faste dekker",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter riving og fjerning av faste vegdekker på områder og i tykkelser som angitt, inkludert opplasting, transport og tipping på angitt lager eller mottak. Omfatter også leverings- og behandlingsgebyrer.",
+          "Alle kostnader for eventuell skjæring som entreprenøren måtte finne nødvendig innenfor området som rives, skal være inkludert i enhetsprisen. Eventuell skjæring som er prosjektert for områdets ytterkanter er medtatt i prosess 63.12.",
+          "Skjæring, fylling og vegfundament som skal fjernes dypere enn til underkant dekke er medtatt i hovedprosess 2.",
+          "Omfatter skjæring av faste dekker. Omfatter også leverings- og behandlingsgebyrer."
+        ],
+        "c": [
+          "Riving skal utføres i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen. Revet dekkemateriale skal ikke blandes eller tilsøles med annen masse.",
+          "Skjæring skal utføres med sag i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen."
+        ],
+        "x": [
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert lengde kutt. Enhet: m"
+        ]
+      }
+    },
+    "63.11": {
+      "tittel": "Riving av faste dekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter riving og fjerning av faste vegdekker på områder og i tykkelser som angitt, inkludert opplasting, transport og tipping på angitt lager eller mottak. Omfatter også leverings- og behandlingsgebyrer.",
+          "Alle kostnader for eventuell skjæring som entreprenøren måtte finne nødvendig innenfor området som rives, skal være inkludert i enhetsprisen. Eventuell skjæring som er prosjektert for områdets ytterkanter er medtatt i prosess 63.12.",
+          "Skjæring, fylling og vegfundament som skal fjernes dypere enn til underkant dekke er medtatt i hovedprosess 2."
+        ],
+        "c": "Riving skal utføres i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen. Revet dekkemateriale skal ikke blandes eller tilsøles med annen masse.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "63.111": {
+      "tittel": "Riving av asfaltdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.112": {
+      "tittel": "Riving av betongdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.113": {
+      "tittel": "Riving av steindekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.12": {
+      "tittel": "Skjæring av faste dekker",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter skjæring av faste dekker. Omfatter også leverings- og behandlingsgebyrer.",
+        "c": "Skjæring skal utføres med sag i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert lengde kutt. Enhet: m"
+      }
+    },
+    "63.121": {
+      "tittel": "Skjæring av asfaltdekke",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.122": {
+      "tittel": "Skjæring av betongdekke",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.2": {
+      "tittel": "Fresing av faste dekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter fresing av faste dekker, inkludert eventuell oppvarming av dekket. Omfatter også fjerning til angitt lager eller mottak og rengjøring av frest overflate. Omfatter også leverings- og behandlingsgebyrer.",
+        "c": "Fresing skal utføres i hele dekkets tykkelse eller i dybde som angitt i den spesielle beskrivelsen. Sugebil skal benyttes til rengjøring der hvor frest område skal påsettes trafikk eller etterfølges av asfaltlegging. Eventuelle krav til jevnhet og overflatetekstur av frest areal er angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "63.21": {
+      "tittel": "Fresing av asfaltdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.22": {
+      "tittel": "Fresing av betongdekke",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.3": {
+      "tittel": "Oppretting av faste dekker",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av masse som angitt. Prosjektert areal og gjennomsnittlig forbruk i kg/m2 skal være som angitt i den spesielle beskrivelsen. Klebing er medtatt i prosess 65.4.",
+        "x": "Mengden måles som utført anbrakt masse. Enhet: tonn"
+      }
+    },
+    "63.31": {
+      "tittel": "Oppretting med asfaltgrusbetong (Agb)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.32": {
+      "tittel": "Oppretting med asfaltbetong (Ab)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.33": {
+      "tittel": "Oppretting med mykasfalt (Ma)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "63.34": {
+      "tittel": "Oppretting med asfaltert grus (Ag)",
+      "enhet": "tonn",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64": {
+      "tittel": "OVERFLATEBEHANDLING",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering og utførelse av overflatebehandling. Entreprenøren bestemmer påført mengde av bindemiddel og steinmaterialer. Omfatter også rengjøring av overflaten før legging og alle nødvendige etterarbeider som feiing, etterstrøing, ettervalsing, mv.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Gjelder overflatebehandling på underlag av varm- eller kaldblandede typer asfaltdekke, Ag bærelag, eksisterende overflatebehandling, betong, mv.",
+          "Gjelder overflatebehandling på underlag av ubundet materiale som grus og pukk, på penetrert pukk samt på bærelag stabilisert med sement, skumbitumen eller bitumenemulsjon."
+        ],
+        "b": [
+          "Materialer skal være iht. håndbok N200 Vegbygging, kap. 653.3. Entreprenøren velger egnet type bindemiddel ut fra trafikkhastighet, andel tunge kjøretøyer og klimatiske forhold. Valgt bindemiddel skal være bitumenemulsjon, penetrasjonsbitumen eller polymermodifisert bitumen.",
+          "Sortering av steinmaterialer (siktstørrelser) for de enkelte lag skal være som angitt i den spesielle beskrivelsen."
+        ],
+        "c": "Utførelsen skal være iht. håndbok N200 Vegbygging, pkt. 653.3.",
+        "x": "Mengden måles som prosjektert behandlet areal. Enhet: m2"
+      }
+    },
+    "64.1": {
+      "tittel": "Overflatebehandling av faste dekker",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Gjelder overflatebehandling på underlag av varm- eller kaldblandede typer asfaltdekke, Ag bærelag, eksisterende overflatebehandling, betong, mv."
+      }
+    },
+    "64.11": {
+      "tittel": "Enkel overflatebehandling med pukk (Eo)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64.12": {
+      "tittel": "Dobbel overflatebehandling med pukk (Do)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64.13": {
+      "tittel": "Avstrøing",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64.2": {
+      "tittel": "Overflatebehandling som selvstendig dekke",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Gjelder overflatebehandling på underlag av ubundet materiale som grus og pukk, på penetrert pukk samt på bærelag stabilisert med sement, skumbitumen eller bitumenemulsjon."
+      }
+    },
+    "64.21": {
+      "tittel": "Enkel overflatebehandling med grus (Eog)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64.22": {
+      "tittel": "Dobbel overflatebehandling med grus (Dog)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64.23": {
+      "tittel": "Enkel overflatebehandling med pukk (Eo)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64.24": {
+      "tittel": "Dobbel overflatebehandling med pukk (Do)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "64.25": {
+      "tittel": "Avstrøing",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65": {
+      "tittel": "ASFALTDEKKER",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter rengjøring av underliggende overflate etter behov, klebing før asfaltering, levering, utlegging og komprimering av asfaltdekke, inkludert eventuell armering.",
+          "Klebing er medtatt i prosess 65.4.",
+          "Klebing er medtatt i prosess 65.4.",
+          "Omfatter levering og arbeider med armering av asfaltdekker Materialer og arbeider til ekstra klebing på utlagt armering, utover det som er medtatt i prosess 65.4, skal være inkludert i enhetsprisen. Ekstra arbeider for avstrøing med asfalt på utlagt armering skal være inkludert i enhetsprisen. Medgått asfalt til avstrøingen måles under aktuell prosess for asfaltmasse.",
+          "Omfatter levering og påføring av klebemiddel før legging av asfalt."
+        ],
+        "b": [
+          "Krav til materialer for de enkelte dekketyper er angitt i håndbok N200 Vegbygging, kap. 65. Dimensjonerende ÅDT for spesifisering av krav skal være som angitt i den spesielle beskrivelsen. Dimensjonerende ÅDT angitt for dette formålet er ikke nødvendigvis lik dimensjonerende ÅDT for prosjektet.",
+          "Resirkulert asfalt kan tilsettes som gjenbruk i alle normerte typer av varmblandet asfalt. Uansett tilsetningsmengde skal alle krav til den aktuelle normerte massetypen være oppfylt. Tilsetningsmengde av resirkulert asfalt over 10% og 20% for hhv. slitelag og bindlag, utløser krav om fortløpende dokumentasjon av bindemiddelets egenskaper ved laboratorieprøving. Andel av tilsatt resirkulert asfalt skal ikke overstige kravene i håndbok N200 Vegbygging, tabell 650.1.",
+          "I alle asfaltmasser skal det tilsettes vedheftningsmiddel. Ved bruk av amin som vedheftningsmiddel skal det ikke tilsettes mindre enn 0,3 %. Effekt av type og mengde vedheftningsmiddel skal dokumenteres ved laboratorieprøving sammen med bindemiddel og steinmaterialer som brukes. Krav er angitt i fig. 65.1.",
+          "Materialtype og bindemiddel skal være som angitt i den spesielle beskrivelsen. Krav til materialer for aktuell massetype er angitt i håndbok N200 Vegbygging kap. 652. Der hvor det er beskrevet bruk av polymermodifisert bindemiddel PMB, skal denne være av type 65/105-60 iht. håndbok N200 Vegbygging, pkt. 651.1.",
+          "Materialtype og bindemiddel skal være som angitt i den spesielle beskrivelsen. Krav til materialer for aktuell massetype er angitt i håndbok N200 Vegbygging kap. 652. Der hvor det er beskrevet bruk av polymermodifisert bindemiddel PMB, skal denne være av type 65/105-60 iht. håndbok N200 Vegbygging, pkt. 651.1.",
+          "Friksjonsforholdene på ferdig dekke skal være ensartet for hele dekket og alle naturlig avgrensede områder, med minimum friksjonskoeffisient som angitt i håndbok N200 Vegbygging, pkt. 650.92.",
+          "Armeringstype og krav til materialer er angitt i den spesielle beskrivelsen."
+        ],
+        "c": [
+          "Toleransene for bindemiddelinnhold i forhold til masseresept (arbeidsresept) er angitt i figur 65.2.",
+          "Ekstra klebing på armeringen skal påføres i begge retninger. Øvrige krav til utførelse er angitt i den spesielle beskrivelsen.",
+          "Hele det aktuelle arealet skal være jevnt klebet og det skal ikke klebes utenfor det daglige leggearealet. Klebing skal utføres med et forbruk tilpasset dekkets overflatestruktur slik at flekker uten klebemiddel ikke oppstår, og samtidig sikrer god heft mellom lagene. Påført mengde skal være minimum 0,10 kg/m2 restbindemiddel, ved ev. lavere behov skal dette avtales med byggherren."
+        ],
+        "d": "Krav og toleranser for geometri og jevnhet skal være iht. håndbok N200 Vegbygging, tabell 650.2.",
+        "e": [
+          "Prøving og kontroll skal være iht. håndbok N200 Vegbygging og Teknologirapport TR2505 Reseptorienterte asfaltkontrakter, Vegdirektoratet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens)."
+        ],
+        "x": [
+          "Mengden måles som prosjektert areal målt midt i laget med skråning 1:1. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning 1:1. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert armert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2"
+        ]
+      }
+    },
+    "65.1": {
+      "tittel": "Asfaltdekker bindlag",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Klebing er medtatt i prosess 65.4.",
+        "b": "Materialtype og bindemiddel skal være som angitt i den spesielle beskrivelsen. Krav til materialer for aktuell massetype er angitt i håndbok N200 Vegbygging kap. 652. Der hvor det er beskrevet bruk av polymermodifisert bindemiddel PMB, skal denne være av type 65/105-60 iht. håndbok N200 Vegbygging, pkt. 651.1.",
+        "e": "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+        "x": "Mengden måles som prosjektert areal målt midt i laget med skråning 1:1. Enhet: m2"
+      }
+    },
+    "65.11": {
+      "tittel": "Bindlag av asfaltgrusbetong (Agb)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.12": {
+      "tittel": "Bindlag av asfaltbetong (Ab)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.13": {
+      "tittel": "Bindlag av mykasfalt (Ma)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.17": {
+      "tittel": "Bindlag av øvrige massetyper",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.172": {
+      "tittel": "Bindlag av asfaltskumgrus (Asg)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.173": {
+      "tittel": "Bindlag av skjelettasfalt (Ska)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.174": {
+      "tittel": "Bindlag av støpeasfalt (Sta)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.175": {
+      "tittel": "Bindlag av topeka (Top)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.176": {
+      "tittel": "Bindlag av tett emulsjonsgrus (Egt)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.177": {
+      "tittel": "Bindlag av gjenbruksasfalt (Gja)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.2": {
+      "tittel": "Asfaltdekker slitelag",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Klebing er medtatt i prosess 65.4.",
+        "b": [
+          "Materialtype og bindemiddel skal være som angitt i den spesielle beskrivelsen. Krav til materialer for aktuell massetype er angitt i håndbok N200 Vegbygging kap. 652. Der hvor det er beskrevet bruk av polymermodifisert bindemiddel PMB, skal denne være av type 65/105-60 iht. håndbok N200 Vegbygging, pkt. 651.1.",
+          "Friksjonsforholdene på ferdig dekke skal være ensartet for hele dekket og alle naturlig avgrensede områder, med minimum friksjonskoeffisient som angitt i håndbok N200 Vegbygging, pkt. 650.92."
+        ],
+        "e": "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+        "x": [
+          "Mengden måles som prosjektert areal målt midt i laget med skråning 1:1. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2"
+        ]
+      }
+    },
+    "65.21": {
+      "tittel": "Slitelag av asfaltgrusbetong (Agb)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.22": {
+      "tittel": "Slitelag av asfaltbetong (Ab)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.23": {
+      "tittel": "Slitelag av mykasfalt (Ma)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.24": {
+      "tittel": "Slitelag av skjelettasfalt (Ska)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.25": {
+      "tittel": "Slitelag av støpeasfalt (Sta)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.27": {
+      "tittel": "Slitelag av øvrige massetyper",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.271": {
+      "tittel": "Slitelag av topeka (Top)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.272": {
+      "tittel": "Slitelag av drensasfalt (Da)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.273": {
+      "tittel": "Slitelag av tynndekke (T)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.274": {
+      "tittel": "Slitelag av emulsjonsgrus, tett (Egt)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.275": {
+      "tittel": "Slitelag av asfaltskumgrus (Asg)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.276": {
+      "tittel": "Slitelag av gjenbruksasfalt (Gja)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "65.277": {
+      "tittel": "Slitelag av slamasfalt (Sla)",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "x": "Mengden måles som prosjektert behandlet areal. Enhet: m2"
+      }
+    },
+    "65.3": {
+      "tittel": "Armering av asfaltdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med armering av asfaltdekker Materialer og arbeider til ekstra klebing på utlagt armering, utover det som er medtatt i prosess 65.4, skal være inkludert i enhetsprisen. Ekstra arbeider for avstrøing med asfalt på utlagt armering skal være inkludert i enhetsprisen. Medgått asfalt til avstrøingen måles under aktuell prosess for asfaltmasse.",
+        "b": "Armeringstype og krav til materialer er angitt i den spesielle beskrivelsen.",
+        "c": "Ekstra klebing på armeringen skal påføres i begge retninger. Øvrige krav til utførelse er angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert armert areal. Enhet: m2"
+      }
+    },
+    "65.4": {
+      "tittel": "Klebing av asfaltdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og påføring av klebemiddel før legging av asfalt.",
+        "c": "Hele det aktuelle arealet skal være jevnt klebet og det skal ikke klebes utenfor det daglige leggearealet. Klebing skal utføres med et forbruk tilpasset dekkets overflatestruktur slik at flekker uten klebemiddel ikke oppstår, og samtidig sikrer god heft mellom lagene. Påført mengde skal være minimum 0,10 kg/m2 restbindemiddel, ved ev. lavere behov skal dette avtales med byggherren.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "66": {
+      "tittel": "BETONGDEKKER OG DEKKER AV BELEGNINGSSTEIN OG HELLER",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med nye betongdekker så som utlegging, avretting og etterbehandling etc. inklusive forskaling og fugearbeider.",
+          "Omfatter også levering og arbeider med dekker av belegningsstein og heller av betong, og dekker av naturstein.",
+          "Omfatter levering, utlegging, avretting og etterbehandling av uarmert betongdekke i angitt tykkelse, inklusive forskaling og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid.",
+          "Omfatter levering, utlegging, avretting og etterbehandling av armert betongdekke i angitt tykkelse inklusive forskaling, armering og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid.",
+          "Omfatter levering og arbeider med langsgående fuger inklusive forankringsjern og eventuelle dybler, ferdig forseglet i henhold til planene.",
+          "Omfatter levering og arbeider med tversgående ekspansjonsfuger, inklusive eventuelle foreskrevne dybler.",
+          "Omfatter levering og arbeider med tversgående fuger som kontraksjonsfuger, inklusive foreskrevne dybler.",
+          "Omfatter levering og arbeider med tversgående vinkelendringsfuger inklusive foreskreven ekstra armering.",
+          "Omfatter levering og arbeider med legging av valsebetong.",
+          "Omfatter levering og arbeider med legging av belegningsstein og heller, inklusive for- og etterarbeider."
+        ],
+        "b": [
+          "Det skal nyttes betong med trykkfasthet og etter miljø- og kontrollklasse som angitt. Betong utføres som angitt i den spesielle beskrivelsen.",
+          "Det skal ved forhåndsprøving påvises at den foreskrevne trykkfasthet oppnås med tilstrekkelig margin for spredning i trykkfastheten. Det skal utføres prøvestøp med det valgte utstyr for å kunne påvise akseptabelt resultat med den valgte utstyrs- / materialkombinasjon. Steininnholdet i betongen skal være så høyt som utleggerutstyret tillater m.h.p. komprimering og avretting. Andelen av tilslagskorn mindre enn 4 mm skal ikke overstige 42 %. Betongen skal være frostbestandig.",
+          "Som forankringsjern skal brukes 800 mm lange stenger av kamstål B500NC med diameter 10 mm.",
+          "Det skal under støping legges inn dybler av glattstål S 235 JO eller JR, diameter 25 mm, lengde 500 mm. Dyblene skal ha coating av varm bitumen 35/50 - 50/70, eller dekkes av plasthylse ca 0,3 mm, i minst halve lengden + 50 mm.",
+          "Til forankring i vinkelendringsfugene skal det brukes 800 mm lange kamstål B500NC med diameter 10 mm, c/c 300 mm."
+        ],
+        "c": [
+          "Dekker av betong skal utføres som angitt i den spesielle beskrivelsen. Betongarbeidene skal utføres etter bestemmelsene i NS-EN 206-1 Betong del 1 Spesifikasjon, egenskaper og samsvar, og NS-EN 13670 Utførelse av betongkonstruksjoner.",
+          "Dekker av belegningsstein og heller av betong, samt dekker av naturstein, skal utføres som angitt i håndbok N200 Vegbygging, kap. 67.",
+          "Underlaget skal rengjøres og fuktes før betongen legges ut. Betongproduksjonen skal foregå slik at temperaturen på den ferske betongen ikke er høyere enn nødvendig.",
+          "Så snart betongen er ferdig utstøpt, skal jevnhet kontrolleres med en 3 m lang rettholt. Ujevnheter større enn 4 mm skal straks jevnes ut, ev. med ny bearbeiding med maskinene. Eventuelle former eller sideforskaling skal være tilstrekkelig stive og understøttet til at de kan bære maskinene uten å gi nedbøyning over 2 mm. Formene skal være utlagt i tilstrekkelig lengde for 2 timers kontinuerlig støp foran støpestedet. De skal ikke fjernes eller løsnes før betongen er tilstrekkelig sterk så dekkets kanter ikke skades. De skal tidligst løsnes 20 timer etter at betongen er ferdig bearbeidet, bortsett fra der det er nødvendig for saging av fuger.",
+          "Etter ferdig komprimering skal dekket kostes med en stiv kost som etterlater 2-3 mm dype riller i overflaten. Kostingen skal gjøres på slikt tidspunkt at rillene ikke flyter sammen. Snarest mulig etter kostingen skal dekket beskyttes mot uttørking ved at overflaten påsprøytes en godkjent membranherdner 0,4-0,5 l/m2 (ikke voksholdig). Membranherdneren skal være pigmentert. Etter at betongen er bundet av skal dekket holdes fuktig minst 3 dager.",
+          "Dersom værforholdene tilsier det, skal det etter støpemaskinen følge rulletak som skal beskytte det nylagte dekke mot regn og sol. Rulletakets lengde skal minst kunne dekke 2 timers kontinuerlig støp. Sprekker og riss som skyldes feil i utførelsen av arbeidene skal utbedres etter metode godkjent av byggherren.",
+          "Dekket skal ikke trafikkeres med kjøretøyer før tidligst etter oppnådd fasthet > 35 MPa. Akseltrykket skal da ikke overskride 2,5 tonn. Dekket skal ikke trafikkeres eller belastes slik at membranherdneren skades eller at dekkets bæreevne på noe punkt overskrides.",
+          "Langsgående fuger utføres alltid som vinkelendringsfuger med forankring over fugen. Ved utstøping av ett felt om gangen, påstrykes den vertikale flate bitumen eller annet hefthindrende middel før neste felt støpes inntil. Fugekantene avrundes under støpingen, 5-6 mm radius.",
+          "Forankringsjern plasseres midt i dekket med c/c 1000 mm. 400 mm av stengene støpes inn i første felt og 400 mm i andre felt. Forankringsjern skal ikke bøyes.",
+          "Når dekket støpes i full bredde skal det sages eller det vibreres et midlertidig fugeinnlegg under støping. Forankringsjern med lengde 800 mm skal legges inn som beskrevet ovenfor.",
+          "Tverrfuger skal stå vinkelrett på langsgående fuger med mindre skråfuger er spesifisert. Utlegging av dybler i tverrfugene skal utføres maskinelt med en dybelutlegger eller v.hj.a. forhåndsplasserte dybelkurver. Dyblene skal ligge parallelt med dekkets senterlinje i lengderetningen med c/c 300 mm, og normalt i dekkets midtre plan etter slitasje. Toleransen av dyblenes parallellitet i forhold til overflate og senterlinje skal være maks 4 %. Toleransen vertikalt +/- 20 mm og horisontalt +/- 30 mm.",
+          "Saging av fuger utføres som angitt i den spesielle beskrivelsen.",
+          "Tverrfuger skal stå vinkelrett på langsgående fuger. Senterlinje for forankringene skal være i dekkets midtre plan etter slitasje. Saging av fuger utføres som angitt i den spesielle beskrivelsen."
+        ],
+        "d": "På det ferdige dekket skal ingen ujevnheter være over 4,0 mm målt med 3 m lang rettholt. Det skal være maks. 15 ujevnheter større enn 3,0 mm pr. 100 m feltlengde. Ved fuger skal høydeforskjellen mellom platekantene være høyst 2 mm. Avvik fra prosjektert høyde på det ferdige dekket skal være innenfor +/- 10 mm. Avvik fra prosjektert bredde skal være innenfor + 200 mm og - 0 mm. Gjennomsnitt dekketykkelse skal minst være som prosjektert. Enkeltverdier skal ikke underskride prosjektert tykkelse med mer enn 10 mm.",
+        "e": "Det skal utføres forhåndsprøvinger, driftskontroll og materialkontroll.",
+        "x": [
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m.",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2"
+        ]
+      }
+    },
+    "66.1": {
+      "tittel": "Betongdekker, nye",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging, avretting og etterbehandling av uarmert betongdekke i angitt tykkelse, inklusive forskaling og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid.",
+          "Omfatter levering, utlegging, avretting og etterbehandling av armert betongdekke i angitt tykkelse inklusive forskaling, armering og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid."
+        ],
+        "b": [
+          "Det skal nyttes betong med trykkfasthet og etter miljø- og kontrollklasse som angitt. Betong utføres som angitt i den spesielle beskrivelsen.",
+          "Det skal ved forhåndsprøving påvises at den foreskrevne trykkfasthet oppnås med tilstrekkelig margin for spredning i trykkfastheten. Det skal utføres prøvestøp med det valgte utstyr for å kunne påvise akseptabelt resultat med den valgte utstyrs- / materialkombinasjon. Steininnholdet i betongen skal være så høyt som utleggerutstyret tillater m.h.p. komprimering og avretting. Andelen av tilslagskorn mindre enn 4 mm skal ikke overstige 42 %. Betongen skal være frostbestandig."
+        ],
+        "c": [
+          "Underlaget skal rengjøres og fuktes før betongen legges ut. Betongproduksjonen skal foregå slik at temperaturen på den ferske betongen ikke er høyere enn nødvendig.",
+          "Så snart betongen er ferdig utstøpt, skal jevnhet kontrolleres med en 3 m lang rettholt. Ujevnheter større enn 4 mm skal straks jevnes ut, ev. med ny bearbeiding med maskinene. Eventuelle former eller sideforskaling skal være tilstrekkelig stive og understøttet til at de kan bære maskinene uten å gi nedbøyning over 2 mm. Formene skal være utlagt i tilstrekkelig lengde for 2 timers kontinuerlig støp foran støpestedet. De skal ikke fjernes eller løsnes før betongen er tilstrekkelig sterk så dekkets kanter ikke skades. De skal tidligst løsnes 20 timer etter at betongen er ferdig bearbeidet, bortsett fra der det er nødvendig for saging av fuger.",
+          "Etter ferdig komprimering skal dekket kostes med en stiv kost som etterlater 2-3 mm dype riller i overflaten. Kostingen skal gjøres på slikt tidspunkt at rillene ikke flyter sammen. Snarest mulig etter kostingen skal dekket beskyttes mot uttørking ved at overflaten påsprøytes en godkjent membranherdner 0,4-0,5 l/m2 (ikke voksholdig). Membranherdneren skal være pigmentert. Etter at betongen er bundet av skal dekket holdes fuktig minst 3 dager.",
+          "Dersom værforholdene tilsier det, skal det etter støpemaskinen følge rulletak som skal beskytte det nylagte dekke mot regn og sol. Rulletakets lengde skal minst kunne dekke 2 timers kontinuerlig støp. Sprekker og riss som skyldes feil i utførelsen av arbeidene skal utbedres etter metode godkjent av byggherren.",
+          "Dekket skal ikke trafikkeres med kjøretøyer før tidligst etter oppnådd fasthet > 35 MPa. Akseltrykket skal da ikke overskride 2,5 tonn. Dekket skal ikke trafikkeres eller belastes slik at membranherdneren skades eller at dekkets bæreevne på noe punkt overskrides."
+        ],
+        "d": "På det ferdige dekket skal ingen ujevnheter være over 4,0 mm målt med 3 m lang rettholt. Det skal være maks. 15 ujevnheter større enn 3,0 mm pr. 100 m feltlengde. Ved fuger skal høydeforskjellen mellom platekantene være høyst 2 mm. Avvik fra prosjektert høyde på det ferdige dekket skal være innenfor +/- 10 mm. Avvik fra prosjektert bredde skal være innenfor + 200 mm og - 0 mm. Gjennomsnitt dekketykkelse skal minst være som prosjektert. Enkeltverdier skal ikke underskride prosjektert tykkelse med mer enn 10 mm.",
+        "e": "Det skal utføres forhåndsprøvinger, driftskontroll og materialkontroll.",
+        "x": [
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2"
+        ]
+      }
+    },
+    "66.11": {
+      "tittel": "Uarmerte betongdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging, avretting og etterbehandling av uarmert betongdekke i angitt tykkelse, inklusive forskaling og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid.",
+        "b": [
+          "Det skal nyttes betong med trykkfasthet og etter miljø- og kontrollklasse som angitt. Betong utføres som angitt i den spesielle beskrivelsen.",
+          "Det skal ved forhåndsprøving påvises at den foreskrevne trykkfasthet oppnås med tilstrekkelig margin for spredning i trykkfastheten. Det skal utføres prøvestøp med det valgte utstyr for å kunne påvise akseptabelt resultat med den valgte utstyrs- / materialkombinasjon. Steininnholdet i betongen skal være så høyt som utleggerutstyret tillater m.h.p. komprimering og avretting. Andelen av tilslagskorn mindre enn 4 mm skal ikke overstige 42 %. Betongen skal være frostbestandig."
+        ],
+        "c": [
+          "Underlaget skal rengjøres og fuktes før betongen legges ut. Betongproduksjonen skal foregå slik at temperaturen på den ferske betongen ikke er høyere enn nødvendig.",
+          "Så snart betongen er ferdig utstøpt, skal jevnhet kontrolleres med en 3 m lang rettholt. Ujevnheter større enn 4 mm skal straks jevnes ut, ev. med ny bearbeiding med maskinene. Eventuelle former eller sideforskaling skal være tilstrekkelig stive og understøttet til at de kan bære maskinene uten å gi nedbøyning over 2 mm. Formene skal være utlagt i tilstrekkelig lengde for 2 timers kontinuerlig støp foran støpestedet. De skal ikke fjernes eller løsnes før betongen er tilstrekkelig sterk så dekkets kanter ikke skades. De skal tidligst løsnes 20 timer etter at betongen er ferdig bearbeidet, bortsett fra der det er nødvendig for saging av fuger.",
+          "Etter ferdig komprimering skal dekket kostes med en stiv kost som etterlater 2-3 mm dype riller i overflaten. Kostingen skal gjøres på slikt tidspunkt at rillene ikke flyter sammen. Snarest mulig etter kostingen skal dekket beskyttes mot uttørking ved at overflaten påsprøytes en godkjent membranherdner 0,4-0,5 l/m2 (ikke voksholdig). Membranherdneren skal være pigmentert. Etter at betongen er bundet av skal dekket holdes fuktig minst 3 dager.",
+          "Dersom værforholdene tilsier det, skal det etter støpemaskinen følge rulletak som skal beskytte det nylagte dekke mot regn og sol. Rulletakets lengde skal minst kunne dekke 2 timers kontinuerlig støp. Sprekker og riss som skyldes feil i utførelsen av arbeidene skal utbedres etter metode godkjent av byggherren.",
+          "Dekket skal ikke trafikkeres med kjøretøyer før tidligst etter oppnådd fasthet > 35 MPa. Akseltrykket skal da ikke overskride 2,5 tonn. Dekket skal ikke trafikkeres eller belastes slik at membranherdneren skades eller at dekkets bæreevne på noe punkt overskrides."
+        ],
+        "d": "På det ferdige dekket skal ingen ujevnheter være over 4,0 mm målt med 3 m lang rettholt. Det skal være maks. 15 ujevnheter større enn 3,0 mm pr. 100 m feltlengde. Ved fuger skal høydeforskjellen mellom platekantene være høyst 2 mm. Avvik fra prosjektert høyde på det ferdige dekket skal være innenfor +/- 10 mm. Avvik fra prosjektert bredde skal være innenfor + 200 mm og - 0 mm. Gjennomsnitt dekketykkelse skal minst være som prosjektert. Enkeltverdier skal ikke underskride prosjektert tykkelse med mer enn 10 mm.",
+        "e": "Det skal utføres forhåndsprøvinger, driftskontroll og materialkontroll.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "66.12": {
+      "tittel": "Armerte betongdekker",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging, avretting og etterbehandling av armert betongdekke i angitt tykkelse inklusive forskaling, armering og eventuelt foreskrevet glidesjikt, men eksklusive fugearbeid.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "66.2": {
+      "tittel": "Fugearbeider",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med langsgående fuger inklusive forankringsjern og eventuelle dybler, ferdig forseglet i henhold til planene.",
+          "Omfatter levering og arbeider med tversgående ekspansjonsfuger, inklusive eventuelle foreskrevne dybler.",
+          "Omfatter levering og arbeider med tversgående fuger som kontraksjonsfuger, inklusive foreskrevne dybler.",
+          "Omfatter levering og arbeider med tversgående vinkelendringsfuger inklusive foreskreven ekstra armering."
+        ],
+        "b": [
+          "Som forankringsjern skal brukes 800 mm lange stenger av kamstål B500NC med diameter 10 mm.",
+          "Det skal under støping legges inn dybler av glattstål S 235 JO eller JR, diameter 25 mm, lengde 500 mm. Dyblene skal ha coating av varm bitumen 35/50 - 50/70, eller dekkes av plasthylse ca 0,3 mm, i minst halve lengden + 50 mm.",
+          "Til forankring i vinkelendringsfugene skal det brukes 800 mm lange kamstål B500NC med diameter 10 mm, c/c 300 mm."
+        ],
+        "c": [
+          "Langsgående fuger utføres alltid som vinkelendringsfuger med forankring over fugen. Ved utstøping av ett felt om gangen, påstrykes den vertikale flate bitumen eller annet hefthindrende middel før neste felt støpes inntil. Fugekantene avrundes under støpingen, 5-6 mm radius.",
+          "Forankringsjern plasseres midt i dekket med c/c 1000 mm. 400 mm av stengene støpes inn i første felt og 400 mm i andre felt. Forankringsjern skal ikke bøyes.",
+          "Når dekket støpes i full bredde skal det sages eller det vibreres et midlertidig fugeinnlegg under støping. Forankringsjern med lengde 800 mm skal legges inn som beskrevet ovenfor.",
+          "Tverrfuger skal stå vinkelrett på langsgående fuger med mindre skråfuger er spesifisert. Utlegging av dybler i tverrfugene skal utføres maskinelt med en dybelutlegger eller v.hj.a. forhåndsplasserte dybelkurver. Dyblene skal ligge parallelt med dekkets senterlinje i lengderetningen med c/c 300 mm, og normalt i dekkets midtre plan etter slitasje. Toleransen av dyblenes parallellitet i forhold til overflate og senterlinje skal være maks 4 %. Toleransen vertikalt +/- 20 mm og horisontalt +/- 30 mm.",
+          "Saging av fuger utføres som angitt i den spesielle beskrivelsen.",
+          "Tverrfuger skal stå vinkelrett på langsgående fuger. Senterlinje for forankringene skal være i dekkets midtre plan etter slitasje. Saging av fuger utføres som angitt i den spesielle beskrivelsen."
+        ],
+        "x": [
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m.",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m",
+          "Mengden måles som prosjektert lengde fuge. Enhet: m"
+        ]
+      }
+    },
+    "66.21": {
+      "tittel": "Langsgående fuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med langsgående fuger inklusive forankringsjern og eventuelle dybler, ferdig forseglet i henhold til planene.",
+        "b": "Som forankringsjern skal brukes 800 mm lange stenger av kamstål B500NC med diameter 10 mm.",
+        "c": [
+          "Langsgående fuger utføres alltid som vinkelendringsfuger med forankring over fugen. Ved utstøping av ett felt om gangen, påstrykes den vertikale flate bitumen eller annet hefthindrende middel før neste felt støpes inntil. Fugekantene avrundes under støpingen, 5-6 mm radius.",
+          "Forankringsjern plasseres midt i dekket med c/c 1000 mm. 400 mm av stengene støpes inn i første felt og 400 mm i andre felt. Forankringsjern skal ikke bøyes.",
+          "Når dekket støpes i full bredde skal det sages eller det vibreres et midlertidig fugeinnlegg under støping. Forankringsjern med lengde 800 mm skal legges inn som beskrevet ovenfor."
+        ],
+        "x": "Mengden måles som prosjektert lengde fuge. Enhet: m"
+      }
+    },
+    "66.22": {
+      "tittel": "Tversgående ekspansjonsfuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med tversgående ekspansjonsfuger, inklusive eventuelle foreskrevne dybler.",
+        "x": "Mengden måles som prosjektert lengde fuge. Enhet: m."
+      }
+    },
+    "66.23": {
+      "tittel": "Tversgående kontraksjonsfuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med tversgående fuger som kontraksjonsfuger, inklusive foreskrevne dybler.",
+        "b": "Det skal under støping legges inn dybler av glattstål S 235 JO eller JR, diameter 25 mm, lengde 500 mm. Dyblene skal ha coating av varm bitumen 35/50 - 50/70, eller dekkes av plasthylse ca 0,3 mm, i minst halve lengden + 50 mm.",
+        "c": [
+          "Tverrfuger skal stå vinkelrett på langsgående fuger med mindre skråfuger er spesifisert. Utlegging av dybler i tverrfugene skal utføres maskinelt med en dybelutlegger eller v.hj.a. forhåndsplasserte dybelkurver. Dyblene skal ligge parallelt med dekkets senterlinje i lengderetningen med c/c 300 mm, og normalt i dekkets midtre plan etter slitasje. Toleransen av dyblenes parallellitet i forhold til overflate og senterlinje skal være maks 4 %. Toleransen vertikalt +/- 20 mm og horisontalt +/- 30 mm.",
+          "Saging av fuger utføres som angitt i den spesielle beskrivelsen."
+        ],
+        "x": "Mengden måles som prosjektert lengde fuge. Enhet: m"
+      }
+    },
+    "66.24": {
+      "tittel": "Tversgående vinkelendringsfuger",
+      "enhet": "m",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med tversgående vinkelendringsfuger inklusive foreskreven ekstra armering.",
+        "b": "Til forankring i vinkelendringsfugene skal det brukes 800 mm lange kamstål B500NC med diameter 10 mm, c/c 300 mm.",
+        "c": "Tverrfuger skal stå vinkelrett på langsgående fuger. Senterlinje for forankringene skal være i dekkets midtre plan etter slitasje. Saging av fuger utføres som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert lengde fuge. Enhet: m"
+      }
+    },
+    "66.3": {
+      "tittel": "Valsebetong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med legging av valsebetong.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "66.4": {
+      "tittel": "Vegdekker av belegningsstein og heller",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med legging av belegningsstein og heller, inklusive for- og etterarbeider.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "66.41": {
+      "tittel": "Belegningsstein av betong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "66.42": {
+      "tittel": "Betongheller",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "66.43": {
+      "tittel": "Steindekker av naturstein",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "67": {
+      "tittel": "BELEGNINGER UTENFOR KJØREBANEN",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med belegninger utenfor kjørebanen, så som belegning på skuldre og fortau/gangbane, trafikkøy eventuelt med oppfyllingsmasser, dekkefornyelse, ledelinjer i gategrunn etc. inklusive varmekabelanlegg.",
+          "Omfatter levering og arbeider med belegninger på skuldre.",
+          "Omfatter levering og arbeider med belegninger på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring og skulder i tunnel.",
+          "Omfatter levering og arbeider med asfaltdekke på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring og skulder i tunnel). Dekketype og forbruk i kg pr m2 eller tykkelse i mm er angitt i den spesielle beskrivelsen.",
+          "Omfatter levering og arbeider med steindekke, betongheller etc. på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring. Omfatter også levering og arbeider med fiberduk og sandpute under steindekket.",
+          "Omfatter levering og arbeider med øvrige dekketyper på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring).",
+          "Omfatter levering og arbeider med betong på skulder i tunnel.",
+          "Omfatter levering og arbeider med oppfyllingsmasser på trafikkøyer inkl. sentraløy i rundkjøring.",
+          "Omfatter levering og arbeider med varmekabler i fortau, gangbaner, trapper og gangfelt, tilknytning til strømnettet etc.",
+          "Omfatter levering og arbeider med ledelinjer i gategrunn for å etablere standardiserte følbare overflater på gangareal, inklusiv merkostnader ved tilpasninger til tilstøtende overflater/belegg."
+        ],
+        "b": "Det skal anvendes normalvektsbetong i henhold til håndbok R762 Prosesskode 2, prosess 84.41, 84.45 og 84.46. Forøvrig som prosess 84.4 b)-e).",
+        "d": "Toleranser skal være som for tilliggende kjørefelt.",
+        "x": [
+          "Mengden måles som prosjektert areal Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal ledelinje. Enhet: m2"
+        ]
+      }
+    },
+    "67.1": {
+      "tittel": "Belegning på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med belegninger på skuldre.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "67.11": {
+      "tittel": "Belegning av grus eller steinmaterialer på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "67.12": {
+      "tittel": "Belegning av asfalt på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "67.13": {
+      "tittel": "Belegning av knust asfalt Ak på skuldre",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "67.2": {
+      "tittel": "Belegning på opphøyde arealer",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med belegninger på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring og skulder i tunnel.",
+          "Omfatter levering og arbeider med asfaltdekke på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring og skulder i tunnel). Dekketype og forbruk i kg pr m2 eller tykkelse i mm er angitt i den spesielle beskrivelsen.",
+          "Omfatter levering og arbeider med steindekke, betongheller etc. på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring. Omfatter også levering og arbeider med fiberduk og sandpute under steindekket.",
+          "Omfatter levering og arbeider med øvrige dekketyper på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring).",
+          "Omfatter levering og arbeider med betong på skulder i tunnel.",
+          "Omfatter levering og arbeider med oppfyllingsmasser på trafikkøyer inkl. sentraløy i rundkjøring.",
+          "Omfatter levering og arbeider med varmekabler i fortau, gangbaner, trapper og gangfelt, tilknytning til strømnettet etc."
+        ],
+        "b": "Det skal anvendes normalvektsbetong i henhold til håndbok R762 Prosesskode 2, prosess 84.41, 84.45 og 84.46. Forøvrig som prosess 84.4 b)-e).",
+        "d": "Toleranser skal være som for tilliggende kjørefelt.",
+        "x": [
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal. Enhet: m2"
+        ]
+      }
+    },
+    "67.21": {
+      "tittel": "Asfaltdekke på fortau/gangbane/trafikkøy",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med asfaltdekke på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring og skulder i tunnel). Dekketype og forbruk i kg pr m2 eller tykkelse i mm er angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "67.22": {
+      "tittel": "Steindekker på fortau/gangbane/trafikkøy",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med steindekke, betongheller etc. på fortau, gangbaner og trafikkøyer inkl. sentraløy i rundkjøring. Omfatter også levering og arbeider med fiberduk og sandpute under steindekket.",
+        "x": "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2"
+      }
+    },
+    "67.221": {
+      "tittel": "Belegningsstein av betong",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "67.222": {
+      "tittel": "Betongheller",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "67.223": {
+      "tittel": "Naturstein",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": ""
+    },
+    "67.23": {
+      "tittel": "Øvrige dekketyper på fortau/gangbane/trafikkøy",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med øvrige dekketyper på fortau, gangbaner og trafikkøyer (inkl. sentraløy i rundkjøring).",
+        "x": "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2"
+      }
+    },
+    "67.24": {
+      "tittel": "Betong på skulder i tunnel",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med betong på skulder i tunnel.",
+        "b": "Det skal anvendes normalvektsbetong i henhold til håndbok R762 Prosesskode 2, prosess 84.41, 84.45 og 84.46. Forøvrig som prosess 84.4 b)-e).",
+        "d": "Toleranser skal være som for tilliggende kjørefelt.",
+        "x": "Mengden måles som prosjektert areal i horisontalprojeksjon. Enhet: m2"
+      }
+    },
+    "67.25": {
+      "tittel": "Oppfyllingsmasser på trafikkøy",
+      "enhet": "m3",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med oppfyllingsmasser på trafikkøyer inkl. sentraløy i rundkjøring.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "67.26": {
+      "tittel": "Varmekabelanlegg",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med varmekabler i fortau, gangbaner, trapper og gangfelt, tilknytning til strømnettet etc.",
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
+    },
+    "67.3": {
+      "tittel": "Ledelinjer i gategrunn",
+      "enhet": "m2",
+      "hovedprosess": "6",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og arbeider med ledelinjer i gategrunn for å etablere standardiserte følbare overflater på gangareal, inklusiv merkostnader ved tilpasninger til tilstøtende overflater/belegg.",
+        "x": "Mengden måles som prosjektert areal ledelinje. Enhet: m2"
+      }
+    },
+    "68": {
+      "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
+      "enhet": "?",
+      "hovedprosess": "6",
+      "url": ""
+    }
+  }
+}

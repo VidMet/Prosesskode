@@ -1,0 +1,1278 @@
+{
+  "metadata": {
+    "versjon": "R761 - 2018",
+    "kapittel": "5"
+  },
+  "prosesskoder": {
+    "5": {
+      "tittel": "Vegfundament",
+      "enhet": "?",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med planum (traubunn i skjæring og overkant underbygning på fylling), så som stabilisering, utskifting og forsterkning, rensk, avretting, justering og komprimering, inklusive utkilinger etc.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter stabilisering av planum med kalk, sement eller lignende.",
+          "Omfatter masseutskifting og forsterkning av planum.",
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt fyllplass inkludert fyllplassarbeider. Leverings- og behandlingsgebyr er medtatt i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er medtatt i prosess 51.3 eller 51.4.",
+          "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen.",
+          "Omfatter avretting, justering og komprimering av planum på jord utover det som er medtatt under prosess 25.",
+          "Omfatter avretting, justering og komprimering under isolasjonsplater av ekstrudert polystyren (XPS), prosess 52.34.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel, i dypsprengt skjæring og på fylling av sprengt stein, utover det som er medtatt under prosess 26. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av et justeringslag av knuste masser etter behov for å oppnå riktige høyder. For rensk og tilbakefylling til teoretisk sprengningsprofil i sålen, se prosess 33.13 og 33.14.",
+          "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering.",
+          "Omfatter opplasting, transport, utlegging og komprimering av materialer til utkilinger ved overgang fra jord til berg. Omfatter også levering. Fjerning av skjæringsmasser er medregnet i hovedprosess 2.",
+          "Omfatter levering, utlegging og eventuelt komprimering av filterlag, og spesielle frostsikringslag av sand, grus, steinmaterialer, lettklinker, skumglassgranulat eller ekstrudert polystyren samt eventuelt fiberduk.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av filterlag.",
+          "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat.",
+          "Omfatter levering, utlegging og komprimering av materialer for frostsikring.",
+          "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+          "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+          "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er medtatt i prosess 51.33.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt pukk, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult, samt der det er aktuelt inkl. opplasting, transport, utsortering, blokkdemolering, knusing, sikting og fjerning av overskudd av finstoff.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke",
+          "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av overskudd av finstoff, utlegging og komprimering av forsterkningslag fra linjen eller sidetak.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult tilført utenfra.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke.",
+          "Omfatter levering, utlegging og komprimering av materialer til forkiling av forsterkningslag.",
+          "Volum av materialene måles ikke, men inngår i volum i prosess 53.2.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong og blandet masse.",
+          "Omfatter levering, utlegging, komprimering og ev. forkiling av bærelag av knust grus, knust berg, forkilt pukk og knust betong.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus type Gk. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust grus type Gk.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus type Gk tilført utenfra.",
+          "Omfatter levering, utlegging og komprimering av bærelag type Fk av knust berg eller knust stein. Omfatter også, der det er aktuelt, opplasting, transport,  utsortering, blokkdemolering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust berg type Fk.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust berg type Fk.",
+          "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt.",
+          "Omfatter levering, utlegging og komprimering av bærelag av gjenbruksasfalt, som er Ak tilsatt bituminøst bindemiddel.",
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert grus med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt.",
+          "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med lagtykkelse som angitt i den spesielle beskrivelsen, inkludert etterarbeider som feiing og etterstrøing.",
+          "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+          "Omfatter levering, penetrering med bituminøst bindemiddel, levering og forkiling med pukk og komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing.",
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer. For krav se Håndbok N200 Vegbygging, pkt. 643.4-643.6.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel. For krav se Håndbok N200 Vegbygging, kap. 644."
+        ],
+        "b": [
+          "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+          "Justeringslaget skal være av knuste masser (eventuelt gjenbruksbetong) med sortering tilpasset underlag og aktuell lagtykkelse. De knuste massene skal ikke være vannømfintlige, og sortering tilpasses slik at det oppnås et stabilt lag med maksimal steinstørrelse ikke mer enn 2/3 av lagtykkelsen.",
+          "Materialet i justeringslag skal være drenerende, maksimalt 7 % skal passere 0,063 mm sikt regnet av materiale mindre enn 22,4 mm.",
+          "Det skal benyttes ikke telefarlige masser. Massene skal være av samme kvalitet som på nærmeste overliggende nivå i overbygningen.",
+          "Materialet skal tilfredsstille krav gitt i Håndbok N200 Vegbygging, pkt. 612.",
+          "Bruksklasse skal være som angitt i den spesielle beskrivelsen. Fiberduken skal tilfredsstille kravene angitt gjennom sertifiseringsordningen NorGeoSpec 2012 for den aktuelle bruksklassen og være registrert under denne ordningen eller 3dje parts verifisering til samme kvalitetsnivå.",
+          "Steinmaterialer til frostsikring skal være knust berg produsert på en kontrollert måte, minimum ved grovknusing. Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1%, maksimalt 7% regnet av materiale mindre enn 90 mm.",
+          "Sand skal ha et graderingstall Cu (d60/d10) større enn 5.",
+          "Materialet skal være usortert lettklinker med gradering 0/32 mm.",
+          "Materialene skal ha sortering som angitt i den spesielle beskrivelsen. Krav til materialene for øvrig skal være iht. håndbok N200 Vegbygging.",
+          "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen.",
+          "Alle krav til korngradering gjelder for prøver tatt på veg. Mekaniske egenskaper kan dokumenteres ved prøver tatt på produksjonssted.",
+          "Forsterkningslaget skal bygges opp av bæredyktige, godt drenerende og ikke vannømfintlige materialer. Materialet skal tilfredsstille kravene gitt i Håndbok N200 Vegbygging kap. 63.",
+          "Øvre siktstørrelse D skal være maksimalt 90 mm.",
+          "Krav til materialer skal være som angitt i Håndbok N200 Vegbygging, pkt. 642.1.",
+          "Materialet skal være knust berg. Krav til materialer skal være som for Fk bærelag i henhold til prosess 54.2. Sortering (siktstørrelser) skal være som angitt i den spesielle beskrivelsen.",
+          "Resirkulerte materialer skal tilfredsstille kravene i Håndbok N200 Vegbygging, pkt. 631.",
+          "Alle krav til korngradering gjelder for prøver tatt på veg.",
+          "Materialet skal tilfredsstille kravene gitt i Håndbok N200 Vegbygging pkt. 641.",
+          "Det er angitt i den spesielle beskrivelsen hvilken sortering som skal brukes.",
+          "Der stein brukes til produksjon av Fk materialer skal minimum størrelse av steinen (utgangsmaterialet) være 60 mm.",
+          "Det er angitt i den spesielle beskrivelsen hvilken sortering som skal brukes.",
+          "Krav til materialer og utførelse skal være som angitt i håndbok N200 Vegbygging, pkt. 642.1.",
+          "Krav til materialer og utførelse som angitt i Håndbok N200 Vegbygging, pkt. 642.2.",
+          "Krav til materialer som angitt i Håndbok N200 Vegbygging, pkt. 643.",
+          "Steinmaterialenes sortering, samt type og mengde bindemiddel til penetrering, skal være som angitt den spesielle beskrivelsen."
+        ],
+        "c": [
+          "Planum skal ha jevnt tverrfall på minst 3 % slik at vannet kan renne ut til siden overalt. Endring i tverrfallsretning skal skje gradvis over en lengde på 10 m.",
+          "For å oppnå tilstrekkelig jevnhet tillates at det benyttes avretting med masser med øvre siktstørrelse maks 22,4 mm.",
+          "Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg.",
+          "Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder.",
+          "Ved grunnsprengning skal utlasting alltid skje til fast berg, og det skal ikke ligge igjen mer enn 0,05 m3 overmasse pr. m2. Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder. Oppfylling av gryter skal skje med ikke telefarlig materiale. Det skal fylles opptil planum. Bunn av drensgrøft skal ligge dypere enn gryter i planum og minst 1 m under bunn sidegrøft.",
+          "Krav til utførelse som for jordfylling forøvrig med tilsvarende masser.",
+          "Sand/grus legges ut i lag som komprimeres til minimum 93 % Modifisert Proctor. Overflaten skal ha jevnt fall til siden på minst 3 %. Utlegging og komprimering må ikke deformere grunnen, redusere bæreevnen eller skade stikkrenner, kabler, ledninger, fundament etc.",
+          "Utlegging av overliggende lag skal foregå på en slik måte at duken ikke skades. Trafikk direkte på duken skal ikke forekomme. Overlapping i skjøter skal være minst 0,5 m eller som angitt i den spesielle beskrivelsen. Fiberduken skal beskyttes mot sollys ved lagring som overstiger 1 måned.",
+          "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Sand og grus skal komprimeres til minimum 93 % Modifisert Proctor. For steinmaterialer skal det utarbeides et valseprogram som fastlegges etter måling av komprimeringsgraden ved nivellement. Veiledning for valg av komprimeringsutstyr og antall overfarter er gitt i Håndbok R761 Prosesskode 1, figur 25.1.",
+          "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren.",
+          "Ved utlegging skal materialet behandles med varsomhet for å unngå nedknusing. Det tillates ikke anleggstrafikk direkte på laget. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2.",
+          "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver. Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal utføres slik at platene ikke skades. Det skal settes inn tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m før det kan trafikkeres med hjulgående utstyr.",
+          "Utlegging, planering og komprimering skal foregå slik at en får et jevnt lag av homogent materiale, og slik at den ferdige overflate får jevnt fall til siden. Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg. Transport og utlegging skal utføres slik at det ikke oppstår spordannelse eller andre skadelige deformasjoner i underlaget.",
+          "Til komprimering skal det normalt brukes vibrerende utstyr, som ikke må slite ned materialet unødig eller skade stikkrenner, ledninger o.l. På bløt grunn skal det ikke brukes utstyr med slik dybdeeffekt at bæreevnen svekkes. Ved utlegging og komprimering skal massene vannes godt.",
+          "Materiale med øvre siktstørrelse maksimalt 32 mm skal komprimeres til minimum 95 % Modifisert Proctor.",
+          "Ved bruk av materialer med øvre siktstørrelse større enn 32 mm skal det utarbeides et valseprogram. Programmet fastlegges etter måling av komprimeringsgraden ved nivellement over en homogen seksjon (mht. underliggende lag og tykkelser) på minimum 50 m. Nivellement skal utføres med 10 punkter i hver tverrprofil, minimum 5 profiler pr. homogen seksjon (1 profil = 1 prøve). Gjennomsnittlig setning for siste overfart av valsen skal være mindre enn 10 % av gjennomsnittlig total setning.",
+          "Veiledning for valg av komprimeringsutstyr og antall overfarter er gitt i Håndbok N200 Vegbygging tabell 602.3.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, tabell 602.5 og tabell 602.6.",
+          "Knust betong (Gjb) legges ut lagvis med lagtykkelse maksimalt 300 mm. Ved utlegging og komprimering skal massene vannes godt. For velgraderte masser skal vanninnholdet være tilnærmet optimalt. Komprimering av hvert lag utføres med minimum to overfarter med vibrasjon, fortrinnsvis med lav amplitude. Det øverste laget kan eventuelt overrulles uten vibrering for utjevning av overflaten.",
+          "Utlegging og bearbeiding skal foretas slik at det oppstår minst mulig separasjon. Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, pkt. 602.2. Veiledning for valg av komprimeringsutstyr og antall overfarter er angitt i Håndbok N200 Vegbygging, tabell 602.3.",
+          "Utlegging og bearbeiding skal foretas slik at det oppstår minst mulig separasjon.  Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, pkt. 602.2. Veiledning for valg av komprimeringsutstyr og antall overfarter er angitt i Håndbok N200 Vegbygging, tabell 602.3.",
+          "Hovedsorteringen legges ut i ett, ev. to, lag hvert med tykkelse 75, 100 eller 150 mm avhengig av sortering. Lagene komprimeres og forkiles hver for seg med finpukk. Krav til komprimeringsarbeid er vist i Håndbok N200 Vegbygging, pkt. 602.24.",
+          "Krav til utførelse som angitt i Håndbok N200 Vegbygging, pkt. 643.",
+          "Krav til komprimeringsarbeid er vist i Håndbok N200 Vegbygging, pkt. 602.24."
+        ],
+        "d": [
+          "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 40 mm for enkeltverdier. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 30 mm for enkeltverdier og maks 20 mm avvik målt på 3 m rettholt. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0.",
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 30 mm for enkeltverdier. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm / - 0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert profil er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er +100 mm/-0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert nivå er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm. Overflaten skal ha jevnt fall iht. planene.",
+          "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.33 eller 51.43.",
+          "Tillatt avvik fra prosjektert overkant av forsterkningslaget er +/- 30 mm for enkeltverdier. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert overflate er +/- 20 mm enkeltverdi. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm. Det skal måles minst 3 punkter i tverrprofilet. Krav til jevnhet målt med 3 m rettholt er 15 mm, og for bærelag av knust grus (Gk) er kravet 10 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert overflate er +/- 20 mm (enkeltverdi). Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensninger er +100 mm/ -0 mm. Maksimalt avvik fra prosjektert lagtykkelse skal være +20% / -10%.",
+          "Krav til jevnhet målt med 3 m rettholt er 10 mm.",
+          "Krav til jevnhet målt med 3 m rettholt er 15 mm.",
+          "Krav til jevnhet målt med 3 m rettholt er 15 mm."
+        ],
+        "e": [
+          "Det foretas regelmessig inspeksjon i materialtaket under drift. For hvert 1000 m3 utlagt filterlag skal det tas 2 prøver for kontroll av gradering og telefarlighet.",
+          "Kontroll av komprimering skal være iht. Håndbok N200 Vegbygging. Kontroll av høyde: 3 punkter per profil per 20 m veg.",
+          "Krav til prøvetaking og kontroll skal være som angitt i Håndbok N200 Vegbygging, pkt. 641.11.",
+          "Krav til prøvetaking og kontroll som angitt i Håndbok N200 Vegbygging, pkt. 643.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens)."
+        ],
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3",
+          "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal målt etter teoretisk sprengningsprofil. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. I blandede profiler måles til det punkt hvor overbygningen har full tykkelse for fylling eller jordskjæring. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2.",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt masse. Enhet: tonn",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "51": {
+      "tittel": "PLANUM",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med planum (traubunn i skjæring og overkant underbygning på fylling), så som stabilisering, utskifting og forsterkning, rensk, avretting, justering og komprimering, inklusive utkilinger etc.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter stabilisering av planum med kalk, sement eller lignende.",
+          "Omfatter masseutskifting og forsterkning av planum.",
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt fyllplass inkludert fyllplassarbeider. Leverings- og behandlingsgebyr er medtatt i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er medtatt i prosess 51.3 eller 51.4.",
+          "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen.",
+          "Omfatter avretting, justering og komprimering av planum på jord utover det som er medtatt under prosess 25.",
+          "Omfatter avretting, justering og komprimering under isolasjonsplater av ekstrudert polystyren (XPS), prosess 52.34.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel, i dypsprengt skjæring og på fylling av sprengt stein, utover det som er medtatt under prosess 26. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av et justeringslag av knuste masser etter behov for å oppnå riktige høyder. For rensk og tilbakefylling til teoretisk sprengningsprofil i sålen, se prosess 33.13 og 33.14.",
+          "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering.",
+          "Omfatter opplasting, transport, utlegging og komprimering av materialer til utkilinger ved overgang fra jord til berg. Omfatter også levering. Fjerning av skjæringsmasser er medregnet i hovedprosess 2."
+        ],
+        "b": [
+          "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+          "Justeringslaget skal være av knuste masser (eventuelt gjenbruksbetong) med sortering tilpasset underlag og aktuell lagtykkelse. De knuste massene skal ikke være vannømfintlige, og sortering tilpasses slik at det oppnås et stabilt lag med maksimal steinstørrelse ikke mer enn 2/3 av lagtykkelsen.",
+          "Materialet i justeringslag skal være drenerende, maksimalt 7 % skal passere 0,063 mm sikt regnet av materiale mindre enn 22,4 mm.",
+          "Det skal benyttes ikke telefarlige masser. Massene skal være av samme kvalitet som på nærmeste overliggende nivå i overbygningen."
+        ],
+        "c": [
+          "Planum skal ha jevnt tverrfall på minst 3 % slik at vannet kan renne ut til siden overalt. Endring i tverrfallsretning skal skje gradvis over en lengde på 10 m.",
+          "For å oppnå tilstrekkelig jevnhet tillates at det benyttes avretting med masser med øvre siktstørrelse maks 22,4 mm.",
+          "Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg.",
+          "Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder.",
+          "Ved grunnsprengning skal utlasting alltid skje til fast berg, og det skal ikke ligge igjen mer enn 0,05 m3 overmasse pr. m2. Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder. Oppfylling av gryter skal skje med ikke telefarlig materiale. Det skal fylles opptil planum. Bunn av drensgrøft skal ligge dypere enn gryter i planum og minst 1 m under bunn sidegrøft.",
+          "Krav til utførelse som for jordfylling forøvrig med tilsvarende masser."
+        ],
+        "d": [
+          "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 40 mm for enkeltverdier. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 30 mm for enkeltverdier og maks 20 mm avvik målt på 3 m rettholt. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0.",
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 30 mm for enkeltverdier. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm / - 0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm."
+        ],
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3",
+          "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal målt etter teoretisk sprengningsprofil. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. I blandede profiler måles til det punkt hvor overbygningen har full tykkelse for fylling eller jordskjæring. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "51.1": {
+      "tittel": "Stabilisering av planum",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter stabilisering av planum med kalk, sement eller lignende.",
+        "x": "Mengden måles som prosjektert behandlet areal. Enhet: m2"
+      }
+    },
+    "51.2": {
+      "tittel": "Masseutskifting og forsterkning av planum",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter masseutskifting og forsterkning av planum.",
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt fyllplass inkludert fyllplassarbeider. Leverings- og behandlingsgebyr er medtatt i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er medtatt i prosess 51.3 eller 51.4.",
+          "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen."
+        ],
+        "b": "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3",
+          "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
+        ]
+      }
+    },
+    "51.21": {
+      "tittel": "Masseutskifting under planum",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt fyllplass inkludert fyllplassarbeider. Leverings- og behandlingsgebyr er medtatt i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er medtatt i prosess 51.3 eller 51.4."
+        ],
+        "b": "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3"
+      }
+    },
+    "51.22": {
+      "tittel": "Forsterkning av planum med geosynteter",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
+      }
+    },
+    "51.3": {
+      "tittel": "Avretting, justering og komprimering av planum på jord",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter avretting, justering og komprimering av planum på jord utover det som er medtatt under prosess 25.",
+          "Omfatter avretting, justering og komprimering under isolasjonsplater av ekstrudert polystyren (XPS), prosess 52.34."
+        ],
+        "c": [
+          "Planum skal ha jevnt tverrfall på minst 3 % slik at vannet kan renne ut til siden overalt. Endring i tverrfallsretning skal skje gradvis over en lengde på 10 m.",
+          "For å oppnå tilstrekkelig jevnhet tillates at det benyttes avretting med masser med øvre siktstørrelse maks 22,4 mm."
+        ],
+        "d": [
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 40 mm for enkeltverdier. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 30 mm for enkeltverdier og maks 20 mm avvik målt på 3 m rettholt. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0."
+        ],
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2"
+        ]
+      }
+    },
+    "51.31": {
+      "tittel": "Planum på jordfylling",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "51.32": {
+      "tittel": "Planum i jordskjæring",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "51.33": {
+      "tittel": "Avretting mv. under isolasjonsplater på jord",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter avretting, justering og komprimering under isolasjonsplater av ekstrudert polystyren (XPS), prosess 52.34.",
+        "c": "For å oppnå tilstrekkelig jevnhet tillates at det benyttes avretting med masser med øvre siktstørrelse maks 22,4 mm.",
+        "d": "Tillatt vertikalt avvik fra prosjektert profil er +/- 30 mm for enkeltverdier og maks 20 mm avvik målt på 3 m rettholt. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0.",
+        "x": "Mengden måles som prosjektert behandlet areal. Enhet: m2"
+      }
+    },
+    "51.4": {
+      "tittel": "Avretting, justering og komprimering av planum på sprengt stein i skjæring, på fylling og i tunnel",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter avretting, justering og komprimering av planum i tunnel, i dypsprengt skjæring og på fylling av sprengt stein, utover det som er medtatt under prosess 26. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av et justeringslag av knuste masser etter behov for å oppnå riktige høyder. For rensk og tilbakefylling til teoretisk sprengningsprofil i sålen, se prosess 33.13 og 33.14."
+        ],
+        "b": [
+          "Justeringslaget skal være av knuste masser (eventuelt gjenbruksbetong) med sortering tilpasset underlag og aktuell lagtykkelse. De knuste massene skal ikke være vannømfintlige, og sortering tilpasses slik at det oppnås et stabilt lag med maksimal steinstørrelse ikke mer enn 2/3 av lagtykkelsen.",
+          "Materialet i justeringslag skal være drenerende, maksimalt 7 % skal passere 0,063 mm sikt regnet av materiale mindre enn 22,4 mm."
+        ],
+        "c": [
+          "Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg.",
+          "Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder."
+        ],
+        "d": [
+          "Tillatt vertikalt avvik fra prosjektert profil er +/- 30 mm for enkeltverdier. Tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm / - 0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm."
+        ],
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal målt etter teoretisk sprengningsprofil. Enhet: m2"
+        ]
+      }
+    },
+    "51.41": {
+      "tittel": "Planum på steinfylling",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "51.42": {
+      "tittel": "Planum på dypsprengt stein i skjæring",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "51.44": {
+      "tittel": "Planum i tunnel",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av et justeringslag av knuste masser etter behov for å oppnå riktige høyder. For rensk og tilbakefylling til teoretisk sprengningsprofil i sålen, se prosess 33.13 og 33.14.",
+        "b": "Materialet i justeringslag skal være drenerende, maksimalt 7 % skal passere 0,063 mm sikt regnet av materiale mindre enn 22,4 mm.",
+        "c": "Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder.",
+        "d": "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+        "x": "Mengden måles som prosjektert behandlet areal målt etter teoretisk sprengningsprofil. Enhet: m2"
+      }
+    },
+    "51.5": {
+      "tittel": "Rensk, avretting og justering av planum på grunnsprengt berg",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering.",
+        "b": "Det skal benyttes ikke telefarlige masser. Massene skal være av samme kvalitet som på nærmeste overliggende nivå i overbygningen.",
+        "c": "Ved grunnsprengning skal utlasting alltid skje til fast berg, og det skal ikke ligge igjen mer enn 0,05 m3 overmasse pr. m2. Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder. Oppfylling av gryter skal skje med ikke telefarlig materiale. Det skal fylles opptil planum. Bunn av drensgrøft skal ligge dypere enn gryter i planum og minst 1 m under bunn sidegrøft.",
+        "d": "Maksimalt tillatt vertikalt avvik fra prosjektert planum er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+        "x": "Mengden måles som prosjektert behandlet areal. I blandede profiler måles til det punkt hvor overbygningen har full tykkelse for fylling eller jordskjæring. Enhet: m2"
+      }
+    },
+    "51.6": {
+      "tittel": "Utkilinger",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter opplasting, transport, utlegging og komprimering av materialer til utkilinger ved overgang fra jord til berg. Omfatter også levering. Fjerning av skjæringsmasser er medregnet i hovedprosess 2.",
+        "c": "Krav til utførelse som for jordfylling forøvrig med tilsvarende masser.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "52": {
+      "tittel": "FILTERLAG OG SPESIELLE FROSTSIKRINGSLAG",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og eventuelt komprimering av filterlag, og spesielle frostsikringslag av sand, grus, steinmaterialer, lettklinker, skumglassgranulat eller ekstrudert polystyren samt eventuelt fiberduk.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av filterlag.",
+          "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat.",
+          "Omfatter levering, utlegging og komprimering av materialer for frostsikring.",
+          "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+          "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+          "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er medtatt i prosess 51.33."
+        ],
+        "b": [
+          "Materialet skal tilfredsstille krav gitt i Håndbok N200 Vegbygging, pkt. 612.",
+          "Bruksklasse skal være som angitt i den spesielle beskrivelsen. Fiberduken skal tilfredsstille kravene angitt gjennom sertifiseringsordningen NorGeoSpec 2012 for den aktuelle bruksklassen og være registrert under denne ordningen eller 3dje parts verifisering til samme kvalitetsnivå.",
+          "Steinmaterialer til frostsikring skal være knust berg produsert på en kontrollert måte, minimum ved grovknusing. Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1%, maksimalt 7% regnet av materiale mindre enn 90 mm.",
+          "Sand skal ha et graderingstall Cu (d60/d10) større enn 5.",
+          "Materialet skal være usortert lettklinker med gradering 0/32 mm.",
+          "Materialene skal ha sortering som angitt i den spesielle beskrivelsen. Krav til materialene for øvrig skal være iht. håndbok N200 Vegbygging.",
+          "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen."
+        ],
+        "c": [
+          "Sand/grus legges ut i lag som komprimeres til minimum 93 % Modifisert Proctor. Overflaten skal ha jevnt fall til siden på minst 3 %. Utlegging og komprimering må ikke deformere grunnen, redusere bæreevnen eller skade stikkrenner, kabler, ledninger, fundament etc.",
+          "Utlegging av overliggende lag skal foregå på en slik måte at duken ikke skades. Trafikk direkte på duken skal ikke forekomme. Overlapping i skjøter skal være minst 0,5 m eller som angitt i den spesielle beskrivelsen. Fiberduken skal beskyttes mot sollys ved lagring som overstiger 1 måned.",
+          "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Sand og grus skal komprimeres til minimum 93 % Modifisert Proctor. For steinmaterialer skal det utarbeides et valseprogram som fastlegges etter måling av komprimeringsgraden ved nivellement. Veiledning for valg av komprimeringsutstyr og antall overfarter er gitt i Håndbok R761 Prosesskode 1, figur 25.1.",
+          "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren.",
+          "Ved utlegging skal materialet behandles med varsomhet for å unngå nedknusing. Det tillates ikke anleggstrafikk direkte på laget. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2.",
+          "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver. Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal utføres slik at platene ikke skades. Det skal settes inn tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m før det kan trafikkeres med hjulgående utstyr."
+        ],
+        "d": [
+          "Maksimalt tillatt vertikalt avvik fra prosjektert profil er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er +100 mm/-0 mm.",
+          "Maksimalt tillatt vertikalt avvik fra prosjektert nivå er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm. Overflaten skal ha jevnt fall iht. planene.",
+          "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.33 eller 51.43."
+        ],
+        "e": "Det foretas regelmessig inspeksjon i materialtaket under drift. For hvert 1000 m3 utlagt filterlag skal det tas 2 prøver for kontroll av gradering og telefarlighet.",
+        "x": [
+          "Mengden måles som prosjektert areal. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2.",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "52.1": {
+      "tittel": "Filterlag",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av filterlag.",
+        "b": "Materialet skal tilfredsstille krav gitt i Håndbok N200 Vegbygging, pkt. 612.",
+        "c": "Sand/grus legges ut i lag som komprimeres til minimum 93 % Modifisert Proctor. Overflaten skal ha jevnt fall til siden på minst 3 %. Utlegging og komprimering må ikke deformere grunnen, redusere bæreevnen eller skade stikkrenner, kabler, ledninger, fundament etc.",
+        "d": "Maksimalt tillatt vertikalt avvik fra prosjektert profil er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er +100 mm/-0 mm.",
+        "e": "Det foretas regelmessig inspeksjon i materialtaket under drift. For hvert 1000 m3 utlagt filterlag skal det tas 2 prøver for kontroll av gradering og telefarlighet.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "52.11": {
+      "tittel": "Filterlag av sand og grus",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "52.13": {
+      "tittel": "Filterlag av knuste eller sorterte grusmaterialer",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "52.14": {
+      "tittel": "Filterlag av knuste steinmaterialer",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "52.2": {
+      "tittel": "Separasjonslag/filterlag av fiberduk",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat.",
+        "b": "Bruksklasse skal være som angitt i den spesielle beskrivelsen. Fiberduken skal tilfredsstille kravene angitt gjennom sertifiseringsordningen NorGeoSpec 2012 for den aktuelle bruksklassen og være registrert under denne ordningen eller 3dje parts verifisering til samme kvalitetsnivå.",
+        "c": "Utlegging av overliggende lag skal foregå på en slik måte at duken ikke skades. Trafikk direkte på duken skal ikke forekomme. Overlapping i skjøter skal være minst 0,5 m eller som angitt i den spesielle beskrivelsen. Fiberduken skal beskyttes mot sollys ved lagring som overstiger 1 måned.",
+        "x": "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2."
+      }
+    },
+    "52.21": {
+      "tittel": "Fiberduk bruksklasse 2",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "52.22": {
+      "tittel": "Fiberduk bruksklasse 3",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "52.23": {
+      "tittel": "Fiberduk bruksklasse 4",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "52.24": {
+      "tittel": "Fiberduk bruksklasse 5",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "52.3": {
+      "tittel": "Frostsikringslag",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av materialer for frostsikring.",
+          "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+          "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+          "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er medtatt i prosess 51.33."
+        ],
+        "b": [
+          "Steinmaterialer til frostsikring skal være knust berg produsert på en kontrollert måte, minimum ved grovknusing. Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1%, maksimalt 7% regnet av materiale mindre enn 90 mm.",
+          "Sand skal ha et graderingstall Cu (d60/d10) større enn 5.",
+          "Materialet skal være usortert lettklinker med gradering 0/32 mm.",
+          "Materialene skal ha sortering som angitt i den spesielle beskrivelsen. Krav til materialene for øvrig skal være iht. håndbok N200 Vegbygging.",
+          "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen."
+        ],
+        "c": [
+          "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Sand og grus skal komprimeres til minimum 93 % Modifisert Proctor. For steinmaterialer skal det utarbeides et valseprogram som fastlegges etter måling av komprimeringsgraden ved nivellement. Veiledning for valg av komprimeringsutstyr og antall overfarter er gitt i Håndbok R761 Prosesskode 1, figur 25.1.",
+          "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren.",
+          "Ved utlegging skal materialet behandles med varsomhet for å unngå nedknusing. Det tillates ikke anleggstrafikk direkte på laget. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2.",
+          "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver. Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal utføres slik at platene ikke skades. Det skal settes inn tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m før det kan trafikkeres med hjulgående utstyr."
+        ],
+        "d": [
+          "Maksimalt tillatt vertikalt avvik fra prosjektert nivå er +/- 40 mm. Maksimalt tillatt horisontalt avvik fra de prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm. Overflaten skal ha jevnt fall iht. planene.",
+          "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.33 eller 51.43."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "52.31": {
+      "tittel": "Frostsikringslag av sand, grus eller steinmaterialer",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+        "b": [
+          "Steinmaterialer til frostsikring skal være knust berg produsert på en kontrollert måte, minimum ved grovknusing. Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1%, maksimalt 7% regnet av materiale mindre enn 90 mm.",
+          "Sand skal ha et graderingstall Cu (d60/d10) større enn 5."
+        ],
+        "c": "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Sand og grus skal komprimeres til minimum 93 % Modifisert Proctor. For steinmaterialer skal det utarbeides et valseprogram som fastlegges etter måling av komprimeringsgraden ved nivellement. Veiledning for valg av komprimeringsutstyr og antall overfarter er gitt i Håndbok R761 Prosesskode 1, figur 25.1.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "52.32": {
+      "tittel": "Frostsikringslag av lettklinker (ekspandert leire)",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+        "b": "Materialet skal være usortert lettklinker med gradering 0/32 mm.",
+        "c": "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "52.33": {
+      "tittel": "Frostsikringslag av skumglassgranulat",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er medtatt i prosess 52.2.",
+        "b": "Materialene skal ha sortering som angitt i den spesielle beskrivelsen. Krav til materialene for øvrig skal være iht. håndbok N200 Vegbygging.",
+        "c": "Ved utlegging skal materialet behandles med varsomhet for å unngå nedknusing. Det tillates ikke anleggstrafikk direkte på laget. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "52.34": {
+      "tittel": "Frostsikring med plater av ekstrudert polystyren (XPS)",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er medtatt i prosess 51.33.",
+        "b": "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen.",
+        "c": "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver. Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal utføres slik at platene ikke skades. Det skal settes inn tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m før det kan trafikkeres med hjulgående utstyr.",
+        "d": "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.33 eller 51.43.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "53": {
+      "tittel": "FORSTERKNINGSLAG",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av forsterkningslag.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt pukk, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult, samt der det er aktuelt inkl. opplasting, transport, utsortering, blokkdemolering, knusing, sikting og fjerning av overskudd av finstoff.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke",
+          "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av overskudd av finstoff, utlegging og komprimering av forsterkningslag fra linjen eller sidetak.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult tilført utenfra.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke.",
+          "Omfatter levering, utlegging og komprimering av materialer til forkiling av forsterkningslag.",
+          "Volum av materialene måles ikke, men inngår i volum i prosess 53.2.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong og blandet masse."
+        ],
+        "b": [
+          "Alle krav til korngradering gjelder for prøver tatt på veg. Mekaniske egenskaper kan dokumenteres ved prøver tatt på produksjonssted.",
+          "Forsterkningslaget skal bygges opp av bæredyktige, godt drenerende og ikke vannømfintlige materialer. Materialet skal tilfredsstille kravene gitt i Håndbok N200 Vegbygging kap. 63.",
+          "Øvre siktstørrelse D skal være maksimalt 90 mm.",
+          "Krav til materialer skal være som angitt i Håndbok N200 Vegbygging, pkt. 642.1.",
+          "Materialet skal være knust berg. Krav til materialer skal være som for Fk bærelag i henhold til prosess 54.2. Sortering (siktstørrelser) skal være som angitt i den spesielle beskrivelsen.",
+          "Resirkulerte materialer skal tilfredsstille kravene i Håndbok N200 Vegbygging, pkt. 631."
+        ],
+        "c": [
+          "Utlegging, planering og komprimering skal foregå slik at en får et jevnt lag av homogent materiale, og slik at den ferdige overflate får jevnt fall til siden. Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg. Transport og utlegging skal utføres slik at det ikke oppstår spordannelse eller andre skadelige deformasjoner i underlaget.",
+          "Til komprimering skal det normalt brukes vibrerende utstyr, som ikke må slite ned materialet unødig eller skade stikkrenner, ledninger o.l. På bløt grunn skal det ikke brukes utstyr med slik dybdeeffekt at bæreevnen svekkes. Ved utlegging og komprimering skal massene vannes godt.",
+          "Materiale med øvre siktstørrelse maksimalt 32 mm skal komprimeres til minimum 95 % Modifisert Proctor.",
+          "Ved bruk av materialer med øvre siktstørrelse større enn 32 mm skal det utarbeides et valseprogram. Programmet fastlegges etter måling av komprimeringsgraden ved nivellement over en homogen seksjon (mht. underliggende lag og tykkelser) på minimum 50 m. Nivellement skal utføres med 10 punkter i hver tverrprofil, minimum 5 profiler pr. homogen seksjon (1 profil = 1 prøve). Gjennomsnittlig setning for siste overfart av valsen skal være mindre enn 10 % av gjennomsnittlig total setning.",
+          "Veiledning for valg av komprimeringsutstyr og antall overfarter er gitt i Håndbok N200 Vegbygging tabell 602.3.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, tabell 602.5 og tabell 602.6.",
+          "Knust betong (Gjb) legges ut lagvis med lagtykkelse maksimalt 300 mm. Ved utlegging og komprimering skal massene vannes godt. For velgraderte masser skal vanninnholdet være tilnærmet optimalt. Komprimering av hvert lag utføres med minimum to overfarter med vibrasjon, fortrinnsvis med lav amplitude. Det øverste laget kan eventuelt overrulles uten vibrering for utjevning av overflaten."
+        ],
+        "d": "Tillatt avvik fra prosjektert overkant av forsterkningslaget er +/- 30 mm for enkeltverdier. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm.",
+        "e": "Kontroll av komprimering skal være iht. Håndbok N200 Vegbygging. Kontroll av høyde: 3 punkter per profil per 20 m veg.",
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "53.1": {
+      "tittel": "Forsterkningslag av grus og samfengt pukk",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt pukk, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff.",
+        "b": "Øvre siktstørrelse D skal være maksimalt 90 mm.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "53.12": {
+      "tittel": "Grus forsterkningslag",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.121": {
+      "tittel": "Grus forsterkningslag fra linjen eller sidetak",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.122": {
+      "tittel": "Grus forsterkningslag tilført utenfra",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.13": {
+      "tittel": "Forsterkningslag av samfengt pukk fra linjen eller sidetak",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.131": {
+      "tittel": "Samfengt pukk forsterkningslag fra linjen eller sidetak",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.132": {
+      "tittel": "Samfengt pukk forsterkningslag tilført utenfra",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.2": {
+      "tittel": "Forsterkningslag av knuste steinmaterialer av pukk og kult",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult, samt der det er aktuelt inkl. opplasting, transport, utsortering, blokkdemolering, knusing, sikting og fjerning av overskudd av finstoff.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke",
+          "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av overskudd av finstoff, utlegging og komprimering av forsterkningslag fra linjen eller sidetak.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult tilført utenfra.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "53.21": {
+      "tittel": "Forsterkningslag fra linjen eller sidetak",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av overskudd av finstoff, utlegging og komprimering av forsterkningslag fra linjen eller sidetak.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "53.211": {
+      "tittel": "Forsterkningslag sortering 11/90",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.212": {
+      "tittel": "Forsterkningslag sortering 22/125",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.213": {
+      "tittel": "Forsterkningslag sortering 22/180",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.214": {
+      "tittel": "Forsterkningslag av andre sorteringer",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.22": {
+      "tittel": "Forsterkningslag tilført utenfra",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult tilført utenfra.",
+          "Forkiling er medtatt i prosess 53.3, volum av materialene til forkiling måles ikke."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "53.221": {
+      "tittel": "Forsterkningslag sortering 11/90",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.222": {
+      "tittel": "Forsterkningslag sortering 22/125",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.223": {
+      "tittel": "Forsterkningslag sortering 22/180",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.224": {
+      "tittel": "Forsterkningslag av andre sorteringer",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.3": {
+      "tittel": "Forkiling av forsterkningslag",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av materialer til forkiling av forsterkningslag.",
+          "Volum av materialene måles ikke, men inngår i volum i prosess 53.2."
+        ],
+        "b": [
+          "Krav til materialer skal være som angitt i Håndbok N200 Vegbygging, pkt. 642.1.",
+          "Materialet skal være knust berg. Krav til materialer skal være som for Fk bærelag i henhold til prosess 54.2. Sortering (siktstørrelser) skal være som angitt i den spesielle beskrivelsen."
+        ],
+        "x": [
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2"
+        ]
+      }
+    },
+    "53.31": {
+      "tittel": "Forkiling med knust asfalt Ak",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "b": "Krav til materialer skal være som angitt i Håndbok N200 Vegbygging, pkt. 642.1.",
+        "x": "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2"
+      }
+    },
+    "53.33": {
+      "tittel": "Forkiling med steinmaterialer Fk",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "b": "Materialet skal være knust berg. Krav til materialer skal være som for Fk bærelag i henhold til prosess 54.2. Sortering (siktstørrelser) skal være som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2"
+      }
+    },
+    "53.6": {
+      "tittel": "Forsterkningslag av resirkulerte materialer",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong og blandet masse.",
+        "b": "Resirkulerte materialer skal tilfredsstille kravene i Håndbok N200 Vegbygging, pkt. 631.",
+        "c": "Knust betong (Gjb) legges ut lagvis med lagtykkelse maksimalt 300 mm. Ved utlegging og komprimering skal massene vannes godt. For velgraderte masser skal vanninnholdet være tilnærmet optimalt. Komprimering av hvert lag utføres med minimum to overfarter med vibrasjon, fortrinnsvis med lav amplitude. Det øverste laget kan eventuelt overrulles uten vibrering for utjevning av overflaten.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "53.61": {
+      "tittel": "Forsterkningslag av knust betong type Gjb",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "53.62": {
+      "tittel": "Forsterkningslag av blandet masse type Bm",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "54": {
+      "tittel": "BÆRELAG AV MEKANISK STABILISERTE MATERIALER",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging, komprimering og ev. forkiling av bærelag av knust grus, knust berg, forkilt pukk og knust betong.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus type Gk. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust grus type Gk.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus type Gk tilført utenfra.",
+          "Omfatter levering, utlegging og komprimering av bærelag type Fk av knust berg eller knust stein. Omfatter også, der det er aktuelt, opplasting, transport,  utsortering, blokkdemolering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust berg type Fk.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust berg type Fk.",
+          "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt.",
+          "Omfatter levering, utlegging og komprimering av bærelag av gjenbruksasfalt, som er Ak tilsatt bituminøst bindemiddel."
+        ],
+        "b": [
+          "Alle krav til korngradering gjelder for prøver tatt på veg.",
+          "Materialet skal tilfredsstille kravene gitt i Håndbok N200 Vegbygging pkt. 641.",
+          "Det er angitt i den spesielle beskrivelsen hvilken sortering som skal brukes.",
+          "Der stein brukes til produksjon av Fk materialer skal minimum størrelse av steinen (utgangsmaterialet) være 60 mm.",
+          "Det er angitt i den spesielle beskrivelsen hvilken sortering som skal brukes.",
+          "Krav til materialer og utførelse skal være som angitt i håndbok N200 Vegbygging, pkt. 642.1.",
+          "Krav til materialer og utførelse som angitt i Håndbok N200 Vegbygging, pkt. 642.2."
+        ],
+        "c": [
+          "Utlegging og bearbeiding skal foretas slik at det oppstår minst mulig separasjon. Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, pkt. 602.2. Veiledning for valg av komprimeringsutstyr og antall overfarter er angitt i Håndbok N200 Vegbygging, tabell 602.3.",
+          "Utlegging og bearbeiding skal foretas slik at det oppstår minst mulig separasjon.  Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, pkt. 602.2. Veiledning for valg av komprimeringsutstyr og antall overfarter er angitt i Håndbok N200 Vegbygging, tabell 602.3.",
+          "Hovedsorteringen legges ut i ett, ev. to, lag hvert med tykkelse 75, 100 eller 150 mm avhengig av sortering. Lagene komprimeres og forkiles hver for seg med finpukk. Krav til komprimeringsarbeid er vist i Håndbok N200 Vegbygging, pkt. 602.24."
+        ],
+        "d": "Maksimalt tillatt vertikalt avvik fra prosjektert overflate er +/- 20 mm enkeltverdi. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er + 100 mm/- 0 mm. Det skal måles minst 3 punkter i tverrprofilet. Krav til jevnhet målt med 3 m rettholt er 15 mm, og for bærelag av knust grus (Gk) er kravet 10 mm.",
+        "e": "Krav til prøvetaking og kontroll skal være som angitt i Håndbok N200 Vegbygging, pkt. 641.11.",
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "54.1": {
+      "tittel": "Bærelag av knust grus, Gk",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus type Gk. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust grus type Gk.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus type Gk tilført utenfra."
+        ],
+        "b": "Det er angitt i den spesielle beskrivelsen hvilken sortering som skal brukes.",
+        "c": [
+          "Utlegging og bearbeiding skal foretas slik at det oppstår minst mulig separasjon. Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, pkt. 602.2. Veiledning for valg av komprimeringsutstyr og antall overfarter er angitt i Håndbok N200 Vegbygging, tabell 602.3."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "54.11": {
+      "tittel": "Bærelag av knust grus Gk fra linjen eller sidetak",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust grus type Gk.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "54.12": {
+      "tittel": "Bærelag av knust grus Gk tilført utenfra",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust grus type Gk tilført utenfra.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "54.2": {
+      "tittel": "Bærelag av knuste steinmaterialer, Fk",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av bærelag type Fk av knust berg eller knust stein. Omfatter også, der det er aktuelt, opplasting, transport,  utsortering, blokkdemolering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust berg type Fk.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust berg type Fk."
+        ],
+        "b": [
+          "Der stein brukes til produksjon av Fk materialer skal minimum størrelse av steinen (utgangsmaterialet) være 60 mm.",
+          "Det er angitt i den spesielle beskrivelsen hvilken sortering som skal brukes."
+        ],
+        "c": [
+          "Utlegging og bearbeiding skal foretas slik at det oppstår minst mulig separasjon.  Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang.",
+          "Krav til komprimering er angitt i Håndbok N200 Vegbygging, pkt. 602.2. Veiledning for valg av komprimeringsutstyr og antall overfarter er angitt i Håndbok N200 Vegbygging, tabell 602.3."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
+    },
+    "54.21": {
+      "tittel": "Bærelag av knuste steinmaterialer Fk fra linjen eller sidetak",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter opplasting, transport, utsortering, blokkdemolering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff, utlegging og komprimering av bærelag av knust berg type Fk.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "54.22": {
+      "tittel": "Bærelag av knuste steinmaterialer Fk tilført utenfra",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust berg type Fk.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "54.3": {
+      "tittel": "Bærelag av forkilt pukk, Fp",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag.",
+        "c": "Hovedsorteringen legges ut i ett, ev. to, lag hvert med tykkelse 75, 100 eller 150 mm avhengig av sortering. Lagene komprimeres og forkiles hver for seg med finpukk. Krav til komprimeringsarbeid er vist i Håndbok N200 Vegbygging, pkt. 602.24.",
+        "x": "Mengden måles som prosjektert areal av overflate ferdig bærelag unntatt skråninger. Enhet: m2"
+      }
+    },
+    "54.31": {
+      "tittel": "Fp, hovedsortering 16/56 mm, forkiling 8/11 mm",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "54.32": {
+      "tittel": "Fp, hovedsortering 22/63 mm, forkiling 8/16 mm",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "54.33": {
+      "tittel": "Fp, hovedsortering 22/90 mm, forkiling 16/22 mm",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "54.4": {
+      "tittel": "Bærelag av knust asfalt, Ak",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt.",
+        "b": "Krav til materialer og utførelse skal være som angitt i håndbok N200 Vegbygging, pkt. 642.1.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "54.5": {
+      "tittel": "Bærelag av gjenbruksasfalt, Gja",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av gjenbruksasfalt, som er Ak tilsatt bituminøst bindemiddel.",
+        "b": "Krav til materialer og utførelse som angitt i Håndbok N200 Vegbygging, pkt. 642.2.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "55": {
+      "tittel": "BÆRELAG AV BITUMENSTABILISERTE MATERIALER",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert grus med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt.",
+          "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med lagtykkelse som angitt i den spesielle beskrivelsen, inkludert etterarbeider som feiing og etterstrøing.",
+          "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+          "Omfatter levering, penetrering med bituminøst bindemiddel, levering og forkiling med pukk og komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing.",
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer. For krav se Håndbok N200 Vegbygging, pkt. 643.4-643.6."
+        ],
+        "b": [
+          "Krav til materialer som angitt i Håndbok N200 Vegbygging, pkt. 643.",
+          "Steinmaterialenes sortering, samt type og mengde bindemiddel til penetrering, skal være som angitt den spesielle beskrivelsen."
+        ],
+        "c": [
+          "Krav til utførelse som angitt i Håndbok N200 Vegbygging, pkt. 643.",
+          "Krav til komprimeringsarbeid er vist i Håndbok N200 Vegbygging, pkt. 602.24."
+        ],
+        "d": [
+          "Maksimalt tillatt vertikalt avvik fra prosjektert overflate er +/- 20 mm (enkeltverdi). Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensninger er +100 mm/ -0 mm. Maksimalt avvik fra prosjektert lagtykkelse skal være +20% / -10%.",
+          "Krav til jevnhet målt med 3 m rettholt er 10 mm.",
+          "Krav til jevnhet målt med 3 m rettholt er 15 mm.",
+          "Krav til jevnhet målt med 3 m rettholt er 15 mm."
+        ],
+        "e": [
+          "Krav til prøvetaking og kontroll som angitt i Håndbok N200 Vegbygging, pkt. 643.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens)."
+        ],
+        "x": [
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt masse. Enhet: tonn"
+        ]
+      }
+    },
+    "55.1": {
+      "tittel": "Bærelag av asfaltert grus, Ag",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert grus med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ],
+        "e": "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+        "x": "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2"
+      }
+    },
+    "55.2": {
+      "tittel": "Bærelag av asfaltert pukk, Ap",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt.",
+        "d": "Krav til jevnhet målt med 3 m rettholt er 15 mm.",
+        "e": "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+        "x": "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2"
+      }
+    },
+    "55.3": {
+      "tittel": "Bærelag av penetrert pukk, Pp",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med lagtykkelse som angitt i den spesielle beskrivelsen, inkludert etterarbeider som feiing og etterstrøing.",
+          "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+          "Omfatter levering, penetrering med bituminøst bindemiddel, levering og forkiling med pukk og komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing."
+        ],
+        "b": "Steinmaterialenes sortering, samt type og mengde bindemiddel til penetrering, skal være som angitt den spesielle beskrivelsen.",
+        "c": "Krav til komprimeringsarbeid er vist i Håndbok N200 Vegbygging, pkt. 602.24.",
+        "d": "Krav til jevnhet målt med 3 m rettholt er 15 mm.",
+        "x": [
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2"
+        ]
+      }
+    },
+    "55.31": {
+      "tittel": "Hovedsortering Pp",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+        "x": "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2"
+      }
+    },
+    "55.32": {
+      "tittel": "Penetrering og forkiling Pp",
+      "enhet": "m2",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, penetrering med bituminøst bindemiddel, levering og forkiling med pukk og komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing.",
+        "x": "Mengden måles som prosjektert areal av overflate ferdig bærelag. Enhet: m2"
+      }
+    },
+    "55.4": {
+      "tittel": "Bærelag av øvrige bitumenstabiliserte materialer",
+      "enhet": "tonn",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer. For krav se Håndbok N200 Vegbygging, pkt. 643.4-643.6.",
+        "x": "Mengden måles som prosjektert anbrakt masse. Enhet: tonn"
+      }
+    },
+    "55.41": {
+      "tittel": "Bærelag av emulsjonsgrus, Eg",
+      "enhet": "tonn",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "55.43": {
+      "tittel": "Bærelag av skumgrus, Sg",
+      "enhet": "tonn",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "55.44": {
+      "tittel": "Bærelag av bitumenstabilisert grus, Bsg",
+      "enhet": "tonn",
+      "hovedprosess": "5",
+      "url": ""
+    },
+    "56": {
+      "tittel": "BÆRELAG AV SEMENTSTABILISERTE MATERIALER",
+      "enhet": "?",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel. For krav se Håndbok N200 Vegbygging, kap. 644.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "56.1": {
+      "tittel": "Bærelag av drensbetong, Db",
+      "enhet": "m3",
+      "hovedprosess": "5",
+      "url": "",
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel. For krav se Håndbok N200 Vegbygging, kap. 644.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+      }
+    },
+    "58": {
+      "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
+      "enhet": "?",
+      "hovedprosess": "5",
+      "url": ""
+    }
+  }
+}
