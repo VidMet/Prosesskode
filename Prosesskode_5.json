@@ -7,7 +7,293 @@
     "5": {
       "tittel": "Vegfundament",
       "enhet": "?",
-      "hovedprosess": "5"
+      "hovedprosess": "5",
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med planum (traubunn i skjæring og overkant underbygning på fylling), så som stabilisering, utskifting og forsterkning, rensk, avretting, justering og komprimering, inklusive utkilinger etc.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter stabilisering av planum med kalk, sement eller lignende.",
+          "Omfatter masseutskifting og forsterkning av planum på veg i dagen.",
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt masselager inkludert arbeider ved mottaket. Leverings- og behandlingsgebyr er beskrevet i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er beskrevet i prosess 51.3 eller 51.4.",
+          "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen.",
+          "Omfatter avretting, justering og komprimering av planum på jord utover det som er beskrevet under prosess 25.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel, i dypsprengt skjæring og på fylling av sprengt stein, utover det som er beskrevet under prosess 26. Omfatter også kontroll av dypsprengning. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder.",
+          "For rensk og tilbakefylling til teoretisk sprengningsprofil i tunnelsåle, se prosess 33.13 og 33.14.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder",
+          "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering.",
+          "Omfatter de tilleggsarbeider og -kostnader som konstruksjonsdetaljene betinger for å etablere utkiling ved overgang fra jord til berg i vegens lengderetning. . Mengder for øvrig avregnes under de prosesser som kommer til anvendelse avhengig av typer masse og utførelse. Se vegnormal N200 Vegbygging kap. 3.2.5 og den spesielle beskrivelsen.",
+          "Omfatter levering, utlegging og eventuelt komprimering av filterlag, og spesielle frostsikringslag av sand, grus, knust berg eller resirkulerte materialer, lettklinker, skumglassgranulat eller ekstrudert polystyren samt ev. fiberduk.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av filterlag.",
+          "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat.",
+          "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+          "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+          "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er beskrevet i prosess 51.3.",
+          "Omfatter levering, utlegging og komprimering og ev. forkiling av forsterkningslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt knust berg, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult, samt der det er aktuelt inkl. opplasting, transport, utsortering, blokkdemolering, knusing, sikting og fjerning av overskudd av finstoff.",
+          "Forkiling er beskrevet i prosess 53.3.",
+          "Omfatter levering, utlegging og komprimering av materialer til forkiling av forsterkningslag.",
+          "Volum av materialene måles ikke for oppgjør, men inngår i volum i prosess 53.2.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong, Gjb, og blandet masse, Bm.",
+          "Omfatter levering, utlegging, komprimering, ev. forkiling av mekanisk stabiliserte bærelag av knust grus (Gk), knust berg (Fk), forkilt pukk (Pp), knust asfalt (Ak) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus (Gk), knust berg (Fk) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, blokkdemolering og fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt.",
+          "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag.",
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert grus med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt.",
+          "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med tykkelse som angitt, inkludert etterarbeider som feiing og etterstrøing.",
+          "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+          "Omfatter levering, penetrering med bituminøst bindemiddel og forkiling samt komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing.",
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer.",
+          "Omfatter levering, utlegging og komprimering av bærelag av sementstabiliserte materialer.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel, drensbetong, Db."
+        ],
+        "b": [
+          "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+          "Etter dypsprengning skal andelen finstoff mindre enn 0,063 mm være maksimalt 7% regnet av materiale mindre enn 90 mm. Største tillatte stein skal ha sidekant som ikke overstiger 500 mm.",
+          "Justeringslaget skal være av knuste masser (ev. gjenbruksbetong) med sortering tilpasset underlag og aktuell lagtykkelse. De knuste massene skal ikke være vannømfintlige, og sortering tilpasses slik at det oppnås et stabilt lag med maksimal steinstørrelse ikke mer enn 2/3 av lagtykkelsen. Materialet i justeringslag skal være drenerende, maksimalt 7 % skal passere 0,063 mm sikt regnet av materiale mindre enn 22,4 mm.",
+          "Oppfylling til planum skal utføres med ikke telefarlige masser, telefarlighetsklasse T1.",
+          "Krav til materialer som for øvrig med tilsvarende massetyper og lag.",
+          "Materialet skal tilfredsstille filterkriteriene både mot materialet i grunnen og mot overliggende lag, se krav gitt i vegnormal N200 Vegbygging, kap. 4.3..",
+          "Bruksklasse skal være som angitt i den spesielle beskrivelsen. Fiberduk skal tilfredsstille kravene i vegnormal N200 Vegbygging kapittel 4.4.1.",
+          "Frostsikringslag av bergmasser skal være knust i en kontrollert produksjon.",
+          "Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Frostsikringslag av løsmasser skal ha et graderingstall Cu (d60/d10) på minimum 5.",
+          "For grove materialtyper, øvre siktstørrelse 90 mm eller større, gjelder følgende:",
+          "Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1,0% og maksimalt 7,0% regnet av mengden materiale mindre enn 90 mm.",
+          "For fine materialtyper, øvre siktstørrelse mindre enn 90 mm, gjelder følgende:",
+          "Andelen finstoff mindre enn 0,063 mm skal minst være 2,0% og maksimalt 15,0% regnet av mengden materiale mindre enn 22,4 mm.",
+          "Frostsikringslag som har kontakt med isolasjonsplater av ekspandert polystyren (XPS) skal ha øvre siktstørrelse maksimalt 32 mm.",
+          "Materialet skal være lettklinker med tørr, løs densitet 275 kg/m3 +/- 15 % for sorteringen 0/32 og 245 kg/m3 +/- 15 % for sorteringen 10/20.",
+          "Andel finstoff mindre enn 2 mm skal ikke overstige 4 % (vektprosent) for ukomprimerte masser.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.3.",
+          "Materialene skal ha sortering 10/60 mm eller som angitt i den spesielle beskrivelsen. Tørr, løs densitet for skumglassgranulatet skal være 180 kg/m3 +/- 15 %. Maksimalt tillatt finstoff < 2 mm er 4 % (vektprosent) for ukomprimert masse ved mottak på anlegget. Se vegnormal N200 Vegbygging kap. 4.5.2.4.",
+          "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen. Se vegnormal N200 Vegbygging kap. 4.5.2.2 .",
+          "Forsterkningslaget skal bygges opp av bæredyktige, godt drenerende og ikke vannømfintlige materialer. Materialet skal tilfredsstille kravene gitt i vegnormal N200 Vegbygging kap. 4.6.1 .",
+          "Alle krav til korngradering gjelder for prøver tatt på veg.",
+          "Materialet skal ha kornfordeling som strekker seg opp til øvre siktstørrelse og ned til nedre siktstørrelse.",
+          "Største tillatte steinstørrelse, DMAKS , er følgende:",
+          "For materialer med øvre siktstørrelse, D, på 63 mm eller mindre: 2 · D (mm)",
+          "For materialer med øvre siktstørrelse, D, større enn 63 mm: 1,4 · D (mm)",
+          "Krav til korngradering, overkorn og underkorn er angitt i vegnormal N200 Vegbygging kap. 4.6.1.  I tabellen er det også angitt maksimalverdier for avvikende prøveresultater, for inntil 20% av prøvene.",
+          "Forsterkningslag som har kontakt med isolasjonsplater av ekspandert polystyren (XPS) skal ha øvre siktstørrelse maksimalt 32 mm.",
+          "Krav til mekaniske egenskaper er følgende:",
+          "Los Angeles-verdi, LA: Maksimalt 35",
+          "micro-Deval-koeffisient, MDE: Maksimalt 20",
+          "For veg med lite trafikk, trafikkgruppe A, skal tilsvarende krav til grenseverdier være hhv. maksimalt 40 og 25 dersom dette er angitt i den spesielle beskrivelsen.",
+          "Sorteringer og materialtyper som kan benyttes er:",
+          "Grus (knust/uknust) 0/63 mm",
+          "Grus (knust/uknust) 0/90 mm",
+          "Samfengt knust berg 0/63 mm",
+          "Samfengt knust berg 0/90 mm",
+          "Sortering og materialtype skal være iht. den spesielle beskrivelsen.",
+          "Grus skal ha humusinnhold mindre enn 1%.",
+          "Krav om at grus skal være knust er som angitt i den spesielle beskrivelsen.",
+          "For klassifisering som knust grus er krav til knusningsgrad C50/30.",
+          "Korngradering skal være som angitt i vegnormal N200 Vegbygging kap. 4.6.1 for følgende sorteringer:",
+          "Materialer med sortering 0/63 mm: Materialer med sortering 0/90 mm:",
+          "Krav til finstoffinnhold, kornstørrelse mindre enn 0,063 mm, er maksimalt 3% av total prøve.",
+          "Største steinstørrelse, DMAKS, for kult i sortering 22/180 mm skal være maksimalt 2/3 av lagtykkelsen ferdig komprimert. For bløt grunn, bæreevnegruppe 4 til 7, er tilsvarende krav 1/2 av lagtykkelsen.",
+          "Største tillatte steinlengde for kult i sortering 22/180 mm er 360 mm.",
+          "Krav til materialer skal være som angitt i vegnormal N200 Vegbygging, kap.4.6.2 Forkilingsmaterialet skal ha kvalitet som for bærelag av den aktuelle materialtypen. Ved bruk av knust berg, Fk, til forkiling tillates å bruke sortering 0/22 mm iht. vegnormal N200 Vegbygging kap. 4.6.2.",
+          "Sortering (siktstørrelser) skal være som angitt i den spesielle beskrivelsen.",
+          "Egne krav til masser med forskjellige sammensetninger av resirkulert material skal være som angitt i vegnormal N200 Vegbygging, kap. 4.6.1.",
+          "Sortering og materialtype skal være iht. den spesielle beskrivelsen. Materialer skal være som angitt i vegnormal N200 Vegbygging kap. 4.7.1.1 ,. I tabellen er det også angitt maksimalverdier for avvikende prøveresultater, for inntil 20% av prøvene.",
+          "Krav til mekaniske egenskaper er følgende:",
+          "Los Angeles-verdi, LA: Maksimalt 35",
+          "micro-Deval-koeffisient, MDE: Maksimalt 15",
+          "For veg med lite trafikk, trafikkgruppe A, skal tilsvarende krav til grenseverdier være hhv. maksimalt 40 og 25 dersom dette er angitt i den spesielle beskrivelsen.",
+          "Krav til korngradering er angitt i vegnormal N200 Vegbygging kap. 4.7.1.1 tabell 4.7.1.1-2 . Dokumentasjon av korngradering gjelder for prøver tatt på veg.",
+          "Krav til finstoffinnhold, kornstørrelse <0,063 mm, er følgende:",
+          "Sortering 0/32 mm: Maksimalt 7% av total prøve",
+          "Sortering 0/45 mm: Maksimalt 5% av total prøve",
+          "Sortering 0/63 mm, kun aktuelt for Fk og Gjb: Maksimalt 3% av total prøve",
+          "Flisighetsindeks skal være maksimalt 25.",
+          "Krav til knusningsgrad for knust grus er C50/30. Humusinnhold skal være mindre enn 1%.",
+          "Sortering skal være som angitt i den spesielle beskrivelsen. Øvre siktstørrelse skal være maksimalt halve lagtykkelsen ferdig komprimert.",
+          "Det tillates innblanding med inntil 50% av knust grus (Gk) eller knust berg (Fk) med kvalitet som angitt i vegnormal N200 Vegbygging, kap. 4.7.2.1 .",
+          "Lagtykkelse, steinmaterialenes sortering og type forkilingsmateriale skal være som angitt den spesielle beskrivelsen.",
+          "Forkilingsmaterialet skal ha øvre siktstørrelse (D) som er mindre enn nedre siktstørrelse (d) for hovedsorteringen.",
+          "Bindemiddeltype skal være som angitt i den spesielle beskrivelsen.",
+          "Andel av tilsatt resirkulert asfalt jf. vegnormal N200 Vegbygging, tabell 4.43 skal ikke overstige 25% i kald tilsetning og 40% i forvarmet tilsetning.",
+          "Lagtykkelse, steinmaterialenes sortering for hovedsortering og forkiling, type forkilingsmateriale samt type og mengde bindemiddel til penetrering, skal være som angitt den spesielle beskrivelsen.",
+          "Materialer skal være iht. vegnormal N200 Vegbygging:",
+          "Emulsjonsgrus (Eg): kap. 4.7.3.4 .",
+          "Skumgrus (Sg): kap. 4.7.3.5 .",
+          "Bitumenstabilisert grus (Bsg): kap. 4.7.3.6 .",
+          "Bitumenanriket grus (Bag): kap. 4.7.3.6 .",
+          "For emulsjonsgrus og skumgrus skal massens lastfordelingskoeffisient dokumenteres, se håndbok N200 Vegbygging kap. 4.7.3.4 krav 4.7.3.4-4 ."
+        ],
+        "c": [
+          "Utførelse skal være iht. vegnormal N200 Vegbygging kap. 4. Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg.",
+          "Planum skal ha jevnt tverrfall på minst 3 % slik at vannet kan renne ut til siden overalt. Endring i tverrfallsretning skal skje gradvis over en lengde på 10 m.",
+          "Det skal ikke være hjulspor eller deformasjoner av betydning når etterfølgende lag legges ut på ferdig planum.",
+          "Under isolasjonsplater på jord tillates å avrette med masser med øvre siktstørrelse maksimalt 11 mm for å oppnå tilstrekkelig jevnhet. Platene skal kunne ligge stabilt så de ikke knekker.",
+          "Dypsprengningen skal vendes eller prøvegraves for hver 20. m for å kontrollere at dypsprengningen har nådd tilstrekkelig dypt og er drenert samt at massene i dypsprengningen tilfredsstiller krav til finstoff og stor stein.",
+          "Ved grunnsprengning skal utlasting alltid skje til fast berg, og det skal ikke ligge igjen mer enn 0,05 m3 overmasse pr. m2. Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder. Bunn av drensgrøft skal ligge dypere enn gryter i planum og minst 1 m under bunn av sidegrøft. Oppfylling til planum skal komprimeres som for forsterkningslag, se prosess 53.",
+          "Krav til materialer og utførelse som for øvrig med tilsvarende massetyper og lag.",
+          "Sand/grus legges ut i lag som komprimeres uten at det oppstår deformasjon av grunnen, redusert bæreevnen eller skade på stikkrenner, kabler, ledninger, fundament, etc. Materialene skal være fuktige ved komprimering. Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging krav 4.2.3.2-1.",
+          "Utlegging av overliggende lag skal foregå på en slik måte at duken ikke skades. Trafikk direkte på duken skal ikke forekomme. Overlapping i skjøter skal være minst 0,5 m eller som angitt i den spesielle beskrivelsen.",
+          "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Materialene skal være fuktige ved komprimering. Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.2 krav 4.2.3.2-1.",
+          "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren. Se vegnormal N200 Vegbygging kap. 4.5.2.3.",
+          "Største lagtykkelse for utlegging og komprimering er 60 cm pr. omgang. Ved utlegging skal materialet behandles varsomhet for å unngå nedknusing, og det tillates ikke anleggstrafikk direkte på laget. Laget over skumglassgranulatet skal ha tykkelse minst 60 cm og være komprimert før det kan trafikkeres med hjulgående utstyr. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2. Se vegnormal N200 Vegbygging kap. 4.5.2.4 .",
+          "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver.",
+          "Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal legges i ett lag og utføres slik at platene ikke skades. Det skal gjøres tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m og være ferdig komprimert før det kan trafikkeres med hjulgående utstyr.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.2.",
+          "Utførelse skal være iht. vegnormal N200 Vegbygging kap. 4.",
+          "Utlegging, planering og komprimering skal foregå slik at en får et jevnt lag av homogent materiale, og slik at den ferdige overflate får jevnt fall til siden. Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg.",
+          "Transport og utlegging skal utføres slik at det ikke oppstår nedknusing, spordannelse eller andre deformasjoner",
+          "Til komprimering skal det normalt brukes vibrerende utstyr, som ikke må slite ned materialet unødig eller skade stikkrenner, ledninger o.l. På bløt grunn skal det ikke brukes utstyr med slik dybdeeffekt at bæreevnen svekkes. Ved utlegging og komprimering skal massene vannes godt.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.",
+          "Forkilingen skal være så tynn som mulig, og ha maksimal tykkelse 50 mm.",
+          "Knust betong (Gjb) legges ut lagvis med lagtykkelser maksimalt 200 mm i hver omgang.",
+          "Utførelse skal være som angitt i vegnormal N200 Vegbygging kap. 4.7.1.",
+          "Utlegging og bearbeiding skal utføres slik at det oppstår minst mulig separasjon. Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang. Materialet skal være fuktig ved komprimering. Knust betong skal komprimeres ved høyt vanninnhold.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. håndbok N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling ved platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.",
+          "Knust asfalt skal legges ut i et jevntykt og homogent lag med tykkelse inntil 10 cm ferdig komprimert. Det skal vannet godt, ved komprimering skal materialet ha et vanninnhold på minst 5 %. Det skal benyttes tungt, statisk valseutstyr.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2 basert på vegnormal N200 Vegbygging.",
+          "Materialet skal legges ut med pukkutlegger som sikrer massens homogenitet og god forkiling mellom steinene. Pukken skal legges ut i korrekt tykkelse i ett lag avhengig av sortering og komprimeres. Deretter forkiles pukklaget med finpukk i riktig størrelse, eller med knust asfalt, asfaltert grus eller asfaltert pukk. Mengden forkilingsmateriale tilpasses slik at det sikrer god forkiling, uten at det dannes et eget lag av forkilingsmaterialet på toppen av bærelaget, og uten at det blir liggende løst materiale etter valsing.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kap. 4.2.3.5. Se tabell 4.2.3.5-1 .",
+          "Krav til utlagt hulrom for middel av 5 prøver er 3,0 til 8,0%, og tilsvarende for enkeltprøver 2,0 til 10,0%. Krav til komprimeringsgrad er minimum 96,0% av Marshall densitet.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.4.1.",
+          "Det skal utarbeides en komprimeringsplan, se vegnormal N200 Vegbygging kapittel 4.2.4.2.",
+          "Hulrom ferdig komprimert skal minimum være 18%.",
+          "Det skal utarbeides en komprimeringsplan, se vegnormal N200 Vegbygging kapittel 4.2.4.2.",
+          "Utførelse skal være iht. vegnormal N200 Vegbygging:",
+          "Emulsjonsgrus (Eg): kap. 4.7.3.4 .",
+          "Skumgrus (Sg): kap. 4.7.3.5 .",
+          "Bitumenstabilisert grus (Bsg): kap. 4.7.3.6 .",
+          "Bitumenanriket grus (Bag): kap. 4.7.3.6 .",
+          "For emulsjonsgrus og skumgrus skal massens lastfordelingskoeffisient dokumenteres, se håndbok N200 Vegbygging kap. 4.7.3.4 krav 4.7.3.4-4 ."
+        ],
+        "d": [
+          "Tillatt ujevnhet og avvik fra prosjektert høyde skal være iht. vegnormal N200 Vegbygging kap. 4.2.2. Se tabell 4.2.2.1-1.",
+          "Tillatt avvik fra prosjektert høyde er +/- 40 mm for enkeltverdi og +20 / -30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 60 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.4.4.1-1.",
+          "Tillatt avvik fra prosjektert høyde er +/- 100 mm for enkeltverdi og +/- 30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 100 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1",
+          "I tunnel tillates fast berg å stikke inntil 50 mm over prosjektert planum på enkelte steder.",
+          "Tillatt avvik fra prosjektert høyde er +/- 100 mm for enkeltverdi og +/- 30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 100 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "d) Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell  4.2.2.1-2 .",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -10% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-2",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er -10% for enkeltverdi.",
+          "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.3 eller 51.4.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 7 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +20 / -25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -15% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -20% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -2% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -5%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -2% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -5%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1  med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1  med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt maksimalt avvik fra prosjektert høyde for bærelag av drensbetong er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt ujevnhet og avvik fra prosjektert overkant av laget, samt maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer, skal være iht. vegnormal N200 Vegbygging kap. 4.2.2.1. Se tabell 4.2.2.1-1 ."
+        ],
+        "e": [
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Dokumentasjon av største steinlengde og andel materiale mindre enn 90 mm baseres på data fra lager eller produksjonsanlegg iht. NS 3468. Minimum prøvehyppighet skal være 3 prøver pr. 250 m3 ved oppstart og 1 prøve pr. 5000 m3 ved stabil produksjon.",
+          "Dokumentasjon av finstoffinnhold skal skje ved prøving av ferdig utlagt materiale. Minimum prøvehyppighet for en- og tofelts veg skal være 3 prøver fordelt over 250 meter veglengde ved oppstart og 1 prøve pr. påbegynt 1000 meter veglengde ved stabil produksjon. Prøvehyppigheten dobles for veger med tre eller flere felt.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Prøver for dokumentasjon av mekaniske egenskaper kan tas på produksjonssted eller i lager. Kontrollomfang for mekaniske egenskaper skal være minimum 1 prøve pr. påbegynt 10 000 m3. Minstekrav til kontrollomfang kan anses oppfylt av produsentens produksjonskontroll forutsatt at denne er utført i henhold til aktuell standard, og materialet hentes fra en forekomst med kjent og stabil kvalitet.",
+          "Prøver for dokumentasjon av korngradering skal tas på veg. Kontrollomfanget for korngradering skal være minimum 1 prøve pr. påbegynt 1000 m3, alternativt 1 prøve pr. påbegynt 500 meter veg i hvert kjørefelt.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av forsterkningslaget iht. vegnormal N200 Vegbygging kap. 4.2.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m.",
+          "Der forsterkningslaget etterfølges av mekanisk stabilisert bærelag, utsettes sluttdokumentasjonen til etter ferdig bærelag.",
+          "Omfang for kontroll av forkilingslag skal være som for bærelag. Prøver av forkilingsmaterialet for dokumentasjon tas ikke på veg, men fra produksjon eller lager.",
+          "Prøving/kontroll skal være iht. vegnormal N200 Vegbyggingnkap. 4. Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter i tverrprofilet.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m.",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimering skal dokumenteres ved registrering av utleggerens fremdrift og variasjon i fremdrift kombinert med målinger av bærelagets densitet og/eller hulrom. Prøvehyppighet skal være minimum 1 prøvepunkt pr. 500 m i én utleggerbredde. Et prøvepunkt består av minst 2 parallelle densitetsmålinger eller 2 borkjerner. Dersom entreprenøren dokumenterer aktiv bruk av infrarød skanning i komprimeringsarbeidet, kan prøvehyppigheten halveres.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. vegnormal N200 Vegbygging kap. 4.7.3.1 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimering skal dokumenteres ved registrering av utleggerens fremdrift og variasjon i fremdrift kombinert med målinger av bærelagets densitet og/eller hulrom. Prøvehyppighet skal være minimum 1 prøvepunkt pr. 500 m i én utleggerbredde. Et prøvepunkt består av minst 2 parallelle densitetsmålinger eller 2 borkjerner. Dersom entreprenøren dokumenterer aktiv bruk av infrarød skanning i komprimeringsarbeidet, kan prøvehyppigheten halveres.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. Vegnormal N200 Vegbygging kap. 4.2.1 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. vegnormal N200 Vegbygging kap. 4.9.1.3 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Minimum prøvehyppighet for dokumentasjon av komprimering med platebelastning er for hver påbegynte 1000 m2.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet."
+        ],
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3",
+          "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal målt med ytre begrensning teoretisk sprengningsprofil. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. I blandede profiler måles til det punkt hvor overbygningen har full tykkelse for fylling eller jordskjæring. Enhet: m3",
+          "Mengden målers som prosjektert antall utkilinger komplett i vegens lengderetning og med bredde inntil det som er nødvendig for en tofelts veg. Utkilinger som utføres i flere omganger for å få en komplett utkiling på inntil nødvendig bredde for en tofelts veg regnes samlet som en utkiling. Enhet: stk",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum ferdig forkilt forsterkningslag. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt masse. Enhet: tonn",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
     },
     "51": {
       "tittel": "PLANUM",
@@ -16,7 +302,59 @@
       "tekst": {
         "a": [
           "Omfatter levering og arbeider med planum (traubunn i skjæring og overkant underbygning på fylling), så som stabilisering, utskifting og forsterkning, rensk, avretting, justering og komprimering, inklusive utkilinger etc.",
-          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter stabilisering av planum med kalk, sement eller lignende.",
+          "Omfatter masseutskifting og forsterkning av planum på veg i dagen.",
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt masselager inkludert arbeider ved mottaket. Leverings- og behandlingsgebyr er beskrevet i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er beskrevet i prosess 51.3 eller 51.4.",
+          "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen.",
+          "Omfatter avretting, justering og komprimering av planum på jord utover det som er beskrevet under prosess 25.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel, i dypsprengt skjæring og på fylling av sprengt stein, utover det som er beskrevet under prosess 26. Omfatter også kontroll av dypsprengning. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder.",
+          "For rensk og tilbakefylling til teoretisk sprengningsprofil i tunnelsåle, se prosess 33.13 og 33.14.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder",
+          "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering.",
+          "Omfatter de tilleggsarbeider og -kostnader som konstruksjonsdetaljene betinger for å etablere utkiling ved overgang fra jord til berg i vegens lengderetning. . Mengder for øvrig avregnes under de prosesser som kommer til anvendelse avhengig av typer masse og utførelse. Se vegnormal N200 Vegbygging kap. 3.2.5 og den spesielle beskrivelsen."
+        ],
+        "b": [
+          "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+          "Etter dypsprengning skal andelen finstoff mindre enn 0,063 mm være maksimalt 7% regnet av materiale mindre enn 90 mm. Største tillatte stein skal ha sidekant som ikke overstiger 500 mm.",
+          "Justeringslaget skal være av knuste masser (ev. gjenbruksbetong) med sortering tilpasset underlag og aktuell lagtykkelse. De knuste massene skal ikke være vannømfintlige, og sortering tilpasses slik at det oppnås et stabilt lag med maksimal steinstørrelse ikke mer enn 2/3 av lagtykkelsen. Materialet i justeringslag skal være drenerende, maksimalt 7 % skal passere 0,063 mm sikt regnet av materiale mindre enn 22,4 mm.",
+          "Oppfylling til planum skal utføres med ikke telefarlige masser, telefarlighetsklasse T1.",
+          "Krav til materialer som for øvrig med tilsvarende massetyper og lag."
+        ],
+        "c": [
+          "Utførelse skal være iht. vegnormal N200 Vegbygging kap. 4. Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg.",
+          "Planum skal ha jevnt tverrfall på minst 3 % slik at vannet kan renne ut til siden overalt. Endring i tverrfallsretning skal skje gradvis over en lengde på 10 m.",
+          "Det skal ikke være hjulspor eller deformasjoner av betydning når etterfølgende lag legges ut på ferdig planum.",
+          "Under isolasjonsplater på jord tillates å avrette med masser med øvre siktstørrelse maksimalt 11 mm for å oppnå tilstrekkelig jevnhet. Platene skal kunne ligge stabilt så de ikke knekker.",
+          "Dypsprengningen skal vendes eller prøvegraves for hver 20. m for å kontrollere at dypsprengningen har nådd tilstrekkelig dypt og er drenert samt at massene i dypsprengningen tilfredsstiller krav til finstoff og stor stein.",
+          "Ved grunnsprengning skal utlasting alltid skje til fast berg, og det skal ikke ligge igjen mer enn 0,05 m3 overmasse pr. m2. Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder. Bunn av drensgrøft skal ligge dypere enn gryter i planum og minst 1 m under bunn av sidegrøft. Oppfylling til planum skal komprimeres som for forsterkningslag, se prosess 53.",
+          "Krav til materialer og utførelse som for øvrig med tilsvarende massetyper og lag."
+        ],
+        "d": [
+          "Tillatt ujevnhet og avvik fra prosjektert høyde skal være iht. vegnormal N200 Vegbygging kap. 4.2.2. Se tabell 4.2.2.1-1.",
+          "Tillatt avvik fra prosjektert høyde er +/- 40 mm for enkeltverdi og +20 / -30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 60 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.4.4.1-1.",
+          "Tillatt avvik fra prosjektert høyde er +/- 100 mm for enkeltverdi og +/- 30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 100 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1",
+          "I tunnel tillates fast berg å stikke inntil 50 mm over prosjektert planum på enkelte steder.",
+          "Tillatt avvik fra prosjektert høyde er +/- 100 mm for enkeltverdi og +/- 30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 100 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1."
+        ],
+        "e": [
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter."
+        ],
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3",
+          "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal målt med ytre begrensning teoretisk sprengningsprofil. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal. I blandede profiler måles til det punkt hvor overbygningen har full tykkelse for fylling eller jordskjæring. Enhet: m3",
+          "Mengden målers som prosjektert antall utkilinger komplett i vegens lengderetning og med bredde inntil det som er nødvendig for en tofelts veg. Utkilinger som utføres i flere omganger for å få en komplett utkiling på inntil nødvendig bredde for en tofelts veg regnes samlet som en utkiling. Enhet: stk"
         ]
       }
     },
@@ -25,7 +363,8 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter stabilisering av planum med kalk, sement eller lignende."
+        "a": "Omfatter stabilisering av planum med kalk, sement eller lignende.",
+        "x": "Mengden måles som prosjektert behandlet areal. Enhet: m2"
       }
     },
     "51.2": {
@@ -33,7 +372,19 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter masseutskifting og forsterkning av planum på veg i dagen."
+        "a": [
+          "Omfatter masseutskifting og forsterkning av planum på veg i dagen.",
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt masselager inkludert arbeider ved mottaket. Leverings- og behandlingsgebyr er beskrevet i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er beskrevet i prosess 51.3 eller 51.4.",
+          "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen."
+        ],
+        "b": "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3",
+          "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
+        ]
       }
     },
     "51.21": {
@@ -45,7 +396,9 @@
           "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
           "Omfatter utgraving, opplasting, transport og tipping på angitt masselager inkludert arbeider ved mottaket. Leverings- og behandlingsgebyr er beskrevet i prosess 27.7.",
           "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er beskrevet i prosess 51.3 eller 51.4."
-        ]
+        ],
+        "b": "Krav til materialer skal være som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert fast volum av utgravning i linjen. Enhet: m3"
       }
     },
     "51.22": {
@@ -53,7 +406,8 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen."
+        "a": "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert behandlet areal. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
       }
     },
     "51.3": {
@@ -61,7 +415,15 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter avretting, justering og komprimering av planum på jord utover det som er beskrevet under prosess 25."
+        "a": "Omfatter avretting, justering og komprimering av planum på jord utover det som er beskrevet under prosess 25.",
+        "c": [
+          "Planum skal ha jevnt tverrfall på minst 3 % slik at vannet kan renne ut til siden overalt. Endring i tverrfallsretning skal skje gradvis over en lengde på 10 m.",
+          "Det skal ikke være hjulspor eller deformasjoner av betydning når etterfølgende lag legges ut på ferdig planum.",
+          "Under isolasjonsplater på jord tillates å avrette med masser med øvre siktstørrelse maksimalt 11 mm for å oppnå tilstrekkelig jevnhet. Platene skal kunne ligge stabilt så de ikke knekker."
+        ],
+        "d": "Tillatt avvik fra prosjektert høyde er +/- 40 mm for enkeltverdi og +20 / -30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 60 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.4.4.1-1.",
+        "e": "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+        "x": "Mengden måles som prosjektert behandlet areal. Enhet: m2"
       }
     },
     "51.31": {
@@ -86,7 +448,22 @@
       "tekst": {
         "a": [
           "Omfatter avretting, justering og komprimering av planum i tunnel, i dypsprengt skjæring og på fylling av sprengt stein, utover det som er beskrevet under prosess 26. Omfatter også kontroll av dypsprengning. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder.",
-          "For rensk og tilbakefylling til teoretisk sprengningsprofil i tunnelsåle, se prosess 33.13 og 33.14."
+          "For rensk og tilbakefylling til teoretisk sprengningsprofil i tunnelsåle, se prosess 33.13 og 33.14.",
+          "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder"
+        ],
+        "b": [
+          "Etter dypsprengning skal andelen finstoff mindre enn 0,063 mm være maksimalt 7% regnet av materiale mindre enn 90 mm. Største tillatte stein skal ha sidekant som ikke overstiger 500 mm.",
+          "Justeringslaget skal være av knuste masser (ev. gjenbruksbetong) med sortering tilpasset underlag og aktuell lagtykkelse. De knuste massene skal ikke være vannømfintlige, og sortering tilpasses slik at det oppnås et stabilt lag med maksimal steinstørrelse ikke mer enn 2/3 av lagtykkelsen. Materialet i justeringslag skal være drenerende, maksimalt 7 % skal passere 0,063 mm sikt regnet av materiale mindre enn 22,4 mm."
+        ],
+        "c": "Dypsprengningen skal vendes eller prøvegraves for hver 20. m for å kontrollere at dypsprengningen har nådd tilstrekkelig dypt og er drenert samt at massene i dypsprengningen tilfredsstiller krav til finstoff og stor stein.",
+        "d": [
+          "Tillatt avvik fra prosjektert høyde er +/- 100 mm for enkeltverdi og +/- 30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 100 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1",
+          "I tunnel tillates fast berg å stikke inntil 50 mm over prosjektert planum på enkelte steder."
+        ],
+        "e": "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+        "x": [
+          "Mengden måles som prosjektert behandlet areal. Enhet: m2",
+          "Mengden måles som prosjektert behandlet areal målt med ytre begrensning teoretisk sprengningsprofil. Enhet: m2"
         ]
       }
     },
@@ -105,7 +482,8 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder"
+        "a": "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder",
+        "x": "Mengden måles som prosjektert behandlet areal målt med ytre begrensning teoretisk sprengningsprofil. Enhet: m2"
       }
     },
     "51.5": {
@@ -113,7 +491,12 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering."
+        "a": "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering.",
+        "b": "Oppfylling til planum skal utføres med ikke telefarlige masser, telefarlighetsklasse T1.",
+        "c": "Ved grunnsprengning skal utlasting alltid skje til fast berg, og det skal ikke ligge igjen mer enn 0,05 m3 overmasse pr. m2. Fast berg tillates å stikke inntil 50 mm over prosjektert planum på enkelte steder. Bunn av drensgrøft skal ligge dypere enn gryter i planum og minst 1 m under bunn av sidegrøft. Oppfylling til planum skal komprimeres som for forsterkningslag, se prosess 53.",
+        "d": "Tillatt avvik fra prosjektert høyde er +/- 100 mm for enkeltverdi og +/- 30 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 100 mm og +30 / -50 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+        "e": "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+        "x": "Mengden måles som prosjektert behandlet areal. I blandede profiler måles til det punkt hvor overbygningen har full tykkelse for fylling eller jordskjæring. Enhet: m3"
       }
     },
     "51.6": {
@@ -121,7 +504,10 @@
       "enhet": "stk",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter de tilleggsarbeider og -kostnader som konstruksjonsdetaljene betinger for å etablere utkiling ved overgang fra jord til berg i vegens lengderetning. . Mengder for øvrig avregnes under de prosesser som kommer til anvendelse avhengig av typer masse og utførelse. Se vegnormal N200 Vegbygging kap. 3.2.5 og den spesielle beskrivelsen."
+        "a": "Omfatter de tilleggsarbeider og -kostnader som konstruksjonsdetaljene betinger for å etablere utkiling ved overgang fra jord til berg i vegens lengderetning. . Mengder for øvrig avregnes under de prosesser som kommer til anvendelse avhengig av typer masse og utførelse. Se vegnormal N200 Vegbygging kap. 3.2.5 og den spesielle beskrivelsen.",
+        "b": "Krav til materialer som for øvrig med tilsvarende massetyper og lag.",
+        "c": "Krav til materialer og utførelse som for øvrig med tilsvarende massetyper og lag.",
+        "x": "Mengden målers som prosjektert antall utkilinger komplett i vegens lengderetning og med bredde inntil det som er nødvendig for en tofelts veg. Utkilinger som utføres i flere omganger for å få en komplett utkiling på inntil nødvendig bredde for en tofelts veg regnes samlet som en utkiling. Enhet: stk"
       }
     },
     "52": {
@@ -131,7 +517,68 @@
       "tekst": {
         "a": [
           "Omfatter levering, utlegging og eventuelt komprimering av filterlag, og spesielle frostsikringslag av sand, grus, knust berg eller resirkulerte materialer, lettklinker, skumglassgranulat eller ekstrudert polystyren samt ev. fiberduk.",
-          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av filterlag.",
+          "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat.",
+          "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+          "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+          "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er beskrevet i prosess 51.3."
+        ],
+        "b": [
+          "Materialet skal tilfredsstille filterkriteriene både mot materialet i grunnen og mot overliggende lag, se krav gitt i vegnormal N200 Vegbygging, kap. 4.3..",
+          "Bruksklasse skal være som angitt i den spesielle beskrivelsen. Fiberduk skal tilfredsstille kravene i vegnormal N200 Vegbygging kapittel 4.4.1.",
+          "Frostsikringslag av bergmasser skal være knust i en kontrollert produksjon.",
+          "Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Frostsikringslag av løsmasser skal ha et graderingstall Cu (d60/d10) på minimum 5.",
+          "For grove materialtyper, øvre siktstørrelse 90 mm eller større, gjelder følgende:",
+          "Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1,0% og maksimalt 7,0% regnet av mengden materiale mindre enn 90 mm.",
+          "For fine materialtyper, øvre siktstørrelse mindre enn 90 mm, gjelder følgende:",
+          "Andelen finstoff mindre enn 0,063 mm skal minst være 2,0% og maksimalt 15,0% regnet av mengden materiale mindre enn 22,4 mm.",
+          "Frostsikringslag som har kontakt med isolasjonsplater av ekspandert polystyren (XPS) skal ha øvre siktstørrelse maksimalt 32 mm.",
+          "Materialet skal være lettklinker med tørr, løs densitet 275 kg/m3 +/- 15 % for sorteringen 0/32 og 245 kg/m3 +/- 15 % for sorteringen 10/20.",
+          "Andel finstoff mindre enn 2 mm skal ikke overstige 4 % (vektprosent) for ukomprimerte masser.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.3.",
+          "Materialene skal ha sortering 10/60 mm eller som angitt i den spesielle beskrivelsen. Tørr, løs densitet for skumglassgranulatet skal være 180 kg/m3 +/- 15 %. Maksimalt tillatt finstoff < 2 mm er 4 % (vektprosent) for ukomprimert masse ved mottak på anlegget. Se vegnormal N200 Vegbygging kap. 4.5.2.4.",
+          "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen. Se vegnormal N200 Vegbygging kap. 4.5.2.2 ."
+        ],
+        "c": [
+          "Sand/grus legges ut i lag som komprimeres uten at det oppstår deformasjon av grunnen, redusert bæreevnen eller skade på stikkrenner, kabler, ledninger, fundament, etc. Materialene skal være fuktige ved komprimering. Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging krav 4.2.3.2-1.",
+          "Utlegging av overliggende lag skal foregå på en slik måte at duken ikke skades. Trafikk direkte på duken skal ikke forekomme. Overlapping i skjøter skal være minst 0,5 m eller som angitt i den spesielle beskrivelsen.",
+          "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Materialene skal være fuktige ved komprimering. Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.2 krav 4.2.3.2-1.",
+          "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren. Se vegnormal N200 Vegbygging kap. 4.5.2.3.",
+          "Største lagtykkelse for utlegging og komprimering er 60 cm pr. omgang. Ved utlegging skal materialet behandles varsomhet for å unngå nedknusing, og det tillates ikke anleggstrafikk direkte på laget. Laget over skumglassgranulatet skal ha tykkelse minst 60 cm og være komprimert før det kan trafikkeres med hjulgående utstyr. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2. Se vegnormal N200 Vegbygging kap. 4.5.2.4 .",
+          "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver.",
+          "Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal legges i ett lag og utføres slik at platene ikke skades. Det skal gjøres tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m og være ferdig komprimert før det kan trafikkeres med hjulgående utstyr.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.2."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "d) Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell  4.2.2.1-2 .",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -10% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-2",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er -10% for enkeltverdi.",
+          "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.3 eller 51.4."
+        ],
+        "e": [
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Dokumentasjon av største steinlengde og andel materiale mindre enn 90 mm baseres på data fra lager eller produksjonsanlegg iht. NS 3468. Minimum prøvehyppighet skal være 3 prøver pr. 250 m3 ved oppstart og 1 prøve pr. 5000 m3 ved stabil produksjon.",
+          "Dokumentasjon av finstoffinnhold skal skje ved prøving av ferdig utlagt materiale. Minimum prøvehyppighet for en- og tofelts veg skal være 3 prøver fordelt over 250 meter veglengde ved oppstart og 1 prøve pr. påbegynt 1000 meter veglengde ved stabil produksjon. Prøvehyppigheten dobles for veger med tre eller flere felt.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
         ]
       }
     },
@@ -140,7 +587,15 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av filterlag."
+        "a": "Omfatter levering, utlegging og komprimering av filterlag.",
+        "b": "Materialet skal tilfredsstille filterkriteriene både mot materialet i grunnen og mot overliggende lag, se krav gitt i vegnormal N200 Vegbygging, kap. 4.3..",
+        "c": [
+          "Sand/grus legges ut i lag som komprimeres uten at det oppstår deformasjon av grunnen, redusert bæreevnen eller skade på stikkrenner, kabler, ledninger, fundament, etc. Materialene skal være fuktige ved komprimering. Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging krav 4.2.3.2-1."
+        ],
+        "d": "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+        "e": "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "52.11": {
@@ -163,7 +618,10 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat."
+        "a": "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat.",
+        "b": "Bruksklasse skal være som angitt i den spesielle beskrivelsen. Fiberduk skal tilfredsstille kravene i vegnormal N200 Vegbygging kapittel 4.4.1.",
+        "c": "Utlegging av overliggende lag skal foregå på en slik måte at duken ikke skades. Trafikk direkte på duken skal ikke forekomme. Overlapping i skjøter skal være minst 0,5 m eller som angitt i den spesielle beskrivelsen.",
+        "x": "Mengden måles som prosjektert areal belagt med fiberduk. Overlapp i skjøter måles ikke for oppgjør. Enhet: m2"
       }
     },
     "52.21": {
@@ -189,14 +647,92 @@
     "52.3": {
       "tittel": "Frostsikringslag",
       "enhet": "?",
-      "hovedprosess": "5"
+      "hovedprosess": "5",
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+          "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+          "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er beskrevet i prosess 51.3."
+        ],
+        "b": [
+          "Frostsikringslag av bergmasser skal være knust i en kontrollert produksjon.",
+          "Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Frostsikringslag av løsmasser skal ha et graderingstall Cu (d60/d10) på minimum 5.",
+          "For grove materialtyper, øvre siktstørrelse 90 mm eller større, gjelder følgende:",
+          "Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1,0% og maksimalt 7,0% regnet av mengden materiale mindre enn 90 mm.",
+          "For fine materialtyper, øvre siktstørrelse mindre enn 90 mm, gjelder følgende:",
+          "Andelen finstoff mindre enn 0,063 mm skal minst være 2,0% og maksimalt 15,0% regnet av mengden materiale mindre enn 22,4 mm.",
+          "Frostsikringslag som har kontakt med isolasjonsplater av ekspandert polystyren (XPS) skal ha øvre siktstørrelse maksimalt 32 mm.",
+          "Materialet skal være lettklinker med tørr, løs densitet 275 kg/m3 +/- 15 % for sorteringen 0/32 og 245 kg/m3 +/- 15 % for sorteringen 10/20.",
+          "Andel finstoff mindre enn 2 mm skal ikke overstige 4 % (vektprosent) for ukomprimerte masser.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.3.",
+          "Materialene skal ha sortering 10/60 mm eller som angitt i den spesielle beskrivelsen. Tørr, løs densitet for skumglassgranulatet skal være 180 kg/m3 +/- 15 %. Maksimalt tillatt finstoff < 2 mm er 4 % (vektprosent) for ukomprimert masse ved mottak på anlegget. Se vegnormal N200 Vegbygging kap. 4.5.2.4.",
+          "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen. Se vegnormal N200 Vegbygging kap. 4.5.2.2 ."
+        ],
+        "c": [
+          "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Materialene skal være fuktige ved komprimering. Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.2 krav 4.2.3.2-1.",
+          "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren. Se vegnormal N200 Vegbygging kap. 4.5.2.3.",
+          "Største lagtykkelse for utlegging og komprimering er 60 cm pr. omgang. Ved utlegging skal materialet behandles varsomhet for å unngå nedknusing, og det tillates ikke anleggstrafikk direkte på laget. Laget over skumglassgranulatet skal ha tykkelse minst 60 cm og være komprimert før det kan trafikkeres med hjulgående utstyr. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2. Se vegnormal N200 Vegbygging kap. 4.5.2.4 .",
+          "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver.",
+          "Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal legges i ett lag og utføres slik at platene ikke skades. Det skal gjøres tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m og være ferdig komprimert før det kan trafikkeres med hjulgående utstyr.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.2."
+        ],
+        "d": [
+          "d) Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell  4.2.2.1-2 .",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -10% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-2",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er -10% for enkeltverdi.",
+          "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.3 eller 51.4."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Dokumentasjon av største steinlengde og andel materiale mindre enn 90 mm baseres på data fra lager eller produksjonsanlegg iht. NS 3468. Minimum prøvehyppighet skal være 3 prøver pr. 250 m3 ved oppstart og 1 prøve pr. 5000 m3 ved stabil produksjon.",
+          "Dokumentasjon av finstoffinnhold skal skje ved prøving av ferdig utlagt materiale. Minimum prøvehyppighet for en- og tofelts veg skal være 3 prøver fordelt over 250 meter veglengde ved oppstart og 1 prøve pr. påbegynt 1000 meter veglengde ved stabil produksjon. Prøvehyppigheten dobles for veger med tre eller flere felt.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
+        ]
+      }
     },
     "52.31": {
       "tittel": "Frostsikringslag av sand, grus, knust berg eller resirkulerte materialer",
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff."
+        "a": "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+        "b": [
+          "Frostsikringslag av bergmasser skal være knust i en kontrollert produksjon.",
+          "Største steinlengde skal ikke overstige halvparten av lagtykkelsen og skal ikke være større enn 500 mm. Frostsikringslag av løsmasser skal ha et graderingstall Cu (d60/d10) på minimum 5.",
+          "For grove materialtyper, øvre siktstørrelse 90 mm eller større, gjelder følgende:",
+          "Andelen materiale mindre enn 90 mm skal minst være 30%. Andelen finstoff mindre enn 0,063 mm skal minst være 1,0% og maksimalt 7,0% regnet av mengden materiale mindre enn 90 mm.",
+          "For fine materialtyper, øvre siktstørrelse mindre enn 90 mm, gjelder følgende:",
+          "Andelen finstoff mindre enn 0,063 mm skal minst være 2,0% og maksimalt 15,0% regnet av mengden materiale mindre enn 22,4 mm.",
+          "Frostsikringslag som har kontakt med isolasjonsplater av ekspandert polystyren (XPS) skal ha øvre siktstørrelse maksimalt 32 mm."
+        ],
+        "c": [
+          "Materialene skal håndteres og legges ut på en måte som gir en homogen korngradering med finstoff og grovere partikler jevnt fordelt utover laget. Materialene skal være fuktige ved komprimering. Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.2 krav 4.2.3.2-1."
+        ],
+        "d": [
+          "d) Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Dokumentasjon av største steinlengde og andel materiale mindre enn 90 mm baseres på data fra lager eller produksjonsanlegg iht. NS 3468. Minimum prøvehyppighet skal være 3 prøver pr. 250 m3 ved oppstart og 1 prøve pr. 5000 m3 ved stabil produksjon.",
+          "Dokumentasjon av finstoffinnhold skal skje ved prøving av ferdig utlagt materiale. Minimum prøvehyppighet for en- og tofelts veg skal være 3 prøver fordelt over 250 meter veglengde ved oppstart og 1 prøve pr. påbegynt 1000 meter veglengde ved stabil produksjon. Prøvehyppigheten dobles for veger med tre eller flere felt.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "52.32": {
@@ -204,7 +740,19 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2."
+        "a": "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+        "b": [
+          "Materialet skal være lettklinker med tørr, løs densitet 275 kg/m3 +/- 15 % for sorteringen 0/32 og 245 kg/m3 +/- 15 % for sorteringen 10/20.",
+          "Andel finstoff mindre enn 2 mm skal ikke overstige 4 % (vektprosent) for ukomprimerte masser.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.3."
+        ],
+        "c": "Komprimering utføres når det er lagt ut ca. 300 mm materiale over lettklinkeren. Se vegnormal N200 Vegbygging kap. 4.5.2.3.",
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell  4.2.2.1-2 .",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -10% og -10%."
+        ],
+        "e": "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "52.33": {
@@ -212,7 +760,15 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2."
+        "a": "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2.",
+        "b": "Materialene skal ha sortering 10/60 mm eller som angitt i den spesielle beskrivelsen. Tørr, løs densitet for skumglassgranulatet skal være 180 kg/m3 +/- 15 %. Maksimalt tillatt finstoff < 2 mm er 4 % (vektprosent) for ukomprimert masse ved mottak på anlegget. Se vegnormal N200 Vegbygging kap. 4.5.2.4.",
+        "c": "Største lagtykkelse for utlegging og komprimering er 60 cm pr. omgang. Ved utlegging skal materialet behandles varsomhet for å unngå nedknusing, og det tillates ikke anleggstrafikk direkte på laget. Laget over skumglassgranulatet skal ha tykkelse minst 60 cm og være komprimert før det kan trafikkeres med hjulgående utstyr. Komprimering direkte på skumglassgranulatet skal utføres med beltegående utstyr med beltetrykk maks. 50 kN/m2. Se vegnormal N200 Vegbygging kap. 4.5.2.4 .",
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 10 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +/- 25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-2",
+          "Maksimalt tillatt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er -10% for enkeltverdi."
+        ],
+        "e": "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "52.34": {
@@ -220,7 +776,15 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er beskrevet i prosess 51.3."
+        "a": "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er beskrevet i prosess 51.3.",
+        "b": "Det skal benyttes plater med korttids trykkfasthet minst 500 kN/m2, i tunnel er kravet 700 kN/m2. Platetykkelse skal være som angitt i den spesielle beskrivelsen. Se vegnormal N200 Vegbygging kap. 4.5.2.2 .",
+        "c": [
+          "Det skal legges full isolasjonstykkelse i ett lag. Platene skal legges med sprekker maks 5 mm på rette strekninger og maks 10 mm i kurver.",
+          "Ved utplanering av materiale over platene skal man unngå at planeringsutstyret samtidig skyver platene. Komprimering av gruslag over platene skal legges i ett lag og utføres slik at platene ikke skades. Det skal gjøres tiltak for å unngå å skade platene ved utlegging av overliggende lag. Overliggende gruslag skal ha en tykkelse på minst 0,3 m og være ferdig komprimert før det kan trafikkeres med hjulgående utstyr.",
+          "Se vegnormal N200 Vegbygging kap. 4.5.2.2."
+        ],
+        "d": "Underlag for platene skal tilfredsstille toleransekrav gitt i prosess 51.3 eller 51.4.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "53": {
@@ -230,7 +794,73 @@
       "tekst": {
         "a": [
           "Omfatter levering, utlegging og komprimering og ev. forkiling av forsterkningslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
-          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt knust berg, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult, samt der det er aktuelt inkl. opplasting, transport, utsortering, blokkdemolering, knusing, sikting og fjerning av overskudd av finstoff.",
+          "Forkiling er beskrevet i prosess 53.3.",
+          "Omfatter levering, utlegging og komprimering av materialer til forkiling av forsterkningslag.",
+          "Volum av materialene måles ikke for oppgjør, men inngår i volum i prosess 53.2.",
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong, Gjb, og blandet masse, Bm."
+        ],
+        "b": [
+          "Forsterkningslaget skal bygges opp av bæredyktige, godt drenerende og ikke vannømfintlige materialer. Materialet skal tilfredsstille kravene gitt i vegnormal N200 Vegbygging kap. 4.6.1 .",
+          "Alle krav til korngradering gjelder for prøver tatt på veg.",
+          "Materialet skal ha kornfordeling som strekker seg opp til øvre siktstørrelse og ned til nedre siktstørrelse.",
+          "Største tillatte steinstørrelse, DMAKS , er følgende:",
+          "For materialer med øvre siktstørrelse, D, på 63 mm eller mindre: 2 · D (mm)",
+          "For materialer med øvre siktstørrelse, D, større enn 63 mm: 1,4 · D (mm)",
+          "Krav til korngradering, overkorn og underkorn er angitt i vegnormal N200 Vegbygging kap. 4.6.1.  I tabellen er det også angitt maksimalverdier for avvikende prøveresultater, for inntil 20% av prøvene.",
+          "Forsterkningslag som har kontakt med isolasjonsplater av ekspandert polystyren (XPS) skal ha øvre siktstørrelse maksimalt 32 mm.",
+          "Krav til mekaniske egenskaper er følgende:",
+          "Los Angeles-verdi, LA: Maksimalt 35",
+          "micro-Deval-koeffisient, MDE: Maksimalt 20",
+          "For veg med lite trafikk, trafikkgruppe A, skal tilsvarende krav til grenseverdier være hhv. maksimalt 40 og 25 dersom dette er angitt i den spesielle beskrivelsen.",
+          "Sorteringer og materialtyper som kan benyttes er:",
+          "Grus (knust/uknust) 0/63 mm",
+          "Grus (knust/uknust) 0/90 mm",
+          "Samfengt knust berg 0/63 mm",
+          "Samfengt knust berg 0/90 mm",
+          "Sortering og materialtype skal være iht. den spesielle beskrivelsen.",
+          "Grus skal ha humusinnhold mindre enn 1%.",
+          "Krav om at grus skal være knust er som angitt i den spesielle beskrivelsen.",
+          "For klassifisering som knust grus er krav til knusningsgrad C50/30.",
+          "Korngradering skal være som angitt i vegnormal N200 Vegbygging kap. 4.6.1 for følgende sorteringer:",
+          "Materialer med sortering 0/63 mm: Materialer med sortering 0/90 mm:",
+          "Krav til finstoffinnhold, kornstørrelse mindre enn 0,063 mm, er maksimalt 3% av total prøve.",
+          "Største steinstørrelse, DMAKS, for kult i sortering 22/180 mm skal være maksimalt 2/3 av lagtykkelsen ferdig komprimert. For bløt grunn, bæreevnegruppe 4 til 7, er tilsvarende krav 1/2 av lagtykkelsen.",
+          "Største tillatte steinlengde for kult i sortering 22/180 mm er 360 mm.",
+          "Krav til materialer skal være som angitt i vegnormal N200 Vegbygging, kap.4.6.2 Forkilingsmaterialet skal ha kvalitet som for bærelag av den aktuelle materialtypen. Ved bruk av knust berg, Fk, til forkiling tillates å bruke sortering 0/22 mm iht. vegnormal N200 Vegbygging kap. 4.6.2.",
+          "Sortering (siktstørrelser) skal være som angitt i den spesielle beskrivelsen.",
+          "Egne krav til masser med forskjellige sammensetninger av resirkulert material skal være som angitt i vegnormal N200 Vegbygging, kap. 4.6.1."
+        ],
+        "c": [
+          "Utførelse skal være iht. vegnormal N200 Vegbygging kap. 4.",
+          "Utlegging, planering og komprimering skal foregå slik at en får et jevnt lag av homogent materiale, og slik at den ferdige overflate får jevnt fall til siden. Endring i tverrfallsretning skal skje parallelt med overflate ferdig veg.",
+          "Transport og utlegging skal utføres slik at det ikke oppstår nedknusing, spordannelse eller andre deformasjoner",
+          "Til komprimering skal det normalt brukes vibrerende utstyr, som ikke må slite ned materialet unødig eller skade stikkrenner, ledninger o.l. På bløt grunn skal det ikke brukes utstyr med slik dybdeeffekt at bæreevnen svekkes. Ved utlegging og komprimering skal massene vannes godt.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling med platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.",
+          "Forkilingen skal være så tynn som mulig, og ha maksimal tykkelse 50 mm.",
+          "Knust betong (Gjb) legges ut lagvis med lagtykkelser maksimalt 200 mm i hver omgang."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 30 mm for enkeltverdi og +/- 7 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 50 mm og +20 / -25 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -15% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -20% og -10%."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Prøver for dokumentasjon av mekaniske egenskaper kan tas på produksjonssted eller i lager. Kontrollomfang for mekaniske egenskaper skal være minimum 1 prøve pr. påbegynt 10 000 m3. Minstekrav til kontrollomfang kan anses oppfylt av produsentens produksjonskontroll forutsatt at denne er utført i henhold til aktuell standard, og materialet hentes fra en forekomst med kjent og stabil kvalitet.",
+          "Prøver for dokumentasjon av korngradering skal tas på veg. Kontrollomfanget for korngradering skal være minimum 1 prøve pr. påbegynt 1000 m3, alternativt 1 prøve pr. påbegynt 500 meter veg i hvert kjørefelt.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av forsterkningslaget iht. vegnormal N200 Vegbygging kap. 4.2.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m.",
+          "Der forsterkningslaget etterfølges av mekanisk stabilisert bærelag, utsettes sluttdokumentasjonen til etter ferdig bærelag.",
+          "Omfang for kontroll av forkilingslag skal være som for bærelag. Prøver av forkilingsmaterialet for dokumentasjon tas ikke på veg, men fra produksjon eller lager."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum ferdig forkilt forsterkningslag. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
         ]
       }
     },
@@ -239,7 +869,22 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt knust berg, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff."
+        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt knust berg, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff.",
+        "b": [
+          "Sorteringer og materialtyper som kan benyttes er:",
+          "Grus (knust/uknust) 0/63 mm",
+          "Grus (knust/uknust) 0/90 mm",
+          "Samfengt knust berg 0/63 mm",
+          "Samfengt knust berg 0/90 mm",
+          "Sortering og materialtype skal være iht. den spesielle beskrivelsen.",
+          "Grus skal ha humusinnhold mindre enn 1%.",
+          "Krav om at grus skal være knust er som angitt i den spesielle beskrivelsen.",
+          "For klassifisering som knust grus er krav til knusningsgrad C50/30.",
+          "Korngradering skal være som angitt i vegnormal N200 Vegbygging kap. 4.6.1 for følgende sorteringer:",
+          "Materialer med sortering 0/63 mm: Materialer med sortering 0/90 mm:",
+          "Krav til finstoffinnhold, kornstørrelse mindre enn 0,063 mm, er maksimalt 3% av total prøve."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "53.11": {
@@ -280,7 +925,12 @@
         "a": [
           "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult, samt der det er aktuelt inkl. opplasting, transport, utsortering, blokkdemolering, knusing, sikting og fjerning av overskudd av finstoff.",
           "Forkiling er beskrevet i prosess 53.3."
-        ]
+        ],
+        "b": [
+          "Største steinstørrelse, DMAKS, for kult i sortering 22/180 mm skal være maksimalt 2/3 av lagtykkelsen ferdig komprimert. For bløt grunn, bæreevnegruppe 4 til 7, er tilsvarende krav 1/2 av lagtykkelsen.",
+          "Største tillatte steinlengde for kult i sortering 22/180 mm er 360 mm."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum ferdig forkilt forsterkningslag. Enhet: m3"
       }
     },
     "53.21": {
@@ -366,7 +1016,14 @@
         "a": [
           "Omfatter levering, utlegging og komprimering av materialer til forkiling av forsterkningslag.",
           "Volum av materialene måles ikke for oppgjør, men inngår i volum i prosess 53.2."
-        ]
+        ],
+        "b": [
+          "Krav til materialer skal være som angitt i vegnormal N200 Vegbygging, kap.4.6.2 Forkilingsmaterialet skal ha kvalitet som for bærelag av den aktuelle materialtypen. Ved bruk av knust berg, Fk, til forkiling tillates å bruke sortering 0/22 mm iht. vegnormal N200 Vegbygging kap. 4.6.2.",
+          "Sortering (siktstørrelser) skal være som angitt i den spesielle beskrivelsen."
+        ],
+        "c": "Forkilingen skal være så tynn som mulig, og ha maksimal tykkelse 50 mm.",
+        "e": "Omfang for kontroll av forkilingslag skal være som for bærelag. Prøver av forkilingsmaterialet for dokumentasjon tas ikke på veg, men fra produksjon eller lager.",
+        "x": "Mengden måles som prosjektert areal av overflate forsterkningslag unntatt skråninger. Enhet: m2"
       }
     },
     "53.31": {
@@ -394,7 +1051,10 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong, Gjb, og blandet masse, Bm."
+        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong, Gjb, og blandet masse, Bm.",
+        "b": "Egne krav til masser med forskjellige sammensetninger av resirkulert material skal være som angitt i vegnormal N200 Vegbygging, kap. 4.6.1.",
+        "c": "Knust betong (Gjb) legges ut lagvis med lagtykkelser maksimalt 200 mm i hver omgang.",
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "53.41": {
@@ -414,7 +1074,65 @@
       "tekst": {
         "a": [
           "Omfatter levering, utlegging, komprimering, ev. forkiling av mekanisk stabiliserte bærelag av knust grus (Gk), knust berg (Fk), forkilt pukk (Pp), knust asfalt (Ak) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
-          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust grus (Gk), knust berg (Fk) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, blokkdemolering og fjerning av for stor stein og overskudd av finstoff.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt.",
+          "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag."
+        ],
+        "b": [
+          "Sortering og materialtype skal være iht. den spesielle beskrivelsen. Materialer skal være som angitt i vegnormal N200 Vegbygging kap. 4.7.1.1 ,. I tabellen er det også angitt maksimalverdier for avvikende prøveresultater, for inntil 20% av prøvene.",
+          "Krav til mekaniske egenskaper er følgende:",
+          "Los Angeles-verdi, LA: Maksimalt 35",
+          "micro-Deval-koeffisient, MDE: Maksimalt 15",
+          "For veg med lite trafikk, trafikkgruppe A, skal tilsvarende krav til grenseverdier være hhv. maksimalt 40 og 25 dersom dette er angitt i den spesielle beskrivelsen.",
+          "Krav til korngradering er angitt i vegnormal N200 Vegbygging kap. 4.7.1.1 tabell 4.7.1.1-2 . Dokumentasjon av korngradering gjelder for prøver tatt på veg.",
+          "Krav til finstoffinnhold, kornstørrelse <0,063 mm, er følgende:",
+          "Sortering 0/32 mm: Maksimalt 7% av total prøve",
+          "Sortering 0/45 mm: Maksimalt 5% av total prøve",
+          "Sortering 0/63 mm, kun aktuelt for Fk og Gjb: Maksimalt 3% av total prøve",
+          "Flisighetsindeks skal være maksimalt 25.",
+          "Krav til knusningsgrad for knust grus er C50/30. Humusinnhold skal være mindre enn 1%.",
+          "Sortering skal være som angitt i den spesielle beskrivelsen. Øvre siktstørrelse skal være maksimalt halve lagtykkelsen ferdig komprimert.",
+          "Det tillates innblanding med inntil 50% av knust grus (Gk) eller knust berg (Fk) med kvalitet som angitt i vegnormal N200 Vegbygging, kap. 4.7.2.1 .",
+          "Lagtykkelse, steinmaterialenes sortering og type forkilingsmateriale skal være som angitt den spesielle beskrivelsen.",
+          "Forkilingsmaterialet skal ha øvre siktstørrelse (D) som er mindre enn nedre siktstørrelse (d) for hovedsorteringen."
+        ],
+        "c": [
+          "Utførelse skal være som angitt i vegnormal N200 Vegbygging kap. 4.7.1.",
+          "Utlegging og bearbeiding skal utføres slik at det oppstår minst mulig separasjon. Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang. Materialet skal være fuktig ved komprimering. Knust betong skal komprimeres ved høyt vanninnhold.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. håndbok N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling ved platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3.",
+          "Knust asfalt skal legges ut i et jevntykt og homogent lag med tykkelse inntil 10 cm ferdig komprimert. Det skal vannet godt, ved komprimering skal materialet ha et vanninnhold på minst 5 %. Det skal benyttes tungt, statisk valseutstyr.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2 basert på vegnormal N200 Vegbygging.",
+          "Materialet skal legges ut med pukkutlegger som sikrer massens homogenitet og god forkiling mellom steinene. Pukken skal legges ut i korrekt tykkelse i ett lag avhengig av sortering og komprimeres. Deretter forkiles pukklaget med finpukk i riktig størrelse, eller med knust asfalt, asfaltert grus eller asfaltert pukk. Mengden forkilingsmateriale tilpasses slik at det sikrer god forkiling, uten at det dannes et eget lag av forkilingsmaterialet på toppen av bærelaget, og uten at det blir liggende løst materiale etter valsing.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kap. 4.2.3.5. Se tabell 4.2.3.5-1 ."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Prøving/kontroll skal være iht. vegnormal N200 Vegbyggingnkap. 4. Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter i tverrprofilet.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m."
+        ],
+        "x": [
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert anbrakt volum. Enhet: m3",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag unntatt skråninger. Enhet: m2"
         ]
       }
     },
@@ -423,7 +1141,38 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust grus (Gk), knust berg (Fk) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, blokkdemolering og fjerning av for stor stein og overskudd av finstoff."
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust grus (Gk), knust berg (Fk) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, blokkdemolering og fjerning av for stor stein og overskudd av finstoff.",
+        "b": [
+          "Sortering og materialtype skal være iht. den spesielle beskrivelsen. Materialer skal være som angitt i vegnormal N200 Vegbygging kap. 4.7.1.1 ,. I tabellen er det også angitt maksimalverdier for avvikende prøveresultater, for inntil 20% av prøvene.",
+          "Krav til mekaniske egenskaper er følgende:",
+          "Los Angeles-verdi, LA: Maksimalt 35",
+          "micro-Deval-koeffisient, MDE: Maksimalt 15",
+          "For veg med lite trafikk, trafikkgruppe A, skal tilsvarende krav til grenseverdier være hhv. maksimalt 40 og 25 dersom dette er angitt i den spesielle beskrivelsen.",
+          "Krav til korngradering er angitt i vegnormal N200 Vegbygging kap. 4.7.1.1 tabell 4.7.1.1-2 . Dokumentasjon av korngradering gjelder for prøver tatt på veg.",
+          "Krav til finstoffinnhold, kornstørrelse <0,063 mm, er følgende:",
+          "Sortering 0/32 mm: Maksimalt 7% av total prøve",
+          "Sortering 0/45 mm: Maksimalt 5% av total prøve",
+          "Sortering 0/63 mm, kun aktuelt for Fk og Gjb: Maksimalt 3% av total prøve",
+          "Flisighetsindeks skal være maksimalt 25.",
+          "Krav til knusningsgrad for knust grus er C50/30. Humusinnhold skal være mindre enn 1%."
+        ],
+        "c": [
+          "Utførelse skal være som angitt i vegnormal N200 Vegbygging kap. 4.7.1.",
+          "Utlegging og bearbeiding skal utføres slik at det oppstår minst mulig separasjon. Materialet skal holdes fuktig så tendensen til separasjon reduseres. Oppstår det lokale partier med separasjon, skal materialet i laget blandes og legges ut på nytt.",
+          "Ved komprimering skal det ikke brukes utstyr som sliter ned materialet unødig. Valsingen skal utføres langs vegen fra sidene og innover mot midten av vegen med full dekning av overflaten for hver omgang. Materialet skal være fuktig ved komprimering. Knust betong skal komprimeres ved høyt vanninnhold.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. håndbok N200 Vegbygging kapittel 4.2.3.2. For arbeider større enn 5000 m2 skal komprimeringsplanen baseres på valseprogram med måling ved platebelastning, Mod. Proctor, responsmålinger eller nivellement, avhengig av massetype. For arealer mindre enn 5000 m2, eller hvor lokale variasjoner gjør at disse metodene ikke er egnet for å utarbeide valseprogram, skal komprimeringsplanen baseres på vegnormal N200 Vegbygging kap. 4.2.3."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Prøving/kontroll skal være iht. vegnormal N200 Vegbyggingnkap. 4. Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter i tverrprofilet.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "54.11": {
@@ -466,7 +1215,26 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt."
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt.",
+        "b": [
+          "Sortering skal være som angitt i den spesielle beskrivelsen. Øvre siktstørrelse skal være maksimalt halve lagtykkelsen ferdig komprimert.",
+          "Det tillates innblanding med inntil 50% av knust grus (Gk) eller knust berg (Fk) med kvalitet som angitt i vegnormal N200 Vegbygging, kap. 4.7.2.1 ."
+        ],
+        "c": [
+          "Knust asfalt skal legges ut i et jevntykt og homogent lag med tykkelse inntil 10 cm ferdig komprimert. Det skal vannet godt, ved komprimering skal materialet ha et vanninnhold på minst 5 %. Det skal benyttes tungt, statisk valseutstyr.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.3.1.",
+          "Det skal utarbeides en komprimeringsplan iht. vegnormal N200 Vegbygging kapittel 4.2.3.2 basert på vegnormal N200 Vegbygging."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "54.3": {
@@ -474,7 +1242,25 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag."
+        "a": "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag.",
+        "b": [
+          "Lagtykkelse, steinmaterialenes sortering og type forkilingsmateriale skal være som angitt den spesielle beskrivelsen.",
+          "Forkilingsmaterialet skal ha øvre siktstørrelse (D) som er mindre enn nedre siktstørrelse (d) for hovedsorteringen."
+        ],
+        "c": [
+          "Materialet skal legges ut med pukkutlegger som sikrer massens homogenitet og god forkiling mellom steinene. Pukken skal legges ut i korrekt tykkelse i ett lag avhengig av sortering og komprimeres. Deretter forkiles pukklaget med finpukk i riktig størrelse, eller med knust asfalt, asfaltert grus eller asfaltert pukk. Mengden forkilingsmateriale tilpasses slik at det sikrer god forkiling, uten at det dannes et eget lag av forkilingsmaterialet på toppen av bærelaget, og uten at det blir liggende løst materiale etter valsing.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kap. 4.2.3.5. Se tabell 4.2.3.5-1 ."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Komprimeringsarbeidet skal sluttdokumenteres ved platebelastning av bærelaget iht. vegnormal N200 Vegbygging kap. 4.2.3.3. Prøveomfanget er 1 prøve pr. påbegynt 100 m kjørefelt. Der det er brukt kontinuerlig responsmåling ved komprimering kan prøve omfanget reduseres til hver 250 m."
+        ],
+        "x": "Mengden måles som prosjektert areal av overflate ferdig bærelag unntatt skråninger. Enhet: m2"
       }
     },
     "55": {
@@ -484,7 +1270,74 @@
       "tekst": {
         "a": [
           "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer med tykkelse som angitt.",
-          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert grus med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen.",
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt.",
+          "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med tykkelse som angitt, inkludert etterarbeider som feiing og etterstrøing.",
+          "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+          "Omfatter levering, penetrering med bituminøst bindemiddel og forkiling samt komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing.",
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer."
+        ],
+        "b": [
+          "Bindemiddeltype skal være som angitt i den spesielle beskrivelsen.",
+          "Andel av tilsatt resirkulert asfalt jf. vegnormal N200 Vegbygging, tabell 4.43 skal ikke overstige 25% i kald tilsetning og 40% i forvarmet tilsetning.",
+          "Lagtykkelse, steinmaterialenes sortering for hovedsortering og forkiling, type forkilingsmateriale samt type og mengde bindemiddel til penetrering, skal være som angitt den spesielle beskrivelsen.",
+          "Materialer skal være iht. vegnormal N200 Vegbygging:",
+          "Emulsjonsgrus (Eg): kap. 4.7.3.4 .",
+          "Skumgrus (Sg): kap. 4.7.3.5 .",
+          "Bitumenstabilisert grus (Bsg): kap. 4.7.3.6 .",
+          "Bitumenanriket grus (Bag): kap. 4.7.3.6 .",
+          "For emulsjonsgrus og skumgrus skal massens lastfordelingskoeffisient dokumenteres, se håndbok N200 Vegbygging kap. 4.7.3.4 krav 4.7.3.4-4 ."
+        ],
+        "c": [
+          "Krav til utlagt hulrom for middel av 5 prøver er 3,0 til 8,0%, og tilsvarende for enkeltprøver 2,0 til 10,0%. Krav til komprimeringsgrad er minimum 96,0% av Marshall densitet.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.4.1.",
+          "Det skal utarbeides en komprimeringsplan, se vegnormal N200 Vegbygging kapittel 4.2.4.2.",
+          "Hulrom ferdig komprimert skal minimum være 18%.",
+          "Det skal utarbeides en komprimeringsplan, se vegnormal N200 Vegbygging kapittel 4.2.4.2.",
+          "Utførelse skal være iht. vegnormal N200 Vegbygging:",
+          "Emulsjonsgrus (Eg): kap. 4.7.3.4 .",
+          "Skumgrus (Sg): kap. 4.7.3.5 .",
+          "Bitumenstabilisert grus (Bsg): kap. 4.7.3.6 .",
+          "Bitumenanriket grus (Bag): kap. 4.7.3.6 .",
+          "For emulsjonsgrus og skumgrus skal massens lastfordelingskoeffisient dokumenteres, se håndbok N200 Vegbygging kap. 4.7.3.4 krav 4.7.3.4-4 ."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -2% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -5%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -2% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -5%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1  med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1  med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimering skal dokumenteres ved registrering av utleggerens fremdrift og variasjon i fremdrift kombinert med målinger av bærelagets densitet og/eller hulrom. Prøvehyppighet skal være minimum 1 prøvepunkt pr. 500 m i én utleggerbredde. Et prøvepunkt består av minst 2 parallelle densitetsmålinger eller 2 borkjerner. Dersom entreprenøren dokumenterer aktiv bruk av infrarød skanning i komprimeringsarbeidet, kan prøvehyppigheten halveres.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. vegnormal N200 Vegbygging kap. 4.7.3.1 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimering skal dokumenteres ved registrering av utleggerens fremdrift og variasjon i fremdrift kombinert med målinger av bærelagets densitet og/eller hulrom. Prøvehyppighet skal være minimum 1 prøvepunkt pr. 500 m i én utleggerbredde. Et prøvepunkt består av minst 2 parallelle densitetsmålinger eller 2 borkjerner. Dersom entreprenøren dokumenterer aktiv bruk av infrarød skanning i komprimeringsarbeidet, kan prøvehyppigheten halveres.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. Vegnormal N200 Vegbygging kap. 4.2.1 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens).",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. vegnormal N200 Vegbygging kap. 4.9.1.3 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet."
+        ],
+        "x": [
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert anbrakt masse. Enhet: tonn"
         ]
       }
     },
@@ -496,7 +1349,28 @@
         "a": [
           "Omfatter levering, utlegging og komprimering av bærelag av asfaltert grus med tykkelse som angitt.",
           "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
-        ]
+        ],
+        "b": [
+          "Bindemiddeltype skal være som angitt i den spesielle beskrivelsen.",
+          "Andel av tilsatt resirkulert asfalt jf. vegnormal N200 Vegbygging, tabell 4.43 skal ikke overstige 25% i kald tilsetning og 40% i forvarmet tilsetning."
+        ],
+        "c": [
+          "Krav til utlagt hulrom for middel av 5 prøver er 3,0 til 8,0%, og tilsvarende for enkeltprøver 2,0 til 10,0%. Krav til komprimeringsgrad er minimum 96,0% av Marshall densitet.",
+          "Komprimering skal utføres iht. vegnormal N200 Vegbygging kapittel 4.2.4.1.",
+          "Det skal utarbeides en komprimeringsplan, se vegnormal N200 Vegbygging kapittel 4.2.4.2."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2 med tilhørende tabell 4.2.2.1-1.",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -2% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -5%."
+        ],
+        "e": [
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimering skal dokumenteres ved registrering av utleggerens fremdrift og variasjon i fremdrift kombinert med målinger av bærelagets densitet og/eller hulrom. Prøvehyppighet skal være minimum 1 prøvepunkt pr. 500 m i én utleggerbredde. Et prøvepunkt består av minst 2 parallelle densitetsmålinger eller 2 borkjerner. Dersom entreprenøren dokumenterer aktiv bruk av infrarød skanning i komprimeringsarbeidet, kan prøvehyppigheten halveres.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. vegnormal N200 Vegbygging kap. 4.7.3.1 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens)."
+        ],
+        "x": "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2"
       }
     },
     "55.11": {
@@ -524,7 +1398,23 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt."
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt.",
+        "c": [
+          "Hulrom ferdig komprimert skal minimum være 18%.",
+          "Det skal utarbeides en komprimeringsplan, se vegnormal N200 Vegbygging kapittel 4.2.4.2."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1 med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -2% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -5%."
+        ],
+        "e": [
+          "Kontroll av høyde og bredde skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimering skal dokumenteres ved registrering av utleggerens fremdrift og variasjon i fremdrift kombinert med målinger av bærelagets densitet og/eller hulrom. Prøvehyppighet skal være minimum 1 prøvepunkt pr. 500 m i én utleggerbredde. Et prøvepunkt består av minst 2 parallelle densitetsmålinger eller 2 borkjerner. Dersom entreprenøren dokumenterer aktiv bruk av infrarød skanning i komprimeringsarbeidet, kan prøvehyppigheten halveres.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. Vegnormal N200 Vegbygging kap. 4.2.1 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet.",
+          "Utlagt tykkelse dokumenteres per dag ved forholdet tilkjørt masse/(densitet x areal), hvor densitet er massereseptens (arbeidsreseptens)."
+        ],
+        "x": "Mengden måles som prosjektert areal målt midt i laget med skråning som prosjektert for laget. Enhet: m2"
       }
     },
     "55.21": {
@@ -547,7 +1437,25 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med tykkelse som angitt, inkludert etterarbeider som feiing og etterstrøing."
+        "a": [
+          "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med tykkelse som angitt, inkludert etterarbeider som feiing og etterstrøing.",
+          "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+          "Omfatter levering, penetrering med bituminøst bindemiddel og forkiling samt komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing."
+        ],
+        "b": "Lagtykkelse, steinmaterialenes sortering for hovedsortering og forkiling, type forkilingsmateriale samt type og mengde bindemiddel til penetrering, skal være som angitt den spesielle beskrivelsen.",
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1  med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet."
+        ],
+        "x": [
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2",
+          "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2"
+        ]
       }
     },
     "55.31": {
@@ -555,7 +1463,8 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk."
+        "a": "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk.",
+        "x": "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2"
       }
     },
     "55.311": {
@@ -573,7 +1482,8 @@
       "enhet": "m2",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, penetrering med bituminøst bindemiddel og forkiling samt komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing."
+        "a": "Omfatter levering, penetrering med bituminøst bindemiddel og forkiling samt komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing.",
+        "x": "Mengden måles som prosjektert areal av overflate ferdig bærelag målt i overkant av laget. Enhet: m2"
       }
     },
     "55.321": {
@@ -591,7 +1501,33 @@
       "enhet": "tonn",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer."
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer.",
+        "b": [
+          "Materialer skal være iht. vegnormal N200 Vegbygging:",
+          "Emulsjonsgrus (Eg): kap. 4.7.3.4 .",
+          "Skumgrus (Sg): kap. 4.7.3.5 .",
+          "Bitumenstabilisert grus (Bsg): kap. 4.7.3.6 .",
+          "Bitumenanriket grus (Bag): kap. 4.7.3.6 .",
+          "For emulsjonsgrus og skumgrus skal massens lastfordelingskoeffisient dokumenteres, se håndbok N200 Vegbygging kap. 4.7.3.4 krav 4.7.3.4-4 ."
+        ],
+        "c": [
+          "Utførelse skal være iht. vegnormal N200 Vegbygging:",
+          "Emulsjonsgrus (Eg): kap. 4.7.3.4 .",
+          "Skumgrus (Sg): kap. 4.7.3.5 .",
+          "Bitumenstabilisert grus (Bsg): kap. 4.7.3.6 .",
+          "Bitumenanriket grus (Bag): kap. 4.7.3.6 .",
+          "For emulsjonsgrus og skumgrus skal massens lastfordelingskoeffisient dokumenteres, se håndbok N200 Vegbygging kap. 4.7.3.4 krav 4.7.3.4-4 ."
+        ],
+        "d": [
+          "Tillatt avvik fra prosjektert høyde i overkant av laget er +/- 20 mm for enkeltverdi og +/- 5 mm for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. +/- 30 mm og +10 / -15 mm. Maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer er +100 / -0 mm for enkeltverdi. Se vegnormal N200 Vegbygging kap. 4.2.2.1  med tilhørende tabell 4.2.2.1-1 .",
+          "Tillatt maksimalt avvik fra prosjektert lagtykkelse for bærelag av bitumenstabiliserte materialer er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Kontrollgrunnlaget for oppfølging av kvalitet jf. vegnormal N200 Vegbygging kap. 4.9.1.3 , skal leveres byggherren før oppstart av asfaltarbeidene og senest som angitt i den spesielle beskrivelsen. Endringer som kan være av betydning for asfaltens egenskaper, krever en ny dokumentasjon av egenskapene.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt masse. Enhet: tonn"
       }
     },
     "55.41": {
@@ -619,7 +1555,20 @@
       "enhet": "?",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av bærelag av sementstabiliserte materialer."
+        "a": [
+          "Omfatter levering, utlegging og komprimering av bærelag av sementstabiliserte materialer.",
+          "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel, drensbetong, Db."
+        ],
+        "d": [
+          "Tillatt maksimalt avvik fra prosjektert høyde for bærelag av drensbetong er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt ujevnhet og avvik fra prosjektert overkant av laget, samt maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer, skal være iht. vegnormal N200 Vegbygging kap. 4.2.2.1. Se tabell 4.2.2.1-1 ."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Minimum prøvehyppighet for dokumentasjon av komprimering med platebelastning er for hver påbegynte 1000 m2.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     },
     "56.1": {
@@ -627,7 +1576,17 @@
       "enhet": "m3",
       "hovedprosess": "5",
       "tekst": {
-        "a": "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel, drensbetong, Db."
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel, drensbetong, Db.",
+        "d": [
+          "Tillatt maksimalt avvik fra prosjektert høyde for bærelag av drensbetong er -10% for enkeltmåling og -5% for middelverdi. Tilvarende krav for gang- og sykkelveg er hhv. -15% og -10%.",
+          "Tillatt ujevnhet og avvik fra prosjektert overkant av laget, samt maksimalt tillatt horisontalt avvik fra prosjekterte ytterbegrensningslinjer, skal være iht. vegnormal N200 Vegbygging kap. 4.2.2.1. Se tabell 4.2.2.1-1 ."
+        ],
+        "e": [
+          "Kontroll av høyde, bredde og lagtykkelse skal utføres for hver 20. meter. Tilsvarende for gang- og sykkelveg er hver 40. meter. For kontroll av høyde skal minste antall målepunkter i tverrprofilet være 3. En prøve regnes da som 3 målepunkter.",
+          "Minimum prøvehyppighet for dokumentasjon av komprimering med platebelastning er for hver påbegynte 1000 m2.",
+          "Komprimeringsarbeidets utstrekning og omfang (passeringer) skal stedfestes ved hjelp av GNSS eller andre former for stedfesting med tilfredsstillende nøyaktighet."
+        ],
+        "x": "Mengden måles som prosjektert anbrakt volum. Enhet: m3"
       }
     }
   }
