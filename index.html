@@ -11,26 +11,29 @@
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
 
     :root {
-      --bg:        #0d1117;
-      --surface:   #161b22;
-      --surface2:  #1f2937;
-      --border:    #30363d;
-      --ink:       #e6edf3;
-      --muted:     #7d8590;
-      --green:     #3fb950;
-      --green-dim: #1a3a22;
-      --yellow:    #d29922;
-      --red:       #f85149;
-      --red-dim:   #3a1212;
-      --blue:      #58a6ff;
-      --blue-dim:  #0d2044;
+      /* OPPDATERT: Nøytral og "native" BIM/CAD fargepalett */
+      --bg:        #1e1e1e;      /* Hovedbakgrunn */
+      --surface:   #2d2d2d;      /* Paneler og menyer */
+      --surface2:  #383838;      /* Hover-effekter */
+      --border:    #444444;      /* Linjer og skiller */
+      --ink:       #f0f0f0;      /* Standard tekst */
+      --muted:     #a0a0a0;      /* Dempet tekst/ikoner */
+      
+      --green:     #6A9955;      /* Dusere, profesjonell grønn */
+      --green-dim: #253320;
+      --yellow:    #DCDCAA;
+      --red:       #F14C4C;
+      --red-dim:   #4a1c1c;
+      
+      --blue:      #4fc1ff;      /* Ren, lys CAD-blå for god kontrast */
+      --blue-dim:  #1a3344;
+      
       --mono:      'JetBrains Mono', monospace;
       --sans:      'Syne', sans-serif;
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    /* Absolutt sikkerhet for at vinduet aldri vokser ut av skjermen */
     html, body {
       background: var(--bg); color: var(--ink); font-family: var(--sans);
       height: 100%; margin: 0; padding: 0;
@@ -44,7 +47,7 @@
     }
 
     .header-title { flex: 1; min-width: 200px; }
-    .header-title h1 { font-size: 16px; font-weight: 800; letter-spacing: -.3px; color: var(--ink); }
+    .header-title h1 { font-size: 16px; font-weight: 700; color: var(--ink); }
     .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 1px; }
 
     .badge { font-family: var(--mono); font-size: 10px; padding: 3px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
@@ -59,37 +62,37 @@
     
     .filter-group { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 150px; }
     .filter-group label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
-    .filter-group select { font-family: var(--mono); font-size: 12px; background: var(--surface2); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
+    .filter-group select { font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
     .filter-group select:disabled { opacity: 0.4; cursor: not-allowed; }
 
-    #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid #1a3a5c; flex-shrink: 0; }
-    #statusBar.ok    { background: var(--green-dim); color: var(--green); border-color: #1a3a22; }
-    #statusBar.error { background: var(--red-dim);   color: var(--red);   border-color: #3a1212; }
-    #statusBar.warn  { background: #3a2d05; color: var(--yellow); border-color: #5c4708; }
+    #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid var(--border); flex-shrink: 0; }
+    #statusBar.ok    { background: var(--green-dim); color: var(--green); }
+    #statusBar.error { background: var(--red-dim);   color: var(--red); }
+    #statusBar.warn  { background: #3a2d05; color: var(--yellow); }
 
-    /* Hovedinnholdet settes til å skrolle selvstendig */
     main { flex: 1 1 auto; overflow-y: auto; padding: 16px; height: 0; }
 
     /* --- STILER FOR HOVEDPROSESS (NIVÅ 1) --- */
     .hoved-panel { margin-bottom: 16px; }
-    .hoved-header { background: #1a2029; border: 1px solid #2d3748; border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
-    .hoved-header:hover { background: #222a36; border-color: #3f4b61; }
-    .hoved-tittel { font-weight: 800; font-size: 15px; color: #fff; letter-spacing: -0.2px; }
+    /* Tonet ned skrifttype og integrert nye fargevariabler */
+    .hoved-header { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
+    .hoved-header:hover { background: var(--surface2); }
+    .hoved-tittel { font-weight: 600; font-size: 14px; color: var(--ink); }
     .hoved-info { font-family: var(--mono); font-size: 11px; color: var(--muted); }
-    .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid #2d3748; margin-left: 8px; flex-direction: column; }
+    .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid var(--border); margin-left: 8px; flex-direction: column; }
 
     /* --- STILER FOR PROSESSKODE (NIVÅ 2) --- */
     .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
     .prosess-panel:last-child { margin-bottom: 0; }
     .prosess-header { padding: 10px 14px; background: var(--surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; user-select: none; }
     .prosess-header:hover { background: var(--surface2); }
-    .prosess-tittel { font-weight: 700; font-size: 13px; color: var(--blue); }
+    .prosess-tittel { font-weight: 600; font-size: 13px; color: var(--blue); }
     .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
     
     .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); flex-direction: column; }
     
-    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid #1c2128; background: #0d1117; flex-shrink: 0; max-height: 180px; overflow-y: auto; }
-    .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: #c9d1d9; border-left: 3px solid var(--surface2); padding-left: 10px; }
+    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid var(--border); background: var(--bg); flex-shrink: 0; max-height: 180px; overflow-y: auto; }
+    .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--surface2); padding-left: 10px; }
     .tekst-blokk:last-child { margin-bottom: 0; }
     .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
     .tekst-blokk p:last-child { margin-bottom: 0; }
@@ -99,10 +102,10 @@
     .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
     
     /* MODELLER OG OBJEKTER (NIVÅ 3 og 4) */
-    .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid #1c2128; }
+    .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid var(--border); }
     .modell-gruppe { display: flex; flex-direction: column; }
-    .modell-overskrift { background: #12161d; padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid #1c2128; cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
-    .modell-overskrift:hover { background: #1c2128; color: var(--ink); }
+    .modell-overskrift { background: var(--bg); padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
+    .modell-overskrift:hover { background: var(--surface); color: var(--ink); }
     .modell-overskrift-mengde { color: var(--blue); }
     
     .modell-objekter { display: none; flex-direction: column; }
@@ -166,7 +169,6 @@ let svvHandbok = null;
 let globalProsessRegister = {};
 let globalModelsMap = {};
 
-// Hardkodet navneliste for Statens vegvesens hovedprosesser
 const hovedprosessNavn = {
   "1": "Rigging, drift og generelle krav",
   "2": "Grunnarbeider",
@@ -355,8 +357,6 @@ $('scanBtn').addEventListener('click', async () => {
           if (prosesskode && prosesskode.trim() !== "") {
             if (!globalProsessRegister[prosesskode]) {
               const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[prosesskode] : null;
-
-              // Identifiser hovedprosess (f.eks "2" fra "25.1")
               const hpKode = prosesskode.includes('.') ? prosesskode.split('.')[0][0] : prosesskode[0];
 
               globalProsessRegister[prosesskode] = {
@@ -421,7 +421,6 @@ function tegnOppUI(register, filterMid) {
       return;
   }
 
-  // --- 1. GRUPPER ETTER HOVEDPROSESS ---
   const grupperteProsesser = {};
   let totaleViste = 0;
 
@@ -445,7 +444,6 @@ function tegnOppUI(register, filterMid) {
       grupperteProsesser[hpKode].koder.push(kode);
       grupperteProsesser[hpKode].totaltObjekter += filtrerteObjekter.length;
       
-      // Samler opp for markering i 3D av hele hovedprosessen
       filtrerteObjekter.forEach(obj => {
           if (!grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId]) {
               grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId] = [];
@@ -462,7 +460,6 @@ function tegnOppUI(register, filterMid) {
   const wrapper = document.createElement('div');
   wrapper.className = 'anim';
 
-  // --- 2. TEGN OPP HOVEDPROSESS-PANELER (NIVÅ 1) ---
   const sorterteHovedkoder = Object.keys(grupperteProsesser).sort();
 
   sorterteHovedkoder.forEach(hpKode => {
@@ -475,7 +472,6 @@ function tegnOppUI(register, filterMid) {
       const hpHeader = document.createElement('div');
       hpHeader.className = 'hoved-header';
       
-      // Ikon for pil
       hpHeader.innerHTML = `
           <div class="hoved-tittel">▶ ${hpKode} - ${tittelNavn}</div>
           <div class="hoved-info">${hpData.koder.length} koder (${hpData.totaltObjekter} obj)</div>
@@ -484,17 +480,15 @@ function tegnOppUI(register, filterMid) {
       const hpKropp = document.createElement('div');
       hpKropp.className = 'hoved-kropp';
       
-      // Bygg opp markerings-array for hele hovedprosessen
       const hpMasterMarkering = Object.keys(hpData.masterMarkeringMap).map(mid => ({ 
           modelId: mid, 
           objectRuntimeIds: hpData.masterMarkeringMap[mid] 
       }));
 
-      // Klikk for å åpne hovedprosessen og markere innholdet
       hpHeader.onclick = async (e) => {
           const isOpen = hpKropp.style.display === 'flex';
           hpKropp.style.display = isOpen ? 'none' : 'flex';
-          hpHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▶' : '▼'} ${hpKode} - ${tittelNavn}`;
+          hpHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} ${hpKode} - ${tittelNavn}`;
           
           try {
               if (API.viewer.setSelection) {
@@ -503,7 +497,6 @@ function tegnOppUI(register, filterMid) {
           } catch(err) {}
       };
 
-      // --- 3. TEGN OPP PROSESSKODENE INNI HOVEDPROSESSEN (NIVÅ 2) ---
       hpData.koder.forEach(kode => {
           const data = register[kode];
           const filtrerteObjekter = data.objekter.filter(obj => filterMid === 'ALL' || obj.modelId === filterMid);
@@ -649,10 +642,9 @@ function tegnOppUI(register, filterMid) {
             const isOpen = kropp.style.display === 'flex';
             kropp.style.display = isOpen ? 'none' : 'flex';
             
-            // Oppdater pil
             const tittelEl = header.querySelector('.prosess-tittel');
             tittelEl.innerText = `${isOpen ? '▶' : '▼'} ${kode} - ${data.tittel}`;
-            if (data.url) tittelEl.appendChild(tittelEl.nextSibling); // Legger lenken tilbake bak tittelen
+            if (data.url) tittelEl.appendChild(tittelEl.nextSibling);
 
             try {
               if (API.viewer.setSelection) {
