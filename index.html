@@ -160,6 +160,9 @@ const tekstKoder = {
 const $ = id => document.getElementById(id);
 const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
 
+// Hjelpefunksjon for å vaske filnavnet fritt for mapper
+const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
+
 async function connect(){
   try {
     API = await window.TrimbleConnectWorkspace.connect(window.parent);
@@ -202,18 +205,21 @@ $('scanBtn').addEventListener('click', async () => {
   try {
     setStatus('⏳ Henter filnavn og modeller fra vieweren...');
     
-    // NYTT: Henter faktiske filnavn fra prosjektet for å bruke .ifc-navnene
+    // Gjenopprettet den robuste metoden for å hente rene filnavn
     const nameMap = new Map();
-    try {
-      const prjModels = await API.models?.getModels();
-      if (prjModels) {
-          const list = Array.isArray(prjModels) ? prjModels : (prjModels.models || prjModels.items || []);
-          list.forEach(m => {
-            const fn = [m.name, m.fileName, m.filename].find(v => v && /\.ifc/i.test(v)) || m.name;
-            if (m.id || m.modelId) nameMap.set(m.id || m.modelId, fn);
-          });
-      }
-    } catch(e) {}
+    const srcs = [() => API.models && API.models.getModels(), () => API.viewer && API.viewer.getModels()];
+    for (const src of srcs) {
+      if (!src) continue;
+      try {
+        const res = await src();
+        const list = Array.isArray(res) ? res : (res?.models || res?.items || []);
+        list.forEach(m => {
+          const id = m.id || m.modelId;
+          const fn = [m.name, m.fileName, m.filename].find(v => v && /\.ifc/i.test(v)) || m.name;
+          if (id && fn) nameMap.set(id, lastPathPart(fn));
+        });
+      } catch(e) {}
+    }
 
     const models = await API.viewer.getObjects();
     
@@ -229,7 +235,7 @@ $('scanBtn').addEventListener('click', async () => {
     for (const model of models) {
       const mid = model.modelId || model.modelid;
       
-      // Slår opp det faktiske filnavnet, med fallback til viewernavn
+      // Slår opp filnavn. Hvis alt feiler, bruk fallback
       let modelName = nameMap.get(mid) || model.name;
       if (!modelName || modelName.trim() === "") modelName = `Modell (${mid.substring(0,6)}...)`;
       
@@ -304,7 +310,10 @@ function oppdaterDropdownMeny() {
     const select = $('modelFilter');
     select.innerHTML = '<option value="ALL">Alle modeller i vieweren</option>';
     
-    for (const [mid, name] of Object.entries(globalModelsMap)) {
+    // Sorterer modellnavnene alfabetisk før de legges i menyen
+    const sorterteModeller = Object.entries(globalModelsMap).sort((a, b) => a[1].localeCompare(b[1]));
+    
+    for (const [mid, name] of sorterteModeller) {
         const option = document.createElement('option');
         option.value = mid;
         option.innerText = name;
@@ -372,7 +381,6 @@ function tegnOppUI(register, filterMid) {
     kropp.className = 'panel-kropp';
     kropp.style.display = 'none';
 
-    // 1. BESKRIVELSESTEKST (Nå med scroll)
     if (data.tekst) {
       const tekstDiv = document.createElement('div');
       tekstDiv.className = 'prosess-beskrivelse';
@@ -396,7 +404,6 @@ function tegnOppUI(register, filterMid) {
       if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
     }
     
-    // 2. DELMENGDER-SEKSJON
     const delmengderSeksjon = document.createElement('div');
     delmengderSeksjon.className = 'delmengder-seksjon';
     
@@ -423,22 +430,22 @@ function tegnOppUI(register, filterMid) {
         modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
     });
 
-    for (const [navn, gruppeData] of Object.entries(modellGrupper)) {
+    // Sorter modellene alfabetisk inni objektlisten også
+    const sorterteGrupper = Object.entries(modellGrupper).sort((a, b) => a[0].localeCompare(b[0]));
+
+    for (const [navn, gruppeData] of sorterteGrupper) {
         const gruppeDiv = document.createElement('div');
         gruppeDiv.className = 'modell-gruppe';
 
         const modHeader = document.createElement('div');
         modHeader.className = 'modell-overskrift';
-        // Pil lagt inn for å vise at den kan åpnes (lukket som standard)
         modHeader.innerHTML = `<span title="${navn}">▶ 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
         
         const objekterContainer = document.createElement('div');
-        objekterContainer.className = 'modell-objekter'; // Skjult via CSS som standard
+        objekterContainer.className = 'modell-objekter'; 
         
-        // Klikk på modellmappen utvider listen OG markerer objektene i 3D
         modHeader.onclick = async (e) => {
             e.stopPropagation();
-            
             const isClosed = objekterContainer.style.display === 'none' || objekterContainer.style.display === '';
             objekterContainer.style.display = isClosed ? 'flex' : 'none';
             modHeader.innerHTML = `<span title="${navn}">${isClosed ? '▼' : '▶'} 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
