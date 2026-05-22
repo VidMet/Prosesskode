@@ -7,590 +7,628 @@
     "5": {
       "tittel": "Vegfundament",
       "enhet": "?",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "51": {
       "tittel": "PLANUM",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med planum (traubunn i skjæring og overkant underbygning på fylling), så som stabilisering, utskifting og forsterkning, rensk, avretting, justering og komprimering, inklusive utkilinger etc.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ]
+      }
     },
     "51.1": {
       "tittel": "Stabilisering av planum",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter stabilisering av planum med kalk, sement eller lignende."
+      }
     },
     "51.2": {
       "tittel": "Masseutskifting og forsterkning av planum",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter masseutskifting og forsterkning av planum på veg i dagen."
+      }
     },
     "51.21": {
       "tittel": "Masseutskifting under planum",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Prosessen kommer til anvendelse etter avtale med byggherren for utskifting av uegnede masser under planum.",
+          "Omfatter utgraving, opplasting, transport og tipping på angitt masselager inkludert arbeider ved mottaket. Leverings- og behandlingsgebyr er beskrevet i prosess 27.7.",
+          "Omfatter også levering og utlegging av egnet materiale til erstatning for utgravd masse. Komprimering og avretting er beskrevet i prosess 51.3 eller 51.4."
+        ]
+      }
     },
     "51.22": {
       "tittel": "Forsterkning av planum med geosynteter",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og forsterkning av planum med geosynteter som angitt i den spesielle beskrivelsen."
+      }
     },
     "51.3": {
       "tittel": "Avretting, justering og komprimering av planum på jord",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter avretting, justering og komprimering av planum på jord utover det som er beskrevet under prosess 25."
+      }
     },
     "51.31": {
       "tittel": "Planum på jordfylling",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "51.32": {
       "tittel": "Planum i jordskjæring",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "51.33": {
       "tittel": "Avretting mv. under isolasjonsplater av ekstrudert polystyren (XPS ) på jord",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "51.4": {
       "tittel": "Avretting, justering og komprimering av planum på dypsprengt berg skjæring, på fylling og i tunnel",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter avretting, justering og komprimering av planum i tunnel, i dypsprengt skjæring og på fylling av sprengt stein, utover det som er beskrevet under prosess 26. Omfatter også kontroll av dypsprengning. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder.",
+          "For rensk og tilbakefylling til teoretisk sprengningsprofil i tunnelsåle, se prosess 33.13 og 33.14."
+        ]
+      }
     },
     "51.41": {
       "tittel": "Planum på steinfylling",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "51.42": {
       "tittel": "Planum på dypsprengt stein i skjæring",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "51.43": {
       "tittel": "Planum i tunnel",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter avretting, justering og komprimering av planum i tunnel. Omfatter også levering, utlegging og komprimering av justeringslag etter behov for å oppnå riktige høyder"
+      }
     },
     "51.5": {
       "tittel": "Rensk, avretting og justering av planum på grunnsprengt berg",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter etablering av planum på grunnsprengt berg, inkludert levering og avretting med tilførte masser, justering og komprimering."
+      }
     },
     "51.6": {
       "tittel": "Utkilinger",
       "enhet": "stk",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter de tilleggsarbeider og -kostnader som konstruksjonsdetaljene betinger for å etablere utkiling ved overgang fra jord til berg i vegens lengderetning. . Mengder for øvrig avregnes under de prosesser som kommer til anvendelse avhengig av typer masse og utførelse. Se vegnormal N200 Vegbygging kap. 3.2.5 og den spesielle beskrivelsen."
+      }
     },
     "52": {
       "tittel": "FILTERLAG OG SPESIELLE FROSTSIKRINGSLAG",
       "enhet": "?",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og eventuelt komprimering av filterlag, og spesielle frostsikringslag av sand, grus, knust berg eller resirkulerte materialer, lettklinker, skumglassgranulat eller ekstrudert polystyren samt ev. fiberduk.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ]
+      }
     },
     "52.1": {
       "tittel": "Filterlag",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av filterlag."
+      }
     },
     "52.11": {
       "tittel": "Filterlag av sand og grus",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.12": {
       "tittel": "Filterlag av knuste eller sorterte grusmaterialer",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.13": {
       "tittel": "Filterlag av knuste steinmaterialer",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.2": {
       "tittel": "Separasjonslag/filterlag av fiberduk",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av fiberduk på planum eller som separasjon ved utlegging av lettklinker og skumglassgranulat."
+      }
     },
     "52.21": {
       "tittel": "Fiberduk bruksklasse 2",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.22": {
       "tittel": "Fiberduk bruksklasse 3",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.23": {
       "tittel": "Fiberduk bruksklasse 4",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.24": {
       "tittel": "Fiberduk bruksklasse 5",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.3": {
       "tittel": "Frostsikringslag",
       "enhet": "?",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "52.31": {
       "tittel": "Frostsikringslag av sand, grus, knust berg eller resirkulerte materialer",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av frostsikringslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, pigging, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff."
+      }
     },
     "52.32": {
       "tittel": "Frostsikringslag av lettklinker (ekspandert leire)",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av lettklinker til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2."
+      }
     },
     "52.33": {
       "tittel": "Frostsikringslag av skumglassgranulat",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av skumglassgranulat til frostsikringslag. Fiberduk for separering over og eventuelt under laget er beskrevet i prosess 52.2."
+      }
     },
     "52.34": {
       "tittel": "Frostsikring med plater av ekstrudert polystyren (XPS)",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av frostsikring med ekstrudert polystyren (XPS). Avretting, justering og komprimering under isolasjonsplatene er beskrevet i prosess 51.3."
+      }
     },
     "53": {
       "tittel": "FORSTERKNINGSLAG",
       "enhet": "?",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering og ev. forkiling av forsterkningslag. Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og overskudd av finstoff.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ]
+      }
     },
     "53.1": {
       "tittel": "Forsterkningslag av grus og samfengt knust berg",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av grus og samfengt knust berg, samt der det er aktuelt inkl. utgraving, opplasting, transport, utsortering, blokkdemolering, knusing, sikting, samt fjerning av for stor stein og ev. overskudd av finstoff."
+      }
     },
     "53.11": {
       "tittel": "Forsterkningslag av grus",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.111": {
       "tittel": "Grus forsterkningslag tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.112": {
       "tittel": "Grus forsterkningslag fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.12": {
       "tittel": "Forsterkningslag av samfengt knust berg",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.121": {
       "tittel": "Forsterkningslag av samfengt knust berg tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.122": {
       "tittel": "Forsterkningslag av samfengt knust berg fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.2": {
       "tittel": "Forsterkningslag av knuste steinmaterialer av pukk og kult",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av forsterkningslag av pukk og kult, samt der det er aktuelt inkl. opplasting, transport, utsortering, blokkdemolering, knusing, sikting og fjerning av overskudd av finstoff.",
+          "Forkiling er beskrevet i prosess 53.3."
+        ]
+      }
     },
     "53.21": {
       "tittel": "Forsterkningslag av pukk sortering 11/90",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.211": {
       "tittel": "Forsterkningslag av pukk sortering 11/90 fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.212": {
       "tittel": "Forsterkningslag av pukk sortering 11/90 tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.22": {
       "tittel": "Forsterkningslag av pukk sortering 16/90",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.221": {
       "tittel": "Forsterkningslag av pukk sortering 16/90 fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.222": {
       "tittel": "Forsterkningslag av pukk sortering 16/90 tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.23": {
       "tittel": "Forsterkningslag av kult sortering 22/125",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.231": {
       "tittel": "Forsterkningslag av kult sortering 22/125 fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.232": {
       "tittel": "Forsterkningslag av kult sortering 22/125 tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.24": {
       "tittel": "Forsterkningslag av kult sortering 22/180",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.241": {
       "tittel": "Forsterkningslag av kult sortering 22/180 fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.242": {
       "tittel": "Forsterkningslag av kult sortering 22/180 tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.25": {
       "tittel": "Forsterkningslag av pukk eller kult, andre sorteringer",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.251": {
       "tittel": "Forsterkningslag av pukk eller kult, andre sorteringer fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.252": {
       "tittel": "Forsterkningslag av pukk eller kult, andre sorteringer tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.3": {
       "tittel": "Forkiling av forsterkningslag",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av materialer til forkiling av forsterkningslag.",
+          "Volum av materialene måles ikke for oppgjør, men inngår i volum i prosess 53.2."
+        ]
+      }
     },
     "53.31": {
       "tittel": "Forkiling med knust asfalt Ak",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.32": {
       "tittel": "Forkiling med knust berg Fk",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.33": {
       "tittel": "Forkiling med emulsjonsgrus, Eg",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.34": {
       "tittel": "Forkiling med skumgrus, Sg",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.4": {
       "tittel": "Forsterkningslag av resirkulerte materialer, Gjb og Bm",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av forsterkningslag av knust betong, Gjb, og blandet masse, Bm."
+      }
     },
     "53.41": {
       "tittel": "Forsterkningslag av knust betong type Gjb",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "53.42": {
       "tittel": "Forsterkningslag av blandet masse type Bm",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54": {
       "tittel": "BÆRELAG AV MEKANISK STABILISERTE MATERIALER",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging, komprimering, ev. forkiling av mekanisk stabiliserte bærelag av knust grus (Gk), knust berg (Fk), forkilt pukk (Pp), knust asfalt (Ak) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, fjerning av for stor stein og overskudd av finstoff.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ]
+      }
     },
     "54.1": {
       "tittel": "Bærelag av knust grus, knust berg og knust betong",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust grus (Gk), knust berg (Fk) og knust betong (Gjb). Omfatter også, der det er aktuelt, utgraving, opplasting, transport, utsortering, knusing, sikting, blokkdemolering og fjerning av for stor stein og overskudd av finstoff."
+      }
     },
     "54.11": {
       "tittel": "Bærelag av knust grus Gk",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.111": {
       "tittel": "Bærelag av knust grus Gk fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.112": {
       "tittel": "Bærelag av knust grus Gk tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.12": {
       "tittel": "Bærelag av knust berg Fk",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.121": {
       "tittel": "Bærelag av knust berg Fk fra linjen eller sidetak",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.122": {
       "tittel": "Bærelag av knust berg Fk tilført utenfra",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.13": {
       "tittel": "Bærelag av knust betong Gjb",
       "enhet": "m3",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "54.2": {
       "tittel": "Bærelag av knust asfalt, Ak",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knust asfalt."
+      }
     },
     "54.3": {
       "tittel": "Bærelag av forkilt pukk, Fp",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging, komprimering og forkiling av Fp bærelag."
+      }
     },
     "55": {
       "tittel": "BÆRELAG AV BITUMENSTABILISERTE MATERIALER",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ]
+      }
     },
     "55.1": {
       "tittel": "Bærelag av asfaltert grus, Ag",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, utlegging og komprimering av bærelag av asfaltert grus med tykkelse som angitt.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring av masser innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ]
+      }
     },
     "55.11": {
       "tittel": "Asfaltert grus, Ag 8",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.12": {
       "tittel": "Asfaltert grus, Ag 11",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.13": {
       "tittel": "Asfaltert grus, Ag 16",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.14": {
       "tittel": "Asfaltert grus, Ag 22",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.2": {
       "tittel": "Bærelag av asfaltert pukk, Ap",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av asfaltert pukk med tykkelse som angitt."
+      }
     },
     "55.21": {
       "tittel": "Asfaltert pukk, Ap 11",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.22": {
       "tittel": "Asfaltert pukk, Ap 16",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.23": {
       "tittel": "Asfaltert pukk, Ap 22",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.3": {
       "tittel": "Bærelag av penetrert pukk, Pp",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging, komprimering, penetrering og forkiling av bærelag av penetrert pukk med tykkelse som angitt, inkludert etterarbeider som feiing og etterstrøing."
+      }
     },
     "55.31": {
       "tittel": "Hovedsortering Pp",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av pukk hovedsortering (grovpukk) for bærelag av penetrert pukk."
+      }
     },
     "55.311": {
       "tittel": "Hovedsortering penetrert pukk Pp 11/32 mm",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.312": {
       "tittel": "Hovedsortering penetrert pukk Pp 16/45 mm",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.32": {
       "tittel": "Penetrering og forkiling Pp",
       "enhet": "m2",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, penetrering med bituminøst bindemiddel og forkiling samt komprimering av bærelag av penetrert pukk. Omfatter også etterstrøing der dette er aktuelt, samt feiing."
+      }
     },
     "55.321": {
       "tittel": "Penetrering og forkiling Pp med forkilingsmateriale 4/8 mm",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.322": {
       "tittel": "Penetrering og forkiling Pp med forkilingsmateriale 8/11 mm",
       "enhet": "m2",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.4": {
       "tittel": "Bærelag av øvrige bitumenstabiliserte materialer",
       "enhet": "tonn",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av bitumenstabiliserte materialer."
+      }
     },
     "55.41": {
       "tittel": "Bærelag av emulsjonsgrus, Eg",
       "enhet": "tonn",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.42": {
       "tittel": "Bærelag av skumgrus, Sg",
       "enhet": "tonn",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.43": {
       "tittel": "Bærelag av bitumenstabilisert grus, Bsg",
       "enhet": "tonn",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "55.44": {
       "tittel": "Bærelag av bitumenanriket grus, Bsg",
       "enhet": "tonn",
-      "hovedprosess": "5",
-      "tekst": {}
+      "hovedprosess": "5"
     },
     "56": {
       "tittel": "BÆRELAG AV SEMENTSTABILISERTE MATERIALER",
       "enhet": "?",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av sementstabiliserte materialer."
+      }
     },
     "56.1": {
       "tittel": "Bærelag av drensbetong, Db",
       "enhet": "m3",
       "hovedprosess": "5",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og komprimering av bærelag av knuste steinmaterialer tilsatt betongmørtel, drensbetong, Db."
+      }
     }
   }
 }

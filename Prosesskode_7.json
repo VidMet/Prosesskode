@@ -7,1592 +7,1949 @@
     "7": {
       "tittel": "Vegutstyr og miljøtiltak",
       "enhet": "?",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "71": {
       "tittel": "MURER",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering og arbeider med bygging av murer av naturstein, plasstøpt betong, betongelementer, steinkurver, armert jord, m.v., inklusive ev. forblending og mønsterforskaling.",
+          "Entreprenøren må selv vurdere eventuelle behov for mellomlagring innenfor det som tillates på anlegget eller på områder til egen disposisjon, og inkludere kostnadene for dette i enhetsprisen."
+        ]
+      }
     },
     "71.1": {
       "tittel": "Murer av naturstein",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter graving, sprengning og pigging i nødvendig utstrekning for å gi plass til mur, fundament og bakfyll iht. planene. Omfatter også ev. avstempling eller spunt. Omfatter også opplasting, transport og utlegging av overskuddsmasser fra graving, sprengning, pigging og rensk.",
+          "Omfatter også levering av og arbeider med fundament under mur, betongsåle der dette er aktuelt, fuging og bakstøp inkl. armering.",
+          "Omfatter også levering, utsortering, opplasting og transport av stein fra lager eller sidetak, samt oppføring av mur.",
+          "Omfatter også levering og arbeider med tilbakefylling, fiberduk og drenering.",
+          "Uttak i skjæring og tunnel av stein til mur, inkl. transport til lager for videre bearbeiding, er beskrevet under hovedprosess 2 og 3. Uttak fra sidetak av stein til mur er beskrevet under hovedprosess 2."
+        ]
+      }
     },
     "71.11": {
       "tittel": "Sprengningsarbeider, pigging og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter pigging og sprengningsarbeider, utover sprengning utført under prosess 22, for å gi plass til mur, fundament og bakfyll iht. planene. Omfatter også driftsrensk og sikringsrens, samt forsvarlig dekning, varsling og andre tiltak som er nødvendige for å unngå skader.",
+          "Omfatter også opplasting, transport og utlegging av overskuddsmasser fra sprengning, driftsrensk, sikringsrensk og pigging.",
+          "Ev. bergsikring med sprøytebetong eller bergbolter er beskrevet under prosess 23."
+        ]
+      }
     },
     "71.12": {
       "tittel": "Graving, bergrensk og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving i nødvendig utstrekning for å gi plass til mur, fundament og bakfyll iht. planene, samt eventuell avstempling eller spunt. Omfatter også rensk av bergoverflaten etter at berget er avdekket. Omfatter også opplasting, transport og utlegging av overskuddsmasser fra graving og bergrensk."
+      }
     },
     "71.13": {
       "tittel": "Fundament og oppfylling",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppfylling til underkant av murens nederste stein, ev. underkant av betongsåle der betongsåle brukes."
+      }
     },
     "71.14": {
       "tittel": "Betongsåle",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter forskaling, armering, betong, utstøping og avretting av betongsåle."
+      }
     },
     "71.15": {
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av fiberduk."
+      }
     },
     "71.16": {
       "tittel": "Utsortering, levering og oppmuring",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter utsortering, opplasting og transport, samt levering hvis aktuelt, av naturstein fra lager eller sidetak, inkludert oppmuring. Omfatter også fuging hvis angitt i den spesielle beskrivelsen."
+      }
     },
     "71.161": {
       "tittel": "Utsortering og oppmuring",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter utsortering, opplasting og transport av stein fra lager eller sidetak, samt oppmuring av naturstein. Omfatter også fuging hvis angitt i den spesielle beskrivelsen.",
+          "Uttak i skjæring og tunnel av stein til mur, inkl. transport til lager for videre bearbeiding, er beskrevet under hovedprosess 2 og 3. Uttak fra sidetak av stein til mur er beskrevet under hovedprosess 2."
+        ]
+      }
     },
     "71.162": {
       "tittel": "Levering og oppmuring",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppmuring av naturstein. Omfatter også fuging hvis angitt i den spesielle beskrivelsen."
+      }
     },
     "71.17": {
       "tittel": "Tilbakefylling",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tilbakefylling mot mur over underkant av betongsåle der betongsåle er brukt, ev. underkant av murens nederste stein der betongsåle ikke er brukt."
+      }
     },
     "71.18": {
       "tittel": "Drenering",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med drenering av mur som angitt."
+      }
     },
     "71.2": {
       "tittel": "Murer av plasstøpt betong",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving, sprengning og pigging i nødvendig utstrekning for å gi plass til mur, fundament og tilbakefylling iht. planene, og ev. avstempling eller spunt, samt opplasting, transport og utlegging av overskuddsmasser fra graving, sprengning, pigging og rensk. Omfatter også oppfylling under muren, tilbakefylling, frostsikring og drenering. Omfatter også forskaling, armering og betong for mur og såle av plasstøpt betong."
+      }
     },
     "71.21": {
       "tittel": "Sprengningsarbeider, pigging og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter pigging og sprengningsarbeider, utover sprengning utført under prosess 22, for å gi plass til mur, fundament og bakfyll iht. planene. Omfatter også driftsrensk og sikringsrens, samt forsvarlig dekning, varsling og andre tiltak som er nødvendige for å unngå skader.",
+          "Omfatter også opplasting, transport og utlegging av overskuddsmasser fra sprengning, driftsrensk, sikringsrensk og pigging.",
+          "Ev. bergsikring med sprøytebetong eller bergbolter er beskrevet under prosess 23."
+        ]
+      }
     },
     "71.22": {
       "tittel": "Graving, bergrensk og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving i nødvendig utstrekning for å gi plass til mur, fundament og bakfyll iht. planene, samt eventuell avstempling eller spunt. Omfatter også rensk av bergoverflaten etter at berget er avdekket. Omfatter også opplasting, transport og utlegging av overskuddsmasser fra graving og bergrensk."
+      }
     },
     "71.23": {
       "tittel": "Frostsikring",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av isolasjonsplater (XPS) som frostsikring."
+      }
     },
     "71.24": {
       "tittel": "Forskaling",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter forskaling for mur inkl. ev. såle eller fot."
+      }
     },
     "71.25": {
       "tittel": "Armering",
       "enhet": "tonn",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter ferdig bundet armering med stålkvalitet og stangdiameter som angitt."
+      }
     },
     "71.26": {
       "tittel": "Betong",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utstøping av betong inkl. sårflikk og andre nødvendige etterarbeider."
+      }
     },
     "71.27": {
       "tittel": "Tilbakefylling",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tilbakefylling mot mur over underkant av betongsåle."
+      }
     },
     "71.28": {
       "tittel": "Drenering",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med drenering av mur som angitt i den spesielle beskrivelsen."
+      }
     },
     "71.3": {
       "tittel": "Murer av betongelementer",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving, sprengning og pigging i nødvendig utstrekning for å gi plass til mur, fundament og bakfyll iht. planene, og ev. avstempling eller spunt, samt opplasting, transport og utlegging av overskuddsmasser fra graving, sprengning, pigging og rensk. Omfatter også levering og arbeider med oppfylling under muren, tilbakefylling, fiberduk, frostsikring og drenering. Omfatter også levering og arbeider med mur av betongelementer fundamentert under ferdig veg."
+      }
     },
     "71.31": {
       "tittel": "Sprengningsarbeider, pigging og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter pigging og sprengningsarbeider, utover sprengning utført under prosess 22, for å gi plass til mur, fundament og bakfyll iht. planene. Omfatter også driftsrensk og sikringsrens, samt forsvarlig dekning, varsling og andre tiltak som er nødvendige for å unngå skader.",
+          "Omfatter også opplasting, transport og utlegging av overskuddsmasser fra sprengning, driftsrensk, sikringsrensk og pigging.",
+          "Ev. bergsikring med sprøytebetong eller bergbolter er beskrevet under prosess 23."
+        ]
+      }
     },
     "71.32": {
       "tittel": "Graving, bergrensk og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving i nødvendig utstrekning for å gi plass til mur, fundament og bakfyll iht. planene, samt eventuell avstempling eller spunt. Omfatter også rensk av bergoverflaten etter at berget er avdekket. Omfatter også opplasting, transport og utlegging av overskuddsmasser fra graving og bergrensk."
+      }
     },
     "71.33": {
       "tittel": "Frostsikring av mur",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av ekstrudert polystyren (XPS) eller annet egnet materiale som frostsikring."
+      }
     },
     "71.34": {
       "tittel": "Betongsåle",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter forskaling, armering, betong, utstøping og avretting av betongsåle."
+      }
     },
     "71.35": {
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av fiberduk."
+      }
     },
     "71.36": {
       "tittel": "Levering og oppsetting",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av betongelementer inkludert eventuelle fugearbeider."
+      }
     },
     "71.37": {
       "tittel": "Tilbakefylling",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tilbakefylling mot mur over underkant av betongsåle der betongsåle er brukt, ev. underkant av murens nederste betongelement der betongsåle ikke er brukt."
+      }
     },
     "71.38": {
       "tittel": "Drenering",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med drenering av mur som angitt."
+      }
     },
     "71.4": {
       "tittel": "Murer av steinkurver",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving, sprengning og pigging i nødvendig utstrekning for å gi plass til mur, fundament og bakfyll iht. planene, og ev. avstempling eller spunt, samt opplasting, transport og utlegging av overskuddsmasser fra graving, sprengning, pigging og rensk. Omfatter også levering og arbeider med oppfylling under muren, tilbakefylling, fiberduk, isolasjon og drenering. Omfatter også levering og fylling av kurver med steinmaterialer, inkludert oppsetting."
+      }
     },
     "71.41": {
       "tittel": "Sprengningsarbeider, pigging og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter pigging og sprengningsarbeider, utover sprengning utført under prosess 22, for å gi plass til mur, fundament og bakfyll iht. planene.",
+          "Omfatter også driftsrensk og sikringsrens, samt forsvarlig dekning, varsling og andre tiltak som er nødvendige for å unngå skader.",
+          "Omfatter også opplasting, transport og utlegging av overskuddsmasser fra sprengning, driftsrensk, sikringsrensk og pigging.",
+          "Ev. bergsikring med sprøytebetong eller bergbolter er beskrevet under prosess 23."
+        ]
+      }
     },
     "71.42": {
       "tittel": "Graving, bergrensk og fjerning av overskuddsmasse",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving i nødvendig utstrekning for å gi plass til mur, fundament og bakfyll iht. planene, samt eventuell avstempling eller spunt. Omfatter også rensk av bergoverflaten etter at berget er avdekket. Omfatter også opplasting, transport og utlegging av overskuddsmasser fra graving og bergrensk."
+      }
     },
     "71.43": {
       "tittel": "Betongsåle",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter forskaling, armering, betong, utstøping og avretting av betongsåle."
+      }
     },
     "71.44": {
       "tittel": "Fiberduk",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av fiberduk."
+      }
     },
     "71.45": {
       "tittel": "Levering og oppsetting",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og fylling av kurver med steinmaterialer, inkludert oppsetting."
+      }
     },
     "71.46": {
       "tittel": "Tilbakefylling",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tilbakefylling mot mur over underkant av betongsåle der betongsåle er brukt, ev. underkant av murens nederste kurv der betongsåle ikke er brukt."
+      }
     },
     "71.47": {
       "tittel": "Drenering",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med drenering av mur som angitt."
+      }
     },
     "71.5": {
       "tittel": "Forblending og mønsterforskaling",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter forblending av plasstøpt betong med andre materialer eller ved særlig utforming av betongflaten ved mønsterforskaling."
+      }
     },
     "71.6": {
       "tittel": "Murer av armert jord",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med oppføring av mur av armert jord."
+      }
     },
     "72": {
       "tittel": "BYGNINGSMESSIGE ARBEIDER OG STØYTILTAK",
       "enhet": "?",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "72.1": {
       "tittel": "Støyskjermer",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter fundamentering, levering og oppsetting samt eventuell telesikring av støyskjermer."
+      }
     },
     "72.11": {
       "tittel": "Fundamentering",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med fundamentering av støyskjermer."
+      }
     },
     "72.111": {
       "tittel": "Fundamentering i jord eller fylling",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nødvendig graving (boring), forskaling, armering og utstøping (ev. prefabrikerte fundamenter) samt tilbakefylling og komprimering av ikke telefarlige masser rundt fundamentet, nødvendig oppfylling til underkant skjerm og borttransport av overflødige masser."
+      }
     },
     "72.112": {
       "tittel": "Fundamentering på berg",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter sprengning, forskaling, armering og utstøping av fundament i berg, samt nødvendig tilbakefylling og borttransport av overflødige masser."
+      }
     },
     "72.12": {
       "tittel": "Søyler",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av søyler i betong, tre og stål."
+      }
     },
     "72.121": {
       "tittel": "Søyler av betong",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Betongsøyler skal ha betongkvalitet som angitt i den spesielle beskrivelsen."
+      }
     },
     "72.122": {
       "tittel": "Søyler av tre",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Tresøylene skal være trykkimpregnert (olje- eller saltimpregnert), eller materialer med tilsvarende holdbarhet og styrke."
+      }
     },
     "72.123": {
       "tittel": "Søyler av stål",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av stålsøyler (IPE)."
+      }
     },
     "72.13": {
       "tittel": "Skjermvegger",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av skjermvegger, eksklusive fundamenteringsarbeider og søyler."
+      }
     },
     "72.131": {
       "tittel": "Skjermvegger av betong",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av skjermvegger i betong."
+      }
     },
     "72.132": {
       "tittel": "Skjermvegger av tre",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av skjermvegger i tre."
+      }
     },
     "72.14": {
       "tittel": "Telesikring",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materialer og arbeider med telesikring av fundamenter og skjermvegg i betong."
+      }
     },
     "72.141": {
       "tittel": "Telesikring av fundamenter",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materialer og arbeider for telesikring av fundament som ikke skal føres ned til frostfri dybde eller berg."
+      }
     },
     "72.142": {
       "tittel": "Telesikring av skjermvegg i betong",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter graving av grøft 150 x 150 mm under skjermveggen og mellom fundamentene. Videre levering og pålegging av plastvinkelplater på hver side av skjermen i henhold til planene. Overflødige masser disponeres på stedet."
+      }
     },
     "72.2": {
       "tittel": "Fasadeisolering",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materialer til og arbeider med fasadeisolering."
+      }
     },
     "72.3": {
       "tittel": "Toaletter",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider for etabelering av toaletter som angitt i den spesielle beskrivelsen."
+      }
     },
     "72.4": {
       "tittel": "Leskur",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider for etablering av leskur som angitt i den spesielle beskrivelsen."
+      }
     },
     "72.5": {
       "tittel": "Servicebygg",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider for etablering av servicebygg som angitt i den spesielle beskrivelsen."
+      }
     },
     "72.6": {
       "tittel": "Bomstasjoner",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider for etablering av bomstasjoner som angitt i den spesielle beskrivelsen."
+      }
     },
     "74": {
       "tittel": "GRØNTAREALER OG SKRÅNINGER",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materialer til og arbeider med grøntarealer og skråninger."
+      }
     },
     "74.1": {
       "tittel": "Justering av jordskråninger og løsing av jord",
       "enhet": "RS",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.11": {
       "tittel": "Justering av jordskråninger",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nødvendige arbeider for å bringe jordskråninger og områder i jord under grøntarealer innenfor toleranser gitt nedenfor, dersom det er behov for bedre jevnhet enn det som oppnås etter prosess 25. Her inngår ekstra graving, lasting, transport, utlegging og planering av masser til eller fra de nevnte områder, i den utstrekning dette ikke inngår i hovedprosess 2."
+      }
     },
     "74.12": {
       "tittel": "Løsing av jord",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter løsing av jord. Aktuelt område avtales med byggherren."
+      }
     },
     "74.2": {
       "tittel": "Justering av steinfyllingsskråninger",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter rydding, justering og ev. ordning av ytterflaten for å oppnå stabil steinfyllings-skråning. Her inngår ekstra graving, lasting, transport, utlegging og planering av masser til eller fra de nevnte områder, i den utstrekning dette ikke inngår i hovedprosess 2."
+      }
     },
     "74.21": {
       "tittel": "Justering av udekkede steinfyllingsskråninger",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Tilførte masser for oppfylling av svanker skal være steinmasser."
+      }
     },
     "74.22": {
       "tittel": "Ordnet steinfylling",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nødvendig ordning av ytterflaten i steinfyllingsskråning som skal utføres brattere enn 1:1,5 for å sikre en stabil skråning, der ikke stabiliteten sikres ved utslaking med andre masser."
+      }
     },
     "74.3": {
       "tittel": "Utlegging av separasjonslag, vanningsanlegg mv.",
       "enhet": "RS",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.31": {
       "tittel": "Separasjonslag i veggrøfter/ midtdeler og under grøntarealer",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utlegging av separasjonslag av geotekstil mot overbygning på åpne materialer i bunn av veggrøft, under midtdeler og grøntarealer. Utlegging av jord mv. er beskrevet i prosess 25."
+      }
     },
     "74.32": {
       "tittel": "Underlag for grøntanlegg på betongkonstruksjoner",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tiltak som angitt i den spesielle beskrivelsen for å etablere egnet underlag for grøntanlegg på betongkonstruksjoner."
+      }
     },
     "74.33": {
       "tittel": "Vanningsanlegg",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter etablering og drift av vanningsanlegg."
+      }
     },
     "74.4": {
       "tittel": "Utlegging og bearbeiding av jord",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med utlegging og finplanering av jord, bearbeiding av jord, jordforbedring og gjødsling. Omfatter også fjerning av ugras i perioden fra utlegging av jord og fram til såing/planting."
+      }
     },
     "74.41": {
       "tittel": "Utlegging og finplanering av vegetasjonsdekke og matjord",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Gjelder stedlige toppmasser/vegetasjonsdekke og matjord med opprinnelse fra linjen, enten dette er direkte fra utgravning, fra ranker, fra mellomlager eller jordforbedret etter prosess 74.432. Omfatter opplasting, transport og utlegging i den utstrekning dette ikke inngår i prosess 25. Omfatter også fjerning av ugras i perioden fra utlegging og fram til såing/planting.",
+          "Ved planting av større trær og planter av skogplantekvalitet utføres planering etter prosess 25. Avtaking og lagring av stedlige toppmasser/vegetasjonsdekke og matjord er beskrevet i prosess 21. Ev. bekjempelse av uønskede arter er beskrevet i prosess 27."
+        ]
+      }
     },
     "74.411": {
       "tittel": "Utlegging av stedlige toppmasser for naturlig revegetering",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.412": {
       "tittel": "Utlegging og planering for grasbakke",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.413": {
       "tittel": "Utlegging og planering for grasplen",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.42": {
       "tittel": "Jordprøver",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter uttak av jordprøver med tilhørende analyse, inkludert innmåling, kartinntegning og utarbeidelse av forslag til jordforbedringstiltak."
+      }
     },
     "74.421": {
       "tittel": "Jordprøver - standard prøve",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "c": [
+          "Analyser som skal utføres for hver prøve er",
+          "- pH og AL –løselige næringsstoffer (P, K, Mg, Ca og Na)",
+          "- Glødetap",
+          "- Kornfordeling med siktekurve"
+        ]
+      }
     },
     "74.422": {
       "tittel": "Jordprøver - utvidet prøve",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "c": [
+          "Analyser som skal utføres for hver prøve er",
+          "- pH og AL –løselige næringsstoffer (P, K, Mg, Ca og Na).",
+          "- Mineralsk N (Nitrat-N og ammonium-N) (i 2 M KCl)",
+          "- Syreløselig kalium (KHNO3)",
+          "- Kjeldahl N",
+          "- Glødetap",
+          "- Kornfordeling med siktekurve",
+          "Ved pH 7 eller høyere deklareres for hver prøve også"
+        ]
+      }
     },
     "74.43": {
       "tittel": "Jordforbedring, gjødsling",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter jordforbedring og gjødsling av arealer som skal beplantes eller tilsåes Eventuell løsing av jord er beskrevet i prosess 74.12."
+      }
     },
     "74.431": {
       "tittel": "Jordforbedring ved blanding av jord",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter jordforbedring ved blanding av ulik jord eller blanding av jord med sand, leire eller organiske materialer. Det angis spesielt hvilke masser fra anlegget som inngår og hvilke masser som entreprenøren må tilføre utenfra."
+      }
     },
     "74.432": {
       "tittel": "Jordforbedring ved innblanding av tilførte materialer på grøntarealer",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og innblanding av jordforbedringsmiddel som sand, leire eller organisk materiale på utlagt/eksisterende jord. Omfatter også etterfølgende finplanering."
+      }
     },
     "74.433": {
       "tittel": "Kalking av arealer for tilsåing og beplanting",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utlegging av kalk på arealer for tilsåing og beplantning."
+      }
     },
     "74.434": {
       "tittel": "Gjødsling av arealer for tilsåing og beplantning",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utlegging av gjødsel på arealer for tilsåing og beplantning."
+      }
     },
     "74.44": {
       "tittel": "Innkjøpt vekstjord",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering, deklarering, analyse, blanding, utlegging og finplanering av vekstjord. Jorddybde skal være som angitt i den spesielle beskrivelsen.",
+          "Eventuelt tettelag over steinfylling er beskrevet i prosess 25.43."
+        ]
+      }
     },
     "74.441": {
       "tittel": "Moldholdig vekstjord",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.442": {
       "tittel": "Moldfattig vekstjord",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.5": {
       "tittel": "Etablering av grasdekke",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materialer til og arbeider med etablering av grasdekke og/eller blomstereng ved såing, legging av ferdig dyrket gras og midlertidig beskyttelse av skråninger. Omfatter også fjerning av ev. erosjonsnett som ikke nedbrytes naturlig når vegetasjonen har etablert seg. Omfatter også vanning, gjødsling, klipping og ugrasbekjempelse i forbindelse med planting/såing og fram til overtakelse."
+      }
     },
     "74.51": {
       "tittel": "Såing av grasareal",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materialer til og arbeider med tilsåing av arealer for etablering av grasbakke, grasplen og/eller blomstereng."
+      }
     },
     "74.511": {
       "tittel": "Etablering av grasareal ved manuell tilsåing",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.512": {
       "tittel": "Etablering av grasareal ved maskinell tilsåing med sprøyting",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.52": {
       "tittel": "Legging av ferdig dyrket gras",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og legging av ferdige grasremser eller grasstykker på bearbeidet overflate."
+      }
     },
     "74.53": {
       "tittel": "Erosjonssikring av jord",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter midlertidig beskyttelse av skråninger mot glidning/erosjon etter at gjødselfrøblanding er påført på de områder der man finner dette påkrevet, inkludert eventuell utlegging av erosjonsnett hvis dette er angitt i den spesielle beskrivelsen. Omfatter også fjerning av erosjonsnett som ikke nedbrytes naturlig når vegetasjonene har etablert seg."
+      }
     },
     "74.6": {
       "tittel": "Plantearbeider",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter levering og planting av trær, busker og stauder, utgraving av plantehull, samt levering og utlegging av vekstjord og dekkmateriale. Med vekstjord menes jord fra linja etter prosess 74.41, 74.43 eller 74.44 med egnet kvalitet til bruk ved planting. Omfatter også levering og tilbakefylling av vekstjord i plantehullet, inkludert fjerning av overskuddsmasser. Omfatter også vanning, gjødsling og ugrasbekjempelse i forbindelse med planting og fram til overtakelse. Ev. bekjempelse av uønskede arter utover dette er beskrevet i prosess 27.3.",
+          "Vanning og gjødsling i reklamasjonstiden medtas i prosess 74.7. Entreprenøren skal ved bestilling ta hensyn til det ansvar han er pålagt for skjøtsel og ut fra sin erfaring vurdere behovet for utskifting av planter. Utskifting av planter som del av skjøtsel er inkludert i prosess 74.7."
+        ]
+      }
     },
     "74.61": {
       "tittel": "Planting av trær",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Det skal benyttes jord i henhold til prosess 74.44."
+      }
     },
     "74.62": {
       "tittel": "Gateplantinger og rotvennlig forsterkningslag",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.621": {
       "tittel": "Gateplantinger og store trær",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Det skal benyttes jord i henhold til prosess 74.44"
+      }
     },
     "74.622": {
       "tittel": "Rotvennlig forsterkningslag",
       "enhet": "m3",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utlegging av rotvennlig forsterkningslag som angitt i den spesielle beskrivelsen.."
+      }
     },
     "74.63": {
       "tittel": "Planting av busker",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "c": "Busker skal plantes i samme dybde som de har stått tidligere. Forøvrig gjelder samme krav til planting av busker som for trær."
+      }
     },
     "74.64": {
       "tittel": "Planting av masseplanter i eksisterende jordmasser",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "c": "Det graves 0,3 m dype plantehull og tilføres 0,10 m3 vekstjord per plante under og rundt røttene. Jorden under og rundt røttene skal pakkes såvidt fast at det overalt er kontakt mellom jord og røtter. Der hvor topografien tillater det utformes terrenget over rotklumpen med helling innover mot stammen for således å øke evnen til oppfanging av overflatevann. Det skal plantes i takt med utlegging av planter og med minst mulig eksponering for sol og vind. Det skal plantes i forbant hvis ikke annet er angitt."
+      }
     },
     "74.65": {
       "tittel": "Planting av stauder",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Jord til stauder er beskrevet i prosess 74.44."
+      }
     },
     "74.66": {
       "tittel": "Flytting av trær og busker",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter mellomlagring, flytting fra mellomlager og utplanting av trær og busker som er gravd opp og midlertidig lagret, jf prosess 21.24. Omfatter også oppstøtting, beskyttelse mot sol og vind mv, ev. bardunering og vedlikehold som gjødsling og vanning for den tid plantene står i mellomlager i forbindelse med utplanting og fram til overtakelse."
+      }
     },
     "74.67": {
       "tittel": "Oppstøtting og beskyttelse",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter beskyttelse av nyplantede arealer, inkl. oppstøtting og beskyttelse av busker og trær samt fjerning av beskyttelsesmarkeringen. Omfatter også bardunering av trær."
+      }
     },
     "74.671": {
       "tittel": "Oppstøtting og beskyttelse av trær",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert antall. Enhet: stk"
+      }
     },
     "74.672": {
       "tittel": "Beskyttelse av busker",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert antall. Enhet: stk"
+      }
     },
     "74.673": {
       "tittel": "Beskyttelse av beplantet areal",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert areal. Enhet: m2"
+      }
     },
     "74.68": {
       "tittel": "Utlegging av dekkmateriale, vanning og gjødsling",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.681": {
       "tittel": "Utlegging av dekkmateriale",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utlegging av dekkmateriale."
+      }
     },
     "74.682": {
       "tittel": "Vanning",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nødvendig vanning før overtakelse. Vanning i reklamasjonstiden er beskrevet i prosess 74.7. Det er entreprenørens ansvar å skaffe vann."
+      }
     },
     "74.683": {
       "tittel": "Gjødsling",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og tilføring av gjødsel før overtakelse. Gjødsling i reklamasjonstiden er beskrevet i prosess 74.7."
+      }
     },
     "74.684": {
       "tittel": "Ugrasbekjemping",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter ugrasbekjemping før overtakelse. Ugrasbekjemping i reklamasjonstiden er beskrevet i 74.7."
+      }
     },
     "74.7": {
       "tittel": "Etableringssjøtsel i 3 år",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter planlegging, rapportering og utførelse av vedlikehold og skjøtsel av plantefelt og enkeltplanter i 3 år. For disse arbeidene overføres avtalen til Vegforvaltning/Drift. Skjøtsel skal omfatte materialer og arbeider i forbindelse med klipping, rydding unntatt søppeplukking, ugrasbekjempelse, gjødsling, ettersåing, beskjæring og vanning av gressarealer, trær, busker og stauder, nødvendig utskifting av planter i henhold til de gitte krav samt legging av dekkmateriale siste skjøtselsår for trær og busker."
+      }
     },
     "74.71": {
       "tittel": "Gressarealer",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter planlegging, rapportering og utførelse av overgjødsling, klipping, ugressbekjempelse og ettersåing av gressarealer. Omfatter også rydding og søppelplukking like før klipping og i forbindelse med utførelse av skjøtsel på området"
+      }
     },
     "74.72": {
       "tittel": "Buskarealer og masseplanter",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter planlegging, rapportering og utførelse av overgjødsling, ugrasbekjempelse, beskjæring, vanning og sopp- og skadedyrbekjempelse av busker og masseplanter. Omfatter også legging av kompost til dekkmateriale siste skjøtselsår iht. krav i prosess 74.68. Omfatter også rydding og søppelplukking i forbindelse med utførelse av skjøtsel på området."
+      }
     },
     "74.721": {
       "tittel": "Areal beplantet med busker",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.722": {
       "tittel": "Areal beplantet med masseplanter",
       "enhet": "m2",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "74.723": {
       "tittel": "Tynning av planter i plantefelt fra naturlig revegetering",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter planlegging, rapportering og utførelse av tynning av busker og trær til nærmere spesifisert avstand."
+      }
     },
     "74.73": {
       "tittel": "Trær",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter planlegging, rapportering og utførelse av overgjødsling, vanning, beskjæring, ugrasbekjempelse, sopp- og skadedyr-bekjempelse og ettersyn med oppstøtting, oppbinding og beskyttelse. Omfatter også legging av kompost til dekkmateriale siste skjøtselsår iht. krav i prosess 74.68."
+      }
     },
     "75": {
       "tittel": "KANTSTEIN, REKKVERK OG GJERDER",
       "enhet": "?",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.1": {
       "tittel": "Kantstein",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med etablering av kantstein."
+      }
     },
     "75.11": {
       "tittel": "Kantstein av naturstein",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og setting av kantstein av naturstein, inklusive tilhørende graving, betong, fuging eventuell forskaling, tilbakefylling av tilstøtende utgravd overbygningsmasse og borttransport av overskuddsmasse."
+      }
     },
     "75.111": {
       "tittel": "Rett kantstein av naturstein",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Rette kantstein satt på rettlinje eller ved krumningsradius > 20 m."
+      }
     },
     "75.112": {
       "tittel": "Krum kantstein av naturstein",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Krum kantstein ved teoretisk krumningsradius 20 m eller mindre."
+      }
     },
     "75.12": {
       "tittel": "Kantstein av betong",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, setting, spikring eller liming av kantstein av betong, inklusive tilhørende graving, betong, forskaling, tilbakefylling av tilstøtende utgravd overbygningsmasse, bakstøp der dette er aktuelt og fjerning av overskuddsmasse."
+      }
     },
     "75.121": {
       "tittel": "Rett kantstein av betong, faststøpt",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Rett kantstein satt faststøpt på rettlinje eller ved krumningsradius større enn 20 m."
+      }
     },
     "75.122": {
       "tittel": "Krum kantstein av betong, faststøpt",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Krum, faststøpt kantstein ved teoretisk krumningsradius 20 m eller mindre."
+      }
     },
     "75.123": {
       "tittel": "Rett kantstein av betong, fastlimt/spikret",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Rett kantstein av betong, limt/spikret på rettlinje eller ved krumningsradius større enn 20 m."
+      }
     },
     "75.124": {
       "tittel": "Krum kantstein av betong, fastlimt/spikret",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Krum kantstein av betong, limt/spikret ved prosjektert krumningsradius større enn 20 m."
+      }
     },
     "75.125": {
       "tittel": "Kantstein av betong, fastlimt/spikret. Spesielle profiler",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Limt/spikret kantstein av betong beregnet for overfart, avslutning, overganger, kjørebaner etc."
+      }
     },
     "75.13": {
       "tittel": "Kantstein av asfalt",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, legging og eventuell maling av kantstein av asfalt."
+      }
     },
     "75.2": {
       "tittel": "Rekkverk",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med etablering av rekkverk."
+      }
     },
     "75.21": {
       "tittel": "Rekkverk av tre",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av rekkverk av tre som angitt i planene, inklusive tilhørende graving og tilbakefylling, ev. borttransport av masse."
+      }
     },
     "75.22": {
       "tittel": "Rekkverk av betong",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av rekkverk av plasstøpt betong og prefabrikerte betongelementer, inklusive tilhørende graving, betong, forskaling, tilbakefylling og fjerning av masse. Omfatter også oppspenning av rekkverk av prefabrikerte betongelementer der dette er aktuelt."
+      }
     },
     "75.221": {
       "tittel": "Rekkverk av plasstøpt betong",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av rekkverk av plasstøpt betong, inklusiv tilhørende graving, betong, ev. forskaling, tilbakefylling og borttransport av masse."
+      }
     },
     "75.222": {
       "tittel": "Rekkverk av prefabrikerte betongelementer",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, oppsetting og oppspenning av rekkverk av prefabrikerte betongelementer, inklusive tilhørende graving, betong, eventuell forskaling, tilbakefylling og fjerning av masse. Omfatter også etablering av katastrofeåpninger."
+      }
     },
     "75.227": {
       "tittel": "Katastrofeåpning i rekkverk av betong",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av katastrofeåpning i rekkverk av betong."
+      }
     },
     "75.23": {
       "tittel": "Rekkverk av metallskinner",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av rekkverk av metallskinner, inklusive stolper og tilhørende fundamenterings- og forankringsarbeider, samt etablering av katastrofeåpninger."
+      }
     },
     "75.231": {
       "tittel": "Enkelt rekkverk av stål på trestolper",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.232": {
       "tittel": "Enkelt rekkverk av stål på stålstolper",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.233": {
       "tittel": "Enkelt rekkverk av stål på plaststolper",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.234": {
       "tittel": "Dobbelt rekkverk av stål på trestolper",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.235": {
       "tittel": "Dobbelt rekkverk av stål på stålstolper",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.236": {
       "tittel": "Dobbelt rekkverk av stål på plaststolper",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.237": {
       "tittel": "Katastrofeåpning i rekkverk av metall",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden angis som prosjektert antall katastrofeåpninger. Enhet: stk"
+      }
     },
     "75.24": {
       "tittel": "Rekkverk av wire",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av rekkverk av wire, inklusive stolper og fundamentering / forankring."
+      }
     },
     "75.25": {
       "tittel": "Støtputer",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av støtputer, inkl fundamentering og forankring."
+      }
     },
     "75.3": {
       "tittel": "Gjerder",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av gjerder og gjerdeporter."
+      }
     },
     "75.31": {
       "tittel": "Trafikkgjerde",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av gjerder som hindrer for uønsket fotgjengertrafikk."
+      }
     },
     "75.32": {
       "tittel": "Stålflettverksgjerde på stålstolper i jord",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av stålflettverksgjerde på stålstolper i jord."
+      }
     },
     "75.33": {
       "tittel": "Stålflettverksgjerde på stålstolper i berg",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av stålflettverksgjerde på stålstolper i berg."
+      }
     },
     "75.34": {
       "tittel": "Storrutet gjerde",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "b": "Det skal benyttes tykt galvanisert storrutet gjerde med rutebredde 9” og trådtykkelse øverst BWG nr. 9 (3,76 mm) nederst BWG nr. 11 (3,05 mm) og forøvrig BWG nr. 12 (2,77 mm), bredde før oppsetting 0,90 m. Som strekktråd oppe og nede benyttes tykt forsinket bølgetråd BWG nr. 6, festet med tykt forsinket sytråd BWG nr. 17."
+      }
     },
     "75.35": {
       "tittel": "Undergjerding",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter gjerding under standardgjerde ved ujevnt terreng."
+      }
     },
     "75.36": {
       "tittel": "Gjerdeporter",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av porter og grinder i gjerder."
+      }
     },
     "75.4": {
       "tittel": "Viltgjerde",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av viltgjerde (stolper, netting, undergjerding, porter). Omfatter også lett planering av ujevnheter slik at gjerdet kan monteres på en tilfredsstillende måte. Rydding av gjerdetraséen for trær og grov vegetasjon er beskrevet i prosess 21.2."
+      }
     },
     "75.41": {
       "tittel": "Stolper",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av gjerdestolper av rør eller T-profil."
+      }
     },
     "75.411": {
       "tittel": "Rørstolper i berg",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.412": {
       "tittel": "Rørstolper i jord",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.413": {
       "tittel": "T-profil i berg",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.414": {
       "tittel": "T-profil i jord",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.42": {
       "tittel": "Start/avslutning ved konstruksjon",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter start og avslutninger ved konstruksjoner."
+      }
     },
     "75.43": {
       "tittel": "Skråstag",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter skråstag i hjørner ved større vinkelendringer og ved avslutninger."
+      }
     },
     "75.44": {
       "tittel": "Skjøtestolper",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materiale og arbeider med skjøtestolper ved bløte masser i grunnen og ved undergjerding."
+      }
     },
     "75.45": {
       "tittel": "Netting",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og montering av netting"
+      }
     },
     "75.46": {
       "tittel": "Undergjerding",
       "enhet": "m2",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter gjerding under standardgjerde ved ujevnt terreng."
+      }
     },
     "75.47": {
       "tittel": "Gjerdeporter i viltgjerder",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av porter og grinder i viltgjerder."
+      }
     },
     "75.5": {
       "tittel": "Snøsamleskjerm",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppføring av snøsamleskjerm, inkludert fundamentering."
+      }
     },
     "75.51": {
       "tittel": "Skjermkonstruksjon",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppføring av skjermkonstruksjonen for snøsamleskjerm unntatt fundamentering."
+      }
     },
     "75.52": {
       "tittel": "Fundamentering av snøsamleskjerm",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med fundamentering av snøsamleskjerm."
+      }
     },
     "75.521": {
       "tittel": "Fundamenter i berg",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.522": {
       "tittel": "Fundamenter i jord",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.6": {
       "tittel": "Snøsikringskonstruksjoner",
       "enhet": "?",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.61": {
       "tittel": "Stiv støtteforbygning for snøsikring",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppføring av stiv støtteforbygning for snøsikring, inkludert fundamentering."
+      }
     },
     "75.611": {
       "tittel": "Forbygningskonstruksjon",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppføring av forbygningskonstruksjon for støtteforbygning unntatt fundamenter."
+      }
     },
     "75.612": {
       "tittel": "Fundamentering av stiv støtteforbygning",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med fundamentering av støtteforbygning for snøsikring."
+      }
     },
     "75.6121": {
       "tittel": "Fundamenter i berg",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.6122": {
       "tittel": "Fundamenter i jord",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "75.62": {
       "tittel": "Snønett",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppføring av snønett, inkludert forankring."
+      }
     },
     "75.63": {
       "tittel": "Paraply/snøanker",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppføring av paraply/snøanker, inkludert forankring."
+      }
     },
     "75.7": {
       "tittel": "Fanggjerde",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med oppføring av fanggjerde inkludert fundamentering/forankring."
+      }
     },
     "76": {
       "tittel": "TRAFIKKREGULERING OG BELYSNING",
       "enhet": "?",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering av materialer til og arbeider med permanent trafikkregulering og belysning. Grøfter og kabler i bakken er beskrevet i prosess 44."
+      }
     },
     "76.1": {
       "tittel": "Signalanlegg",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med signalanlegg. Omfatter også styring, fundamentering, mekanisk og elektrisk infrastruktur samt framføring og tilknytning til ekom og elektrisitet."
+      }
     },
     "76.2": {
       "tittel": "Styring og overvåkingssystemer",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med styring og overvåkingssystemer. Omfatter også styring, fundamentering, mekanisk og elektrisk infrastruktur samt framføring og tilknytning til ekom og elektrisitet."
+      }
     },
     "76.3": {
       "tittel": "Belysningsanlegg for gater og veger",
       "enhet": "?",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med belysningsanlegg. Omfatter også styring, fundamentering, mekanisk og elektrisk infrastruktur samt framføring og tilknytning til ekom og elektrisitet."
+      }
     },
     "76.31": {
       "tittel": "Lysmåler",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, montering og tilkobling av lysmåler inklusive kabler fra fordeling til lysmåler."
+      }
     },
     "76.33": {
       "tittel": "Styreenhet for veglys",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, montering og tilkobling av styreenhet i fordeling i henhold til den spesielle beskrivelsen."
+      }
     },
     "76.34": {
       "tittel": "Lysmaster og fundamenter",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, montering og tilkopling av lysmaster med utliggere, fester for armaturer og tilbehør. Omfatter også fundamenter, stolpeinnsats, koplingsboks, kraftfordelingsklemmer og vern."
+      }
     },
     "76.341": {
       "tittel": "Lysmaster av tre",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3411": {
       "tittel": "Lysmast av tre",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3412": {
       "tittel": "Lysmast av tre, svekket",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.342": {
       "tittel": "Lysmast av stål",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3421": {
       "tittel": "Mast med fotplate",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3422": {
       "tittel": "NE-mast",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3423": {
       "tittel": "HE-mast",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.343": {
       "tittel": "Lysmast av fiberforsterket kompositt",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.344": {
       "tittel": "Lysmast av aluminium",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.345": {
       "tittel": "Lysmast av fagverk av metallkonstruksjoner – gittermast",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.346": {
       "tittel": "Veglysfundament",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter materialer og arbeider med fundamenter for veglysmaster."
+      }
     },
     "76.3461": {
       "tittel": "Betongfundament",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3462": {
       "tittel": "Plasstøpt fundament",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3463": {
       "tittel": "Stålfundament",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3464": {
       "tittel": "Bergfundament",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.3465": {
       "tittel": "Fundament for lysmast av fagverk av metallkonstruksjoner – gittermast",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.35": {
       "tittel": "Veglysfordelinger",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, montering, tilkopling og idriftssetting av fordelinger. Omfatter også materialer og arbeider med sokkel og fundament. Omfatter også koordineringer mot nettselskap og meldinger for tilknytning. Omfatter også koordinering og idriftsetting av styresystem for belysningen."
+      }
     },
     "76.351": {
       "tittel": "Hovedfordelinger",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.352": {
       "tittel": "Underfordelinger",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "76.36": {
       "tittel": "Lysarmaturer",
       "enhet": "?",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, montering, tilkopling og idriftsetting av lysarmaturer, inklusive lyskilder og intern kabling i mast fra armatur til masteluke. Omfatter også levering og montering av festeanordninger og merkeskilt for lyskilde."
+      }
     },
     "76.362": {
       "tittel": "Lysarmaturer LED",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert mengde spesifisert for hver armaturtype iht. hjelpeskjema i kap. D2. Enhetspris for hver armaturtype angis separat i hjelpeskjema i kap. D.2 og samlet pris føres til sum i prosessen. Ved motstrid mellom summer gjelder samlet pris ført opp i prosessen foran hjelpeskjema i kap. D2 og ev. forskjell blir fordelt forholdsmessig på alle armaturtyper i hjelpeskjema. Angivelse av enhet RS er kun administrativ, mengdene skal være regulerbare iht. kontraktens regler. Regler for mengderegulering gjelder den samlede mengden på prosessen. Enhet: RS"
+      }
     },
     "77": {
       "tittel": "SKILT, VEGMERKING OG OPTISK LEDNING",
       "enhet": "?",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.1": {
       "tittel": "Oppsetting av skilt",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med oppsetting av permanent skilt inkl. stolper, fundamenter og annet nødvendig utstyr som er nødvendig for å montere skilt i samsvar med skiltplanen."
+      }
     },
     "77.11": {
       "tittel": "Fundament for skiltstolper, portaler og søyler",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med fundamentering for skilt."
+      }
     },
     "77.111": {
       "tittel": "Betongfundament",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av fundament bestående av stålrør med tilhørende bindstykke faststøpt med betong i betong mufferør samt graving og tilbakefylling."
+      }
     },
     "77.112": {
       "tittel": "Fundamentrør",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og ramming av Ø 2” fundamentrør med tilhørende bindstykke."
+      }
     },
     "77.113": {
       "tittel": "Bergfundament",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, boring for og montering av fundament i berg inkl. bindstykke."
+      }
     },
     "77.12": {
       "tittel": "Stolper",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og montering av stolper."
+      }
     },
     "77.121": {
       "tittel": "Stolper Ø 50 mm",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.122": {
       "tittel": "Stolper Ø 75 mm",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.123": {
       "tittel": "Stolper Ø 90 mm",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.124": {
       "tittel": "Ettergivende stolper og søyler",
       "enhet": "stk",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.13": {
       "tittel": "Portaler og søyler",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av portaler for skiltopphengning inkludert nødvendige fundamenteringsarbeider."
+      }
     },
     "77.14": {
       "tittel": "Skilt",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av skilt inkludert fester."
+      }
     },
     "77.15": {
       "tittel": "Belyste skilt",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av skilt, belysningsanlegg og framføring av strøm til innvendig og utvendig belyste skilt."
+      }
     },
     "77.16": {
       "tittel": "Variable skilt",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og utførelse av variable skilt inkludert fester og alle nødvendige installasjoner for funksjon av skiltet."
+      }
     },
     "77.17": {
       "tittel": "Kilometerstolper",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av kilometerstolper."
+      }
     },
     "77.18": {
       "tittel": "Kantstolper",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppsetting av kantstolper med refleks."
+      }
     },
     "77.2": {
       "tittel": "Fresing for vegoppmerking",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og alle arbeider forbundet med fresing for vegoppmerking, samt tilhørende formerking."
+      }
     },
     "77.21": {
       "tittel": "Formerking for fresing for vegoppmerking",
       "enhet": "time",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med formerking for senere utførelse av fresing for vegoppmerking."
+      }
     },
     "77.22": {
       "tittel": "Fresing for vegoppmerking",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter fresing av spor for vegoppmerking, oppvarming av dekke der dette er nødvendig, rengjøring av frest spor og fjerning av frest masse inkludert ev. mottaksavgifter."
+      }
     },
     "77.221": {
       "tittel": "Sinusfres",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "c": [
+          "Ved fresing av parallelle spor aksepteres at sinuskurvene kan være faseforskjøvet.",
+          "Bølgelengde for sinuskurve skal være 600 mm målt fra en sinustopp til neste.",
+          "Bølgehøyde for sinuskurve skal være 7 mm målt fra topp av sinuskurve til bunn av sinuskurve.",
+          "Utførelse med eller uten nedfresing skal være som angitt i planene eller i den spesielle beskrivelsen.",
+          "Der det er angitt utførelse med nedfresing:",
+          "Nedfesing skal være 6 mm.",
+          "Dybde på fresespor, målt fra topp asfaltdekke til bunn sinusspor, skal ikke være større enn 16 mm.",
+          "Bredde av skråkant skal være 50 mm målt til bunn av sinuskurve.",
+          "Der det er angitt utførelse uten nedfresing:",
+          "Dybde på fresespor, målt fra topp asfaltdekke til bunn sinusspor, skal ikke være større enn 10 mm.",
+          "Bredde av skråkant skal ligge innenfor 20-35 mm målt til bunn av sinuskurve."
+        ]
+      }
     },
     "77.2211": {
       "tittel": "Sinusfres med bredde 250 mm",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.2212": {
       "tittel": "Sinusfres med bredde 350 mm",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.2213": {
       "tittel": "Sinusfres med bredde 500 mm",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.222": {
       "tittel": "Fresing av plant spor",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "c": "Ved takfall på vegen skal sporet følge takfallet. Bredde av frest spor måles inkludert skråkant. Skråkantene skal hver ha bredde minimum 25 mm."
+      }
     },
     "77.2221": {
       "tittel": "Fresing av plant spor med bredde 350 mm",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.2222": {
       "tittel": "Fresing av plant spor med bredde 500 mm",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.2223": {
       "tittel": "Fresing av plant spor med bredde 550 mm",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.3": {
       "tittel": "Vegoppmerking, manuelt",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med formerking og håndlegging av vegoppmerking."
+      }
     },
     "77.31": {
       "tittel": "Formerking for håndlagt vegoppmerking",
       "enhet": "time",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med formerking for senere utførelse av permanent håndlagt vegoppmerking."
+      }
     },
     "77.32": {
       "tittel": "Vegoppmerking med termoplast",
       "enhet": "tonn",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med håndlagt vegoppmerking av symboler og tversgående linjetyper med termoplast i utforming som angitt i planene, for gangfelt, stopplinjer, sperreområder, kjørefeltpiler, feltskiftepiler, vikelinjer, rumlefelt, fartshumpmerking, symboler og tekst."
+      }
     },
     "77.321": {
       "tittel": "Gult merkemateriale",
       "enhet": "tonn",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.322": {
       "tittel": "Hvitt merkemateriale",
       "enhet": "tonn",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.4": {
       "tittel": "Vegoppmerking, maskinelt",
       "enhet": "RS",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med formerking og maskinell vegoppmerking på vegdekket."
+      }
     },
     "77.41": {
       "tittel": "Formerking for maskinell vegoppmerking",
       "enhet": "time",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med formerking for senere utførelse av permanent maskinell vegoppmerking."
+      }
     },
     "77.42": {
       "tittel": "Vegoppmerking med maling",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med vegoppmerking på vegdekker ved bruk av vannbasert vegmerkemaling som angitt i planene eller den spesielle beskrivelsen."
+      }
     },
     "77.421": {
       "tittel": "Hvit, linjedimensjon 0,10 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.422": {
       "tittel": "Hvit, linjedimensjon 0,15 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.43": {
       "tittel": "Vegoppmerking med sprayplast",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med vegoppmerking på vegdekket ved bruk av sprayplast som angitt i planene."
+      }
     },
     "77.431": {
       "tittel": "Gul, linjedimensjon 0,10 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.432": {
       "tittel": "Gul, linjedimensjon 0,15 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.433": {
       "tittel": "Gul, linjedimensjon 0,20 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.434": {
       "tittel": "Gul, linjedimensjon 0,30 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.435": {
       "tittel": "Hvit, linjedimensjon 0,10 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.436": {
       "tittel": "Hvit, linjedimensjon 0,15 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.437": {
       "tittel": "Hvit, linjedimensjon 0,20 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.438": {
       "tittel": "Hvit, linjedimensjon 0,30 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.44": {
       "tittel": "Vegoppmerking med termoplast",
       "enhet": "m",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med vegoppmerking ved bruk av ekstrudert termoplast som angitt i planene."
+      }
     },
     "77.441": {
       "tittel": "Gul, linjedimensjon 0,10 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.442": {
       "tittel": "Gul, linjedimensjon 0,15 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.443": {
       "tittel": "Gul, linjedimensjon 0,20 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.444": {
       "tittel": "Gul, linjedimensjon 0,30 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.445": {
       "tittel": "Hvit, linjedimensjon 0,10 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.446": {
       "tittel": "Hvit, linjedimensjon 0,15 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.447": {
       "tittel": "Hvit, linjedimensjon 0,20 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.448": {
       "tittel": "Hvit, linjedimensjon 0,30 m",
       "enhet": "m",
-      "hovedprosess": "7",
-      "tekst": {}
+      "hovedprosess": "7"
     },
     "77.5": {
       "tittel": "Oppmerking med vegbanereflektorer",
       "enhet": "stk",
       "hovedprosess": "7",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og oppmerking på vegdekket ved bruk av vegbanereflektorer."
+      }
     }
   }
 }

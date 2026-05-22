@@ -7,590 +7,771 @@
     "1": {
       "tittel": "Forberedende tiltak og generelle kostnader",
       "enhet": "?",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "11": {
       "tittel": "ARBEIDSSTIKNING, TEKNISK KONTROLL",
       "enhet": "?",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "11.1": {
       "tittel": "Fastmerker",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter kontroll, og om nødvendig reetablering, av eksisterende fastmerker i prosjektområdet før anleggsarbeider starter. Omfatter også måling, beregning etablering og sikring av nye fastmerker til bruk innenfor anleggsområdet. Omfatter også rekognosering i felt for fysisk plassering måling og sikring av nye fastmerker, samt beregning av nye data, dersom eksisterende fastmerker som ligger utenfor området for den endelige konstruksjonen ødelegges under arbeidets gang."
+      }
     },
     "11.11": {
       "tittel": "Kontroll av eksisterende fastmerker",
       "enhet": "stk",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter kontroll av eksisterende fastmerker i prosjektområdet før anlegget starter."
+      }
     },
     "11.12": {
       "tittel": "Plassering av nye fastmerker",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter målinger og beregninger for å bestemme plassering av nye fastmerker som benyttes til å etablere anleggsnett, og for fastmerker som inngår i anleggsnettet. Omfatter også rekognosering i felt for fysisk plassering, måling, beregning og rapportering, herunder analyse av geodetisk nett."
+      }
     },
     "11.13": {
       "tittel": "Etablering av fastmerker",
       "enhet": "stk",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering og arbeider med oppsetting av fastmerker inkludert merkemateriale, bolter, søyler, jordspyd, mm."
+      }
     },
     "11.2": {
       "tittel": "Stikking og maskinstyring",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter all stikking, maskinstyring, måling og beregning i anleggstiden for å sikre en utførelse i overensstemmelse med de prosjekterte høyde- og plasseringsangivelser, mål og toleranser."
+      }
     },
     "11.3": {
       "tittel": "Innmåling",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter alle kostnader i anleggstiden forbundet med innmåling, beregning og bearbeiding av innmålingsdata som dokumenterer:",
+          "- Mengder angitt i målebrev",
+          "- At utførelsen er i henhold til toleranser og kvalitetskrav"
+        ]
+      }
     },
     "11.4": {
       "tittel": "Teknisk kontroll",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle kostnader forbundet med kontroll og dokumentasjon av at de angitte krav til materialer og utførelse overholdes, eksempelvis prøvetaking, materialprøving, fotografering, oppsyn og utførelseskontroll."
+      }
     },
     "11.5": {
       "tittel": "Sluttdokumentasjon",
       "enhet": "?",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "11.51": {
       "tittel": "Sluttdokumentasjon for nye og endrede fastmerker",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter utarbeidelse og levering av rapport som dokumenterer nye og endrede fastmerker etablert av entreprenøren. Omfatter også alle kostnader forbundet med avsluttende overlevering av disse data."
+      }
     },
     "11.52": {
       "tittel": "Sluttdokumentasjon for egenskapsdata",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter registrering, sammenstilling og overlevering av egenskapsdata for objekter som skal registreres i Nasjonal vegdatabank (NVDB) og Felles kartdatabase (FKB). Hvilke objekter dette gjelder er angitt i prosjektets objektkodeliste eller i den spesielle beskrivelsen."
+      }
     },
     "11.53": {
       "tittel": "Sluttdokumentasjon for tunnelgeometri, ferdig tunnel",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter laserskanning av tunnelprofil og rapportering av data."
+      }
     },
     "12": {
       "tittel": "RIGG, BYGNINGER OG GENERELLE DRIFTS-OMKOSTNINGER",
       "enhet": "?",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "12.1": {
       "tittel": "Rigg og midlertidige bygninger",
       "enhet": "?",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tilrigging, drift og nedrigging av midlertidige bygninger og istandsetting, drift og fjerning av midlertidige riggarealer. Omfatter også alle kostnader til byggeplassadministrasjon i den grad disse ikke inngår i egne prosesser eller er inkludert i enhetspriser."
+      }
     },
     "12.11": {
       "tittel": "Tilrigging",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter alle kostnader for tiltransport, opprigging og klargjøring av det utstyr etc. som entreprenøren og eventuelle underentreprenører trenger for å utføre de beskrevne arbeider, i den utstrekning slike utgifter ikke er inkludert i egne prosesser eller i enhetsprisene. Omfatter også alle midlertidige bygninger og brakker med inventar og utstyr (bolig-, spise- og hvilebrakker, kontorbrakker, verksted, lagerbygg, sprengstoff lager, kompressorhus, boder etc.) og alle provisorier og hjelpemidler (operasjonsbaser med anlegg for varemottak/transporter, heiser, kraner, kranbaner, bøyebenker, kompressoranlegg, ventilasjonsanlegg m.v.) for entreprenørens eget bruk. Omfatter også nødvendige tiltak for å sikre at uvedkommende ikke får atkomst til bygge- eller anleggsplassen.",
+          "Omfatter også planering og opparbeidelse av tomt m/adkomst utover det som inngår i de permanente arbeider, nødvendig fremføring og installasjon av vann, kloakk, ev. renseanlegg, telefon og elektrisitetsforsyning, parkeringsplasser, gjerder, skjermer, skilter etc. samt nødvendige fundamenteringsarbeider og øvrig klargjøring av byggeplassen og leirområdet.",
+          "Ansvar for å innhente tillatelser for bruk av alle riggområder, og for å skaffe til veie riggarealer utover de som er angitt i planene, er regulert i kontraktsbestemmelsene."
+        ]
+      }
     },
     "12.12": {
       "tittel": "Drift av rigg og midlertidige bygninger",
       "enhet": "uke",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle kostnader til byggeplassadministrasjon, transporter, drift av rigg og driftsbygninger med utstyr som angitt i prosess 12.11, i den grad disse kostnadene ikke inngår i egne prosesser eller i enhetsprisene. Omfatter også alle utgifter til leie, vedlikehold, renhold, renovasjon, rekvisita, hjelpematerialer, telefonutgifter, brensel, elektrisk strøm, kokkelønn, lønn til administrasjonspersonell etc., samt opprettholdelse av nødvendige tiltak for å sikre at uvedkommende ikke får atkomst til bygge- eller anleggsplassen."
+      }
     },
     "12.13": {
       "tittel": "Nedrigging",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nedrigging og fjerning av anleggene nevnt i prosess 12.11. Omfatter også sluttrydding av hele anleggsområdet inkludert riggområder, opplasting, transport, mellomlagring eller forskriftsmessig håndtering av avfall og/eller godkjent tildekking av gjenværende materialer og avfall etter at anleggsarbeidene er utført."
+      }
     },
     "12.2": {
       "tittel": "Rigg for byggherren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Gjelder kontorer for byggherren med tilhørende utearealer som angitt. Omfatter tilrigging, drift og nedrigging av midlertidige bygninger og istandsetting, drift og fjerning av midlertidige riggarealer."
+      }
     },
     "12.21": {
       "tittel": "Tilrigging av rigg for byggherren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Kostnad angis som rund sum. Enhet: RS"
+      }
     },
     "12.22": {
       "tittel": "Drift av rigg for byggherren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter drift av brakker og utearealer for byggherren jf. prosess 12.21. Omfatter også utgifter til strøm, sikring og vakthold mens utgifter til internett og telefon betales av byggherren."
+      }
     },
     "12.23": {
       "tittel": "Nedrigging av rigg for byggherren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nedrigging og fjerning av brakker for byggherren jf. prosess 12.21, inkludert sluttrydding og istandsetting av området."
+      }
     },
     "12.4": {
       "tittel": "Vinterkostnader anlegg",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tiltak som oppvarming, tildekking, innkledning, isolering, tining etc. for å beskytte materialer, konstruksjoner, gravegroper, maskiner og utstyr midlertidig mot frost og snø, samt snøbrøyting og strøing."
+      }
     },
     "12.5": {
       "tittel": "Miljøtiltak i byggefasen",
       "enhet": "?",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter spesielle miljøtiltak som angitt. Ordinære miljøtiltak er inkludert i prosesser for utførelse. Omfatter også miljøkontroll av utslipp til luft, vann og jord."
+      }
     },
     "12.51": {
       "tittel": "Vannutslipp",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tiltak og kostnader for håndtering av utslippsvann og andre utslipp til resipient, inkludert overvåkning, prøvetaking og analyser samt øvrig dokumentasjon av tiltakenes funksjon."
+      }
     },
     "12.511": {
       "tittel": "Renseanlegg",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter utforming, etablering, vedlikehold og fjerning etter endt bruk av renseanlegg, rensebasseng, grøfter, kummer, rør og alt nødvendig tilbehør for rensing av vann og andre utslipp til resipient, som angitt i den spesielle beskrivelsen."
+      }
     },
     "12.512": {
       "tittel": "Håndtering av vann fra verksted, vaskerigg og anleggsdrift",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter drift av anlegg for håndtering av vann. Omfatter også fjerning av vann og slam inkludert deponeringskostnader, samt overvåkning, prøvetaking, analyser og øvrig dokumentasjon av tiltakenes funksjon."
+      }
     },
     "12.513": {
       "tittel": "Siltgardin/siltskjørt",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter utforming, levering, etablering, drift, vedlikehold og nødvendige utskiftinger, flyttinger, fjerning og deponeringskostnader etter endt bruk av siltgardin for kontroll av plast- og partikkelspredning ved massefyllinger eller andre arbeider ved eller i vann. Omfatter også forsvarlig merking, daglig kontroll, etablering og drift av overvåkningssystem samt rapportering. Områder hvor tiltak er aktuelt, er angitt i den spesielle beskrivelsen."
+      }
     },
     "12.514": {
       "tittel": "Plastavfall fra sprøytebetong og sprengningsarbeider",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tiltak for begrensning og oppsamling av plastavfall fra sprøytebetong og sprengningsarbeider. Tiltak skal være som angitt i den spesielle beskrivelsen."
+      }
     },
     "12.52": {
       "tittel": "Støy",
       "enhet": "?",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter registrering, bearbeiding av data og rapportering av støynivå fra anleggsdriften."
+      }
     },
     "12.521": {
       "tittel": "Støy registrert av entreprenøren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter å skaffe til veie, montere, drifte og fjerne alt nødvendig utstyr, samt gjøre registrering, dataoverføring, bearbeiding av data og rapportering av støynivå fra anleggsdriften som angitt i den spesielle beskrivelsen gjennom alle aktuelle perioder som krever registrering av støy. Registreringene skal dokumentere effekten av de miljøtiltak entreprenøren gjør i prosesser for utførelse for å overholde de krav til støynivå som er fastsatt. Aktuelle perioder for registrering knyttet til arbeidsoperasjoner på anlegget eller tidsrom, samt frister for rapportering, skal være som angitt i den spesielle beskrivelsen. Steder for registrering samt type og antall utstyr skal være som angitt i den spesielle beskrivelsen."
+      }
     },
     "12.522": {
       "tittel": "Støy registrert av byggherren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter mottak av data for støynivå registrert av byggherren, samt databearbeiding og rapportering som angitt i den spesielle beskrivelsen. Aktuelle perioder for registrering knyttet til arbeidsoperasjoner på anlegget eller tidsrom, samt frister for rapportering, skal være som angitt i den spesielle beskrivelsen."
+      }
     },
     "12.53": {
       "tittel": "Vibrasjoner",
       "enhet": "?",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter registrering, bearbeiding av data og rapportering av vibrasjonsnivå fra anleggsdriften."
+      }
     },
     "12.531": {
       "tittel": "Vibrasjoner registrert av entreprenøren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter å skaffe til veie, montere, drifte og fjerne alt nødvendig utstyr, samt gjøre registrering, dataoverføring, bearbeiding av data og rapportering av vibrasjonsnivå fra anleggsdriften som angitt i den spesielle beskrivelsen gjennom alle aktuelle perioder som krever registrering av vibrasjoner. Registreringene skal dokumentere effekten av de miljøtiltak entreprenøren gjør i prosesser for utførelse for å overholde de krav til vibrasjonsnivå som er fastsatt. Aktuelle perioder for registrering knyttet til arbeidsoperasjoner på anlegget eller tidsrom, samt frister for rapportering, skal være som angitt i den spesielle beskrivelsen. Steder for registrering samt type og antall utstyr skal være som angitt i den spesielle beskrivelsen."
+      }
     },
     "12.532": {
       "tittel": "Vibrasjoner registrert av byggherren",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter mottak av data for vibrasjonsnivå registrert av byggherren, samt databearbeiding og rapportering som angitt i den spesielle beskrivelsen. Aktuelle perioder for registrering knyttet til arbeidsoperasjoner på anlegget eller tidsrom, samt frister for rapportering, skal være som angitt i den spesielle beskrivelsen."
+      }
     },
     "12.54": {
       "tittel": "Sikring av eksisterende vegetasjon, bekker, elver, vann, fornminner, dyr, mv.",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle leveranser, utførelse og kostnader forbundet med ulemper, tiltak og provisorier for å sikre bekker, elver og vann på overflaten og i grunnen, inkludert lensing, oppdemming, tildekking, drenering, erosjonssikring, utløp, mv.. Omfatter også sikring av eksisterende vegetasjon, fornminner, kulturminner, spesielle objekter, fugler og dyr, mv. mot skader fra anleggsdriften. Oppdages skader eller forhold som kan ha betydning for senere vurdering av tilstand, skal dette rapporteres til byggherren. Entreprenøren er ansvarlig for å vedlikeholde sikringstiltakene slik at de fungerer under hele anleggsperioden, samt etterfølgende fjerning og opprydding. Omfatter også utarbeidelse av en detaljert plan som viser når og hvordan arbeidsoperasjoner som skal foregå i nærheten av sikret vegetasjon, bekker, elver og vann, skal utføres. Planen skal forelegges byggherren i god tid før arbeidsoperasjonene starter."
+      }
     },
     "12.541": {
       "tittel": "Sikring av enkelttrær, trekrone og stamme",
       "enhet": "stk",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som antall trær. Enhet: stk"
+      }
     },
     "12.542": {
       "tittel": "Sikring av rotsonen på trær",
       "enhet": "m2",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, utlegging og fjerning etter endt bruk av materialer for beskyttelse av rotsonen på trær."
+      }
     },
     "12.543": {
       "tittel": "Sikring av plantesamfunn, sammenhengende arealer med vegetasjon",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Kostnad angis som rund sum. Enhet: RS"
+      }
     },
     "12.544": {
       "tittel": "Sikring av bekker, elver og vann",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Kostnad angis som rund sum. Enhet: RS"
+      }
     },
     "12.545": {
       "tittel": "Sikring av spesielle objekter, dyr eller fugl, mv.",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Kostnad angis som rund sum. Enhet: RS"
+      }
     },
     "12.546": {
       "tittel": "Sikring av fornminner, kulturminner, mv.",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Kostnad angis som rund sum. Enhet: RS"
+      }
     },
     "13": {
       "tittel": "ANLEGGSVEGER",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter bygging, vedlikehold og etterfølgende riving og fjerning av provisoriske anleggsveger, bruer og kaier for adkomst til anlegget og for trafikk innen anlegget, og for andre veger og tiltak entreprenøren har behov for i gjennomføringen av arbeidene. Omfatter også nødvendig prosjektering utover det som ev. er gjort av byggherren jf. planene.",
+          "Omfatter også ekstra vedlikehold utover det ordinære av offentlige veger, bruer og kaier, som for eksempel at det foretas tilstrekkelig renhold der anleggstrafikk kommer inn på offentlig veg. Omfatter også vedlikehold og nødvendig forsterkning av private veger, bruer og kaier i den tiden de benyttes for anlegget, samt istandsetting etter bruk. Omfatter også midlertidig beskyttelse og nødvendig rengjøring av planum og overbygning for forurensning av telefarlige masser."
+        ]
+      }
     },
     "13.1": {
       "tittel": "Provisoriske anleggsveger",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter bygging, vedlikehold og etterfølgende riving og fjerning av provisoriske veger for adkomst til anlegget, og for trafikk innen anlegget, og for andre veger og tiltak entreprenøren har behov for i gjennomføringen av arbeidene. Snøbrøyting og strøing inngår i prosess 12.4. Omfatter også nødvendig prosjektering utover det som ev. er gjort av byggherren jf. planene."
+      }
     },
     "13.2": {
       "tittel": "Provisoriske bruer",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter bygging, vedlikehold og etterfølgende riving og fjerning av provisoriske bruer for adkomst til anlegget og for trafikk innen anlegget. Omfatter også nødvendig prosjektering utover det som ev. er gjort av byggherren jf. planene."
+      }
     },
     "13.3": {
       "tittel": "Provisoriske kaier",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter bygging, vedlikehold og etterfølgende riving og fjerning av provisoriske kaier for anleggstransport. Omfatter også nødvendig prosjektering utover det som ev. er gjort av byggherren jf. planene."
+      }
     },
     "13.4": {
       "tittel": "Eksisterende veger",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter vedlikehold og nødvendig forsterkning av private veger i den tiden de benyttes for anlegget samt istandsetting etter avsluttet bruk. Omfatter også ekstra vedlikehold utover det ordinære, og nødvendig forsterkning av offentlige veger pga. bruk til anleggstransport. Omfatter også nødvendig prosjektering utover det som ev. er gjort av byggherren jf. planene. For eventuelle særlige restriksjoner i forbindelse med offentlige veger vises til den spesielle beskrivelsen."
+      }
     },
     "13.5": {
       "tittel": "Eksisterende bruer",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter vedlikehold og nødvendig forsterkning av private veger i den tiden de benyttes for anlegget samt istandsetting etter avsluttet bruk. Omfatter også ekstra vedlikehold utover det ordinære, og nødvendig forsterkning av offentlige veger pga. bruk til anleggstransport. Omfatter også nødvendig prosjektering utover det som ev. er gjort av byggherren jf. planene. For eventuelle særlige restriksjoner i forbindelse med offentlige veger vises til den spesielle beskrivelsen."
+      }
     },
     "13.6": {
       "tittel": "Eksisterende kaier",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter vedlikehold og nødvendig forsterkning av private kaier som følge av anleggstransport i det tidsrom de benyttes for anlegget samt istandsetting etter avsluttet bruk. Omfatter også ekstra vedlikehold utover det ordinære, og ev. forsterkning av offentlige kaier pga. bruken til anleggstransport. Omfatter også nødvendig prosjektering utover det som ev. er gjort av byggherren jf. planene. For eventuelle restriksjoner i forbindelse med offentlige kaier vises til den spesielle beskrivelsen."
+      }
     },
     "13.7": {
       "tittel": "Midlertidig beskyttelse og etterfølgende rengjøring av planum og overbygning",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter de forholdsregler som må tas for å hindre og rengjøre forurensning av planum og overbygning med telefarlige materialer ved trafikk inn på disse områder utenfra eller fra områder i linjen med telefarlige jordarter."
+      }
     },
     "14": {
       "tittel": "MIDLERTIDIG TRAFIKKAVVIKLING",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter alle kostnader forbundet med ulemper, tiltak og provisorier for avvikling av trafikken på eksisterende trafikkleder, inklusiv kollektivtrafikk, gang- og sykkeltrafikk og provisoriske omlegginger av eksisterende veger og jernbaner. I den spesielle beskrivelsen er angitt eventuell bruk av fysisk skille mellom myke og harde trafikanter. Omfatter også alle kostnader med spesielle sikringstiltak for eiendommer, bekker, elver og vann, landtrafikk, sjøtrafikk og lufttrafikk etc. mot skader fra anlegg under utførelse som angitt. Ordinære tiltak er inkludert i prosesser for utførelse.",
+          "Dersom eksisterende veg skal tilknyttes nye konstruksjoner, eller er utgravd for å gi plass for permanente konstruksjoner, regnes oppfylling og istandsetting under hovedprosessene 2 - 8.",
+          "Ansvar for nødvendige godkjenninger og offentlige tillatelser skal være som angitt i kontraktsbestemmelsene eller den spesielle beskrivelsen."
+        ]
+      }
     },
     "14.1": {
       "tittel": "Trafikkulemper",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter alle kostnader og ulemper påført av trafikk utenom anleggets egen trafikk, herunder ekstra kostnader for å holde trafikken i gang på eksisterende veger, omdirigering eller midlertidig stopp av trafikken, ekstra laste/losse- og transportkostnader ved trafikkert veg, vakthold ved kryssing av trafikkert veg, mv.",
+          "Langsgående sikring kan ha oppgjør etter prosess 14.12 eller 14.13, ikke etter begge prosesser for samme sikring. Byggherren bestemmer før oppstart hvilke av de langsgående sikringer som skal ha oppgjør etter hhv. 14.11 eller 14.12."
+        ]
+      }
     },
     "14.11": {
       "tittel": "Trafikkulemper, unntatt bruk av langsgående sikring",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter alle kostnader og ulemper påført av trafikk utenom anleggets egen trafikk, herunder ekstra kostnader for å holde trafikken i gang på eksisterende veger, omdirigering eller midlertidig stopp av trafikken, ekstra laste/losse- og transportkostnader ved trafikkert veg, vakthold ved kryssing av trafikkert veg, bruk av trafikkdirigent, lede-/følgebil, støtputebil, mv.",
+          "Omfatter ikke bruk av langsgående sikring styrkeklasse T1, T2, T3."
+        ]
+      }
     },
     "14.12": {
       "tittel": "Bruk av langsgående sikring T1, T2, T3 oppgjort etter lengde",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter levering, montering, drift, nedtaking, lagring og flytting, samt fjerning etter bruk, av langsgående sikring styrkeklasse T1, T2 og T3. Bruk av langsgående sikring utover det som er angitt i godkjent arbeidsvarslingsplan skal avtales med byggherren."
+      }
     },
     "14.121": {
       "tittel": "Langsgående sikring T1 oppgjort etter lengde",
       "enhet": "m",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "14.122": {
       "tittel": "Langsgående sikring T2 oppgjort etter lengde",
       "enhet": "m",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "14.123": {
       "tittel": "Langsgående sikring T3 oppgjort etter lengde",
       "enhet": "m",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "14.13": {
       "tittel": "Bruk av langsgående sikring T1, T2, T3 oppgjort etter tid",
       "enhet": "MxUke",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Gjelder langsgående sikring på de stedene det er angitt i den spesielle beskrivelsen at skal ha oppgjør etter tid. Omfatter levering, montering, drift, nedtaking, lagring og flytting, samt fjerning etter bruk, av langsgående sikring styrkeklasse T1, T2 og T3. Bruk av langsgående sikring utover det som er angitt i godkjent arbeidsvarslingsplan skal avtales med byggherren. Tidsrom for bruk av langsgående sikring skal avtales med byggherren."
+      }
     },
     "14.131": {
       "tittel": "Langsgående sikring T1 oppgjort etter tid",
       "enhet": "MxUke",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "14.132": {
       "tittel": "Langsgående sikring T2 oppgjort etter tid",
       "enhet": "MxUke",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "14.133": {
       "tittel": "Langsgående sikring T3 oppgjort etter tid",
       "enhet": "MxUke",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "14.2": {
       "tittel": "Tiltak for kollektivtrafikk",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle kostnader med tiltak og heft for å sikre og prioritere fremkommelighet for kollektivtrafikk."
+      }
     },
     "14.3": {
       "tittel": "Tiltak for myke trafikanter",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter tiltak for å sikre myke trafikanter."
+      }
     },
     "14.4": {
       "tittel": "Oppmerking og signaler",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter oppmerking og signaler for varsling eller dirigering av trafikken på eksisterende veger, og oppmerking av avsperrede områder ved eller i trafikkerte veger (f.eks. grøfter eller skjæringskant)."
+      }
     },
     "14.5": {
       "tittel": "Provisorisk omlegging av eksisterende veger",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nødvendige provisoriske omlegginger av eksisterende veger for å holde disse åpne for trafikk, herunder istandsetting av den opprinnelige vegen til samme standard som tidligere når denne tas i bruk."
+      }
     },
     "14.6": {
       "tittel": "Sikringstiltak",
       "enhet": "RS",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "14.61": {
       "tittel": "Sikringstiltak for eiendommer og landtrafikk",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle kostnader med vakthold og sikring av eksisterende veger, jernbaner, eiendommer osv. som angitt i den spesielle beskrivelsen. Ordinære tiltak er inkludert i prosesser for utførelse."
+      }
     },
     "14.62": {
       "tittel": "Sikringstiltak for sjøtrafikk",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle kostnader forbundet med sikringstiltak for sjøtrafikk i byggetida, eksempelvis oppmerking, belysning, vakthold, omdirigering av sjøtrafikk etc. Entreprenøren skal selv klarlegge og besørge eventuell merking, belysning og andre sikringstiltak som kan bli pålagt av havnemyndighetene i forbindelse med skipstrafikken i byggetiden. Skipstrafikken skal ikke hindres med mindre det foreligger tillatelse fra havnemyndighetene."
+      }
     },
     "14.63": {
       "tittel": "Sikringstiltak for lufttrafikk",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle kostnader forbundet med sikringstiltak for lufttrafikk, som angitt."
+      }
     },
     "14.64": {
       "tittel": "Sikringsvoll ved funn av forsager fra bergsprengningsarbeid i tidligere entreprise",
       "enhet": "m3",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter bygging og senere fjerning av sikringsvoll etter nærmere avtale med byggherren i områder der det er en mulighet for å påtreffe sprengstoff med eller uten tennere fra tidligere utførte bergsprengningsarbeider i andre entrepriser på stedet. Omfatter sikring med alpingjerde påmontert skilt med adgang forbudt."
+      }
     },
     "14.7": {
       "tittel": "Til bruk for drift og vedlikehold",
       "enhet": "RS",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "15": {
       "tittel": "RIVING OG FJERNING",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter alle arbeider med miljøsanering, riving og fjerning av anlegg med fundamenter, så som hus, grunnmur, støttemurer, bruer, brufundamenter, kummer, kulverter, rørledninger, kantstein, rekkverk, skilt, stolper, portaler, gjerder etc. Med fjerning menes til godkjent mottak, fortrinnsvis gjenbruksanlegg, eller rengjøring og mellomlagring på anlegget for senere bruk som angitt i den spesielle beskrivelsen. Sted for ev. lagring ved gjenbruk skal være som angitt i den spesielle beskrivelsen.",
+          "Omfatter også materialer og arbeider med igjenfylling utover det som er medtatt i andre prosesser.",
+          "Ansvar for nødvendige miljøkartlegginger, undersøkelser, godkjenninger og offentlige tillatelser skal være som angitt i kontraktsbestemmelsene eller den spesielle beskrivelsen.",
+          "Omfatter også leverings- og behandlingsgebyrer.",
+          "Riving og skjæring av faste vegdekker er medtatt i prosess 63.1."
+        ]
+      }
     },
     "15.1": {
       "tittel": "Hus, grunnmurer, støttemurer etc",
       "enhet": "RS",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "15.2": {
       "tittel": "Bruer, brufundamenter, etc",
       "enhet": "RS",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "15.3": {
       "tittel": "Kummer, stikkrenner, kulverter og rørledninger",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Prosessen kommer kun til anvendelse når de fjernede anlegg ikke erstattes med tilsvarende."
+      }
     },
     "15.4": {
       "tittel": "Kantstein, rekkverk, skilt, stolper, vegutstyr, portaler, m.v. med fundamenter",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Kostnad angis som rund sum. Enhet: RS"
+      }
     },
     "15.41": {
       "tittel": "Kantstein",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert lengde kantstein. Enhet: m"
+      }
     },
     "15.42": {
       "tittel": "Rekkverk og stolper med fundamenter",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert lengde kantstein. Enhet: m"
+      }
     },
     "15.43": {
       "tittel": "Skilt, stolper og portaler med fundamenter",
       "enhet": "stk",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert antall. Enhet: stk"
+      }
     },
     "15.44": {
       "tittel": "Øvrig vegutstyr med fundamenter",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Kostnad angis som rund sum. Enhet: RS"
+      }
     },
     "15.5": {
       "tittel": "Gjerder og stolper med fundamenter",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "x": "Mengden måles som prosjektert lengde gjerde. Enhet: m"
+      }
     },
     "16": {
       "tittel": "FLYTTING OG OMLEGGING",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter alle flytte- og omleggingsarbeider, så som flytting av hus, flytting og omlegging av private vann- og avløpsledninger, brønner samt flytting og omlegging av gjerder, midlertidig flytting og omlegging av bekkeløp, etc.",
+          "Ansvar for nødvendige godkjenninger og offentlige tillatelser skal være som angitt i kontraktsbestemmelsene eller den spesielle beskrivelsen."
+        ]
+      }
     },
     "16.1": {
       "tittel": "Flytting av hus",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter flytting av hus med tomte- og grunnmursarbeider som angitt i den spesielle beskrivelsen."
+      }
     },
     "16.2": {
       "tittel": "Flytting og omlegging av private vann- og avløpsledninger, brønner",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter flytting og omlegging av private vann- og avløpsledninger som angitt, herunder grøftearbeider, fjerning eller utkobling av opprinnelige ledninger og kummer, levering av materiell til og legging av ledning til erstatning for ledning som fjernes/utkobles. Hvis eksisterende hovedvannledninger forutsettes brutt, skal entreprenøren i samråd med byggherren legge opp en plan for å opprettholde vannforsyningen. Videre inngår arbeider i forbindelse med brønner som angitt."
+      }
     },
     "16.3": {
       "tittel": "Fjerning/flytting av kabler og utstyr",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter alle flytte- og omleggingsarbeider nødvendiggjort av vegens fremføring, så som fjerning/flytting av kabler, master/stolper, kiosker/skap, fjerning av kabler som ikke er i bruk, etc."
+      }
     },
     "16.31": {
       "tittel": "Oppgraving/nedtaking og fjerning/flytting av kabler",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter frakobling, oppgraving/nedtaking, rengjøring og fjerning/flytting av kabler til sted angitt i den spesielle beskrivelsen."
+      }
     },
     "16.32": {
       "tittel": "Fjerning/flytting av master/stolper og fundamenter",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nedtaking av stolper/master, oppgraving av fundamenter, rengjøring og fjerning/flytting av materialene til sted angitt i den spesielle beskrivelsen."
+      }
     },
     "16.33": {
       "tittel": "Fjerning/flytting av kiosker/skap og fundamenter",
       "enhet": "RS",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter demontering, rengjøring og fjerning/flytting av kiosker/skap med ev. fundamenter til sted angitt i den spesielle beskrivelsen."
+      }
     },
     "16.4": {
       "tittel": "Midlertidig flytting og omlegging av eksisterende bekkeløp",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter midlertidig flytting og tilbakeflytting av eksisterende bekkeløp som angitt. Forsterkning av grøfter og elve- og bekkereguleringer er medtatt i prosess 47."
+      }
     },
     "16.41": {
       "tittel": "Midlertidig åpent bekkeløp",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter midlertidig flytting og tilbakeflytting av eksisterende bekkeløp ved bruk av åpent, midlertidig bekkeløp."
+      }
     },
     "16.42": {
       "tittel": "Midlertidig lukket bekkeløp",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter midlertidig flytting og tilbakeflytting av eksisterende bekkeløp ved bruk av midlertidig bekkelukking."
+      }
     },
     "16.5": {
       "tittel": "Flytting og omlegging av gjerder",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": [
+          "Omfatter nedtaking, rengjøring, overflytting og oppsetting av brukbare gjerder inkludert stolper og fundamenter i og ved anleggsområder som angitt. Omfatter også fjerning av eventuelle ubrukbare gjerdematerialer og fundamenter i denne forbindelse. Omfatter også ev. tiltransport og oppsetting av gammelt gjerdemateriale fra angitt lager.",
+          "Riving og fjerning av gammelt gjerde og ev. transport til lager for gjenbruk er medtatt under prosess 15.5."
+        ]
+      }
     },
     "16.51": {
       "tittel": "Nedtaking og overflytting av eksisterende gjerde til ny plassering",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter nedtaking av eksisterende gjerde, inkludert stolper, porter og fundamenter. Omfatter også rengjøring, opplasting, transport og lossing av brukbare materialer direkte til ny plassering. Omfatter også fjerning av eventuelle ubrukbare gjerdematerialer og fundamenter."
+      }
     },
     "16.52": {
       "tittel": "Oppsetting av gammelt gjerde på berg",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter oppsetting av gjerde med stolper og porter på berg, med materialer fra gammelt gjerde direkte overflyttet fra tidligere posisjon eller tiltransportert fra lager."
+      }
     },
     "16.53": {
       "tittel": "Oppsetting av gammelt gjerde i jord",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter oppsetting av gjerde med stolper, porter og fundamenter i jord, med materialer fra gammelt gjerde direkte overflyttet fra tidligere posisjon eller tiltransportert fra lager."
+      }
     },
     "16.54": {
       "tittel": "Tiltransport av gammelt gjerdemateriale fra lager",
       "enhet": "m",
       "hovedprosess": "1",
-      "tekst": {}
+      "tekst": {
+        "a": "Omfatter opplasting, transport og lossing av gammelt gjerdemateriale fra angitt lager til stedet for oppsetting."
+      }
     },
     "17": {
       "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
       "enhet": "?",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     },
     "18": {
       "tittel": "TIL BRUK FOR DRIFT OG VEDLIKEHOLD",
       "enhet": "?",
-      "hovedprosess": "1",
-      "tekst": {}
+      "hovedprosess": "1"
     }
   }
 }
