@@ -1,0 +1,51 @@
+{
+  "metadata": {
+    "versjon": "R761 Prosesskoden - Hovedprosess 1-7",
+    "beskrivelse": "Struktur for oppslag i Trimble Connect utvidelse",
+    "utgiver": "Statens vegvesen"
+  },
+  "prosesskoder": {
+    "1": { "tittel": "Forberedende tiltak og generelle kostnader", "enhet": "RS", "hovedprosess": "1" },
+    "11": { "tittel": "Rigg og drift", "enhet": "RS", "hovedprosess": "1" },
+    "12": { "tittel": "Rydding og fjerning", "enhet": "m2", "hovedprosess": "1" },
+    "15": { "tittel": "Geotekniske felt- og målearbeider", "enhet": "stk", "hovedprosess": "1" },
+    "16": { "tittel": "Trafikkavvikling under byggetiden", "enhet": "RS", "hovedprosess": "1" },
+
+    "2": { "tittel": "Sprengning og masseflytting", "enhet": "m3", "hovedprosess": "2" },
+    "21": { "tittel": "Løsmasser i linjen", "enhet": "m3", "hovedprosess": "2" },
+    "22": { "tittel": "Fjellsprengning i linjen", "enhet": "m3", "hovedprosess": "2" },
+    "25": { "tittel": "Fylling", "enhet": "m3", "hovedprosess": "2" },
+    "25.1": { "tittel": "Fylling av sprengstein", "enhet": "m3", "hovedprosess": "2" },
+    "25.2": { "tittel": "Fylling av grus/sand", "enhet": "m3", "hovedprosess": "2" },
+
+    "3": { "tittel": "Tunneler", "enhet": "m", "hovedprosess": "3" },
+    "31": { "tittel": "Bergsprengning under dagen", "enhet": "m3", "hovedprosess": "3" },
+    "33": { "tittel": "Sikring", "enhet": "stk", "hovedprosess": "3" },
+    "33.1": { "tittel": "Sikring med bolter", "enhet": "stk", "hovedprosess": "3" },
+    "33.3": { "tittel": "Sprøytebetong", "enhet": "m3", "hovedprosess": "3" },
+    "34": { "tittel": "Vann- og frostsikring", "enhet": "m2", "hovedprosess": "3" },
+
+    "4": { "tittel": "Grøfter, kummer og rør", "enhet": "m", "hovedprosess": "4" },
+    "41": { "tittel": "Graving av grøft for rør og kabler", "enhet": "m", "hovedprosess": "4" },
+    "42": { "tittel": "Omfylling av rør og kabler", "enhet": "m3", "hovedprosess": "4" },
+    "43": { "tittel": "Rør og rørdeler", "enhet": "m", "hovedprosess": "4" },
+    "45": { "tittel": "Kummer og sluk", "enhet": "stk", "hovedprosess": "4" },
+
+    "5": { "tittel": "Vegfundament", "enhet": "m3", "hovedprosess": "5" },
+    "51": { "tittel": "Frostsikringslag", "enhet": "m3", "hovedprosess": "5" },
+    "52": { "tittel": "Forsterkningslag", "enhet": "m3", "hovedprosess": "5" },
+    "53": { "tittel": "Bærelag av knuste steinmaterialer", "enhet": "m3", "hovedprosess": "5" },
+
+    "6": { "tittel": "Vegdekke", "enhet": "m2", "hovedprosess": "6" },
+    "61": { "tittel": "Bærelag av bituminøse materialer (asfalt)", "enhet": "tonn", "hovedprosess": "6" },
+    "65": { "tittel": "Slitelag av bituminøse materialer (asfalt)", "enhet": "tonn", "hovedprosess": "6" },
+    "67": { "tittel": "Fresing av asfaltdekker", "enhet": "m2", "hovedprosess": "6" },
+
+    "7": { "tittel": "Vegutstyr og miljøtiltak", "enhet": "m", "hovedprosess": "7" },
+    "71": { "tittel": "Rekkverk og støtdempere", "enhet": "m", "hovedprosess": "7" },
+    "73": { "tittel": "Gjerder og porter", "enhet": "m", "hovedprosess": "7" },
+    "77": { "tittel": "Trafikkskilt", "enhet": "stk", "hovedprosess": "7" },
+    "77.1": { "tittel": "Skiltplater", "enhet": "stk", "hovedprosess": "7" },
+    "78": { "tittel": "Vegmerking", "enhet": "m", "hovedprosess": "7" }
+  }
+}
