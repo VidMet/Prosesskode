@@ -29,16 +29,7 @@
 
     <script>
         let API = null;
-        
-        // Simulerer JSON-oppslaget vi diskuterte tidligere
-        const svvHandbok = {
-            "prosesskoder": {
-                "71.1": { "tittel": "Fjellsprengning i linjen", "enhet": "m3" },
-                "72.1": { "tittel": "Fylling av sprengstein", "enhet": "m3" },
-                "77.11": { "tittel": "Bærelag av knust fjell", "enhet": "m3" },
-                "84.1": { "tittel": "Rekkverk av stål", "enhet": "m" }
-            }
-        };
+        let svvHandbok = null;
 
         const $ = id => document.getElementById(id);
         const setStatus = msg => $('status').innerText = msg;
@@ -47,16 +38,42 @@
         async function connect(){
             try {
                 API = await window.TrimbleConnectWorkspace.connect(window.parent);
+                
+                // Etter vi er koblet til, forsøker vi å hente JSON-filen
+                await lastJSONFil();
+
                 $('scanBtn').disabled = false;
                 $('scanBtn').innerText = "Skann modell for mengder";
-                setStatus('✅ Tilkoblet Trimble Connect.');
             } catch(e) { 
                 setStatus('❌ Kunne ikke koble til API.'); 
                 console.error(e);
             }
         }
 
-        // 2. SKANN LOGIKKEN (Kopiert og tilpasset fra din valideringsfil)
+        // 2. HENT JSON-FIL (Prosesskode.json)
+        async function lastJSONFil() {
+            setStatus('⏳ Laster inn Prosesskode.json...');
+            try {
+                // Her antar vi at filen ligger i samme mappe/server som utvidelsen
+                // Legger til en nocache-parameter (timestamp) for å sikre at vi alltid har ferskeste versjon
+                const url = 'Prosesskode.json?nocache=' + new Date().getTime(); 
+                const response = await fetch(url);
+                
+                if (!response.ok) {
+                    throw new Error(`Nettverksfeil: ${response.status} ${response.statusText}`);
+                }
+                
+                svvHandbok = await response.json();
+                setStatus('✅ Tilkoblet og Prosesskoder lastet inn.');
+            } catch (error) {
+                console.error("Feil ved lasting av JSON:", error);
+                setStatus('⚠️ Kunne ikke laste Prosesskode.json. Skanning vil vise "Ukjent prosess".');
+                // Vi oppretter en tom fallback slik at koden ikke krasjer senere
+                svvHandbok = { prosesskoder: {} };
+            }
+        }
+
+        // 3. SKANN LOGIKKEN
         $('scanBtn').addEventListener('click', async () => {
             if (!API) return;
             $('scanBtn').disabled = true;
@@ -73,43 +90,40 @@
                 }
 
                 let prosessRegister = {};
-                let totalProcessed = 0;
-                const CHUNK = 200; // Behandler 200 objekter om gangen for å ikke krasje nettleseren
+                const CHUNK = 200;
 
-                // Loop gjennom hver modell i vieweren
                 for (const model of models) {
                     const mid = model.modelId || model.modelid;
                     const objectIds = (model.objects || []).map(o => o.id || o.objectRuntimeId).filter(id => id != null);
                     
-                    // Hent egenskaper i "chunks"
                     for (let i = 0; i < objectIds.length; i += CHUNK) {
                         const chunk = objectIds.slice(i, i + CHUNK);
                         setStatus(`⏳ Skanner egenskaper... Behandler modell ${mid} (${i} av ${objectIds.length})`);
                         
                         const propsArr = await API.viewer.getObjectProperties(mid, chunk);
                         
-                        // Analyser hvert objekt i batchen
                         propsArr.forEach(obj => {
-                            // Flat ut egenskapene slik du gjorde i valideringsscriptet ditt
                             const flatProps = {};
                             (obj.properties || []).forEach(pset => 
                                 (pset.properties || []).forEach(p => flatProps[p.name] = p.value)
                             );
                             
-                            // HENT UT VERDIENE DU TRENGER
                             const prosesskode = flatProps["Prosesskode"];
-                            // MERK: Bytt "NetVolume" med den egenskapen som faktisk inneholder mengden i dine filer
                             const mengde = parseFloat(flatProps["NetVolume"]) || 0; 
                             
                             if (prosesskode && prosesskode.trim() !== "") {
                                 if (!prosessRegister[prosesskode]) {
-                                    const handbokData = svvHandbok.prosesskoder[prosesskode];
+                                    // Sjekk om koden finnes i JSON-filen
+                                    const handbokData = (svvHandbok && svvHandbok.prosesskoder) 
+                                        ? svvHandbok.prosesskoder[prosesskode] 
+                                        : null;
+
                                     prosessRegister[prosesskode] = {
-                                        tittel: handbokData ? handbokData.tittel : "Ukjent prosess",
-                                        enhet: handbokData ? handbokData.enhet : "?",
+                                        tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
+                                        enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
                                         totalMengde: 0,
-                                        objekterForMarkering: [], // For API.viewer.setSelection
-                                        objekter: [] // For listen i UI
+                                        objekterForMarkering: [], 
+                                        objekter: []
                                     };
                                 }
                                 
@@ -138,10 +152,9 @@
             }
         });
 
-        // 3. TEGN OPP RESULTATET
+        // 4. TEGN OPP RESULTATET (Uendret fra forrige versjon)
         function tegnOppUI(register) {
             const container = $('resultat');
-            
             const koder = Object.keys(register).sort();
             
             if (koder.length === 0) {
@@ -155,7 +168,6 @@
                 const div = document.createElement('div');
                 div.className = 'prosess-kort';
                 
-                // Header
                 const header = document.createElement('div');
                 header.className = 'prosess-header';
                 
@@ -170,7 +182,6 @@
                 header.appendChild(tittelDiv);
                 header.appendChild(mengdeDiv);
                 
-                // Liste over objekter (Skjult by default)
                 const liste = document.createElement('div');
                 liste.className = 'objekt-liste';
                 
@@ -181,20 +192,13 @@
                     liste.appendChild(rad);
                 });
 
-                // Klikk-funksjonalitet: Markér i 3D og vis liste
                 header.onclick = async () => {
-                    // Toggle visning av listen
                     liste.style.display = liste.style.display === 'block' ? 'none' : 'block';
-                    
-                    // Markér i viewer
                     try {
                         if (API.viewer.setSelection) {
-                            // Vi formaterer arrayet nøyaktig slik API-et krever det
                             await API.viewer.setSelection({ modelObjectIds: data.objekterForMarkering }, 'set');
                         }
-                    } catch(e) {
-                        console.error("Kunne ikke markere objekter", e);
-                    }
+                    } catch(e) { console.error("Kunne ikke markere objekter", e); }
                 };
 
                 div.appendChild(header);
