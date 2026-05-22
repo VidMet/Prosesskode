@@ -197,15 +197,35 @@ const $ = id => document.getElementById(id);
 const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
 const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
 
-async function connect(){
+async function connect() {
+
   try {
-    API = await window.TrimbleConnectWorkspace.connect(window.parent);
+
+    API = await TrimbleConnectWorkspace.connect(
+      window.parent,
+      () => {}
+    );
+
+    console.log("TC API:", API);
+
     await lastJSONFil($('versionFilter').value);
+
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
+
     $('modelBadge').textContent = 'Tilkoblet';
-  } catch(e) { 
-    setStatus('❌ Kunne ikke koble til API.', 'error'); 
+
+    setStatus('✅ Koblet til Trimble Connect.', 'ok');
+
+  } catch(e) {
+
+    console.error(e);
+
+    setStatus(
+      `❌ Kunne ikke koble til API: ${e.message}`,
+      'error'
+    );
+
   }
 }
 
