@@ -172,19 +172,17 @@ async function connect(){
 async function lastJSONFil() {
   setStatus('⏳ Laster inn prosesskode-kapitler (1-9)...');
   try {
-    // Definerer kapitlene vi forventer (Hovedprosess 1 til 9)
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
     const cacheBuster = new Date().getTime();
     
-    // Oppretter parallelle fetch-kall for alle kapitlene
     const promises = kapitler.map(kap => 
-      fetch(`json_filer/Prosesskode_${kap}.json?nocache=${cacheBuster}`)
+      // ENDRING: Fjernet "json_filer/" foran filnavnet
+      fetch(`Prosesskode_${kap}.json?nocache=${cacheBuster}`)
         .then(res => {
           if (!res.ok) throw new Error(`Status ${res.status}`);
           return res.json();
         })
         .catch(err => {
-          // Logger advarsel i konsollen, men lar resten av databasen laste
           console.warn(`Hoppet over kapittel ${kap} (Filen mangler eller er tom)`);
           return null; 
         })
@@ -192,11 +190,9 @@ async function lastJSONFil() {
     
     const resultater = await Promise.all(promises);
     
-    // Initialiserer et tomt felles register
     svvHandbok = { prosesskoder: {} };
     let totaltLastedeKoder = 0;
     
-    // Smelter sammen alle de vellykkede filene inn i fellesregisteret
     resultater.forEach(data => {
       if (data && data.prosesskoder) {
         Object.assign(svvHandbok.prosesskoder, data.prosesskoder);
@@ -205,7 +201,7 @@ async function lastJSONFil() {
     });
     
     if (totaltLastedeKoder === 0) {
-      throw new Error("Ingen JSON-filer ble funnet i 'json_filer/'. Sjekk filplasseringen.");
+      throw new Error("Ingen JSON-filer ble funnet. Sjekk at de heter Prosesskode_1.json osv.");
     }
     
     setStatus(`✅ Suksess! Lastet inn ${totaltLastedeKoder} koder på tvers av kapitler.`, 'ok');
