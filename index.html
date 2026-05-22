@@ -17,7 +17,10 @@
         .prosess-mengde { font-weight: bold; background: #eee; padding: 4px 8px; border-radius: 4px; font-size: 14px; }
         
         .objekt-liste { display: none; padding: 10px 16px; background: #fafafa; border-top: 1px solid #eee; font-size: 12px; max-height: 200px; overflow-y: auto; }
-        .objekt-rad { display: flex; justify-content: space-between; padding: 4px 0; border-bottom: 1px solid #eaeaea; }
+        
+        /* ENDRING: Gjort rader klikkbare med hover-effekt */
+        .objekt-rad { display: flex; justify-content: space-between; padding: 6px 8px; border-bottom: 1px solid #eaeaea; cursor: pointer; border-radius: 4px; }
+        .objekt-rad:hover { background: #e0f0ff; color: #005A9C; }
     </style>
 </head>
 <body>
@@ -47,7 +50,7 @@
             }
         }
 
-        // 2. HENT JSON-FIL (Prosesskode.json)
+        // 2. HENT JSON-FIL
         async function lastJSONFil() {
             setStatus('⏳ Laster inn Prosesskode.json...');
             try {
@@ -64,7 +67,7 @@
             }
         }
 
-        // 3. SKANN LOGIKKEN MED OPPDATERT HENTING AV NAVN OG MENGDE
+        // 3. SKANN LOGIKKEN
         $('scanBtn').addEventListener('click', async () => {
             if (!API) return;
             $('scanBtn').disabled = true;
@@ -101,15 +104,11 @@
                             
                             const prosesskode = flatProps["Prosesskode"];
                             
-                            // --- ENDRING: Finn beste tilgjengelige navn ---
-                            let objektNavn = flatProps["Objekttype"]; // Prøver Objekttype først
+                            let objektNavn = flatProps["Objekttype"];
                             if (!objektNavn || objektNavn.trim() === "") {
-                                // Fallback til standard objektnavn hvis Objekttype er tom
                                 objektNavn = (obj.name && obj.name.trim() !== "") ? obj.name : "Ukjent objekt";
                             }
 
-                            // --- ENDRING: Finn beste tilgjengelige mengde ---
-                            // Prøver "Mengde" først, deretter andre vanlige mengde-egenskaper som backup
                             let mengdeVerdi = flatProps["Mengde"] || 
                                               flatProps["Volume"] || 
                                               flatProps["NetVolume"] || 
@@ -118,7 +117,6 @@
                                               flatProps["Length"] || 
                                               "0";
                                               
-                            // Sikrer at komma byttes ut med punktum før vi konverterer til tall (hvis norsk format)
                             mengdeVerdi = mengdeVerdi.toString().replace(',', '.');
                             const mengde = parseFloat(mengdeVerdi) || 0; 
                             
@@ -137,14 +135,20 @@
                                     };
                                 }
                                 
+                                const runtimeId = obj.id || obj.objectRuntimeId;
+
                                 prosessRegister[prosesskode].totalMengde += mengde;
                                 prosessRegister[prosesskode].objekterForMarkering.push({
                                     modelId: mid, 
-                                    objectRuntimeIds: [obj.id || obj.objectRuntimeId]
+                                    objectRuntimeIds: [runtimeId]
                                 });
+                                
+                                // ENDRING: Lagrer nå også modelId og runtimeId på det enkelte objektet
                                 prosessRegister[prosesskode].objekter.push({ 
                                     navn: objektNavn, 
-                                    mengde: mengde 
+                                    mengde: mengde,
+                                    modelId: mid,
+                                    runtimeId: runtimeId
                                 });
                             }
                         });
@@ -195,20 +199,40 @@
                 const liste = document.createElement('div');
                 liste.className = 'objekt-liste';
                 
+                // Tegner opp objektene i undermenyen
                 data.objekter.forEach(obj => {
                     const rad = document.createElement('div');
                     rad.className = 'objekt-rad';
                     rad.innerHTML = `<span>${obj.navn}</span> <span>${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
+                    
+                    // ENDRING: Klikk på enkeltlinje markerer KUN dette objektet i 3D
+                    rad.onclick = async (e) => {
+                        e.stopPropagation(); // Hindrer at klikket også lukker/åpner hele prosesskortet
+                        try {
+                            if (API.viewer.setSelection) {
+                                await API.viewer.setSelection({ 
+                                    modelObjectIds: [{ 
+                                        modelId: obj.modelId, 
+                                        objectRuntimeIds: [Number(obj.runtimeId)] 
+                                    }] 
+                                }, 'set');
+                            }
+                        } catch(err) {
+                            console.error("Kunne ikke markere enkeltobjekt", err);
+                        }
+                    };
+
                     liste.appendChild(rad);
                 });
 
+                // Klikk på overskriften utvider listen og markerer ALLE objektene med denne koden
                 header.onclick = async () => {
                     liste.style.display = liste.style.display === 'block' ? 'none' : 'block';
                     try {
                         if (API.viewer.setSelection) {
                             await API.viewer.setSelection({ modelObjectIds: data.objekterForMarkering }, 'set');
                         }
-                    } catch(e) { console.error("Kunne ikke markere objekter", e); }
+                    } catch(e) { console.error("Kunne ikke markere objektsamling", e); }
                 };
 
                 div.appendChild(header);
