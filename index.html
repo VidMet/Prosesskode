@@ -1,247 +1,300 @@
 <!DOCTYPE html>
 <html lang="nb">
 <head>
-    <meta charset="UTF-8">
-    <title>Prosesskoder og Mengder</title>
-    <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
-    <style>
-        body { font-family: sans-serif; padding: 20px; background: #f4f4f4; color: #333; }
-        .btn { padding: 8px 16px; background: #005A9C; color: white; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
-        .btn:disabled { background: #ccc; cursor: not-allowed; }
-        #status { margin: 10px 0; font-size: 14px; font-style: italic; color: #666; }
-        
-        .prosess-kort { background: white; border: 1px solid #ddd; margin-bottom: 10px; border-radius: 6px; overflow: hidden; }
-        .prosess-header { padding: 12px 16px; background: #fff; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .prosess-header:hover { background: #f9f9f9; }
-        .prosess-tittel { font-weight: bold; font-size: 16px; color: #005A9C; }
-        .prosess-mengde { font-weight: bold; background: #eee; padding: 4px 8px; border-radius: 4px; font-size: 14px; }
-        
-        .objekt-liste { display: none; padding: 10px 16px; background: #fafafa; border-top: 1px solid #eee; font-size: 12px; max-height: 200px; overflow-y: auto; }
-        
-        /* ENDRING: Gjort rader klikkbare med hover-effekt */
-        .objekt-rad { display: flex; justify-content: space-between; padding: 6px 8px; border-bottom: 1px solid #eaeaea; cursor: pointer; border-radius: 4px; }
-        .objekt-rad:hover { background: #e0f0ff; color: #005A9C; }
-    </style>
+  <meta charset="UTF-8"/>
+  <title>Prosesskoder og Mengder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  
+  <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
+  
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
+
+    :root {
+      --bg:        #0d1117;
+      --surface:   #161b22;
+      --surface2:  #1f2937;
+      --border:    #30363d;
+      --ink:       #e6edf3;
+      --muted:     #7d8590;
+      --green:     #3fb950;
+      --green-dim: #1a3a22;
+      --yellow:    #d29922;
+      --red:       #f85149;
+      --red-dim:   #3a1212;
+      --blue:      #58a6ff;
+      --blue-dim:  #0d2044;
+      --mono:      'JetBrains Mono', monospace;
+      --sans:      'Syne', sans-serif;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg); color: var(--ink); font-family: var(--sans);
+      min-height: 100vh; display: flex; flex-direction: column; overflow: hidden;
+    }
+
+    header {
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+    }
+
+    .header-title { flex: 1; }
+    .header-title h1 { font-size: 16px; font-weight: 800; letter-spacing: -.3px; color: var(--ink); }
+    .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 1px; }
+
+    .badge { font-family: var(--mono); font-size: 10px; padding: 3px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
+
+    .btn { font-family: var(--sans); font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 6px; border: none; cursor: pointer; transition: opacity .15s, transform .1s; white-space: nowrap; }
+    .btn:disabled { opacity: .4; cursor: not-allowed; }
+    .btn:not(:disabled):hover { opacity: .85; }
+    .btn:not(:disabled):active { transform: scale(.97); }
+    .btn-primary { background: var(--blue); color: #000; }
+    
+    #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid #1a3a5c; flex-shrink: 0; }
+    #statusBar.ok    { background: var(--green-dim); color: var(--green); border-color: #1a3a22; }
+    #statusBar.error { background: var(--red-dim);   color: var(--red);   border-color: #3a1212; }
+    #statusBar.warn  { background: #3a2d05; color: var(--yellow); border-color: #5c4708; }
+
+    main { flex: 1; overflow-y: auto; padding: 16px; }
+
+    /* Nye stiler for prosesskodene tilpasset GitHub-designet */
+    .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+    .prosess-header { padding: 12px 16px; background: var(--surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; }
+    .prosess-header:hover { background: var(--surface2); }
+    
+    .prosess-tittel { font-weight: 700; font-size: 14px; color: var(--blue); }
+    .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
+    
+    .objekt-liste { display: none; border-top: 1px solid var(--border); background: var(--bg); max-height: 250px; overflow-y: auto; }
+    .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
+    .objekt-rad:hover { background: var(--surface2); }
+    
+    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; }
+    .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
+
+    .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
+    
+    /* Scrollbar */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--muted); }
+
+    @keyframes fadeUp {
+      from { opacity:0; transform:translateY(6px); }
+      to   { opacity:1; transform:none; }
+    }
+    .anim { animation: fadeUp .3s ease both; }
+  </style>
 </head>
 <body>
 
-    <h2>SVV Prosesskoder i Modell</h2>
-    <button id="scanBtn" class="btn" disabled>Laster API...</button>
-    <div id="status">Venter på Trimble Connect...</div>
-    <div id="resultat"></div>
+<header>
+  <div class="header-title">
+    <h1>Mengdeuttak R761</h1>
+    <p>Interaktivt oppslag mot SVV Prosesskoder</p>
+  </div>
+  <span class="badge" id="modelBadge">Frakoblet</span>
+  <button class="btn btn-primary" id="scanBtn" disabled>▶ Skann Modell</button>
+</header>
 
-    <script>
-        let API = null;
-        let svvHandbok = null;
+<div id="statusBar">Kobler til Trimble Connect...</div>
 
-        const $ = id => document.getElementById(id);
-        const setStatus = msg => $('status').innerText = msg;
+<main id="mainContent">
+  <div class="empty anim">Trykk <strong>Skann Modell</strong> for å hente ut mengder.</div>
+</main>
 
-        // 1. KOBLE TIL API
-        async function connect(){
-            try {
-                API = await window.TrimbleConnectWorkspace.connect(window.parent);
-                await lastJSONFil();
-                $('scanBtn').disabled = false;
-                $('scanBtn').innerText = "Skann modell for mengder";
-            } catch(e) { 
-                setStatus('❌ Kunne ikke koble til API.'); 
-                console.error(e);
+<script>
+let API = null;
+let svvHandbok = null;
+
+const $ = id => document.getElementById(id);
+const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
+
+// 1. KOBLE TIL API
+async function connect(){
+  try {
+    API = await window.TrimbleConnectWorkspace.connect(window.parent);
+    await lastJSONFil();
+    $('scanBtn').disabled = false;
+    $('modelBadge').textContent = 'Tilkoblet';
+  } catch(e) { 
+    setStatus('❌ Kunne ikke koble til API.', 'error'); 
+  }
+}
+
+// 2. HENT JSON-FIL
+async function lastJSONFil() {
+  setStatus('⏳ Laster inn Prosesskode.json...');
+  try {
+    const url = 'Prosesskode.json?nocache=' + new Date().getTime(); 
+    const response = await fetch(url);
+    if (!response.ok) throw new Error(`Nettverksfeil: ${response.status}`);
+    
+    svvHandbok = await response.json();
+    setStatus('✅ Tilkoblet og Prosesskoder lastet inn.', 'ok');
+  } catch (error) {
+    setStatus('⚠️ Kunne ikke laste Prosesskode.json. Viser "Ukjent prosesskode".', 'warn');
+    svvHandbok = { prosesskoder: {} };
+  }
+}
+
+// 3. SKANN LOGIKK
+$('scanBtn').addEventListener('click', async () => {
+  if (!API) return;
+  $('scanBtn').disabled = true;
+  $('mainContent').innerHTML = '';
+  
+  try {
+    setStatus('⏳ Henter modeller fra vieweren...');
+    const models = await API.viewer.getObjects();
+    
+    if (!models || models.length === 0) {
+      setStatus('⚠️ Fant ingen objekter i vieweren.', 'warn');
+      $('scanBtn').disabled = false;
+      return;
+    }
+
+    let prosessRegister = {};
+    const CHUNK = 200;
+    let totalObjects = 0;
+
+    for (const model of models) {
+      const mid = model.modelId || model.modelid;
+      const objectIds = (model.objects || []).map(o => o.id || o.objectRuntimeId).filter(id => id != null);
+      totalObjects += objectIds.length;
+      
+      for (let i = 0; i < objectIds.length; i += CHUNK) {
+        const chunk = objectIds.slice(i, i + CHUNK);
+        setStatus(`⏳ Analyserer egenskaper... (${i} av ${objectIds.length} i aktiv modell)`);
+        
+        const propsArr = await API.viewer.getObjectProperties(mid, chunk);
+        
+        propsArr.forEach(obj => {
+          const flatProps = {};
+          (obj.properties || []).forEach(pset => 
+            (pset.properties || []).forEach(p => flatProps[p.name] = p.value)
+          );
+          
+          const prosesskode = flatProps["Prosesskode"];
+          
+          let objektNavn = flatProps["Objekttype"];
+          if (!objektNavn || objektNavn.trim() === "") {
+            objektNavn = (obj.name && obj.name.trim() !== "") ? obj.name : "Ukjent objekt";
+          }
+
+          let mengdeVerdi = flatProps["Mengde"] || flatProps["Volume"] || flatProps["NetVolume"] || flatProps["Area"] || flatProps["NetArea"] || flatProps["Length"] || "0";
+          mengdeVerdi = mengdeVerdi.toString().replace(',', '.');
+          const mengde = parseFloat(mengdeVerdi) || 0; 
+          
+          if (prosesskode && prosesskode.trim() !== "") {
+            if (!prosessRegister[prosesskode]) {
+              const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[prosesskode] : null;
+
+              prosessRegister[prosesskode] = {
+                tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
+                enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
+                totalMengde: 0,
+                objekterForMarkering: [], 
+                objekter: []
+              };
             }
-        }
-
-        // 2. HENT JSON-FIL
-        async function lastJSONFil() {
-            setStatus('⏳ Laster inn Prosesskode.json...');
-            try {
-                const url = 'Prosesskode.json?nocache=' + new Date().getTime(); 
-                const response = await fetch(url);
-                if (!response.ok) throw new Error(`Nettverksfeil: ${response.status}`);
-                
-                svvHandbok = await response.json();
-                setStatus('✅ Tilkoblet og Prosesskoder lastet inn.');
-            } catch (error) {
-                console.error("Feil ved lasting av JSON:", error);
-                setStatus('⚠️ Kunne ikke laste Prosesskode.json. Viser "Ukjent prosesskode".');
-                svvHandbok = { prosesskoder: {} };
-            }
-        }
-
-        // 3. SKANN LOGIKKEN
-        $('scanBtn').addEventListener('click', async () => {
-            if (!API) return;
-            $('scanBtn').disabled = true;
-            $('resultat').innerHTML = '';
             
-            try {
-                setStatus('⏳ Henter modeller fra vieweren...');
-                const models = await API.viewer.getObjects();
-                
-                if (!models || models.length === 0) {
-                    setStatus('⚠️ Fant ingen objekter i vieweren.');
-                    $('scanBtn').disabled = false;
-                    return;
-                }
-
-                let prosessRegister = {};
-                const CHUNK = 200;
-
-                for (const model of models) {
-                    const mid = model.modelId || model.modelid;
-                    const objectIds = (model.objects || []).map(o => o.id || o.objectRuntimeId).filter(id => id != null);
-                    
-                    for (let i = 0; i < objectIds.length; i += CHUNK) {
-                        const chunk = objectIds.slice(i, i + CHUNK);
-                        setStatus(`⏳ Skanner egenskaper... Behandler modell ${mid} (${i} av ${objectIds.length})`);
-                        
-                        const propsArr = await API.viewer.getObjectProperties(mid, chunk);
-                        
-                        propsArr.forEach(obj => {
-                            const flatProps = {};
-                            (obj.properties || []).forEach(pset => 
-                                (pset.properties || []).forEach(p => flatProps[p.name] = p.value)
-                            );
-                            
-                            const prosesskode = flatProps["Prosesskode"];
-                            
-                            let objektNavn = flatProps["Objekttype"];
-                            if (!objektNavn || objektNavn.trim() === "") {
-                                objektNavn = (obj.name && obj.name.trim() !== "") ? obj.name : "Ukjent objekt";
-                            }
-
-                            let mengdeVerdi = flatProps["Mengde"] || 
-                                              flatProps["Volume"] || 
-                                              flatProps["NetVolume"] || 
-                                              flatProps["Area"] || 
-                                              flatProps["NetArea"] || 
-                                              flatProps["Length"] || 
-                                              "0";
-                                              
-                            mengdeVerdi = mengdeVerdi.toString().replace(',', '.');
-                            const mengde = parseFloat(mengdeVerdi) || 0; 
-                            
-                            if (prosesskode && prosesskode.trim() !== "") {
-                                if (!prosessRegister[prosesskode]) {
-                                    const handbokData = (svvHandbok && svvHandbok.prosesskoder) 
-                                        ? svvHandbok.prosesskoder[prosesskode] 
-                                        : null;
-
-                                    prosessRegister[prosesskode] = {
-                                        tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
-                                        enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
-                                        totalMengde: 0,
-                                        objekterForMarkering: [], 
-                                        objekter: []
-                                    };
-                                }
-                                
-                                const runtimeId = obj.id || obj.objectRuntimeId;
-
-                                prosessRegister[prosesskode].totalMengde += mengde;
-                                prosessRegister[prosesskode].objekterForMarkering.push({
-                                    modelId: mid, 
-                                    objectRuntimeIds: [runtimeId]
-                                });
-                                
-                                // ENDRING: Lagrer nå også modelId og runtimeId på det enkelte objektet
-                                prosessRegister[prosesskode].objekter.push({ 
-                                    navn: objektNavn, 
-                                    mengde: mengde,
-                                    modelId: mid,
-                                    runtimeId: runtimeId
-                                });
-                            }
-                        });
-                    }
-                }
-
-                tegnOppUI(prosessRegister);
-                setStatus('✅ Skanning fullført!');
-                $('scanBtn').disabled = false;
-
-            } catch (error) {
-                console.error("Kritisk feil under skanning:", error);
-                setStatus(`❌ Feil: ${error.message}`);
-                $('scanBtn').disabled = false;
-            }
+            const runtimeId = obj.id || obj.objectRuntimeId;
+            prosessRegister[prosesskode].totalMengde += mengde;
+            prosessRegister[prosesskode].objekterForMarkering.push({ modelId: mid, objectRuntimeIds: [runtimeId] });
+            prosessRegister[prosesskode].objekter.push({ navn: objektNavn, mengde: mengde, modelId: mid, runtimeId: runtimeId });
+          }
         });
+      }
+    }
 
-        // 4. TEGN OPP RESULTATET
-        function tegnOppUI(register) {
-            const container = $('resultat');
-            const koder = Object.keys(register).sort();
-            
-            if (koder.length === 0) {
-                container.innerHTML = '<p>Fant ingen objekter med egenskapen "Prosesskode".</p>';
-                return;
-            }
+    tegnOppUI(prosessRegister);
+    setStatus(`✅ Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
+    $('scanBtn').disabled = false;
 
-            koder.forEach(kode => {
-                const data = register[kode];
-                
-                const div = document.createElement('div');
-                div.className = 'prosess-kort';
-                
-                const header = document.createElement('div');
-                header.className = 'prosess-header';
-                
-                const tittelDiv = document.createElement('div');
-                tittelDiv.className = 'prosess-tittel';
-                tittelDiv.innerText = `${kode} - ${data.tittel}`;
-                
-                const mengdeDiv = document.createElement('div');
-                mengdeDiv.className = 'prosess-mengde';
-                mengdeDiv.innerText = `${data.totalMengde.toFixed(2)} ${data.enhet} (${data.objekter.length} obj)`;
-                
-                header.appendChild(tittelDiv);
-                header.appendChild(mengdeDiv);
-                
-                const liste = document.createElement('div');
-                liste.className = 'objekt-liste';
-                
-                // Tegner opp objektene i undermenyen
-                data.objekter.forEach(obj => {
-                    const rad = document.createElement('div');
-                    rad.className = 'objekt-rad';
-                    rad.innerHTML = `<span>${obj.navn}</span> <span>${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
-                    
-                    // ENDRING: Klikk på enkeltlinje markerer KUN dette objektet i 3D
-                    rad.onclick = async (e) => {
-                        e.stopPropagation(); // Hindrer at klikket også lukker/åpner hele prosesskortet
-                        try {
-                            if (API.viewer.setSelection) {
-                                await API.viewer.setSelection({ 
-                                    modelObjectIds: [{ 
-                                        modelId: obj.modelId, 
-                                        objectRuntimeIds: [Number(obj.runtimeId)] 
-                                    }] 
-                                }, 'set');
-                            }
-                        } catch(err) {
-                            console.error("Kunne ikke markere enkeltobjekt", err);
-                        }
-                    };
+  } catch (error) {
+    setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
+    $('scanBtn').disabled = false;
+  }
+});
 
-                    liste.appendChild(rad);
-                });
+// 4. TEGN OPP RESULTATET (Designet for GitHub-temaet)
+function tegnOppUI(register) {
+  const container = $('mainContent');
+  const koder = Object.keys(register).sort();
+  
+  if (koder.length === 0) {
+    container.innerHTML = '<div class="empty anim">Fant ingen objekter med egenskapen "Prosesskode".</div>';
+    return;
+  }
 
-                // Klikk på overskriften utvider listen og markerer ALLE objektene med denne koden
-                header.onclick = async () => {
-                    liste.style.display = liste.style.display === 'block' ? 'none' : 'block';
-                    try {
-                        if (API.viewer.setSelection) {
-                            await API.viewer.setSelection({ modelObjectIds: data.objekterForMarkering }, 'set');
-                        }
-                    } catch(e) { console.error("Kunne ikke markere objektsamling", e); }
-                };
+  // Wrapper for smidig animasjon
+  const wrapper = document.createElement('div');
+  wrapper.className = 'anim';
 
-                div.appendChild(header);
-                div.appendChild(liste);
-                container.appendChild(div);
-            });
+  koder.forEach(kode => {
+    const data = register[kode];
+    
+    const div = document.createElement('div');
+    div.className = 'prosess-panel';
+    
+    const header = document.createElement('div');
+    header.className = 'prosess-header';
+    
+    const tittelDiv = document.createElement('div');
+    tittelDiv.className = 'prosess-tittel';
+    tittelDiv.innerText = `${kode} - ${data.tittel}`;
+    
+    const mengdeDiv = document.createElement('div');
+    mengdeDiv.className = 'prosess-mengde';
+    mengdeDiv.innerText = `${data.totalMengde.toFixed(2)} ${data.enhet} (${data.objekter.length})`;
+    
+    header.appendChild(tittelDiv);
+    header.appendChild(mengdeDiv);
+    
+    const liste = document.createElement('div');
+    liste.className = 'objekt-liste';
+    
+    data.objekter.forEach(obj => {
+      const rad = document.createElement('div');
+      rad.className = 'objekt-rad';
+      rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> <span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
+      
+      // Markerer enkeltobjekt i 3D
+      rad.onclick = async (e) => {
+        e.stopPropagation();
+        try {
+          if (API.viewer.setSelection) {
+            await API.viewer.setSelection({ modelObjectIds: [{ modelId: obj.modelId, objectRuntimeIds: [Number(obj.runtimeId)] }] }, 'set');
+          }
+        } catch(err) {}
+      };
+
+      liste.appendChild(rad);
+    });
+
+    // Ekspanderer listen og markerer ALLE i 3D
+    header.onclick = async () => {
+      liste.style.display = liste.style.display === 'block' ? 'none' : 'block';
+      try {
+        if (API.viewer.setSelection) {
+          await API.viewer.setSelection({ modelObjectIds: data.objekterForMarkering }, 'set');
         }
+      } catch(e) {}
+    };
 
-        connect();
-    </script>
+    div.appendChild(header);
+    div.appendChild(liste);
+    wrapper.appendChild(div);
+  });
+
+  container.appendChild(wrapper);
+}
+
+connect();
+</script>
 </body>
 </html>
