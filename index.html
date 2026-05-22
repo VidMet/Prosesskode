@@ -59,7 +59,6 @@
 
     main { flex: 1; overflow-y: auto; padding: 16px; }
 
-    /* Nye stiler for prosesskodene tilpasset GitHub-designet */
     .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
     .prosess-header { padding: 12px 16px; background: var(--surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; }
     .prosess-header:hover { background: var(--surface2); }
@@ -67,7 +66,15 @@
     .prosess-tittel { font-weight: 700; font-size: 14px; color: var(--blue); }
     .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
     
-    .objekt-liste { display: none; border-top: 1px solid var(--border); background: var(--bg); max-height: 250px; overflow-y: auto; }
+    .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); max-height: 400px; overflow-y: auto; display: flex; flex-direction: column; }
+    
+    /* Nye stiler for beskrivelsestekst */
+    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid var(--border); background: #0d1117; }
+    .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: #c9d1d9; border-left: 3px solid var(--surface2); padding-left: 10px; }
+    .tekst-blokk:last-child { margin-bottom: 0; }
+    .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .objekt-liste { flex-shrink: 0; }
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
     .objekt-rad:hover { background: var(--surface2); }
     
@@ -76,7 +83,6 @@
 
     .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
     
-    /* Scrollbar */
     ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
@@ -109,6 +115,16 @@
 <script>
 let API = null;
 let svvHandbok = null;
+
+// Mapping for bokstavkodene
+const tekstKoder = {
+  "a": "a) Omfang",
+  "b": "b) Materialer",
+  "c": "c) Utførelse",
+  "d": "d) Toleranser",
+  "e": "e) Prøving, kontroll",
+  "x": "x) Mengderegler"
+};
 
 const $ = id => document.getElementById(id);
 const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
@@ -196,6 +212,8 @@ $('scanBtn').addEventListener('click', async () => {
               prosessRegister[prosesskode] = {
                 tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
                 enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
+                url: handbokData && handbokData.url ? handbokData.url : null,
+                tekst: handbokData && handbokData.tekst ? handbokData.tekst : null, // NYTT: Lagrer teksten
                 totalMengde: 0,
                 objekterForMarkering: [], 
                 objekter: []
@@ -221,7 +239,7 @@ $('scanBtn').addEventListener('click', async () => {
   }
 });
 
-// 4. TEGN OPP RESULTATET (Designet for GitHub-temaet)
+// 4. TEGN OPP RESULTATET
 function tegnOppUI(register) {
   const container = $('mainContent');
   const koder = Object.keys(register).sort();
@@ -231,7 +249,6 @@ function tegnOppUI(register) {
     return;
   }
 
-  // Wrapper for smidig animasjon
   const wrapper = document.createElement('div');
   wrapper.className = 'anim';
 
@@ -241,12 +258,26 @@ function tegnOppUI(register) {
     const div = document.createElement('div');
     div.className = 'prosess-panel';
     
+    // HEADER
     const header = document.createElement('div');
     header.className = 'prosess-header';
     
     const tittelDiv = document.createElement('div');
     tittelDiv.className = 'prosess-tittel';
     tittelDiv.innerText = `${kode} - ${data.tittel}`;
+
+    // Ekstern lenke (hvis den finnes)
+    if (data.url) {
+      const lenke = document.createElement('a');
+      lenke.href = data.url;
+      lenke.target = '_blank';
+      lenke.innerText = ' ↗ Håndbok';
+      lenke.style.cssText = 'font-size:10px; color:var(--muted); margin-left:12px; text-decoration:none; font-family:var(--mono);';
+      lenke.onmouseover = () => lenke.style.color = 'var(--blue)';
+      lenke.onmouseout = () => lenke.style.color = 'var(--muted)';
+      lenke.onclick = (e) => e.stopPropagation();
+      tittelDiv.appendChild(lenke);
+    }
     
     const mengdeDiv = document.createElement('div');
     mengdeDiv.className = 'prosess-mengde';
@@ -255,6 +286,33 @@ function tegnOppUI(register) {
     header.appendChild(tittelDiv);
     header.appendChild(mengdeDiv);
     
+    // KROPPEN (Skjules/vises ved klikk)
+    const kropp = document.createElement('div');
+    kropp.className = 'panel-kropp';
+    kropp.style.display = 'none'; // Sørger for at display er satt initialt
+
+    // BESKRIVELSESTEKST (Hvis den finnes)
+    if (data.tekst) {
+      const tekstDiv = document.createElement('div');
+      tekstDiv.className = 'prosess-beskrivelse';
+      
+      // Sjekker hver bokstav i rekkefølge og bygger opp HTML
+      ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
+        if (data.tekst[bokstav]) {
+          const blokk = document.createElement('div');
+          blokk.className = 'tekst-blokk';
+          blokk.innerHTML = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span> ${data.tekst[bokstav]}`;
+          tekstDiv.appendChild(blokk);
+        }
+      });
+      
+      // Legger bare til tekst-diven hvis den faktisk inneholder noe
+      if (tekstDiv.hasChildNodes()) {
+          kropp.appendChild(tekstDiv);
+      }
+    }
+    
+    // OBJEKTLISTE
     const liste = document.createElement('div');
     liste.className = 'objekt-liste';
     
@@ -263,7 +321,6 @@ function tegnOppUI(register) {
       rad.className = 'objekt-rad';
       rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> <span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
       
-      // Markerer enkeltobjekt i 3D
       rad.onclick = async (e) => {
         e.stopPropagation();
         try {
@@ -276,9 +333,13 @@ function tegnOppUI(register) {
       liste.appendChild(rad);
     });
 
-    // Ekspanderer listen og markerer ALLE i 3D
+    kropp.appendChild(liste);
+
+    // KLIKK-HENDELSE FOR Å ÅPNE/LUKKE PANEL
     header.onclick = async () => {
-      liste.style.display = liste.style.display === 'block' ? 'none' : 'block';
+      const isOpen = kropp.style.display === 'flex';
+      kropp.style.display = isOpen ? 'none' : 'flex';
+      
       try {
         if (API.viewer.setSelection) {
           await API.viewer.setSelection({ modelObjectIds: data.objekterForMarkering }, 'set');
@@ -287,7 +348,7 @@ function tegnOppUI(register) {
     };
 
     div.appendChild(header);
-    div.appendChild(liste);
+    div.appendChild(kropp);
     wrapper.appendChild(div);
   });
 
