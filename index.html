@@ -33,14 +33,16 @@
     body {
       background: var(--bg); color: var(--ink); font-family: var(--sans);
       min-height: 100vh; display: flex; flex-direction: column; overflow: hidden;
+      min-width: 380px; /* Sørger for at UI-et føles romslig som default */
     }
 
+    /* flex-wrap tillater elementer å bryte linje ved smale vinduer */
     header {
       background: var(--surface); border-bottom: 1px solid var(--border);
-      padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0;
+      padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap; 
     }
 
-    .header-title { flex: 1; }
+    .header-title { flex: 1; min-width: 200px; }
     .header-title h1 { font-size: 16px; font-weight: 800; letter-spacing: -.3px; color: var(--ink); }
     .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 1px; }
 
@@ -66,15 +68,21 @@
     .prosess-tittel { font-weight: 700; font-size: 14px; color: var(--blue); }
     .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
     
-    .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); max-height: 400px; overflow-y: auto; display: flex; flex-direction: column; }
+    /* Kroppen skroller ikke lenger i seg selv */
+    .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--bg); flex-direction: column; }
     
-    /* Nye stiler for beskrivelsestekst */
-    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid var(--border); background: #0d1117; }
+    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid #1c2128; background: #0d1117; flex-shrink: 0; }
     .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: #c9d1d9; border-left: 3px solid var(--surface2); padding-left: 10px; }
     .tekst-blokk:last-child { margin-bottom: 0; }
     .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
     
-    .objekt-liste { flex-shrink: 0; }
+    /* Ny layout for "Delmengder"-seksjonen */
+    .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; }
+    .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
+    
+    /* Nå er det kun objektlisten som er skrollbar */
+    .objekt-liste { overflow-y: auto; max-height: 250px; border-top: 1px solid #1c2128; }
+    
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; }
     .objekt-rad:hover { background: var(--surface2); }
     
@@ -116,7 +124,6 @@
 let API = null;
 let svvHandbok = null;
 
-// Mapping for bokstavkodene
 const tekstKoder = {
   "a": "a) Omfang",
   "b": "b) Materialer",
@@ -129,7 +136,6 @@ const tekstKoder = {
 const $ = id => document.getElementById(id);
 const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
 
-// 1. KOBLE TIL API
 async function connect(){
   try {
     API = await window.TrimbleConnectWorkspace.connect(window.parent);
@@ -141,7 +147,6 @@ async function connect(){
   }
 }
 
-// 2. HENT JSON-FIL
 async function lastJSONFil() {
   setStatus('⏳ Laster inn Prosesskode.json...');
   try {
@@ -157,7 +162,6 @@ async function lastJSONFil() {
   }
 }
 
-// 3. SKANN LOGIKK
 $('scanBtn').addEventListener('click', async () => {
   if (!API) return;
   $('scanBtn').disabled = true;
@@ -213,7 +217,7 @@ $('scanBtn').addEventListener('click', async () => {
                 tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
                 enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
                 url: handbokData && handbokData.url ? handbokData.url : null,
-                tekst: handbokData && handbokData.tekst ? handbokData.tekst : null, // NYTT: Lagrer teksten
+                tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
                 totalMengde: 0,
                 objekterForMarkering: [], 
                 objekter: []
@@ -239,7 +243,6 @@ $('scanBtn').addEventListener('click', async () => {
   }
 });
 
-// 4. TEGN OPP RESULTATET
 function tegnOppUI(register) {
   const container = $('mainContent');
   const koder = Object.keys(register).sort();
@@ -258,7 +261,6 @@ function tegnOppUI(register) {
     const div = document.createElement('div');
     div.className = 'prosess-panel';
     
-    // HEADER
     const header = document.createElement('div');
     header.className = 'prosess-header';
     
@@ -266,7 +268,6 @@ function tegnOppUI(register) {
     tittelDiv.className = 'prosess-tittel';
     tittelDiv.innerText = `${kode} - ${data.tittel}`;
 
-    // Ekstern lenke (hvis den finnes)
     if (data.url) {
       const lenke = document.createElement('a');
       lenke.href = data.url;
@@ -286,17 +287,15 @@ function tegnOppUI(register) {
     header.appendChild(tittelDiv);
     header.appendChild(mengdeDiv);
     
-    // KROPPEN (Skjules/vises ved klikk)
     const kropp = document.createElement('div');
     kropp.className = 'panel-kropp';
-    kropp.style.display = 'none'; // Sørger for at display er satt initialt
+    kropp.style.display = 'none';
 
-    // BESKRIVELSESTEKST (Hvis den finnes)
+    // 1. Legger inn tekst-beskrivelsen låst på toppen av panelet
     if (data.tekst) {
       const tekstDiv = document.createElement('div');
       tekstDiv.className = 'prosess-beskrivelse';
       
-      // Sjekker hver bokstav i rekkefølge og bygger opp HTML
       ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
         if (data.tekst[bokstav]) {
           const blokk = document.createElement('div');
@@ -306,13 +305,21 @@ function tegnOppUI(register) {
         }
       });
       
-      // Legger bare til tekst-diven hvis den faktisk inneholder noe
       if (tekstDiv.hasChildNodes()) {
           kropp.appendChild(tekstDiv);
       }
     }
     
-    // OBJEKTLISTE
+    // 2. Bygger "Delmengder"-seksjonen med overskrift
+    const delmengderSeksjon = document.createElement('div');
+    delmengderSeksjon.className = 'delmengder-seksjon';
+    
+    const delmengderTittel = document.createElement('div');
+    delmengderTittel.className = 'delmengder-tittel';
+    delmengderTittel.innerText = 'Delmengder';
+    delmengderSeksjon.appendChild(delmengderTittel);
+
+    // 3. Setter selve objektlisten inn under overskriften
     const liste = document.createElement('div');
     liste.className = 'objekt-liste';
     
@@ -333,9 +340,9 @@ function tegnOppUI(register) {
       liste.appendChild(rad);
     });
 
-    kropp.appendChild(liste);
+    delmengderSeksjon.appendChild(liste);
+    kropp.appendChild(delmengderSeksjon);
 
-    // KLIKK-HENDELSE FOR Å ÅPNE/LUKKE PANEL
     header.onclick = async () => {
       const isOpen = kropp.style.display === 'flex';
       kropp.style.display = isOpen ? 'none' : 'flex';
