@@ -4,29 +4,29 @@
   <meta charset="UTF-8"/>
   <title>Mengdeuttak R761</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
+  
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
-
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
 
     :root {
-      --bg:        #f3f4f6;
-      --surface:   #ffffff;
-      --surface2:  #e5e7eb;
-      --border:    #d1d5db;
-      --ink:       #111827;
-      --muted:     #6b7280;
-
-      --green:     #166534;
+      --bg:        #f3f4f6;      
+      --surface:   #ffffff;      
+      --surface2:  #e5e7eb;      
+      --border:    #d1d5db;      
+      --ink:       #111827;      
+      --muted:     #6b7280;      
+      
+      --green:     #166534;      
       --green-dim: #dcfce7;
       --yellow:    #854d0e;
       --red:       #b91c1c;
       --red-dim:   #fee2e2;
-
-      --blue:      #1d4ed8;
+      
+      --blue:      #1d4ed8;      
       --blue-dim:  #dbeafe;
-
+      
       --mono:      'JetBrains Mono', monospace;
       --sans:      'Syne', sans-serif;
     }
@@ -34,495 +34,124 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     html, body {
-      background: var(--bg);
-      color: var(--ink);
-      font-family: var(--sans);
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      overflow: hidden;
-      min-width: 380px;
+      background: var(--bg); color: var(--ink); font-family: var(--sans);
+      height: 100%; margin: 0; padding: 0;
+      display: flex; flex-direction: column; overflow: hidden;
+      min-width: 380px; 
     }
 
     header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 10px 16px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      flex-shrink: 0;
-      flex-wrap: wrap;
+      background: var(--surface); border-bottom: 1px solid var(--border);
+      padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap; 
     }
 
     .header-title { flex: 1; min-width: 200px; }
+    .header-title h1 { font-size: 16px; font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 8px; }
+    .header-title h1 .version { font-family: var(--mono); font-size: 11px; font-weight: normal; color: var(--muted); background: var(--bg); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); }
+    .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 2px; }
 
-    .header-title h1 {
-      font-size: 16px;
-      font-weight: 700;
-      color: var(--ink);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
+    .badge { font-family: var(--mono); font-size: 10px; padding: 3px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
 
-    .header-title h1 .version {
-      font-family: var(--mono);
-      font-size: 11px;
-      font-weight: normal;
-      color: var(--muted);
-      background: var(--bg);
-      padding: 2px 6px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-    }
+    .btn { font-family: var(--sans); font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 6px; border: none; cursor: pointer; transition: opacity .15s, transform .1s; white-space: nowrap; }
+    .btn:disabled { opacity: .4; cursor: not-allowed; }
+    .btn:not(:disabled):hover { opacity: .85; }
+    .btn:not(:disabled):active { transform: scale(.97); }
+    
+    .btn-primary { background: var(--blue); color: #ffffff; }
+    .btn-secondary { background: var(--surface2); color: var(--ink); border: 1px solid var(--border); margin-left: 4px; }
+    .btn-secondary:not(:disabled):hover { background: var(--border); }
+    
+    #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
+    
+    .filter-group { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 150px; }
+    .filter-group label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
+    .filter-group select { font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
+    .filter-group select:disabled { opacity: 0.4; cursor: not-allowed; }
 
-    .header-title p {
-      font-size: 11px;
-      color: var(--muted);
-      font-family: var(--mono);
-      margin-top: 2px;
-    }
+    #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid var(--border); flex-shrink: 0; }
+    #statusBar.ok    { background: var(--green-dim); color: var(--green); }
+    #statusBar.error { background: var(--red-dim);   color: var(--red); }
+    #statusBar.warn  { background: #fef08a; color: var(--yellow); }
 
-    .badge {
-      font-family: var(--mono);
-      font-size: 10px;
-      padding: 3px 8px;
-      border-radius: 4px;
-      border: 1px solid var(--border);
-      color: var(--muted);
-      white-space: nowrap;
-    }
+    main { flex: 1 1 auto; overflow-y: auto; padding: 16px; height: 0; }
 
-    .btn {
-      font-family: var(--sans);
-      font-size: 12px;
-      font-weight: 700;
-      padding: 7px 14px;
-      border-radius: 6px;
-      border: none;
-      cursor: pointer;
-      transition: opacity .15s, transform .1s;
-      white-space: nowrap;
-    }
+    .hoved-panel { margin-bottom: 16px; }
+    .hoved-header { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
+    .hoved-header:hover { background: var(--surface2); }
+    .hoved-tittel { font-weight: 600; font-size: 14px; color: var(--ink); }
+    .hoved-info { font-family: var(--mono); font-size: 11px; color: var(--muted); }
+    .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid var(--border); margin-left: 8px; flex-direction: column; }
+    
+    /* OPPDATERT: Fjernet den røde teksten/bakgrunnen for manglende prosesskoder */
 
-    .btn:disabled {
-      opacity: .4;
-      cursor: not-allowed;
-    }
+    .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .prosess-panel:last-child { margin-bottom: 0; }
+    .prosess-header { padding: 10px 14px; background: var(--surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; user-select: none; }
+    .prosess-header:hover { background: var(--surface2); }
+    .prosess-tittel { font-weight: 600; font-size: 13px; color: var(--blue); }
+    .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
+    
+    .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--surface); flex-direction: column; }
+    
+    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid var(--border); background: var(--surface); flex-shrink: 0; max-height: 180px; overflow-y: auto; }
+    .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--surface2); padding-left: 10px; }
+    .tekst-blokk:last-child { margin-bottom: 0; }
+    .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
+    .tekst-blokk p:last-child { margin-bottom: 0; }
+    .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; background: var(--bg); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+    .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
+    
+    .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid var(--border); }
+    .modell-gruppe { display: flex; flex-direction: column; }
+    .modell-overskrift { background: var(--surface); padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
+    .modell-overskrift:hover { background: var(--surface2); color: var(--ink); }
+    .modell-overskrift-mengde { color: var(--blue); font-weight: 600; }
+    
+    .modell-objekter { display: none; flex-direction: column; }
+    .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--surface); }
+    .objekt-rad:hover { background: var(--bg); }
+    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--border); }
+    .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
+    .obj-mengde-feil { font-family: var(--mono); font-size: 11px; color: var(--red); font-weight: 700; }
 
-    .btn:not(:disabled):hover {
-      opacity: .85;
-    }
-
-    .btn:not(:disabled):active {
-      transform: scale(.97);
-    }
-
-    .btn-primary {
-      background: var(--blue);
-      color: #ffffff;
-    }
-
-    .btn-secondary {
-      background: var(--surface2);
-      color: var(--ink);
-      border: 1px solid var(--border);
-      margin-left: 4px;
-    }
-
-    .btn-secondary:not(:disabled):hover {
-      background: var(--border);
-    }
-
-    #filterBar {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      padding: 8px 16px;
-      display: flex;
-      gap: 15px;
-      align-items: center;
-      flex-shrink: 0;
-      flex-wrap: wrap;
-    }
-
-    .filter-group {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      flex: 1;
-      min-width: 150px;
-    }
-
-    .filter-group label {
-      font-size: 11px;
-      color: var(--muted);
-      font-family: var(--mono);
-      white-space: nowrap;
-    }
-
-    .filter-group select {
-      font-family: var(--mono);
-      font-size: 12px;
-      background: var(--bg);
-      color: var(--ink);
-      border: 1px solid var(--border);
-      border-radius: 4px;
-      padding: 4px 8px;
-      flex: 1;
-      min-width: 0;
-      cursor: pointer;
-    }
-
-    .filter-group select:disabled {
-      opacity: 0.4;
-      cursor: not-allowed;
-    }
-
-    #statusBar {
-      font-family: var(--mono);
-      font-size: 11px;
-      padding: 6px 16px;
-      background: var(--blue-dim);
-      color: var(--blue);
-      border-bottom: 1px solid var(--border);
-      flex-shrink: 0;
-    }
-
-    #statusBar.ok {
-      background: var(--green-dim);
-      color: var(--green);
-    }
-
-    #statusBar.error {
-      background: var(--red-dim);
-      color: var(--red);
-    }
-
-    #statusBar.warn {
-      background: #fef08a;
-      color: var(--yellow);
-    }
-
-    main {
-      flex: 1 1 auto;
-      overflow-y: auto;
-      padding: 16px;
-      height: 0;
-    }
-
-    .hoved-panel {
-      margin-bottom: 16px;
-    }
-
-    .hoved-header {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 6px;
-      padding: 12px 16px;
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      user-select: none;
-      transition: background 0.2s;
-    }
-
-    .hoved-header:hover {
-      background: var(--surface2);
-    }
-
-    .hoved-tittel {
-      font-weight: 600;
-      font-size: 14px;
-      color: var(--ink);
-    }
-
-    .hoved-info {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--muted);
-    }
-
-    .hoved-kropp {
-      display: none;
-      padding-top: 12px;
-      padding-left: 12px;
-      border-left: 2px solid var(--border);
-      margin-left: 8px;
-      flex-direction: column;
-    }
-
-    .prosess-panel {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      margin-bottom: 12px;
-      overflow: hidden;
-      box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-    }
-
-    .prosess-panel:last-child {
-      margin-bottom: 0;
-    }
-
-    .prosess-header {
-      padding: 10px 14px;
-      background: var(--surface);
-      cursor: pointer;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      transition: background 0.2s;
-      user-select: none;
-    }
-
-    .prosess-header:hover {
-      background: var(--surface2);
-    }
-
-    .prosess-tittel {
-      font-weight: 600;
-      font-size: 13px;
-      color: var(--blue);
-    }
-
-    .prosess-mengde {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--muted);
-      background: var(--bg);
-      padding: 4px 8px;
-      border-radius: 6px;
-      border: 1px solid var(--border);
-    }
-
-    .panel-kropp {
-      display: none;
-      border-top: 1px solid var(--border);
-      background: var(--surface);
-      flex-direction: column;
-    }
-
-    .prosess-beskrivelse {
-      padding: 16px;
-      border-bottom: 1px solid var(--border);
-      background: var(--surface);
-      flex-shrink: 0;
-      max-height: 180px;
-      overflow-y: auto;
-    }
-
-    .tekst-blokk {
-      margin-bottom: 10px;
-      font-size: 12px;
-      line-height: 1.5;
-      color: var(--ink);
-      border-left: 3px solid var(--surface2);
-      padding-left: 10px;
-    }
-
-    .tekst-blokk:last-child {
-      margin-bottom: 0;
-    }
-
-    .tekst-blokk p {
-      margin-top: 4px;
-      margin-bottom: 8px;
-    }
-
-    .tekst-blokk p:last-child {
-      margin-bottom: 0;
-    }
-
-    .tekst-bokstav {
-      font-weight: 700;
-      color: var(--blue);
-      display: block;
-      margin-bottom: 2px;
-      font-size: 11px;
-      font-family: var(--mono);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-    }
-
-    .delmengder-seksjon {
-      display: flex;
-      flex-direction: column;
-      padding-top: 12px;
-      background: var(--bg);
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-    }
-
-    .delmengder-tittel {
-      font-weight: 700;
-      color: var(--blue);
-      font-size: 11px;
-      font-family: var(--mono);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      padding: 0 16px 8px 16px;
-    }
-
-    .objekt-liste {
-      overflow-y: auto;
-      max-height: 300px;
-      border-top: 1px solid var(--border);
-    }
-
-    .modell-gruppe {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .modell-overskrift {
-      background: var(--surface);
-      padding: 8px 16px;
-      font-size: 10px;
-      font-family: var(--mono);
-      color: var(--muted);
-      text-transform: uppercase;
-      letter-spacing: 0.5px;
-      display: flex;
-      justify-content: space-between;
-      border-bottom: 1px solid var(--border);
-      cursor: pointer;
-      position: sticky;
-      top: 0;
-      user-select: none;
-      z-index: 2;
-    }
-
-    .modell-overskrift:hover {
-      background: var(--surface2);
-      color: var(--ink);
-    }
-
-    .modell-overskrift-mengde {
-      color: var(--blue);
-      font-weight: 600;
-    }
-
-    .modell-objekter {
-      display: none;
-      flex-direction: column;
-    }
-
-    .objekt-rad {
-      display: flex;
-      justify-content: space-between;
-      padding: 8px 16px;
-      border-bottom: 1px solid var(--border);
-      cursor: pointer;
-      transition: background 0.1s;
-      background: var(--surface);
-    }
-
-    .objekt-rad:hover {
-      background: var(--bg);
-    }
-
-    .obj-navn {
-      font-size: 12px;
-      color: var(--ink);
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      max-width: 70%;
-      padding-left: 20px;
-      border-left: 2px solid var(--border);
-    }
-
-    .obj-mengde {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--green);
-    }
-
-    .obj-mengde-feil {
-      font-family: var(--mono);
-      font-size: 11px;
-      color: var(--red);
-      font-weight: 700;
-    }
-
-    .empty {
-      text-align: center;
-      padding: 40px 20px;
-      color: var(--muted);
-      font-size: 13px;
-    }
-
-    ::-webkit-scrollbar {
-      width: 6px;
-      height: 6px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: var(--bg);
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: var(--muted);
-      border-radius: 3px;
-    }
-
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--ink);
-    }
+    .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
+    
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: var(--ink); }
 
     @keyframes fadeUp {
-      from {
-        opacity:0;
-        transform:translateY(6px);
-      }
-      to {
-        opacity:1;
-        transform:none;
-      }
+      from { opacity:0; transform:translateY(6px); }
+      to   { opacity:1; transform:none; }
     }
-
-    .anim {
-      animation: fadeUp .3s ease both;
-    }
+    .anim { animation: fadeUp .3s ease both; }
   </style>
 </head>
-
 <body>
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.02</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.01</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
-
   <span class="badge" id="modelBadge">Frakoblet</span>
-
-  <button class="btn btn-primary" id="scanBtn" disabled>
-    ▶ Skann Modell
-  </button>
-
-  <button class="btn btn-secondary" id="exportBtn" disabled>
-    📊 Eksporter til Excel
-  </button>
+  <button class="btn btn-primary" id="scanBtn" disabled>▶ Skann Modell</button>
+  <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter til Excel</button>
 </header>
 
 <div id="filterBar">
   <div class="filter-group">
     <label for="versionFilter">Håndbok:</label>
-
     <select id="versionFilter" disabled>
       <option value="2025">R761 (2025)</option>
       <option value="2018">R761 (2018)</option>
     </select>
   </div>
-
   <div class="filter-group">
     <label for="modelFilter">Utvalg:</label>
-
     <select id="modelFilter" disabled>
       <option value="ALL">Alle modeller i vieweren</option>
     </select>
@@ -532,13 +161,10 @@
 <div id="statusBar">Kobler til Trimble Connect...</div>
 
 <main id="mainContent">
-  <div class="empty anim">
-    Trykk <strong>Skann Modell</strong> for å hente ut mengder.
-  </div>
+  <div class="empty anim">Trykk <strong>Skann Modell</strong> for å hente ut mengder.</div>
 </main>
 
 <script>
-
 let API = null;
 let svvHandbok = null;
 
@@ -568,239 +194,669 @@ const tekstKoder = {
 };
 
 const $ = id => document.getElementById(id);
+const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
+const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
 
-const setStatus = (m, c='') => {
-  $('statusBar').textContent = m;
-  $('statusBar').className = c;
-};
-
-const lastPathPart = (v) =>
-  (v || '').split('/').pop().split('\\').pop();
-
-async function connect() {
-
+async function connect(){
   try {
-
     API = await window.TrimbleConnectWorkspace.connect(window.parent);
-
     await lastJSONFil($('versionFilter').value);
-
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
-
     $('modelBadge').textContent = 'Tilkoblet';
-
-  } catch(e) {
-
-    setStatus('❌ Kunne ikke koble til API.', 'error');
-
+  } catch(e) { 
+    setStatus('❌ Kunne ikke koble til API.', 'error'); 
   }
 }
 
 async function lastJSONFil(versjon) {
-
   setStatus(`⏳ Laster inn R761 (${versjon})...`);
-
   try {
-
-    const kapitler = ['1','2','3','4','5','6','7','8','9'];
-
+    const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
     const cacheBuster = new Date().getTime();
-
-    const promises = kapitler.map(kap =>
-
+    
+    const promises = kapitler.map(kap => 
       fetch(`Prosesskode_${versjon}_${kap}.json?nocache=${cacheBuster}`)
         .then(res => {
-
-          if (!res.ok) {
-            throw new Error(`Status ${res.status}`);
-          }
-
+          if (!res.ok) throw new Error(`Status ${res.status}`);
           return res.json();
-
         })
         .catch(err => {
-
           console.warn(`Hoppet over kapittel ${kap} for ${versjon}`);
-
-          return null;
-
+          return null; 
         })
     );
-
+    
     const resultater = await Promise.all(promises);
-
+    
     svvHandbok = { prosesskoder: {} };
-
     let totaltLastedeKoder = 0;
-
+    
     resultater.forEach(data => {
-
       if (data && data.prosesskoder) {
-
         Object.assign(svvHandbok.prosesskoder, data.prosesskoder);
-
-        totaltLastedeKoder +=
-          Object.keys(data.prosesskoder).length;
+        totaltLastedeKoder += Object.keys(data.prosesskoder).length;
       }
     });
-
+    
     if (totaltLastedeKoder === 0) {
       throw new Error(`Fant ingen filer for versjon ${versjon}.`);
     }
-
-    setStatus(
-      `✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`,
-      'ok'
-    );
-
-  } catch(error) {
-
+    
+    setStatus(`✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
+  } catch (error) {
     console.error("Databasefeil:", error);
-
-    setStatus(
-      `⚠️ Feil ved lasting av ${versjon}: ${error.message}`,
-      'warn'
-    );
-
+    setStatus(`⚠️ Feil ved lasting av ${versjon}: ${error.message}`, 'warn');
     svvHandbok = { prosesskoder: {} };
   }
 }
 
-const handbokData =
-    hasProsesskode &&
-    svvHandbok &&
-    svvHandbok.prosesskoder
-        ? svvHandbok.prosesskoder[prosesskode]
-        : null;
-
-const hpKode =
-    hasProsesskode
-        ? (prosesskode.includes('.')
-            ? prosesskode.split('.')[0][0]
-            : prosesskode[0])
-        : "X";
-
-/* =========================
-   EGENDEFINERTE KODER
-   ========================= */
-
-const prosessNavnRaw =
-    flatProps["Prosessnavn"] ??
-    flatProps["prosessnavn"] ??
-    flatProps["ProsessNavn"];
-
-const egendefinertProsessNavn =
-    prosessNavnRaw &&
-    String(prosessNavnRaw).trim() !== ""
-        ? `${String(prosessNavnRaw).trim()} (egendefinert)`
-        : "Ukjent prosesskode";
-
-const enhetRaw =
-    flatProps["Enhet"] ??
-    flatProps["enhet"];
-
-const egendefinertEnhet =
-    enhetRaw &&
-    String(enhetRaw).trim() !== ""
-        ? String(enhetRaw).trim()
-        : "?";
-
-const erEgendefinertKode =
-    hasProsesskode &&
-    !handbokData;
-
-/* =========================
-   ENHET
-   ========================= */
-
-let enhet = "?";
-
-if (hasProsesskode) {
-
-    if (handbokData && handbokData.enhet) {
-
-        enhet = handbokData.enhet.toLowerCase();
-
-    } else if (erEgendefinertKode) {
-
-        enhet = egendefinertEnhet.toLowerCase();
-
+function oppdaterRegisterMedNyHandbok() {
+    for (let kode in globalProsessRegister) {
+        if (kode === "MANGLER") continue; 
+        
+        const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
+        globalProsessRegister[kode].tittel = handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
+        globalProsessRegister[kode].enhet = handbokData && handbokData.enhet ? handbokData.enhet : "?";
+        globalProsessRegister[kode].url = handbokData && handbokData.url ? handbokData.url : null;
+        globalProsessRegister[kode].tekst = handbokData && handbokData.tekst ? handbokData.tekst : null;
     }
-
-} else {
-
-    enhet = "stk";
-
 }
 
-/* ===========================
-   NY LOGIKK FOR EGENDEFINERTE
-   PROSESSKODER
-   =========================== */
+$('versionFilter').addEventListener('change', async (e) => {
+    $('versionFilter').disabled = true;
+    await lastJSONFil(e.target.value);
+    if (Object.keys(globalProsessRegister).length > 0) {
+        oppdaterRegisterMedNyHandbok();
+        tegnOppUI(globalProsessRegister, $('modelFilter').value);
+    }
+    $('versionFilter').disabled = false;
+});
 
-const handbokData =
-    hasProsesskode &&
-    svvHandbok &&
-    svvHandbok.prosesskoder
-        ? svvHandbok.prosesskoder[prosesskode]
-        : null;
+$('modelFilter').addEventListener('change', (e) => {
+    tegnOppUI(globalProsessRegister, e.target.value);
+});
 
-const prosessNavnRaw =
-    flatProps["Prosessnavn"] ??
-    flatProps["prosessnavn"] ??
-    flatProps["ProsessNavn"];
+$('exportBtn').addEventListener('click', () => {
+  if (Object.keys(globalProsessRegister).length === 0) return;
+  
+  setStatus('⏳ Genererer Excel-rapport...');
+  
+  let csvInnhold = "\uFEFF"; 
+  csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Modell;Objekttype;Mengde\r\n";
+  
+  const koder = Object.keys(globalProsessRegister).sort();
+  koder.forEach(kode => {
+      const data = globalProsessRegister[kode];
+      const hpNavn = hovedprosessNavn[data.hovedprosess] || "Ukjent hovedprosess";
+      const hpVisning = data.hovedprosess === "X" ? hpNavn : `${data.hovedprosess} - ${hpNavn}`;
+      const kodeVisning = kode === "MANGLER" ? "" : kode;
+      
+      data.objekter.forEach(obj => {
+          const tittelRenset = (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
+          const modellRenset = (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
+          const navnRenset = (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
+          const mengdeFormatert = obj.mengde.toString().replace('.', ',');
+          
+          csvInnhold += `${hpVisning};${kodeVisning};${tittelRenset};${data.enhet};${modellRenset};${navnRenset};${mengdeFormatert}\r\n`;
+      });
+  });
+  
+  const blob = new Blob([csvInnhold], { type: 'text/csv;charset=utf-8;' });
+  const url = URL.createObjectURL(blob);
+  const lenke = document.createElement("a");
+  
+  const datoStreng = new Date().toISOString().slice(0,10);
+  lenke.setAttribute("href", url);
+  lenke.setAttribute("download", `Mengdeuttak_R761_${datoStreng}.csv`);
+  lenke.style.visibility = 'hidden';
+  
+  document.body.appendChild(lenke);
+  lenke.click();
+  document.body.removeChild(lenke);
+  
+  setStatus('✅ Filen ble eksportert. Sjekk nedlastingsmappen din!', 'ok');
+});
 
-const egendefinertProsessNavn =
-    prosessNavnRaw &&
-    String(prosessNavnRaw).trim() !== ""
-        ? `${String(prosessNavnRaw).trim()} (egendefinert)`
-        : "Ukjent prosesskode";
+$('scanBtn').addEventListener('click', async () => {
+  if (!API) return;
+  
+  $('scanBtn').disabled = true;
+  $('modelFilter').disabled = true;
+  $('versionFilter').disabled = true;
+  $('exportBtn').disabled = true; 
+  $('mainContent').innerHTML = '';
+  globalProsessRegister = {};
+  globalModelsMap = {};
+  
+  try {
+    setStatus('⏳ Henter filnavn og modeller fra vieweren...');
+    
+    const nameMap = new Map();
+    const srcs = [() => API.models && API.models.getModels(), () => API.viewer && API.viewer.getModels()];
+    for (const src of srcs) {
+      if (!src) continue;
+      try {
+        const res = await src();
+        const list = Array.isArray(res) ? res : (res?.models || res?.items || []);
+        list.forEach(m => {
+          const id = m.id || m.modelId;
+          const fn = [m.name, m.fileName, m.filename].find(v => v && /\.ifc/i.test(v)) || m.name;
+          if (id && fn) nameMap.set(id, lastPathPart(fn));
+        });
+      } catch(e) {}
+    }
 
-const enhetRaw =
-    flatProps["Enhet"] ??
-    flatProps["enhet"];
+    const models = await API.viewer.getObjects();
+    
+    if (!models || models.length === 0) {
+      setStatus('⚠️ Fant ingen objekter i vieweren.', 'warn');
+      $('scanBtn').disabled = false;
+      $('versionFilter').disabled = false;
+      return;
+    }
 
-const egendefinertEnhet =
-    enhetRaw &&
-    String(enhetRaw).trim() !== ""
-        ? String(enhetRaw).trim()
-        : "?";
+    const CHUNK = 200;
+    let totalObjects = 0;
 
-const erEgendefinertKode =
-    hasProsesskode &&
-    (!handbokData);
+    for (const model of models) {
+      const mid = model.modelId || model.modelid;
+      
+      let modelName = nameMap.get(mid) || model.name;
+      if (!modelName || modelName.trim() === "") modelName = `Modell (${mid.substring(0,6)}...)`;
+      
+      globalModelsMap[mid] = modelName;
 
-globalProsessRegister[prosesskode] = {
+      const objectIds = (model.objects || []).map(o => o.id || o.objectRuntimeId).filter(id => id != null);
+      totalObjects += objectIds.length;
+      
+      for (let i = 0; i < objectIds.length; i += CHUNK) {
+        const chunk = objectIds.slice(i, i + CHUNK);
+        setStatus(`⏳ Analyserer egenskaper... (${i} av ${objectIds.length} i aktiv modell)`);
+        
+        const propsArr = await API.viewer.getObjectProperties(mid, chunk);
+        
+        propsArr.forEach(obj => {
+          const flatProps = {};
+          
+          // OPPDATERT: Robust innlesing av properties for å unngå overskriving med blanke verdier
+          (obj.properties || []).forEach(pset => 
+            (pset.properties || []).forEach(p => {
+              const hasValidValue = flatProps[p.name] !== undefined && flatProps[p.name] !== null && String(flatProps[p.name]).trim() !== "";
+              const newValueIsValid = p.value !== undefined && p.value !== null && String(p.value).trim() !== "";
+              
+              if (!hasValidValue && newValueIsValid) {
+                  flatProps[p.name] = p.value;
+              } else if (!hasValidValue && !newValueIsValid) {
+                  flatProps[p.name] = p.value;
+              }
+            })
+          );
+          
+          // Støtter små og store bokstaver i property-navnet, konverterer sikkert til string
+          const prosesskodeRaw = flatProps["Prosesskode"] ?? flatProps["prosesskode"] ?? flatProps["ProsessKode"];
+          let hasProsesskode = false;
+          let prosesskode = "MANGLER";
+          
+          if (prosesskodeRaw !== undefined && prosesskodeRaw !== null && String(prosesskodeRaw).trim() !== "") {
+              hasProsesskode = true;
+              prosesskode = String(prosesskodeRaw).trim();
+          }
+          
+          let objektNavn = flatProps["Objekttype"];
+          if (!objektNavn || String(objektNavn).trim() === "") {
+            objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
+          }
 
-    tittel:
-        handbokData && handbokData.tittel
-            ? handbokData.tittel
-            : egendefinertProsessNavn,
+          const handbokData =
+            hasProsesskode &&
+            svvHandbok &&
+            svvHandbok.prosesskoder
+                ? svvHandbok.prosesskoder[prosesskode]
+                : null;
 
-    enhet:
-        handbokData && handbokData.enhet
-            ? handbokData.enhet
-            : egendefinertEnhet,
+          const hpKode =
+            hasProsesskode
+                ? (prosesskode.includes('.')
+                    ? prosesskode.split('.')[0][0]
+                    : prosesskode[0])
+                : "X";
 
-    hovedprosess: hpKode,
+          /* =========================
+             EGENDEFINERTE KODER
+             ========================= */
 
-    url:
-        handbokData && handbokData.url
-            ? handbokData.url
-            : null,
+          const prosessNavnRaw =
+            flatProps["Prosessnavn"] ??
+            flatProps["prosessnavn"] ??
+            flatProps["ProsessNavn"];
 
-    tekst:
-        handbokData && handbokData.tekst
-            ? handbokData.tekst
-            : null,
+          const egendefinertProsessNavn =
+            prosessNavnRaw &&
+            String(prosessNavnRaw).trim() !== ""
+                ? `${String(prosessNavnRaw).trim()} (egendefinert)`
+                : "Ukjent prosesskode";
 
-    egendefinert: erEgendefinertKode,
+          const enhetRaw =
+            flatProps["Enhet"] ??
+            flatProps["enhet"];
 
-    objekter: []
+          const egendefinertEnhet =
+            enhetRaw &&
+            String(enhetRaw).trim() !== ""
+                ? String(enhetRaw).trim()
+                : "?";
 
-};
+          const erEgendefinertKode =
+            hasProsesskode &&
+            !handbokData;
 
+        /* =========================
+           ENHET
+           ========================= */
+
+          let enhet = "?";
+
+          if (hasProsesskode) {
+
+              if (handbokData && handbokData.enhet) {
+
+                enhet = handbokData.enhet.toLowerCase();
+
+              } else if (erEgendefinertKode) {
+
+                enhet = egendefinertEnhet.toLowerCase();
+
+              }
+
+          } else {
+
+              enhet = "stk";
+
+          }
+
+          let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"];
+          let manglerMengde = false;
+          
+          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
+              if (enhet === "m3" || enhet === "m³") {
+                  rawMengde = flatProps["Volume"] ?? flatProps["NetVolume"];
+              } else if (enhet === "m2" || enhet === "m²") {
+                  rawMengde = flatProps["Area"] ?? flatProps["NetArea"] ?? flatProps["SurfaceArea"];
+              } else if (enhet === "m") {
+                  rawMengde = flatProps["Length"] ?? flatProps["NetLength"];
+              } else if (enhet === "stk") {
+                  rawMengde = 1; 
+              }
+
+              if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
+                  manglerMengde = true;
+              }
+          }
+
+          let mengde = 0;
+          if (!manglerMengde) {
+              let mengdeVerdi = String(rawMengde).replace(',', '.');
+              mengde = parseFloat(mengdeVerdi) || 0; 
+          }
+
+          if (!globalProsessRegister[prosesskode]) {
+            if (prosesskode === "MANGLER") {
+                globalProsessRegister[prosesskode] = {
+
+                  tittel:
+                      handbokData && handbokData.tittel
+                          ? handbokData.tittel
+                          : egendefinertProsessNavn,
+
+                  enhet:
+                      handbokData && handbokData.enhet
+                          ? handbokData.enhet
+                          : egendefinertEnhet,
+
+                  hovedprosess: hpKode,
+
+                  url:
+                      handbokData && handbokData.url
+                          ? handbokData.url
+                          : null,
+
+                  tekst:
+                      handbokData && handbokData.tekst
+                          ? handbokData.tekst
+                          : null,
+
+                  egendefinert: erEgendefinertKode,
+
+                  objekter: []
+
+              };
+            } else {
+                globalProsessRegister[prosesskode] = {
+                  tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
+                  enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
+                  hovedprosess: hpKode,
+                  url: handbokData && handbokData.url ? handbokData.url : null,
+                  tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
+                  objekter: [] 
+                };
+            }
+          }
+          
+          const runtimeId = obj.id || obj.objectRuntimeId;
+          globalProsessRegister[prosesskode].objekter.push({ 
+              navn: objektNavn, 
+              mengde: mengde,
+              manglerMengde: manglerMengde,
+              modelId: mid, 
+              modelNavn: modelName,
+              runtimeId: runtimeId 
+          });
+        });
+      }
+    }
+
+    oppdaterDropdownMeny();
+    tegnOppUI(globalProsessRegister, 'ALL');
+    
+    setStatus(`✅ Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
+    $('scanBtn').disabled = false;
+    $('modelFilter').disabled = false;
+    $('versionFilter').disabled = false;
+    $('exportBtn').disabled = false; 
+
+  } catch (error) {
+    setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
+    $('scanBtn').disabled = false;
+    $('versionFilter').disabled = false;
+  }
+});
+
+function oppdaterDropdownMeny() {
+    const select = $('modelFilter');
+    select.innerHTML = '<option value="ALL">Alle modeller i vieweren</option>';
+    
+    const sorterteModeller = Object.entries(globalModelsMap).sort((a, b) => a[1].localeCompare(b[1]));
+    for (const [mid, name] of sorterteModeller) {
+        const option = document.createElement('option');
+        option.value = mid;
+        option.innerText = name;
+        select.appendChild(option);
+    }
+}
+
+function tegnOppUI(register, filterMid) {
+  const container = $('mainContent');
+  container.innerHTML = ''; 
+  
+  const koder = Object.keys(register).sort();
+  if (koder.length === 0) {
+      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
+      return;
+  }
+
+  const grupperteProsesser = {};
+  let totaleViste = 0;
+
+  koder.forEach(kode => {
+      const data = register[kode];
+      const filtrerteObjekter = data.objekter.filter(obj => filterMid === 'ALL' || obj.modelId === filterMid);
+      
+      if (filtrerteObjekter.length === 0) return;
+      
+      totaleViste++;
+      const hpKode = data.hovedprosess || kode.charAt(0);
+      
+      if (!grupperteProsesser[hpKode]) {
+          grupperteProsesser[hpKode] = {
+              koder: [],
+              totaltObjekter: 0,
+              masterMarkeringMap: {}
+          };
+      }
+      
+      grupperteProsesser[hpKode].koder.push(kode);
+      grupperteProsesser[hpKode].totaltObjekter += filtrerteObjekter.length;
+      
+      filtrerteObjekter.forEach(obj => {
+          if (!grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId]) {
+              grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId] = [];
+          }
+          grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
+      });
+  });
+
+  if (totaleViste === 0) {
+      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
+      return;
+  }
+
+  const wrapper = document.createElement('div');
+  wrapper.className = 'anim';
+
+  const sorterteHovedkoder = Object.keys(grupperteProsesser).sort();
+
+  sorterteHovedkoder.forEach(hpKode => {
+      const hpData = grupperteProsesser[hpKode];
+      const tittelNavn = hovedprosessNavn[hpKode] || "Annet";
+      
+      const hpDiv = document.createElement('div');
+      hpDiv.className = 'hoved-panel';
+      
+      const hpHeader = document.createElement('div');
+      hpHeader.className = 'hoved-header';
+      
+      const visningsOverskrift = hpKode === "X" ? `▶ ${tittelNavn}` : `▶ ${hpKode} - ${tittelNavn}`;
+      
+      hpHeader.innerHTML = `
+          <div class="hoved-tittel">${visningsOverskrift}</div>
+          <div class="hoved-info">${hpData.totaltObjekter} objekter</div>
+      `;
+      
+      const hpKropp = document.createElement('div');
+      hpKropp.className = 'hoved-kropp';
+      
+      const hpMasterMarkering = Object.keys(hpData.masterMarkeringMap).map(mid => ({ 
+          modelId: mid, 
+          objectRuntimeIds: hpData.masterMarkeringMap[mid] 
+      }));
+
+      hpHeader.onclick = async (e) => {
+          const isOpen = hpKropp.style.display === 'flex';
+          hpKropp.style.display = isOpen ? 'none' : 'flex';
+          const pil = isOpen ? '▼' : '▶';
+          const oppdatertOverskrift = hpKode === "X" ? `${pil} ${tittelNavn}` : `${pil} ${hpKode} - ${tittelNavn}`;
+          hpHeader.querySelector('.hoved-tittel').innerText = oppdatertOverskrift;
+          
+          try {
+              if (API.viewer.setSelection) {
+                  await API.viewer.setSelection({ modelObjectIds: hpMasterMarkering }, 'set');
+              }
+          } catch(err) {}
+      };
+
+      hpData.koder.forEach(kode => {
+          const data = register[kode];
+          const filtrerteObjekter = data.objekter.filter(obj => filterMid === 'ALL' || obj.modelId === filterMid);
+          const totalMengde = filtrerteObjekter.reduce((sum, obj) => sum + obj.mengde, 0);
+          
+          const masterMarkeringMap = {};
+          filtrerteObjekter.forEach(obj => {
+              if (!masterMarkeringMap[obj.modelId]) masterMarkeringMap[obj.modelId] = [];
+              masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
+          });
+          const masterMarkering = Object.keys(masterMarkeringMap).map(mid => ({ modelId: mid, objectRuntimeIds: masterMarkeringMap[mid] }));
+
+          const div = document.createElement('div');
+          div.className = 'prosess-panel';
+          
+          const header = document.createElement('div');
+          header.className = 'prosess-header';
+          
+          const tittelDiv = document.createElement('div');
+          tittelDiv.className = 'prosess-tittel';
+          const kodePrefiks = kode === "MANGLER" ? "" : `${kode} - `;
+          tittelDiv.innerText = `▶ ${kodePrefiks}${data.tittel}`;
+
+          if (data.url) {
+            const lenke = document.createElement('a');
+            lenke.href = data.url;
+            lenke.target = '_blank';
+            lenke.innerText = ' ↗ Håndbok';
+            lenke.style.cssText = 'font-size:10px; color:var(--muted); margin-left:12px; text-decoration:none; font-family:var(--mono);';
+            lenke.onmouseover = () => lenke.style.color = 'var(--blue)';
+            lenke.onmouseout = () => lenke.style.color = 'var(--muted)';
+            lenke.onclick = (e) => e.stopPropagation();
+            tittelDiv.appendChild(lenke);
+          }
+          
+          const mengdeDiv = document.createElement('div');
+          mengdeDiv.className = 'prosess-mengde';
+          mengdeDiv.innerText = `${totalMengde.toFixed(2)} ${data.enhet}`;
+          
+          header.appendChild(tittelDiv);
+          header.appendChild(mengdeDiv);
+          
+          const kropp = document.createElement('div');
+          kropp.className = 'panel-kropp';
+          
+          if (data.tekst) {
+            const tekstDiv = document.createElement('div');
+            tekstDiv.className = 'prosess-beskrivelse';
+            
+            ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
+              if (data.tekst[bokstav]) {
+                const blokk = document.createElement('div');
+                blokk.className = 'tekst-blokk';
+                let innholdHtml = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span>`;
+                if (Array.isArray(data.tekst[bokstav])) {
+                  innholdHtml += data.tekst[bokstav].map(avsnitt => `<p>${avsnitt}</p>`).join('');
+                } else {
+                  innholdHtml += `<p>${data.tekst[bokstav]}</p>`;
+                }
+                blokk.innerHTML = innholdHtml;
+                tekstDiv.appendChild(blokk);
+              }
+            });
+            if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
+          }
+          
+          const delmengderSeksjon = document.createElement('div');
+          delmengderSeksjon.className = 'delmengder-seksjon';
+          const delmengderTittel = document.createElement('div');
+          delmengderTittel.className = 'delmengder-tittel';
+          delmengderTittel.innerText = 'Delmengder per modell';
+          delmengderSeksjon.appendChild(delmengderTittel);
+
+          const liste = document.createElement('div');
+          liste.className = 'objekt-liste';
+          
+          const modellGrupper = {};
+          filtrerteObjekter.forEach(obj => {
+              if (!modellGrupper[obj.modelNavn]) {
+                  modellGrupper[obj.modelNavn] = { modelId: obj.modelId, objekter: [], sum: 0, markeringIds: [] };
+              }
+              modellGrupper[obj.modelNavn].objekter.push(obj);
+              modellGrupper[obj.modelNavn].sum += obj.mengde;
+              modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
+          });
+
+          const sorterteGrupper = Object.entries(modellGrupper).sort((a, b) => a[0].localeCompare(b[0]));
+
+          for (const [navn, gruppeData] of sorterteGrupper) {
+              const gruppeDiv = document.createElement('div');
+              gruppeDiv.className = 'modell-gruppe';
+
+              const modHeader = document.createElement('div');
+              modHeader.className = 'modell-overskrift';
+              modHeader.innerHTML = `<span title="${navn}">▶ 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
+              
+              const objekterContainer = document.createElement('div');
+              objekterContainer.className = 'modell-objekter'; 
+              
+              modHeader.onclick = async (e) => {
+                  e.stopPropagation();
+                  const isClosed = objekterContainer.style.display === 'none' || objekterContainer.style.display === '';
+                  objekterContainer.style.display = isClosed ? 'flex' : 'none';
+                  modHeader.innerHTML = `<span title="${navn}">${isClosed ? '▼' : '▶'} 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
+                  
+                  try {
+                      if (API.viewer.setSelection) {
+                          await API.viewer.setSelection({ modelObjectIds: [{ modelId: gruppeData.modelId, objectRuntimeIds: gruppeData.markeringIds }] }, 'set');
+                      }
+                  } catch(err) {}
+              };
+              
+              const maxVisning = 1000;
+              const visObjekter = gruppeData.objekter.slice(0, maxVisning);
+              
+              visObjekter.forEach(obj => {
+                  const rad = document.createElement('div');
+                  rad.className = 'objekt-rad';
+                  
+                  const mengdeTekst = obj.manglerMengde 
+                      ? `<span class="obj-mengde-feil" title="Advarsel: Objektet mangler mengde">0.00 ${data.enhet}</span>`
+                      : `<span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
+                      
+                  rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> ${mengdeTekst}`;
+                  
+                  rad.onclick = async (e) => {
+                      e.stopPropagation();
+                      try {
+                          if (API.viewer.setSelection) {
+                              await API.viewer.setSelection({ modelObjectIds: [{ modelId: obj.modelId, objectRuntimeIds: [Number(obj.runtimeId)] }] }, 'set');
+                          }
+                      } catch(err) {}
+                  };
+                  objekterContainer.appendChild(rad);
+              });
+              
+              if (gruppeData.objekter.length > maxVisning) {
+                  const advarsel = document.createElement('div');
+                  advarsel.className = 'objekt-rad';
+                  advarsel.style.background = "var(--surface2)";
+                  advarsel.innerHTML = `<span class="obj-navn" style="color:var(--muted); font-style:italic;">... pluss ${gruppeData.objekter.length - maxVisning} flere objekter. Velg mappen for å markere alle.</span>`;
+                  objekterContainer.appendChild(advarsel);
+              }
+
+              gruppeDiv.appendChild(modHeader);
+              gruppeDiv.appendChild(objekterContainer);
+              liste.appendChild(gruppeDiv);
+          }
+
+          delmengderSeksjon.appendChild(liste);
+          kropp.appendChild(delmengderSeksjon);
+
+          header.onclick = async (e) => {
+            e.stopPropagation();
+            const isOpen = kropp.style.display === 'flex';
+            kropp.style.display = isOpen ? 'none' : 'flex';
+            
+            const tittelEl = header.querySelector('.prosess-tittel');
+            tittelEl.innerText = `${isOpen ? '▶' : '▼'} ${kodePrefiks}${data.tittel}`;
+            if (data.url) tittelEl.appendChild(tittelEl.nextSibling);
+
+            try {
+              if (API.viewer.setSelection) {
+                await API.viewer.setSelection({ modelObjectIds: masterMarkering }, 'set');
+              }
+            } catch(err) {}
+          };
+
+          div.appendChild(header);
+          div.appendChild(kropp);
+          hpKropp.appendChild(div);
+      });
+
+      hpDiv.appendChild(hpHeader);
+      hpDiv.appendChild(hpKropp);
+      wrapper.appendChild(hpDiv);
+  });
+
+  container.appendChild(wrapper);
+}
+
+connect();
 </script>
 </body>
 </html>
