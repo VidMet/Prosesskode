@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761</title>
+  <title>Mengdeuttak R761 v1.02</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -82,8 +82,6 @@
     .hoved-info { font-family: var(--mono); font-size: 11px; color: var(--muted); }
     .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid var(--border); margin-left: 8px; flex-direction: column; }
     
-    /* OPPDATERT: Fjernet den røde teksten/bakgrunnen for manglende prosesskoder */
-
     .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
     .prosess-panel:last-child { margin-bottom: 0; }
     .prosess-header { padding: 10px 14px; background: var(--surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; user-select: none; }
@@ -134,7 +132,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.01</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.02</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -256,10 +254,13 @@ function oppdaterRegisterMedNyHandbok() {
         if (kode === "MANGLER") continue; 
         
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
-        globalProsessRegister[kode].tittel = handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
-        globalProsessRegister[kode].enhet = handbokData && handbokData.enhet ? handbokData.enhet : "?";
-        globalProsessRegister[kode].url = handbokData && handbokData.url ? handbokData.url : null;
-        globalProsessRegister[kode].tekst = handbokData && handbokData.tekst ? handbokData.tekst : null;
+        
+        if (handbokData) {
+            globalProsessRegister[kode].tittel = handbokData.tittel;
+            globalProsessRegister[kode].enhet = handbokData.enhet;
+            globalProsessRegister[kode].url = handbokData.url;
+            globalProsessRegister[kode].tekst = handbokData.tekst;
+        }
     }
 }
 
@@ -379,7 +380,6 @@ $('scanBtn').addEventListener('click', async () => {
         propsArr.forEach(obj => {
           const flatProps = {};
           
-          // OPPDATERT: Robust innlesing av properties for å unngå overskriving med blanke verdier
           (obj.properties || []).forEach(pset => 
             (pset.properties || []).forEach(p => {
               const hasValidValue = flatProps[p.name] !== undefined && flatProps[p.name] !== null && String(flatProps[p.name]).trim() !== "";
@@ -393,7 +393,6 @@ $('scanBtn').addEventListener('click', async () => {
             })
           );
           
-          // Støtter små og store bokstaver i property-navnet, konverterer sikkert til string
           const prosesskodeRaw = flatProps["Prosesskode"] ?? flatProps["prosesskode"] ?? flatProps["ProsessKode"];
           let hasProsesskode = false;
           let prosesskode = "MANGLER";
@@ -412,10 +411,24 @@ $('scanBtn').addEventListener('click', async () => {
           const hpKode = hasProsesskode ? (prosesskode.includes('.') ? prosesskode.split('.')[0][0] : prosesskode[0]) : "X";
           
           let enhet = "?";
+          let tittel = "Ukjent prosesskode";
+          let erEgendefinert = false;
+
           if (hasProsesskode) {
-              enhet = handbokData && handbokData.enhet ? handbokData.enhet.toLowerCase() : "?";
+              if (handbokData) {
+                  enhet = handbokData.enhet ? handbokData.enhet.toLowerCase() : "?";
+                  tittel = handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
+              } else {
+                  enhet = flatProps["Enhet"] ?? "?";
+                  tittel = flatProps["Prosessnavn"] ?? flatProps["Beskrivelse"] ?? flatProps["Tittel"] ?? "Ukjent prosesskode";
+                  erEgendefinert = true;
+              }
           } else {
               enhet = "stk";
+          }
+
+          if (erEgendefinert) {
+              tittel += " (egendefinert)";
           }
 
           let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"];
@@ -455,8 +468,8 @@ $('scanBtn').addEventListener('click', async () => {
                 };
             } else {
                 globalProsessRegister[prosesskode] = {
-                  tittel: handbokData && handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode",
-                  enhet: handbokData && handbokData.enhet ? handbokData.enhet : "?",
+                  tittel: tittel,
+                  enhet: enhet,
                   hovedprosess: hpKode,
                   url: handbokData && handbokData.url ? handbokData.url : null,
                   tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
