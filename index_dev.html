@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.06</title>
+  <title>Mengdeuttak R761 v1.07</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -138,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.06</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.07</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -269,7 +269,7 @@ function oppdaterRegisterMedNyHandbok() {
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
         if (handbokData) {
             globalProsessRegister[kode].tittel = handbokData.tittel;
-            globalProsessRegister[kode].enhet = handbokData.enhet;
+            // Setter ikke enhet hardt her lenger, siden vi nå støtter overstyring på objektnivå
             globalProsessRegister[kode].url = handbokData.url;
             globalProsessRegister[kode].tekst = handbokData.tekst;
         }
@@ -447,44 +447,68 @@ $('scanBtn').addEventListener('click', async () => {
           const handbokData = hasProsesskode && svvHandbok && svvHandbok.prosesskoder ? svvHandbok.prosesskoder[prosesskode] : null;
           const hpKode = hasProsesskode ? (prosesskode.includes('.') ? prosesskode.split('.')[0][0] : prosesskode[0]) : "X";
           
-          let enhet = "?";
+          let standardEnhet = "?";
           let tittel = "Ukjent prosesskode";
           let erEgendefinert = false;
 
           if (hasProsesskode) {
               if (handbokData) {
-                  enhet = handbokData.enhet ? handbokData.enhet.toLowerCase() : "?";
+                  standardEnhet = handbokData.enhet ? handbokData.enhet.toLowerCase() : "?";
                   tittel = handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
               } else {
-                  enhet = flatProps["Enhet"] ?? "?";
+                  standardEnhet = flatProps["Enhet"] ? String(flatProps["Enhet"]).toLowerCase() : "?";
                   tittel = flatProps["Prosessnavn"] ?? flatProps["Beskrivelse"] ?? flatProps["Tittel"] ?? "Ukjent prosesskode";
                   erEgendefinert = true;
               }
           } else {
-              enhet = "stk";
+              standardEnhet = "stk";
           }
 
           if (erEgendefinert) {
               tittel += " (egendefinert)";
           }
 
-          let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"];
-          let manglerMengde = false;
+          // LOGIKK FOR OVERSTYRING AV ENHET
+          let objektEnhetRaw = flatProps["Enhet"] ?? flatProps["enhet"];
+          let objektEnhet = objektEnhetRaw ? String(objektEnhetRaw).toLowerCase() : null;
           
-          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-              if (enhet === "m3" || enhet === "m³") {
-                  rawMengde = flatProps["Volume"] ?? flatProps["NetVolume"];
-              } else if (enhet === "m2" || enhet === "m²") {
-                  rawMengde = flatProps["Area"] ?? flatProps["NetArea"] ?? flatProps["SurfaceArea"];
-              } else if (enhet === "m") {
-                  rawMengde = flatProps["Length"] ?? flatProps["NetLength"];
-              } else if (enhet === "stk") {
-                  rawMengde = 1; 
-              }
+          let aktivEnhet = standardEnhet;
+          let erOverstyrtEnhet = false;
 
+          if (hasProsesskode && objektEnhet && objektEnhet !== standardEnhet && objektEnhet !== "?") {
+              aktivEnhet = objektEnhet;
+              erOverstyrtEnhet = true;
+          }
+
+          // Inkluderer .trb spesifikke verdier som 'Area 3D' og 'Volume'
+          const tcGeoVol = flatProps["Volume"] ?? flatProps["NetVolume"];
+          const tcGeoArea = flatProps["Area"] ?? flatProps["Area 3D"] ?? flatProps["NetArea"] ?? flatProps["SurfaceArea"];
+          const tcGeoLen = flatProps["Length"] ?? flatProps["NetLength"];
+          const propMengde = flatProps["Mengde"] ?? flatProps["mengde"];
+
+          let rawMengde;
+
+          if (erOverstyrtEnhet) {
+              // Priority for overstyrt enhet: Sjekk TC geometri-verdier først
+              if (aktivEnhet === "m3" || aktivEnhet === "m³") rawMengde = tcGeoVol ?? propMengde;
+              else if (aktivEnhet === "m2" || aktivEnhet === "m²") rawMengde = tcGeoArea ?? propMengde;
+              else if (aktivEnhet === "m") rawMengde = tcGeoLen ?? propMengde;
+              else if (aktivEnhet === "stk") rawMengde = propMengde ?? 1;
+              else rawMengde = propMengde;
+          } else {
+              // Standard priority: Sjekk Mengde-egenskap først, fall tilbake til TC geometri
+              rawMengde = propMengde;
               if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-                  manglerMengde = true;
+                  if (aktivEnhet === "m3" || aktivEnhet === "m³") rawMengde = tcGeoVol;
+                  else if (aktivEnhet === "m2" || aktivEnhet === "m²") rawMengde = tcGeoArea;
+                  else if (aktivEnhet === "m") rawMengde = tcGeoLen;
+                  else if (aktivEnhet === "stk") rawMengde = 1;
               }
+          }
+
+          let manglerMengde = false;
+          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
+              manglerMengde = true;
           }
 
           let mengde = 0;
@@ -506,13 +530,16 @@ $('scanBtn').addEventListener('click', async () => {
             } else {
                 globalProsessRegister[prosesskode] = {
                   tittel: tittel,
-                  enhet: enhet,
+                  enhet: erOverstyrtEnhet ? String(objektEnhetRaw) : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
                   hovedprosess: hpKode,
                   url: handbokData && handbokData.url ? handbokData.url : null,
                   tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
                   objekter: [] 
                 };
             }
+          } else if (erOverstyrtEnhet) {
+              // Oppdaterer enheten i registeret dersom vi treffer et objekt som har overstyrt enheten
+              globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw);
           }
           
           const runtimeId = obj.id || obj.objectRuntimeId;
@@ -594,7 +621,6 @@ function tegnOppUI(register, filterMid) {
       let totalObjekterISted = 0;
 
       if (gruppeValg === 'STED') {
-          // OPPDATERT: Gjenbruker 'hoved-panel' stilen for stedene
           const stedDiv = document.createElement('div');
           stedDiv.className = 'hoved-panel';
           
@@ -786,6 +812,13 @@ function tegnOppUI(register, filterMid) {
                 if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
               }
               
+              const delmengderSeksjon = document.createElement('div');
+              delmengderSeksjon.className = 'delmengder-seksjon';
+              const delmengderTittel = document.createElement('div');
+              delmengderTittel.className = 'delmengder-tittel';
+              delmengderTittel.innerText = 'Delmengder per modell';
+              delmengderSeksjon.appendChild(delmengderTittel);
+
               const liste = document.createElement('div');
               liste.className = 'objekt-liste';
               
@@ -862,7 +895,8 @@ function tegnOppUI(register, filterMid) {
                   liste.appendChild(gruppeDiv);
               }
 
-              kropp.appendChild(liste);
+              delmengderSeksjon.appendChild(liste);
+              kropp.appendChild(delmengderSeksjon);
 
               header.onclick = async (e) => {
                 e.stopPropagation();
