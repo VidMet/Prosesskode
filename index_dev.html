@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.08</title>
+  <title>Mengdeuttak R761 v1.09</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -116,7 +116,7 @@
     .modell-objekter { display: none; flex-direction: column; }
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--surface); }
     .objekt-rad:hover { background: var(--bg); }
-    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--surface2); }
+    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--border); }
     .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
     .obj-mengde-feil { font-family: var(--mono); font-size: 11px; color: var(--red); font-weight: 700; }
 
@@ -138,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.08</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.09</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -227,23 +227,36 @@ async function connect(){
   }
 }
 
+async function fetchJSONMedFallback(versjon, kap, cacheBuster) {
+    // Prøver først direkte rot, deretter en eventuell undermappe
+    const paths = [
+        `Prosesskode_${versjon}_${kap}.json?v=${cacheBuster}`,
+        `json_filer/Prosesskode_${versjon}_${kap}.json?v=${cacheBuster}`
+    ];
+    
+    for (let path of paths) {
+        try {
+            const res = await fetch(path);
+            if (res.ok) {
+                const text = await res.text();
+                return JSON.parse(text); 
+            }
+        } catch (e) {
+            // Ignorerer feil og prøver neste path
+        }
+    }
+    return null;
+}
+
 async function lastJSONFil(versjon) {
   setStatus(`⏳ Laster inn R761 (${versjon})...`);
   try {
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    // FJERNET nocache-parameter for at lokale filer (file://) skal fungere
-    const promises = kapitler.map(kap => 
-      fetch(`Prosesskode_${versjon}_${kap}.json`)
-        .then(res => {
-          if (!res.ok) throw new Error(`Status ${res.status}`);
-          return res.json();
-        })
-        .catch(err => {
-          return null; 
-        })
-    );
+    const cacheBuster = new Date().getTime();
     
+    const promises = kapitler.map(kap => fetchJSONMedFallback(versjon, kap, cacheBuster));
     const resultater = await Promise.all(promises);
+    
     svvHandbok = { prosesskoder: {} };
     let totaltLastedeKoder = 0;
     
@@ -254,10 +267,14 @@ async function lastJSONFil(versjon) {
       }
     });
     
-    if (totaltLastedeKoder === 0) throw new Error(`Fant ingen filer for versjon ${versjon}.`);
+    if (totaltLastedeKoder === 0) {
+        throw new Error(`Fant ingen filer på serveren for versjon ${versjon}. Har du lastet dem opp riktig?`);
+    }
+    
     setStatus(`✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
   } catch (error) {
-    setStatus(`⚠️ Feil ved lasting av ${versjon}: ${error.message}`, 'warn');
+    console.error(error);
+    setStatus(`⚠️ Advarsel: Kunne ikke laste JSON. Går over til avlesning av BIM-egenskaper.`, 'warn');
     svvHandbok = { prosesskoder: {} };
   }
 }
@@ -268,7 +285,10 @@ function oppdaterRegisterMedNyHandbok() {
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
         if (handbokData) {
             globalProsessRegister[kode].tittel = handbokData.tittel;
-            // Enhet settes ikke her lenger for å ikke overstyre egendefinerte objekt-enheter
+            // Endrer kun enhet dersom objektet IKKE har overstyrt enheten selv
+            if (!globalProsessRegister[kode].erOverstyrtEnhet) {
+                globalProsessRegister[kode].enhet = handbokData.enhet;
+            }
             globalProsessRegister[kode].url = handbokData.url;
             globalProsessRegister[kode].tekst = handbokData.tekst;
         }
@@ -398,7 +418,7 @@ $('scanBtn').addEventListener('click', async () => {
         propsArr.forEach(obj => {
           const flatProps = {};
           
-          // REVERSERT LOGIKK: Alltid la gyldige verdier overskrive hverandre (sikrer at vi ikke fanger blanke felter)
+          // EGENSKAPS-UTTREKK: Tvinger inn alt som har en verdi for å unngå blanke overskrivinger
           (obj.properties || []).forEach(pset => 
             (pset.properties || []).forEach(p => {
                if (p.value !== undefined && p.value !== null && String(p.value).trim() !== "") {
@@ -446,6 +466,7 @@ $('scanBtn').addEventListener('click', async () => {
           let tittel = "Ukjent prosesskode";
           let erEgendefinert = false;
 
+          // Henter standardinfo enten fra Håndbok (JSON) eller fra BIM-objektet
           if (hasProsesskode) {
               if (handbokData) {
                   standardEnhet = handbokData.enhet ? String(handbokData.enhet).toLowerCase().trim() : "?";
@@ -474,26 +495,38 @@ $('scanBtn').addEventListener('click', async () => {
               erOverstyrtEnhet = true;
           }
 
+          // HENTER GEOMETRI FRA TRIMBLE CONNECT
           const tcGeoVol = flatProps["Volume"] ?? flatProps["NetVolume"];
           const tcGeoArea = flatProps["Area"] ?? flatProps["Area 3D"] ?? flatProps["NetArea"] ?? flatProps["SurfaceArea"];
           const tcGeoLen = flatProps["Length"] ?? flatProps["NetLength"];
           const propMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
 
-          let rawMengde;
+          let rawMengde = propMengde;
           
-          if (erOverstyrtEnhet) {
-              if (aktivEnhet === "m3" || aktivEnhet === "m³") rawMengde = tcGeoVol ?? propMengde;
-              else if (aktivEnhet === "m2" || aktivEnhet === "m²") rawMengde = tcGeoArea ?? propMengde;
-              else if (aktivEnhet === "m") rawMengde = tcGeoLen ?? propMengde;
-              else if (aktivEnhet === "stk") rawMengde = propMengde ?? 1;
-              else rawMengde = propMengde;
-          } else {
-              rawMengde = propMengde;
-              if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-                  if (aktivEnhet === "m3" || aktivEnhet === "m³") rawMengde = tcGeoVol;
-                  else if (aktivEnhet === "m2" || aktivEnhet === "m²") rawMengde = tcGeoArea;
-                  else if (aktivEnhet === "m") rawMengde = tcGeoLen;
-                  else if (aktivEnhet === "stk") rawMengde = 1;
+          // INTELLIGENT FALLBACK: Hvis Mengde er blank, søk i geometrien basert på Enhet
+          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
+              if (aktivEnhet === "m3" || aktivEnhet === "m³") {
+                  rawMengde = tcGeoVol;
+              } else if (aktivEnhet === "m2" || aktivEnhet === "m²") {
+                  rawMengde = tcGeoArea;
+              } else if (aktivEnhet === "m") {
+                  rawMengde = tcGeoLen;
+              } else if (aktivEnhet === "stk") {
+                  rawMengde = 1; 
+              } else {
+                  // SIKKERHETSVENTIL: Vi kjenner ikke enheten. Gjett basert på hva som finnes!
+                  rawMengde = tcGeoVol ?? tcGeoArea ?? tcGeoLen;
+                  if (rawMengde !== undefined && rawMengde !== null) {
+                      // Oppdaterer enheten visuelt slik at du ser hva den gjettet
+                      if (tcGeoVol) aktivEnhet = "m3";
+                      else if (tcGeoArea) aktivEnhet = "m2";
+                      else if (tcGeoLen) aktivEnhet = "m";
+                      erOverstyrtEnhet = true; 
+                  } else {
+                      rawMengde = 1;
+                      aktivEnhet = "stk";
+                      erOverstyrtEnhet = true;
+                  }
               }
           }
 
@@ -516,20 +549,23 @@ $('scanBtn').addEventListener('click', async () => {
                     hovedprosess: "X",
                     url: null,
                     tekst: null,
-                    objekter: []
+                    objekter: [],
+                    erOverstyrtEnhet: false
                 };
             } else {
                 globalProsessRegister[prosesskode] = {
                   tittel: tittel,
-                  enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
+                  enhet: erOverstyrtEnhet ? aktivEnhet : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
                   hovedprosess: hpKode,
                   url: handbokData && handbokData.url ? handbokData.url : null,
                   tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
-                  objekter: [] 
+                  objekter: [],
+                  erOverstyrtEnhet: erOverstyrtEnhet
                 };
             }
-          } else if (erOverstyrtEnhet) {
-              globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw).trim();
+          } else if (erOverstyrtEnhet && !globalProsessRegister[prosesskode].erOverstyrtEnhet) {
+              globalProsessRegister[prosesskode].enhet = aktivEnhet;
+              globalProsessRegister[prosesskode].erOverstyrtEnhet = true;
           }
           
           const runtimeId = obj.id || obj.objectRuntimeId;
