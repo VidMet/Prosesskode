@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.07</title>
+  <title>Mengdeuttak R761 v1.08</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -116,7 +116,7 @@
     .modell-objekter { display: none; flex-direction: column; }
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--surface); }
     .objekt-rad:hover { background: var(--bg); }
-    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--border); }
+    .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--surface2); }
     .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
     .obj-mengde-feil { font-family: var(--mono); font-size: 11px; color: var(--red); font-weight: 700; }
 
@@ -138,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.07</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.08</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -231,10 +231,9 @@ async function lastJSONFil(versjon) {
   setStatus(`⏳ Laster inn R761 (${versjon})...`);
   try {
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    const cacheBuster = new Date().getTime();
-    
+    // FJERNET nocache-parameter for at lokale filer (file://) skal fungere
     const promises = kapitler.map(kap => 
-      fetch(`Prosesskode_${versjon}_${kap}.json?nocache=${cacheBuster}`)
+      fetch(`Prosesskode_${versjon}_${kap}.json`)
         .then(res => {
           if (!res.ok) throw new Error(`Status ${res.status}`);
           return res.json();
@@ -269,7 +268,7 @@ function oppdaterRegisterMedNyHandbok() {
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
         if (handbokData) {
             globalProsessRegister[kode].tittel = handbokData.tittel;
-            // Setter ikke enhet hardt her lenger, siden vi nå støtter overstyring på objektnivå
+            // Enhet settes ikke her lenger for å ikke overstyre egendefinerte objekt-enheter
             globalProsessRegister[kode].url = handbokData.url;
             globalProsessRegister[kode].tekst = handbokData.tekst;
         }
@@ -399,16 +398,12 @@ $('scanBtn').addEventListener('click', async () => {
         propsArr.forEach(obj => {
           const flatProps = {};
           
+          // REVERSERT LOGIKK: Alltid la gyldige verdier overskrive hverandre (sikrer at vi ikke fanger blanke felter)
           (obj.properties || []).forEach(pset => 
             (pset.properties || []).forEach(p => {
-              const hasValidValue = flatProps[p.name] !== undefined && flatProps[p.name] !== null && String(flatProps[p.name]).trim() !== "";
-              const newValueIsValid = p.value !== undefined && p.value !== null && String(p.value).trim() !== "";
-              
-              if (!hasValidValue && newValueIsValid) {
-                  flatProps[p.name] = p.value;
-              } else if (!hasValidValue && !newValueIsValid) {
-                  flatProps[p.name] = p.value;
-              }
+               if (p.value !== undefined && p.value !== null && String(p.value).trim() !== "") {
+                   flatProps[p.name] = p.value;
+               }
             })
           );
 
@@ -453,10 +448,10 @@ $('scanBtn').addEventListener('click', async () => {
 
           if (hasProsesskode) {
               if (handbokData) {
-                  standardEnhet = handbokData.enhet ? handbokData.enhet.toLowerCase() : "?";
+                  standardEnhet = handbokData.enhet ? String(handbokData.enhet).toLowerCase().trim() : "?";
                   tittel = handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
               } else {
-                  standardEnhet = flatProps["Enhet"] ? String(flatProps["Enhet"]).toLowerCase() : "?";
+                  standardEnhet = flatProps["Enhet"] ? String(flatProps["Enhet"]).toLowerCase().trim() : "?";
                   tittel = flatProps["Prosessnavn"] ?? flatProps["Beskrivelse"] ?? flatProps["Tittel"] ?? "Ukjent prosesskode";
                   erEgendefinert = true;
               }
@@ -468,9 +463,8 @@ $('scanBtn').addEventListener('click', async () => {
               tittel += " (egendefinert)";
           }
 
-          // LOGIKK FOR OVERSTYRING AV ENHET
-          let objektEnhetRaw = flatProps["Enhet"] ?? flatProps["enhet"];
-          let objektEnhet = objektEnhetRaw ? String(objektEnhetRaw).toLowerCase() : null;
+          let objektEnhetRaw = flatProps["Enhet"] ?? flatProps["enhet"] ?? flatProps["ENHET"];
+          let objektEnhet = objektEnhetRaw ? String(objektEnhetRaw).toLowerCase().trim() : null;
           
           let aktivEnhet = standardEnhet;
           let erOverstyrtEnhet = false;
@@ -480,23 +474,20 @@ $('scanBtn').addEventListener('click', async () => {
               erOverstyrtEnhet = true;
           }
 
-          // Inkluderer .trb spesifikke verdier som 'Area 3D' og 'Volume'
           const tcGeoVol = flatProps["Volume"] ?? flatProps["NetVolume"];
           const tcGeoArea = flatProps["Area"] ?? flatProps["Area 3D"] ?? flatProps["NetArea"] ?? flatProps["SurfaceArea"];
           const tcGeoLen = flatProps["Length"] ?? flatProps["NetLength"];
-          const propMengde = flatProps["Mengde"] ?? flatProps["mengde"];
+          const propMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
 
           let rawMengde;
-
+          
           if (erOverstyrtEnhet) {
-              // Priority for overstyrt enhet: Sjekk TC geometri-verdier først
               if (aktivEnhet === "m3" || aktivEnhet === "m³") rawMengde = tcGeoVol ?? propMengde;
               else if (aktivEnhet === "m2" || aktivEnhet === "m²") rawMengde = tcGeoArea ?? propMengde;
               else if (aktivEnhet === "m") rawMengde = tcGeoLen ?? propMengde;
               else if (aktivEnhet === "stk") rawMengde = propMengde ?? 1;
               else rawMengde = propMengde;
           } else {
-              // Standard priority: Sjekk Mengde-egenskap først, fall tilbake til TC geometri
               rawMengde = propMengde;
               if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
                   if (aktivEnhet === "m3" || aktivEnhet === "m³") rawMengde = tcGeoVol;
@@ -530,7 +521,7 @@ $('scanBtn').addEventListener('click', async () => {
             } else {
                 globalProsessRegister[prosesskode] = {
                   tittel: tittel,
-                  enhet: erOverstyrtEnhet ? String(objektEnhetRaw) : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
+                  enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
                   hovedprosess: hpKode,
                   url: handbokData && handbokData.url ? handbokData.url : null,
                   tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
@@ -538,8 +529,7 @@ $('scanBtn').addEventListener('click', async () => {
                 };
             }
           } else if (erOverstyrtEnhet) {
-              // Oppdaterer enheten i registeret dersom vi treffer et objekt som har overstyrt enheten
-              globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw);
+              globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw).trim();
           }
           
           const runtimeId = obj.id || obj.objectRuntimeId;
