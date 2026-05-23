@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.04</title>
+  <title>Mengdeuttak R761 v1.05</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -45,7 +45,7 @@
       padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap; 
     }
 
-    .header-title { flex: 1; min-width: 200px; }
+    .header-title { flex: 1; min-width: 150px; }
     .header-title h1 { font-size: 16px; font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 8px; }
     .header-title h1 .version { font-family: var(--mono); font-size: 11px; font-weight: normal; color: var(--muted); background: var(--bg); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); }
     .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 2px; }
@@ -75,12 +75,19 @@
 
     main { flex: 1 1 auto; overflow-y: auto; padding: 16px; height: 0; }
 
-    /* --- STILER FOR VEILEDNINGS-BOKSEN --- */
     .guide-box { margin: 20px auto; max-width: 480px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
     .guide-box h3 { font-size: 15px; font-weight: 700; color: var(--blue); margin-bottom: 16px; }
     .guide-box ol { margin: 0; padding-left: 20px; color: var(--ink); font-size: 13px; line-height: 1.6; }
     .guide-box li { margin-bottom: 8px; padding-left: 4px; }
     .guide-box li:last-child { margin-bottom: 0; }
+
+    /* --- STILER FOR DET NYE STEDS-NIVÅET --- */
+    .sted-panel { margin-bottom: 24px; border: 2px solid var(--blue-dim); border-radius: 8px; overflow: hidden; }
+    .sted-header { background: var(--blue-dim); padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
+    .sted-header:hover { opacity: 0.9; }
+    .sted-tittel { font-weight: 800; font-size: 15px; color: var(--blue); }
+    .sted-info { font-family: var(--mono); font-size: 11px; color: var(--blue); opacity: 0.8; }
+    .sted-kropp { display: none; flex-direction: column; background: var(--bg); padding: 16px; }
 
     .hoved-panel { margin-bottom: 16px; }
     .hoved-header { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
@@ -104,9 +111,6 @@
     .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
     .tekst-blokk p:last-child { margin-bottom: 0; }
     .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
-    
-    .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; background: var(--bg); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
-    .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
     
     .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid var(--border); }
     .modell-gruppe { display: flex; flex-direction: column; }
@@ -139,7 +143,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.04</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.05</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -148,6 +152,13 @@
 </header>
 
 <div id="filterBar">
+  <div class="filter-group">
+    <label for="groupingFilter">Gruppering:</label>
+    <select id="groupingFilter" disabled>
+      <option value="PROSESS">Etter Prosess</option>
+      <option value="STED">Etter Sted</option>
+    </select>
+  </div>
   <div class="filter-group">
     <label for="versionFilter">Håndbok:</label>
     <select id="versionFilter" disabled>
@@ -172,9 +183,10 @@
       <li>Last ønskede modeller inn i visningen, og la alt laste seg ferdig.</li>
       <li>Velg i nedtrekksmenyen hvilken håndbok det skal sjekkes mot.</li>
       <li>Trykk på <strong>Skann Modell</strong> og la den skanne ferdig.</li>
+      <li>Velg om du vil gruppere mengdene etter prosess eller sted.</li>
       <li>Velg i nedtrekksmenyen hvis du vil se på enkeltmodeller.</li>
       <li>Klikk deg innover i prosesstreet for å markere og se på enkeltobjekter.</li>
-      <li>Eksporter eventuelt ut et excel-ark.</li>
+      <li>Eksporter eventuelt ut et excel-ark med alle mengdene.</li>
     </ol>
   </div>
 </main>
@@ -200,12 +212,8 @@ const hovedprosessNavn = {
 };
 
 const tekstKoder = {
-  "a": "a) Omfang",
-  "b": "b) Materialer",
-  "c": "c) Utførelse",
-  "d": "d) Toleranser",
-  "e": "e) Prøving, kontroll",
-  "x": "x) Mengderegler"
+  "a": "a) Omfang", "b": "b) Materialer", "c": "c) Utførelse",
+  "d": "d) Toleranser", "e": "e) Prøving, kontroll", "x": "x) Mengderegler"
 };
 
 const $ = id => document.getElementById(id);
@@ -237,13 +245,11 @@ async function lastJSONFil(versjon) {
           return res.json();
         })
         .catch(err => {
-          console.warn(`Hoppet over kapittel ${kap} for ${versjon}`);
           return null; 
         })
     );
     
     const resultater = await Promise.all(promises);
-    
     svvHandbok = { prosesskoder: {} };
     let totaltLastedeKoder = 0;
     
@@ -254,13 +260,9 @@ async function lastJSONFil(versjon) {
       }
     });
     
-    if (totaltLastedeKoder === 0) {
-      throw new Error(`Fant ingen filer for versjon ${versjon}.`);
-    }
-    
+    if (totaltLastedeKoder === 0) throw new Error(`Fant ingen filer for versjon ${versjon}.`);
     setStatus(`✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
   } catch (error) {
-    console.error("Databasefeil:", error);
     setStatus(`⚠️ Feil ved lasting av ${versjon}: ${error.message}`, 'warn');
     svvHandbok = { prosesskoder: {} };
   }
@@ -269,9 +271,7 @@ async function lastJSONFil(versjon) {
 function oppdaterRegisterMedNyHandbok() {
     for (let kode in globalProsessRegister) {
         if (kode === "MANGLER") continue; 
-        
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
-        
         if (handbokData) {
             globalProsessRegister[kode].tittel = handbokData.tittel;
             globalProsessRegister[kode].enhet = handbokData.enhet;
@@ -295,13 +295,18 @@ $('modelFilter').addEventListener('change', (e) => {
     tegnOppUI(globalProsessRegister, e.target.value);
 });
 
+$('groupingFilter').addEventListener('change', (e) => {
+    tegnOppUI(globalProsessRegister, $('modelFilter').value);
+});
+
 $('exportBtn').addEventListener('click', () => {
   if (Object.keys(globalProsessRegister).length === 0) return;
   
   setStatus('⏳ Genererer Excel-rapport...');
   
   let csvInnhold = "\uFEFF"; 
-  csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Modell;Objekttype;Mengde\r\n";
+  // OPPDATERT: Inkluderer 'Sted' som kolonne
+  csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Sted;Modell;Objekttype;Mengde\r\n";
   
   const koder = Object.keys(globalProsessRegister).sort();
   koder.forEach(kode => {
@@ -313,10 +318,11 @@ $('exportBtn').addEventListener('click', () => {
       data.objekter.forEach(obj => {
           const tittelRenset = (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
           const modellRenset = (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
+          const stedRenset = (obj.sted || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
           const navnRenset = (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
           const mengdeFormatert = obj.mengde.toString().replace('.', ',');
           
-          csvInnhold += `${hpVisning};${kodeVisning};${tittelRenset};${data.enhet};${modellRenset};${navnRenset};${mengdeFormatert}\r\n`;
+          csvInnhold += `${hpVisning};${kodeVisning};${tittelRenset};${data.enhet};${stedRenset};${modellRenset};${navnRenset};${mengdeFormatert}\r\n`;
       });
   });
   
@@ -342,6 +348,7 @@ $('scanBtn').addEventListener('click', async () => {
   $('scanBtn').disabled = true;
   $('modelFilter').disabled = true;
   $('versionFilter').disabled = true;
+  $('groupingFilter').disabled = true;
   $('exportBtn').disabled = true; 
   $('mainContent').innerHTML = '';
   globalProsessRegister = {};
@@ -376,7 +383,6 @@ $('scanBtn').addEventListener('click', async () => {
 
     const CHUNK = 200;
     let totalObjects = 0;
-
     const strukturKlasserRegex = /^(ifcproject|ifcsite|ifcbuilding|ifcstorey|ifcbuildingstorey)$/i;
 
     for (const model of models) {
@@ -413,12 +419,8 @@ $('scanBtn').addEventListener('click', async () => {
           );
 
           const sjekkVerdier = [
-              obj.class, 
-              flatProps["IfcClass"], 
-              flatProps["IfcEntity"], 
-              flatProps["Entity"], 
-              flatProps["Type"], 
-              flatProps["Objekttype"]
+              obj.class, flatProps["IfcClass"], flatProps["IfcEntity"], 
+              flatProps["Entity"], flatProps["Type"], flatProps["Objekttype"]
           ];
           
           let skalEkskluderes = sjekkVerdier.some(val => val && strukturKlasserRegex.test(String(val).trim()));
@@ -426,9 +428,7 @@ $('scanBtn').addEventListener('click', async () => {
               skalEkskluderes = true;
           }
 
-          if (skalEkskluderes) {
-              return; 
-          }
+          if (skalEkskluderes) return; 
           
           const prosesskodeRaw = flatProps["Prosesskode"] ?? flatProps["prosesskode"] ?? flatProps["ProsessKode"];
           let hasProsesskode = false;
@@ -442,6 +442,13 @@ $('scanBtn').addEventListener('click', async () => {
           let objektNavn = flatProps["Objekttype"];
           if (!objektNavn || String(objektNavn).trim() === "") {
             objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
+          }
+
+          // NYTT: Henter steds-informasjon fra objektet
+          const rawSted = flatProps["Sted"] ?? flatProps["sted"] ?? flatProps["STED"] ?? flatProps["Location"] ?? flatProps["LocationName"];
+          let stedStr = "Udefinert sted";
+          if (rawSted !== undefined && rawSted !== null && String(rawSted).trim() !== "") {
+              stedStr = String(rawSted).trim();
           }
 
           const handbokData = hasProsesskode && svvHandbok && svvHandbok.prosesskoder ? svvHandbok.prosesskoder[prosesskode] : null;
@@ -522,6 +529,7 @@ $('scanBtn').addEventListener('click', async () => {
               manglerMengde: manglerMengde,
               modelId: mid, 
               modelNavn: modelName,
+              sted: stedStr,  // Lagrer stedsnavnet på objektet
               runtimeId: runtimeId 
           });
         });
@@ -535,6 +543,7 @@ $('scanBtn').addEventListener('click', async () => {
     $('scanBtn').disabled = false;
     $('modelFilter').disabled = false;
     $('versionFilter').disabled = false;
+    $('groupingFilter').disabled = false;
     $('exportBtn').disabled = false; 
 
   } catch (error) {
@@ -567,265 +576,337 @@ function tegnOppUI(register, filterMid) {
       return;
   }
 
-  const grupperteProsesser = {};
-  let totaleViste = 0;
-
-  koder.forEach(kode => {
-      const data = register[kode];
-      const filtrerteObjekter = data.objekter.filter(obj => filterMid === 'ALL' || obj.modelId === filterMid);
-      
-      if (filtrerteObjekter.length === 0) return;
-      
-      totaleViste++;
-      const hpKode = data.hovedprosess || kode.charAt(0);
-      
-      if (!grupperteProsesser[hpKode]) {
-          grupperteProsesser[hpKode] = {
-              koder: [],
-              totaltObjekter: 0,
-              masterMarkeringMap: {}
-          };
-      }
-      
-      grupperteProsesser[hpKode].koder.push(kode);
-      grupperteProsesser[hpKode].totaltObjekter += filtrerteObjekter.length;
-      
-      filtrerteObjekter.forEach(obj => {
-          if (!grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId]) {
-              grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId] = [];
-          }
-          grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
+  const gruppeValg = $('groupingFilter').value; // 'PROSESS' eller 'STED'
+  
+  // Finner alle unike steder hvis brukeren vil gruppere på sted
+  let steder = ["Alle"];
+  if (gruppeValg === 'STED') {
+      const stedSet = new Set();
+      koder.forEach(kode => {
+          register[kode].objekter.forEach(obj => {
+              if (filterMid === 'ALL' || obj.modelId === filterMid) {
+                  stedSet.add(obj.sted);
+              }
+          });
       });
-  });
-
-  if (totaleViste === 0) {
-      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
-      return;
+      steder = Array.from(stedSet).sort();
   }
 
+  let totaleVisteTotalt = 0;
   const wrapper = document.createElement('div');
   wrapper.className = 'anim';
 
-  const sorterteHovedkoder = Object.keys(grupperteProsesser).sort();
+  // Løkke som bygger opp treet (enten 1 gang for prosess, eller N ganger for hvert sted)
+  steder.forEach(stedNavn => {
+      let stedKropp = wrapper;
+      let stedMasterMarkering = [];
+      let totalObjekterISted = 0;
 
-  sorterteHovedkoder.forEach(hpKode => {
-      const hpData = grupperteProsesser[hpKode];
-      const tittelNavn = hovedprosessNavn[hpKode] || "Annet";
-      
-      const hpDiv = document.createElement('div');
-      hpDiv.className = 'hoved-panel';
-      
-      const hpHeader = document.createElement('div');
-      hpHeader.className = 'hoved-header';
-      
-      const visningsOverskrift = hpKode === "X" ? `▶ ${tittelNavn}` : `▶ ${hpKode} - ${tittelNavn}`;
-      
-      hpHeader.innerHTML = `
-          <div class="hoved-tittel">${visningsOverskrift}</div>
-          <div class="hoved-info">${hpData.totaltObjekter} objekter</div>
-      `;
-      
-      const hpKropp = document.createElement('div');
-      hpKropp.className = 'hoved-kropp';
-      
-      const hpMasterMarkering = Object.keys(hpData.masterMarkeringMap).map(mid => ({ 
-          modelId: mid, 
-          objectRuntimeIds: hpData.masterMarkeringMap[mid] 
-      }));
-
-      hpHeader.onclick = async (e) => {
-          const isOpen = hpKropp.style.display === 'flex';
-          hpKropp.style.display = isOpen ? 'none' : 'flex';
-          const pil = isOpen ? '▼' : '▶';
-          const oppdatertOverskrift = hpKode === "X" ? `${pil} ${tittelNavn}` : `${pil} ${hpKode} - ${tittelNavn}`;
-          hpHeader.querySelector('.hoved-tittel').innerText = oppdatertOverskrift;
+      // Tegn det store "Steds-panelet" hvis vi grupperer på sted
+      if (gruppeValg === 'STED') {
+          const stedDiv = document.createElement('div');
+          stedDiv.className = 'sted-panel';
           
-          try {
-              if (API.viewer.setSelection) {
-                  await API.viewer.setSelection({ modelObjectIds: hpMasterMarkering }, 'set');
-              }
-          } catch(err) {}
-      };
+          const stedHeader = document.createElement('div');
+          stedHeader.className = 'sted-header';
+          stedHeader.innerHTML = `
+              <div class="sted-tittel">▶ 📍 Sted: ${stedNavn}</div>
+              <div class="sted-info sted-info-count">...</div>
+          `;
+          
+          stedKropp = document.createElement('div');
+          stedKropp.className = 'sted-kropp';
+          
+          stedHeader.onclick = async () => {
+              const isOpen = stedKropp.style.display === 'flex';
+              stedKropp.style.display = isOpen ? 'none' : 'flex';
+              stedHeader.querySelector('.sted-tittel').innerText = `${isOpen ? '▶' : '▼'} 📍 Sted: ${stedNavn}`;
+              try {
+                  if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: stedMasterMarkering }, 'set');
+              } catch(err) {}
+          };
 
-      hpData.koder.forEach(kode => {
+          stedDiv.appendChild(stedHeader);
+          stedDiv.appendChild(stedKropp);
+          wrapper.appendChild(stedDiv);
+      }
+
+      const grupperteProsesser = {};
+
+      koder.forEach(kode => {
           const data = register[kode];
-          const filtrerteObjekter = data.objekter.filter(obj => filterMid === 'ALL' || obj.modelId === filterMid);
-          const totalMengde = filtrerteObjekter.reduce((sum, obj) => sum + obj.mengde, 0);
-          
-          const masterMarkeringMap = {};
-          filtrerteObjekter.forEach(obj => {
-              if (!masterMarkeringMap[obj.modelId]) masterMarkeringMap[obj.modelId] = [];
-              masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
+          // Filtrer objektene slik at de stemmer med både valgt modell og evt. valgt sted
+          const filtrerteObjekter = data.objekter.filter(obj => {
+              const matchModell = (filterMid === 'ALL' || obj.modelId === filterMid);
+              const matchSted = (gruppeValg === 'PROSESS' || obj.sted === stedNavn);
+              return matchModell && matchSted;
           });
-          const masterMarkering = Object.keys(masterMarkeringMap).map(mid => ({ modelId: mid, objectRuntimeIds: masterMarkeringMap[mid] }));
-
-          const div = document.createElement('div');
-          div.className = 'prosess-panel';
           
-          const header = document.createElement('div');
-          header.className = 'prosess-header';
+          if (filtrerteObjekter.length === 0) return;
           
-          const tittelDiv = document.createElement('div');
-          tittelDiv.className = 'prosess-tittel';
-          const kodePrefiks = kode === "MANGLER" ? "" : `${kode} - `;
-          tittelDiv.innerText = `▶ ${kodePrefiks}${data.tittel}`;
-
-          if (data.url) {
-            const lenke = document.createElement('a');
-            lenke.href = data.url;
-            lenke.target = '_blank';
-            lenke.innerText = ' ↗ Håndbok';
-            lenke.style.cssText = 'font-size:10px; color:var(--muted); margin-left:12px; text-decoration:none; font-family:var(--mono);';
-            lenke.onmouseover = () => lenke.style.color = 'var(--blue)';
-            lenke.onmouseout = () => lenke.style.color = 'var(--muted)';
-            lenke.onclick = (e) => e.stopPropagation();
-            tittelDiv.appendChild(lenke);
+          totaleVisteTotalt++;
+          const hpKode = data.hovedprosess || kode.charAt(0);
+          
+          if (!grupperteProsesser[hpKode]) {
+              grupperteProsesser[hpKode] = { koder: [], totaltObjekter: 0, masterMarkeringMap: {} };
           }
           
-          const mengdeDiv = document.createElement('div');
-          mengdeDiv.className = 'prosess-mengde';
-          mengdeDiv.innerText = `${totalMengde.toFixed(2)} ${data.enhet}`;
-          
-          header.appendChild(tittelDiv);
-          header.appendChild(mengdeDiv);
-          
-          const kropp = document.createElement('div');
-          kropp.className = 'panel-kropp';
-          
-          if (data.tekst) {
-            const tekstDiv = document.createElement('div');
-            tekstDiv.className = 'prosess-beskrivelse';
-            
-            ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
-              if (data.tekst[bokstav]) {
-                const blokk = document.createElement('div');
-                blokk.className = 'tekst-blokk';
-                let innholdHtml = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span>`;
-                if (Array.isArray(data.tekst[bokstav])) {
-                  innholdHtml += data.tekst[bokstav].map(avsnitt => `<p>${avsnitt}</p>`).join('');
-                } else {
-                  innholdHtml += `<p>${data.tekst[bokstav]}</p>`;
-                }
-                blokk.innerHTML = innholdHtml;
-                tekstDiv.appendChild(blokk);
-              }
-            });
-            if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
+          if (!grupperteProsesser[hpKode].koder.includes(kode)) {
+              grupperteProsesser[hpKode].koder.push(kode);
           }
-          
-          const delmengderSeksjon = document.createElement('div');
-          delmengderSeksjon.className = 'delmengder-seksjon';
-          const delmengderTittel = document.createElement('div');
-          delmengderTittel.className = 'delmengder-tittel';
-          delmengderTittel.innerText = 'Delmengder per modell';
-          delmengderSeksjon.appendChild(delmengderTittel);
 
-          const liste = document.createElement('div');
-          liste.className = 'objekt-liste';
+          grupperteProsesser[hpKode].totaltObjekter += filtrerteObjekter.length;
+          totalObjekterISted += filtrerteObjekter.length;
           
-          const modellGrupper = {};
           filtrerteObjekter.forEach(obj => {
-              if (!modellGrupper[obj.modelNavn]) {
-                  modellGrupper[obj.modelNavn] = { modelId: obj.modelId, objekter: [], sum: 0, markeringIds: [] };
+              if (!grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId]) {
+                  grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId] = [];
               }
-              modellGrupper[obj.modelNavn].objekter.push(obj);
-              modellGrupper[obj.modelNavn].sum += obj.mengde;
-              modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
+              grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
+
+              if (gruppeValg === 'STED') {
+                  let existing = stedMasterMarkering.find(m => m.modelId === obj.modelId);
+                  if (!existing) {
+                      existing = { modelId: obj.modelId, objectRuntimeIds: [] };
+                      stedMasterMarkering.push(existing);
+                  }
+                  existing.objectRuntimeIds.push(Number(obj.runtimeId));
+              }
           });
+      });
 
-          const sorterteGrupper = Object.entries(modellGrupper).sort((a, b) => a[0].localeCompare(b[0]));
+      // Skjul tomme sted-paneler og oppdater telleren
+      if (gruppeValg === 'STED') {
+          stedKropp.parentElement.querySelector('.sted-info-count').innerText = `${totalObjekterISted} objekter`;
+          if (totalObjekterISted === 0) {
+              stedKropp.parentElement.style.display = 'none';
+          }
+      }
 
-          for (const [navn, gruppeData] of sorterteGrupper) {
-              const gruppeDiv = document.createElement('div');
-              gruppeDiv.className = 'modell-gruppe';
+      const sorterteHovedkoder = Object.keys(grupperteProsesser).sort();
 
-              const modHeader = document.createElement('div');
-              modHeader.className = 'modell-overskrift';
-              modHeader.innerHTML = `<span title="${navn}">▶ 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
+      sorterteHovedkoder.forEach(hpKode => {
+          const hpData = grupperteProsesser[hpKode];
+          const tittelNavn = hovedprosessNavn[hpKode] || "Annet";
+          
+          const hpDiv = document.createElement('div');
+          hpDiv.className = 'hoved-panel';
+          
+          const hpHeader = document.createElement('div');
+          hpHeader.className = 'hoved-header';
+          
+          const visningsOverskrift = hpKode === "X" ? `▶ ${tittelNavn}` : `▶ ${hpKode} - ${tittelNavn}`;
+          
+          hpHeader.innerHTML = `
+              <div class="hoved-tittel">${visningsOverskrift}</div>
+              <div class="hoved-info">${hpData.totaltObjekter} objekter</div>
+          `;
+          
+          const hpKropp = document.createElement('div');
+          hpKropp.className = 'hoved-kropp';
+          
+          const hpMasterMarkering = Object.keys(hpData.masterMarkeringMap).map(mid => ({ 
+              modelId: mid, 
+              objectRuntimeIds: hpData.masterMarkeringMap[mid] 
+          }));
+
+          hpHeader.onclick = async (e) => {
+              const isOpen = hpKropp.style.display === 'flex';
+              hpKropp.style.display = isOpen ? 'none' : 'flex';
+              const pil = isOpen ? '▼' : '▶';
+              const oppdatertOverskrift = hpKode === "X" ? `${pil} ${tittelNavn}` : `${pil} ${hpKode} - ${tittelNavn}`;
+              hpHeader.querySelector('.hoved-tittel').innerText = oppdatertOverskrift;
               
-              const objekterContainer = document.createElement('div');
-              objekterContainer.className = 'modell-objekter'; 
+              try {
+                  if (API.viewer.setSelection) {
+                      await API.viewer.setSelection({ modelObjectIds: hpMasterMarkering }, 'set');
+                  }
+              } catch(err) {}
+          };
+
+          hpData.koder.forEach(kode => {
+              const data = register[kode];
+              const filtrerteObjekter = data.objekter.filter(obj => {
+                  const matchModell = (filterMid === 'ALL' || obj.modelId === filterMid);
+                  const matchSted = (gruppeValg === 'PROSESS' || obj.sted === stedNavn);
+                  return matchModell && matchSted;
+              });
+
+              if (filtrerteObjekter.length === 0) return;
+
+              const totalMengde = filtrerteObjekter.reduce((sum, obj) => sum + obj.mengde, 0);
               
-              modHeader.onclick = async (e) => {
-                  e.stopPropagation();
-                  const isClosed = objekterContainer.style.display === 'none' || objekterContainer.style.display === '';
-                  objekterContainer.style.display = isClosed ? 'flex' : 'none';
-                  modHeader.innerHTML = `<span title="${navn}">${isClosed ? '▼' : '▶'} 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
+              const masterMarkeringMap = {};
+              filtrerteObjekter.forEach(obj => {
+                  if (!masterMarkeringMap[obj.modelId]) masterMarkeringMap[obj.modelId] = [];
+                  masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
+              });
+              const masterMarkering = Object.keys(masterMarkeringMap).map(mid => ({ modelId: mid, objectRuntimeIds: masterMarkeringMap[mid] }));
+
+              const div = document.createElement('div');
+              div.className = 'prosess-panel';
+              
+              const header = document.createElement('div');
+              header.className = 'prosess-header';
+              
+              const tittelDiv = document.createElement('div');
+              tittelDiv.className = 'prosess-tittel';
+              const kodePrefiks = kode === "MANGLER" ? "" : `${kode} - `;
+              tittelDiv.innerText = `▶ ${kodePrefiks}${data.tittel}`;
+
+              if (data.url) {
+                const lenke = document.createElement('a');
+                lenke.href = data.url;
+                lenke.target = '_blank';
+                lenke.innerText = ' ↗ Håndbok';
+                lenke.style.cssText = 'font-size:10px; color:var(--muted); margin-left:12px; text-decoration:none; font-family:var(--mono);';
+                lenke.onmouseover = () => lenke.style.color = 'var(--blue)';
+                lenke.onmouseout = () => lenke.style.color = 'var(--muted)';
+                lenke.onclick = (e) => e.stopPropagation();
+                tittelDiv.appendChild(lenke);
+              }
+              
+              const mengdeDiv = document.createElement('div');
+              mengdeDiv.className = 'prosess-mengde';
+              mengdeDiv.innerText = `${totalMengde.toFixed(2)} ${data.enhet}`;
+              
+              header.appendChild(tittelDiv);
+              header.appendChild(mengdeDiv);
+              
+              const kropp = document.createElement('div');
+              kropp.className = 'panel-kropp';
+              
+              if (data.tekst && gruppeValg === 'PROSESS') {
+                const tekstDiv = document.createElement('div');
+                tekstDiv.className = 'prosess-beskrivelse';
+                
+                ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
+                  if (data.tekst[bokstav]) {
+                    const blokk = document.createElement('div');
+                    blokk.className = 'tekst-blokk';
+                    let innholdHtml = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span>`;
+                    if (Array.isArray(data.tekst[bokstav])) {
+                      innholdHtml += data.tekst[bokstav].map(avsnitt => `<p>${avsnitt}</p>`).join('');
+                    } else {
+                      innholdHtml += `<p>${data.tekst[bokstav]}</p>`;
+                    }
+                    blokk.innerHTML = innholdHtml;
+                    tekstDiv.appendChild(blokk);
+                  }
+                });
+                if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
+              }
+              
+              const liste = document.createElement('div');
+              liste.className = 'objekt-liste';
+              
+              const modellGrupper = {};
+              filtrerteObjekter.forEach(obj => {
+                  if (!modellGrupper[obj.modelNavn]) {
+                      modellGrupper[obj.modelNavn] = { modelId: obj.modelId, objekter: [], sum: 0, markeringIds: [] };
+                  }
+                  modellGrupper[obj.modelNavn].objekter.push(obj);
+                  modellGrupper[obj.modelNavn].sum += obj.mengde;
+                  modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
+              });
+
+              const sorterteGrupper = Object.entries(modellGrupper).sort((a, b) => a[0].localeCompare(b[0]));
+
+              for (const [navn, gruppeData] of sorterteGrupper) {
+                  const gruppeDiv = document.createElement('div');
+                  gruppeDiv.className = 'modell-gruppe';
+
+                  const modHeader = document.createElement('div');
+                  modHeader.className = 'modell-overskrift';
+                  modHeader.innerHTML = `<span title="${navn}">▶ 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
                   
-                  try {
-                      if (API.viewer.setSelection) {
-                          await API.viewer.setSelection({ modelObjectIds: [{ modelId: gruppeData.modelId, objectRuntimeIds: gruppeData.markeringIds }] }, 'set');
-                      }
-                  } catch(err) {}
-              };
-              
-              const maxVisning = 1000;
-              const visObjekter = gruppeData.objekter.slice(0, maxVisning);
-              
-              visObjekter.forEach(obj => {
-                  const rad = document.createElement('div');
-                  rad.className = 'objekt-rad';
+                  const objekterContainer = document.createElement('div');
+                  objekterContainer.className = 'modell-objekter'; 
                   
-                  const mengdeTekst = obj.manglerMengde 
-                      ? `<span class="obj-mengde-feil" title="Advarsel: Objektet mangler mengde">0.00 ${data.enhet}</span>`
-                      : `<span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
-                      
-                  rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> ${mengdeTekst}`;
-                  
-                  rad.onclick = async (e) => {
+                  modHeader.onclick = async (e) => {
                       e.stopPropagation();
+                      const isClosed = objekterContainer.style.display === 'none' || objekterContainer.style.display === '';
+                      objekterContainer.style.display = isClosed ? 'flex' : 'none';
+                      modHeader.innerHTML = `<span title="${navn}">${isClosed ? '▼' : '▶'} 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
+                      
                       try {
                           if (API.viewer.setSelection) {
-                              await API.viewer.setSelection({ modelObjectIds: [{ modelId: obj.modelId, objectRuntimeIds: [Number(obj.runtimeId)] }] }, 'set');
+                              await API.viewer.setSelection({ modelObjectIds: [{ modelId: gruppeData.modelId, objectRuntimeIds: gruppeData.markeringIds }] }, 'set');
                           }
                       } catch(err) {}
                   };
-                  objekterContainer.appendChild(rad);
-              });
-              
-              if (gruppeData.objekter.length > maxVisning) {
-                  const advarsel = document.createElement('div');
-                  advarsel.className = 'objekt-rad';
-                  advarsel.style.background = "var(--surface2)";
-                  advarsel.innerHTML = `<span class="obj-navn" style="color:var(--muted); font-style:italic;">... pluss ${gruppeData.objekter.length - maxVisning} flere objekter. Velg mappen for å markere alle.</span>`;
-                  objekterContainer.appendChild(advarsel);
+                  
+                  const maxVisning = 1000;
+                  const visObjekter = gruppeData.objekter.slice(0, maxVisning);
+                  
+                  visObjekter.forEach(obj => {
+                      const rad = document.createElement('div');
+                      rad.className = 'objekt-rad';
+                      
+                      const mengdeTekst = obj.manglerMengde 
+                          ? `<span class="obj-mengde-feil" title="Advarsel: Objektet mangler mengde">0.00 ${data.enhet}</span>`
+                          : `<span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
+                          
+                      rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> ${mengdeTekst}`;
+                      
+                      rad.onclick = async (e) => {
+                          e.stopPropagation();
+                          try {
+                              if (API.viewer.setSelection) {
+                                  await API.viewer.setSelection({ modelObjectIds: [{ modelId: obj.modelId, objectRuntimeIds: [Number(obj.runtimeId)] }] }, 'set');
+                              }
+                          } catch(err) {}
+                      };
+                      objekterContainer.appendChild(rad);
+                  });
+                  
+                  if (gruppeData.objekter.length > maxVisning) {
+                      const advarsel = document.createElement('div');
+                      advarsel.className = 'objekt-rad';
+                      advarsel.style.background = "var(--surface2)";
+                      advarsel.innerHTML = `<span class="obj-navn" style="color:var(--muted); font-style:italic;">... pluss ${gruppeData.objekter.length - maxVisning} flere objekter. Velg mappen for å markere alle.</span>`;
+                      objekterContainer.appendChild(advarsel);
+                  }
+
+                  gruppeDiv.appendChild(modHeader);
+                  gruppeDiv.appendChild(objekterContainer);
+                  liste.appendChild(gruppeDiv);
               }
 
-              gruppeDiv.appendChild(modHeader);
-              gruppeDiv.appendChild(objekterContainer);
-              liste.appendChild(gruppeDiv);
-          }
+              kropp.appendChild(liste);
 
-          delmengderSeksjon.appendChild(liste);
-          kropp.appendChild(delmengderSeksjon);
+              header.onclick = async (e) => {
+                e.stopPropagation();
+                const isOpen = kropp.style.display === 'flex';
+                kropp.style.display = isOpen ? 'none' : 'flex';
+                
+                const tittelEl = header.querySelector('.prosess-tittel');
+                tittelEl.innerText = `${isOpen ? '▶' : '▼'} ${kodePrefiks}${data.tittel}`;
+                if (data.url) tittelEl.appendChild(tittelEl.nextSibling);
 
-          header.onclick = async (e) => {
-            e.stopPropagation();
-            const isOpen = kropp.style.display === 'flex';
-            kropp.style.display = isOpen ? 'none' : 'flex';
-            
-            const tittelEl = header.querySelector('.prosess-tittel');
-            tittelEl.innerText = `${isOpen ? '▶' : '▼'} ${kodePrefiks}${data.tittel}`;
-            if (data.url) tittelEl.appendChild(tittelEl.nextSibling);
+                try {
+                  if (API.viewer.setSelection) {
+                    await API.viewer.setSelection({ modelObjectIds: masterMarkering }, 'set');
+                  }
+                } catch(err) {}
+              };
 
-            try {
-              if (API.viewer.setSelection) {
-                await API.viewer.setSelection({ modelObjectIds: masterMarkering }, 'set');
-              }
-            } catch(err) {}
-          };
+              div.appendChild(header);
+              div.appendChild(kropp);
+              hpKropp.appendChild(div);
+          });
 
-          div.appendChild(header);
-          div.appendChild(kropp);
-          hpKropp.appendChild(div);
+          hpDiv.appendChild(hpHeader);
+          hpDiv.appendChild(hpKropp);
+          stedKropp.appendChild(hpDiv);
       });
-
-      hpDiv.appendChild(hpHeader);
-      hpDiv.appendChild(hpKropp);
-      wrapper.appendChild(hpDiv);
   });
 
-  container.appendChild(wrapper);
+  if (totaleVisteTotalt === 0) {
+      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
+  } else {
+      container.appendChild(wrapper);
+  }
 }
 
 connect();
