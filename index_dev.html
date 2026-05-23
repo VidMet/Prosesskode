@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.05</title>
+  <title>Mengdeuttak R761 v1.06</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -81,14 +81,6 @@
     .guide-box li { margin-bottom: 8px; padding-left: 4px; }
     .guide-box li:last-child { margin-bottom: 0; }
 
-    /* --- STILER FOR DET NYE STEDS-NIVÅET --- */
-    .sted-panel { margin-bottom: 24px; border: 2px solid var(--blue-dim); border-radius: 8px; overflow: hidden; }
-    .sted-header { background: var(--blue-dim); padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; }
-    .sted-header:hover { opacity: 0.9; }
-    .sted-tittel { font-weight: 800; font-size: 15px; color: var(--blue); }
-    .sted-info { font-family: var(--mono); font-size: 11px; color: var(--blue); opacity: 0.8; }
-    .sted-kropp { display: none; flex-direction: column; background: var(--bg); padding: 16px; }
-
     .hoved-panel { margin-bottom: 16px; }
     .hoved-header { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
     .hoved-header:hover { background: var(--surface2); }
@@ -111,6 +103,9 @@
     .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
     .tekst-blokk p:last-child { margin-bottom: 0; }
     .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
+    
+    .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; background: var(--bg); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
+    .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
     
     .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid var(--border); }
     .modell-gruppe { display: flex; flex-direction: column; }
@@ -143,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.05</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.06</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -153,17 +148,17 @@
 
 <div id="filterBar">
   <div class="filter-group">
-    <label for="groupingFilter">Gruppering:</label>
-    <select id="groupingFilter" disabled>
-      <option value="PROSESS">Etter Prosess</option>
-      <option value="STED">Etter Sted</option>
-    </select>
-  </div>
-  <div class="filter-group">
     <label for="versionFilter">Håndbok:</label>
     <select id="versionFilter" disabled>
       <option value="2025">R761 (2025)</option>
       <option value="2018">R761 (2018)</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <label for="groupingFilter">Gruppering:</label>
+    <select id="groupingFilter" disabled>
+      <option value="PROSESS">Etter Prosess</option>
+      <option value="STED">Etter Sted</option>
     </select>
   </div>
   <div class="filter-group">
@@ -305,7 +300,6 @@ $('exportBtn').addEventListener('click', () => {
   setStatus('⏳ Genererer Excel-rapport...');
   
   let csvInnhold = "\uFEFF"; 
-  // OPPDATERT: Inkluderer 'Sted' som kolonne
   csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Sted;Modell;Objekttype;Mengde\r\n";
   
   const koder = Object.keys(globalProsessRegister).sort();
@@ -444,7 +438,6 @@ $('scanBtn').addEventListener('click', async () => {
             objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
           }
 
-          // NYTT: Henter steds-informasjon fra objektet
           const rawSted = flatProps["Sted"] ?? flatProps["sted"] ?? flatProps["STED"] ?? flatProps["Location"] ?? flatProps["LocationName"];
           let stedStr = "Udefinert sted";
           if (rawSted !== undefined && rawSted !== null && String(rawSted).trim() !== "") {
@@ -529,7 +522,7 @@ $('scanBtn').addEventListener('click', async () => {
               manglerMengde: manglerMengde,
               modelId: mid, 
               modelNavn: modelName,
-              sted: stedStr,  // Lagrer stedsnavnet på objektet
+              sted: stedStr,
               runtimeId: runtimeId 
           });
         });
@@ -576,9 +569,8 @@ function tegnOppUI(register, filterMid) {
       return;
   }
 
-  const gruppeValg = $('groupingFilter').value; // 'PROSESS' eller 'STED'
+  const gruppeValg = $('groupingFilter').value; 
   
-  // Finner alle unike steder hvis brukeren vil gruppere på sted
   let steder = ["Alle"];
   if (gruppeValg === 'STED') {
       const stedSet = new Set();
@@ -596,31 +588,30 @@ function tegnOppUI(register, filterMid) {
   const wrapper = document.createElement('div');
   wrapper.className = 'anim';
 
-  // Løkke som bygger opp treet (enten 1 gang for prosess, eller N ganger for hvert sted)
   steder.forEach(stedNavn => {
       let stedKropp = wrapper;
       let stedMasterMarkering = [];
       let totalObjekterISted = 0;
 
-      // Tegn det store "Steds-panelet" hvis vi grupperer på sted
       if (gruppeValg === 'STED') {
+          // OPPDATERT: Gjenbruker 'hoved-panel' stilen for stedene
           const stedDiv = document.createElement('div');
-          stedDiv.className = 'sted-panel';
+          stedDiv.className = 'hoved-panel';
           
           const stedHeader = document.createElement('div');
-          stedHeader.className = 'sted-header';
+          stedHeader.className = 'hoved-header';
           stedHeader.innerHTML = `
-              <div class="sted-tittel">▶ 📍 Sted: ${stedNavn}</div>
-              <div class="sted-info sted-info-count">...</div>
+              <div class="hoved-tittel">▶ 📍 Sted: ${stedNavn}</div>
+              <div class="hoved-info sted-info-count">...</div>
           `;
           
           stedKropp = document.createElement('div');
-          stedKropp.className = 'sted-kropp';
+          stedKropp.className = 'hoved-kropp';
           
           stedHeader.onclick = async () => {
               const isOpen = stedKropp.style.display === 'flex';
               stedKropp.style.display = isOpen ? 'none' : 'flex';
-              stedHeader.querySelector('.sted-tittel').innerText = `${isOpen ? '▶' : '▼'} 📍 Sted: ${stedNavn}`;
+              stedHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} 📍 Sted: ${stedNavn}`;
               try {
                   if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: stedMasterMarkering }, 'set');
               } catch(err) {}
@@ -635,7 +626,6 @@ function tegnOppUI(register, filterMid) {
 
       koder.forEach(kode => {
           const data = register[kode];
-          // Filtrer objektene slik at de stemmer med både valgt modell og evt. valgt sted
           const filtrerteObjekter = data.objekter.filter(obj => {
               const matchModell = (filterMid === 'ALL' || obj.modelId === filterMid);
               const matchSted = (gruppeValg === 'PROSESS' || obj.sted === stedNavn);
@@ -675,7 +665,6 @@ function tegnOppUI(register, filterMid) {
           });
       });
 
-      // Skjul tomme sted-paneler og oppdater telleren
       if (gruppeValg === 'STED') {
           stedKropp.parentElement.querySelector('.sted-info-count').innerText = `${totalObjekterISted} objekter`;
           if (totalObjekterISted === 0) {
