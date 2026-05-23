@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.02</title>
+  <title>Mengdeuttak R761 v1.03</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -132,7 +132,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.02</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.03</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -360,6 +360,9 @@ $('scanBtn').addEventListener('click', async () => {
     const CHUNK = 200;
     let totalObjects = 0;
 
+    // RegEx for å fange nøyaktig strukturelle IFC-klasser uavhengig av store/små bokstaver
+    const strukturKlasserRegex = /^(ifcproject|ifcsite|ifcbuilding|ifcstorey|ifcbuildingstorey)$/i;
+
     for (const model of models) {
       const mid = model.modelId || model.modelid;
       
@@ -392,6 +395,25 @@ $('scanBtn').addEventListener('click', async () => {
               }
             })
           );
+
+          // EKSKLUDERER IFC-STRUKTUROBJEKTER
+          const sjekkVerdier = [
+              obj.class, 
+              flatProps["IfcClass"], 
+              flatProps["IfcEntity"], 
+              flatProps["Entity"], 
+              flatProps["Type"], 
+              flatProps["Objekttype"]
+          ];
+          
+          let skalEkskluderes = sjekkVerdier.some(val => val && strukturKlasserRegex.test(String(val).trim()));
+          if (!skalEkskluderes && obj.name && strukturKlasserRegex.test(obj.name.trim())) {
+              skalEkskluderes = true;
+          }
+
+          if (skalEkskluderes) {
+              return; // Hopper over dette objektet og går til neste
+          }
           
           const prosesskodeRaw = flatProps["Prosesskode"] ?? flatProps["prosesskode"] ?? flatProps["ProsessKode"];
           let hasProsesskode = false;
