@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.09</title>
+  <title>Mengdeuttak R761 v1.11</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -138,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.09</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.11</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -227,36 +227,24 @@ async function connect(){
   }
 }
 
-async function fetchJSONMedFallback(versjon, kap, cacheBuster) {
-    // Prøver først direkte rot, deretter en eventuell undermappe
-    const paths = [
-        `Prosesskode_${versjon}_${kap}.json?v=${cacheBuster}`,
-        `json_filer/Prosesskode_${versjon}_${kap}.json?v=${cacheBuster}`
-    ];
-    
-    for (let path of paths) {
-        try {
-            const res = await fetch(path);
-            if (res.ok) {
-                const text = await res.text();
-                return JSON.parse(text); 
-            }
-        } catch (e) {
-            // Ignorerer feil og prøver neste path
-        }
-    }
-    return null;
-}
-
 async function lastJSONFil(versjon) {
   setStatus(`⏳ Laster inn R761 (${versjon})...`);
   try {
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    const cacheBuster = new Date().getTime();
     
-    const promises = kapitler.map(kap => fetchJSONMedFallback(versjon, kap, cacheBuster));
+    // Forenklet innlesing (støtter også lokal kjøring uten cacheBuster)
+    const promises = kapitler.map(kap => 
+      fetch(`Prosesskode_${versjon}_${kap}.json`)
+        .then(res => {
+          if (!res.ok) throw new Error(`Status ${res.status}`);
+          return res.json();
+        })
+        .catch(err => {
+          return null; 
+        })
+    );
+    
     const resultater = await Promise.all(promises);
-    
     svvHandbok = { prosesskoder: {} };
     let totaltLastedeKoder = 0;
     
@@ -267,14 +255,10 @@ async function lastJSONFil(versjon) {
       }
     });
     
-    if (totaltLastedeKoder === 0) {
-        throw new Error(`Fant ingen filer på serveren for versjon ${versjon}. Har du lastet dem opp riktig?`);
-    }
-    
+    if (totaltLastedeKoder === 0) throw new Error(`Fant ingen filer for versjon ${versjon}.`);
     setStatus(`✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
   } catch (error) {
-    console.error(error);
-    setStatus(`⚠️ Advarsel: Kunne ikke laste JSON. Går over til avlesning av BIM-egenskaper.`, 'warn');
+    setStatus(`⚠️ Feil ved lasting av ${versjon}: ${error.message}`, 'warn');
     svvHandbok = { prosesskoder: {} };
   }
 }
@@ -285,10 +269,7 @@ function oppdaterRegisterMedNyHandbok() {
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
         if (handbokData) {
             globalProsessRegister[kode].tittel = handbokData.tittel;
-            // Endrer kun enhet dersom objektet IKKE har overstyrt enheten selv
-            if (!globalProsessRegister[kode].erOverstyrtEnhet) {
-                globalProsessRegister[kode].enhet = handbokData.enhet;
-            }
+            // Enhet overstyres ikke her for å respektere objektets enhet
             globalProsessRegister[kode].url = handbokData.url;
             globalProsessRegister[kode].tekst = handbokData.tekst;
         }
@@ -418,7 +399,6 @@ $('scanBtn').addEventListener('click', async () => {
         propsArr.forEach(obj => {
           const flatProps = {};
           
-          // EGENSKAPS-UTTREKK: Tvinger inn alt som har en verdi for å unngå blanke overskrivinger
           (obj.properties || []).forEach(pset => 
             (pset.properties || []).forEach(p => {
                if (p.value !== undefined && p.value !== null && String(p.value).trim() !== "") {
@@ -427,6 +407,7 @@ $('scanBtn').addEventListener('click', async () => {
             })
           );
 
+          // EKSKLUDERER STRUKTUROBJEKTER
           const sjekkVerdier = [
               obj.class, flatProps["IfcClass"], flatProps["IfcEntity"], 
               flatProps["Entity"], flatProps["Type"], flatProps["Objekttype"]
@@ -448,7 +429,8 @@ $('scanBtn').addEventListener('click', async () => {
               prosesskode = String(prosesskodeRaw).trim();
           }
           
-          let objektNavn = flatProps["Objekttype"];
+          // OPPDATERT: Prioriterer A006_Objektnavn for visning i listen
+          let objektNavn = flatProps["A006_Objektnavn"] ?? flatProps["a006_objektnavn"] ?? flatProps["Objekttype"];
           if (!objektNavn || String(objektNavn).trim() === "") {
             objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
           }
@@ -466,7 +448,6 @@ $('scanBtn').addEventListener('click', async () => {
           let tittel = "Ukjent prosesskode";
           let erEgendefinert = false;
 
-          // Henter standardinfo enten fra Håndbok (JSON) eller fra BIM-objektet
           if (hasProsesskode) {
               if (handbokData) {
                   standardEnhet = handbokData.enhet ? String(handbokData.enhet).toLowerCase().trim() : "?";
@@ -495,44 +476,16 @@ $('scanBtn').addEventListener('click', async () => {
               erOverstyrtEnhet = true;
           }
 
-          // HENTER GEOMETRI FRA TRIMBLE CONNECT
-          const tcGeoVol = flatProps["Volume"] ?? flatProps["NetVolume"];
-          const tcGeoArea = flatProps["Area"] ?? flatProps["Area 3D"] ?? flatProps["NetArea"] ?? flatProps["SurfaceArea"];
-          const tcGeoLen = flatProps["Length"] ?? flatProps["NetLength"];
-          const propMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
-
-          let rawMengde = propMengde;
+          // OPPDATERT: Fjerner beregnet geometri - bruker KUN egenskapen Mengde
+          let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
+          let manglerMengde = false;
           
-          // INTELLIGENT FALLBACK: Hvis Mengde er blank, søk i geometrien basert på Enhet
           if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-              if (aktivEnhet === "m3" || aktivEnhet === "m³") {
-                  rawMengde = tcGeoVol;
-              } else if (aktivEnhet === "m2" || aktivEnhet === "m²") {
-                  rawMengde = tcGeoArea;
-              } else if (aktivEnhet === "m") {
-                  rawMengde = tcGeoLen;
-              } else if (aktivEnhet === "stk") {
+              if (aktivEnhet === "stk") {
                   rawMengde = 1; 
               } else {
-                  // SIKKERHETSVENTIL: Vi kjenner ikke enheten. Gjett basert på hva som finnes!
-                  rawMengde = tcGeoVol ?? tcGeoArea ?? tcGeoLen;
-                  if (rawMengde !== undefined && rawMengde !== null) {
-                      // Oppdaterer enheten visuelt slik at du ser hva den gjettet
-                      if (tcGeoVol) aktivEnhet = "m3";
-                      else if (tcGeoArea) aktivEnhet = "m2";
-                      else if (tcGeoLen) aktivEnhet = "m";
-                      erOverstyrtEnhet = true; 
-                  } else {
-                      rawMengde = 1;
-                      aktivEnhet = "stk";
-                      erOverstyrtEnhet = true;
-                  }
+                  manglerMengde = true;
               }
-          }
-
-          let manglerMengde = false;
-          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-              manglerMengde = true;
           }
 
           let mengde = 0;
@@ -555,7 +508,7 @@ $('scanBtn').addEventListener('click', async () => {
             } else {
                 globalProsessRegister[prosesskode] = {
                   tittel: tittel,
-                  enhet: erOverstyrtEnhet ? aktivEnhet : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
+                  enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
                   hovedprosess: hpKode,
                   url: handbokData && handbokData.url ? handbokData.url : null,
                   tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
@@ -564,7 +517,7 @@ $('scanBtn').addEventListener('click', async () => {
                 };
             }
           } else if (erOverstyrtEnhet && !globalProsessRegister[prosesskode].erOverstyrtEnhet) {
-              globalProsessRegister[prosesskode].enhet = aktivEnhet;
+              globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw).trim();
               globalProsessRegister[prosesskode].erOverstyrtEnhet = true;
           }
           
@@ -652,8 +605,10 @@ function tegnOppUI(register, filterMid) {
           
           const stedHeader = document.createElement('div');
           stedHeader.className = 'hoved-header';
+          
+          // OPPDATERT: Fjernet knappenål og "Sted: " fra tittelen
           stedHeader.innerHTML = `
-              <div class="hoved-tittel">▶ 📍 Sted: ${stedNavn}</div>
+              <div class="hoved-tittel">▶ ${stedNavn}</div>
               <div class="hoved-info sted-info-count">...</div>
           `;
           
@@ -663,7 +618,7 @@ function tegnOppUI(register, filterMid) {
           stedHeader.onclick = async () => {
               const isOpen = stedKropp.style.display === 'flex';
               stedKropp.style.display = isOpen ? 'none' : 'flex';
-              stedHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} 📍 Sted: ${stedNavn}`;
+              stedHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} ${stedNavn}`;
               try {
                   if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: stedMasterMarkering }, 'set');
               } catch(err) {}
