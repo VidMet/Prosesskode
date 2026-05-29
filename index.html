@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.09</title>
+  <title>Mengdeuttak R761 v1.12</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -138,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.09</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.12</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -227,36 +227,24 @@ async function connect(){
   }
 }
 
-async function fetchJSONMedFallback(versjon, kap, cacheBuster) {
-    // Prøver først direkte rot, deretter en eventuell undermappe
-    const paths = [
-        `Prosesskode_${versjon}_${kap}.json?v=${cacheBuster}`,
-        `json_filer/Prosesskode_${versjon}_${kap}.json?v=${cacheBuster}`
-    ];
-    
-    for (let path of paths) {
-        try {
-            const res = await fetch(path);
-            if (res.ok) {
-                const text = await res.text();
-                return JSON.parse(text); 
-            }
-        } catch (e) {
-            // Ignorerer feil og prøver neste path
-        }
-    }
-    return null;
-}
-
 async function lastJSONFil(versjon) {
   setStatus(`⏳ Laster inn R761 (${versjon})...`);
   try {
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    const cacheBuster = new Date().getTime();
     
-    const promises = kapitler.map(kap => fetchJSONMedFallback(versjon, kap, cacheBuster));
+    // Forenklet innlesing (støtter også lokal kjøring uten cacheBuster)
+    const promises = kapitler.map(kap => 
+      fetch(`Prosesskode_${versjon}_${kap}.json`)
+        .then(res => {
+          if (!res.ok) throw new Error(`Status ${res.status}`);
+          return res.json();
+        })
+        .catch(err => {
+          return null; 
+        })
+    );
+    
     const resultater = await Promise.all(promises);
-    
     svvHandbok = { prosesskoder: {} };
     let totaltLastedeKoder = 0;
     
@@ -267,14 +255,10 @@ async function lastJSONFil(versjon) {
       }
     });
     
-    if (totaltLastedeKoder === 0) {
-        throw new Error(`Fant ingen filer på serveren for versjon ${versjon}. Har du lastet dem opp riktig?`);
-    }
-    
+    if (totaltLastedeKoder === 0) throw new Error(`Fant ingen filer for versjon ${versjon}.`);
     setStatus(`✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
   } catch (error) {
-    console.error(error);
-    setStatus(`⚠️ Advarsel: Kunne ikke laste JSON. Går over til avlesning av BIM-egenskaper.`, 'warn');
+    setStatus(`⚠️ Feil ved lasting av ${versjon}: ${error.message}`, 'warn');
     svvHandbok = { prosesskoder: {} };
   }
 }
@@ -285,10 +269,7 @@ function oppdaterRegisterMedNyHandbok() {
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
         if (handbokData) {
             globalProsessRegister[kode].tittel = handbokData.tittel;
-            // Endrer kun enhet dersom objektet IKKE har overstyrt enheten selv
-            if (!globalProsessRegister[kode].erOverstyrtEnhet) {
-                globalProsessRegister[kode].enhet = handbokData.enhet;
-            }
+            // Enhet overstyres ikke her for å respektere objektets enhet
             globalProsessRegister[kode].url = handbokData.url;
             globalProsessRegister[kode].tekst = handbokData.tekst;
         }
@@ -418,7 +399,6 @@ $('scanBtn').addEventListener('click', async () => {
         propsArr.forEach(obj => {
           const flatProps = {};
           
-          // EGENSKAPS-UTTREKK: Tvinger inn alt som har en verdi for å unngå blanke overskrivinger
           (obj.properties || []).forEach(pset => 
             (pset.properties || []).forEach(p => {
                if (p.value !== undefined && p.value !== null && String(p.value).trim() !== "") {
@@ -427,6 +407,7 @@ $('scanBtn').addEventListener('click', async () => {
             })
           );
 
+          // EKSKLUDERER STRUKTUROBJEKTER
           const sjekkVerdier = [
               obj.class, flatProps["IfcClass"], flatProps["IfcEntity"], 
               flatProps["Entity"], flatProps["Type"], flatProps["Objekttype"]
@@ -448,7 +429,8 @@ $('scanBtn').addEventListener('click', async () => {
               prosesskode = String(prosesskodeRaw).trim();
           }
           
-          let objektNavn = flatProps["Objekttype"];
+          // OPPDATERT: Prioriterer A006_Objektnavn for visning i listen
+          let objektNavn = flatProps["A006_Objektnavn"] ?? flatProps["a006_objektnavn"] ?? flatProps["Objekttype"];
           if (!objektNavn || String(objektNavn).trim() === "") {
             objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
           }
@@ -466,7 +448,6 @@ $('scanBtn').addEventListener('click', async () => {
           let tittel = "Ukjent prosesskode";
           let erEgendefinert = false;
 
-          // Henter standardinfo enten fra Håndbok (JSON) eller fra BIM-objektet
           if (hasProsesskode) {
               if (handbokData) {
                   standardEnhet = handbokData.enhet ? String(handbokData.enhet).toLowerCase().trim() : "?";
@@ -495,44 +476,16 @@ $('scanBtn').addEventListener('click', async () => {
               erOverstyrtEnhet = true;
           }
 
-          // HENTER GEOMETRI FRA TRIMBLE CONNECT
-          const tcGeoVol = flatProps["Volume"] ?? flatProps["NetVolume"];
-          const tcGeoArea = flatProps["Area"] ?? flatProps["Area 3D"] ?? flatProps["NetArea"] ?? flatProps["SurfaceArea"];
-          const tcGeoLen = flatProps["Length"] ?? flatProps["NetLength"];
-          const propMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
-
-          let rawMengde = propMengde;
+          // OPPDATERT: Fjerner beregnet geometri - bruker KUN egenskapen Mengde
+          let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
+          let manglerMengde = false;
           
-          // INTELLIGENT FALLBACK: Hvis Mengde er blank, søk i geometrien basert på Enhet
           if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-              if (aktivEnhet === "m3" || aktivEnhet === "m³") {
-                  rawMengde = tcGeoVol;
-              } else if (aktivEnhet === "m2" || aktivEnhet === "m²") {
-                  rawMengde = tcGeoArea;
-              } else if (aktivEnhet === "m") {
-                  rawMengde = tcGeoLen;
-              } else if (aktivEnhet === "stk") {
+              if (aktivEnhet === "stk") {
                   rawMengde = 1; 
               } else {
-                  // SIKKERHETSVENTIL: Vi kjenner ikke enheten. Gjett basert på hva som finnes!
-                  rawMengde = tcGeoVol ?? tcGeoArea ?? tcGeoLen;
-                  if (rawMengde !== undefined && rawMengde !== null) {
-                      // Oppdaterer enheten visuelt slik at du ser hva den gjettet
-                      if (tcGeoVol) aktivEnhet = "m3";
-                      else if (tcGeoArea) aktivEnhet = "m2";
-                      else if (tcGeoLen) aktivEnhet = "m";
-                      erOverstyrtEnhet = true; 
-                  } else {
-                      rawMengde = 1;
-                      aktivEnhet = "stk";
-                      erOverstyrtEnhet = true;
-                  }
+                  manglerMengde = true;
               }
-          }
-
-          let manglerMengde = false;
-          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-              manglerMengde = true;
           }
 
           let mengde = 0;
@@ -555,7 +508,7 @@ $('scanBtn').addEventListener('click', async () => {
             } else {
                 globalProsessRegister[prosesskode] = {
                   tittel: tittel,
-                  enhet: erOverstyrtEnhet ? aktivEnhet : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
+                  enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
                   hovedprosess: hpKode,
                   url: handbokData && handbokData.url ? handbokData.url : null,
                   tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
@@ -564,7 +517,7 @@ $('scanBtn').addEventListener('click', async () => {
                 };
             }
           } else if (erOverstyrtEnhet && !globalProsessRegister[prosesskode].erOverstyrtEnhet) {
-              globalProsessRegister[prosesskode].enhet = aktivEnhet;
+              globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw).trim();
               globalProsessRegister[prosesskode].erOverstyrtEnhet = true;
           }
           
@@ -602,12 +555,10 @@ $('scanBtn').addEventListener('click', async () => {
 function oppdaterDropdownMeny() {
     const select = $('modelFilter');
     select.innerHTML = '<option value="ALL">Alle modeller i vieweren</option>';
-    
     const sorterteModeller = Object.entries(globalModelsMap).sort((a, b) => a[1].localeCompare(b[1]));
     for (const [mid, name] of sorterteModeller) {
         const option = document.createElement('option');
-        option.value = mid;
-        option.innerText = name;
+        option.value = mid; option.innerText = name;
         select.appendChild(option);
     }
 }
@@ -623,15 +574,12 @@ function tegnOppUI(register, filterMid) {
   }
 
   const gruppeValg = $('groupingFilter').value; 
-  
   let steder = ["Alle"];
   if (gruppeValg === 'STED') {
       const stedSet = new Set();
       koder.forEach(kode => {
           register[kode].objekter.forEach(obj => {
-              if (filterMid === 'ALL' || obj.modelId === filterMid) {
-                  stedSet.add(obj.sted);
-              }
+              if (filterMid === 'ALL' || obj.modelId === filterMid) stedSet.add(obj.sted);
           });
       });
       steder = Array.from(stedSet).sort();
@@ -649,313 +597,254 @@ function tegnOppUI(register, filterMid) {
       if (gruppeValg === 'STED') {
           const stedDiv = document.createElement('div');
           stedDiv.className = 'hoved-panel';
-          
           const stedHeader = document.createElement('div');
           stedHeader.className = 'hoved-header';
-          stedHeader.innerHTML = `
-              <div class="hoved-tittel">▶ 📍 Sted: ${stedNavn}</div>
-              <div class="hoved-info sted-info-count">...</div>
-          `;
-          
+          stedHeader.innerHTML = `<div class="hoved-tittel">▶ ${stedNavn}</div><div class="hoved-info sted-info-count">...</div>`;
           stedKropp = document.createElement('div');
           stedKropp.className = 'hoved-kropp';
           
           stedHeader.onclick = async () => {
               const isOpen = stedKropp.style.display === 'flex';
               stedKropp.style.display = isOpen ? 'none' : 'flex';
-              stedHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} 📍 Sted: ${stedNavn}`;
-              try {
-                  if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: stedMasterMarkering }, 'set');
-              } catch(err) {}
+              stedHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} ${stedNavn}`;
+              try { if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: stedMasterMarkering }, 'set'); } catch(err) {}
           };
-
-          stedDiv.appendChild(stedHeader);
-          stedDiv.appendChild(stedKropp);
-          wrapper.appendChild(stedDiv);
+          stedDiv.appendChild(stedHeader); stedDiv.appendChild(stedKropp); wrapper.appendChild(stedDiv);
       }
 
-      const grupperteProsesser = {};
-
+      // BYGGER DET HIERARKISKE TREET I MINNET FOR DETTE STEDET
+      const kodeTre = {};
+      
       koder.forEach(kode => {
           const data = register[kode];
-          const filtrerteObjekter = data.objekter.filter(obj => {
-              const matchModell = (filterMid === 'ALL' || obj.modelId === filterMid);
-              const matchSted = (gruppeValg === 'PROSESS' || obj.sted === stedNavn);
-              return matchModell && matchSted;
-          });
-          
+          const filtrerteObjekter = data.objekter.filter(obj => (filterMid === 'ALL' || obj.modelId === filterMid) && (gruppeValg === 'PROSESS' || obj.sted === stedNavn));
           if (filtrerteObjekter.length === 0) return;
           
           totaleVisteTotalt++;
-          const hpKode = data.hovedprosess || kode.charAt(0);
-          
-          if (!grupperteProsesser[hpKode]) {
-              grupperteProsesser[hpKode] = { koder: [], totaltObjekter: 0, masterMarkeringMap: {} };
-          }
-          
-          if (!grupperteProsesser[hpKode].koder.includes(kode)) {
-              grupperteProsesser[hpKode].koder.push(kode);
-          }
-
-          grupperteProsesser[hpKode].totaltObjekter += filtrerteObjekter.length;
           totalObjekterISted += filtrerteObjekter.length;
           
-          filtrerteObjekter.forEach(obj => {
-              if (!grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId]) {
-                  grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId] = [];
+          const nivaer = hentNivaer(kode);
+          let node = kodeTre;
+          
+          nivaer.forEach((nivaKode, index) => {
+              if (!node[nivaKode]) {
+                  let handbokInfo = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[nivaKode] : null;
+                  let tittel = handbokInfo ? handbokInfo.tittel : (nivaKode === "X" ? "Ingen prosesskode funnet" : (nivaKode.length === 1 ? hovedprosessNavn[nivaKode] : `Underprosess ${nivaKode}`));
+                  if (nivaKode === "MANGLER") tittel = "Objekter som mangler prosesskode";
+                  
+                  node[nivaKode] = {
+                      kode: nivaKode, tittel: tittel,
+                      tekst: handbokInfo ? handbokInfo.tekst : null,
+                      url: handbokInfo ? handbokInfo.url : null,
+                      barn: {}, objekter: [],
+                      totalMengde: 0, enhet: "?", masterMarkeringIds: []
+                  };
               }
-              grupperteProsesser[hpKode].masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
-
-              if (gruppeValg === 'STED') {
-                  let existing = stedMasterMarkering.find(m => m.modelId === obj.modelId);
-                  if (!existing) {
-                      existing = { modelId: obj.modelId, objectRuntimeIds: [] };
-                      stedMasterMarkering.push(existing);
+              
+              filtrerteObjekter.forEach(obj => {
+                  node[nivaKode].masterMarkeringIds.push({ modelId: obj.modelId, runtimeId: Number(obj.runtimeId) });
+                  
+                  // Legger til i hovedmarkering for Steds-panelet
+                  if (gruppeValg === 'STED' && index === 0) {
+                      let existing = stedMasterMarkering.find(m => m.modelId === obj.modelId);
+                      if (!existing) { existing = { modelId: obj.modelId, objectRuntimeIds: [] }; stedMasterMarkering.push(existing); }
+                      existing.objectRuntimeIds.push(Number(obj.runtimeId));
                   }
-                  existing.objectRuntimeIds.push(Number(obj.runtimeId));
-              }
+
+                  if(index === nivaer.length - 1) { // Hvis dette er siste nivå (bladnoden)
+                       node[nivaKode].objekter.push(obj);
+                       node[nivaKode].totalMengde += obj.mengde;
+                       node[nivaKode].enhet = data.enhet; 
+                       node[nivaKode].isLeaf = true;
+                  }
+              });
+              node = node[nivaKode].barn;
           });
       });
 
       if (gruppeValg === 'STED') {
           stedKropp.parentElement.querySelector('.sted-info-count').innerText = `${totalObjekterISted} objekter`;
-          if (totalObjekterISted === 0) {
-              stedKropp.parentElement.style.display = 'none';
-          }
+          if (totalObjekterISted === 0) stedKropp.parentElement.style.display = 'none';
       }
 
-      const sorterteHovedkoder = Object.keys(grupperteProsesser).sort();
-
-      sorterteHovedkoder.forEach(hpKode => {
-          const hpData = grupperteProsesser[hpKode];
-          const tittelNavn = hovedprosessNavn[hpKode] || "Annet";
-          
-          const hpDiv = document.createElement('div');
-          hpDiv.className = 'hoved-panel';
-          
-          const hpHeader = document.createElement('div');
-          hpHeader.className = 'hoved-header';
-          
-          const visningsOverskrift = hpKode === "X" ? `▶ ${tittelNavn}` : `▶ ${hpKode} - ${tittelNavn}`;
-          
-          hpHeader.innerHTML = `
-              <div class="hoved-tittel">${visningsOverskrift}</div>
-              <div class="hoved-info">${hpData.totaltObjekter} objekter</div>
-          `;
-          
-          const hpKropp = document.createElement('div');
-          hpKropp.className = 'hoved-kropp';
-          
-          const hpMasterMarkering = Object.keys(hpData.masterMarkeringMap).map(mid => ({ 
-              modelId: mid, 
-              objectRuntimeIds: hpData.masterMarkeringMap[mid] 
-          }));
-
-          hpHeader.onclick = async (e) => {
-              const isOpen = hpKropp.style.display === 'flex';
-              hpKropp.style.display = isOpen ? 'none' : 'flex';
-              const pil = isOpen ? '▼' : '▶';
-              const oppdatertOverskrift = hpKode === "X" ? `${pil} ${tittelNavn}` : `${pil} ${hpKode} - ${tittelNavn}`;
-              hpHeader.querySelector('.hoved-tittel').innerText = oppdatertOverskrift;
-              
-              try {
-                  if (API.viewer.setSelection) {
-                      await API.viewer.setSelection({ modelObjectIds: hpMasterMarkering }, 'set');
-                  }
-              } catch(err) {}
-          };
-
-          hpData.koder.forEach(kode => {
-              const data = register[kode];
-              const filtrerteObjekter = data.objekter.filter(obj => {
-                  const matchModell = (filterMid === 'ALL' || obj.modelId === filterMid);
-                  const matchSted = (gruppeValg === 'PROSESS' || obj.sted === stedNavn);
-                  return matchModell && matchSted;
-              });
-
-              if (filtrerteObjekter.length === 0) return;
-
-              const totalMengde = filtrerteObjekter.reduce((sum, obj) => sum + obj.mengde, 0);
-              
-              const masterMarkeringMap = {};
-              filtrerteObjekter.forEach(obj => {
-                  if (!masterMarkeringMap[obj.modelId]) masterMarkeringMap[obj.modelId] = [];
-                  masterMarkeringMap[obj.modelId].push(Number(obj.runtimeId));
-              });
-              const masterMarkering = Object.keys(masterMarkeringMap).map(mid => ({ modelId: mid, objectRuntimeIds: masterMarkeringMap[mid] }));
-
-              const div = document.createElement('div');
-              div.className = 'prosess-panel';
-              
-              const header = document.createElement('div');
-              header.className = 'prosess-header';
-              
-              const tittelDiv = document.createElement('div');
-              tittelDiv.className = 'prosess-tittel';
-              const kodePrefiks = kode === "MANGLER" ? "" : `${kode} - `;
-              tittelDiv.innerText = `▶ ${kodePrefiks}${data.tittel}`;
-
-              if (data.url) {
-                const lenke = document.createElement('a');
-                lenke.href = data.url;
-                lenke.target = '_blank';
-                lenke.innerText = ' ↗ Håndbok';
-                lenke.style.cssText = 'font-size:10px; color:var(--muted); margin-left:12px; text-decoration:none; font-family:var(--mono);';
-                lenke.onmouseover = () => lenke.style.color = 'var(--blue)';
-                lenke.onmouseout = () => lenke.style.color = 'var(--muted)';
-                lenke.onclick = (e) => e.stopPropagation();
-                tittelDiv.appendChild(lenke);
-              }
-              
-              const mengdeDiv = document.createElement('div');
-              mengdeDiv.className = 'prosess-mengde';
-              mengdeDiv.innerText = `${totalMengde.toFixed(2)} ${data.enhet}`;
-              
-              header.appendChild(tittelDiv);
-              header.appendChild(mengdeDiv);
-              
-              const kropp = document.createElement('div');
-              kropp.className = 'panel-kropp';
-              
-              if (data.tekst && gruppeValg === 'PROSESS') {
-                const tekstDiv = document.createElement('div');
-                tekstDiv.className = 'prosess-beskrivelse';
-                
-                ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
-                  if (data.tekst[bokstav]) {
-                    const blokk = document.createElement('div');
-                    blokk.className = 'tekst-blokk';
-                    let innholdHtml = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span>`;
-                    if (Array.isArray(data.tekst[bokstav])) {
-                      innholdHtml += data.tekst[bokstav].map(avsnitt => `<p>${avsnitt}</p>`).join('');
-                    } else {
-                      innholdHtml += `<p>${data.tekst[bokstav]}</p>`;
-                    }
-                    blokk.innerHTML = innholdHtml;
-                    tekstDiv.appendChild(blokk);
-                  }
-                });
-                if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
-              }
-              
-              const delmengderSeksjon = document.createElement('div');
-              delmengderSeksjon.className = 'delmengder-seksjon';
-              const delmengderTittel = document.createElement('div');
-              delmengderTittel.className = 'delmengder-tittel';
-              delmengderTittel.innerText = 'Delmengder per modell';
-              delmengderSeksjon.appendChild(delmengderTittel);
-
-              const liste = document.createElement('div');
-              liste.className = 'objekt-liste';
-              
-              const modellGrupper = {};
-              filtrerteObjekter.forEach(obj => {
-                  if (!modellGrupper[obj.modelNavn]) {
-                      modellGrupper[obj.modelNavn] = { modelId: obj.modelId, objekter: [], sum: 0, markeringIds: [] };
-                  }
-                  modellGrupper[obj.modelNavn].objekter.push(obj);
-                  modellGrupper[obj.modelNavn].sum += obj.mengde;
-                  modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
-              });
-
-              const sorterteGrupper = Object.entries(modellGrupper).sort((a, b) => a[0].localeCompare(b[0]));
-
-              for (const [navn, gruppeData] of sorterteGrupper) {
-                  const gruppeDiv = document.createElement('div');
-                  gruppeDiv.className = 'modell-gruppe';
-
-                  const modHeader = document.createElement('div');
-                  modHeader.className = 'modell-overskrift';
-                  modHeader.innerHTML = `<span title="${navn}">▶ 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
-                  
-                  const objekterContainer = document.createElement('div');
-                  objekterContainer.className = 'modell-objekter'; 
-                  
-                  modHeader.onclick = async (e) => {
-                      e.stopPropagation();
-                      const isClosed = objekterContainer.style.display === 'none' || objekterContainer.style.display === '';
-                      objekterContainer.style.display = isClosed ? 'flex' : 'none';
-                      modHeader.innerHTML = `<span title="${navn}">${isClosed ? '▼' : '▶'} 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${data.enhet}</span>`;
-                      
-                      try {
-                          if (API.viewer.setSelection) {
-                              await API.viewer.setSelection({ modelObjectIds: [{ modelId: gruppeData.modelId, objectRuntimeIds: gruppeData.markeringIds }] }, 'set');
-                          }
-                      } catch(err) {}
-                  };
-                  
-                  const maxVisning = 1000;
-                  const visObjekter = gruppeData.objekter.slice(0, maxVisning);
-                  
-                  visObjekter.forEach(obj => {
-                      const rad = document.createElement('div');
-                      rad.className = 'objekt-rad';
-                      
-                      const mengdeTekst = obj.manglerMengde 
-                          ? `<span class="obj-mengde-feil" title="Advarsel: Objektet mangler mengde">0.00 ${data.enhet}</span>`
-                          : `<span class="obj-mengde">${obj.mengde.toFixed(2)} ${data.enhet}</span>`;
-                          
-                      rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> ${mengdeTekst}`;
-                      
-                      rad.onclick = async (e) => {
-                          e.stopPropagation();
-                          try {
-                              if (API.viewer.setSelection) {
-                                  await API.viewer.setSelection({ modelObjectIds: [{ modelId: obj.modelId, objectRuntimeIds: [Number(obj.runtimeId)] }] }, 'set');
-                              }
-                          } catch(err) {}
-                      };
-                      objekterContainer.appendChild(rad);
-                  });
-                  
-                  if (gruppeData.objekter.length > maxVisning) {
-                      const advarsel = document.createElement('div');
-                      advarsel.className = 'objekt-rad';
-                      advarsel.style.background = "var(--surface2)";
-                      advarsel.innerHTML = `<span class="obj-navn" style="color:var(--muted); font-style:italic;">... pluss ${gruppeData.objekter.length - maxVisning} flere objekter. Velg mappen for å markere alle.</span>`;
-                      objekterContainer.appendChild(advarsel);
-                  }
-
-                  gruppeDiv.appendChild(modHeader);
-                  gruppeDiv.appendChild(objekterContainer);
-                  liste.appendChild(gruppeDiv);
-              }
-
-              delmengderSeksjon.appendChild(liste);
-              kropp.appendChild(delmengderSeksjon);
-
-              header.onclick = async (e) => {
-                e.stopPropagation();
-                const isOpen = kropp.style.display === 'flex';
-                kropp.style.display = isOpen ? 'none' : 'flex';
-                
-                const tittelEl = header.querySelector('.prosess-tittel');
-                tittelEl.innerText = `${isOpen ? '▶' : '▼'} ${kodePrefiks}${data.tittel}`;
-                if (data.url) tittelEl.appendChild(tittelEl.nextSibling);
-
-                try {
-                  if (API.viewer.setSelection) {
-                    await API.viewer.setSelection({ modelObjectIds: masterMarkering }, 'set');
-                  }
-                } catch(err) {}
-              };
-
-              div.appendChild(header);
-              div.appendChild(kropp);
-              hpKropp.appendChild(div);
-          });
-
-          hpDiv.appendChild(hpHeader);
-          hpDiv.appendChild(hpKropp);
-          stedKropp.appendChild(hpDiv);
+      // Sender rotnivåene til tegning
+      Object.keys(kodeTre).sort().forEach(rotKode => {
+          tegnTreNode(kodeTre[rotKode], stedKropp);
       });
   });
 
-  if (totaleVisteTotalt === 0) {
-      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
-  } else {
-      container.appendChild(wrapper);
-  }
+  if (totaleVisteTotalt === 0) container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
+  else container.appendChild(wrapper);
+}
+
+// Deler opp en prosesskode i alle underliggende nivåer
+function hentNivaer(kode) {
+    if (kode === "MANGLER") return ["X", "MANGLER"];
+    const nivaer = [kode.charAt(0)];
+    const deler = kode.split('.');
+    if (deler[0].length > 1) nivaer.push(deler[0]);
+    if (deler.length > 1) {
+        for (let i = 1; i <= deler[1].length; i++) {
+            nivaer.push(deler[0] + "." + deler[1].substring(0, i));
+        }
+    }
+    return [...new Set(nivaer)];
+}
+
+// Tegner opp fil- og objektlisten for selve "bladnodene"
+function tegnObjektListe(nodeData, containerEl) {
+    const delmengderSeksjon = document.createElement('div');
+    delmengderSeksjon.className = 'delmengder-seksjon';
+    const delmengderTittel = document.createElement('div');
+    delmengderTittel.className = 'delmengder-tittel';
+    delmengderTittel.innerText = 'Delmengder per modell';
+    delmengderSeksjon.appendChild(delmengderTittel);
+
+    const liste = document.createElement('div');
+    liste.className = 'objekt-liste';
+    
+    const modellGrupper = {};
+    nodeData.objekter.forEach(obj => {
+        if (!modellGrupper[obj.modelNavn]) modellGrupper[obj.modelNavn] = { modelId: obj.modelId, objekter: [], sum: 0, markeringIds: [] };
+        modellGrupper[obj.modelNavn].objekter.push(obj);
+        modellGrupper[obj.modelNavn].sum += obj.mengde;
+        modellGrupper[obj.modelNavn].markeringIds.push(Number(obj.runtimeId));
+    });
+
+    Object.entries(modellGrupper).sort((a, b) => a[0].localeCompare(b[0])).forEach(([navn, gruppeData]) => {
+        const gruppeDiv = document.createElement('div');
+        gruppeDiv.className = 'modell-gruppe';
+
+        const modHeader = document.createElement('div');
+        modHeader.className = 'modell-overskrift';
+        modHeader.innerHTML = `<span title="${navn}">▶ 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${nodeData.enhet}</span>`;
+        
+        const objekterContainer = document.createElement('div');
+        objekterContainer.className = 'modell-objekter'; 
+        
+        modHeader.onclick = async (e) => {
+            e.stopPropagation();
+            const isClosed = objekterContainer.style.display === 'none' || objekterContainer.style.display === '';
+            objekterContainer.style.display = isClosed ? 'flex' : 'none';
+            modHeader.innerHTML = `<span title="${navn}">${isClosed ? '▼' : '▶'} 📁 ${navn}</span> <span class="modell-overskrift-mengde">${gruppeData.sum.toFixed(2)} ${nodeData.enhet}</span>`;
+            try { if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: [{ modelId: gruppeData.modelId, objectRuntimeIds: gruppeData.markeringIds }] }, 'set'); } catch(err) {}
+        };
+        
+        const maxVisning = 1000;
+        gruppeData.objekter.slice(0, maxVisning).forEach(obj => {
+            const rad = document.createElement('div');
+            rad.className = 'objekt-rad';
+            const mengdeTekst = obj.manglerMengde ? `<span class="obj-mengde-feil" title="Advarsel: Objektet mangler mengde">0.00 ${nodeData.enhet}</span>` : `<span class="obj-mengde">${obj.mengde.toFixed(2)} ${nodeData.enhet}</span>`;
+            rad.innerHTML = `<span class="obj-navn" title="${obj.navn}">${obj.navn}</span> ${mengdeTekst}`;
+            rad.onclick = async (e) => {
+                e.stopPropagation();
+                try { if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: [{ modelId: obj.modelId, objectRuntimeIds: [Number(obj.runtimeId)] }] }, 'set'); } catch(err) {}
+            };
+            objekterContainer.appendChild(rad);
+        });
+        
+        if (gruppeData.objekter.length > maxVisning) {
+            const advarsel = document.createElement('div');
+            advarsel.className = 'objekt-rad';
+            advarsel.style.background = "var(--surface2)";
+            advarsel.innerHTML = `<span class="obj-navn" style="color:var(--muted); font-style:italic;">... pluss ${gruppeData.objekter.length - maxVisning} flere. Velg mappen for å markere alle.</span>`;
+            objekterContainer.appendChild(advarsel);
+        }
+        gruppeDiv.appendChild(modHeader); gruppeDiv.appendChild(objekterContainer); liste.appendChild(gruppeDiv);
+    });
+    delmengderSeksjon.appendChild(liste);
+    containerEl.appendChild(delmengderSeksjon);
+}
+
+// Rekursiv funksjon som tegner ut hierarkiet (inkludert tekst fra håndboken for overliggende nivåer)
+function tegnTreNode(nodeData, containerEl) {
+    const div = document.createElement('div');
+    div.className = 'prosess-panel';
+    if (nodeData.kode.length > 1 && nodeData.kode !== "MANGLER") {
+        div.style.borderLeft = "4px solid var(--blue-dim)"; // Liten indent-effekt på undermapper
+    }
+    
+    const header = document.createElement('div');
+    header.className = 'prosess-header';
+    const tittelDiv = document.createElement('div');
+    tittelDiv.className = 'prosess-tittel';
+    
+    let visningsTittel = (nodeData.kode === "X" || nodeData.kode === "MANGLER") ? nodeData.tittel : `${nodeData.kode} - ${nodeData.tittel}`;
+    tittelDiv.innerText = `▶ ${visningsTittel}`;
+
+    if (nodeData.url) {
+        const lenke = document.createElement('a');
+        lenke.href = nodeData.url; lenke.target = '_blank'; lenke.innerText = ' ↗ Håndbok';
+        lenke.style.cssText = 'font-size:10px; color:var(--muted); margin-left:12px; text-decoration:none; font-family:var(--mono);';
+        lenke.onclick = (e) => e.stopPropagation();
+        tittelDiv.appendChild(lenke);
+    }
+
+    const mengdeDiv = document.createElement('div');
+    mengdeDiv.className = 'prosess-mengde';
+    mengdeDiv.innerText = nodeData.isLeaf ? `${nodeData.totalMengde.toFixed(2)} ${nodeData.enhet}` : `${nodeData.masterMarkeringIds.length} objekter`;
+
+    header.appendChild(tittelDiv);
+    header.appendChild(mengdeDiv);
+    
+    const kropp = document.createElement('div');
+    kropp.className = 'panel-kropp';
+    kropp.style.paddingLeft = "8px"; // Innrykk
+    
+    // Tegner generell tekst for dette spesifikke nivået
+    if (nodeData.tekst) {
+        const tekstDiv = document.createElement('div');
+        tekstDiv.className = 'prosess-beskrivelse';
+        ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
+            if (nodeData.tekst[bokstav]) {
+                const blokk = document.createElement('div');
+                blokk.className = 'tekst-blokk';
+                let innholdHtml = `<span class="tekst-bokstav">${tekstKoder[bokstav]}</span>`;
+                innholdHtml += Array.isArray(nodeData.tekst[bokstav]) ? nodeData.tekst[bokstav].map(a => `<p>${a}</p>`).join('') : `<p>${nodeData.tekst[bokstav]}</p>`;
+                blokk.innerHTML = innholdHtml;
+                tekstDiv.appendChild(blokk);
+            }
+        });
+        if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
+    }
+
+    // Rekursiv tegning av undermapper
+    const barnKoder = Object.keys(nodeData.barn).sort();
+    barnKoder.forEach(barnKode => {
+        tegnTreNode(nodeData.barn[barnKode], kropp);
+    });
+
+    // Objektliste hvis vi er i en bladnode
+    if (nodeData.isLeaf && nodeData.objekter.length > 0) {
+        tegnObjektListe(nodeData, kropp); 
+    }
+
+    header.onclick = async (e) => {
+        e.stopPropagation();
+        const isOpen = kropp.style.display === 'flex';
+        kropp.style.display = isOpen ? 'none' : 'flex';
+        
+        // Tar vare på håndbok-lenken ved tittel-oppdatering
+        const lenkeEl = tittelDiv.querySelector('a');
+        tittelDiv.innerText = `${isOpen ? '▶' : '▼'} ${visningsTittel}`;
+        if (lenkeEl) tittelDiv.appendChild(lenkeEl);
+
+        try {
+            if (API.viewer.setSelection) {
+                const seleksjonMap = {};
+                nodeData.masterMarkeringIds.forEach(m => {
+                    if(!seleksjonMap[m.modelId]) seleksjonMap[m.modelId] = [];
+                    seleksjonMap[m.modelId].push(m.runtimeId);
+                });
+                const seleksjonData = Object.keys(seleksjonMap).map(mid => ({ modelId: mid, objectRuntimeIds: seleksjonMap[mid] }));
+                await API.viewer.setSelection({ modelObjectIds: seleksjonData }, 'set');
+            }
+        } catch(err) {}
+    };
+
+    div.appendChild(header);
+    div.appendChild(kropp);
+    containerEl.appendChild(div);
 }
 
 connect();
