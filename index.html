@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.13</title>
+  <title>Mengdeuttak R761 v1.14</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -138,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.13</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.14</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -769,6 +769,13 @@ function tegnTreNode(nodeData, containerEl) {
     const tittelDiv = document.createElement('div');
     tittelDiv.className = 'prosess-tittel';
     
+    // ENDRING: Svart tekst for mellomnivåer (mapper), blå for prosesser med faktiske treff/objekter
+    if (nodeData.objekter && nodeData.objekter.length > 0) {
+        tittelDiv.style.color = 'var(--blue)';
+    } else {
+        tittelDiv.style.color = 'var(--ink)'; // Svart/mørkegrå
+    }
+    
     let visningsTittel = (nodeData.kode === "X" || nodeData.kode === "MANGLER") ? nodeData.tittel : `${nodeData.kode} - ${nodeData.tittel}`;
     tittelDiv.innerText = `▶ ${visningsTittel}`;
 
@@ -782,7 +789,7 @@ function tegnTreNode(nodeData, containerEl) {
 
     header.appendChild(tittelDiv);
 
-    // ENDRING: Viser kun mengde-boksen hvis dette er et "blad" i treet (altså det laveste nivået med mengder)
+    // Viser kun mengde-boksen hvis dette nivået har mengder
     if (nodeData.isLeaf) {
         const mengdeDiv = document.createElement('div');
         mengdeDiv.className = 'prosess-mengde';
