@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.12</title>
+  <title>Mengdeuttak R761 v1.13</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
@@ -138,7 +138,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.12</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.13</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -756,7 +756,7 @@ function tegnObjektListe(nodeData, containerEl) {
     containerEl.appendChild(delmengderSeksjon);
 }
 
-// Rekursiv funksjon som tegner ut hierarkiet (med skjult tekst som standard)
+// Rekursiv funksjon som tegner ut hierarkiet
 function tegnTreNode(nodeData, containerEl) {
     const div = document.createElement('div');
     div.className = 'prosess-panel';
@@ -780,17 +780,20 @@ function tegnTreNode(nodeData, containerEl) {
         tittelDiv.appendChild(lenke);
     }
 
-    const mengdeDiv = document.createElement('div');
-    mengdeDiv.className = 'prosess-mengde';
-    mengdeDiv.innerText = nodeData.isLeaf ? `${nodeData.totalMengde.toFixed(2)} ${nodeData.enhet}` : `${nodeData.masterMarkeringIds.length} objekter`;
-
     header.appendChild(tittelDiv);
-    header.appendChild(mengdeDiv);
+
+    // ENDRING: Viser kun mengde-boksen hvis dette er et "blad" i treet (altså det laveste nivået med mengder)
+    if (nodeData.isLeaf) {
+        const mengdeDiv = document.createElement('div');
+        mengdeDiv.className = 'prosess-mengde';
+        mengdeDiv.innerText = `${nodeData.totalMengde.toFixed(2)} ${nodeData.enhet}`;
+        header.appendChild(mengdeDiv);
+    }
     
     const kropp = document.createElement('div');
     kropp.className = 'panel-kropp';
     
-    // NYTT: Håndtering av tekst med knapp for å vise/skjule
+    // Håndtering av tekst med knapp for å vise/skjule
     if (nodeData.tekst) {
         const tekstWrapper = document.createElement('div');
         tekstWrapper.style.padding = '12px 16px 0 16px';
@@ -803,7 +806,7 @@ function tegnTreNode(nodeData, containerEl) {
         const tekstDiv = document.createElement('div');
         tekstDiv.className = 'prosess-beskrivelse';
         tekstDiv.style.display = 'none'; // Lukket som standard
-        tekstDiv.style.border = 'none'; // Fjerner unødvendig ramme når den ligger inni wrapper
+        tekstDiv.style.border = 'none'; 
         tekstDiv.style.padding = '0 0 16px 0';
         
         ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
