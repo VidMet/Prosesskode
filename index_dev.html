@@ -756,12 +756,12 @@ function tegnObjektListe(nodeData, containerEl) {
     containerEl.appendChild(delmengderSeksjon);
 }
 
-// Rekursiv funksjon som tegner ut hierarkiet (inkludert tekst fra håndboken for overliggende nivåer)
+// Rekursiv funksjon som tegner ut hierarkiet (med skjult tekst som standard)
 function tegnTreNode(nodeData, containerEl) {
     const div = document.createElement('div');
     div.className = 'prosess-panel';
     if (nodeData.kode.length > 1 && nodeData.kode !== "MANGLER") {
-        div.style.borderLeft = "4px solid var(--blue-dim)"; // Liten indent-effekt på undermapper
+        div.style.borderLeft = "4px solid var(--blue-dim)"; 
     }
     
     const header = document.createElement('div');
@@ -789,12 +789,23 @@ function tegnTreNode(nodeData, containerEl) {
     
     const kropp = document.createElement('div');
     kropp.className = 'panel-kropp';
-    kropp.style.paddingLeft = "8px"; // Innrykk
     
-    // Tegner generell tekst for dette spesifikke nivået
+    // NYTT: Håndtering av tekst med knapp for å vise/skjule
     if (nodeData.tekst) {
+        const tekstWrapper = document.createElement('div');
+        tekstWrapper.style.padding = '12px 16px 0 16px';
+        
+        const tekstToggleBtn = document.createElement('button');
+        tekstToggleBtn.className = 'badge';
+        tekstToggleBtn.style.cssText = 'cursor: pointer; background: var(--surface2); color: var(--ink); border: 1px solid var(--border); margin-bottom: 8px; font-size: 11px; padding: 4px 10px;';
+        tekstToggleBtn.innerText = '📖 Vis prosessbeskrivelse';
+        
         const tekstDiv = document.createElement('div');
         tekstDiv.className = 'prosess-beskrivelse';
+        tekstDiv.style.display = 'none'; // Lukket som standard
+        tekstDiv.style.border = 'none'; // Fjerner unødvendig ramme når den ligger inni wrapper
+        tekstDiv.style.padding = '0 0 16px 0';
+        
         ['a', 'b', 'c', 'd', 'e', 'x'].forEach(bokstav => {
             if (nodeData.tekst[bokstav]) {
                 const blokk = document.createElement('div');
@@ -805,7 +816,20 @@ function tegnTreNode(nodeData, containerEl) {
                 tekstDiv.appendChild(blokk);
             }
         });
-        if (tekstDiv.hasChildNodes()) kropp.appendChild(tekstDiv);
+        
+        if (tekstDiv.hasChildNodes()) {
+            tekstToggleBtn.onclick = (e) => {
+                e.stopPropagation(); // Hindrer mappen i å lukke seg
+                const isHidden = tekstDiv.style.display === 'none';
+                tekstDiv.style.display = isHidden ? 'block' : 'none';
+                tekstToggleBtn.innerText = isHidden ? '📖 Skjul prosessbeskrivelse' : '📖 Vis prosessbeskrivelse';
+                tekstToggleBtn.style.background = isHidden ? 'var(--blue-dim)' : 'var(--surface2)';
+                tekstToggleBtn.style.color = isHidden ? 'var(--blue)' : 'var(--ink)';
+            };
+            tekstWrapper.appendChild(tekstToggleBtn);
+            tekstWrapper.appendChild(tekstDiv);
+            kropp.appendChild(tekstWrapper);
+        }
     }
 
     // Rekursiv tegning av undermapper
@@ -824,7 +848,6 @@ function tegnTreNode(nodeData, containerEl) {
         const isOpen = kropp.style.display === 'flex';
         kropp.style.display = isOpen ? 'none' : 'flex';
         
-        // Tar vare på håndbok-lenken ved tittel-oppdatering
         const lenkeEl = tittelDiv.querySelector('a');
         tittelDiv.innerText = `${isOpen ? '▶' : '▼'} ${visningsTittel}`;
         if (lenkeEl) tittelDiv.appendChild(lenkeEl);
