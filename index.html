@@ -2,135 +2,93 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.14</title>
+  <title>Mengdeuttak R761 v1.12</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
-  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Syne:wght@400;600;700;800&display=swap');
-
     :root {
-      --bg:        #f3f4f6;      
-      --surface:   #ffffff;      
-      --surface2:  #e5e7eb;      
-      --border:    #d1d5db;      
-      --ink:       #111827;      
-      --muted:     #6b7280;      
-      
-      --green:     #166534;      
-      --green-dim: #dcfce7;
-      --yellow:    #854d0e;
-      --red:       #b91c1c;
-      --red-dim:   #fee2e2;
-      
-      --blue:      #1d4ed8;      
-      --blue-dim:  #dbeafe;
-      
-      --mono:      'JetBrains Mono', monospace;
-      --sans:      'Syne', sans-serif;
+      --bg: #f3f4f6; --surface: #ffffff; --surface2: #e5e7eb; --border: #d1d5db;
+      --ink: #111827; --muted: #6b7280; --green: #166534; --red: #b91c1c; --blue: #1d4ed8;
+      --blue-dim: #dbeafe; --mono: 'JetBrains Mono', monospace; --sans: 'Syne', sans-serif;
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    html, body {
-      background: var(--bg); color: var(--ink); font-family: var(--sans);
-      height: 100%; margin: 0; padding: 0;
-      display: flex; flex-direction: column; overflow: hidden;
-      min-width: 380px; 
-    }
-
-    header {
-      background: var(--surface); border-bottom: 1px solid var(--border);
-      padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap; 
-    }
-
+    html, body { background: var(--bg); color: var(--ink); font-family: var(--sans); height: 100%; margin: 0; padding: 0; display: flex; flex-direction: column; overflow: hidden; min-width: 380px; }
+    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
     .header-title { flex: 1; min-width: 150px; }
     .header-title h1 { font-size: 16px; font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 8px; }
     .header-title h1 .version { font-family: var(--mono); font-size: 11px; font-weight: normal; color: var(--muted); background: var(--bg); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); }
     .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 2px; }
-
     .badge { font-family: var(--mono); font-size: 10px; padding: 3px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
-
     .btn { font-family: var(--sans); font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 6px; border: none; cursor: pointer; transition: opacity .15s, transform .1s; white-space: nowrap; }
     .btn:disabled { opacity: .4; cursor: not-allowed; }
     .btn:not(:disabled):hover { opacity: .85; }
-    .btn:not(:disabled):active { transform: scale(.97); }
-    
     .btn-primary { background: var(--blue); color: #ffffff; }
     .btn-secondary { background: var(--surface2); color: var(--ink); border: 1px solid var(--border); margin-left: 4px; }
     .btn-secondary:not(:disabled):hover { background: var(--border); }
     
     #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
-    
     .filter-group { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 150px; }
     .filter-group label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
     .filter-group select { font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
     .filter-group select:disabled { opacity: 0.4; cursor: not-allowed; }
+    
+    /* NY STYLING FOR CHECKBOX-MENYEN */
+    .multi-select { position: relative; flex: 1; min-width: 150px; user-select: none; }
+    .multi-select.disabled { opacity: 0.4; pointer-events: none; }
+    .multi-select-header { font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .multi-select-header::after { content: '▼'; font-size: 10px; margin-left: 8px; color: var(--muted); }
+    .multi-select-dropdown { display: none; position: absolute; top: 100%; left: 0; right: 0; background: var(--surface); border: 1px solid var(--border); box-shadow: 0 4px 12px rgba(0,0,0,0.15); z-index: 100; max-height: 250px; overflow-y: auto; border-radius: 4px; margin-top: 4px; }
+    .multi-select-dropdown label { display: flex; align-items: center; padding: 8px 10px; cursor: pointer; font-size: 11px; font-family: var(--mono); color: var(--ink); border-bottom: 1px solid var(--surface2); }
+    .multi-select-dropdown label:last-child { border-bottom: none; }
+    .multi-select-dropdown label:hover { background: var(--bg); }
+    .multi-select-dropdown input[type="checkbox"] { margin-right: 8px; cursor: pointer; }
 
     #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid var(--border); flex-shrink: 0; }
-    #statusBar.ok    { background: var(--green-dim); color: var(--green); }
-    #statusBar.error { background: var(--red-dim);   color: var(--red); }
-    #statusBar.warn  { background: #fef08a; color: var(--yellow); }
-
+    #statusBar.ok { background: var(--green-dim); color: var(--green); }
+    #statusBar.error { background: var(--red-dim); color: var(--red); }
+    #statusBar.warn { background: #fef08a; color: var(--yellow); }
+    
     main { flex: 1 1 auto; overflow-y: auto; padding: 16px; height: 0; }
-
     .guide-box { margin: 20px auto; max-width: 480px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
     .guide-box h3 { font-size: 15px; font-weight: 700; color: var(--blue); margin-bottom: 16px; }
     .guide-box ol { margin: 0; padding-left: 20px; color: var(--ink); font-size: 13px; line-height: 1.6; }
     .guide-box li { margin-bottom: 8px; padding-left: 4px; }
-    .guide-box li:last-child { margin-bottom: 0; }
-
+    
     .hoved-panel { margin-bottom: 16px; }
     .hoved-header { background: var(--surface); border: 1px solid var(--border); border-radius: 6px; padding: 12px 16px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; user-select: none; transition: background 0.2s; }
     .hoved-header:hover { background: var(--surface2); }
     .hoved-tittel { font-weight: 600; font-size: 14px; color: var(--ink); }
     .hoved-info { font-family: var(--mono); font-size: 11px; color: var(--muted); }
     .hoved-kropp { display: none; padding-top: 12px; padding-left: 12px; border-left: 2px solid var(--border); margin-left: 8px; flex-direction: column; }
-    
     .prosess-panel { background: var(--surface); border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
-    .prosess-panel:last-child { margin-bottom: 0; }
     .prosess-header { padding: 10px 14px; background: var(--surface); cursor: pointer; display: flex; justify-content: space-between; align-items: center; transition: background 0.2s; user-select: none; }
     .prosess-header:hover { background: var(--surface2); }
     .prosess-tittel { font-weight: 600; font-size: 13px; color: var(--blue); }
     .prosess-mengde { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--bg); padding: 4px 8px; border-radius: 6px; border: 1px solid var(--border); }
-    
     .panel-kropp { display: none; border-top: 1px solid var(--border); background: var(--surface); flex-direction: column; }
-    
-    .prosess-beskrivelse { padding: 16px; border-bottom: 1px solid var(--border); background: var(--surface); flex-shrink: 0; max-height: 180px; overflow-y: auto; }
+    .prosess-beskrivelse { padding: 0 0 16px 0; border: none; flex-shrink: 0; max-height: 180px; overflow-y: auto; }
     .tekst-blokk { margin-bottom: 10px; font-size: 12px; line-height: 1.5; color: var(--ink); border-left: 3px solid var(--surface2); padding-left: 10px; }
-    .tekst-blokk:last-child { margin-bottom: 0; }
-    .tekst-blokk p { margin-top: 4px; margin-bottom: 8px; }
-    .tekst-blokk p:last-child { margin-bottom: 0; }
     .tekst-bokstav { font-weight: 700; color: var(--blue); display: block; margin-bottom: 2px; font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; }
-    
     .delmengder-seksjon { display: flex; flex-direction: column; padding-top: 12px; background: var(--bg); border-bottom-left-radius: 8px; border-bottom-right-radius: 8px; }
     .delmengder-tittel { font-weight: 700; color: var(--blue); font-size: 11px; font-family: var(--mono); text-transform: uppercase; letter-spacing: 0.5px; padding: 0 16px 8px 16px; }
-    
     .objekt-liste { overflow-y: auto; max-height: 300px; border-top: 1px solid var(--border); }
     .modell-gruppe { display: flex; flex-direction: column; }
     .modell-overskrift { background: var(--surface); padding: 8px 16px; font-size: 10px; font-family: var(--mono); color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; display: flex; justify-content: space-between; border-bottom: 1px solid var(--border); cursor: pointer; position: sticky; top: 0; user-select: none; z-index: 2; }
     .modell-overskrift:hover { background: var(--surface2); color: var(--ink); }
     .modell-overskrift-mengde { color: var(--blue); font-weight: 600; }
-    
     .modell-objekter { display: none; flex-direction: column; }
     .objekt-rad { display: flex; justify-content: space-between; padding: 8px 16px; border-bottom: 1px solid var(--border); cursor: pointer; transition: background 0.1s; background: var(--surface); }
     .objekt-rad:hover { background: var(--bg); }
     .obj-navn { font-size: 12px; color: var(--ink); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 70%; padding-left: 20px; border-left: 2px solid var(--border); }
     .obj-mengde { font-family: var(--mono); font-size: 11px; color: var(--green); }
     .obj-mengde-feil { font-family: var(--mono); font-size: 11px; color: var(--red); font-weight: 700; }
-
     .empty { text-align: center; padding: 40px 20px; color: var(--muted); font-size: 13px; }
-    
     ::-webkit-scrollbar { width: 6px; height: 6px; }
     ::-webkit-scrollbar-track { background: var(--bg); }
     ::-webkit-scrollbar-thumb { background: var(--muted); border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: var(--ink); }
-
-    @keyframes fadeUp {
-      from { opacity:0; transform:translateY(6px); }
-      to   { opacity:1; transform:none; }
-    }
+    @keyframes fadeUp { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
     .anim { animation: fadeUp .3s ease both; }
   </style>
 </head>
@@ -138,7 +96,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.14</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.12</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -162,10 +120,12 @@
     </select>
   </div>
   <div class="filter-group">
-    <label for="modelFilter">Utvalg:</label>
-    <select id="modelFilter" disabled>
-      <option value="ALL">Alle modeller i vieweren</option>
-    </select>
+    <label>Utvalg:</label>
+    <div class="multi-select disabled" id="multiSelectContainer">
+      <div class="multi-select-header" id="modelSelectHeader">Skann for å velge...</div>
+      <div class="multi-select-dropdown" id="modelSelectDropdown">
+        </div>
+    </div>
   </div>
 </div>
 
@@ -178,10 +138,10 @@
       <li>Last ønskede modeller inn i visningen, og la alt laste seg ferdig.</li>
       <li>Velg i nedtrekksmenyen hvilken håndbok det skal sjekkes mot.</li>
       <li>Trykk på <strong>Skann Modell</strong> og la den skanne ferdig.</li>
+      <li>Huk av for de modellene du vil ha med i beregningen/kontrollen.</li>
       <li>Velg om du vil gruppere mengdene etter prosess eller sted.</li>
-      <li>Velg i nedtrekksmenyen hvis du vil se på enkeltmodeller.</li>
-      <li>Klikk deg innover i prosesstreet for å markere og se på enkeltobjekter.</li>
-      <li>Eksporter eventuelt ut et excel-ark med alle mengdene.</li>
+      <li>Klikk deg innover i prosesstreet for å lese definisjoner og markere objekter.</li>
+      <li>Eksporter eventuelt ut et excel-ark med de valgte mengdene.</li>
     </ol>
   </div>
 </main>
@@ -189,7 +149,6 @@
 <script>
 let API = null;
 let svvHandbok = null;
-
 let globalProsessRegister = {};
 let globalModelsMap = {};
 
@@ -231,19 +190,14 @@ async function lastJSONFil(versjon) {
   setStatus(`⏳ Laster inn R761 (${versjon})...`);
   try {
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
-    
-    // Forenklet innlesing (støtter også lokal kjøring uten cacheBuster)
     const promises = kapitler.map(kap => 
       fetch(`Prosesskode_${versjon}_${kap}.json`)
         .then(res => {
           if (!res.ok) throw new Error(`Status ${res.status}`);
           return res.json();
         })
-        .catch(err => {
-          return null; 
-        })
+        .catch(err => { return null; })
     );
-    
     const resultater = await Promise.all(promises);
     svvHandbok = { prosesskoder: {} };
     let totaltLastedeKoder = 0;
@@ -269,7 +223,6 @@ function oppdaterRegisterMedNyHandbok() {
         const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
         if (handbokData) {
             globalProsessRegister[kode].tittel = handbokData.tittel;
-            // Enhet overstyres ikke her for å respektere objektets enhet
             globalProsessRegister[kode].url = handbokData.url;
             globalProsessRegister[kode].tekst = handbokData.tekst;
         }
@@ -281,21 +234,37 @@ $('versionFilter').addEventListener('change', async (e) => {
     await lastJSONFil(e.target.value);
     if (Object.keys(globalProsessRegister).length > 0) {
         oppdaterRegisterMedNyHandbok();
-        tegnOppUI(globalProsessRegister, $('modelFilter').value);
+        tegnOppUI(globalProsessRegister);
     }
     $('versionFilter').disabled = false;
 });
 
-$('modelFilter').addEventListener('change', (e) => {
-    tegnOppUI(globalProsessRegister, e.target.value);
+$('groupingFilter').addEventListener('change', (e) => {
+    tegnOppUI(globalProsessRegister);
 });
 
-$('groupingFilter').addEventListener('change', (e) => {
-    tegnOppUI(globalProsessRegister, $('modelFilter').value);
+// Styrer avkrysningsmenyen
+document.addEventListener('click', (e) => {
+    const dropdown = $('modelSelectDropdown');
+    const header = $('modelSelectHeader');
+    const container = $('multiSelectContainer');
+    if (dropdown && header && !container.classList.contains('disabled')) {
+        if (header.contains(e.target)) {
+            dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
+        } else if (!dropdown.contains(e.target)) {
+            dropdown.style.display = 'none';
+        }
+    }
 });
+
+function getValgteModeller() {
+    const checkboxes = document.querySelectorAll('.model-checkbox');
+    return Array.from(checkboxes).filter(cb => cb.checked).map(cb => cb.value);
+}
 
 $('exportBtn').addEventListener('click', () => {
   if (Object.keys(globalProsessRegister).length === 0) return;
+  const valgteModeller = getValgteModeller();
   
   setStatus('⏳ Genererer Excel-rapport...');
   
@@ -310,12 +279,13 @@ $('exportBtn').addEventListener('click', () => {
       const kodeVisning = kode === "MANGLER" ? "" : kode;
       
       data.objekter.forEach(obj => {
+          if (!valgteModeller.includes(obj.modelId)) return; // Ekskluderer modeller som ikke er huket av
+          
           const tittelRenset = (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
           const modellRenset = (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
           const stedRenset = (obj.sted || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
           const navnRenset = (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
           const mengdeFormatert = obj.mengde.toString().replace('.', ',');
-          
           csvInnhold += `${hpVisning};${kodeVisning};${tittelRenset};${data.enhet};${stedRenset};${modellRenset};${navnRenset};${mengdeFormatert}\r\n`;
       });
   });
@@ -323,34 +293,29 @@ $('exportBtn').addEventListener('click', () => {
   const blob = new Blob([csvInnhold], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const lenke = document.createElement("a");
-  
   const datoStreng = new Date().toISOString().slice(0,10);
   lenke.setAttribute("href", url);
   lenke.setAttribute("download", `Mengdeuttak_R761_${datoStreng}.csv`);
   lenke.style.visibility = 'hidden';
-  
   document.body.appendChild(lenke);
   lenke.click();
   document.body.removeChild(lenke);
-  
   setStatus('✅ Filen ble eksportert. Sjekk nedlastingsmappen din!', 'ok');
 });
 
 $('scanBtn').addEventListener('click', async () => {
   if (!API) return;
-  
   $('scanBtn').disabled = true;
-  $('modelFilter').disabled = true;
   $('versionFilter').disabled = true;
   $('groupingFilter').disabled = true;
   $('exportBtn').disabled = true; 
+  $('multiSelectContainer').classList.add('disabled');
   $('mainContent').innerHTML = '';
   globalProsessRegister = {};
   globalModelsMap = {};
   
   try {
     setStatus('⏳ Henter filnavn og modeller fra vieweren...');
-    
     const nameMap = new Map();
     const srcs = [() => API.models && API.models.getModels(), () => API.viewer && API.viewer.getModels()];
     for (const src of srcs) {
@@ -367,7 +332,6 @@ $('scanBtn').addEventListener('click', async () => {
     }
 
     const models = await API.viewer.getObjects();
-    
     if (!models || models.length === 0) {
       setStatus('⚠️ Fant ingen objekter i vieweren.', 'warn');
       $('scanBtn').disabled = false;
@@ -381,10 +345,8 @@ $('scanBtn').addEventListener('click', async () => {
 
     for (const model of models) {
       const mid = model.modelId || model.modelid;
-      
       let modelName = nameMap.get(mid) || model.name;
       if (!modelName || modelName.trim() === "") modelName = `Modell (${mid.substring(0,6)}...)`;
-      
       globalModelsMap[mid] = modelName;
 
       const objectIds = (model.objects || []).map(o => o.id || o.objectRuntimeId).filter(id => id != null);
@@ -398,7 +360,6 @@ $('scanBtn').addEventListener('click', async () => {
         
         propsArr.forEach(obj => {
           const flatProps = {};
-          
           (obj.properties || []).forEach(pset => 
             (pset.properties || []).forEach(p => {
                if (p.value !== undefined && p.value !== null && String(p.value).trim() !== "") {
@@ -407,7 +368,6 @@ $('scanBtn').addEventListener('click', async () => {
             })
           );
 
-          // EKSKLUDERER STRUKTUROBJEKTER
           const sjekkVerdier = [
               obj.class, flatProps["IfcClass"], flatProps["IfcEntity"], 
               flatProps["Entity"], flatProps["Type"], flatProps["Objekttype"]
@@ -417,19 +377,16 @@ $('scanBtn').addEventListener('click', async () => {
           if (!skalEkskluderes && obj.name && strukturKlasserRegex.test(obj.name.trim())) {
               skalEkskluderes = true;
           }
-
           if (skalEkskluderes) return; 
           
           const prosesskodeRaw = flatProps["Prosesskode"] ?? flatProps["prosesskode"] ?? flatProps["ProsessKode"];
           let hasProsesskode = false;
           let prosesskode = "MANGLER";
-          
           if (prosesskodeRaw !== undefined && prosesskodeRaw !== null && String(prosesskodeRaw).trim() !== "") {
               hasProsesskode = true;
               prosesskode = String(prosesskodeRaw).trim();
           }
           
-          // OPPDATERT: Prioriterer A006_Objektnavn for visning i listen
           let objektNavn = flatProps["A006_Objektnavn"] ?? flatProps["a006_objektnavn"] ?? flatProps["Objekttype"];
           if (!objektNavn || String(objektNavn).trim() === "") {
             objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
@@ -461,9 +418,7 @@ $('scanBtn').addEventListener('click', async () => {
               standardEnhet = "stk";
           }
 
-          if (erEgendefinert) {
-              tittel += " (egendefinert)";
-          }
+          if (erEgendefinert) tittel += " (egendefinert)";
 
           let objektEnhetRaw = flatProps["Enhet"] ?? flatProps["enhet"] ?? flatProps["ENHET"];
           let objektEnhet = objektEnhetRaw ? String(objektEnhetRaw).toLowerCase().trim() : null;
@@ -476,12 +431,11 @@ $('scanBtn').addEventListener('click', async () => {
               erOverstyrtEnhet = true;
           }
 
-          // OPPDATERT: Fjerner beregnet geometri - bruker KUN egenskapen Mengde
           let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
           let manglerMengde = false;
           
           if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-              if (aktivEnhet === "stk") {
+              if (aktivEnhet === "stk" || standardEnhet === "stk") {
                   rawMengde = 1; 
               } else {
                   manglerMengde = true;
@@ -496,32 +450,15 @@ $('scanBtn').addEventListener('click', async () => {
 
           if (!globalProsessRegister[prosesskode]) {
             if (prosesskode === "MANGLER") {
-                globalProsessRegister[prosesskode] = {
-                    tittel: "Objekter som mangler prosesskode",
-                    enhet: "stk",
-                    hovedprosess: "X",
-                    url: null,
-                    tekst: null,
-                    objekter: [],
-                    erOverstyrtEnhet: false
-                };
+                globalProsessRegister[prosesskode] = { tittel: "Objekter som mangler prosesskode", enhet: "stk", hovedprosess: "X", url: null, tekst: null, objekter: [], erOverstyrtEnhet: false };
             } else {
-                globalProsessRegister[prosesskode] = {
-                  tittel: tittel,
-                  enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet),
-                  hovedprosess: hpKode,
-                  url: handbokData && handbokData.url ? handbokData.url : null,
-                  tekst: handbokData && handbokData.tekst ? handbokData.tekst : null,
-                  objekter: [],
-                  erOverstyrtEnhet: erOverstyrtEnhet
-                };
+                globalProsessRegister[prosesskode] = { tittel: tittel, enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet), hovedprosess: hpKode, url: handbokData && handbokData.url ? handbokData.url : null, tekst: handbokData && handbokData.tekst ? handbokData.tekst : null, objekter: [], erOverstyrtEnhet: erOverstyrtEnhet };
             }
           } else if (erOverstyrtEnhet && !globalProsessRegister[prosesskode].erOverstyrtEnhet) {
               globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw).trim();
               globalProsessRegister[prosesskode].erOverstyrtEnhet = true;
           }
           
-          const runtimeId = obj.id || obj.objectRuntimeId;
           globalProsessRegister[prosesskode].objekter.push({ 
               navn: objektNavn, 
               mengde: mengde,
@@ -529,22 +466,19 @@ $('scanBtn').addEventListener('click', async () => {
               modelId: mid, 
               modelNavn: modelName,
               sted: stedStr,
-              runtimeId: runtimeId 
+              runtimeId: obj.id || obj.objectRuntimeId
           });
         });
       }
     }
-
     oppdaterDropdownMeny();
-    tegnOppUI(globalProsessRegister, 'ALL');
-    
+    tegnOppUI(globalProsessRegister);
     setStatus(`✅ Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
     $('scanBtn').disabled = false;
-    $('modelFilter').disabled = false;
     $('versionFilter').disabled = false;
     $('groupingFilter').disabled = false;
     $('exportBtn').disabled = false; 
-
+    $('multiSelectContainer').classList.remove('disabled');
   } catch (error) {
     setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
     $('scanBtn').disabled = false;
@@ -553,131 +487,57 @@ $('scanBtn').addEventListener('click', async () => {
 });
 
 function oppdaterDropdownMeny() {
-    const select = $('modelFilter');
-    select.innerHTML = '<option value="ALL">Alle modeller i vieweren</option>';
+    const dropdown = $('modelSelectDropdown');
+    dropdown.innerHTML = '';
+    
     const sorterteModeller = Object.entries(globalModelsMap).sort((a, b) => a[1].localeCompare(b[1]));
-    for (const [mid, name] of sorterteModeller) {
-        const option = document.createElement('option');
-        option.value = mid; option.innerText = name;
-        select.appendChild(option);
+    
+    const alleLabel = document.createElement('label');
+    alleLabel.innerHTML = `<input type="checkbox" id="selectAllModels" checked> <strong style="color:var(--blue)">Velg alle modeller</strong>`;
+    dropdown.appendChild(alleLabel);
+    
+    sorterteModeller.forEach(([mid, name]) => {
+        const label = document.createElement('label');
+        label.innerHTML = `<input type="checkbox" class="model-checkbox" value="${mid}" checked> <span style="white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">${name}</span>`;
+        dropdown.appendChild(label);
+    });
+
+    const checkboxes = document.querySelectorAll('.model-checkbox');
+    const selectAll = $('selectAllModels');
+
+    selectAll.addEventListener('change', (e) => {
+        checkboxes.forEach(cb => cb.checked = e.target.checked);
+        oppdaterModellFilterTekst();
+        tegnOppUI(globalProsessRegister);
+    });
+
+    checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+            selectAll.checked = Array.from(checkboxes).every(c => c.checked);
+            oppdaterModellFilterTekst();
+            tegnOppUI(globalProsessRegister);
+        });
+    });
+
+    oppdaterModellFilterTekst();
+}
+
+function oppdaterModellFilterTekst() {
+    const checkboxes = document.querySelectorAll('.model-checkbox');
+    const checked = Array.from(checkboxes).filter(cb => cb.checked);
+    const header = $('modelSelectHeader');
+    if (checked.length === checkboxes.length && checkboxes.length > 0) {
+        header.innerText = "Alle modeller valgt";
+    } else if (checked.length === 0) {
+        header.innerText = "Ingen modeller valgt";
+    } else if (checked.length === 1) {
+        const mid = checked[0].value;
+        header.innerText = globalModelsMap[mid];
+    } else {
+        header.innerText = `${checked.length} modeller valgt`;
     }
 }
 
-function tegnOppUI(register, filterMid) {
-  const container = $('mainContent');
-  container.innerHTML = ''; 
-  
-  const koder = Object.keys(register).sort();
-  if (koder.length === 0) {
-      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
-      return;
-  }
-
-  const gruppeValg = $('groupingFilter').value; 
-  let steder = ["Alle"];
-  if (gruppeValg === 'STED') {
-      const stedSet = new Set();
-      koder.forEach(kode => {
-          register[kode].objekter.forEach(obj => {
-              if (filterMid === 'ALL' || obj.modelId === filterMid) stedSet.add(obj.sted);
-          });
-      });
-      steder = Array.from(stedSet).sort();
-  }
-
-  let totaleVisteTotalt = 0;
-  const wrapper = document.createElement('div');
-  wrapper.className = 'anim';
-
-  steder.forEach(stedNavn => {
-      let stedKropp = wrapper;
-      let stedMasterMarkering = [];
-      let totalObjekterISted = 0;
-
-      if (gruppeValg === 'STED') {
-          const stedDiv = document.createElement('div');
-          stedDiv.className = 'hoved-panel';
-          const stedHeader = document.createElement('div');
-          stedHeader.className = 'hoved-header';
-          stedHeader.innerHTML = `<div class="hoved-tittel">▶ ${stedNavn}</div><div class="hoved-info sted-info-count">...</div>`;
-          stedKropp = document.createElement('div');
-          stedKropp.className = 'hoved-kropp';
-          
-          stedHeader.onclick = async () => {
-              const isOpen = stedKropp.style.display === 'flex';
-              stedKropp.style.display = isOpen ? 'none' : 'flex';
-              stedHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} ${stedNavn}`;
-              try { if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: stedMasterMarkering }, 'set'); } catch(err) {}
-          };
-          stedDiv.appendChild(stedHeader); stedDiv.appendChild(stedKropp); wrapper.appendChild(stedDiv);
-      }
-
-      // BYGGER DET HIERARKISKE TREET I MINNET FOR DETTE STEDET
-      const kodeTre = {};
-      
-      koder.forEach(kode => {
-          const data = register[kode];
-          const filtrerteObjekter = data.objekter.filter(obj => (filterMid === 'ALL' || obj.modelId === filterMid) && (gruppeValg === 'PROSESS' || obj.sted === stedNavn));
-          if (filtrerteObjekter.length === 0) return;
-          
-          totaleVisteTotalt++;
-          totalObjekterISted += filtrerteObjekter.length;
-          
-          const nivaer = hentNivaer(kode);
-          let node = kodeTre;
-          
-          nivaer.forEach((nivaKode, index) => {
-              if (!node[nivaKode]) {
-                  let handbokInfo = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[nivaKode] : null;
-                  let tittel = handbokInfo ? handbokInfo.tittel : (nivaKode === "X" ? "Ingen prosesskode funnet" : (nivaKode.length === 1 ? hovedprosessNavn[nivaKode] : `Underprosess ${nivaKode}`));
-                  if (nivaKode === "MANGLER") tittel = "Objekter som mangler prosesskode";
-                  
-                  node[nivaKode] = {
-                      kode: nivaKode, tittel: tittel,
-                      tekst: handbokInfo ? handbokInfo.tekst : null,
-                      url: handbokInfo ? handbokInfo.url : null,
-                      barn: {}, objekter: [],
-                      totalMengde: 0, enhet: "?", masterMarkeringIds: []
-                  };
-              }
-              
-              filtrerteObjekter.forEach(obj => {
-                  node[nivaKode].masterMarkeringIds.push({ modelId: obj.modelId, runtimeId: Number(obj.runtimeId) });
-                  
-                  // Legger til i hovedmarkering for Steds-panelet
-                  if (gruppeValg === 'STED' && index === 0) {
-                      let existing = stedMasterMarkering.find(m => m.modelId === obj.modelId);
-                      if (!existing) { existing = { modelId: obj.modelId, objectRuntimeIds: [] }; stedMasterMarkering.push(existing); }
-                      existing.objectRuntimeIds.push(Number(obj.runtimeId));
-                  }
-
-                  if(index === nivaer.length - 1) { // Hvis dette er siste nivå (bladnoden)
-                       node[nivaKode].objekter.push(obj);
-                       node[nivaKode].totalMengde += obj.mengde;
-                       node[nivaKode].enhet = data.enhet; 
-                       node[nivaKode].isLeaf = true;
-                  }
-              });
-              node = node[nivaKode].barn;
-          });
-      });
-
-      if (gruppeValg === 'STED') {
-          stedKropp.parentElement.querySelector('.sted-info-count').innerText = `${totalObjekterISted} objekter`;
-          if (totalObjekterISted === 0) stedKropp.parentElement.style.display = 'none';
-      }
-
-      // Sender rotnivåene til tegning
-      Object.keys(kodeTre).sort().forEach(rotKode => {
-          tegnTreNode(kodeTre[rotKode], stedKropp);
-      });
-  });
-
-  if (totaleVisteTotalt === 0) container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
-  else container.appendChild(wrapper);
-}
-
-// Deler opp en prosesskode i alle underliggende nivåer
 function hentNivaer(kode) {
     if (kode === "MANGLER") return ["X", "MANGLER"];
     const nivaer = [kode.charAt(0)];
@@ -691,7 +551,6 @@ function hentNivaer(kode) {
     return [...new Set(nivaer)];
 }
 
-// Tegner opp fil- og objektlisten for selve "bladnodene"
 function tegnObjektListe(nodeData, containerEl) {
     const delmengderSeksjon = document.createElement('div');
     delmengderSeksjon.className = 'delmengder-seksjon';
@@ -756,7 +615,6 @@ function tegnObjektListe(nodeData, containerEl) {
     containerEl.appendChild(delmengderSeksjon);
 }
 
-// Rekursiv funksjon som tegner ut hierarkiet
 function tegnTreNode(nodeData, containerEl) {
     const div = document.createElement('div');
     div.className = 'prosess-panel';
@@ -769,11 +627,10 @@ function tegnTreNode(nodeData, containerEl) {
     const tittelDiv = document.createElement('div');
     tittelDiv.className = 'prosess-tittel';
     
-    // ENDRING: Svart tekst for mellomnivåer (mapper), blå for prosesser med faktiske treff/objekter
     if (nodeData.objekter && nodeData.objekter.length > 0) {
         tittelDiv.style.color = 'var(--blue)';
     } else {
-        tittelDiv.style.color = 'var(--ink)'; // Svart/mørkegrå
+        tittelDiv.style.color = 'var(--ink)'; 
     }
     
     let visningsTittel = (nodeData.kode === "X" || nodeData.kode === "MANGLER") ? nodeData.tittel : `${nodeData.kode} - ${nodeData.tittel}`;
@@ -789,7 +646,6 @@ function tegnTreNode(nodeData, containerEl) {
 
     header.appendChild(tittelDiv);
 
-    // Viser kun mengde-boksen hvis dette nivået har mengder
     if (nodeData.isLeaf) {
         const mengdeDiv = document.createElement('div');
         mengdeDiv.className = 'prosess-mengde';
@@ -800,7 +656,6 @@ function tegnTreNode(nodeData, containerEl) {
     const kropp = document.createElement('div');
     kropp.className = 'panel-kropp';
     
-    // Håndtering av tekst med knapp for å vise/skjule
     if (nodeData.tekst) {
         const tekstWrapper = document.createElement('div');
         tekstWrapper.style.padding = '12px 16px 0 16px';
@@ -812,7 +667,7 @@ function tegnTreNode(nodeData, containerEl) {
         
         const tekstDiv = document.createElement('div');
         tekstDiv.className = 'prosess-beskrivelse';
-        tekstDiv.style.display = 'none'; // Lukket som standard
+        tekstDiv.style.display = 'none'; 
         tekstDiv.style.border = 'none'; 
         tekstDiv.style.padding = '0 0 16px 0';
         
@@ -829,7 +684,7 @@ function tegnTreNode(nodeData, containerEl) {
         
         if (tekstDiv.hasChildNodes()) {
             tekstToggleBtn.onclick = (e) => {
-                e.stopPropagation(); // Hindrer mappen i å lukke seg
+                e.stopPropagation(); 
                 const isHidden = tekstDiv.style.display === 'none';
                 tekstDiv.style.display = isHidden ? 'block' : 'none';
                 tekstToggleBtn.innerText = isHidden ? '📖 Skjul prosessbeskrivelse' : '📖 Vis prosessbeskrivelse';
@@ -842,13 +697,11 @@ function tegnTreNode(nodeData, containerEl) {
         }
     }
 
-    // Rekursiv tegning av undermapper
     const barnKoder = Object.keys(nodeData.barn).sort();
     barnKoder.forEach(barnKode => {
         tegnTreNode(nodeData.barn[barnKode], kropp);
     });
 
-    // Objektliste hvis vi er i en bladnode
     if (nodeData.isLeaf && nodeData.objekter.length > 0) {
         tegnObjektListe(nodeData, kropp); 
     }
@@ -878,6 +731,119 @@ function tegnTreNode(nodeData, containerEl) {
     div.appendChild(header);
     div.appendChild(kropp);
     containerEl.appendChild(div);
+}
+
+function tegnOppUI(register) {
+  const container = $('mainContent');
+  container.innerHTML = ''; 
+  
+  const koder = Object.keys(register).sort();
+  if (koder.length === 0) {
+      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
+      return;
+  }
+
+  const gruppeValg = $('groupingFilter').value; 
+  const valgteModeller = getValgteModeller();
+  
+  let steder = ["Alle"];
+  if (gruppeValg === 'STED') {
+      const stedSet = new Set();
+      koder.forEach(kode => {
+          register[kode].objekter.forEach(obj => {
+              if (valgteModeller.includes(obj.modelId)) stedSet.add(obj.sted);
+          });
+      });
+      steder = Array.from(stedSet).sort();
+  }
+
+  let totaleVisteTotalt = 0;
+  const wrapper = document.createElement('div');
+  wrapper.className = 'anim';
+
+  steder.forEach(stedNavn => {
+      let stedKropp = wrapper;
+      let stedMasterMarkering = [];
+      let totalObjekterISted = 0;
+
+      if (gruppeValg === 'STED') {
+          const stedDiv = document.createElement('div');
+          stedDiv.className = 'hoved-panel';
+          const stedHeader = document.createElement('div');
+          stedHeader.className = 'hoved-header';
+          stedHeader.innerHTML = `<div class="hoved-tittel">▶ ${stedNavn}</div><div class="hoved-info sted-info-count">...</div>`;
+          stedKropp = document.createElement('div');
+          stedKropp.className = 'hoved-kropp';
+          
+          stedHeader.onclick = async () => {
+              const isOpen = stedKropp.style.display === 'flex';
+              stedKropp.style.display = isOpen ? 'none' : 'flex';
+              stedHeader.querySelector('.hoved-tittel').innerText = `${isOpen ? '▼' : '▶'} ${stedNavn}`;
+              try { if (API.viewer.setSelection) await API.viewer.setSelection({ modelObjectIds: stedMasterMarkering }, 'set'); } catch(err) {}
+          };
+          stedDiv.appendChild(stedHeader); stedDiv.appendChild(stedKropp); wrapper.appendChild(stedDiv);
+      }
+
+      const kodeTre = {};
+      
+      koder.forEach(kode => {
+          const data = register[kode];
+          const filtrerteObjekter = data.objekter.filter(obj => valgteModeller.includes(obj.modelId) && (gruppeValg === 'PROSESS' || obj.sted === stedNavn));
+          if (filtrerteObjekter.length === 0) return;
+          
+          totaleVisteTotalt++;
+          totalObjekterISted += filtrerteObjekter.length;
+          
+          const nivaer = hentNivaer(kode);
+          let node = kodeTre;
+          
+          nivaer.forEach((nivaKode, index) => {
+              if (!node[nivaKode]) {
+                  let handbokInfo = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[nivaKode] : null;
+                  let tittel = handbokInfo ? handbokInfo.tittel : (nivaKode === "X" ? "Ingen prosesskode funnet" : (nivaKode.length === 1 ? hovedprosessNavn[nivaKode] : `Underprosess ${nivaKode}`));
+                  if (nivaKode === "MANGLER") tittel = "Objekter som mangler prosesskode";
+                  
+                  node[nivaKode] = {
+                      kode: nivaKode, tittel: tittel,
+                      tekst: handbokInfo ? handbokInfo.tekst : null,
+                      url: handbokInfo ? handbokInfo.url : null,
+                      barn: {}, objekter: [],
+                      totalMengde: 0, enhet: "?", masterMarkeringIds: []
+                  };
+              }
+              
+              filtrerteObjekter.forEach(obj => {
+                  node[nivaKode].masterMarkeringIds.push({ modelId: obj.modelId, runtimeId: Number(obj.runtimeId) });
+                  
+                  if (gruppeValg === 'STED' && index === 0) {
+                      let existing = stedMasterMarkering.find(m => m.modelId === obj.modelId);
+                      if (!existing) { existing = { modelId: obj.modelId, objectRuntimeIds: [] }; stedMasterMarkering.push(existing); }
+                      existing.objectRuntimeIds.push(Number(obj.runtimeId));
+                  }
+
+                  if(index === nivaer.length - 1) { 
+                       node[nivaKode].objekter.push(obj);
+                       node[nivaKode].totalMengde += obj.mengde;
+                       node[nivaKode].enhet = data.enhet; 
+                       node[nivaKode].isLeaf = true;
+                  }
+              });
+              node = node[nivaKode].barn;
+          });
+      });
+
+      if (gruppeValg === 'STED') {
+          stedKropp.parentElement.querySelector('.sted-info-count').innerText = `${totalObjekterISted} objekter`;
+          if (totalObjekterISted === 0) stedKropp.parentElement.style.display = 'none';
+      }
+
+      Object.keys(kodeTre).sort().forEach(rotKode => {
+          tegnTreNode(kodeTre[rotKode], stedKropp);
+      });
+  });
+
+  if (totaleVisteTotalt === 0) container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell. Pass på at modellene har objekter.</div>';
+  else container.appendChild(wrapper);
 }
 
 connect();
