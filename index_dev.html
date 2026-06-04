@@ -536,11 +536,11 @@ $('scanBtn').addEventListener('click', async () => {
     $('groupingFilter').disabled = false;
     $('exportBtn').disabled = false; 
     $('multiSelectContainer').classList.remove('disabled');
+    $('exportLevel').disabled = false;
   } catch (error) {
     setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
-    $('exportLevel').disabled = false;
   }
 });
 
