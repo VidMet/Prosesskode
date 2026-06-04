@@ -101,7 +101,13 @@
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
   <button class="btn btn-primary" id="scanBtn" disabled>▶ Skann Modell</button>
-  <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter til Excel</button>
+  <select id="exportLevel" class="btn btn-secondary" style="outline:none; cursor:pointer;" disabled>
+    <option value="KOMPLETT">Komplett (Alle objekter)</option>
+    <option value="PROSESS">Summer på Prosessnivå</option>
+    <option value="MODELL">Summer på Modellnivå</option>
+    <option value="STED_PROSESS">Summer på Sted-Prosess</option>
+  </select>
+  <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter</button>
 </header>
 
 <div id="filterBar">
@@ -265,12 +271,14 @@ function getValgteModeller() {
 $('exportBtn').addEventListener('click', () => {
   if (Object.keys(globalProsessRegister).length === 0) return;
   const valgteModeller = getValgteModeller();
+  const exportLevel = $('exportLevel').value;
   
   setStatus('⏳ Genererer Excel-rapport...');
   
   let csvInnhold = "\uFEFF"; 
-  csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Sted;Modell;Objekttype;Mengde\r\n";
+  let dataRows = [];
   
+  // 1. Samler alle gyldige rader i et flatt array først
   const koder = Object.keys(globalProsessRegister).sort();
   koder.forEach(kode => {
       const data = globalProsessRegister[kode];
@@ -279,23 +287,71 @@ $('exportBtn').addEventListener('click', () => {
       const kodeVisning = kode === "MANGLER" ? "" : kode;
       
       data.objekter.forEach(obj => {
-          if (!valgteModeller.includes(obj.modelId)) return; // Ekskluderer modeller som ikke er huket av
+          if (!valgteModeller.includes(obj.modelId)) return; // Ignorerer utelatte modeller
           
-          const tittelRenset = (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const modellRenset = (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const stedRenset = (obj.sted || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const navnRenset = (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const mengdeFormatert = obj.mengde.toString().replace('.', ',');
-          csvInnhold += `${hpVisning};${kodeVisning};${tittelRenset};${data.enhet};${stedRenset};${modellRenset};${navnRenset};${mengdeFormatert}\r\n`;
+          dataRows.push({
+              hpVisning: hpVisning,
+              kodeVisning: kodeVisning,
+              tittelRenset: (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              enhet: data.enhet,
+              sted: (obj.sted || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              modell: (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              navn: (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              mengde: obj.mengde
+          });
       });
   });
-  
+
+  // 2. Skriver ut enten komplett liste eller bygger en summert "pivot-tabell"
+  if (exportLevel === "KOMPLETT") {
+      csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Sted;Modell;Objekttype;Mengde\r\n";
+      dataRows.forEach(r => {
+          const mengdeFormatert = r.mengde.toString().replace('.', ',');
+          csvInnhold += `${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${r.sted};${r.modell};${r.navn};${mengdeFormatert}\r\n`;
+      });
+  } else {
+      // Bygger aggregerte data basert på valg
+      const aggMap = {};
+      dataRows.forEach(r => {
+          let key = "";
+          if (exportLevel === "PROSESS") key = `${r.hpVisning}|${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "MODELL") key = `${r.modell}|${r.hpVisning}|${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "STED_PROSESS") key = `${r.sted}|${r.hpVisning}|${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
+          
+          if (!aggMap[key]) aggMap[key] = { ...r, mengde: 0 };
+          aggMap[key].mengde += r.mengde;
+      });
+
+      // Definerer overskrifter for aggregerte lister
+      if (exportLevel === "PROSESS") csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Total Mengde\r\n";
+      else if (exportLevel === "MODELL") csvInnhold += "Modell;Hovedprosess;Prosesskode;Beskrivelse;Enhet;Total Mengde\r\n";
+      else if (exportLevel === "STED_PROSESS") csvInnhold += "Sted;Hovedprosess;Prosesskode;Beskrivelse;Enhet;Total Mengde\r\n";
+
+      // Legger inn data og fjerner summeringer som blir 0
+      Object.keys(aggMap).sort().forEach(k => {
+          const r = aggMap[k];
+          if (Math.abs(r.mengde) < 0.001) return; // Hopper over alt som er summert til (tilnærmet) 0
+          
+          const mengdeFormatert = r.mengde.toFixed(2).replace('.', ',');
+          if (exportLevel === "PROSESS") csvInnhold += `${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "MODELL") csvInnhold += `${r.modell};${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "STED_PROSESS") csvInnhold += `${r.sted};${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+      });
+  }
+
+  // Generer nedlasting
   const blob = new Blob([csvInnhold], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const lenke = document.createElement("a");
   const datoStreng = new Date().toISOString().slice(0,10);
+  
+  let filSuffix = "Komplett";
+  if (exportLevel === "PROSESS") filSuffix = "Prosessniva";
+  else if (exportLevel === "MODELL") filSuffix = "Modellniva";
+  else if (exportLevel === "STED_PROSESS") filSuffix = "StedProsess";
+  
   lenke.setAttribute("href", url);
-  lenke.setAttribute("download", `Mengdeuttak_R761_${datoStreng}.csv`);
+  lenke.setAttribute("download", `Mengdeuttak_R761_${filSuffix}_${datoStreng}.csv`);
   lenke.style.visibility = 'hidden';
   document.body.appendChild(lenke);
   lenke.click();
@@ -311,6 +367,7 @@ $('scanBtn').addEventListener('click', async () => {
   $('exportBtn').disabled = true; 
   $('multiSelectContainer').classList.add('disabled');
   $('mainContent').innerHTML = '';
+  $('exportLevel').disabled = true;
   globalProsessRegister = {};
   globalModelsMap = {};
   
@@ -483,6 +540,7 @@ $('scanBtn').addEventListener('click', async () => {
     setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
+    $('exportLevel').disabled = false;
   }
 });
 
