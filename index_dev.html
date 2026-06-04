@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.14</title>
+  <title>Mengdeuttak R761 v1.15</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
   <style>
@@ -96,7 +96,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.14</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.15</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -104,7 +104,8 @@
   <select id="exportLevel" class="btn btn-secondary" style="outline:none; cursor:pointer;" disabled>
     <option value="KOMPLETT">Komplett (Alle objekter)</option>
     <option value="PROSESS">Summer på Prosessnivå</option>
-    <option value="MODELL">Summer på Modellnivå</option>
+    <option value="PROSESS_MODELL">Summer på Prosess-Modell</option>
+    <option value="PROSESS_STED">Summer på Prosess-Sted</option>
     <option value="STED_PROSESS">Summer på Sted-Prosess</option>
   </select>
   <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter</button>
@@ -287,7 +288,7 @@ $('exportBtn').addEventListener('click', () => {
       const data = globalProsessRegister[kode];
       const hpNavn = hovedprosessNavn[data.hovedprosess] || "Ukjent hovedprosess";
       const hpVisning = data.hovedprosess === "X" ? hpNavn : `${data.hovedprosess} - ${hpNavn}`;
-      const kodeVisning = kode; // Trenger ikke lenger sjekke for MANGLER her
+      const kodeVisning = kode;
       
       data.objekter.forEach(obj => {
           if (!valgteModeller.includes(obj.modelId)) return; // Ignorerer utelatte modeller
@@ -317,10 +318,11 @@ $('exportBtn').addEventListener('click', () => {
       const aggMap = {};
       dataRows.forEach(r => {
           let key = "";
-          // Unike nøkler for gruppering
+          // Rekkefølgen her bestemmer sorteringen i filen!
           if (exportLevel === "PROSESS") key = `${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
-          else if (exportLevel === "MODELL") key = `${r.modell}|${r.hpVisning}|${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
-          else if (exportLevel === "STED_PROSESS") key = `${r.sted}|${r.hpVisning}|${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "PROSESS_MODELL") key = `${r.kodeVisning}|${r.modell}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "PROSESS_STED") key = `${r.kodeVisning}|${r.sted}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "STED_PROSESS") key = `${r.sted}|${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
           
           if (!aggMap[key]) aggMap[key] = { ...r, mengde: 0 };
           aggMap[key].mengde += r.mengde;
@@ -328,8 +330,9 @@ $('exportBtn').addEventListener('click', () => {
 
       // Definerer overskrifter for aggregerte lister
       if (exportLevel === "PROSESS") csvInnhold += "Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
-      else if (exportLevel === "MODELL") csvInnhold += "Modell;Hovedprosess;Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
-      else if (exportLevel === "STED_PROSESS") csvInnhold += "Sted;Hovedprosess;Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
+      else if (exportLevel === "PROSESS_MODELL") csvInnhold += "Prosesskode;Modell;Prosessnavn;Enhet;Total mengde\r\n";
+      else if (exportLevel === "PROSESS_STED") csvInnhold += "Prosesskode;Sted;Prosessnavn;Enhet;Total mengde\r\n";
+      else if (exportLevel === "STED_PROSESS") csvInnhold += "Sted;Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
 
       // Legger inn data og fjerner summeringer som blir 0
       Object.keys(aggMap).sort().forEach(k => {
@@ -338,8 +341,9 @@ $('exportBtn').addEventListener('click', () => {
           
           const mengdeFormatert = r.mengde.toFixed(2).replace('.', ',');
           if (exportLevel === "PROSESS") csvInnhold += `${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
-          else if (exportLevel === "MODELL") csvInnhold += `${r.modell};${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
-          else if (exportLevel === "STED_PROSESS") csvInnhold += `${r.sted};${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "PROSESS_MODELL") csvInnhold += `${r.kodeVisning};${r.modell};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "PROSESS_STED") csvInnhold += `${r.kodeVisning};${r.sted};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "STED_PROSESS") csvInnhold += `${r.sted};${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
       });
   }
 
@@ -349,10 +353,12 @@ $('exportBtn').addEventListener('click', () => {
   const lenke = document.createElement("a");
   const datoStreng = new Date().toISOString().slice(0,10);
   
+  // Tilpasser filnavnet etter rapporttypen
   let filSuffix = "Komplett";
   if (exportLevel === "PROSESS") filSuffix = "Prosessniva";
-  else if (exportLevel === "MODELL") filSuffix = "Modellniva";
-  else if (exportLevel === "STED_PROSESS") filSuffix = "StedProsess";
+  else if (exportLevel === "PROSESS_MODELL") filSuffix = "Prosess_Modell";
+  else if (exportLevel === "PROSESS_STED") filSuffix = "Prosess_Sted";
+  else if (exportLevel === "STED_PROSESS") filSuffix = "Sted_Prosess";
   
   lenke.setAttribute("href", url);
   lenke.setAttribute("download", `Mengdeuttak_R761_${filSuffix}_${datoStreng}.csv`);
