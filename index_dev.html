@@ -335,7 +335,8 @@ $('exportBtn').addEventListener('click', () => {
       else if (exportLevel === "STED_PROSESS") csvInnhold += "Sted;Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
 
       // Legger inn data og fjerner summeringer som blir 0
-      Object.keys(aggMap).sort().forEach(k => {
+      // OPPDATERT: "Naturlig" sortering for Excel-utskriften
+      Object.keys(aggMap).sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })).forEach(k => {
           const r = aggMap[k];
           if (Math.abs(r.mengde) < 0.001) return; // Hopper over alt som er summert til (tilnærmet) 0
           
@@ -822,7 +823,8 @@ function tegnOppUI(register) {
               if (valgteModeller.includes(obj.modelId)) stedSet.add(obj.sted);
           });
       });
-      steder = Array.from(stedSet).sort();
+      // OPPDATERT: "Naturlig" sortering slik at 2 kommer før 10
+      steder = Array.from(stedSet).sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
   }
 
   let totaleVisteTotalt = 0;

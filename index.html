@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.12</title>
+  <title>Mengdeuttak R761 v1.15</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
   <style>
@@ -96,12 +96,19 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.12</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.15</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
   <button class="btn btn-primary" id="scanBtn" disabled>▶ Skann Modell</button>
-  <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter til Excel</button>
+  <select id="exportLevel" class="btn btn-secondary" style="outline:none; cursor:pointer;" disabled>
+    <option value="KOMPLETT">Komplett (Alle objekter)</option>
+    <option value="PROSESS">Summer på Prosessnivå</option>
+    <option value="PROSESS_MODELL">Summer på Prosess-Modell</option>
+    <option value="PROSESS_STED">Summer på Prosess-Sted</option>
+    <option value="STED_PROSESS">Summer på Sted-Prosess</option>
+  </select>
+  <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter</button>
 </header>
 
 <div id="filterBar">
@@ -265,37 +272,97 @@ function getValgteModeller() {
 $('exportBtn').addEventListener('click', () => {
   if (Object.keys(globalProsessRegister).length === 0) return;
   const valgteModeller = getValgteModeller();
+  const exportLevel = $('exportLevel').value;
   
   setStatus('⏳ Genererer Excel-rapport...');
   
   let csvInnhold = "\uFEFF"; 
-  csvInnhold += "Hovedprosess;Prosesskode;Beskrivelse;Enhet;Sted;Modell;Objekttype;Mengde\r\n";
+  let dataRows = [];
   
+  // 1. Samler alle gyldige rader i et flatt array først
   const koder = Object.keys(globalProsessRegister).sort();
   koder.forEach(kode => {
+      // IGNORERER ALT SOM MANGLER PROSESSKODE
+      if (kode === "MANGLER") return;
+
       const data = globalProsessRegister[kode];
       const hpNavn = hovedprosessNavn[data.hovedprosess] || "Ukjent hovedprosess";
       const hpVisning = data.hovedprosess === "X" ? hpNavn : `${data.hovedprosess} - ${hpNavn}`;
-      const kodeVisning = kode === "MANGLER" ? "" : kode;
+      const kodeVisning = kode;
       
       data.objekter.forEach(obj => {
-          if (!valgteModeller.includes(obj.modelId)) return; // Ekskluderer modeller som ikke er huket av
+          if (!valgteModeller.includes(obj.modelId)) return; // Ignorerer utelatte modeller
           
-          const tittelRenset = (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const modellRenset = (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const stedRenset = (obj.sted || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const navnRenset = (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " ");
-          const mengdeFormatert = obj.mengde.toString().replace('.', ',');
-          csvInnhold += `${hpVisning};${kodeVisning};${tittelRenset};${data.enhet};${stedRenset};${modellRenset};${navnRenset};${mengdeFormatert}\r\n`;
+          dataRows.push({
+              hpVisning: hpVisning,
+              kodeVisning: kodeVisning,
+              tittelRenset: (data.tittel || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              enhet: data.enhet,
+              sted: (obj.sted || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              modell: (obj.modelNavn || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              navn: (obj.navn || "").replace(/;/g, ",").replace(/\r?\n/g, " "),
+              mengde: obj.mengde
+          });
       });
   });
-  
+
+  // 2. Skriver ut enten komplett liste eller bygger en summert "pivot-tabell"
+  if (exportLevel === "KOMPLETT") {
+      csvInnhold += "Hovedprosess;Prosesskode;Prosessnavn;Enhet;Sted;Modell;Objekttype;Mengde\r\n";
+      dataRows.forEach(r => {
+          const mengdeFormatert = r.mengde.toString().replace('.', ',');
+          csvInnhold += `${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${r.sted};${r.modell};${r.navn};${mengdeFormatert}\r\n`;
+      });
+  } else {
+      // Bygger aggregerte data basert på valg
+      const aggMap = {};
+      dataRows.forEach(r => {
+          let key = "";
+          // Rekkefølgen her bestemmer sorteringen i filen!
+          if (exportLevel === "PROSESS") key = `${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "PROSESS_MODELL") key = `${r.kodeVisning}|${r.modell}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "PROSESS_STED") key = `${r.kodeVisning}|${r.sted}|${r.tittelRenset}|${r.enhet}`;
+          else if (exportLevel === "STED_PROSESS") key = `${r.sted}|${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
+          
+          if (!aggMap[key]) aggMap[key] = { ...r, mengde: 0 };
+          aggMap[key].mengde += r.mengde;
+      });
+
+      // Definerer overskrifter for aggregerte lister
+      if (exportLevel === "PROSESS") csvInnhold += "Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
+      else if (exportLevel === "PROSESS_MODELL") csvInnhold += "Prosesskode;Modell;Prosessnavn;Enhet;Total mengde\r\n";
+      else if (exportLevel === "PROSESS_STED") csvInnhold += "Prosesskode;Sted;Prosessnavn;Enhet;Total mengde\r\n";
+      else if (exportLevel === "STED_PROSESS") csvInnhold += "Sted;Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
+
+      // Legger inn data og fjerner summeringer som blir 0
+      // OPPDATERT: "Naturlig" sortering for Excel-utskriften
+      Object.keys(aggMap).sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })).forEach(k => {
+          const r = aggMap[k];
+          if (Math.abs(r.mengde) < 0.001) return; // Hopper over alt som er summert til (tilnærmet) 0
+          
+          const mengdeFormatert = r.mengde.toFixed(2).replace('.', ',');
+          if (exportLevel === "PROSESS") csvInnhold += `${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "PROSESS_MODELL") csvInnhold += `${r.kodeVisning};${r.modell};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "PROSESS_STED") csvInnhold += `${r.kodeVisning};${r.sted};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+          else if (exportLevel === "STED_PROSESS") csvInnhold += `${r.sted};${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
+      });
+  }
+
+  // Generer nedlasting
   const blob = new Blob([csvInnhold], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const lenke = document.createElement("a");
   const datoStreng = new Date().toISOString().slice(0,10);
+  
+  // Tilpasser filnavnet etter rapporttypen
+  let filSuffix = "Komplett";
+  if (exportLevel === "PROSESS") filSuffix = "Prosessniva";
+  else if (exportLevel === "PROSESS_MODELL") filSuffix = "Prosess_Modell";
+  else if (exportLevel === "PROSESS_STED") filSuffix = "Prosess_Sted";
+  else if (exportLevel === "STED_PROSESS") filSuffix = "Sted_Prosess";
+  
   lenke.setAttribute("href", url);
-  lenke.setAttribute("download", `Mengdeuttak_R761_${datoStreng}.csv`);
+  lenke.setAttribute("download", `Mengdeuttak_R761_${filSuffix}_${datoStreng}.csv`);
   lenke.style.visibility = 'hidden';
   document.body.appendChild(lenke);
   lenke.click();
@@ -311,6 +378,7 @@ $('scanBtn').addEventListener('click', async () => {
   $('exportBtn').disabled = true; 
   $('multiSelectContainer').classList.add('disabled');
   $('mainContent').innerHTML = '';
+  $('exportLevel').disabled = true;
   globalProsessRegister = {};
   globalModelsMap = {};
   
@@ -479,6 +547,7 @@ $('scanBtn').addEventListener('click', async () => {
     $('groupingFilter').disabled = false;
     $('exportBtn').disabled = false; 
     $('multiSelectContainer').classList.remove('disabled');
+    $('exportLevel').disabled = false;
   } catch (error) {
     setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
     $('scanBtn').disabled = false;
@@ -754,7 +823,8 @@ function tegnOppUI(register) {
               if (valgteModeller.includes(obj.modelId)) stedSet.add(obj.sted);
           });
       });
-      steder = Array.from(stedSet).sort();
+      // OPPDATERT: "Naturlig" sortering slik at 2 kommer før 10
+      steder = Array.from(stedSet).sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
   }
 
   let totaleVisteTotalt = 0;
