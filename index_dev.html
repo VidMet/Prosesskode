@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.15</title>
+  <title>Mengdeuttak R761 v1.16</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
   <style>
@@ -28,12 +28,12 @@
     .btn-secondary:not(:disabled):hover { background: var(--border); }
     
     #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
+    #mappingBar { background: var(--surface2); border-bottom: 1px solid var(--border); padding: 6px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
     .filter-group { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 150px; }
     .filter-group label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
     .filter-group select { font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
     .filter-group select:disabled { opacity: 0.4; cursor: not-allowed; }
     
-    /* NY STYLING FOR CHECKBOX-MENYEN */
     .multi-select { position: relative; flex: 1; min-width: 150px; user-select: none; }
     .multi-select.disabled { opacity: 0.4; pointer-events: none; }
     .multi-select-header { font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; cursor: pointer; display: flex; justify-content: space-between; align-items: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
@@ -96,7 +96,7 @@
 
 <header>
   <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.15</span></h1>
+    <h1>Mengdeuttak R761 <span class="version">v1.16</span></h1>
     <p>Interaktivt oppslag mot SVV Prosesskoder</p>
   </div>
   <span class="badge" id="modelBadge">Frakoblet</span>
@@ -120,19 +120,34 @@
     </select>
   </div>
   <div class="filter-group">
-    <label for="groupingFilter">Gruppering:</label>
+    <label for="groupingFilter">Tre-visning:</label>
     <select id="groupingFilter" disabled>
       <option value="PROSESS">Etter Prosess</option>
       <option value="STED">Etter Sted</option>
     </select>
   </div>
   <div class="filter-group">
-    <label>Utvalg:</label>
+    <label>Modell-utvalg:</label>
     <div class="multi-select disabled" id="multiSelectContainer">
       <div class="multi-select-header" id="modelSelectHeader">Skann for å velge...</div>
       <div class="multi-select-dropdown" id="modelSelectDropdown">
         </div>
     </div>
+  </div>
+</div>
+
+<div id="mappingBar">
+  <div class="filter-group">
+    <label for="propKode" style="color:var(--ink);">Bruk som Prosesskode:</label>
+    <select id="propKode" disabled><option value="Prosesskode">Prosesskode</option></select>
+  </div>
+  <div class="filter-group">
+    <label for="propMengde" style="color:var(--ink);">Bruk som Mengde:</label>
+    <select id="propMengde" disabled><option value="Mengde">Mengde</option></select>
+  </div>
+  <div class="filter-group">
+    <label for="propSted" style="color:var(--ink);">Bruk som Sted:</label>
+    <select id="propSted" disabled><option value="Sted">Sted</option></select>
   </div>
 </div>
 
@@ -145,8 +160,9 @@
       <li>Last ønskede modeller inn i visningen, og la alt laste seg ferdig.</li>
       <li>Velg i nedtrekksmenyen hvilken håndbok det skal sjekkes mot.</li>
       <li>Trykk på <strong>Skann Modell</strong> og la den skanne ferdig.</li>
-      <li>Huk av for de modellene du vil ha med i beregningen/kontrollen.</li>
-      <li>Velg om du vil gruppere mengdene etter prosess eller sted.</li>
+      <li>Kontroller at riktige egenskaper er valgt for Kode, Mengde og Sted i den grå menyen.</li>
+      <li>Huk av for de modellene du vil ha med i beregningen.</li>
+      <li>Velg om du vil gruppere listene etter prosess eller sted.</li>
       <li>Klikk deg innover i prosesstreet for å lese definisjoner og markere objekter.</li>
       <li>Eksporter eventuelt ut et excel-ark med de valgte mengdene.</li>
     </ol>
@@ -156,6 +172,10 @@
 <script>
 let API = null;
 let svvHandbok = null;
+
+// OPPDATERT: Nye datastrukturer for å skille rådata fra det ferdige treet
+let globalRawObjects = [];
+let unikeEgenskaper = new Set(["Prosesskode", "Mengde", "Sted"]);
 let globalProsessRegister = {};
 let globalModelsMap = {};
 
@@ -224,30 +244,24 @@ async function lastJSONFil(versjon) {
   }
 }
 
-function oppdaterRegisterMedNyHandbok() {
-    for (let kode in globalProsessRegister) {
-        if (kode === "MANGLER") continue; 
-        const handbokData = (svvHandbok && svvHandbok.prosesskoder) ? svvHandbok.prosesskoder[kode] : null;
-        if (handbokData) {
-            globalProsessRegister[kode].tittel = handbokData.tittel;
-            globalProsessRegister[kode].url = handbokData.url;
-            globalProsessRegister[kode].tekst = handbokData.tekst;
-        }
-    }
-}
+// Lyttere for de nye dynamiske nedtrekksmenyene
+['propKode', 'propMengde', 'propSted'].forEach(id => {
+    $(id).addEventListener('change', () => {
+        if (globalRawObjects.length > 0) byggProsessRegisterOgTegn();
+    });
+});
 
 $('versionFilter').addEventListener('change', async (e) => {
     $('versionFilter').disabled = true;
     await lastJSONFil(e.target.value);
-    if (Object.keys(globalProsessRegister).length > 0) {
-        oppdaterRegisterMedNyHandbok();
-        tegnOppUI(globalProsessRegister);
+    if (globalRawObjects.length > 0) {
+        byggProsessRegisterOgTegn();
     }
     $('versionFilter').disabled = false;
 });
 
-$('groupingFilter').addEventListener('change', (e) => {
-    tegnOppUI(globalProsessRegister);
+$('groupingFilter').addEventListener('change', () => {
+    if (globalRawObjects.length > 0) tegnOppUI(globalProsessRegister);
 });
 
 // Styrer avkrysningsmenyen
@@ -279,10 +293,8 @@ $('exportBtn').addEventListener('click', () => {
   let csvInnhold = "\uFEFF"; 
   let dataRows = [];
   
-  // 1. Samler alle gyldige rader i et flatt array først
   const koder = Object.keys(globalProsessRegister).sort();
   koder.forEach(kode => {
-      // IGNORERER ALT SOM MANGLER PROSESSKODE
       if (kode === "MANGLER") return;
 
       const data = globalProsessRegister[kode];
@@ -291,7 +303,7 @@ $('exportBtn').addEventListener('click', () => {
       const kodeVisning = kode;
       
       data.objekter.forEach(obj => {
-          if (!valgteModeller.includes(obj.modelId)) return; // Ignorerer utelatte modeller
+          if (!valgteModeller.includes(obj.modelId)) return; 
           
           dataRows.push({
               hpVisning: hpVisning,
@@ -306,7 +318,6 @@ $('exportBtn').addEventListener('click', () => {
       });
   });
 
-  // 2. Skriver ut enten komplett liste eller bygger en summert "pivot-tabell"
   if (exportLevel === "KOMPLETT") {
       csvInnhold += "Hovedprosess;Prosesskode;Prosessnavn;Enhet;Sted;Modell;Objekttype;Mengde\r\n";
       dataRows.forEach(r => {
@@ -314,11 +325,9 @@ $('exportBtn').addEventListener('click', () => {
           csvInnhold += `${r.hpVisning};${r.kodeVisning};${r.tittelRenset};${r.enhet};${r.sted};${r.modell};${r.navn};${mengdeFormatert}\r\n`;
       });
   } else {
-      // Bygger aggregerte data basert på valg
       const aggMap = {};
       dataRows.forEach(r => {
           let key = "";
-          // Rekkefølgen her bestemmer sorteringen i filen!
           if (exportLevel === "PROSESS") key = `${r.kodeVisning}|${r.tittelRenset}|${r.enhet}`;
           else if (exportLevel === "PROSESS_MODELL") key = `${r.kodeVisning}|${r.modell}|${r.tittelRenset}|${r.enhet}`;
           else if (exportLevel === "PROSESS_STED") key = `${r.kodeVisning}|${r.sted}|${r.tittelRenset}|${r.enhet}`;
@@ -328,17 +337,14 @@ $('exportBtn').addEventListener('click', () => {
           aggMap[key].mengde += r.mengde;
       });
 
-      // Definerer overskrifter for aggregerte lister
       if (exportLevel === "PROSESS") csvInnhold += "Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
       else if (exportLevel === "PROSESS_MODELL") csvInnhold += "Prosesskode;Modell;Prosessnavn;Enhet;Total mengde\r\n";
       else if (exportLevel === "PROSESS_STED") csvInnhold += "Prosesskode;Sted;Prosessnavn;Enhet;Total mengde\r\n";
       else if (exportLevel === "STED_PROSESS") csvInnhold += "Sted;Prosesskode;Prosessnavn;Enhet;Total mengde\r\n";
 
-      // Legger inn data og fjerner summeringer som blir 0
-      // OPPDATERT: "Naturlig" sortering for Excel-utskriften
       Object.keys(aggMap).sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' })).forEach(k => {
           const r = aggMap[k];
-          if (Math.abs(r.mengde) < 0.001) return; // Hopper over alt som er summert til (tilnærmet) 0
+          if (Math.abs(r.mengde) < 0.001) return; 
           
           const mengdeFormatert = r.mengde.toFixed(2).replace('.', ',');
           if (exportLevel === "PROSESS") csvInnhold += `${r.kodeVisning};${r.tittelRenset};${r.enhet};${mengdeFormatert}\r\n`;
@@ -348,13 +354,11 @@ $('exportBtn').addEventListener('click', () => {
       });
   }
 
-  // Generer nedlasting
   const blob = new Blob([csvInnhold], { type: 'text/csv;charset=utf-8;' });
   const url = URL.createObjectURL(blob);
   const lenke = document.createElement("a");
   const datoStreng = new Date().toISOString().slice(0,10);
   
-  // Tilpasser filnavnet etter rapporttypen
   let filSuffix = "Komplett";
   if (exportLevel === "PROSESS") filSuffix = "Prosessniva";
   else if (exportLevel === "PROSESS_MODELL") filSuffix = "Prosess_Modell";
@@ -370,16 +374,20 @@ $('exportBtn').addEventListener('click', () => {
   setStatus('✅ Filen ble eksportert. Sjekk nedlastingsmappen din!', 'ok');
 });
 
+// HOVEDSKANNER: Henter og lagrer rådata + unike egenskaper
 $('scanBtn').addEventListener('click', async () => {
   if (!API) return;
   $('scanBtn').disabled = true;
   $('versionFilter').disabled = true;
   $('groupingFilter').disabled = true;
   $('exportBtn').disabled = true; 
+  $('exportLevel').disabled = true;
+  ['propKode', 'propMengde', 'propSted'].forEach(id => $(id).disabled = true);
   $('multiSelectContainer').classList.add('disabled');
   $('mainContent').innerHTML = '';
-  $('exportLevel').disabled = true;
-  globalProsessRegister = {};
+  
+  globalRawObjects = [];
+  unikeEgenskaper = new Set(["Prosesskode", "Mengde", "Sted", "Enhet", "A006_Objektnavn", "Objekttype"]);
   globalModelsMap = {};
   
   try {
@@ -409,7 +417,6 @@ $('scanBtn').addEventListener('click', async () => {
 
     const CHUNK = 200;
     let totalObjects = 0;
-    const strukturKlasserRegex = /^(ifcproject|ifcsite|ifcbuilding|ifcstorey|ifcbuildingstorey)$/i;
 
     for (const model of models) {
       const mid = model.modelId || model.modelid;
@@ -422,7 +429,7 @@ $('scanBtn').addEventListener('click', async () => {
       
       for (let i = 0; i < objectIds.length; i += CHUNK) {
         const chunk = objectIds.slice(i, i + CHUNK);
-        setStatus(`⏳ Analyserer egenskaper... (${i} av ${objectIds.length} i aktiv modell)`);
+        setStatus(`⏳ Leser inn egenskaper... (${i} av ${objectIds.length} i aktiv modell)`);
         
         const propsArr = await API.viewer.getObjectProperties(mid, chunk);
         
@@ -432,122 +439,38 @@ $('scanBtn').addEventListener('click', async () => {
             (pset.properties || []).forEach(p => {
                if (p.value !== undefined && p.value !== null && String(p.value).trim() !== "") {
                    flatProps[p.name] = p.value;
+                   unikeEgenskaper.add(p.name);
                }
             })
           );
-
-          const sjekkVerdier = [
-              obj.class, flatProps["IfcClass"], flatProps["IfcEntity"], 
-              flatProps["Entity"], flatProps["Type"], flatProps["Objekttype"]
-          ];
           
-          let skalEkskluderes = sjekkVerdier.some(val => val && strukturKlasserRegex.test(String(val).trim()));
-          if (!skalEkskluderes && obj.name && strukturKlasserRegex.test(obj.name.trim())) {
-              skalEkskluderes = true;
-          }
-          if (skalEkskluderes) return; 
-          
-          const prosesskodeRaw = flatProps["Prosesskode"] ?? flatProps["prosesskode"] ?? flatProps["ProsessKode"];
-          let hasProsesskode = false;
-          let prosesskode = "MANGLER";
-          if (prosesskodeRaw !== undefined && prosesskodeRaw !== null && String(prosesskodeRaw).trim() !== "") {
-              hasProsesskode = true;
-              prosesskode = String(prosesskodeRaw).trim();
-          }
-          
-          let objektNavn = flatProps["A006_Objektnavn"] ?? flatProps["a006_objektnavn"] ?? flatProps["Objekttype"];
-          if (!objektNavn || String(objektNavn).trim() === "") {
-            objektNavn = (obj.name && String(obj.name).trim() !== "") ? String(obj.name) : "Ukjent objekt";
-          }
-
-          const rawSted = flatProps["Sted"] ?? flatProps["sted"] ?? flatProps["STED"] ?? flatProps["Location"] ?? flatProps["LocationName"];
-          let stedStr = "Udefinert sted";
-          if (rawSted !== undefined && rawSted !== null && String(rawSted).trim() !== "") {
-              stedStr = String(rawSted).trim();
-          }
-
-          const handbokData = hasProsesskode && svvHandbok && svvHandbok.prosesskoder ? svvHandbok.prosesskoder[prosesskode] : null;
-          const hpKode = hasProsesskode ? (prosesskode.includes('.') ? prosesskode.split('.')[0][0] : prosesskode[0]) : "X";
-          
-          let standardEnhet = "?";
-          let tittel = "Ukjent prosesskode";
-          let erEgendefinert = false;
-
-          if (hasProsesskode) {
-              if (handbokData) {
-                  standardEnhet = handbokData.enhet ? String(handbokData.enhet).toLowerCase().trim() : "?";
-                  tittel = handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
-              } else {
-                  standardEnhet = flatProps["Enhet"] ? String(flatProps["Enhet"]).toLowerCase().trim() : "?";
-                  tittel = flatProps["Prosessnavn"] ?? flatProps["Beskrivelse"] ?? flatProps["Tittel"] ?? "Ukjent prosesskode";
-                  erEgendefinert = true;
-              }
-          } else {
-              standardEnhet = "stk";
-          }
-
-          if (erEgendefinert) tittel += " (egendefinert)";
-
-          let objektEnhetRaw = flatProps["Enhet"] ?? flatProps["enhet"] ?? flatProps["ENHET"];
-          let objektEnhet = objektEnhetRaw ? String(objektEnhetRaw).toLowerCase().trim() : null;
-          
-          let aktivEnhet = standardEnhet;
-          let erOverstyrtEnhet = false;
-
-          if (hasProsesskode && objektEnhet && objektEnhet !== standardEnhet && objektEnhet !== "?") {
-              aktivEnhet = objektEnhet;
-              erOverstyrtEnhet = true;
-          }
-
-          let rawMengde = flatProps["Mengde"] ?? flatProps["mengde"] ?? flatProps["MENGDE"];
-          let manglerMengde = false;
-          
-          if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
-              if (aktivEnhet === "stk" || standardEnhet === "stk") {
-                  rawMengde = 1; 
-              } else {
-                  manglerMengde = true;
-              }
-          }
-
-          let mengde = 0;
-          if (!manglerMengde) {
-              let mengdeVerdi = String(rawMengde).replace(',', '.');
-              mengde = parseFloat(mengdeVerdi) || 0; 
-          }
-
-          if (!globalProsessRegister[prosesskode]) {
-            if (prosesskode === "MANGLER") {
-                globalProsessRegister[prosesskode] = { tittel: "Objekter som mangler prosesskode", enhet: "stk", hovedprosess: "X", url: null, tekst: null, objekter: [], erOverstyrtEnhet: false };
-            } else {
-                globalProsessRegister[prosesskode] = { tittel: tittel, enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet), hovedprosess: hpKode, url: handbokData && handbokData.url ? handbokData.url : null, tekst: handbokData && handbokData.tekst ? handbokData.tekst : null, objekter: [], erOverstyrtEnhet: erOverstyrtEnhet };
-            }
-          } else if (erOverstyrtEnhet && !globalProsessRegister[prosesskode].erOverstyrtEnhet) {
-              globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw).trim();
-              globalProsessRegister[prosesskode].erOverstyrtEnhet = true;
-          }
-          
-          globalProsessRegister[prosesskode].objekter.push({ 
-              navn: objektNavn, 
-              mengde: mengde,
-              manglerMengde: manglerMengde,
-              modelId: mid, 
+          globalRawObjects.push({
+              id: obj.id || obj.objectRuntimeId,
+              class: obj.class,
+              name: obj.name,
+              modelId: mid,
               modelNavn: modelName,
-              sted: stedStr,
-              runtimeId: obj.id || obj.objectRuntimeId
+              props: flatProps
           });
         });
       }
     }
+    
+    // Oppdaterer grensesnittet
     oppdaterDropdownMeny();
-    tegnOppUI(globalProsessRegister);
+    oppdaterEgenskapsMenyer();
+    byggProsessRegisterOgTegn();
+    
     setStatus(`✅ Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
+    
+    // Aktiverer knapper igjen
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
     $('groupingFilter').disabled = false;
     $('exportBtn').disabled = false; 
-    $('multiSelectContainer').classList.remove('disabled');
     $('exportLevel').disabled = false;
+    $('multiSelectContainer').classList.remove('disabled');
+
   } catch (error) {
     setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
     $('scanBtn').disabled = false;
@@ -555,6 +478,152 @@ $('scanBtn').addEventListener('click', async () => {
   }
 });
 
+// Fyller de tre dynamiske nedtrekksmenyene
+function oppdaterEgenskapsMenyer() {
+    const props = Array.from(unikeEgenskaper).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
+    
+    ['propKode', 'propMengde', 'propSted'].forEach(id => {
+        const el = $(id);
+        const prevVal = el.value; // Tar vare på brukerens eksisterende valg
+        el.innerHTML = '';
+        
+        props.forEach(p => {
+            const opt = document.createElement('option');
+            opt.value = p; opt.innerText = p;
+            el.appendChild(opt);
+        });
+        
+        // Finner standardvalg
+        let defVal = "";
+        if (id === 'propKode') defVal = "Prosesskode";
+        if (id === 'propMengde') defVal = "Mengde";
+        if (id === 'propSted') defVal = "Sted";
+        
+        // Prioritering for å sette riktig aktiv verdi i menyen
+        if (props.includes(prevVal)) el.value = prevVal;
+        else if (props.includes(defVal)) el.value = defVal;
+        else if (props.includes(defVal.toUpperCase())) el.value = defVal.toUpperCase();
+        else el.value = props[0]; // Fallback til første i lista hvis intet finnes
+        
+        el.disabled = false;
+    });
+}
+
+// NY FUNKSJON: Bygger opp prosess-registeret basert på valgene i menyene
+function byggProsessRegisterOgTegn() {
+    globalProsessRegister = {};
+    
+    const valKode = $('propKode').value;
+    const valMengde = $('propMengde').value;
+    const valSted = $('propSted').value;
+    const strukturKlasserRegex = /^(ifcproject|ifcsite|ifcbuilding|ifcstorey|ifcbuildingstorey)$/i;
+
+    globalRawObjects.forEach(rawObj => {
+        // Ignorer IFC-strukturobjekter
+        const sjekkVerdier = [rawObj.class, rawObj.props["IfcClass"], rawObj.props["IfcEntity"], rawObj.props["Entity"], rawObj.props["Type"], rawObj.props["Objekttype"]];
+        let skalEkskluderes = sjekkVerdier.some(val => val && strukturKlasserRegex.test(String(val).trim()));
+        if (!skalEkskluderes && rawObj.name && strukturKlasserRegex.test(rawObj.name.trim())) skalEkskluderes = true;
+        if (skalEkskluderes) return; 
+        
+        // 1. DYNAMISK: PROSESSKODE
+        const prosesskodeRaw = rawObj.props[valKode];
+        let hasProsesskode = false;
+        let prosesskode = "MANGLER";
+        if (prosesskodeRaw !== undefined && prosesskodeRaw !== null && String(prosesskodeRaw).trim() !== "") {
+            hasProsesskode = true;
+            prosesskode = String(prosesskodeRaw).trim();
+        }
+        
+        // Objektnavn: Hardkodet prioritering
+        let objektNavn = rawObj.props["A006_Objektnavn"] ?? rawObj.props["a006_objektnavn"] ?? rawObj.props["Objekttype"];
+        if (!objektNavn || String(objektNavn).trim() === "") {
+          objektNavn = (rawObj.name && String(rawObj.name).trim() !== "") ? String(rawObj.name) : "Ukjent objekt";
+        }
+
+        // 2. DYNAMISK: STED
+        const rawSted = rawObj.props[valSted];
+        let stedStr = "Udefinert sted";
+        if (rawSted !== undefined && rawSted !== null && String(rawSted).trim() !== "") {
+            stedStr = String(rawSted).trim();
+        }
+
+        const handbokData = hasProsesskode && svvHandbok && svvHandbok.prosesskoder ? svvHandbok.prosesskoder[prosesskode] : null;
+        const hpKode = hasProsesskode ? (prosesskode.includes('.') ? prosesskode.split('.')[0][0] : prosesskode[0]) : "X";
+        
+        let standardEnhet = "?";
+        let tittel = "Ukjent prosesskode";
+        let erEgendefinert = false;
+
+        if (hasProsesskode) {
+            if (handbokData) {
+                standardEnhet = handbokData.enhet ? String(handbokData.enhet).toLowerCase().trim() : "?";
+                tittel = handbokData.tittel ? handbokData.tittel : "Ukjent prosesskode";
+            } else {
+                standardEnhet = rawObj.props["Enhet"] ? String(rawObj.props["Enhet"]).toLowerCase().trim() : "?";
+                tittel = rawObj.props["Prosessnavn"] ?? rawObj.props["Beskrivelse"] ?? rawObj.props["Tittel"] ?? "Ukjent prosesskode";
+                erEgendefinert = true;
+            }
+        } else {
+            standardEnhet = "stk";
+        }
+
+        if (erEgendefinert) tittel += " (egendefinert)";
+
+        // Enhet håndteres fortsatt semi-automatisk
+        let objektEnhetRaw = rawObj.props["Enhet"] ?? rawObj.props["enhet"] ?? rawObj.props["ENHET"];
+        let objektEnhet = objektEnhetRaw ? String(objektEnhetRaw).toLowerCase().trim() : null;
+        let aktivEnhet = standardEnhet;
+        let erOverstyrtEnhet = false;
+
+        if (hasProsesskode && objektEnhet && objektEnhet !== standardEnhet && objektEnhet !== "?") {
+            aktivEnhet = objektEnhet;
+            erOverstyrtEnhet = true;
+        }
+
+        // 3. DYNAMISK: MENGDE
+        let rawMengde = rawObj.props[valMengde];
+        let manglerMengde = false;
+        
+        if (rawMengde === undefined || rawMengde === null || String(rawMengde).trim() === "") {
+            if (aktivEnhet === "stk" || standardEnhet === "stk") {
+                rawMengde = 1; 
+            } else {
+                manglerMengde = true;
+            }
+        }
+
+        let mengde = 0;
+        if (!manglerMengde) {
+            let mengdeVerdi = String(rawMengde).replace(',', '.');
+            mengde = parseFloat(mengdeVerdi) || 0; 
+        }
+
+        if (!globalProsessRegister[prosesskode]) {
+          if (prosesskode === "MANGLER") {
+              globalProsessRegister[prosesskode] = { tittel: "Objekter som mangler prosesskode", enhet: "stk", hovedprosess: "X", url: null, tekst: null, objekter: [], erOverstyrtEnhet: false };
+          } else {
+              globalProsessRegister[prosesskode] = { tittel: tittel, enhet: erOverstyrtEnhet ? String(objektEnhetRaw).trim() : (handbokData && handbokData.enhet ? handbokData.enhet : aktivEnhet), hovedprosess: hpKode, url: handbokData && handbokData.url ? handbokData.url : null, tekst: handbokData && handbokData.tekst ? handbokData.tekst : null, objekter: [], erOverstyrtEnhet: erOverstyrtEnhet };
+          }
+        } else if (erOverstyrtEnhet && !globalProsessRegister[prosesskode].erOverstyrtEnhet) {
+            globalProsessRegister[prosesskode].enhet = String(objektEnhetRaw).trim();
+            globalProsessRegister[prosesskode].erOverstyrtEnhet = true;
+        }
+        
+        globalProsessRegister[prosesskode].objekter.push({ 
+            navn: objektNavn, 
+            mengde: mengde,
+            manglerMengde: manglerMengde,
+            modelId: rawObj.modelId, 
+            modelNavn: rawObj.modelNavn,
+            sted: stedStr,
+            runtimeId: rawObj.id
+        });
+    });
+
+    tegnOppUI(globalProsessRegister);
+}
+
+// Fyller checkbox-menyen
 function oppdaterDropdownMeny() {
     const dropdown = $('modelSelectDropdown');
     dropdown.innerHTML = '';
@@ -808,7 +877,7 @@ function tegnOppUI(register) {
   
   const koder = Object.keys(register).sort();
   if (koder.length === 0) {
-      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell.</div>';
+      container.innerHTML = '<div class="empty anim">Fant ingen prosesskoder for valgt modell. Pass på at modellene har objekter.</div>';
       return;
   }
 
@@ -823,7 +892,6 @@ function tegnOppUI(register) {
               if (valgteModeller.includes(obj.modelId)) stedSet.add(obj.sted);
           });
       });
-      // OPPDATERT: "Naturlig" sortering slik at 2 kommer før 10
       steder = Array.from(stedSet).sort((a, b) => a.localeCompare(b, undefined, { numeric: true, sensitivity: 'base' }));
   }
 
