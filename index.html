@@ -2,7 +2,7 @@
 <html lang="nb">
 <head>
   <meta charset="UTF-8"/>
-  <title>Mengdeuttak R761 v1.16</title>
+  <title>Mengdeuttak R761 v1.15</title>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <script src="https://components.connect.trimble.com/trimble-connect-workspace-api/index.js"></script>
   <style>
@@ -11,14 +11,33 @@
       --bg: #f3f4f6; --surface: #ffffff; --surface2: #e5e7eb; --border: #d1d5db;
       --ink: #111827; --muted: #6b7280; --green: #166534; --red: #b91c1c; --blue: #1d4ed8;
       --blue-dim: #dbeafe; --mono: 'JetBrains Mono', monospace; --sans: 'Syne', sans-serif;
+      --ok: #22a06b; --warn: #f79009; --bad: #d92d20;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html, body { background: var(--bg); color: var(--ink); font-family: var(--sans); height: 100%; margin: 0; padding: 0; display: flex; flex-direction: column; overflow: hidden; min-width: 380px; }
-    header { background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 16px; display: flex; align-items: center; gap: 12px; flex-shrink: 0; flex-wrap: wrap; }
-    .header-title { flex: 1; min-width: 150px; }
-    .header-title h1 { font-size: 16px; font-weight: 700; color: var(--ink); display: flex; align-items: center; gap: 8px; }
-    .header-title h1 .version { font-family: var(--mono); font-size: 11px; font-weight: normal; color: var(--muted); background: var(--bg); padding: 2px 6px; border-radius: 4px; border: 1px solid var(--border); }
-    .header-title p { font-size: 11px; color: var(--muted); font-family: var(--mono); margin-top: 2px; }
+    
+    /* NY HEADER STYLING */
+    .topbar {
+      height: 92px; background: #fff; border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; gap: 18px; padding: 10px 18px; flex: 0 0 auto;
+    }
+    .logo-card {
+      width: 145px; height: 68px; border: 1px solid var(--border); border-radius: 12px;
+      background: #fff; display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 14px rgba(16,24,40,.08); overflow: hidden; flex-shrink: 0;
+    }
+    .logo-card img { max-width: 128px; max-height: 50px; object-fit: contain; }
+    .app-title { display: flex; flex-direction: column; line-height: 1.2; }
+    .app-title b { font-size: 18px; color: #0050b5; }
+    .app-title span { font-size: 14px; font-weight: 600; }
+    .app-title em { font-size: 12px; color: #667085; font-style: normal; }
+    
+    .status { margin-left: auto; display: flex; align-items: center; gap: 7px; color: #667085; font-size: 12px; font-weight: 600; white-space: nowrap; }
+    .dot { width: 9px; height: 9px; border-radius: 50%; background: #98a2b3; flex-shrink: 0; }
+    .dot.live { background: var(--ok); box-shadow: 0 0 8px var(--ok); }
+    .dot.warn { background: var(--warn); }
+    .dot.error { background: var(--bad); }
+
     .badge { font-family: var(--mono); font-size: 10px; padding: 3px 8px; border-radius: 4px; border: 1px solid var(--border); color: var(--muted); white-space: nowrap; }
     .btn { font-family: var(--sans); font-size: 12px; font-weight: 700; padding: 7px 14px; border-radius: 6px; border: none; cursor: pointer; transition: opacity .15s, transform .1s; white-space: nowrap; }
     .btn:disabled { opacity: .4; cursor: not-allowed; }
@@ -26,9 +45,12 @@
     .btn-primary { background: var(--blue); color: #ffffff; }
     .btn-secondary { background: var(--surface2); color: var(--ink); border: 1px solid var(--border); margin-left: 4px; }
     .btn-secondary:not(:disabled):hover { background: var(--border); }
+    .btn-success { background: var(--green); color: #ffffff; }
     
+    #actionBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 10px 16px; display: flex; align-items: center; gap: 8px; flex-shrink: 0; flex-wrap: wrap; }
     #filterBar { background: var(--surface); border-bottom: 1px solid var(--border); padding: 8px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
     #mappingBar { background: var(--surface2); border-bottom: 1px solid var(--border); padding: 6px 16px; display: flex; gap: 15px; align-items: center; flex-shrink: 0; flex-wrap: wrap; }
+    
     .filter-group { display: flex; align-items: center; gap: 8px; flex: 1; min-width: 150px; }
     .filter-group label { font-size: 11px; color: var(--muted); font-family: var(--mono); white-space: nowrap; }
     .filter-group select { font-family: var(--mono); font-size: 12px; background: var(--bg); color: var(--ink); border: 1px solid var(--border); border-radius: 4px; padding: 4px 8px; flex: 1; min-width: 0; cursor: pointer; }
@@ -44,11 +66,6 @@
     .multi-select-dropdown label:hover { background: var(--bg); }
     .multi-select-dropdown input[type="checkbox"] { margin-right: 8px; cursor: pointer; }
 
-    #statusBar { font-family: var(--mono); font-size: 11px; padding: 6px 16px; background: var(--blue-dim); color: var(--blue); border-bottom: 1px solid var(--border); flex-shrink: 0; }
-    #statusBar.ok { background: var(--green-dim); color: var(--green); }
-    #statusBar.error { background: var(--red-dim); color: var(--red); }
-    #statusBar.warn { background: #fef08a; color: var(--yellow); }
-    
     main { flex: 1 1 auto; overflow-y: auto; padding: 16px; height: 0; }
     .guide-box { margin: 20px auto; max-width: 480px; background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 24px; box-shadow: 0 4px 6px rgba(0,0,0,0.02); }
     .guide-box h3 { font-size: 15px; font-weight: 700; color: var(--blue); margin-bottom: 16px; }
@@ -90,17 +107,37 @@
     ::-webkit-scrollbar-thumb:hover { background: var(--ink); }
     @keyframes fadeUp { from { opacity:0; transform:translateY(6px); } to { opacity:1; transform:none; } }
     .anim { animation: fadeUp .3s ease both; }
+
+    @media(max-width:760px) {
+      .topbar { height: auto; padding: 8px; flex-wrap: wrap; }
+      .logo-card { width: 120px; height: 58px; }
+      .app-title b { font-size: 15px; }
+      .app-title span { font-size: 12px; }
+      .app-title em { display: none; }
+    }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="header-title">
-    <h1>Mengdeuttak R761 <span class="version">v1.16</span></h1>
-    <p>Interaktivt oppslag mot SVV Prosesskoder</p>
+<header class="topbar">
+  <div class="logo-card">
+    <img src="norconsult-logo-black.png" alt="Norconsult">
   </div>
-  <span class="badge" id="modelBadge">Frakoblet</span>
+  <div class="app-title">
+    <b>Mengdeuttak R761 v1.15</b>
+    <span>Norconsult Norge</span>
+    <em>Developed by Norconsult, AI-assisted development. Kontaktperson: Vidar.Metveit@norconsult.com</em>
+  </div>
+  <div class="status">
+    <span id="statusText">Starter…</span>
+    <span id="statusDot" class="dot"></span>
+  </div>
+</header>
+
+<div id="actionBar">
   <button class="btn btn-primary" id="scanBtn" disabled>▶ Skann Modell</button>
+  <div style="flex-grow: 1;"></div>
+  <span class="badge" id="modelBadge" style="color:var(--muted); background:var(--bg); border-color:var(--border);">Frakoblet</span>
   <select id="exportLevel" class="btn btn-secondary" style="outline:none; cursor:pointer;" disabled>
     <option value="KOMPLETT">Komplett (Alle objekter)</option>
     <option value="PROSESS">Summer på Prosessnivå</option>
@@ -108,8 +145,8 @@
     <option value="PROSESS_STED">Summer på Prosess-Sted</option>
     <option value="STED_PROSESS">Summer på Sted-Prosess</option>
   </select>
-  <button class="btn btn-secondary" id="exportBtn" disabled>📊 Eksporter</button>
-</header>
+  <button class="btn btn-success" id="exportBtn" disabled>📊 Eksporter</button>
+</div>
 
 <div id="filterBar">
   <div class="filter-group">
@@ -151,8 +188,6 @@
   </div>
 </div>
 
-<div id="statusBar">Kobler til Trimble Connect...</div>
-
 <main id="mainContent">
   <div class="guide-box anim">
     <h3>Veiledning for bruk av verktøyet:</h3>
@@ -173,7 +208,6 @@
 let API = null;
 let svvHandbok = null;
 
-// OPPDATERT: Nye datastrukturer for å skille rådata fra det ferdige treet
 let globalRawObjects = [];
 let unikeEgenskaper = new Set(["Prosesskode", "Mengde", "Sted"]);
 let globalProsessRegister = {};
@@ -198,23 +232,36 @@ const tekstKoder = {
 };
 
 const $ = id => document.getElementById(id);
-const setStatus = (m, c='') => { $('statusBar').textContent = m; $('statusBar').className = c; };
+
+// OPPDATERT statusfunksjon som styrer det lysende punktet i headeren
+const setStatus = (m, c='') => { 
+    $('statusText').textContent = m; 
+    let dotClass = 'dot';
+    if (c === 'ok') dotClass = 'dot live';
+    else if (c === 'error') dotClass = 'dot error';
+    else if (c === 'warn') dotClass = 'dot warn';
+    $('statusDot').className = dotClass; 
+};
+
 const lastPathPart = (v) => (v || '').split('/').pop().split('\\').pop();
 
 async function connect(){
   try {
+    setStatus('Kobler til Trimble Connect...', 'warn');
     API = await window.TrimbleConnectWorkspace.connect(window.parent);
     await lastJSONFil($('versionFilter').value);
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
     $('modelBadge').textContent = 'Tilkoblet';
+    $('modelBadge').style.color = 'var(--blue)';
+    $('modelBadge').style.borderColor = 'var(--blue)';
   } catch(e) { 
-    setStatus('❌ Kunne ikke koble til API.', 'error'); 
+    setStatus('Kunne ikke koble til API.', 'error'); 
   }
 }
 
 async function lastJSONFil(versjon) {
-  setStatus(`⏳ Laster inn R761 (${versjon})...`);
+  setStatus(`Laster inn R761 (${versjon})...`, 'warn');
   try {
     const kapitler = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
     const promises = kapitler.map(kap => 
@@ -237,14 +284,13 @@ async function lastJSONFil(versjon) {
     });
     
     if (totaltLastedeKoder === 0) throw new Error(`Fant ingen filer for versjon ${versjon}.`);
-    setStatus(`✅ Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
+    setStatus(`Klar. Lastet inn ${totaltLastedeKoder} koder for R761 (${versjon}).`, 'ok');
   } catch (error) {
-    setStatus(`⚠️ Feil ved lasting av ${versjon}: ${error.message}`, 'warn');
+    setStatus(`Feil ved lasting av ${versjon}: ${error.message}`, 'error');
     svvHandbok = { prosesskoder: {} };
   }
 }
 
-// Lyttere for de nye dynamiske nedtrekksmenyene
 ['propKode', 'propMengde', 'propSted'].forEach(id => {
     $(id).addEventListener('change', () => {
         if (globalRawObjects.length > 0) byggProsessRegisterOgTegn();
@@ -264,7 +310,6 @@ $('groupingFilter').addEventListener('change', () => {
     if (globalRawObjects.length > 0) tegnOppUI(globalProsessRegister);
 });
 
-// Styrer avkrysningsmenyen
 document.addEventListener('click', (e) => {
     const dropdown = $('modelSelectDropdown');
     const header = $('modelSelectHeader');
@@ -288,7 +333,7 @@ $('exportBtn').addEventListener('click', () => {
   const valgteModeller = getValgteModeller();
   const exportLevel = $('exportLevel').value;
   
-  setStatus('⏳ Genererer Excel-rapport...');
+  setStatus('Genererer Excel-rapport...', 'warn');
   
   let csvInnhold = "\uFEFF"; 
   let dataRows = [];
@@ -371,10 +416,9 @@ $('exportBtn').addEventListener('click', () => {
   document.body.appendChild(lenke);
   lenke.click();
   document.body.removeChild(lenke);
-  setStatus('✅ Filen ble eksportert. Sjekk nedlastingsmappen din!', 'ok');
+  setStatus('Filen ble eksportert. Sjekk nedlastingsmappen din!', 'ok');
 });
 
-// HOVEDSKANNER: Henter og lagrer rådata + unike egenskaper
 $('scanBtn').addEventListener('click', async () => {
   if (!API) return;
   $('scanBtn').disabled = true;
@@ -391,7 +435,7 @@ $('scanBtn').addEventListener('click', async () => {
   globalModelsMap = {};
   
   try {
-    setStatus('⏳ Henter filnavn og modeller fra vieweren...');
+    setStatus('Henter filnavn og modeller fra vieweren...', 'warn');
     const nameMap = new Map();
     const srcs = [() => API.models && API.models.getModels(), () => API.viewer && API.viewer.getModels()];
     for (const src of srcs) {
@@ -409,7 +453,7 @@ $('scanBtn').addEventListener('click', async () => {
 
     const models = await API.viewer.getObjects();
     if (!models || models.length === 0) {
-      setStatus('⚠️ Fant ingen objekter i vieweren.', 'warn');
+      setStatus('Fant ingen objekter i vieweren.', 'error');
       $('scanBtn').disabled = false;
       $('versionFilter').disabled = false;
       return;
@@ -429,7 +473,7 @@ $('scanBtn').addEventListener('click', async () => {
       
       for (let i = 0; i < objectIds.length; i += CHUNK) {
         const chunk = objectIds.slice(i, i + CHUNK);
-        setStatus(`⏳ Leser inn egenskaper... (${i} av ${objectIds.length} i aktiv modell)`);
+        setStatus(`Leser inn egenskaper... (${i} av ${objectIds.length} i aktiv modell)`, 'warn');
         
         const propsArr = await API.viewer.getObjectProperties(mid, chunk);
         
@@ -456,14 +500,12 @@ $('scanBtn').addEventListener('click', async () => {
       }
     }
     
-    // Oppdaterer grensesnittet
     oppdaterDropdownMeny();
     oppdaterEgenskapsMenyer();
     byggProsessRegisterOgTegn();
     
-    setStatus(`✅ Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
+    setStatus(`Skanning fullført. Analyserte ${totalObjects} objekter.`, 'ok');
     
-    // Aktiverer knapper igjen
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
     $('groupingFilter').disabled = false;
@@ -472,19 +514,18 @@ $('scanBtn').addEventListener('click', async () => {
     $('multiSelectContainer').classList.remove('disabled');
 
   } catch (error) {
-    setStatus(`❌ Feil under skanning: ${error.message}`, 'error');
+    setStatus(`Feil under skanning: ${error.message}`, 'error');
     $('scanBtn').disabled = false;
     $('versionFilter').disabled = false;
   }
 });
 
-// Fyller de tre dynamiske nedtrekksmenyene
 function oppdaterEgenskapsMenyer() {
     const props = Array.from(unikeEgenskaper).sort((a, b) => a.localeCompare(b, undefined, { sensitivity: 'base' }));
     
     ['propKode', 'propMengde', 'propSted'].forEach(id => {
         const el = $(id);
-        const prevVal = el.value; // Tar vare på brukerens eksisterende valg
+        const prevVal = el.value; 
         el.innerHTML = '';
         
         props.forEach(p => {
@@ -493,23 +534,20 @@ function oppdaterEgenskapsMenyer() {
             el.appendChild(opt);
         });
         
-        // Finner standardvalg
         let defVal = "";
         if (id === 'propKode') defVal = "Prosesskode";
         if (id === 'propMengde') defVal = "Mengde";
         if (id === 'propSted') defVal = "Sted";
         
-        // Prioritering for å sette riktig aktiv verdi i menyen
         if (props.includes(prevVal)) el.value = prevVal;
         else if (props.includes(defVal)) el.value = defVal;
         else if (props.includes(defVal.toUpperCase())) el.value = defVal.toUpperCase();
-        else el.value = props[0]; // Fallback til første i lista hvis intet finnes
+        else el.value = props[0]; 
         
         el.disabled = false;
     });
 }
 
-// NY FUNKSJON: Bygger opp prosess-registeret basert på valgene i menyene
 function byggProsessRegisterOgTegn() {
     globalProsessRegister = {};
     
@@ -519,13 +557,11 @@ function byggProsessRegisterOgTegn() {
     const strukturKlasserRegex = /^(ifcproject|ifcsite|ifcbuilding|ifcstorey|ifcbuildingstorey)$/i;
 
     globalRawObjects.forEach(rawObj => {
-        // Ignorer IFC-strukturobjekter
         const sjekkVerdier = [rawObj.class, rawObj.props["IfcClass"], rawObj.props["IfcEntity"], rawObj.props["Entity"], rawObj.props["Type"], rawObj.props["Objekttype"]];
         let skalEkskluderes = sjekkVerdier.some(val => val && strukturKlasserRegex.test(String(val).trim()));
         if (!skalEkskluderes && rawObj.name && strukturKlasserRegex.test(rawObj.name.trim())) skalEkskluderes = true;
         if (skalEkskluderes) return; 
         
-        // 1. DYNAMISK: PROSESSKODE
         const prosesskodeRaw = rawObj.props[valKode];
         let hasProsesskode = false;
         let prosesskode = "MANGLER";
@@ -534,13 +570,11 @@ function byggProsessRegisterOgTegn() {
             prosesskode = String(prosesskodeRaw).trim();
         }
         
-        // Objektnavn: Hardkodet prioritering
         let objektNavn = rawObj.props["A006_Objektnavn"] ?? rawObj.props["a006_objektnavn"] ?? rawObj.props["Objekttype"];
         if (!objektNavn || String(objektNavn).trim() === "") {
           objektNavn = (rawObj.name && String(rawObj.name).trim() !== "") ? String(rawObj.name) : "Ukjent objekt";
         }
 
-        // 2. DYNAMISK: STED
         const rawSted = rawObj.props[valSted];
         let stedStr = "Udefinert sted";
         if (rawSted !== undefined && rawSted !== null && String(rawSted).trim() !== "") {
@@ -569,7 +603,6 @@ function byggProsessRegisterOgTegn() {
 
         if (erEgendefinert) tittel += " (egendefinert)";
 
-        // Enhet håndteres fortsatt semi-automatisk
         let objektEnhetRaw = rawObj.props["Enhet"] ?? rawObj.props["enhet"] ?? rawObj.props["ENHET"];
         let objektEnhet = objektEnhetRaw ? String(objektEnhetRaw).toLowerCase().trim() : null;
         let aktivEnhet = standardEnhet;
@@ -580,7 +613,6 @@ function byggProsessRegisterOgTegn() {
             erOverstyrtEnhet = true;
         }
 
-        // 3. DYNAMISK: MENGDE
         let rawMengde = rawObj.props[valMengde];
         let manglerMengde = false;
         
@@ -623,7 +655,6 @@ function byggProsessRegisterOgTegn() {
     tegnOppUI(globalProsessRegister);
 }
 
-// Fyller checkbox-menyen
 function oppdaterDropdownMeny() {
     const dropdown = $('modelSelectDropdown');
     dropdown.innerHTML = '';
